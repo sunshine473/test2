@@ -1,0 +1,33 @@
+﻿# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# env / secrets
+.env
+.env.*
+!.env.example
+*.secret
+*.key
+*.pem
+credentials.json
+config.json
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# build / cache
+dist/
+build/
+.cache/
+coverage/
