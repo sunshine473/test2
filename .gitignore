@@ -37,3 +37,6 @@ coverage/
 
 # debug screenshots
 debug_*.png
+
+# logs
+logs/
