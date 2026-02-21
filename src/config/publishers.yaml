@@ -1,0 +1,27 @@
+# 发布平台配置
+# 敏感信息从 .env 环境变量读取
+
+wechat:
+  enabled: true
+  # WECHAT_APP_ID / WECHAT_APP_SECRET 从 .env 读取
+
+bilibili:
+  enabled: false
+  # BILIBILI_SESSDATA / BILIBILI_BILI_JCT 从 .env 读取
+  category: 17  # 科技分区
+
+zhihu:
+  enabled: false
+  headless: false  # 首次需要手动登录
+
+toutiao:
+  enabled: false
+  headless: false
+
+xiaohongshu:
+  enabled: false
+  headless: false  # 首次需要手动扫码登录，登录后 Cookie 自动保存
+
+dongchedi:
+  enabled: false
+  headless: false  # 走头条号后台，首次需要手动登录

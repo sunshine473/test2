@@ -1,0 +1,7 @@
+requests
+markdown
+beautifulsoup4
+python-dotenv
+pyyaml
+# bilibili-api-python  # B站专栏（按需启用）
+# playwright            # 知乎/头条/小红书/懂车帝（按需启用）

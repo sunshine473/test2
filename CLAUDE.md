@@ -1,27 +1,85 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+本文件为 Claude Code 提供项目上下文与工作指引。
 
-## Commands
+## 项目定位
 
-This repository is documentation-focused with no build pipeline. Use these commands for maintenance:
+半自动化内容工厂 — 从素材采集、选题推荐、内容生成到多平台分发的全流程系统。
 
-- **List files**: `ls -R` or `Get-ChildItem -Recurse`
-- **Search content**: `grep -r "pattern" .` or `rg "pattern"`
-- **Find TODOs**: `grep -r "TODO" .`
+## 协作模式
 
-## Architecture & Structure
+本工作区由 Claude Code 和 Codex 协同开发：
+- 接任务前先读 `docs/开发计划.md`，认领"待认领"任务
+- 架构设计和 SOP 详见 `docs/需求说明.md`
+- 协作规范详见 `AGENTS.md`
 
-This project is a collection of reference materials for designing Claude Skills and Agents.
+## 项目结构
 
-- **`参考/` (Reference)**: Contains core documentation, prompts, and guides for Claude Skills.
-  - Includes guides like `How to create Skills for Claude` and role-specific prompts (e.g., `资深 Claude Skills 架构师 prompt.md`).
-- **`AGENTS.md`**: Contributor guide and repository conventions.
+```
+├── src/
+│   ├── collector/              # 素材采集（已完成）
+│   │   ├── sources/            # 各信息源适配器
+│   │   ├── dedup.py            # 去重 + 聚类
+│   │   └── scorer.py           # LLM 打分排序
+│   ├── generator/              # 内容生成（已完成）
+│   ├── publisher/              # 统一发布框架（已搭建）
+│   │   ├── platforms/          # 各平台适配器
+│   │   ├── base.py             # 发布适配器基类
+│   │   ├── registry.py         # 注册表
+│   │   └── main.py             # CLI 入口
+│   ├── pipeline/               # 流水线调度（建设中）
+│   ├── config/                 # 统一配置
+│   ├── inspiration_bot/        # 旧版灵感采集（待替换）
+│   └── wechat_publisher/       # 微信发布（旧版，已迁移到 publisher/）
+├── skills/
+│   ├── collect/                # /collect 素材采集（建设中）
+│   ├── write/                  # /write 内容生成（建设中）
+│   ├── publish/                # /publish 一键发布（建设中）
+│   ├── get-inspiration/        # 旧版（待替换）
+│   └── publish-to-wechat/      # 旧版（待替换）
+├── content/                    # 内容仓库（建设中）
+│   ├── drafts/                 # 草稿
+│   ├── ready/                  # 待发布
+│   └── published/              # 已发布归档
+├── MultiPost-Extension/        # 多平台分发浏览器扩展
+├── docs/                       # 需求文档与开发计划
+├── 参考/                       # 外部参考资料
+├── AGENTS.md                   # 协作规范（Claude Code + Codex）
+└── CLAUDE.md                   # 本文件
+```
 
-## Style & Conventions
+## 核心 SOP
 
-- **File Naming**: Use descriptive names. Prefer `kebab-case` or standard spacing for documentation files.
-- **Content**:
-  - Use clear section headings.
-  - Use fenced code blocks for prompts and examples.
-- **Security**: Never commit real API keys or secrets; use placeholders like `<API_KEY>`.
+```
+素材采集（自动）→ 选题推荐（自动）→ 人工选题 → 内容生成（自动）→ 人工审核 → 发布分发（一键）
+```
+
+对应 Skill：
+1. `/collect` — 采集素材 + LLM 打分，输出选题清单
+2. `/write "选题"` — 基于选题生成 Markdown 草稿到 `content/drafts/`
+3. `/publish` — 统一发布到微信公众号 + B站/知乎/头条/小红书/懂车帝
+
+## 常用命令
+
+- **素材采集**: `python src/collector/main.py`（默认 `rss,hn,github,hot`，含去重聚类+打分，强制同步 Notion）
+- **指定采集源**: `python src/collector/main.py --sources hn,github,hot`
+- **YouTube API 采集**: `python src/collector/main.py --sources youtube_api,hn,github,hot`（需 `YOUTUBE_API_KEY`）
+- **内容生成**: `python src/generator/main.py "选题标题"`（生成文章+卡片到 `content/drafts/`）
+- **仅生成文章**: `python src/generator/main.py "选题标题" --no-cards`
+- **统一发布**: `python src/publisher/main.py <markdown文件路径>`（发布到所有 enabled 平台）
+- **指定平台发布**: `python src/publisher/main.py <markdown文件路径> --platforms wechat,bilibili`
+- **微信发布（旧）**: `python src/wechat_publisher/main.py <markdown文件路径>`
+- **查找待办**: `rg "TODO|FIXME|待办" .`
+
+## 代码风格
+
+- Python: `snake_case`，类名 `PascalCase`，使用 `ruff` 格式化
+- TypeScript: `camelCase` 函数/变量，`PascalCase` 组件/接口，`SNAKE_CASE` 常量
+- 文档文件: `kebab-case` 或中文语义化命名
+- 缩进: 4 空格（除非语言规范另有要求）
+
+## 安全规范
+
+- 禁止提交 API 密钥、Token、Cookie 等敏感信息
+- 使用占位符: `<API_KEY>`、`<TOKEN>`、`<APP_SECRET>`
+- 本地环境变量放在 `.env` 或 `.env.local`（已加入 .gitignore）

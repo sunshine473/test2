@@ -3,7 +3,10 @@
     "allow": [
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebSearch",
+      "Bash(pip install:*)",
+      "Bash(python:*)"
     ]
   }
 }
