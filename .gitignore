@@ -31,3 +31,9 @@ dist/
 build/
 .cache/
 coverage/
+
+# browser state (login cookies)
+.browser_state/
+
+# debug screenshots
+debug_*.png
