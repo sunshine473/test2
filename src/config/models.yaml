@@ -1,0 +1,50 @@
+# Google API 模型配置
+# 根据任务类型自动选择最合适的模型
+# 参考文档: docs/Google-API-模型参考.md
+
+text:
+  # 文章写作：gemini-2.5-flash 稳定可用，网络恢复后可切回 2.5-pro 或 3-pro
+  article:
+    model: "gemini-2.5-flash"
+    temperature: 0.7
+    max_tokens: 8192
+
+  # 卡片拆分：结构化输出，Flash 够用
+  card_split:
+    model: "gemini-2.5-flash"
+    temperature: 0.5
+    max_tokens: 4096
+
+  # 翻译/简单任务：用最便宜的
+  translate:
+    model: "gemini-2.5-flash-lite"
+    temperature: 0.3
+    max_tokens: 256
+
+  # 打分/评估：需要一定推理能力
+  scoring:
+    model: "gemini-2.5-flash"
+    temperature: 0.3
+    max_tokens: 1024
+
+image:
+  # 卡片插图：Flash 速度快，$0.039/张
+  card:
+    model: "gemini-2.5-flash-image"
+    type: "gemini_native"
+
+  # 封面图：Pro 质量更高，~$0.134/张
+  cover:
+    model: "gemini-3-pro-image-preview"
+    type: "gemini_native"
+
+  # 高质量场景：Pro
+  premium:
+    model: "gemini-3-pro-image-preview"
+    type: "gemini_native"
+
+# 速率限制保护
+rate_limit:
+  image_interval: 10      # 图片生成间隔（秒）
+  image_retry_delay: 30   # 429 重试等待（秒）
+  image_max_retries: 3    # 最大重试次数

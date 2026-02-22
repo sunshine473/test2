@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{title}} - 视觉卡片</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f0f0f0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; padding: 20px; }
+.toolbar { text-align: center; margin-bottom: 20px; }
+.toolbar button { padding: 10px 24px; margin: 0 8px; border: none; border-radius: 8px; font-size: 15px; cursor: pointer; transition: background .2s; }
+.btn-download-all { background: #07c160; color: #fff; }
+.btn-download-all:hover { background: #06ad56; }
+.cards-container { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.card { width: 100%; max-width: 600px; aspect-ratio: 3/4; border-radius: 16px; overflow: hidden; position: relative; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,.1); }
+/* Layout A: 左文右图 */
+.card.layout-a { display: grid; grid-template-columns: 1fr 1fr; }
+.card.layout-a .card-text { padding: 32px 24px; display: flex; flex-direction: column; justify-content: center; }
+.card.layout-a .card-img { width: 100%; height: 100%; object-fit: cover; }
+/* Layout B: 上图下文 */
+.card.layout-b { display: grid; grid-template-rows: 55% 45%; }
+.card.layout-b .card-img { width: 100%; height: 100%; object-fit: cover; }
+.card.layout-b .card-text { padding: 24px; display: flex; flex-direction: column; justify-content: center; }
+/* Layout C: 图底文上覆盖 */
+.card.layout-c .card-img { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; }
+.card.layout-c .card-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 28px 32px; background: linear-gradient(transparent, rgba(0,0,0,.7)); color: #fff; }
+.card-title { font-size: 22px; font-weight: 700; margin-bottom: 10px; line-height: 1.4; }
+.card-subtitle { font-size: 15px; opacity: .85; line-height: 1.5; }
+.card-content { font-size: 15px; line-height: 1.8; color: #333; }
+.card.layout-c .card-title { font-size: 28px; text-shadow: 0 2px 8px rgba(0,0,0,.3); }
+.card-index { position: absolute; top: 16px; right: 20px; font-size: 13px; color: rgba(255,255,255,.7); background: rgba(0,0,0,.25); padding: 4px 12px; border-radius: 20px; z-index: 2; }
+.card-download { position: absolute; top: 16px; left: 20px; background: rgba(255,255,255,.85); border: none; padding: 6px 14px; border-radius: 20px; font-size: 12px; cursor: pointer; z-index: 2; }
+.card-download:hover { background: #fff; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+</head>
+<body>
+<div class="toolbar">
+    <button class="btn-download-all" onclick="downloadAll()">批量下载 ZIP</button>
+</div>
+<div class="cards-container">
+{{cards_html}}
+</div>
+<script>
+async function captureCard(el) {
+    return html2canvas(el, { scale: 2, useCORS: true, backgroundColor: null });
+}
+
+async function downloadSingle(idx) {
+    const card = document.querySelectorAll('.card')[idx];
+    const canvas = await captureCard(card);
+    canvas.toBlob(blob => saveAs(blob, `card-${idx + 1}.png`));
+}
+
+async function downloadAll() {
+    const btn = document.querySelector('.btn-download-all');
+    btn.textContent = '导出中...';
+    btn.disabled = true;
+    const zip = new JSZip();
+    const cards = document.querySelectorAll('.card');
+    for (let i = 0; i < cards.length; i++) {
+        const canvas = await captureCard(cards[i]);
+        const dataUrl = canvas.toDataURL('image/png');
+        const base64 = dataUrl.split(',')[1];
+        zip.file(`card-${i + 1}.png`, base64, { base64: true });
+    }
+    const blob = await zip.generateAsync({ type: 'blob' });
+    saveAs(blob, '{{slug}}-cards.zip');
+    btn.textContent = '批量下载 ZIP';
+    btn.disabled = false;
+}
+</script>
+</body>
+</html>

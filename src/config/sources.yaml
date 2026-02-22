@@ -1,0 +1,380 @@
+# ============================================================
+# 信息源统一配置
+# 采集方式：rss / twitter / scraper / tavily
+# YouTube 频道通过 RSS 方式采集
+# ============================================================
+
+# ----------------------------------------------------------
+# RSS 订阅源
+# ----------------------------------------------------------
+rss:
+  tech_ai:
+    - name: Hacker News (100+ points)
+      url: "https://hnrss.org/newest?points=100"
+      category: tech_ai
+      language: en
+
+    - name: OpenAI Blog
+      url: "https://openai.com/index.xml"
+      category: tech_ai
+      language: en
+
+    - name: Anthropic Blog
+      url: "https://www.anthropic.com/feed"
+      category: tech_ai
+      language: en
+
+    - name: Google DeepMind Blog
+      url: "https://deepmind.google/blog/rss.xml"
+      category: tech_ai
+      language: en
+
+    - name: 36kr AI
+      url: "https://36kr.com/feed"
+      category: tech_ai
+      language: zh
+
+  auto:
+    - name: 36kr 汽车
+      url: "https://36kr.com/feed"
+      category: auto
+      language: zh
+
+  # YouTube 频道（通过 RSS 采集）
+  # 格式: https://www.youtube.com/feeds/videos.xml?channel_id=CHANNEL_ID
+  youtube:
+    - name: Two Minute Papers
+      url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg"
+      category: tech_ai
+      language: en
+
+    - name: Matt Wolfe
+      url: "https://www.youtube.com/feeds/videos.xml?channel_id=UChpleBmo18P08aKCIgti38g"
+      category: tech_ai
+      language: en
+
+    - name: AI Explained
+      url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw"
+      category: tech_ai
+      language: en
+
+    - name: Fireship
+      url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA"
+      category: tech_ai
+      language: en
+
+    - name: David Shapiro
+      url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCvKRFNawVcuz4b9ihUTApCg"
+      category: tech_ai
+      language: en
+
+    - name: The AI Advantage
+      url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCHhYXsLBEVVnbvsq57n1MTQ"
+      category: tech_ai
+      language: en
+
+    - name: Lex Fridman
+      url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA"
+      category: tech_ai
+      language: en
+
+# ----------------------------------------------------------
+# Hacker News（独立 API 适配器）
+# ----------------------------------------------------------
+hacker_news:
+  min_points: 100
+  max_items: 20
+  tags: "story"
+  category: tech_ai
+
+# ----------------------------------------------------------
+# X / Twitter 账号
+# 采集方式待定（可选：X API / Tavily 间接搜索 / 第三方工具）
+# ----------------------------------------------------------
+twitter:
+  # AI 大佬 / 公司高管
+  leaders:
+    - handle: karpathy
+      name: Andrej Karpathy
+      note: 前 Tesla AI 负责人，AI 工程洞察
+
+    - handle: ylecun
+      name: Yann LeCun
+      note: Meta 首席 AI 科学家，图灵奖得主
+
+    - handle: sama
+      name: Sam Altman
+      note: OpenAI CEO
+
+    - handle: DarioAmodei
+      name: Dario Amodei
+      note: Anthropic CEO
+
+    - handle: demishassabis
+      name: Demis Hassabis
+      note: Google DeepMind CEO
+
+    - handle: AravSrinivas
+      name: Aravind Srinivas
+      note: Perplexity AI CEO
+
+  # AI 研究 / 工程实践
+  researchers:
+    - handle: DrJimFan
+      name: Jim Fan
+      note: NVIDIA 高级研究科学家，AI Agent / 具身智能
+
+    - handle: simonw
+      name: Simon Willison
+      note: LLM 工具链专家，Django 联合创始人
+
+    - handle: swyx
+      name: Shawn Wang
+      note: AI Engineer 社区创始人，Latent Space 播客
+
+    - handle: hwchase17
+      name: Harrison Chase
+      note: LangChain 创始人
+
+    - handle: jeremyphoward
+      name: Jeremy Howard
+      note: fast.ai 创始人
+
+    - handle: pmddomingos
+      name: Pedro Domingos
+      note: 华盛顿大学教授，ML / 数据挖掘
+
+    - handle: GaryMarcus
+      name: Gary Marcus
+      note: AI 批评派，认知科学家
+
+  # AI 新闻速递 / 内容聚合
+  aggregators:
+    - handle: _akhaliq
+      name: AK
+      note: 每日 AI 论文和 demo 搬运，更新极高频
+
+    - handle: rowancheung
+      name: Rowan Cheung
+      note: The Rundown AI 创始人，每周 AI 新闻汇总
+
+    - handle: chiphuyen
+      name: Chip Huyen
+      note: 《Designing ML Systems》作者，MLOps 方向
+
+    - handle: elvis_saravia
+      name: Elvis Saravia
+      note: 每周 Top AI Papers，DAIR.AI 创始人
+
+    - handle: LinusEkenstam
+      name: Linus Ekenstam
+      note: AI 产品设计和创业
+
+    - handle: Ronald_vanLoon
+      name: Ronald van Loon
+      note: 大数据 / IoT / AI / 5G
+
+    - handle: antgrasso
+      name: Antonio Grasso
+      note: 数字化转型和 AI 应用
+
+  # AI 工具 / 产品 / 应用
+  tools:
+    - handle: mattshumer_
+      name: Matt Shumer
+      note: HyperWrite CEO，AI Agent 和自动化
+
+    - handle: tunguz
+      name: Bojan Tunguz
+      note: VC，AI 公司和技术趋势
+
+    - handle: waitin4agi_
+      name: Varun Mayya
+      note: Avalon Labs CEO
+
+    - handle: OfficialLoganK
+      name: Logan Kilpatrick
+      note: OpenAI 开发者关系负责人
+
+    - handle: v_vashishta
+      name: Vin Vashishta
+      note: 应用 ML 专家，AI 商业化
+
+  # 官方 / 媒体
+  official:
+    - handle: OpenAI
+      name: OpenAI
+      note: GPT 系列产品发布
+
+    - handle: AnthropicAI
+      name: Anthropic
+      note: Claude 更新动态
+
+    - handle: GoogleDeepMind
+      name: Google DeepMind
+      note: Gemini 等前沿研究
+
+    - handle: huggingface
+      name: Hugging Face
+      note: 开源模型生态
+
+    - handle: LexFridman
+      name: Lex Fridman
+      note: 深度访谈播客
+
+# ----------------------------------------------------------
+# 直接抓取
+# ----------------------------------------------------------
+scraper:
+  - name: GitHub Trending
+    url: "https://github.com/trending?since=daily"
+    category: tech_ai
+    parser: html
+    selector: "article.Box-row"
+    max_items: 10
+
+# ----------------------------------------------------------
+# Tavily 搜索
+# ----------------------------------------------------------
+tavily:
+  tech_ai:
+    - name: AI 最新进展
+      query: "AI agent 最新进展 本周"
+      category: tech_ai
+      search_depth: basic
+      max_results: 5
+
+    - name: Product Hunt 热门
+      query: "Product Hunt top launches this week"
+      category: tech_ai
+      search_depth: basic
+      max_results: 5
+
+  auto:
+    - name: 懂车帝资讯
+      query: "懂车帝 新车 评测"
+      category: auto
+      search_depth: basic
+      max_results: 5
+
+    - name: 汽车之家
+      query: "汽车之家 新车 本周"
+      category: auto
+      search_depth: basic
+      max_results: 5
+
+    - name: 36kr 汽车
+      query: "36kr 汽车 新能源"
+      category: auto
+      search_depth: basic
+      max_results: 5
+
+    - name: 新能源政策
+      query: "新能源汽车 政策 补贴"
+      category: auto
+      search_depth: basic
+      max_results: 5
+
+  trending:
+    - name: 微博热搜
+      query: "微博热搜 科技 汽车"
+      category: trending
+      search_depth: basic
+      max_results: 5
+
+    - name: 百度热搜
+      query: "百度热搜 科技"
+      category: trending
+      search_depth: basic
+      max_results: 5
+
+    - name: 知乎热榜
+      query: "知乎热榜 科技 汽车"
+      category: trending
+      search_depth: basic
+      max_results: 5
+
+# ----------------------------------------------------------
+# 微博 / 百度热搜（TopHub 抓取适配器）
+# ----------------------------------------------------------
+hot_search:
+  max_items: 20
+  feeds:
+    - name: 微博热搜
+      url: "https://tophub.today/n/KqndgxeLl9"
+      domain_hint: "s.weibo.com/weibo"
+      category: trending
+    - name: 百度热搜
+      url: "https://tophub.today/n/Jb0vmloB1G"
+      domain_hint: "www.baidu.com/s"
+      category: trending
+
+# ----------------------------------------------------------
+# YouTube Data API v3（推荐）
+# 需要环境变量：YOUTUBE_API_KEY
+# ----------------------------------------------------------
+youtube_api:
+  max_items_per_channel: 3
+  category: tech_ai
+  language: en
+  channels:
+    - name: OpenAI
+      handle: "@OpenAI"
+      channel_id: "UCXZCJLdBC09xxGZ6gcdrc6A"
+    - name: Anthropic
+      handle: "@Anthropic"
+      channel_id: "UCOIji0UklfggVrY7Ym-IfDQ"
+    - name: Google DeepMind
+      handle: "@GoogleDeepMind"
+      channel_id: "UCP7jMXSY2xbc3KCAE0MHQ-A"
+    - name: deeplearning.ai
+      handle: "@Deeplearningai"
+      channel_id: "UCcIXc5mJsHVYTZR1maL5l9w"
+    - name: Hugging Face
+      handle: "@HuggingFace"
+      channel_id: "UCHlNU7kIZhRgSbhHvFoy72w"
+    - name: Two Minute Papers
+      handle: "@TwoMinutePapers"
+      channel_id: "UCbfYPyITQ-7l4upoX8nvctg"
+    - name: Yannic Kilcher
+      handle: "@YannicKilcher"
+      channel_id: "UCZHmQk67mSJgfCCTn7xBfew"
+    - name: Andrej Karpathy
+      handle: "@AndrejKarpathy"
+      channel_id: "UCXUPKJO5MZQN11PqgIvyuvQ"
+    - name: 3Blue1Brown
+      handle: "@3blue1brown"
+      channel_id: "UCYO_jab_esuFRV4b17AJtAw"
+    - name: Sentdex
+      handle: "@sentdex"
+      channel_id: "UCfzlCWGWYyIQ0aLC5w48gBQ"
+    - name: Fireship
+      handle: "@Fireship"
+      channel_id: "UCsBjURrPoezykLs9EqgamOA"
+    - name: AssemblyAI
+      handle: "@AssemblyAI"
+      channel_id: "UCtatfZMf-8EkIwASXM4ts0A"
+    - name: Lex Fridman
+      handle: "@LexFridman"
+      language: en
+    - name: StatQuest
+      handle: "@StatQuest"
+      language: en
+    - name: Computerphile
+      handle: "@Computerphile"
+      language: en
+    - name: freeCodeCamp.org
+      handle: "@freecodecamp"
+      language: en
+    - name: Krish Naik
+      handle: "@KrishNaik06"
+      language: en
+    - name: ArjanCodes
+      handle: "@ArjanCodes"
+      language: en
+    - name: DataTalksClub
+      handle: "@DataTalksClub"
+      language: en
+    - name: MLOps Community
+      handle: "@MLOpsCommunity"
+      language: en

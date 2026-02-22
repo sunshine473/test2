@@ -1,0 +1,8 @@
+feedparser
+requests
+beautifulsoup4
+tavily-python
+notion-client
+youtube-transcript-api
+python-dotenv
+pyyaml
