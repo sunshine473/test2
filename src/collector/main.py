@@ -155,6 +155,13 @@ def main():
     pool_path = str(POOL_DIR / f"{pool['date']}-pool.json")
     results = plan(pool_path, args.direction)
 
+    # Telegram 通知
+    try:
+        from collector.telegram_notifier import TelegramNotifier
+        TelegramNotifier().notify(pool, results)
+    except Exception as e:
+        print(f"[Telegram] 通知异常: {e}")
+
     output = {"search": pool, "plan": results}
     print(json.dumps(output, indent=2, ensure_ascii=False))
 
