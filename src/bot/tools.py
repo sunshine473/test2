@@ -208,7 +208,7 @@ def tool_publish(params: dict) -> str:
             r = pub.publish(article, config.get(name, {}))
             results.append({"platform": name, "status": r.status.value, "message": r.message})
         except Exception as e:
-            results.append({"platform": name, "status": "FAILED", "message": str(e)})
+            results.append({"platform": name, "status": "failed", "message": str(e)})
 
     return _truncate(json.dumps({"status": "ok", "results": results}, ensure_ascii=False, indent=2))
 

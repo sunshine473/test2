@@ -36,11 +36,15 @@ jobs:
           cache: 'pip'
           cache-dependency-path: |
             src/collector/requirements.txt
+            src/publisher/requirements.txt
+            src/generator/requirements.txt
             src/bot/requirements.txt
 
       - name: Install dependencies
         run: |
           pip install -r src/collector/requirements.txt
+          pip install -r src/publisher/requirements.txt
+          pip install -r src/generator/requirements.txt
           pip install -r src/bot/requirements.txt
 
       - name: Restore offset cache

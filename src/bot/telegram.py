@@ -15,8 +15,14 @@ BASE_URL = f"https://api.telegram.org/bot{BOT_TOKEN}"
 MAX_MESSAGE_LENGTH = 4096
 
 
+def _check_token():
+    if not BOT_TOKEN:
+        raise RuntimeError("TELEGRAM_BOT_TOKEN 未配置，无法调用 Telegram API")
+
+
 def get_updates(offset: int | None = None, timeout: int = 30) -> list[dict[str, Any]]:
     """长轮询获取新消息。返回 Update 对象列表。"""
+    _check_token()
     params: dict[str, Any] = {
         "timeout": timeout,
         "allowed_updates": ["message"],
@@ -37,6 +43,7 @@ def get_updates(offset: int | None = None, timeout: int = 30) -> list[dict[str, 
 
 def send_message(chat_id: str | int, text: str) -> bool:
     """发送消息到指定 chat，自动分段处理超长文本。返回是否全部成功。"""
+    _check_token()
     if not text.strip():
         return True
 

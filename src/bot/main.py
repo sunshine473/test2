@@ -43,7 +43,8 @@ OFFSET_FILE = Path(os.getenv("BOT_STATE_DIR", "/tmp/bot_state")) / "update_offse
 def load_offset() -> int | None:
     if OFFSET_FILE.exists():
         text = OFFSET_FILE.read_text().strip()
-        return int(text) if text else None
+        if text.isdigit():
+            return int(text)
     return None
 
 
@@ -71,8 +72,12 @@ def main():
         print("无新消息，退出")
         return
 
+    new_offset = None
+
     for update in updates:
         update_id = update["update_id"]
+        new_offset = update_id + 1  # 无论是否处理，都推进 offset
+
         message = update.get("message", {})
         chat_id = message.get("chat", {}).get("id")
         text = message.get("text", "")
@@ -93,11 +98,9 @@ def main():
 
         send_message(chat_id, reply)
 
-        # 更新 offset 为最新 update_id + 1
-        offset = update_id + 1
-
-    save_offset(offset)
-    print(f"\noffset 已保存: {offset}")
+    if new_offset is not None:
+        save_offset(new_offset)
+        print(f"\noffset 已保存: {new_offset}")
     print("=== Bot 运行结束 ===")
 
 
