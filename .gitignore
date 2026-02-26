@@ -38,5 +38,8 @@ coverage/
 # debug screenshots
 debug_*.png
 
+# content pool (generated JSON)
+content/pool/*.json
+
 # logs
 logs/

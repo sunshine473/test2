@@ -1,10 +1,11 @@
-"""素材采集主入口
+"""素材采集主入口 — 串联搜索 + 策划的一键入口。
 
 用法:
-    python -m collector.main                                 # 采集并写入 Notion
-    python -m collector.main --sources hn,github,hot                 # 只采集 HN/GitHub/热搜
-    python -m collector.main --sources youtube_api,hn,github,hot     # 含 YouTube API 采集
-    python -m collector.main --sources rss,hn,github,tavily          # 自定义采集源
+    python -m collector.main                                    # 搜索 + 两方向策划
+    python -m collector.main --sources hn,github,hot            # 指定源
+    python -m collector.main --search-only                      # 仅搜索
+    python -m collector.main --plan-only --pool <path>          # 仅策划
+    python -m collector.main --direction tech_ai                # 指定方向
 """
 
 import argparse
@@ -110,76 +111,52 @@ def collect_all(config: dict, sources: List[str]) -> List[CollectedItem]:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="素材采集器")
+    parser = argparse.ArgumentParser(description="素材采集器（搜索 + 策划）")
     parser.add_argument(
         "--sources",
         default="rss,hn,github,hot,tavily,youtube_api",
         help="要采集的信息源，逗号分隔 (rss,hn,github,hot,youtube_api,tavily,twitter)",
     )
+    parser.add_argument("--search-only", action="store_true", help="仅执行搜索阶段")
+    parser.add_argument("--plan-only", action="store_true", help="仅执行策划阶段")
+    parser.add_argument("--pool", default=None, help="素材池 JSON 路径（--plan-only 时使用）")
+    parser.add_argument("--direction", choices=["tech_ai", "auto"], default=None,
+                        help="指定方向（默认两个方向都跑）")
     args = parser.parse_args()
 
     ensure_utf8()
+
+    # 仅策划模式
+    if args.plan_only:
+        from collector.planner import plan, find_latest_pool
+        pool_path = args.pool or find_latest_pool()
+        if not pool_path:
+            raise SystemExit("错误: 未找到素材池 JSON，请先运行搜索或指定 --pool 路径")
+        results = plan(pool_path, args.direction)
+        print(json.dumps(results, indent=2, ensure_ascii=False))
+        return
+
+    # 搜索阶段
+    from collector.search import search
     source_list = [s.strip() for s in args.sources.split(",")]
     slow_sources = {"tavily", "twitter"}
     if any(source in slow_sources for source in source_list):
         print("提示: Tavily/Twitter 属于慢速采集源，首次运行建议先用 --sources rss,github")
 
-    print(f"=== 素材采集开始 ({datetime.now().strftime('%Y-%m-%d %H:%M')}) ===")
-    print(f"采集源: {', '.join(source_list)}\n")
+    pool = search(source_list)
 
-    config = load_config()
-    raw_items = collect_all(config, source_list)
-    print(f"\n=== 原始采集 {len(raw_items)} 条，开始去重聚类 ===")
-    deduplicator = Deduplicator()
-    dedup_items, clusters = deduplicator.process(raw_items)
-    dedup_summary = deduplicator.summarize_clusters(clusters)
-    print(
-        f"去重后 {len(dedup_items)} 条，聚类 {dedup_summary['cluster_count']} 组，"
-        f"最大簇 {dedup_summary['max_cluster_size']} 条"
-    )
+    if args.search_only:
+        print(json.dumps(pool, indent=2, ensure_ascii=False))
+        return
 
-    print("=== 开始打分排序 ===")
-    scorer = ItemScorer()
-    items = scorer.score_and_rank(dedup_items)
-    score_summary = scorer.summarize_scores(items)
-    print(
-        f"打分完成: max={score_summary['max']}, "
-        f"avg={score_summary['avg']}, min={score_summary['min']}"
-    )
+    # 策划阶段
+    from collector.planner import plan
+    from collector.search import POOL_DIR
+    pool_path = str(POOL_DIR / f"{pool['date']}-pool.json")
+    results = plan(pool_path, args.direction)
 
-    print(f"\n=== 采集完成，共 {len(items)} 条素材 ===\n")
-
-    result = {
-        "date": datetime.now().strftime("%Y-%m-%d"),
-        "raw_total": len(raw_items),
-        "cluster_total": len(clusters),
-        "total": len(items),
-        "score_summary": score_summary,
-        "cluster_summary": dedup_summary,
-        "items": [item.to_dict() for item in items],
-    }
-    print(json.dumps(result, indent=2, ensure_ascii=False))
-
-    # 强制同步 Notion：未配置凭据或写入失败时直接退出
-    if not (os.getenv("NOTION_API_KEY") and os.getenv("NOTION_DATABASE_ID")):
-        raise SystemExit(
-            "Notion 同步为必选项，但缺少环境变量: NOTION_API_KEY / NOTION_DATABASE_ID"
-        )
-
-    if not items:
-        raise SystemExit("本次采集结果为空，未写入 Notion。")
-
-    print(f"\n[Notion] 正在写入 {len(items)} 条素材...")
-    try:
-        from collector.notion_output import NotionOutput
-
-        notion = NotionOutput()
-        saved = notion.save(items)
-        print(f"[Notion] 成功写入 {saved}/{len(items)} 条")
-        if saved == 0:
-            raise SystemExit("Notion 同步失败：0 条写入成功。")
-    except Exception as e:
-        raise SystemExit(f"[Notion] 写入失败: {e}") from e
+    output = {"search": pool, "plan": results}
+    print(json.dumps(output, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":

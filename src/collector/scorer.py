@@ -3,11 +3,15 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
-from typing import Dict, List
+from typing import TYPE_CHECKING, Dict, List, Optional
 
 from collector.models import CollectedItem
 
+if TYPE_CHECKING:
+    from collector.directions import Direction
 
+
+# 全局默认权重（无 direction 时使用，向后兼容）
 SOURCE_BASE_WEIGHT = {
     "Hacker News": 25,
     "GitHub Trending": 24,
@@ -40,6 +44,21 @@ KEYWORD_BONUS = {
 class ItemScorer:
     """对去重后的素材进行可解释打分。"""
 
+    def __init__(self, direction: Optional[Direction] = None):
+        self._direction = direction
+        if direction:
+            self._source_weight = direction.source_weight
+            self._category_weight = direction.category_weight
+            self._keyword_bonus_map = direction.keyword_bonus
+            self._preferred_sources = direction.preferred_sources
+            self._preferred_source_bonus = direction.preferred_source_bonus
+        else:
+            self._source_weight = SOURCE_BASE_WEIGHT
+            self._category_weight = CATEGORY_WEIGHT
+            self._keyword_bonus_map = KEYWORD_BONUS
+            self._preferred_sources = set()
+            self._preferred_source_bonus = 0
+
     def score_and_rank(self, items: List[CollectedItem]) -> List[CollectedItem]:
         for item in items:
             score, reasons = self._score_item(item)
@@ -60,13 +79,17 @@ class ItemScorer:
         reasons: List[str] = []
         score = 0.0
 
-        source_bonus = SOURCE_BASE_WEIGHT.get(item.source_name, 12)
+        source_bonus = self._source_weight.get(item.source_name, 12)
         score += source_bonus
         reasons.append(f"source:{source_bonus}")
 
-        cat_bonus = CATEGORY_WEIGHT.get(item.category, 8)
+        cat_bonus = self._category_weight.get(item.category, 8)
         score += cat_bonus
         reasons.append(f"category:{cat_bonus}")
+
+        if item.source_name in self._preferred_sources:
+            score += self._preferred_source_bonus
+            reasons.append(f"preferred:{self._preferred_source_bonus}")
 
         cluster_size = int((item.raw_data or {}).get("cluster_size", 1))
         cluster_bonus = min(15, cluster_size * 3)
@@ -117,11 +140,10 @@ class ItemScorer:
             return 4
         return 1
 
-    @staticmethod
-    def _keyword_bonus(item: CollectedItem) -> float:
+    def _keyword_bonus(self, item: CollectedItem) -> float:
         text = f"{item.title} {item.summary}".lower()
         bonus = 0.0
-        for keyword, score in KEYWORD_BONUS.items():
+        for keyword, score in self._keyword_bonus_map.items():
             if keyword in text:
                 bonus += score
         return min(15, bonus)

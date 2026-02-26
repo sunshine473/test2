@@ -58,13 +58,26 @@ def find_existing_article(topic: str) -> Path | None:
 def main():
     parser = argparse.ArgumentParser(description="内容生成器")
     parser.add_argument("topic", help="选题标题")
-    parser.add_argument("--sources", help="素材 URL，逗号分隔", default=None)
+    parser.add_argument("--sources", help="素材来源：逗号分隔的 URL 或文本文件路径（.txt）", default=None)
     parser.add_argument("--no-cards", action="store_true", help="仅生成文章")
     parser.add_argument("--cards-only", action="store_true", help="仅生成卡片")
     args = parser.parse_args()
 
     topic = args.topic
-    sources = args.sources.split(",") if args.sources else None
+    # 解析 sources：支持文件路径（.txt）或逗号分隔的 URL/文本
+    sources = None
+    if args.sources:
+        source_path = Path(args.sources)
+        if source_path.suffix == ".txt" and source_path.exists():
+            sources = [
+                line.strip()
+                for line in source_path.read_text(encoding="utf-8").splitlines()
+                if line.strip()
+            ]
+            print(f"✓ 从文件加载 {len(sources)} 条素材: {source_path}")
+        else:
+            sources = args.sources.split(",")
+
     date_str = datetime.now().strftime("%Y-%m-%d")
     slug = f"{date_str}-{_make_slug(topic)}"
 
