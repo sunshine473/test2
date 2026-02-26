@@ -12,7 +12,7 @@ from bot.tools import execute_tool
 
 CLAUDE_API_KEY = os.getenv("CLAUDE_API_KEY", "")
 CLAUDE_BASE_URL = os.getenv("CLAUDE_BASE_URL", "")
-CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "") or "claude-sonnet-4-20250514"
+CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "") or "claude-sonnet-4-6-20250514"
 MAX_TOOL_ROUNDS = 10
 
 SYSTEM_PROMPT = """你是一个内容工厂助手 Bot，帮助用户管理从素材采集到内容发布的全流程。
