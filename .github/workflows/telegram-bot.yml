@@ -8,7 +8,7 @@ on:
 jobs:
   bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     concurrency:
       group: telegram-bot
       cancel-in-progress: true
@@ -19,6 +19,8 @@ jobs:
       CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
       CLAUDE_BASE_URL: ${{ secrets.CLAUDE_BASE_URL }}
       CLAUDE_MODEL: ${{ secrets.CLAUDE_MODEL }}
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
       NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
       NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
       TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
