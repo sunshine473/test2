@@ -1,6 +1,7 @@
 import os
 import re
 import markdown
+import yaml
 from bs4 import BeautifulSoup
 
 class MarkdownProcessor:
@@ -18,10 +19,12 @@ class MarkdownProcessor:
             if len(parts) >= 3:
                 yaml_content = parts[1]
                 content = parts[2]
-                for line in yaml_content.strip().split('\n'):
-                    if ':' in line:
-                        key, value = line.split(':', 1)
-                        frontmatter[key.strip()] = value.strip()
+                try:
+                    parsed = yaml.safe_load(yaml_content) or {}
+                    if isinstance(parsed, dict):
+                        frontmatter = parsed
+                except Exception:
+                    frontmatter = {}
 
         # Default values if missing
         title = frontmatter.get('title', os.path.basename(file_path).replace('.md', ''))

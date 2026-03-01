@@ -59,8 +59,9 @@ def main():
     parser = argparse.ArgumentParser(description="内容生成器")
     parser.add_argument("topic", help="选题标题")
     parser.add_argument("--sources", help="素材来源：逗号分隔的 URL 或文本文件路径（.txt）", default=None)
-    parser.add_argument("--no-cards", action="store_true", help="仅生成文章")
-    parser.add_argument("--cards-only", action="store_true", help="仅生成卡片")
+    mode_group = parser.add_mutually_exclusive_group()
+    mode_group.add_argument("--no-cards", action="store_true", help="仅生成文章")
+    mode_group.add_argument("--cards-only", action="store_true", help="仅生成卡片")
     args = parser.parse_args()
 
     topic = args.topic

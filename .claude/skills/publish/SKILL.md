@@ -63,7 +63,16 @@ python src/publisher/main.py $ARGUMENTS
 | xiaohongshu | ❌ 失败 | Cookie 过期，需重新登录 |
 
 ## 🔧 失败排查
-- xiaohongshu: 请运行 `python src/publisher/platforms/xiaohongshu.py --login` 重新获取 Cookie
+
+**浏览器平台（知乎/小红书/懂车帝）Cookie 过期**：
+- 删除对应的状态文件后重新运行，浏览器会自动打开引导登录
+- 小红书: `rm .browser_state/xiaohongshu_state.json` 或手动删除该文件
+- 知乎: `rm .browser_state/zhihu_state.json`
+- 懂车帝: `rm .browser_state/dongchedi_state.json`
+
+**微信公众号认证失败**：
+- 检查 `.env` 中的 `WECHAT_APP_ID` 和 `WECHAT_APP_SECRET` 是否正确
+- 确认公众号已开通开发者权限
 ```
 
 失败平台给出具体排查建议，成功平台提供草稿箱链接（如有）。

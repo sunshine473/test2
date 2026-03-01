@@ -3,7 +3,6 @@
 import os
 import re
 import time
-import json
 
 import requests
 import markdown
@@ -11,6 +10,8 @@ import markdown
 from publisher.base import BasePublisher
 from publisher.models import Article, PublishResult, PublishStatus
 from publisher.registry import register
+
+HTTP_TIMEOUT = 20
 
 
 @register("wechat")
@@ -72,7 +73,9 @@ class WeChatPublisher(BasePublisher):
             "https://api.weixin.qq.com/cgi-bin/token"
             f"?grant_type=client_credential&appid={app_id}&secret={app_secret}"
         )
-        data = requests.get(url).json()
+        resp = requests.get(url, timeout=HTTP_TIMEOUT)
+        resp.raise_for_status()
+        data = resp.json()
         if "access_token" not in data:
             raise RuntimeError(f"获取 access_token 失败: {data}")
 
@@ -109,7 +112,9 @@ class WeChatPublisher(BasePublisher):
         """上传内容图片，返回 URL"""
         url = f"https://api.weixin.qq.com/cgi-bin/media/uploadimg?access_token={token}"
         with open(file_path, "rb") as f:
-            data = requests.post(url, files={"media": f}).json()
+            resp = requests.post(url, files={"media": f}, timeout=HTTP_TIMEOUT)
+            resp.raise_for_status()
+            data = resp.json()
         if "url" not in data:
             raise RuntimeError(f"上传内容图片失败: {data}")
         return data["url"]
@@ -118,7 +123,9 @@ class WeChatPublisher(BasePublisher):
         """上传封面图片，返回 media_id"""
         url = f"https://api.weixin.qq.com/cgi-bin/material/add_material?access_token={token}&type=image"
         with open(file_path, "rb") as f:
-            data = requests.post(url, files={"media": f}).json()
+            resp = requests.post(url, files={"media": f}, timeout=HTTP_TIMEOUT)
+            resp.raise_for_status()
+            data = resp.json()
         if "media_id" not in data:
             raise RuntimeError(f"上传封面图片失败: {data}")
         return data["media_id"]
@@ -131,8 +138,10 @@ class WeChatPublisher(BasePublisher):
         payload = {"articles": [article_dict]}
         resp = requests.post(
             url,
-            data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+            json=payload,
+            timeout=HTTP_TIMEOUT,
         )
+        resp.raise_for_status()
         data = resp.json()
         if "media_id" not in data:
             raise RuntimeError(f"发布草稿失败: {data}")

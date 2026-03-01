@@ -20,7 +20,7 @@ sys.path.insert(0, str(PROJECT_ROOT / "src"))
 from dotenv import load_dotenv
 load_dotenv()
 
-from collector.main import load_config, collect_all, ensure_utf8
+from collector.main import load_config, collect_all, ensure_utf8, parse_sources_arg
 from collector.dedup import Deduplicator
 
 POOL_DIR = PROJECT_ROOT / "content" / "pool"
@@ -34,8 +34,10 @@ def search(sources: list[str], output_path: str | None = None) -> dict:
     print(f"=== 素材搜索开始 ({datetime.now().strftime('%Y-%m-%d %H:%M')}) ===")
     print(f"采集源: {', '.join(sources)}\n")
 
-    raw_items = collect_all(config, sources)
-    print(f"\n=== 原始采集 {len(raw_items)} 条，开始去重聚类 ===")
+    raw_items, stats = collect_all(config, sources)
+    print(f"\n=== 原始采集 {len(raw_items)} 条 ===")
+    print(f"分源统计: {' | '.join(f'{k}: {v} 条' for k, v in stats.items())}")
+    print(f"\n开始去重聚类...")
 
     deduplicator = Deduplicator()
     dedup_items, clusters = deduplicator.process(raw_items)
@@ -49,6 +51,7 @@ def search(sources: list[str], output_path: str | None = None) -> dict:
         "date": datetime.now().strftime("%Y-%m-%d"),
         "stage": "search",
         "raw_total": len(raw_items),
+        "source_stats": stats,
         "dedup_total": len(dedup_items),
         "cluster_summary": cluster_summary,
         "items": [item.to_dict() for item in dedup_items],
@@ -93,7 +96,11 @@ def main():
     parser.add_argument("--output", default=None, help="素材池 JSON 输出路径")
     args = parser.parse_args()
 
-    source_list = [s.strip() for s in args.sources.split(",")]
+    try:
+        source_list = parse_sources_arg(args.sources)
+    except ValueError as e:
+        print(f"错误: {e}", file=sys.stderr)
+        sys.exit(1)
     pool = search(source_list, args.output)
     print(json.dumps(pool, indent=2, ensure_ascii=False))
 

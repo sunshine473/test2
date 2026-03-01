@@ -6,6 +6,8 @@
 
 半自动化内容工厂 — 从素材采集、选题推荐、内容生成到多平台分发的全流程系统。
 
+**当前状态**: M1/M2/M3 已完成 ✅ 全链路可用
+
 ## 协作模式
 
 本工作区由 Claude Code 和 Codex 协同开发：
@@ -17,30 +19,31 @@
 
 ```
 ├── src/
-│   ├── collector/              # 素材采集（已完成）
+│   ├── collector/              # 素材采集（✅ 已完成）
 │   │   ├── sources/            # 各信息源适配器
 │   │   ├── directions.py       # 方向配置（AI科技/汽车）
 │   │   ├── search.py           # 搜索阶段入口
 │   │   ├── planner.py          # 策划阶段入口
 │   │   ├── dedup.py            # 去重 + 聚类
 │   │   └── scorer.py           # 打分排序（支持按方向）
-│   ├── generator/              # 内容生成（已完成）
-│   ├── publisher/              # 统一发布框架（已搭建）
+│   ├── generator/              # 内容生成（✅ 已完成）
+│   ├── publisher/              # 统一发布框架（✅ 已完成，4 平台可用）
 │   │   ├── platforms/          # 各平台适配器
 │   │   ├── base.py             # 发布适配器基类
 │   │   ├── registry.py         # 注册表
 │   │   └── main.py             # CLI 入口
-│   ├── pipeline/               # 流水线调度（建设中）
+│   ├── pipeline/               # 流水线调度（✅ 已完成）
+│   ├── bot/                    # Telegram Bot 双向交互（✅ 已完成）
 │   ├── config/                 # 统一配置
 │   ├── inspiration_bot/        # 旧版灵感采集（待替换）
 │   └── wechat_publisher/       # 微信发布（旧版，已迁移到 publisher/）
-├── skills/
-│   ├── collect/                # /collect 素材采集（建设中）
-│   ├── write/                  # /write 内容生成（建设中）
-│   ├── publish/                # /publish 一键发布（建设中）
+├── .claude/skills/
+│   ├── collect/                # /collect 素材采集（✅ 已完成）
+│   ├── write/                  # /write 内容生成（✅ 已完成）
+│   ├── publish/                # /publish 一键发布（✅ 已完成）
 │   ├── get-inspiration/        # 旧版（待替换）
 │   └── publish-to-wechat/      # 旧版（待替换）
-├── content/                    # 内容仓库（建设中）
+├── content/                    # 内容仓库
 │   ├── pool/                   # 素材池 JSON（搜索阶段输出）
 │   ├── drafts/                 # 草稿
 │   ├── ready/                  # 待发布
@@ -78,6 +81,10 @@
 - **仅生成文章**: `python src/generator/main.py "选题标题" --no-cards`
 - **统一发布**: `python src/publisher/main.py <markdown文件路径>`（发布到所有 enabled 平台）
 - **指定平台发布**: `python src/publisher/main.py <markdown文件路径> --platforms wechat,bilibili`
+- **流水线（默认到 select 暂停）**: `python src/pipeline/main.py`
+- **流水线全自动**: `python src/pipeline/main.py --auto`
+- **恢复流水线**: `python src/pipeline/main.py --resume latest --topic "选题标题"` / `python src/pipeline/main.py --resume latest --approve`
+- **流水线状态**: `python src/pipeline/main.py --list` / `python src/pipeline/main.py --status --json`
 - **微信发布（旧）**: `python src/wechat_publisher/main.py <markdown文件路径>`
 - **查找待办**: `rg "TODO|FIXME|待办" .`
 

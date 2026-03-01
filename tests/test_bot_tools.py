@@ -117,3 +117,31 @@ class TestExecuteTool:
         result = execute_tool("check_drafts", {})
         data = json.loads(result)
         assert data["status"] == "ok"
+
+
+class TestToolPublish:
+    def test_missing_file_returns_error(self):
+        """缺失文件应返回错误，而不是退出进程。"""
+        result = execute_tool("publish", {"filepath": "does-not-exist.md"})
+        data = json.loads(result)
+        assert "error" in data
+        assert "does-not-exist.md" in data["error"]
+
+    def test_all_failed_status_failed(self, monkeypatch, tmp_path):
+        """所有平台失败时，聚合状态应为 failed。"""
+        md = tmp_path / "article.md"
+        md.write_text("---\ntitle: t\n---\nbody", encoding="utf-8")
+
+        monkeypatch.setattr("publisher.main.load_config", lambda: {"wechat": {"enabled": True}})
+        monkeypatch.setattr("publisher.main.parse_article", lambda _: object())
+
+        class BadPublisher:
+            def publish(self, article, config):
+                raise RuntimeError("boom")
+
+        monkeypatch.setattr("publisher.registry.get_publisher", lambda _: BadPublisher())
+
+        result = execute_tool("publish", {"filepath": str(md)})
+        data = json.loads(result)
+        assert data["status"] == "failed"
+        assert data["results"][0]["status"] == "failed"

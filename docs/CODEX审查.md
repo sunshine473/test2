@@ -131,3 +131,109 @@
 - 语法检查：`python -m compileall -q src/bot`（通过）
 - 静态扫描：已检查 `TODO/except/请求调用/工具边界`
 - 未做：真实 Telegram/Claude API 联调（依赖线上凭据与网络）
+
+---
+
+## 第三轮复审（同步审查 Claude 代码质量）
+
+审查时间：2026-02-27  
+审查范围：`src/bot/`、`src/publisher/`、`src/generator/`、对应 `tests/`
+
+### 新增主要问题（按严重级别）
+
+### P0
+
+1. `tool_publish` 在文件不存在路径会触发 `sys.exit`，导致 Bot 进程直接退出  
+   - 文件：
+     - `src/publisher/main.py`
+     - `src/bot/tools.py`
+   - 问题：`parse_article()` 在文件不存在时执行 `sys.exit(1)`；`execute_tool()` 仅捕获 `Exception`，无法拦截 `SystemExit`。  
+   - 影响：Telegram Bot 执行 `publish` 工具时可能被直接中断，而不是返回可恢复错误。
+
+2. 发布调度对平台运行时异常未兜底，单平台异常可中断整次发布  
+   - 文件：`src/publisher/main.py`
+   - 问题：发布循环中仅捕获 `ValueError`；`pub.publish()` 抛 `RuntimeError` 等异常会直接冒泡。  
+   - 影响：后续平台不会继续执行，批量发布可靠性不足。
+
+### P1
+
+3. `tool_publish` 顶层状态恒为 `"ok"`，与实际发布结果可能不一致  
+   - 文件：`src/bot/tools.py`
+   - 问题：即使所有平台失败，返回结构仍为 `{"status":"ok","results":[...failed...]}`。  
+   - 影响：上层 Agent 与调用方会误判任务为成功，影响自动化决策。
+
+### 测试缺口
+
+4. 缺少上述失败路径的自动化用例  
+   - 文件：
+     - `tests/test_bot_tools.py`
+     - `tests/test_publisher_main.py`
+   - 问题：当前未覆盖 `publish` 文件不存在、平台异常冒泡、聚合状态判定。  
+   - 影响：回归时容易重新引入同类问题。
+
+### 复审验证记录
+
+- 静态审查：已逐文件检查 `bot/publisher/generator` 主链路异常处理与状态契约。
+- 复现1：`PYTHONPATH=src` 调用 `execute_tool('publish', {'filepath':'does-not-exist.md'})`，进程直接退出（确认 `SystemExit` 路径）。
+- 复现2：模拟 `pub.publish()` 抛 `RuntimeError("boom")`，`publisher.main` 主流程直接崩溃，未继续后续平台。
+- 未做：真实多平台发布联调（依赖浏览器登录态与外部凭据）。
+
+### 修复优先级建议
+
+1. 去除库函数中的 `sys.exit`，改为抛业务异常并在 CLI 层统一退出码处理。
+2. 在发布循环捕获通用异常并落地 `failed` 结果，确保“单平台失败不拖垮整批次”。
+3. 让 `tool_publish` 聚合状态与 `results` 一致（全部失败应返回失败态）。
+4. 补充失败路径单测，纳入 CI 最小回归集。
+
+---
+
+## Third Review (Claude Code Quality Sync)
+
+Review date: 2026-02-27  
+Scope: `src/bot/`, `src/publisher/`, `src/generator/`, and related `tests/`
+
+### New Findings (by severity)
+
+### P0
+
+1. `tool_publish` can terminate the whole Bot process on missing file  
+   - Files:
+     - `src/publisher/main.py`
+     - `src/bot/tools.py`
+   - Issue: `parse_article()` calls `sys.exit(1)` when the file is missing, while `execute_tool()` only catches `Exception`, not `SystemExit`.  
+   - Impact: Telegram Bot may exit unexpectedly instead of returning a recoverable tool error.
+
+2. Publisher dispatcher does not guard runtime errors from platform publishers  
+   - File: `src/publisher/main.py`
+   - Issue: The loop only catches `ValueError`; runtime exceptions (for example `RuntimeError`) bubble up and abort the process.  
+   - Impact: Remaining platforms are skipped, reducing batch publish reliability.
+
+### P1
+
+3. `tool_publish` top-level status is always `"ok"` even when all platforms fail  
+   - File: `src/bot/tools.py`
+   - Issue: Returned payload remains `{"status":"ok","results":[...failed...]}` on total failure.  
+   - Impact: Agent/caller may falsely classify the run as successful.
+
+### Testing Gaps
+
+4. Missing automated tests for these failure paths  
+   - Files:
+     - `tests/test_bot_tools.py`
+     - `tests/test_publisher_main.py`
+   - Issue: No coverage for missing file in publish, exception bubbling in dispatcher, and aggregated status consistency.  
+   - Impact: Similar regressions are likely to recur.
+
+### Verification Notes
+
+- Static audit completed for core `bot/publisher/generator` control flows.
+- Repro 1: `PYTHONPATH=src` with `execute_tool('publish', {'filepath':'does-not-exist.md'})` exits the process (confirmed `SystemExit` path).
+- Repro 2: Mocked `pub.publish()` raising `RuntimeError("boom")` crashes `publisher.main` and stops subsequent platforms.
+- Not executed: Full multi-platform live integration due to external credentials/login dependencies.
+
+### Recommended Fix Priority
+
+1. Remove `sys.exit` from reusable library paths; raise domain exceptions and handle exit codes only at CLI boundary.
+2. Catch generic exceptions in publish loops and emit per-platform `failed` results so one failure does not abort the batch.
+3. Align `tool_publish` aggregate status with result details.
+4. Add failure-path unit tests and include them in CI smoke coverage.

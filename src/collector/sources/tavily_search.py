@@ -30,12 +30,15 @@ class TavilySearchSource(BaseSource):
                 depth = q.get("search_depth", "basic")
                 max_results = q.get("max_results", 5)
 
+                days = q.get("days", 3)
+
                 print(f"  [Tavily] {name}...")
                 try:
                     resp = self.client.search(
                         query=query,
                         search_depth=depth,
                         max_results=max_results,
+                        days=days,
                     )
                     for r in resp.get("results", []):
                         content = r.get("content", "")

@@ -65,8 +65,7 @@ def parse_article(filepath: str) -> Article:
     """从 Markdown 文件解析 Article 对象，自动查找配套卡片图"""
     path = Path(filepath)
     if not path.exists():
-        print(f"文件不存在: {filepath}")
-        sys.exit(1)
+        raise FileNotFoundError(f"文件不存在: {filepath}")
 
     raw = path.read_text(encoding="utf-8")
 
@@ -80,15 +79,20 @@ def parse_article(filepath: str) -> Article:
     if raw.startswith("---"):
         parts = raw.split("---", 2)
         if len(parts) >= 3:
-            for line in parts[1].strip().split("\n"):
-                if ":" in line:
-                    k, v = line.split(":", 1)
-                    k, v = k.strip(), v.strip()
-                    if k == "title": title = v
-                    elif k == "author": author = v
-                    elif k == "digest": digest = v
-                    elif k == "cover_image": cover_image = v
-                    elif k == "tags": tags = [t.strip() for t in v.split(",") if t.strip()]
+            try:
+                frontmatter = yaml.safe_load(parts[1]) or {}
+            except Exception:
+                frontmatter = {}
+            if isinstance(frontmatter, dict):
+                title = str(frontmatter.get("title", title) or title)
+                author = str(frontmatter.get("author", author) or author)
+                digest = str(frontmatter.get("digest", digest) or digest)
+                cover_image = str(frontmatter.get("cover_image", cover_image) or cover_image)
+                raw_tags = frontmatter.get("tags", tags)
+                if isinstance(raw_tags, list):
+                    tags = [str(t).strip() for t in raw_tags if str(t).strip()]
+                elif isinstance(raw_tags, str):
+                    tags = [t.strip() for t in raw_tags.split(",") if t.strip()]
             content = parts[2]
 
     # 自动查找同名 -cards.html 提取卡片图
@@ -116,7 +120,11 @@ def main():
     args = parser.parse_args()
 
     config = load_config()
-    article = parse_article(args.filepath)
+    try:
+        article = parse_article(args.filepath)
+    except FileNotFoundError as e:
+        print(str(e))
+        sys.exit(1)
 
     if args.platforms:
         targets = [p.strip() for p in args.platforms.split(",")]
@@ -137,6 +145,8 @@ def main():
             result = pub.publish(article, config.get(name, {}))
             print(f"[{name}] {result.status.value}: {result.message}")
         except ValueError as e:
+            print(f"[{name}] 错误: {e}")
+        except Exception as e:
             print(f"[{name}] 错误: {e}")
 
     print("\n发布完成。")

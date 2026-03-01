@@ -69,7 +69,17 @@ def tool_collect(params: dict) -> str:
         summary["directions"][d_name] = {
             "label": d_data.get("label", d_name),
             "filtered_count": d_data.get("filtered_count", 0),
-            "top5": [{"title": it.get("title", "")[:80], "url": it.get("url", "")} for it in top5],
+            "top5": [
+                {
+                    "title": it.get("title", "")[:80],
+                    "url": it.get("url", ""),
+                    "source": it.get("source_name", ""),
+                    "score": (it.get("raw_data") or {}).get("score", 0),
+                    "summary": (it.get("summary") or "")[:100],
+                    "published_at": it.get("published_at", ""),
+                }
+                for it in top5
+            ],
         }
     return _truncate(json.dumps(summary, ensure_ascii=False, indent=2))
 
@@ -193,7 +203,10 @@ def tool_publish(params: dict) -> str:
     import publisher.platforms.dongchedi  # noqa: F401
 
     config = load_config()
-    article = parse_article(filepath)
+    try:
+        article = parse_article(filepath)
+    except (FileNotFoundError, OSError) as e:
+        return json.dumps({"error": str(e)}, ensure_ascii=False)
 
     platforms_str = params.get("platforms", "")
     if platforms_str:
@@ -202,15 +215,29 @@ def tool_publish(params: dict) -> str:
         targets = [n for n, c in config.items() if isinstance(c, dict) and c.get("enabled")]
 
     results = []
+    has_success = False
+    has_failed = False
     for name in targets:
         try:
             pub = get_publisher(name)
             r = pub.publish(article, config.get(name, {}))
             results.append({"platform": name, "status": r.status.value, "message": r.message})
+            if r.status.value == "success":
+                has_success = True
+            elif r.status.value == "failed":
+                has_failed = True
         except Exception as e:
             results.append({"platform": name, "status": "failed", "message": str(e)})
+            has_failed = True
 
-    return _truncate(json.dumps({"status": "ok", "results": results}, ensure_ascii=False, indent=2))
+    if has_failed and not has_success:
+        overall_status = "failed"
+    elif has_failed:
+        overall_status = "partial"
+    else:
+        overall_status = "ok"
+
+    return _truncate(json.dumps({"status": overall_status, "results": results}, ensure_ascii=False, indent=2))
 
 
 def tool_check_status(params: dict) -> str:

@@ -65,7 +65,7 @@ def main():
     offset = load_offset()
     print(f"当前 offset: {offset}")
 
-    updates = get_updates(offset=offset, timeout=30)
+    updates = get_updates(offset=offset, timeout=20)
     print(f"收到 {len(updates)} 条更新")
 
     if not updates:
@@ -76,30 +76,42 @@ def main():
 
     for update in updates:
         update_id = update["update_id"]
-        new_offset = update_id + 1  # 无论是否处理，都推进 offset
 
         message = update.get("message", {})
         chat_id = message.get("chat", {}).get("id")
         text = message.get("text", "")
 
         if not text or not chat_id:
+            new_offset = update_id + 1
+            save_offset(new_offset)
             continue
 
         print(f"\n[消息] chat_id={chat_id}: {text[:100]}")
 
         if not is_authorized(chat_id):
             print(f"  未授权的 chat_id: {chat_id}，跳过")
+            new_offset = update_id + 1
+            save_offset(new_offset)
             continue
 
         # Claude Agent 处理
         print("  处理中...")
-        reply = handle_message(text)
-        print(f"  回复: {reply[:200]}")
+        try:
+            reply = handle_message(text)
+            print(f"  回复: {reply[:200]}")
+            sent = send_message(chat_id, reply)
+        except Exception as e:
+            print(f"  处理失败，停止推进 offset: {e}")
+            break
 
-        send_message(chat_id, reply)
+        if not sent:
+            print("  回复发送失败，停止推进 offset")
+            break
+
+        new_offset = update_id + 1
+        save_offset(new_offset)
 
     if new_offset is not None:
-        save_offset(new_offset)
         print(f"\noffset 已保存: {new_offset}")
     print("=== Bot 运行结束 ===")
 

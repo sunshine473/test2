@@ -1,7 +1,9 @@
 import requests
 import json
 import time
-import os
+
+
+HTTP_TIMEOUT = 20
 
 class WeChatClient:
     def __init__(self, app_id, app_secret):
@@ -16,7 +18,8 @@ class WeChatClient:
 
         url = f"https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={self.app_id}&secret={self.app_secret}"
         try:
-            response = requests.get(url)
+            response = requests.get(url, timeout=HTTP_TIMEOUT)
+            response.raise_for_status()
             data = response.json()
 
             if "access_token" in data:
@@ -25,6 +28,8 @@ class WeChatClient:
                 return self.access_token
             else:
                 raise Exception(f"Failed to get access token: {data}")
+        except requests.RequestException as e:
+            raise Exception(f"Network error getting access token: {str(e)}")
         except Exception as e:
             raise Exception(f"Network error getting access token: {str(e)}")
 
@@ -36,7 +41,8 @@ class WeChatClient:
         try:
             with open(file_path, 'rb') as f:
                 files = {'media': f}
-                response = requests.post(url, files=files)
+                response = requests.post(url, files=files, timeout=HTTP_TIMEOUT)
+                response.raise_for_status()
 
             data = response.json()
             if "url" in data:
@@ -45,6 +51,8 @@ class WeChatClient:
                 raise Exception(f"Failed to upload content image: {data}")
         except FileNotFoundError:
             raise Exception(f"Image file not found: {file_path}")
+        except requests.RequestException as e:
+            raise Exception(f"Network error uploading image: {str(e)}")
 
     def upload_cover(self, file_path):
         """Uploads an image to be used as cover (returns media_id)"""
@@ -55,7 +63,8 @@ class WeChatClient:
         try:
             with open(file_path, 'rb') as f:
                 files = {'media': f}
-                response = requests.post(url, files=files)
+                response = requests.post(url, files=files, timeout=HTTP_TIMEOUT)
+                response.raise_for_status()
 
             data = response.json()
             if "media_id" in data:
@@ -64,6 +73,8 @@ class WeChatClient:
                 raise Exception(f"Failed to upload cover image: {data}")
         except FileNotFoundError:
             raise Exception(f"Cover image file not found: {file_path}")
+        except requests.RequestException as e:
+            raise Exception(f"Network error uploading cover: {str(e)}")
 
     def post_draft(self, articles):
         """
@@ -78,12 +89,15 @@ class WeChatClient:
 
         # Ensure UTF-8 encoding for Chinese characters
         try:
-            response = requests.post(url, data=json.dumps(payload, ensure_ascii=False).encode('utf-8'))
+            response = requests.post(url, json=payload, timeout=HTTP_TIMEOUT)
+            response.raise_for_status()
             data = response.json()
 
             if "media_id" in data:
                 return data["media_id"]
             else:
                 raise Exception(f"Failed to post draft: {data}")
+        except requests.RequestException as e:
+            raise Exception(f"Network error posting draft: {str(e)}")
         except Exception as e:
             raise Exception(f"Error posting draft: {str(e)}")

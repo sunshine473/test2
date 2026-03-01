@@ -34,6 +34,8 @@ from collector.sources.hot_search import HotSearchSource
 from collector.sources.rss import RSSSource
 from collector.sources.youtube_api import YouTubeAPISource
 
+ALLOWED_SOURCES = {"rss", "hn", "github", "hot", "youtube_api", "tavily", "twitter"}
+
 
 def load_config() -> dict:
     config_path = PROJECT_ROOT / "src" / "config" / "sources.yaml"
@@ -51,63 +53,81 @@ def ensure_utf8():
             sys.stdout = codecs.getwriter("utf-8")(sys.stdout.buffer)
 
 
-def collect_all(config: dict, sources: List[str]) -> List[CollectedItem]:
+def collect_all(config: dict, sources: List[str]) -> tuple[List[CollectedItem], dict]:
+    """采集所有信息源，返回素材列表和分源统计"""
     items = []
+    stats = {}
+
+    def safe_collect(source_key: str, label: str, fn):
+        try:
+            collected = fn()
+            stats[source_key] = len(collected)
+            items.extend(collected)
+        except Exception as e:
+            print(f"  跳过 {label}: {e}")
+            stats[source_key] = 0
 
     # RSS + YouTube
     if "rss" in sources:
-        print("[1/6] 采集 RSS + YouTube...")
-        rss = RSSSource()
-        items.extend(rss.collect(config.get("rss", {})))
+        print("[1/7] 采集 RSS + YouTube...")
+        safe_collect("rss", "RSS", lambda: RSSSource().collect(config.get("rss", {})))
 
     # Hacker News
     if "hn" in sources:
-        print("[2/6] 采集 Hacker News...")
-        hn = HackerNewsSource()
-        items.extend(hn.collect(config.get("hacker_news", {})))
+        print("[2/7] 采集 Hacker News...")
+        safe_collect("hn", "Hacker News", lambda: HackerNewsSource().collect(config.get("hacker_news", {})))
 
     # GitHub Trending
     if "github" in sources:
-        print("[3/6] 采集 GitHub Trending...")
-        gh = GitHubTrendingSource()
-        items.extend(gh.collect(config.get("scraper", [])))
+        print("[3/7] 采集 GitHub Trending...")
+        safe_collect("github", "GitHub Trending", lambda: GitHubTrendingSource().collect(config.get("scraper", [])))
 
     # 微博/百度热搜
     if "hot" in sources:
         print("[4/7] 采集 微博/百度热搜...")
-        hot = HotSearchSource()
-        items.extend(hot.collect(config.get("hot_search", {})))
+        safe_collect("hot", "微博/百度热搜", lambda: HotSearchSource().collect(config.get("hot_search", {})))
 
     # YouTube Data API
     if "youtube_api" in sources:
         print("[5/7] 采集 YouTube API...")
-        try:
-            yt = YouTubeAPISource()
-            items.extend(yt.collect(config.get("youtube_api", {})))
-        except ValueError as e:
-            print(f"  跳过 YouTube API: {e}")
+        safe_collect("youtube_api", "YouTube API", lambda: YouTubeAPISource().collect(config.get("youtube_api", {})))
 
     # Tavily 搜索
     if "tavily" in sources:
         print("[6/7] 采集 Tavily 搜索...")
-        try:
+        def collect_tavily():
             from collector.sources.tavily_search import TavilySearchSource
-            tavily = TavilySearchSource()
-            items.extend(tavily.collect(config.get("tavily", {})))
-        except ValueError as e:
-            print(f"  跳过 Tavily: {e}")
+            return TavilySearchSource().collect(config.get("tavily", {}))
+        safe_collect("tavily", "Tavily", collect_tavily)
 
     # X/Twitter
     if "twitter" in sources:
         print("[7/7] 采集 X/Twitter...")
-        try:
+        def collect_twitter():
             from collector.sources.twitter import TwitterSource
-            twitter = TwitterSource()
-            items.extend(twitter.collect(config.get("twitter", {})))
-        except ValueError as e:
-            print(f"  跳过 Twitter: {e}")
+            return TwitterSource().collect(config.get("twitter", {}))
+        safe_collect("twitter", "Twitter", collect_twitter)
 
-    return items
+    return items, stats
+
+
+def parse_sources_arg(raw_sources: str) -> List[str]:
+    """解析并校验 sources 参数，返回去重后的源列表。"""
+    source_list: List[str] = []
+    seen = set()
+    for source in (s.strip() for s in (raw_sources or "").split(",")):
+        if not source:
+            continue
+        if source not in ALLOWED_SOURCES:
+            allowed = ",".join(sorted(ALLOWED_SOURCES))
+            raise ValueError(f"未知 source: {source}（可用: {allowed}）")
+        if source not in seen:
+            seen.add(source)
+            source_list.append(source)
+
+    if not source_list:
+        raise ValueError("sources 不能为空")
+    return source_list
 
 
 def main():
@@ -138,7 +158,10 @@ def main():
 
     # 搜索阶段
     from collector.search import search
-    source_list = [s.strip() for s in args.sources.split(",")]
+    try:
+        source_list = parse_sources_arg(args.sources)
+    except ValueError as e:
+        raise SystemExit(f"错误: {e}")
     slow_sources = {"tavily", "twitter"}
     if any(source in slow_sources for source in source_list):
         print("提示: Tavily/Twitter 属于慢速采集源，首次运行建议先用 --sources rss,github")

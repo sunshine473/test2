@@ -1,8 +1,12 @@
 """test_publisher_main.py — publisher/main.py 单元测试"""
 
 import base64
+from types import SimpleNamespace
 from pathlib import Path
 
+import pytest
+
+import publisher.main as publisher_main
 from publisher.main import parse_article, extract_images_from_cards_html
 
 
@@ -26,6 +30,32 @@ class TestParseArticle:
         assert article.author == ""
         assert article.tags == []
         assert "Just content" in article.content
+
+    def test_missing_file_raises(self, tmp_path):
+        """文件不存在时抛 FileNotFoundError。"""
+        missing = tmp_path / "missing.md"
+        with pytest.raises(FileNotFoundError, match="missing.md"):
+            parse_article(str(missing))
+
+    def test_yaml_frontmatter_with_list_tags(self, tmp_path):
+        """frontmatter 支持 YAML 列表 tags 和包含冒号的字符串。"""
+        md = tmp_path / "yaml-frontmatter.md"
+        md.write_text(
+            "---\n"
+            "title: \"含冒号: 标题\"\n"
+            "author: 作者A\n"
+            "digest: \"摘要: 支持冒号\"\n"
+            "tags:\n"
+            "  - AI\n"
+            "  - 测试\n"
+            "---\n"
+            "# 内容\n",
+            encoding="utf-8",
+        )
+        article = parse_article(str(md))
+        assert article.title == "含冒号: 标题"
+        assert article.digest == "摘要: 支持冒号"
+        assert article.tags == ["AI", "测试"]
 
 
 class TestExtractImages:
@@ -59,3 +89,38 @@ class TestExtractImages:
         img_path = Path(result[0])
         assert img_path.exists()
         assert img_path.read_bytes()[:4] == b"\x89PNG"
+
+
+class TestMainFlow:
+    def test_continue_on_platform_error(self, monkeypatch, tmp_path, capsys):
+        """单平台异常不应中断后续平台发布。"""
+        md = tmp_path / "article.md"
+        md.write_text("---\ntitle: 测试\n---\n内容", encoding="utf-8")
+
+        monkeypatch.setattr(
+            "publisher.main.argparse.ArgumentParser.parse_args",
+            lambda self: SimpleNamespace(filepath=str(md), platforms=None),
+        )
+        monkeypatch.setattr(
+            "publisher.main.load_config",
+            lambda: {"wechat": {"enabled": True}, "zhihu": {"enabled": True}},
+        )
+
+        class FailPublisher:
+            def publish(self, article, config):
+                raise RuntimeError("boom")
+
+        class OkPublisher:
+            def publish(self, article, config):
+                from publisher.models import PublishResult, PublishStatus
+                return PublishResult(platform="zhihu", status=PublishStatus.SUCCESS, message="ok")
+
+        def fake_get_publisher(name):
+            return FailPublisher() if name == "wechat" else OkPublisher()
+
+        monkeypatch.setattr("publisher.main.get_publisher", fake_get_publisher)
+
+        publisher_main.main()
+        out = capsys.readouterr().out
+        assert "[wechat] 错误: boom" in out
+        assert "[zhihu] success: ok" in out
