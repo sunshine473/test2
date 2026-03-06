@@ -1,0 +1,97 @@
+# Agent Team 配置文件
+
+# 运行模式
+mode: auto  # auto | semi-auto | manual
+
+# 协调者配置
+coordinator:
+  schedule: "0 8 * * *"  # 每天 8:00 (cron 格式)
+  timezone: "Asia/Shanghai"
+  max_retries: 3
+  retry_delay: 300  # 重试延迟（秒）
+
+# 选题策略配置
+selector:
+  strategy: conservative  # conservative | aggressive | diverse
+  min_score: 70  # 最低评分阈值
+  max_age_hours: 24  # 最大时效（小时）
+
+  # 综合评分权重
+  weights:
+    score: 0.4        # 评分权重
+    freshness: 0.3    # 新鲜度权重
+    diversity: 0.2    # 多样性权重
+    preference: 0.1   # 用户偏好权重
+
+  # 保守型策略：每天 1 篇
+  conservative:
+    daily_limit: 1
+    direction: tech_ai  # 优先方向（tech_ai | auto | null）
+
+  # 激进型策略：每天 3 篇
+  aggressive:
+    daily_limit: 3
+    direction: null  # 不限方向
+
+  # 多样化策略：每天 2 篇（跨方向）
+  diverse:
+    daily_limit: 2
+    direction_balance: true  # 平衡方向
+
+# 审核配置
+reviewer:
+  enabled: true  # 是否启用自动审核
+  min_quality_score: 70  # 最低质量分
+  max_rewrite_attempts: 3  # 最大重写次数
+
+  # 检查项
+  checks:
+    structure: true      # 结构完整性
+    length: true         # 字数达标
+    keyword: true        # 关键词覆盖
+    readability: true    # 可读性
+
+  # 质量标准
+  quality_standards:
+    min_length: 2000     # 最小字数
+    max_length: 8000     # 最大字数
+    min_paragraphs: 5    # 最小段落数
+    required_sections:   # 必需章节
+      - "引言"
+      - "正文"
+      - "总结"
+
+# 发布配置
+publisher:
+  auto_publish: true  # 审核通过后自动发布
+  platforms:
+    - wechat
+    - xiaohongshu
+    - zhihu
+    - dongchedi
+
+# 通知配置
+notification:
+  telegram:
+    enabled: true
+    events:
+      - collection_complete   # 采集完成
+      - topic_selected        # 选题完成
+      - article_generated     # 文章生成
+      - review_failed         # 审核失败
+      - publish_complete      # 发布完成
+
+# 采集配置
+collector:
+  sources:  # 默认采集源（空则全部）
+    - rss
+    - hn
+    - github
+    - hot
+    - youtube_api
+  direction: null  # 默认方向（null 则两个方向都跑）
+
+# 写作配置
+writer:
+  no_cards: false  # 是否生成卡片
+  parallel: false  # 是否并行生成多篇
