@@ -104,6 +104,27 @@ cd MultiPost-Extension && pnpm dev
 - YouTube API 配置（启用 `youtube_api` 时）：`YOUTUBE_API_KEY`
 - `.env` 文件配置敏感信息（不要提交到仓库）
 
+## GitHub Actions 自动化
+
+本项目支持 GitHub Actions 定时任务，实现全自动内容生产：
+
+| 工作流 | 执行时间 | 功能 |
+|--------|----------|------|
+| `collect.yml` | 每天 8:00 | 素材采集 + Telegram 通知（Top 10） |
+| `daily-pipeline.yml` | 每天 10:00 | 全自动流水线（采集→生成→发布） |
+| `telegram-bot.yml` | 每 2 分钟 | Telegram Bot 轮询 |
+
+**配置指南**: 详见 [docs/GitHub-Actions配置指南.md](docs/GitHub-Actions配置指南.md)
+
+**快速测试**:
+```bash
+# Linux/Mac
+./test-pipeline.sh
+
+# Windows
+test-pipeline.bat
+```
+
 ## 测试
 
 ```bash
