@@ -4,6 +4,7 @@
     python -m collector.planner --pool content/pool/2026-02-23-pool.json
     python -m collector.planner --pool content/pool/2026-02-23-pool.json --direction tech_ai
     python -m collector.planner --pool content/pool/2026-02-23-pool.json --direction auto
+    python -m collector.planner --pool content/pool/2026-02-23-pool.json --recommend  # AI 推荐选题
 """
 
 import argparse
@@ -103,11 +104,53 @@ def find_latest_pool() -> str | None:
     return str(pools[0]) if pools else None
 
 
+def recommend_topics(ranked_items: list[CollectedItem], direction: Direction, top_n: int = 10) -> str:
+    """用 AI 分析 Top 素材，推荐 3-5 个选题"""
+    try:
+        from generator.gemini_client import generate_text
+    except ImportError:
+        return "⚠ 无法导入 gemini_client，跳过 AI 推荐"
+
+    # 准备素材摘要
+    items_summary = []
+    for i, item in enumerate(ranked_items[:top_n], 1):
+        score = (item.raw_data or {}).get("score", 0)
+        items_summary.append(f"{i}. [{score}分] {item.title}\n   来源: {item.source} | URL: {item.url}\n   摘要: {item.summary[:150]}")
+
+    prompt = f"""你是一位资深选题策划师。以下是 {direction.label} 方向的 Top {top_n} 素材：
+
+{chr(10).join(items_summary)}
+
+请分析这些素材，推荐 3-5 个最值得写的选题。每个选题包含：
+1. **选题标题**（建议的文章标题，吸引人）
+2. **推荐理由**（为什么值得写、时效性如何、话题热度）
+3. **建议角度**（切入点、差异化方向）
+4. **关联素材**（哪几条素材可作为参考，用序号标注）
+
+输出格式：
+### 1. [选题标题]
+- 推荐理由: ...
+- 建议角度: ...
+- 关联素材: #1, #3, #5
+
+### 2. [选题标题]
+...
+"""
+
+    try:
+        print(f"    🤖 AI 分析中...")
+        result = generate_text(prompt, task="summary", temperature=0.7)
+        return result
+    except Exception as e:
+        return f"⚠ AI 推荐失败: {str(e)[:100]}"
+
+
 def main():
     parser = argparse.ArgumentParser(description="选题策划（从素材池筛选+打分）")
     parser.add_argument("--pool", default=None, help="素材池 JSON 路径（默认取最新）")
     parser.add_argument("--direction", choices=["tech_ai", "auto"], default=None,
                         help="指定方向（默认两个方向都跑）")
+    parser.add_argument("--recommend", action="store_true", help="启用 AI 选题推荐")
     args = parser.parse_args()
 
     pool_path = args.pool or find_latest_pool()
@@ -117,6 +160,17 @@ def main():
 
     print(f"素材池: {pool_path}")
     results = plan(pool_path, args.direction)
+
+    # AI 推荐选题
+    if args.recommend:
+        print("\n=== AI 选题推荐 ===")
+        for direction_name, result in results.items():
+            direction = get_direction(direction_name)
+            items = [CollectedItem(**d) for d in result["items"]]
+            print(f"\n## 🎯 {direction.label} 推荐选题\n")
+            recommendation = recommend_topics(items, direction)
+            print(recommendation)
+
     print(json.dumps(results, indent=2, ensure_ascii=False))
 
 

@@ -113,10 +113,58 @@ def parse_article(filepath: str) -> Article:
     )
 
 
+def suggest_platforms(article: Article) -> list[str]:
+    """根据文章内容推荐平台组合"""
+    try:
+        from generator.gemini_client import generate_text
+    except ImportError:
+        return []
+
+    # 提取文章特征
+    content_sample = article.content[:1000]
+    tags_str = ", ".join(article.tags) if article.tags else "无"
+
+    prompt = f"""根据以下文章特征，推荐最适合的发布平台组合。
+
+标题: {article.title}
+标签: {tags_str}
+内容摘要: {content_sample}
+
+可选平台：
+- wechat: 微信公众号（适合所有内容）
+- zhihu: 知乎（适合深度技术文、观点文）
+- xiaohongshu: 小红书（适合轻量资讯、盘点、生活化内容）
+- toutiao: 今日头条（适合热点评论、资讯）
+- dongchedi: 懂车帝（适合汽车/出行相关）
+- bilibili: B站（适合视频内容，目前仅骨架）
+
+请输出推荐的平台列表（逗号分隔）和推荐理由。
+
+输出格式：
+platforms: wechat,zhihu,xiaohongshu
+reason: ...
+"""
+
+    try:
+        result = generate_text(prompt, task="summary", temperature=0.3)
+        # 解析输出
+        platforms_match = re.search(r"platforms:\s*(.+)", result)
+        reason_match = re.search(r"reason:\s*(.+)", result, re.DOTALL)
+
+        if platforms_match:
+            platforms = [p.strip() for p in platforms_match.group(1).split(",")]
+            reason = reason_match.group(1).strip() if reason_match else "AI 推荐"
+            return platforms, reason
+        return [], "解析失败"
+    except Exception as e:
+        return [], f"推荐失败: {str(e)[:100]}"
+
+
 def main():
     parser = argparse.ArgumentParser(description="内容发布器")
     parser.add_argument("filepath", help="Markdown 文件路径")
     parser.add_argument("--platforms", default=None, help="目标平台，逗号分隔（默认发布到所有 enabled 平台）")
+    parser.add_argument("--suggest", action="store_true", help="AI 推荐平台（不执行发布）")
     args = parser.parse_args()
 
     config = load_config()
@@ -125,6 +173,19 @@ def main():
     except FileNotFoundError as e:
         print(str(e))
         sys.exit(1)
+
+    # AI 推荐模式
+    if args.suggest:
+        print(f"文章: {article.title}")
+        print(f"标签: {', '.join(article.tags) if article.tags else '无'}\n")
+        print("🤖 AI 分析中...")
+        platforms, reason = suggest_platforms(article)
+        if platforms:
+            print(f"\n推荐平台: {', '.join(platforms)}")
+            print(f"推荐理由: {reason}")
+        else:
+            print(f"⚠ {reason}")
+        return
 
     if args.platforms:
         targets = [p.strip() for p in args.platforms.split(",")]

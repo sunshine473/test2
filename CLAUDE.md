@@ -72,6 +72,8 @@
 
 - **一键采集**: `python src/collector/main.py`（搜索 + 两方向策划）
 - **指定采集源**: `python src/collector/main.py --sources hn,github,hot`
+- **汽车增强采集**: `python src/collector/main.py --sources rss,tavily,hot`
+- **全量默认采集**: `python src/collector/main.py --sources rss,hn,github,hot,tavily,youtube_api`
 - **仅搜索**: `python src/collector/main.py --search-only`（或 `python src/collector/search.py`）
 - **仅策划**: `python src/collector/main.py --plan-only --pool <path>`（或 `python src/collector/planner.py --pool <path>`）
 - **指定方向**: `python src/collector/main.py --direction tech_ai`
@@ -94,6 +96,51 @@
 - TypeScript: `camelCase` 函数/变量，`PascalCase` 组件/接口，`SNAKE_CASE` 常量
 - 文档文件: `kebab-case` 或中文语义化命名
 - 缩进: 4 空格（除非语言规范另有要求）
+
+## 开发工作流
+
+**每次完成代码变更后，必须按顺序执行以下步骤：**
+
+### 1. 提交代码
+```bash
+git add <修改的文件>
+git commit -m "类型: 简短描述
+
+详细说明（可选）
+
+Co-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+```
+
+提交类型：
+- `feat`: 新功能
+- `fix`: 修复 bug
+- `refactor`: 重构（不改变功能）
+- `docs`: 文档更新
+- `chore`: 构建/工具/依赖更新
+
+### 2. 更新文档
+
+根据变更类型更新对应文档：
+
+| 变更类型 | 需要更新的文档 |
+|---------|--------------|
+| 新增/修改 Skill | `.claude/skills/<name>/SKILL.md` |
+| 新增/修改命令 | `CLAUDE.md` 的"常用命令"章节 |
+| 架构变更 | `CLAUDE.md` 的"项目结构"章节 |
+| 新增功能 | `docs/需求说明.md` 或 `docs/开发计划.md` |
+| API 变更 | 对应模块的 docstring |
+
+### 3. 检查清单
+
+完成变更后，确认以下事项：
+
+- [ ] 代码已提交到 git
+- [ ] 相关文档已更新
+- [ ] 如有新依赖，已更新 `requirements.txt` 或 `package.json`
+- [ ] 如有配置变更，已更新 `.env.example`
+- [ ] 如有破坏性变更，已在 commit message 中说明
+
+**重要**：不要跳过文档更新。过时的文档比没有文档更糟糕。
 
 ## 安全规范
 

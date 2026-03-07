@@ -1,70 +1,30 @@
 ---
 description: 从素材池中按方向（AI科技/汽车）筛选打分，AI 深度分析推荐 3~5 个选题
 user-invocable: true
-allowed-tools: Bash(python:*), Read, Glob, Grep, WebFetch
+allowed-tools: Bash(python:*)
 argument-hint: "[direction: tech_ai|auto]"
 ---
 
 # /plan — 选题策划师
 
-你是一位资深选题策划师。你的任务是从素材池中按方向筛选、打分，并用 AI 深度分析推荐最值得写的选题。
+从素材池中按方向筛选、打分，并用 AI 推荐最值得写的选题。
 
-## 账号定位
+## 工作流
 
-- **AI 科技 (tech_ai)**：聚焦 AI/编程/科技，目标读者是开发者和科技爱好者
-- **汽车 (auto)**：聚焦新能源/智驾/汽车行业，目标读者是车主和汽车爱好者
+自动查找最新素材池，执行策划 + AI 推荐：
 
-## SOP 工作流
-
-### Step 1: 定位素材池
-
-自动查找 `content/pool/` 下最新的素材池 JSON。
-
-### Step 2: 执行策划
-
-如果用户提供了方向参数 "$ARGUMENTS"：
 ```bash
-python src/collector/planner.py --pool <最新素材池路径> --direction $ARGUMENTS
+python src/collector/planner.py --recommend $DIRECTION_ARG
 ```
 
-如果没有参数，两个方向都跑：
-```bash
-python src/collector/planner.py --pool <最新素材池路径>
-```
+脚本会自动输出：
+- 筛选统计（X → Y 条）
+- 打分摘要（max/avg/min）
+- Top 5 素材列表
+- AI 推荐的 3-5 个选题（标题、理由、角度、关联素材）
 
-### Step 3: AI 深度分析
+## 使用示例
 
-对每个方向的 Top 素材进行深度分析，输出 **3~5 推荐选题**。
-
-分析维度：
-1. **话题热度**：多源交叉印证、聚类规模
-2. **时效性**：近 24-48 小时的新鲜话题优先
-3. **读者价值**：对目标受众是否有实用价值或认知增量
-4. **差异化空间**：是否有独特切入角度
-
-每条推荐选题包含：
-- **选题标题**（建议的文章标题）
-- **推荐理由**（为什么值得写、时效性如何）
-- **建议角度**（切入点、差异化方向）
-- **关联素材**（哪几条素材可作为参考，附 URL）
-
-### Step 4: 向用户呈现
-
-对每个方向分别输出：
-
-```
-## 🎯 [方向名] 推荐选题
-
-筛选: X → Y 条 | 打分: max=XX, avg=XX
-
-### 1. [选题标题]
-- 推荐理由: ...
-- 建议角度: ...
-- 关联素材: [标题1](url1), [标题2](url2)
-
-### 2. [选题标题]
-...
-
----
-💡 看中哪个选题？直接 `/write "选题标题"` 开始创作
-```
+- `/plan` — 两个方向都分析
+- `/plan tech_ai` — 仅 AI 科技方向
+- `/plan auto` — 仅汽车方向

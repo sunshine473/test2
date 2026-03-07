@@ -38,7 +38,7 @@ ensure_utf8()
 from dotenv import load_dotenv
 load_dotenv()
 
-from generator.writer import generate_article, _make_slug, DRAFTS_DIR
+from generator.writer import generate_article, _make_slug, DRAFTS_DIR, review_article, complete_frontmatter
 from generator.card_generator import generate_cards
 
 
@@ -89,11 +89,29 @@ def main():
             print(f"✗ 未找到已有文章，请先生成文章或去掉 --cards-only")
             sys.exit(1)
         article = existing.read_text(encoding="utf-8")
+        article_path = existing
         print(f"✓ 读取已有文章: {existing}")
     else:
         print(f"▶ 生成文章: {topic}")
         article, article_path = generate_article(topic, sources)
         print(f"✓ 文章已保存: {article_path}")
+
+        # 自动质量审核
+        print(f"▶ AI 质量审核...")
+        review_result = review_article(article_path)
+        print(f"✓ 字数: {review_result['word_count']} 字")
+        print(f"\n{review_result['review']}\n")
+
+        # 自动补全 frontmatter
+        print(f"▶ 补全 frontmatter...")
+        fm_result = complete_frontmatter(article_path)
+        if fm_result.get("status") == "completed":
+            print(f"✓ digest: {fm_result.get('digest', 'N/A')}")
+            print(f"✓ tags: {', '.join(fm_result.get('tags', []))}")
+        elif fm_result.get("status") == "ok":
+            print(f"✓ {fm_result['message']}")
+        else:
+            print(f"⚠ {fm_result.get('error', '未知错误')}")
 
     # 生成卡片
     if not args.no_cards:
