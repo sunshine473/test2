@@ -45,7 +45,8 @@ python src/collector/main.py
 
 # 指定采集源
 python src/collector/main.py --sources hn,github,hot
-python src/collector/main.py --sources youtube_api,hn,github,hot
+python src/collector/main.py --sources rss,tavily,hot
+python src/collector/main.py --sources rss,hn,github,hot,tavily,youtube_api
 
 # 仅搜索（输出素材池 JSON）
 python src/collector/main.py --search-only
@@ -111,6 +112,7 @@ cd MultiPost-Extension && pnpm dev
 | 工作流 | 执行时间 | 功能 |
 |--------|----------|------|
 | `collect.yml` | 每天 8:00 | 素材采集 + Telegram 通知（Top 10） |
+| `daily-collect.yml` | 每天 10:00 | 双方向素材采集（含 RSS/Tavily 汽车源） |
 | `daily-pipeline.yml` | 每天 10:00 | 全自动流水线（采集→生成→发布） |
 | `telegram-bot.yml` | 每 2 分钟 | Telegram Bot 轮询 |
 

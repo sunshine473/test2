@@ -77,37 +77,68 @@ def main():
     for update in updates:
         update_id = update["update_id"]
 
+        # 处理普通消息
         message = update.get("message", {})
-        chat_id = message.get("chat", {}).get("id")
-        text = message.get("text", "")
+        if message:
+            chat_id = message.get("chat", {}).get("id")
+            text = message.get("text", "")
 
-        if not text or not chat_id:
+            if not text or not chat_id:
+                new_offset = update_id + 1
+                save_offset(new_offset)
+                continue
+
+            print(f"\n[消息] chat_id={chat_id}: {text[:100]}")
+
+            if not is_authorized(chat_id):
+                print(f"  未授权的 chat_id: {chat_id}，跳过")
+                new_offset = update_id + 1
+                save_offset(new_offset)
+                continue
+
+            # Claude Agent 处理
+            print("  处理中...")
+            try:
+                reply = handle_message(text)
+                print(f"  回复: {reply[:200]}")
+                sent = send_message(chat_id, reply)
+            except Exception as e:
+                print(f"  处理失败，停止推进 offset: {e}")
+                break
+
+            if not sent:
+                print("  回复发送失败，停止推进 offset")
+                break
+
             new_offset = update_id + 1
             save_offset(new_offset)
             continue
 
-        print(f"\n[消息] chat_id={chat_id}: {text[:100]}")
+        # 处理回调查询（按钮点击）
+        callback_query = update.get("callback_query", {})
+        if callback_query:
+            callback_chat_id = callback_query.get("message", {}).get("chat", {}).get("id")
 
-        if not is_authorized(chat_id):
-            print(f"  未授权的 chat_id: {chat_id}，跳过")
+            if not is_authorized(callback_chat_id):
+                print(f"  未授权的回调 chat_id: {callback_chat_id}，跳过")
+                new_offset = update_id + 1
+                save_offset(new_offset)
+                continue
+
+            print(f"\n[回调] chat_id={callback_chat_id}: {callback_query.get('data', '')}")
+
+            try:
+                from bot.callback_handler import CallbackHandler
+                handler = CallbackHandler()
+                handler.handle_callback(callback_query)
+            except Exception as e:
+                print(f"  回调处理失败: {e}")
+
             new_offset = update_id + 1
             save_offset(new_offset)
             continue
 
-        # Claude Agent 处理
-        print("  处理中...")
-        try:
-            reply = handle_message(text)
-            print(f"  回复: {reply[:200]}")
-            sent = send_message(chat_id, reply)
-        except Exception as e:
-            print(f"  处理失败，停止推进 offset: {e}")
-            break
-
-        if not sent:
-            print("  回复发送失败，停止推进 offset")
-            break
-
+        # 其他类型的更新，直接跳过
         new_offset = update_id + 1
         save_offset(new_offset)
 

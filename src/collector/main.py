@@ -178,10 +178,10 @@ def main():
     pool_path = str(POOL_DIR / f"{pool['date']}-pool.json")
     results = plan(pool_path, args.direction)
 
-    # Telegram 通知
+    # Telegram 通知（交互式）
     try:
-        from collector.telegram_notifier import TelegramNotifier
-        TelegramNotifier().notify(pool, results)
+        from collector.telegram_notifier_interactive import InteractiveTelegramNotifier
+        InteractiveTelegramNotifier().notify_with_buttons(pool, results)
     except Exception as e:
         print(f"[Telegram] 通知异常: {e}")
 

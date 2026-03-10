@@ -40,6 +40,31 @@ rss:
       category: auto
       language: zh
 
+    - name: Google News 新能源汽车
+      url: "https://news.google.com/rss/search?q=%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+      category: auto
+      language: zh
+
+    - name: Google News 智能驾驶
+      url: "https://news.google.com/rss/search?q=%E6%99%BA%E8%83%BD%E9%A9%BE%E9%A9%B6&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+      category: auto
+      language: zh
+
+    - name: Google News 汽车行业
+      url: "https://news.google.com/rss/search?q=%E6%B1%BD%E8%BD%A6%E8%A1%8C%E4%B8%9A&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+      category: auto
+      language: zh
+
+    - name: Google News 比亚迪
+      url: "https://news.google.com/rss/search?q=%E6%AF%94%E4%BA%9A%E8%BF%AA&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+      category: auto
+      language: zh
+
+    - name: Google News 小米汽车
+      url: "https://news.google.com/rss/search?q=%E5%B0%8F%E7%B1%B3%E6%B1%BD%E8%BD%A6&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+      category: auto
+      language: zh
+
   # YouTube 频道（通过 RSS 采集）
   # 格式: https://www.youtube.com/feeds/videos.xml?channel_id=CHANNEL_ID
   youtube:
@@ -273,6 +298,30 @@ tavily:
       query: "新能源汽车 政策 补贴"
       category: auto
       search_depth: basic
+      max_results: 5
+
+    - name: 智能驾驶周报
+      query: "智能驾驶 智驾 本周 新车 评测"
+      category: auto
+      search_depth: advanced
+      max_results: 5
+
+    - name: 新能源销量
+      query: "新能源汽车 销量 本周 比亚迪 理想 小鹏 问界"
+      category: auto
+      search_depth: advanced
+      max_results: 5
+
+    - name: 充电与补能
+      query: "充电桩 换电 超充 新能源汽车 本周"
+      category: auto
+      search_depth: basic
+      max_results: 5
+
+    - name: 小米与华为汽车
+      query: "小米汽车 华为 问界 智驾 本周"
+      category: auto
+      search_depth: advanced
       max_results: 5
 
   trending:
