@@ -180,5 +180,8 @@ PYTHONPATH=src pytest tests/ --cov=src --cov-report=term-missing
 本项目由 Claude Code 和 Codex 协同开发，详见：
 - [docs/需求说明.md](docs/需求说明.md) — 架构设计与 SOP
 - [docs/开发计划.md](docs/开发计划.md) — 里程碑与任务认领
+- [docs/内容流水线数据契约.md](docs/内容流水线数据契约.md) — 各阶段输入输出契约
+- [docs/六层架构映射说明.md](docs/六层架构映射说明.md) — 六层架构与当前仓库映射
+- [docs/6层改造草案.md](docs/6层改造草案.md) — 六层重构顺序与落地建议
 - [AGENTS.md](AGENTS.md) — 协作规范
 - [CLAUDE.md](CLAUDE.md) — Claude Code 工作指引
