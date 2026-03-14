@@ -160,11 +160,12 @@ class NotionTopics:
             "direction": ("方向", {"select": {"options": []}}),
             "score": ("评分", {"number": {"format": "number"}}),
             "reason": ("推荐理由", {"rich_text": {}}),
-            "source_urls": ("关联素材", {"rich_text": {}}),
+            "source_urls": ("素材链接", {"rich_text": {}}),  # 改名避免与 relation 字段冲突
             "status": ("状态", {"select": {"options": []}}),
             "recommend_date": ("推荐日期", {"date": {}}),
             "selected_date": ("选中日期", {"date": {}}),
-            # 关联字段需要在 Notion UI 中手动创建，这里不自动创建
+            # 关联字段（relation 类型）已通过 API 创建
+            # "material_relation": ("关联素材", {"relation": {...}}),
             # "draft_relation": ("关联草稿", {"relation": {...}}),
         }
 
@@ -181,9 +182,10 @@ class NotionTopics:
             "direction": "方向",
             "score": "评分",
             "reason": "推荐理由",
-            "source_urls": "关联素材",
+            "source_urls": "素材链接",  # 改为 rich_text 字段名
             "status": "状态",
             "recommend_date": "推荐日期",
             "selected_date": "选中日期",
             "draft_relation": "关联草稿",
+            "material_relation": "关联素材",  # relation 字段
         }, parent

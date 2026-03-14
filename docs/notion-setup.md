@@ -71,13 +71,26 @@ OK 发布记录已配置 5 个字段
 成功: 3/3
 ```
 
-### 5. 手动创建关联字段（重要）
+### 5. 创建关联字段
 
-由于 Notion API 限制，关联字段（Relation）需要在 Notion UI 中手动创建：
+运行以下脚本自动创建关联字段：
 
-1. **选题库 → 草稿库**
-   - 打开选题库数据库
-   - 点击右上角 "+" 添加属性
+```bash
+python scripts/create_relations_final.py
+```
+
+输出示例：
+```
+✅ 选题库 '关联草稿' 字段已创建
+✅ 草稿库 '关联选题' 字段已创建
+✅ 发布记录 '关联草稿' 字段已创建
+总计: 3/3 成功
+```
+
+**技术说明**：
+- Notion API 2025-09-03 版本使用 `data_sources` 架构
+- 创建 Relation 字段需要使用 `data_source_id`（不是 `database_id`）
+- 正确配置：`type: "single_property"` + `single_property: {}`
    - 选择 "Relation"，命名为 "关联草稿"
    - 关联到草稿库数据库
 
