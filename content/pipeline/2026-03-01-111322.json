@@ -1,0 +1,832 @@
+{
+  "pipeline_id": "2026-03-01-111322",
+  "created_at": "2026-03-01T11:13:22.285143",
+  "current_stage": "publish",
+  "status": "completed",
+  "pool_path": "D:\\0、学习\\6、test_公众号\\content\\pool\\2026-03-01-pool.json",
+  "plan_result": {
+    "tech_ai": {
+      "direction": "tech_ai",
+      "label": "AI 科技",
+      "input_count": 30,
+      "filtered_count": 30,
+      "score_summary": {
+        "max": 73.58,
+        "min": 51.0,
+        "avg": 63.75
+      },
+      "items": [
+        {
+          "title": "We do not think Anthropic should be designated as a supply chain risk",
+          "url": "https://twitter.com/OpenAI/status/2027846016423321831",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=303, comments=135",
+          "published_at": "2026-02-28T21:24:16Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 303,
+            "hn_comments": 135,
+            "hn_object_id": "47200420",
+            "cluster_id": "C028",
+            "cluster_size": 1,
+            "score": 73.58,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:10",
+              "keyword:7.0",
+              "hn_points:7.6"
+            ]
+          }
+        },
+        {
+          "title": "The whole thing was a scam",
+          "url": "https://garymarcus.substack.com/p/the-whole-thing-was-scam",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=639, comments=176",
+          "published_at": "2026-02-28T16:51:49Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 639,
+            "hn_comments": 176,
+            "hn_object_id": "47197505",
+            "cluster_id": "C024",
+            "cluster_size": 1,
+            "score": 72.0,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:15.0"
+            ]
+          }
+        },
+        {
+          "title": "OpenAI fires an employee for prediction market insider trading",
+          "url": "https://www.wired.com/story/openai-fires-employee-insider-trading-polymarket-kalshi/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=269, comments=139",
+          "published_at": "2026-02-28T13:46:20Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 269,
+            "hn_comments": 139,
+            "hn_object_id": "47195317",
+            "cluster_id": "C015",
+            "cluster_size": 1,
+            "score": 71.72,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "keyword:8.0",
+              "hn_points:6.7"
+            ]
+          }
+        },
+        {
+          "title": "Don't trust AI agents",
+          "url": "https://nanoclaw.dev/blog/nanoclaw-security-model",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=308, comments=174",
+          "published_at": "2026-02-28T12:39:32Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 308,
+            "hn_comments": 174,
+            "hn_object_id": "47194611",
+            "cluster_id": "C008",
+            "cluster_size": 1,
+            "score": 71.7,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "keyword:7.0",
+              "hn_points:7.7"
+            ]
+          }
+        },
+        {
+          "title": "\"Cancel ChatGPT\" movement goes mainstream after OpenAI closes deal with U.S. Dow",
+          "url": "https://www.windowscentral.com/artificial-intelligence/cancel-chatgpt-movement-goes-mainstream-after-openai-closes-deal-with-u-s-department-of-war-as-anthropic-refuses-to-surveil-american-citizens",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=140, comments=43",
+          "published_at": "2026-02-28T19:03:47Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 140,
+            "hn_comments": 43,
+            "hn_object_id": "47198973",
+            "cluster_id": "C005",
+            "cluster_size": 1,
+            "score": 71.5,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "keyword:11.0",
+              "hn_points:3.5"
+            ]
+          }
+        },
+        {
+          "title": "Cognitive Debt: When Velocity Exceeds Comprehension",
+          "url": "https://www.rockoder.com/beyondthecode/cognitive-debt-when-velocity-exceeds-comprehension/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=455, comments=203",
+          "published_at": "2026-02-28T15:39:10Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 455,
+            "hn_comments": 203,
+            "hn_object_id": "47196582",
+            "cluster_id": "C007",
+            "cluster_size": 1,
+            "score": 68.38,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:11.4"
+            ]
+          }
+        },
+        {
+          "title": "What AI coding costs you",
+          "url": "https://tomwojcik.com/posts/2026-02-15/finding-the-right-amount-of-ai/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=291, comments=174",
+          "published_at": "2026-02-28T13:05:03Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 291,
+            "hn_comments": 174,
+            "hn_object_id": "47194847",
+            "cluster_id": "C030",
+            "cluster_size": 1,
+            "score": 67.28,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "keyword:3.0",
+              "hn_points:7.3"
+            ]
+          }
+        },
+        {
+          "title": "Obsidian Sync now has a headless client",
+          "url": "https://help.obsidian.md/sync/headless",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=405, comments=144",
+          "published_at": "2026-02-28T16:31:53Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 405,
+            "hn_comments": 144,
+            "hn_object_id": "47197267",
+            "cluster_id": "C014",
+            "cluster_size": 1,
+            "score": 67.12,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:10.1"
+            ]
+          }
+        },
+        {
+          "title": "Claude becomes number one app on the U.S. App Store",
+          "url": "https://apps.apple.com/us/iphone/charts",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=183, comments=54",
+          "published_at": "2026-03-01T00:08:48Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 183,
+            "hn_comments": 54,
+            "hn_object_id": "47202032",
+            "cluster_id": "C006",
+            "cluster_size": 1,
+            "score": 66.58,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:10",
+              "keyword:3.0",
+              "hn_points:4.6"
+            ]
+          }
+        },
+        {
+          "title": "Shubhamsaboo/awesome-llm-apps",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C021",
+            "cluster_size": 1,
+            "score": 66.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "Wei-Shaw/claude-relay-service",
+          "url": "https://github.com/Wei-Shaw/claude-relay-service",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "CRS-自建Claude Code镜像，一站式开源中转服务，让 Claude、OpenAI、Gemini、Droid 订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C029",
+            "cluster_size": 1,
+            "score": 66.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "Microgpt",
+          "url": "http://karpathy.github.io/2026/02/12/microgpt/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=121, comments=16",
+          "published_at": "2026-03-01T01:39:26Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 121,
+            "hn_comments": 16,
+            "hn_object_id": "47202708",
+            "cluster_id": "C010",
+            "cluster_size": 1,
+            "score": 65.03,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:10",
+              "keyword:3.0",
+              "hn_points:3.0"
+            ]
+          }
+        },
+        {
+          "title": "anthropics/claude-code",
+          "url": "https://github.com/anthropics/claude-code",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C002",
+            "cluster_size": 1,
+            "score": 65.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:14.0"
+            ]
+          }
+        },
+        {
+          "title": "Iran's Ayatollah Ali Khamenei is killed in Israeli strike, ending 36-year rule",
+          "url": "https://www.npr.org/2026/02/28/1123499337/iran-israel-ayatollah-ali-khamenei-killed",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=213, comments=263",
+          "published_at": "2026-02-28T22:16:08Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 213,
+            "hn_comments": 263,
+            "hn_object_id": "47200879",
+            "cluster_id": "C009",
+            "cluster_size": 1,
+            "score": 64.33,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:10",
+              "hn_points:5.3"
+            ]
+          }
+        },
+        {
+          "title": "MinIO Is Dead, Long Live MinIO",
+          "url": "https://blog.vonng.com/en/db/minio-resurrect/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=211, comments=82",
+          "published_at": "2026-02-28T21:16:53Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 211,
+            "hn_comments": 82,
+            "hn_object_id": "47200342",
+            "cluster_id": "C011",
+            "cluster_size": 1,
+            "score": 64.28,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:10",
+              "hn_points:5.3"
+            ]
+          }
+        },
+        {
+          "title": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C018",
+            "cluster_size": 1,
+            "score": 64.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:13.0"
+            ]
+          }
+        },
+        {
+          "title": "Techno‑feudal elite are attempting to build a twenty‑first‑century fascist state",
+          "url": "https://collapseofindustrialcivilization.com/2026/02/16/americas-oligarchic-techno-feudal-elite-are-attempting-to-build-a-twenty-first-century-fascist-state/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=271, comments=81",
+          "published_at": "2026-02-28T18:57:43Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 271,
+            "hn_comments": 81,
+            "hn_object_id": "47198912",
+            "cluster_id": "C023",
+            "cluster_size": 1,
+            "score": 63.77,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:6.8"
+            ]
+          }
+        },
+        {
+          "title": "Qwen3.5 122B and 35B models offer Sonnet 4.5 performance on local computers",
+          "url": "https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=245, comments=162",
+          "published_at": "2026-02-28T20:20:00Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 245,
+            "hn_comments": 162,
+            "hn_object_id": "47199781",
+            "cluster_id": "C017",
+            "cluster_size": 1,
+            "score": 63.12,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:6.1"
+            ]
+          }
+        },
+        {
+          "title": "The Windows 95 user interface: A case study in usability engineering (1996)",
+          "url": "https://dl.acm.org/doi/fullHtml/10.1145/238386.238611",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=154, comments=89",
+          "published_at": "2026-02-28T22:19:36Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 154,
+            "hn_comments": 89,
+            "hn_object_id": "47200904",
+            "cluster_id": "C025",
+            "cluster_size": 1,
+            "score": 62.85,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:10",
+              "hn_points:3.9"
+            ]
+          }
+        },
+        {
+          "title": "Our Agreement with the Department of War",
+          "url": "https://openai.com/index/our-agreement-with-the-department-of-war",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=229, comments=197",
+          "published_at": "2026-02-28T20:35:29Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 229,
+            "hn_comments": 197,
+            "hn_object_id": "47199948",
+            "cluster_id": "C016",
+            "cluster_size": 1,
+            "score": 62.73,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:5.7"
+            ]
+          }
+        },
+        {
+          "title": "Addressing Antigravity Bans and Reinstating Access",
+          "url": "https://github.com/google-gemini/gemini-cli/discussions/20632",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=206, comments=172",
+          "published_at": "2026-02-28T13:50:13Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 206,
+            "hn_comments": 172,
+            "hn_object_id": "47195371",
+            "cluster_id": "C001",
+            "cluster_size": 1,
+            "score": 62.15,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:5.2"
+            ]
+          }
+        },
+        {
+          "title": "Show HN: Now I Get It – Translate scientific papers into interactive webpages",
+          "url": "https://nowigetit.us",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=192, comments=99",
+          "published_at": "2026-02-28T13:29:36Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 192,
+            "hn_comments": 99,
+            "hn_object_id": "47195123",
+            "cluster_id": "C020",
+            "cluster_size": 1,
+            "score": 61.8,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:4.8"
+            ]
+          }
+        },
+        {
+          "title": "superset-sh/superset",
+          "url": "https://github.com/superset-sh/superset",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "IDE for the AI Agents Era - Run an army of Claude Code, Codex, etc. on your machine",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C022",
+            "cluster_size": 1,
+            "score": 61.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "Verified Spec-Driven Development (VSDD)",
+          "url": "https://gist.github.com/dollspace-gay/d8d3bc3ecf4188df049d7a4726bb2a00",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=154, comments=75",
+          "published_at": "2026-02-28T16:58:54Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 154,
+            "hn_comments": 75,
+            "hn_object_id": "47197595",
+            "cluster_id": "C027",
+            "cluster_size": 1,
+            "score": 60.85,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:3.9"
+            ]
+          }
+        },
+        {
+          "title": "Block the “Upgrade to Tahoe” Alerts",
+          "url": "https://robservatory.com/block-the-upgrade-to-tahoe-alerts-and-system-settings-indicator/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=152, comments=65",
+          "published_at": "2026-02-28T19:04:01Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 152,
+            "hn_comments": 65,
+            "hn_object_id": "47198977",
+            "cluster_id": "C003",
+            "cluster_size": 1,
+            "score": 60.8,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:3.8"
+            ]
+          }
+        },
+        {
+          "title": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skills and subagents, it handles different levels of tasks that could take minutes to hours.",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C004",
+            "cluster_size": 1,
+            "score": 58.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "NousResearch/hermes-agent",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C013",
+            "cluster_size": 1,
+            "score": 55.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "moeru-ai/airi",
+          "url": "https://github.com/moeru-ai/airi",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C012",
+            "cluster_size": 1,
+            "score": 54.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "ruvnet/wifi-densepose",
+          "url": "https://github.com/ruvnet/wifi-densepose",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "Production-ready implementation of InvisPose - a revolutionary WiFi-based dense human pose estimation system that enables real-time full-body tracking through walls using commodity mesh routers",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C019",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "tukaani-project/xz",
+          "url": "https://github.com/tukaani-project/xz",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "XZ Utils",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C026",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "selected_topic": "We do not think Anthropic should be designated as a supply chain risk",
+  "selected_sources": [
+    "https://twitter.com/OpenAI/status/2027846016423321831"
+  ],
+  "draft_path": "D:\\0、学习\\6、test_公众号\\content\\drafts\\2026-03-01-We-do-not-think-Anthropic-should-be-designated-as-a-supply-c.md",
+  "cards_path": "",
+  "publish_results": [
+    {
+      "platform": "wechat",
+      "status": "failed",
+      "message": "获取 access_token 失败: {'errcode': 40164, 'errmsg': 'invalid ip 183.227.254.143 ipv6 ::ffff:183.227.254.143, not in whitelist rid: 69a3afa4-6ef7835b-64a5762e'}"
+    }
+  ],
+  "sources": "hn,github",
+  "direction": "tech_ai",
+  "platforms": "",
+  "no_cards": true,
+  "error": "",
+  "history": [
+    {
+      "stage": "search",
+      "message": "素材池 30 条: D:\\0、学习\\6、test_公众号\\content\\pool\\2026-03-01-pool.json",
+      "time": "2026-03-01T11:16:15.796972"
+    },
+    {
+      "stage": "search",
+      "message": "完成",
+      "time": "2026-03-01T11:16:15.796972"
+    },
+    {
+      "stage": "plan",
+      "message": "完成",
+      "time": "2026-03-01T11:16:15.800230"
+    },
+    {
+      "stage": "select",
+      "message": "完成",
+      "time": "2026-03-01T11:16:15.803900"
+    },
+    {
+      "stage": "write",
+      "message": "完成",
+      "time": "2026-03-01T11:16:52.588314"
+    },
+    {
+      "stage": "review",
+      "message": "完成",
+      "time": "2026-03-01T11:16:52.599769"
+    },
+    {
+      "stage": "publish",
+      "message": "完成",
+      "time": "2026-03-01T11:16:53.675586"
+    }
+  ]
+}

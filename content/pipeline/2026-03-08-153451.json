@@ -1,0 +1,4253 @@
+{
+  "pipeline_id": "2026-03-08-153451",
+  "created_at": "2026-03-08T15:34:51.330212",
+  "current_stage": "select",
+  "status": "paused",
+  "pool_path": "D:\\0、学习\\6、test_公众号\\content\\pool\\2026-03-08-pool.json",
+  "plan_result": {
+    "tech_ai": {
+      "direction": "tech_ai",
+      "label": "AI 科技",
+      "input_count": 220,
+      "filtered_count": 111,
+      "score_summary": {
+        "max": 66.62,
+        "min": 33.0,
+        "avg": 44.45
+      },
+      "items": [
+        {
+          "title": "Uploading Pirated Books via BitTorrent Qualifies as Fair Use, Meta Argues",
+          "url": "https://torrentfreak.com/uploading-pirated-books-via-bittorrent-qualifies-as-fair-use-meta/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=425, comments=235",
+          "published_at": "2026-03-07T09:18:40Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 425,
+            "hn_comments": 235,
+            "hn_object_id": "47285960",
+            "cluster_id": "C114",
+            "cluster_size": 1,
+            "score": 66.62,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0",
+              "hn_points:10.6"
+            ]
+          }
+        },
+        {
+          "title": "A decade of Docker containers",
+          "url": "https://cacm.acm.org/research/a-decade-of-docker-containers/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=283, comments=198",
+          "published_at": "2026-03-07T16:55:18Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 283,
+            "hn_comments": 198,
+            "hn_object_id": "47289311",
+            "cluster_id": "C017",
+            "cluster_size": 1,
+            "score": 65.08,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:6",
+              "keyword:3.0",
+              "hn_points:7.1"
+            ]
+          }
+        },
+        {
+          "title": "Ki Editor - an editor that operates on the AST",
+          "url": "https://ki-editor.org/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=396, comments=138",
+          "published_at": "2026-03-07T10:29:13Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 396,
+            "hn_comments": 138,
+            "hn_object_id": "47286311",
+            "cluster_id": "C063",
+            "cluster_size": 1,
+            "score": 62.9,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:4",
+              "hn_points:9.9"
+            ]
+          }
+        },
+        {
+          "title": "Palantir and Anthropic AI helped the US hit 1k Iran targets in 24 hours",
+          "url": "https://www.moneycontrol.com/europe/?url=https://www.moneycontrol.com/world/how-palantir-and-anthropic-ai-helped-the-us-hit-1-000-iran-targets-in-24-hours-article-13853331.html",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=105, comments=87",
+          "published_at": "2026-03-07T13:28:48Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 105,
+            "hn_comments": 87,
+            "hn_object_id": "47287458",
+            "cluster_id": "C076",
+            "cluster_size": 1,
+            "score": 62.62,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:4",
+              "keyword:7.0",
+              "hn_points:2.6"
+            ]
+          }
+        },
+        {
+          "title": "Effort to prevent government officials from engaging in prediction markets",
+          "url": "https://www.merkley.senate.gov/merkley-klobuchar-launch-new-effort-to-ban-federal-elected-officials-profiting-from-prediction-markets/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=304, comments=110",
+          "published_at": "2026-03-07T20:55:48Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 304,
+            "hn_comments": 110,
+            "hn_object_id": "47291406",
+            "cluster_id": "C042",
+            "cluster_size": 1,
+            "score": 62.6,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:6",
+              "hn_points:7.6"
+            ]
+          }
+        },
+        {
+          "title": "Files are the interface humans and agents interact with",
+          "url": "https://madalitso.me/notes/why-everyone-is-talking-about-filesystems/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=203, comments=116",
+          "published_at": "2026-03-07T10:48:43Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 203,
+            "hn_comments": 116,
+            "hn_object_id": "47286408",
+            "cluster_id": "C044",
+            "cluster_size": 1,
+            "score": 62.08,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:4",
+              "keyword:4.0",
+              "hn_points:5.1"
+            ]
+          }
+        },
+        {
+          "title": "Training students to prove they're not robots is pushing them to use more AI",
+          "url": "https://www.techdirt.com/2026/03/06/were-training-students-to-write-worse-to-prove-theyre-not-robots-and-its-pushing-them-to-use-more-ai/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=150, comments=165",
+          "published_at": "2026-03-07T19:01:01Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 150,
+            "hn_comments": 165,
+            "hn_object_id": "47290457",
+            "cluster_id": "C110",
+            "cluster_size": 1,
+            "score": 61.75,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:6",
+              "keyword:3.0",
+              "hn_points:3.8"
+            ]
+          }
+        },
+        {
+          "title": "CasNum",
+          "url": "https://github.com/0x0mer/CasNum",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=263, comments=35",
+          "published_at": "2026-03-07T20:43:51Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 263,
+            "hn_comments": 35,
+            "hn_object_id": "47291292",
+            "cluster_id": "C032",
+            "cluster_size": 1,
+            "score": 61.58,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:6",
+              "hn_points:6.6"
+            ]
+          }
+        },
+        {
+          "title": "War prediction markets are a national-security threat",
+          "url": "https://www.theatlantic.com/technology/2026/03/polymarket-insider-trading-going-get-people-killed/686283/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=220, comments=129",
+          "published_at": "2026-03-07T20:09:30Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 220,
+            "hn_comments": 129,
+            "hn_object_id": "47291036",
+            "cluster_id": "C118",
+            "cluster_size": 1,
+            "score": 60.5,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:6",
+              "hn_points:5.5"
+            ]
+          }
+        },
+        {
+          "title": "FLASH radiotherapy's bold approach to cancer treatment",
+          "url": "https://spectrum.ieee.org/flash-radiotherapy",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=198, comments=62",
+          "published_at": "2026-03-07T15:33:36Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 198,
+            "hn_comments": 62,
+            "hn_object_id": "47288533",
+            "cluster_id": "C045",
+            "cluster_size": 1,
+            "score": 59.95,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:6",
+              "hn_points:5.0"
+            ]
+          }
+        },
+        {
+          "title": "Yoghurt delivery women combatting loneliness in Japan",
+          "url": "https://www.bbc.com/travel/article/20260302-the-yoghurt-delivery-women-combatting-loneliness-in-japan",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=263, comments=145",
+          "published_at": "2026-03-07T13:12:40Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 263,
+            "hn_comments": 145,
+            "hn_object_id": "47287344",
+            "cluster_id": "C122",
+            "cluster_size": 1,
+            "score": 59.58,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:4",
+              "hn_points:6.6"
+            ]
+          }
+        },
+        {
+          "title": "openai/skills",
+          "url": "https://github.com/openai/skills",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "Skills Catalog for Codex",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C074",
+            "cluster_size": 1,
+            "score": 59.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:8.0"
+            ]
+          }
+        },
+        {
+          "title": "msitarzewski/agency-agents",
+          "url": "https://github.com/msitarzewski/agency-agents",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C071",
+            "cluster_size": 1,
+            "score": 58.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "QwenLM/Qwen-Agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "Agent framework and applications built upon Qwen>=3.0, featuring Function Calling, MCP, Code Interpreter, RAG, Chrome extension, etc.",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C082",
+            "cluster_size": 1,
+            "score": 58.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "US economy sheds 92,000 jobs in February in sharp slide",
+          "url": "https://www.ft.com/content/6542bd0c-59ca-493b-ab5d-2d69e4e00cae",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=199, comments=80",
+          "published_at": "2026-03-07T12:13:04Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 199,
+            "hn_comments": 80,
+            "hn_object_id": "47286933",
+            "cluster_id": "C115",
+            "cluster_size": 1,
+            "score": 57.98,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:4",
+              "hn_points:5.0"
+            ]
+          }
+        },
+        {
+          "title": "Tinnitus Is Connected to Sleep",
+          "url": "https://www.sciencealert.com/tinnitus-is-somehow-connected-to-a-crucial-bodily-function",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=194, comments=215",
+          "published_at": "2026-03-07T14:06:46Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 194,
+            "hn_comments": 215,
+            "hn_object_id": "47287763",
+            "cluster_id": "C105",
+            "cluster_size": 1,
+            "score": 57.85,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:4",
+              "hn_points:4.8"
+            ]
+          }
+        },
+        {
+          "title": "PC processors entered the Gigahertz era today in the year 2000 with AMD's Athlon",
+          "url": "https://www.tomshardware.com/pc-components/cpus/pc-processors-entered-the-gigahertz-era-today-in-the-year-2000-with-amds-athlon-amd-hit-marketing-gold-with-its-1-ghz-athlon-beat-intel-by-a-nose",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=165, comments=149",
+          "published_at": "2026-03-07T14:10:17Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 165,
+            "hn_comments": 149,
+            "hn_object_id": "47287792",
+            "cluster_id": "C077",
+            "cluster_size": 1,
+            "score": 57.12,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:4",
+              "hn_points:4.1"
+            ]
+          }
+        },
+        {
+          "title": "Boy I was wrong about the Fediverse",
+          "url": "https://matduggan.com/boy-i-was-wrong-about-the-fediverse/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=164, comments=171",
+          "published_at": "2026-03-07T09:45:58Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 164,
+            "hn_comments": 171,
+            "hn_object_id": "47286082",
+            "cluster_id": "C030",
+            "cluster_size": 1,
+            "score": 57.1,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:4",
+              "hn_points:4.1"
+            ]
+          }
+        },
+        {
+          "title": "GoogleCloudPlatform/generative-ai",
+          "url": "https://github.com/GoogleCloudPlatform/generative-ai",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "Sample code and notebooks for Generative AI on Google Cloud, with Gemini on Vertex AI",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C051",
+            "cluster_size": 1,
+            "score": 57.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "agentjido/jido",
+          "url": "https://github.com/agentjido/jido",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "🤖 Autonomous agent framework for Elixir. Built for distributed, autonomous behavior and dynamic workflows.",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C021",
+            "cluster_size": 1,
+            "score": 55.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "microsoft/hve-core",
+          "url": "https://github.com/microsoft/hve-core",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "A refined collection of Hypervelocity Engineering components (instructions, prompts, agents, and skills) to start your project off right, or upgrade your existing projects to get the most out of all Copilots",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C070",
+            "cluster_size": 1,
+            "score": 55.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "Accelerating discovery in India through AI-powered science and education",
+          "url": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Google DeepMind brings National Partnerships for AI initiative to India, scaling AI for science and education",
+          "published_at": "Tue, 17 Feb 2026 13:42:20 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C019",
+            "cluster_size": 1,
+            "score": 54.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "toeverything/AFFiNE",
+          "url": "https://github.com/toeverything/AFFiNE",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C106",
+            "cluster_size": 1,
+            "score": 54.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "virattt/ai-hedge-fund",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "An AI Hedge Fund Team",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C117",
+            "cluster_size": 1,
+            "score": 54.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Gemini 3.1 Flash-Lite: Built for intelligence at scale",
+          "url": "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3 series model yet.",
+          "published_at": "Tue, 03 Mar 2026 16:35:55 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C049",
+            "cluster_size": 1,
+            "score": 53.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "How to use Claude Code to automate model training IN MINUTES",
+          "url": "https://www.youtube.com/watch?v=jP6tN9JTtxE",
+          "source_name": "HuggingFace",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Can an AI agent act as a machine learning researcher? In this tutorial, I'll show you how to automate the training of AI models from scratch using AI agents, saving you time and computational costs.\n\nWe'll be using a modified version of Andrej Karpathy's NanoGPT repository to train a GPT-2 level mod",
+          "published_at": "2026-03-07T20:15:41Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+            "video_id": "jP6tN9JTtxE",
+            "cluster_id": "C057",
+            "cluster_size": 1,
+            "score": 52.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:6",
+              "keyword:13.0"
+            ]
+          }
+        },
+        {
+          "title": "666ghj/MiroFish",
+          "url": "https://github.com/666ghj/MiroFish",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C014",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "AI agent 最新进展_人工智能 - 火山引擎ADG 社区",
+          "url": "https://adg.csdn.net/695338f25b9f5f31781be878.html",
+          "source_name": "AI 最新进展",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "火山引擎 ADG 社区   AI agent 最新 进展. # AI agent 最新 进展. luoganttcc  ·  2025-12-17 16:49:31 发布. ## AI Agent 最新进展（2025 年 12 月）. ### 一、巨头竞相发布新一代 Agent. 谷歌：Gemini Deep Research Agent（12 月 11 日）. OpenAI：GPT-5.2 与 ChatGPT Agent（12 月 12 日）. Anthropic：Claude 系列更新（11 月底 - 12 月初）. + 开放 Anthropic 内部构建 Agent 的基础设施，降低开发",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C022",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "shadcn-ui/ui",
+          "url": "https://github.com/shadcn-ui/ui",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C086",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "A new way to express yourself: Gemini can now create music",
+          "url": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "The Gemini app now features our most advanced music generation model Lyria 3, empowering anyone to make 30-second tracks using text or images.",
+          "published_at": "Wed, 18 Feb 2026 16:01:38 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C018",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Best products of March 2026 - Product Hunt",
+          "url": "https://www.producthunt.com/products",
+          "source_name": "Product Hunt 热门",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "# Bestproducts of March 2026. ## Discover the best productsof March 2026as chosen by Product Hunt users. 1 - 10 of 2,680 products. Claude by AnthropicA family of foundational AI models. NotteBuild and deploy reliable browser agents at scale. Gojiberry AI Start targeting buyers already in buying mode",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C029",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:14.0"
+            ]
+          }
+        },
+        {
+          "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+          "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
+          "published_at": "Thu, 19 Feb 2026 16:06:14 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C050",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "How DeepMind’s New AI Predicts What It Cannot See",
+          "url": "https://www.youtube.com/watch?v=ssbHkYB0jYM",
+          "source_name": "Two Minute Papers",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://d4rt-paper.github.io/\n\nOur Gaussian Material Synthesis paper:\nhttps://users.cg.tuwien.ac.at/zsolnai/gfx/gaussian-material-synthesis/\n\nTweet link: https://x.com/GoogleDeepMind/st",
+          "published_at": "2026-03-07T14:42:18Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+            "video_id": "ssbHkYB0jYM",
+            "cluster_id": "C054",
+            "cluster_size": 1,
+            "score": 49.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:6",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "The Codex app is now on Windows",
+          "url": "https://www.youtube.com/watch?v=8hNcRChDrNk",
+          "source_name": "OpenAI",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "The Codex app is now on Windows.\n\nGet the full Codex app experience on Windows with a native agent sandbox and support for Windows developer environments in PowerShell.\n\nhttps://developers.openai.com/wendows",
+          "published_at": "2026-03-05T20:55:53Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+            "video_id": "8hNcRChDrNk",
+            "cluster_id": "C099",
+            "cluster_size": 1,
+            "score": 49.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:12.0"
+            ]
+          }
+        },
+        {
+          "title": "Computer Use & Frontend UI with GPT-5.4 Thinking",
+          "url": "https://www.youtube.com/watch?v=YICiHiU2GBU",
+          "source_name": "OpenAI",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "OpenAI researcher SQ Mah explains how GPT-5.4 Thinking brings even more powerful capabilities to Codex — with more persistent computer-use (CUA) capabilities that cut token usage by two-thirds in some cases, and stronger image understanding for seamless website UI and image generation.",
+          "published_at": "2026-03-05T18:18:38Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+            "video_id": "YICiHiU2GBU",
+            "cluster_id": "C039",
+            "cluster_size": 1,
+            "score": 48.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:11.0"
+            ]
+          }
+        },
+        {
+          "title": "AI Agent最新综述多所顶尖机构联合发布",
+          "url": "https://jimo.studio/blog/ai-agent-latest-review-multiple-top-institutions-jointly-published/",
+          "source_name": "AI 最新进展",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "### AI Agent'三国杀'：字节抢跑、阿里突围、腾讯蓄势. ### 最新创新思路，Graph+AI Agents!! ### AI Agents - B2B Business. ### AI Agents Articles. Anthropic 在 2026 年发布了一篇关于 AI Agent 评估体系的详尽指南，强调在产品化与上线过程中构建科学、可复现的评估流程对保证智能体稳定性与安全性至关重要。. ### Attention AI agents that learn from your best sales conversations. 2025 年 AI 自动编程领域竞争加剧，工",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C023",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:11.0"
+            ]
+          }
+        },
+        {
+          "title": "AI 论文周报丨微软/清华大学/香港大学等最新成果，一键解锁通用智能 ...",
+          "url": "https://hyper.ai/cn/news/43009",
+          "source_name": "AI 最新进展",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "本文提出了一个灵活且可扩展的框架Agent Lightning，可对任意 AI Agent 进行基于强化学习的大语言模型训练。与现有方法将RL 训练与Agent 紧密耦合，或依赖带掩码的序列拼接",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C025",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:11.0"
+            ]
+          }
+        },
+        {
+          "title": "I resigned from OpenAI",
+          "url": "https://twitter.com/kalinowski007/status/2030320074121478618",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "<p><a href=\"https://xcancel.com/kalinowski007/status/2030320074121478618\" rel=\"nofollow\">https://xcancel.com/kalinowski007/status/2030320074121478618</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47292381\">https://news.ycombinator.com/item?id=47292381</a></p>\n<p>Point",
+          "published_at": "Sat, 07 Mar 2026 23:09:51 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C059",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:6",
+              "keyword:8.0"
+            ]
+          }
+        },
+        {
+          "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
+          "url": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Our latest image generation model offers advanced world knowledge, production ready specs, subject consistency and more, all at Flash speed.",
+          "published_at": "Thu, 26 Feb 2026 16:01:50 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C073",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "俞永福的一句话促成一个 IPO",
+          "url": "https://36kr.com/p/3713824137736576?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "<p>作者丨黎曼&nbsp;</p>\n  <p>编辑丨王庆武&nbsp;</p>\n  <p>来源丨东四十条资本&nbsp;</p>\n  <p>二级市场AI的狂热直接传导至一级市场，形成了AI企业上市的“窗口期红利”。</p>\n  <p>更为关键的一点是，资本市场对AI的关注点也开始发生转移，比如从“谁的模型更大”转向“谁能把AI变成可持续现金流”。</p>\n  <p>眼下，便有一家来自广州的AI应用层公司勇闯港交所。2026年2月底，钛动科技向港交所递表，冲击港股“Multi-Agent（营销多智能体）第一股”。钛动科技此时递表，有希望抢在热度消退前完成IPO定价。</p>\n  <p>更值得关",
+          "published_at": "2026-03-08 14:57:21  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C140",
+            "cluster_size": 1,
+            "score": 46.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:11.0"
+            ]
+          }
+        },
+        {
+          "title": "CEOs are wasting millions on AI. Here's why. 💸",
+          "url": "https://www.youtube.com/watch?v=qtSruHgnn20",
+          "source_name": "DeepLearningAI",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "CEOs are pouring millions into AI, but simply swapping a human for an AI agent in the middle of a broken process won't change your business. True AI transformation requires an end-to-end workflow redesign. Don't just use AI to make the old way faster—use it to build a completely new experience.\n\nRea",
+          "published_at": "2026-03-06T02:19:15Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+            "video_id": "qtSruHgnn20",
+            "cluster_id": "C033",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "Deep Dive into LLMs like ChatGPT",
+          "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+          "source_name": "Andrej Karpathy",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "This is a general audience deep dive into the Large Language Model (LLM) AI technology that powers ChatGPT and related products. It is covers the full training stack of how the models are developed, along with mental models of how to think about their \"psychology\", and how to get the best use them i",
+          "published_at": "2025-02-05T18:23:47Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+            "video_id": "7xTGNNLPyMI",
+            "cluster_id": "C041",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "From AI Agents to Faster Kernels: Ben Burtenshaw & Felix LeClair (AI Plumbers #2)",
+          "url": "https://www.youtube.com/watch?v=Z6sqEbg2ETo",
+          "source_name": "HuggingFace",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Felix LeClair sits down with Ben Burtenshaw from Hugging Face to discuss how the Hugging Face Kernels ecosystem makes high-performance kernels easier to build, share, and run.  \nThey cover agent-assisted kernel development, benchmarking results across model families, and why reproducible kernel infr",
+          "published_at": "2026-03-06T07:13:01Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+            "video_id": "Z6sqEbg2ETo",
+            "cluster_id": "C046",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "Guardrails with LangChain: A Complete Crash Course for Building Safe AI Agents",
+          "url": "https://www.youtube.com/watch?v=ruiLq0OzjkI",
+          "source_name": "Krish Naik",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Check out the detailed blog with code: https://krishcnaik.substack.com/p/guardrails-with-langchain-a-complete?r=6ah1nv&utm_campaign=post&utm_medium=web&triedRedirect=true\n\nIn this crash course, we will cover everything you need to know about implementing guardrails in LangChain agents -- from simple",
+          "published_at": "2026-03-05T07:55:27Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCNU_lfiiWBdtULKOw6X0Dig",
+            "video_id": "ruiLq0OzjkI",
+            "cluster_id": "C052",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "Mastering LLM Chatbots And RAG Evaluation Crash Course",
+          "url": "https://www.youtube.com/watch?v=NebOSOTp-zA",
+          "source_name": "Krish Naik",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "github code : https://github.com/krishnaik06/RAG-Tutorials/blob/main/1-rag_evaluation.ipynb\nblog link: https://krishcnaik.substack.com/p/a-complete-guide-to-llm-chatbot-evaluation\nJust 2 weeks left \n🚀 The Wait Is Over – Learn AI the MODERN Way in 2026! 🤖🔥 Best for anyone who wants to get started in ",
+          "published_at": "2026-03-02T14:23:06Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCNU_lfiiWBdtULKOw6X0Dig",
+            "video_id": "NebOSOTp-zA",
+            "cluster_id": "C069",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "Reinforcement Learning with Human Feedback (RLHF), Clearly Explained!!!",
+          "url": "https://www.youtube.com/watch?v=qPN_XZcJf_s",
+          "source_name": "StatQuest with Josh Starmer",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Generative Large Language Models, like ChatGPT and DeepSeek, are trained on massive text based datasets, like the entire Wikipedia. However, this training alone fails to teach the models how to generate polite and useful responses to your prompts. Thus, LLMs rely on Supervised Fine-Tuning and Reinfo",
+          "published_at": "2025-05-05T04:01:03Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCtYLUTtgS3k1Fg4y5tAhLbw",
+            "video_id": "qPN_XZcJf_s",
+            "cluster_id": "C083",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "Vibe Coding: Build a Game with AI - Aleksey Komissarov",
+          "url": "https://www.youtube.com/watch?v=0j0Hg-f24iI",
+          "source_name": "DataTalksClub ⬛",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "In this workshop, Aleksey Komissarov a Biology PhD turned AI specialist, demonstrates the future of Natural Language Programming. We go from a blank screen to a playable game in real-time, using a voice-directed AI agent. We explore the shift from being a \"writer\" of code to a \"director\" of complex ",
+          "published_at": "2026-03-04T01:50:47Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCDvErgK0j5ur3aLgn6U-LqQ",
+            "video_id": "0j0Hg-f24iI",
+            "cluster_id": "C116",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "15篇AI Agent研报，2026年智能体行业的全球洞察与趋势，附下载",
+          "url": "https://mp.ofweek.com/ai/a356714060647",
+          "source_name": "AI 最新进展",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "# 15篇AI Agent研报，2026年智能体行业的全球洞察与趋势，附下载. 王吉伟  2026-01-20 16:28  发布于山东 发文. 15篇AI Agent研报，看懂2026年Agentic Al行业全景，附下载. 了解2026年Agentic AI行业趋势，看这15篇AI Agent研报就够了，附下载. 15篇AI Agent研报涵盖技术、应用、市场与部署，助你精准把握2026 Agentic AI. 15篇AI Agent研报，了解2026年Agentic AI行业核心趋势与挑战，附下载. 这个所谓的智能体时代（Agentic Al），已经大步流星地从实验室走进现实。据谷歌最新",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C004",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "AI 论文周报丨AI Agent最新进展，PaperBanana/Lumine/Insight ...",
+          "url": "https://zhuanlan.zhihu.com/p/2003110047664866747",
+          "source_name": "AI 最新进展",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "本周，我们为大家推荐的5 篇Agent 的热门AI 论文，涵盖北京大学、谷歌云AI 研究院、AgentAlpha、亚马逊等团队。集中展示了当前Agent 研究在框架设计",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C024",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "Interrupting and Adding Details in GPT-5.4 Thinking",
+          "url": "https://www.youtube.com/watch?v=qSHMlduU6Lw",
+          "source_name": "OpenAI",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "In ChatGPT, GPT‑5.4 Thinking can now provide an upfront plan of its thinking, so you can adjust course mid-response while it’s working, and arrive at a final output that’s more closely aligned with what you need without additional turns.",
+          "published_at": "2026-03-05T18:20:32Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+            "video_id": "qSHMlduU6Lw",
+            "cluster_id": "C060",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "LLM Writing Tropes.md",
+          "url": "https://tropes.fyi/tropes-md",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "<p>Article URL: <a href=\"https://tropes.fyi/tropes-md\">https://tropes.fyi/tropes-md</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47291513\">https://news.ycombinator.com/item?id=47291513</a></p>\n<p>Points: 164</p>\n<p># Comments: 64</p>",
+          "published_at": "Sat, 07 Mar 2026 21:08:40 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C068",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:6",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "Product Hunt weekly launch history",
+          "url": "https://hunted.space/history-weekly",
+          "source_name": "Product Hunt 热门",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "[![Image 3: Product Thumbnail](https://ph-files.imgix.net/1a02f394-d429-434c-bd37-1f3a4ba23d44.png?auto=format) 1 ![Image 4: Product Thumbnail](https://ph-files.imgix.net/1a02f394-d429-434c-bd37-1f3a4ba23d44.png?auto=format) GojiberryAI AI agents turning high-intent leads into booked demos 395 82 Vi",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C079",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "\"Warn about PyPy being unmaintained\"",
+          "url": "https://github.com/astral-sh/uv/pull/17643",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "<p>Article URL: <a href=\"https://github.com/astral-sh/uv/pull/17643\">https://github.com/astral-sh/uv/pull/17643</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47293415\">https://news.ycombinator.com/item?id=47293415</a></p>\n<p>Points: 116</p>\n<p># Comments: 29</p>",
+          "published_at": "Sun, 08 Mar 2026 01:35:21 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C119",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:6",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "OpenClaw掀起龙虾热：行动ASI奇点时刻！全球打工人巨变",
+          "url": "https://36kr.com/p/3713633084125321?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "<p>编辑：犀牛</p>\n  <p>OpenClaw是我们这个时代「最重要的」软件发布！</p>\n  <p>刚刚，黄仁勋在摩根士丹利大会上激动地表示。</p>\n  <p>「这证明了Agentic AI的真正实力」，他说。</p>\n  <p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260308/v2_685c955daa234535841bef4d7a4ef44e@5579416_oswg936119oswg1080oswg608_img_000?x-oss-process=image/format,jp",
+          "published_at": "2026-03-08 10:10:59  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C075",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "The best products in your inbox - Product Hunt",
+          "url": "https://www.producthunt.com/newsletters",
+          "source_name": "Product Hunt 热门",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "Claude Import Memory lands at a very convenient moment and makes it way easier to bring your context over without starting from scratch, GojiberryAI is trying to cut cold outbound down to warmer leads and better timing, and WEIR AI is built for people who want more control over where their name, fac",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C098",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "Testing Sarvam AI Conversation Agent and Its Amazing",
+          "url": "https://www.youtube.com/watch?v=5p30SwHCa-M",
+          "source_name": "Krish Naik",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Visit sarvam.ai",
+          "published_at": "2026-02-25T06:22:49Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCNU_lfiiWBdtULKOw6X0Dig",
+            "video_id": "5p30SwHCa-M",
+            "cluster_id": "C095",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "Adobe & NVIDIA’s New Tech Shouldn’t Be Real Time. But It Is.",
+          "url": "https://www.youtube.com/watch?v=j-B8ymGWlIE",
+          "source_name": "Two Minute Papers",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://perso.telecom-paristech.fr/boubek/papers/Glinty/\n\nWeb demo:\nhttps://www.shadertoy.com/view/tcdGDl\n\nSources:\nhttps://www.youtube.com/shorts/n07vz6oz78g\nhttps://www.youtube.com/wa",
+          "published_at": "2026-02-22T09:50:35Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+            "video_id": "j-B8ymGWlIE",
+            "cluster_id": "C020",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "How AI works in Super Simple Terms!!!",
+          "url": "https://www.youtube.com/watch?v=q-BiW5srMFQ",
+          "source_name": "StatQuest with Josh Starmer",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "In this StatQuest we explain how AI, like ChatGPT, works. However, instead of using lots of complicated math, we're going to use a super simple example and super simple terms. If math scares you, this StatQuest is for you! And even if math doesn't scare you, this StatQuest will give you a deeper und",
+          "published_at": "2026-01-12T05:01:06Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCtYLUTtgS3k1Fg4y5tAhLbw",
+            "video_id": "q-BiW5srMFQ",
+            "cluster_id": "C053",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "I BUILT A FULLY AUTOMATIC MANSPLAINER",
+          "url": "https://www.youtube.com/watch?v=xHi8PUIVyoo",
+          "source_name": "Yannic Kilcher",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "All information about GTC and the DGX Spark Raffle is here: https://www.ykilcher.com/gtc\n\n\nLinks:\nHomepage: https://ykilcher.com\nMerch: https://ykilcher.com/merch\nYouTube: https://www.youtube.com/c/yannickilcher\nTwitter: https://twitter.com/ykilcher\nDiscord: https://ykilcher.com/discord\nLinkedIn: ht",
+          "published_at": "2026-03-06T22:07:33Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCZHmQk67mSJgfCCTn7xBfew",
+            "video_id": "xHi8PUIVyoo",
+            "cluster_id": "C058",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Let's reproduce GPT-2 (124M)",
+          "url": "https://www.youtube.com/watch?v=l8pRSuU81PU",
+          "source_name": "Andrej Karpathy",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "We reproduce the GPT-2 (124M) from scratch. This video covers the whole process: First we build the GPT-2 network, then we optimize its training to be really fast, then we set up the training run following the GPT-2 and GPT-3 paper and their hyperparameters, then we hit run, and come back the next m",
+          "published_at": "2024-06-09T23:31:35Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+            "video_id": "l8pRSuU81PU",
+            "cluster_id": "C066",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "Stop Mixing FastAPI with Business Logic: Fix It with Ports & Adapters",
+          "url": "https://www.youtube.com/watch?v=FXwBWS4qDAA",
+          "source_name": "ArjanCodes",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "🧱 Build software that lasts. Join the Software Design Mastery waiting list → https://arjan.codes/mastery.\n\nIn this video, I refactor a FastAPI + SQLAlchemy example into a clean Ports & Adapters (Hexagonal Architecture) design. I separate domain logic from frameworks, introduce domain types and error",
+          "published_at": "2026-03-06T16:00:21Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCVhQ2NnY5Rskt6UjCUkJ_DA",
+            "video_id": "FXwBWS4qDAA",
+            "cluster_id": "C090",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Stream Processing with PyFlink - Alexey Grigorev",
+          "url": "https://www.youtube.com/watch?v=YDUgFeHQzJU",
+          "source_name": "DataTalksClub ⬛",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Links: \n\n- Course: https://github.com/DataTalksClub/data-engineering-zoomcamp\n- Workshop: https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/07-streaming/workshop/README.md\n- DTC Courses: https://datatalks.club/blog/guide-to-free-online-courses-at-datatalks-club.html\n\nConnect with ",
+          "published_at": "2026-03-05T00:43:19Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCDvErgK0j5ur3aLgn6U-LqQ",
+            "video_id": "YDUgFeHQzJU",
+            "cluster_id": "C091",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "The #1 Skill Employers Want in 2026",
+          "url": "https://www.youtube.com/watch?v=hwUacQ50ZlU",
+          "source_name": "DeepLearningAI",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "The job market is shifting, and the #1 skill employers are looking for right now isn't a specific programming language—it's teachableness. As AI tools evolve at lightning speed, your ability to adapt and learn is your biggest competitive advantage. AI won’t replace workers, but workers who use AI wi",
+          "published_at": "2026-03-05T18:29:27Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+            "video_id": "hwUacQ50ZlU",
+            "cluster_id": "C097",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "The truth about tech layoffs and AI..",
+          "url": "https://www.youtube.com/watch?v=osAG-DNkZeE",
+          "source_name": "DeepLearningAI",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Everyone assumes AI is suddenly automating entire companies, but the reality on the ground is different. The truth about recent tech layoffs isn't that robots are running the show—it's that companies are replacing traditional workers with people who know how to use AI tools to become 10x more produc",
+          "published_at": "2026-03-05T00:02:53Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+            "video_id": "osAG-DNkZeE",
+            "cluster_id": "C103",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Universal-3 Pro Streaming: Subway test",
+          "url": "https://www.youtube.com/watch?v=i4KOhtPKQMM",
+          "source_name": "AssemblyAI",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "We took Universal-3 Pro Streaming out for a spin in the New York subway\n\nSpoiler: it's subway-proof 😎\n\nTry Universal-3 Pro Streaming here: https://www.assemblyai.com/universal-3-pro-streaming\n▬▬▬▬▬▬▬▬▬▬▬▬ CONNECT ▬▬▬▬▬▬▬▬▬▬▬▬\n\n🖥️ Website: https://www.assemblyai.com\n🐦 Twitter: https://twitter.com/Ass",
+          "published_at": "2026-03-04T19:24:59Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCtatfZMf-8EkIwASXM4ts0A",
+            "video_id": "i4KOhtPKQMM",
+            "cluster_id": "C113",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Universal-3 Pro: Office Icebreakers",
+          "url": "https://www.youtube.com/watch?v=yEQpfOt7C1k",
+          "source_name": "AssemblyAI",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "We tested Universal-3 Pro Streaming in our office with some icebreaker questions. Try Universal-3 Pro Streaming today: https://www.assemblyai.com/universal-3-pro-streaming\n\n▬▬▬▬▬▬▬▬▬▬▬▬ CONNECT ▬▬▬▬▬▬▬▬▬▬▬▬\n\n🖥️ Website: https://www.assemblyai.com\n🐦 Twitter: https://twitter.com/AssemblyAI\n🦾 Discord: ",
+          "published_at": "2026-03-03T21:46:25Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCtatfZMf-8EkIwASXM4ts0A",
+            "video_id": "yEQpfOt7C1k",
+            "cluster_id": "C112",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Why you shouldn't chase people to get what you need from them - info, payment, etc.",
+          "url": "https://www.youtube.com/watch?v=jie_039IekA",
+          "source_name": "freeCodeCamp.org",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "You shouldn't have to chase people to get what you need from them for a project - info, payment, etc. Luke explains why this is part of his \"screening process\" when deciding which customers to work with.",
+          "published_at": "2026-03-07T13:32:30Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UC8butISFwT-Wl7EV0hUK0BQ",
+            "video_id": "jie_039IekA",
+            "cluster_id": "C121",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Cloud VM benchmarks 2026",
+          "url": "https://devblog.ecuadors.net/cloud-vm-benchmarks-2026-performance-price-1i1m.html",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "<p>Article URL: <a href=\"https://devblog.ecuadors.net/cloud-vm-benchmarks-2026-performance-price-1i1m.html\">https://devblog.ecuadors.net/cloud-vm-benchmarks-2026-performance-price-1i1m.html</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47293119\">https://news.ycombinator.com/",
+          "published_at": "Sun, 08 Mar 2026 00:44:32 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C036",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:6"
+            ]
+          }
+        },
+        {
+          "title": "Leaderboard - Product Hunt",
+          "url": "https://www.producthunt.com/leaderboard",
+          "source_name": "Product Hunt 热门",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "* [Launches](/leaderboard/daily/2026/3/2?ref=header_nav). [May](/leaderboard/monthly/2025/5). [May](/leaderboard/monthly/2024/5). [May](/leaderboard/monthly/2023/5). [May](/leaderboard/monthly/2022/5). [May](/leaderboard/monthly/2021/5). [May](/leaderboard/monthly/2018/5). [May](/leaderboard/monthly",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C064",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Put the zip code first",
+          "url": "https://zipcodefirst.com",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "<p>Article URL: <a href=\"https://zipcodefirst.com\">https://zipcodefirst.com</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47292485\">https://news.ycombinator.com/item?id=47292485</a></p>\n<p>Points: 332</p>\n<p># Comments: 244</p>",
+          "published_at": "Sat, 07 Mar 2026 23:26:26 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C080",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:6"
+            ]
+          }
+        },
+        {
+          "title": "为什么“从1数到10”这件事，所有视频模型都不会？",
+          "url": "https://36kr.com/p/3713798535049600?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "<p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260308/v2_9abd0ee592774c6f989eeea775404e50@5579416_oswg525957oswg1080oswg458_img_000?x-oss-process=image/format,jpg/interlace,1\" /></p>\n  <p class=\"img-desc\">头图来源：Nano Banana</p>\n  <p><strong>作者｜汤一涛</strong></p>\n  <p><strong>编辑｜靖宇<",
+          "published_at": "2026-03-08 13:40:17  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C131",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "90 后女首富诞生",
+          "url": "https://36kr.com/p/3713629026972034?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "<p>作者/王露</p>\n  <p>报道/投资界PEdaily</p>\n  <p>AI造富惊人。</p>\n  <p>最新发布的《胡润全球富豪榜》中，Lucy Guo以90亿元身家跻身榜单，成为全球90后白手起家女首富。</p>\n  <p>她的故事正是这一轮AI浪潮的缩影：10年前联合创办Scale AI，即便早已离职，但凭借手中疯狂膨胀的股权，跻身全球前1%富豪之列。</p>\n  <p>把视线拉远，一幅更宏大的财富图景正在展开：越来越多的女性创业者在AI赛道强势崛起，成为聚光灯下的新主角。而在光影之外，另一条通往财富自由的路径也被打通。一批AI公司里年轻的工程师、研究员乃至实习生，在短短数年间",
+          "published_at": "2026-03-08 09:45:52  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C016",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Chomp Thwomp Mines Gameplay - Super Mario Maker 2 with Anthropic",
+          "url": "https://www.youtube.com/watch?v=HlEn6evuYA8",
+          "source_name": "Matt Gregory",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "I really enjoyed playing this level on my livestream the other night, if you have any sweet levels comment the code and I might play them on the weekend stream.\n\n-- Watch live every day at http://www.twitch.tv/Anthropic\n\nAdd me on Snapchat: AnthropicLive\nDiscord: https://discord.gg/0n5lCPeB9tdlnAyL\n",
+          "published_at": "2019-08-01T10:19:58Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCOIji0UklfggVrY7Ym-IfDQ",
+            "video_id": "HlEn6evuYA8",
+            "cluster_id": "C035",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "Everyone wants a boob job? Super Mario 64 16star Speedrun (Stream recap 16th/11/2018)",
+          "url": "https://www.youtube.com/watch?v=69V53NfhetE",
+          "source_name": "Matt Gregory",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Why does everyone in chat want a boob job?\n\n-- Watch live every day at http://www.twitch.tv/Anthropic\n\nAdd me on Snapchat: AnthropicLive\nDiscord: https://discord.gg/0n5lCPeB9tdlnAyL\nFacebook: http://www.facebook.com/AnthropicLive\nTwitter: http://www.twitter.com/AnthropicLive\nInstagram: http://www.in",
+          "published_at": "2018-11-23T01:20:12Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCOIji0UklfggVrY7Ym-IfDQ",
+            "video_id": "69V53NfhetE",
+            "cluster_id": "C043",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "How I use LLMs",
+          "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
+          "source_name": "Andrej Karpathy",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "The example-driven, practical walkthrough of Large Language Models and their growing list of related features, as a new entry to my general audience series on LLMs. In this more practical followup, I take you through the many ways I use LLMs in my own life.\n\nChapters\n00:00:00 Intro into the growing ",
+          "published_at": "2025-02-27T22:29:56Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+            "video_id": "EWvNQjAaOHw",
+            "cluster_id": "C055",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "SM64 25m31s 16 Star Speedrun",
+          "url": "https://www.youtube.com/watch?v=_tgIoUS1zCk",
+          "source_name": "Matt Gregory",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Best time yet, looking forward to learning new tricks to make it even faster.\n\n-- Watch live every day at http://www.twitch.tv/Anthropic\n\nAdd me on Snapchat: AnthropicLive\nDiscord: https://discord.gg/0n5lCPeB9tdlnAyL\nFacebook: http://www.facebook.com/AnthropicLive\nTwitter: http://www.twitter.com/Ant",
+          "published_at": "2018-11-28T05:46:24Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCOIji0UklfggVrY7Ym-IfDQ",
+            "video_id": "_tgIoUS1zCk",
+            "cluster_id": "C087",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "Testing VLMs and LLMs for robotics w/ the Jetson Thor devkit",
+          "url": "https://www.youtube.com/watch?v=eRPSRSGiAA8",
+          "source_name": "sentdex",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Exploring the Jetson Thor devkit w/ some local LLMs and VLMs.\nMore info on the Jetson Thor Devkit: https://nvda.ws/45xIU4B\n\nNeural Networks from Scratch book: https://nnfs.io\nChannel membership: https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ/join\nDiscord: https://discord.gg/sentdex\nReddit:",
+          "published_at": "2025-08-30T15:21:01Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCfzlCWGWYyIQ0aLC5w48gBQ",
+            "video_id": "eRPSRSGiAA8",
+            "cluster_id": "C096",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "Building Quso.ai: Autonomous social media, the death of traditional SaaS, and founder lessons",
+          "url": "https://www.youtube.com/watch?v=WEX8Hk60anc",
+          "source_name": "AssemblyAI",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Vedant, co-founder of Quso.ai, shares the journey from a simple long-video-to-shorts tool to a full autonomous social media engine — plus why speech-to-text quality was non-negotiable from day one.\n\n▬▬▬▬▬▬▬▬▬▬▬▬ CONNECT ▬▬▬▬▬▬▬▬▬▬▬▬\n\n🖥️ Website: https://www.assemblyai.com\n🐦 Twitter: https://twitter.",
+          "published_at": "2026-02-25T17:00:52Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCtatfZMf-8EkIwASXM4ts0A",
+            "video_id": "WEX8Hk60anc",
+            "cluster_id": "C031",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Coding a Guitar Sound in C - Computerphile",
+          "url": "https://www.youtube.com/watch?v=Ly1v1BRVpz4",
+          "source_name": "Computerphile",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Signal processing is just mathematics, so lets code a guitar sound in C. Dave Domminney Fowler continues the Digital Signal Processing conversation to show how your favourite tunes all rely on DSP. \n\nFind out more from Dave at  @domminney    \n\nComputerphile is supported by Jane Street. Learn more ab",
+          "published_at": "2026-03-05T15:03:25Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+            "video_id": "Ly1v1BRVpz4",
+            "cluster_id": "C038",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4"
+            ]
+          }
+        },
+        {
+          "title": "Gemini 3 Deep Think: Identifying logical errors in complex mathematics research",
+          "url": "https://www.youtube.com/watch?v=bNrbxCvFrKA",
+          "source_name": "Google DeepMind",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Gemini 3 Deep Think's improved reasoning makes it a robust tool for poking holes in even the most complex instances of mathematical reasoning. Lisa Carbone, a mathematician at Rutgers University, recently used Deep Think to review a specialized paper in the field of high-energy physics and infinite-",
+          "published_at": "2026-02-20T20:58:52Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+            "video_id": "bNrbxCvFrKA",
+            "cluster_id": "C047",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Gemini 3 Deep Think: Optimizing 2D semiconductor fabrication",
+          "url": "https://www.youtube.com/watch?v=IE0BmXsIzTI",
+          "source_name": "Google DeepMind",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "At Duke University, the Wang Lab utilized Gemini 3 Deep Think to solve a complex challenge in materials science: optimizing fabrication methods for crystal growth.\n\nBy applying expert-level scientific knowledge to research-level data, Deep Think successfully designed a precise recipe for growing thi",
+          "published_at": "2026-02-20T20:58:56Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+            "video_id": "IE0BmXsIzTI",
+            "cluster_id": "C048",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "How to Become an AI Engineer After a Career Break - Revathy Ramalingam",
+          "url": "https://www.youtube.com/watch?v=IwG_JaxC-Y8",
+          "source_name": "DataTalksClub ⬛",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "In this episode Revathy Ramalingam, Senior Software Engineer and AI Engineer at a healthcare startup, shares her inspiring personal journey from over nine years in telecom software architecture to successfully transitioning back into the industry after a seven-year career break. We explore the evolu",
+          "published_at": "2026-02-24T11:41:30Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCDvErgK0j5ur3aLgn6U-LqQ",
+            "video_id": "IwG_JaxC-Y8",
+            "cluster_id": "C056",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Khabib vs Lex: Training with Khabib | FULL EXCLUSIVE FOOTAGE",
+          "url": "https://www.youtube.com/watch?v=KGVpKPNUdzA",
+          "source_name": "Lex Fridman",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "In this video I'm training with Khabib Nurmagomedov, one of the greatest fighters of all time and a great human being. This was truly an honor for me 🙏\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/mv577-sb\nSee below for timestamps, and to give feedback, submit qu",
+          "published_at": "2026-02-25T22:36:32Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+            "video_id": "KGVpKPNUdzA",
+            "cluster_id": "C062",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Learn the basics of Data Structures in 60 seconds with Beau Carnes.",
+          "url": "https://www.youtube.com/watch?v=mrRfPVm9nAY",
+          "source_name": "freeCodeCamp.org",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Learn the basics of Data Structures in 60 seconds with Beau Carnes.",
+          "published_at": "2026-03-06T13:18:50Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UC8butISFwT-Wl7EV0hUK0BQ",
+            "video_id": "mrRfPVm9nAY",
+            "cluster_id": "C065",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4"
+            ]
+          }
+        },
+        {
+          "title": "Lex trains w/ Khabib Nurmagomedov | Exclusive Footage at UFC PI",
+          "url": "https://www.youtube.com/watch?v=SHlrUAkkWI0",
+          "source_name": "Lex Fridman",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Training with Khabib Nurmagomedov, one of the greatest fighters of all time and a great human being. This was truly an honor for me 🙏 Full video is on YouTube.",
+          "published_at": "2026-03-03T12:30:21Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+            "video_id": "SHlrUAkkWI0",
+            "cluster_id": "C067",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Music AI Sandbox | AI x Creativity: Wyclef Jean",
+          "url": "https://www.youtube.com/watch?v=l5Wpm4o6k1A",
+          "source_name": "Google DeepMind",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Legendary producer Wyclef Jean joins forces with Music AI Sandbox to explore the next era of creative expression.\n\nDiscover how Wyclef uses these experimental tools to push the boundaries of music production, using AI as a powerful new instrument for curation and sound design.\n\nWatch \"Back From Abu ",
+          "published_at": "2026-02-24T14:00:09Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+            "video_id": "l5Wpm4o6k1A",
+            "cluster_id": "C072",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Python Properties vs Methods: The Contract You Didn’t Know You Were Making",
+          "url": "https://www.youtube.com/watch?v=wHLZ_uTrCYA",
+          "source_name": "ArjanCodes",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "🧱 Build software that lasts. Join the Software Design Mastery waiting list → https://arjan.codes/mastery.\n\nIn this video, I break down when something in Python should be a property and when it should be a method, and why that choice matters more than it looks. Using a simple example, I show how prop",
+          "published_at": "2026-02-20T16:01:30Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCVhQ2NnY5Rskt6UjCUkJ_DA",
+            "video_id": "wHLZ_uTrCYA",
+            "cluster_id": "C081",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Rick Beato: Greatest Guitarists of All Time, History & Future of Music | Lex Fridman Podcast #492",
+          "url": "https://www.youtube.com/watch?v=1SJiTwbSI58",
+          "source_name": "Lex Fridman",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Rick Beato is a music educator, interviewer, producer, songwriter, and a true multi-instrument musician, playing guitar, bass, cello & piano. His incredible YouTube channel celebrates great musicians & musical ideas, and helps millions of people fall in love with great music all over again.\nThank yo",
+          "published_at": "2026-03-01T03:37:44Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+            "video_id": "1SJiTwbSI58",
+            "cluster_id": "C084",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Talk: Kernels Deep Dive (Ben Burtenshaw)",
+          "url": "https://www.youtube.com/watch?v=9oxWgT4G6yI",
+          "source_name": "HuggingFace",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "In this talk, Ben Burtenshaw from Hugging Face breaks down why optimized kernels are critical for real-world deep learning performance and how the Hugging Face Kernels ecosystem makes them easier to build and use.\nHe covers memory-bound bottlenecks, the kernel-builder workflow, reproducible multi-ha",
+          "published_at": "2026-03-04T07:13:00Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+            "video_id": "9oxWgT4G6yI",
+            "cluster_id": "C093",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4"
+            ]
+          }
+        },
+        {
+          "title": "The most beautiful formula not enough people understand",
+          "url": "https://www.youtube.com/watch?v=fsLh-NYhOoU",
+          "source_name": "3Blue1Brown",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "On the volumes of higher-dimensional spheres\nExplore the 3b1b virtual career fair: See https://3b1b.co/talent\nBecome a supporter for early views of new videos: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nThanks to",
+          "published_at": "2026-02-27T15:14:23Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+            "video_id": "fsLh-NYhOoU",
+            "cluster_id": "C101",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "The Most Realistic Fire Simulation Ever",
+          "url": "https://www.youtube.com/watch?v=B6GJjvR6txg",
+          "source_name": "Two Minute Papers",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "❤️ Check out Weights & Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The paper is available here:\nhttps://helgewrede.github.io/firex/\n\nOur Patreon if you wish to support us: https://www.patreon.com/TwoMinutePapers\n\n🙏 We would like to thank our generous Patreon supporters who ma",
+          "published_at": "2026-02-19T09:55:15Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+            "video_id": "B6GJjvR6txg",
+            "cluster_id": "C102",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "There are 2 kinds of devs. One of them is screwed. Justin Searls interview [Podcast #210]",
+          "url": "https://www.youtube.com/watch?v=hP931079TMw",
+          "source_name": "freeCodeCamp.org",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Today Quincy Larson interviews Justin Searls. He's a software engineer who cofounded a software agency 15 years ago that's still going – even after he figured out how to make a lot of money quickly and retire at age 38 once he had enough savings.\n\nThese days he's gone from solving problems for clien",
+          "published_at": "2026-03-06T11:01:15Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UC8butISFwT-Wl7EV0hUK0BQ",
+            "video_id": "hP931079TMw",
+            "cluster_id": "C104",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4"
+            ]
+          }
+        },
+        {
+          "title": "Training a Unitree G1 to Walk w/ Reinforcement Learning",
+          "url": "https://www.youtube.com/watch?v=FGnAeUXRZ4E",
+          "source_name": "sentdex",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Using mjlab and PPO to train the Unitree G1 humanoid to walk inside and outside\n\nNeural Networks from Scratch book: https://nnfs.io\nChannel membership: https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ/join\nDiscord: https://discord.gg/sentdex\nReddit: https://www.reddit.com/r/sentdex/ \nSupport",
+          "published_at": "2025-12-19T14:40:46Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCfzlCWGWYyIQ0aLC5w48gBQ",
+            "video_id": "FGnAeUXRZ4E",
+            "cluster_id": "C109",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Unitree G1 Security Disaster",
+          "url": "https://www.youtube.com/watch?v=Ah0-l0HZwLA",
+          "source_name": "sentdex",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Cybersecurity AI: Humanoid Robots as Attack Vectors: https://arxiv.org/abs/2509.14139\n\nUnipwn repo for simple demo of the RCE/bluetooth vulnerabilities: https://github.com/Bin4ry/UniPwn/tree/main\n\nNeural Networks from Scratch book: https://nnfs.io\nChannel membership: https://www.youtube.com/channel/",
+          "published_at": "2025-09-30T20:50:15Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCfzlCWGWYyIQ0aLC5w48gBQ",
+            "video_id": "Ah0-l0HZwLA",
+            "cluster_id": "C111",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "When open-sourcing your code goes wrong...",
+          "url": "https://www.youtube.com/watch?v=wzzh7Not8XE",
+          "source_name": "Fireship",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Try out CodeRabbit’s AI code reviewer with custom PR summaries - https://coderabbit.link/fireship. It’s free forever for any open source project.\n\nEverything you use on the internet today is built on the shoulders of OSS - but not every open-source project makes it. Let's take a look at 5 open-sourc",
+          "published_at": "2026-02-26T18:26:18Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+            "video_id": "wzzh7Not8XE",
+            "cluster_id": "C120",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "You’ve Been Underusing Dataclasses (These Tricks Are Wild)",
+          "url": "https://www.youtube.com/watch?v=Y9_h7ehjhO4",
+          "source_name": "ArjanCodes",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "🧱 Build software that lasts. Join the Software Design Mastery waiting list → https://arjan.codes/mastery.\n\nIn this video, I show you 7 powerful and lesser-known things you can do with dataclasses in Python. From automatic class registration and lightweight validation systems to cached derived values",
+          "published_at": "2026-02-27T16:00:53Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCVhQ2NnY5Rskt6UjCUkJ_DA",
+            "video_id": "Y9_h7ehjhO4",
+            "cluster_id": "C123",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Is there any tool that analyzes Product Hunt's Top Launches ... - Reddit",
+          "url": "https://www.reddit.com/r/ProductHunters/comments/1nqsa3b/is_there_any_tool_that_analyzes_product_hunts_top/",
+          "source_name": "Product Hunt 热门",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "Hi everyone, I'm wondering if there's a tool or platform that takes the Top Products “Launching Today” from Product Hunt and automatically",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C061",
+            "cluster_size": 1,
+            "score": 36.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "0.99元黑暗人格测试刷屏 , 有人靠它月入过万",
+          "url": "https://36kr.com/p/3713868910326147?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "<p>作者｜<strong>黄诗韵</strong></p>\n  <p>编辑｜<strong>朱人奉</strong></p>\n  <p>题图｜pexels</p>\n  <p>0.99元可以做什么？可以测测你是“灵珠”还是“魔丸”。</p>\n  <p>《哪吒》系列动画电影或许怎么都想不到，它最出圈的两个词会和“黑暗人格三角测试”产生联系。</p>\n  <p>这样一份测试题，只需0.99元，你花大概10分钟完成70道题，就可以得到属于自己的黑暗三角人格测试报告。</p>\n  <p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hs",
+          "published_at": "2026-03-08 13:43:34  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C003",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "Bad Bot Problem - Computerphile",
+          "url": "https://www.youtube.com/watch?v=AjQNDCYL5Rg",
+          "source_name": "Computerphile",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Following a report on the situation with Social Media and bots, Lewis Stuart of University of Nottingham is inspired to see just how easy it is to fire up his own botnet and puts them to work on a fake social media site: 'scroll hole.' \n\nComputerphile is supported by Jane Street. Learn more about th",
+          "published_at": "2026-02-19T13:30:22Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+            "video_id": "AjQNDCYL5Rg",
+            "cluster_id": "C028",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "Cloudflare just slop forked Next.js…",
+          "url": "https://www.youtube.com/watch?v=abbeIUOCzmw",
+          "source_name": "Fireship",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Try Brilliant for free for 30 days - https://brilliant.org/fireship and get 20% off a premium annual subscription.\n\nCloudflare just shipped Vinext - a reimplementation of the Next.js API built on Vite, essentially freeing up your Next.js app to be deployed anywhere. Let's run it. \n\n#coding  #program",
+          "published_at": "2026-03-02T20:36:25Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+            "video_id": "abbeIUOCzmw",
+            "cluster_id": "C037",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "Cyclic Redundancy Check (CRC) - Computerphile",
+          "url": "https://www.youtube.com/watch?v=_x0vbnUKYSU",
+          "source_name": "Computerphile",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "A checksum that's robust & trivial to compute with Matt Godbolt -- Check out Brilliant's courses and start for free at https://brilliant.org/computerphile/ (episode sponsor) -- More links in full description below ↓↓↓\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting ca",
+          "published_at": "2026-02-25T13:31:16Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+            "video_id": "_x0vbnUKYSU",
+            "cluster_id": "C040",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "Solution to the ladybug clock puzzle",
+          "url": "https://www.youtube.com/watch?v=7gG91SZwBoE",
+          "source_name": "3Blue1Brown",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Solution to last month's probability puzzle.",
+          "published_at": "2026-02-16T14:08:37Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+            "video_id": "7gG91SZwBoE",
+            "cluster_id": "C088",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "StatQuest: Career Advice from Tech Industry Leaders",
+          "url": "https://www.youtube.com/watch?v=WRYk7oZiogg",
+          "source_name": "StatQuest with Josh Starmer",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "This year, for my Pop's birthday, we're going to hear from current tech industry leaders that all started out working for my pop in the IT-Lab at the Medical University of South Carolina. These leaders have started all kinds of startups, pioneered Oscar award winning computer graphics and designed t",
+          "published_at": "2025-09-04T04:00:42Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCtYLUTtgS3k1Fg4y5tAhLbw",
+            "video_id": "WRYk7oZiogg",
+            "cluster_id": "C089",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "TanStack Start in 100 Seconds",
+          "url": "https://www.youtube.com/watch?v=1fUBWAETmkk",
+          "source_name": "Fireship",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "TanStack Start is a dx optimized, full-stack framework, powered by TanStack Router for React and Solid.\n\n🔗 Resources\n- https://tanstack.com/start/latest\n\n🔖 Topics Covered\n-  The problem with React \n- Tanner Linsley\n- How to run TanStack Start\n- TanStack Router\n- Type-safe server functions\n\nWant more",
+          "published_at": "2026-02-20T18:20:25Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+            "video_id": "1fUBWAETmkk",
+            "cluster_id": "C094",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "The lattice bacteria puzzle",
+          "url": "https://www.youtube.com/watch?v=d0ai33oqqDE",
+          "source_name": "3Blue1Brown",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Part of a series of monthly puzzles, done in collaboration with MoMath.\nhttps://momath.org/mindbenders",
+          "published_at": "2026-02-18T06:02:59Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+            "video_id": "d0ai33oqqDE",
+            "cluster_id": "C100",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "Traditional Holiday Live Stream",
+          "url": "https://www.youtube.com/watch?v=DNajvkqfobY",
+          "source_name": "Yannic Kilcher",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "https://ykilcher.com/discord\n\nLinks:\nTabNine Code Completion (Referral): http://bit.ly/tabnine-yannick\nYouTube: https://www.youtube.com/c/yannickilcher\nTwitter: https://twitter.com/ykilcher\nDiscord: https://discord.gg/4H8xxDF\nBitChute: https://www.bitchute.com/channel/yannic-kilcher\nMinds: https://w",
+          "published_at": "2025-12-28T12:41:54Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCZHmQk67mSJgfCCTn7xBfew",
+            "video_id": "DNajvkqfobY",
+            "cluster_id": "C107",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "Traditional X-Mas Stream",
+          "url": "https://www.youtube.com/watch?v=Dr6jw-WAd9E",
+          "source_name": "Yannic Kilcher",
+          "source_type": "youtube_api",
+          "category": "tech_ai",
+          "summary": "Letsgooo",
+          "published_at": "2025-12-29T03:44:20Z",
+          "language": "en",
+          "raw_data": {
+            "channel_id": "UCZHmQk67mSJgfCCTn7xBfew",
+            "video_id": "Dr6jw-WAd9E",
+            "cluster_id": "C108",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "微博年度汽车科技事件_新浪新闻",
+          "url": "https://www.sina.cn/news/detail/5259713991673697.html",
+          "source_name": "微博热搜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "微博评选年度事件包括比亚迪全系搭载天神之眼、小鹏汽车科技日机器人、零跑创造新势力年销量纪录及华为发布乾崑智驾ADS4。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C173",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:14",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "AI龙虾到底能干什么",
+          "url": "https://s.weibo.com/weibo?q=AI%E9%BE%99%E8%99%BE%E5%88%B0%E5%BA%95%E8%83%BD%E5%B9%B2%E4%BB%80%E4%B9%88",
+          "source_name": "微博热搜",
+          "source_type": "scraper",
+          "category": "trending",
+          "summary": "微博热搜实时热搜词条",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C026",
+            "cluster_size": 1,
+            "score": 33.0,
+            "score_reasons": [
+              "source:14",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "《2024百度熱搜年度報告》：聚焦熱點背後的公衆關切 - 中国新闻网",
+          "url": "https://m.chinanews.com/wap/detail/cht/zw/10342487.shtml",
+          "source_name": "百度热搜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "[打开](https://m.chinanews.com/wap/detail/cht/zw/10342487.shtml). 中國新聞網 2024-12-25 22:20:40 60.6万. 在2024年這個信息洪流奔涌的時代，熱點事件、熱門人物如繁星閃爍，用戶主動搜索和探尋真相的意願也愈發強烈。這不僅考驗着個體的信息篩選能力，也考驗着平臺對熱點信息的整合與推送能力。. 回首百度7億月活用戶過去一年的搜索，可以發現，大衆關注的熱搜並非只是娛樂化和情緒化的，而是從世界格局到家國情懷，從體育賽事到明星IP，再到文化生活，以及流行的熱詞熱梗，視野極爲廣泛，涵蓋了生活的方方面面。. 其中既有與個人生",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C006",
+            "cluster_size": 1,
+            "score": 33.0,
+            "score_reasons": [
+              "source:14",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "年轻人为何排队疯抢AI龙虾",
+          "url": "https://s.weibo.com/weibo?q=%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%B8%BA%E4%BD%95%E6%8E%92%E9%98%9F%E7%96%AF%E6%8A%A2AI%E9%BE%99%E8%99%BE",
+          "source_name": "微博热搜",
+          "source_type": "scraper",
+          "category": "trending",
+          "summary": "微博热搜实时热搜词条",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C169",
+            "cluster_size": 1,
+            "score": 33.0,
+            "score_reasons": [
+              "source:14",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        }
+      ]
+    },
+    "auto": {
+      "direction": "auto",
+      "label": "汽车",
+      "input_count": 220,
+      "filtered_count": 72,
+      "score_summary": {
+        "max": 54.0,
+        "min": 28.0,
+        "avg": 41.24
+      },
+      "items": [
+        {
+          "title": "微博年度汽车科技事件_新浪新闻",
+          "url": "https://www.sina.cn/news/detail/5259713991673697.html",
+          "source_name": "微博热搜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "微博评选年度事件包括比亚迪全系搭载天神之眼、小鹏汽车科技日机器人、零跑创造新势力年销量纪录及华为发布乾崑智驾ADS4。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C173",
+            "cluster_size": 1,
+            "score": 54.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "2月新能源销量出炉，零跑、问界、小鹏集体遇冷，极氪成最大黑马",
+          "url": "https://chejiahao.autohome.com.cn/info/24898780",
+          "source_name": "新能源销量",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "移动App触屏版小程序i车商本地服务\n\n点赞\n\n评论\n\n收藏\n\n分享\n\n当前位置：\n\n2月新能源销量出炉，零跑、问界、小鹏集体遇冷，极氪成最大黑马\n\n智选车\n\n车家号·0浏览·2026-03-02 20:39 · 上海\n\n3月伊始，2月新能源汽车销量成绩单陆续出炉。受“史上最长春节假期”与新能源购置税新政切换的双重影响，车市整体遇冷成为主旋律。\n\n新势力无一家突破3万辆，头部门槛下移至2万辆，就连新能源行业的领头羊比亚迪也罕见跌破20万辆大关。在普遍下滑的行业态势中，车企间的分化也变得愈发明显。\n\n2月的新势力赛道变成了淘汰赛。以往3W+的头部门槛彻底下移，2万辆成为衡量头部地位的新分水岭。\n",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C011",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "2月销量超19万辆，比亚迪连续57个月蝉联新能源销冠 - 网易",
+          "url": "https://www.163.com/dy/article/KN44H6500527V35E.html",
+          "source_name": "新能源销量",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "方向对了 2026-03-05 22:34:06\n\n### 尊界S800首发搭载全新一代激光雷达！\n\n正观新闻 2026-03-04 14:11:25\n\n### 移动充电车\n\n每天笑不停 2026-03-03 08:43:06\n\n### 1秒级零百加速，这台不量产的超跑，藏着中国汽车的技术未来\n\nMaxonor创意公元 2026-03-04 16:37:36\n\n### 中国速度再定义！仰望U9 Xtreme，让世界重新相信未来超级跑车！\n\n科技小烁 2026-03-05 20:38:09\n\n### 特斯拉辅助驾驶系统更名 移除“Autopoilt”名称\n\n梨视频 2026-03-04 17:0",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C012",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "五年十年后，新能源车能够进化到什么程度？ - 36氪",
+          "url": "https://m.36kr.com/p/3437856217176193",
+          "source_name": "36kr 汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 五年十年后，新能源车能够进化到什么程度？. 十年前，当人们提起新能源车，想到的往往是笨重的电池包、不到200公里的实际续航里程、漫长的充电等待，以及“自燃”新闻下的隐隐忧虑。. 五年前，新能源车依然是“半成品”，续航数字的提升并未消除车主的焦虑，但超充网络、固态电池、智能驾驶等技术浪潮的扑面而来，让新能源车走上我国汽车工业的舞台中间。. 今天，北京亦庄某自动驾驶测试区内，一辆无方向盘的原型车正以60公里时速巡航。车顶激光雷达无声旋转，车内投影仪在座椅间投出会议文档，电池管理系统将剩余电量折算成碳积分显示在窗玻璃上……. 当全球新能源汽车销量突破2500万辆大关，中国品牌以60%全球份额主导",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C134",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "新能源汽车排行榜_懂车帝",
+          "url": "https://www.dongchedi.com/tag/pgc/9797773",
+          "source_name": "新能源销量",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "### 5月新能源车企销量排行榜：比亚迪领跑特斯拉，蔚来、零跑创新高\n\n1546次阅读2024-06-07\n\n比亚迪价格战击溃合资？4月合资SUV销量公布\n\n知嘹看车头像\n知嘹看车头像\n\n知嘹看车\n\n### 比亚迪价格战击溃合资？4月合资SUV销量公布\n\n331次阅读2024-06-04\n\n5月新势力交付量：理想超越鸿蒙智行，蔚来、极氪破纪录\n\n懂车头像\n懂车头像\n\n懂车\n\n### 5月新势力交付量：理想超越鸿蒙智行，蔚来、极氪破纪录\n\n2028次阅读2024-06-05\n\n2024年5月中型车投诉指数排行:整体投诉指数下降\n\n汽车门头像\n汽车门头像\n\n汽车门\n\n### 2024年5月中型车投",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C182",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "汽车_新闻快讯_36氪",
+          "url": "https://www.36kr.com/nftags/172450",
+          "source_name": "36kr 汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "国轩高科：新能源 _汽_ _车_ 需求增长态势不会改变 看好新能源动力电池长期发展. 恒大 _汽_ _车_ 剥离地产业务，专注新能源 _汽_ _车_. 中汽协：4月新能源 _汽_ _车_ 销量同比增长1.1倍，市占率达到29.5%. 李想：理想 _汽_ _车_ 争取今年6月实现单月交付3万辆，目前没有降价考虑. 国轩高科：子公司收到大众 _汽_ _车_ 集团采购定点函. 理想 _汽_ _车_：2023年第一季度 _汽_ _车_ 总交付量为52584辆，交付量创历史新高. 36氪获悉，近日，滴滴自动驾驶公司与广汽埃安新能源 _汽_ _车_ 股份有限公司签订深化合作协议，共同发布无人驾驶新能源量产",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C192",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "小米与华为在电动汽车领域的战略差异分析 - 新浪财经",
+          "url": "https://cj.sina.cn/articles/view/7879848900/1d5acf3c401902r3ga?froms=ggmp",
+          "source_name": "小米与华为汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "这种策略差异的深层原因，在于两者的资源禀赋不同：\n\n1. 供应链控制权：小米通过生态链投资布局47家企业，覆盖固态电池、线控底盘等领域，但电机稀土材料和车规芯片自主化率仅31%，存在供应链风险；华为则与宁德时代、意法半导体等建立联合实验室，碳化硅晶圆国产化替代率达40%，供应链安全性更强。\n\n2. 用户群体差异：小米锁定25-35岁年轻消费者，SU7的1.98秒零百加速和128项个性化设置吸引男性用户占比79%，但该群体对智驾付费接受度仅42%；华为聚焦高端商务市场，问界M9连续16个月稳居50万元以上销量冠军，车主中68.3%为技术研发或企业管理者。\n\n3. 政策适应性：工信部2025年规范",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C164",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:14.0"
+            ]
+          }
+        },
+        {
+          "title": "36氪携手小鹏汽车解读新能源汽车最新技术发展 - 雪球",
+          "url": "https://xueqiu.com/4466359876/277970634",
+          "source_name": "36kr 汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 36氪携手小鹏汽车解读新能源汽车最新技术发展，探索国产新能源品牌技术突破. 来源：雪球App，作者： 36氪官方，（https://xueqiu.com/4466359876/277970634）. 36氪$36氪(KRKR)$ 近日携手小鹏汽车解读新能源汽车最新技术发展，探索国产新能源品牌技术突破。. 本期视频讲述小鹏G6应用全域800V高压平台、“扶摇“架构、BEV+Transformer技术等一系列硬核技术，提升充电效率，有效降低成本，优化地图使用体验，使小鹏G6成为高性价比的标杆产品，帮助其夺得2023年20万以上全新纯电汽车销量冠军，引领国产品牌进入追求技术突破的新阶段。. 依托",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C013",
+            "cluster_size": 1,
+            "score": 49.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:13.0"
+            ]
+          }
+        },
+        {
+          "title": "【视频】超充vs换电：新能源车补能谁更快？丨松果爸频道 - 车家号",
+          "url": "https://chejiahao.m.autohome.com.cn/info/24856899",
+          "source_name": "充电与补能",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "超充vs换电：新能源车补能谁更快？丨松果爸频道. 充电和换电谁更快？我自己常开的两台车，理想MEGA，蔚来ET5。一个5C超充的代表，一个换电的代表。这条视频一起真实测试一下，",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C213",
+            "cluster_size": 1,
+            "score": 49.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:13.0"
+            ]
+          }
+        },
+        {
+          "title": "充换电「周事迹」八部门联合发文促进汽车行业稳增长/8月充电设施",
+          "url": "https://chd.in-en.com/html/chd-2454982.shtml",
+          "source_name": "充电与补能",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "充电桩/充电站方面，华为签约17家企业，共推兆瓦超充项目落地，绿能慧充新站亮相广西，理想汽车超充站突破3200座。 ... 新能源汽车充电桩设施补短板项目招标计划",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C141",
+            "cluster_size": 1,
+            "score": 49.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:13.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源汽车@2023/24：卷价格、拼智能与生态战 - 36氪",
+          "url": "https://m.36kr.com/p/2588278575348612",
+          "source_name": "36kr 汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 新能源汽车@2023/24：卷价格、拼智能与生态战. 2023年末尾，受到大众广泛热议的小米汽车发布会“姗姗来迟”，也为“乱战”中的2023新能源汽车市场画上了一个句号。. 然而，在雷军整整三个小时看似平和的演讲与技术讲解中，实则在电机、智驾、智舱等核心技术方面处处“暗藏杀气”。. 这其实也是2024年新能源车要较量的几个关键技术，尤其是智驾，将在2024年成为真正的“卷王”。一边是价格战会在2024年持续，一边却是智驾等技术进阶上车。. 这对消费者来说是性价比和质价比拉满，但2024新能源汽车市场将呈现怎样的具体走势，同质化厮杀之外，包括小米在内，谁能带给市场一些让人眼前一亮的硬核创新？",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C179",
+            "cluster_size": 1,
+            "score": 48.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:12.0"
+            ]
+          }
+        },
+        {
+          "title": "最新周销量榜！零跑小鹏问界前三 - 汽车行业关注",
+          "url": "https://www.autochat.com.cn/zixun/a-38176.html",
+          "source_name": "新能源销量",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "小鹏汽车排名第三，周销量为0.79万辆。据了解，目前小鹏汽车在售车型包括MONA M03、P7+、P7、G7、G6、X9、G9，其中销量最高的是MONA M03，为0.30万辆。8月6日，小鹏汽车正式发布全新小鹏P7，并开启预售，但未公布预售价。作为换代车型，全新小鹏P7采用全新的外观造型，呈现出与小鹏其他在售车型完全不同的风格，智能化方面得到提升，提供后驱和四驱两种动力，并具有CLTC工况最高820公里的续航里程。\n\n图片\n\n图片\n\n小米汽车排名第四，为0.68万辆，其中小米SU7为0.43万辆，小米YU7为0.25万辆。小米YU7是小米汽车旗下第二款量产车、小米汽车旗下首款SUV，于6月2",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C188",
+            "cluster_size": 1,
+            "score": 48.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:12.0"
+            ]
+          }
+        },
+        {
+          "title": "中国智驾战力天梯榜（2025年9月，上） - 电动汽车",
+          "url": "https://d1ev.com/news/shuju/276322",
+          "source_name": "智能驾驶周报",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "极氪从6月开始参赛，无锡苏州二站成绩均为60+；7月17日本编辑部在北京标定路线A评测OS6.5内测版，跑出75+，感觉有进步，但尚未达惊喜的程度；没想到6.5版本公推后，极氪智驾在8月、9月比赛中脱胎换骨，南通站跑出100+拿到第二，嘉兴站跑出90+拿到第三，大有重演2024年秋季理想智驾“神奇跨越”一幕的势头，希望极氪车友们心中的这份惊喜，能在10月比赛和测试中继续。\n\nNo.11：蔚来以76.85分排名第十一。均分较8月增加0.83分，由5场智驾大赛和1场智驾评测数据得出，测试总里程163公里。\n\n蔚来在4月南京站拿到智驾大赛有史以来的最低分：43分，令人瞠目。其后5月常州站未参赛，6月",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C130",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:11.0"
+            ]
+          }
+        },
+        {
+          "title": "小米汽车上市，华为与车企合作…… 手机厂商为何纷纷下场造车-新华网",
+          "url": "http://www.news.cn/fortune/20240415/19bffffd1b1147ed9db70c8745c3d282/c.html",
+          "source_name": "小米与华为汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "王鹏指出，手机企业在生态系统、操作系统、通信技术等方面积累深厚，可以更容易地将这些技术应用到汽车上，打造更智能的驾驶体验。比如小米提出的“人车家全生态”概念，离不开其多品类的智能终端设备布局。在一位用户发布的体验视频中，他能够通过一块车载屏幕，将小米旗下的智能终端连接在一起。“打开回家模式”，一句语音指令后，这位用户家里的灯光和空调就准备就绪了。华为则拥有深厚的通信技术积累，这使得它在车载互联网、车联网技术方面具有天然优势。此外，智能驾驶的灵魂是AI。相较于传统车企，智能手机企业往往更早入局这一领域，在AI技术方面的积累也有助于其在自动驾驶领域取得突破。\n\n  另一方面，正如雷军所言：“智能系",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C166",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:11.0"
+            ]
+          }
+        },
+        {
+          "title": "【新能源汽车补贴政策】新能源汽车最新补贴政策查询_汽车之家",
+          "url": "https://ev.m.autohome.com.cn/cygj",
+          "source_name": "新能源政策",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": ":   携带身份证柜台免费处理（北京市自2017年12月1日起，各营业网点暂停办理退卡、挂失业务，恢复时间待定。）. :   微信/支付宝/网银/Apple Pay. ©2026 汽车之家 m.autohome.com.cn.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C183",
+            "cluster_size": 1,
+            "score": 46.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源汽车_新闻快讯 - 36氪",
+          "url": "https://www.36kr.com/nftags/172449",
+          "source_name": "36kr 汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "国轩高科：_新_ _能_ _源_ _汽_ _车_ 需求增长态势不会改变 看好新能源动力电池长期发展. 国轩高科在业绩说明会上表示，一季度由于传统燃油车购置税优惠政策退出、_新_ _能_ _源_ _汽_ _车_“国补”结束等因素，对于汽车终端销量有所影响，但长期来看，_新_ _能_ _源_ _汽_ _车_ 需求不会改变增长的态势。随着新能源行业的发展，动力电池需求也有巨大的增长潜力，公司看好新能源动力电池行业的长期发展。（财联社）. 36氪获悉，据市场监督管理总局官网，特斯拉汽车（北京）有限公司、特斯拉（上海）有限公司召回部分进口及国产Model 3 、Model Y汽车。自2023年5月29日",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C180",
+            "cluster_size": 1,
+            "score": 46.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "[PDF] 聚焦小米+华为：SU7 强势破圈，问界新M7 官降",
+          "url": "https://pdf.dfcfw.com/pdf/H3_AP202404091630086340_1.pdf",
+          "source_name": "小米与华为汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "28 请务必阅读正文之后的免责条款部分 守正 出奇 宁静 致远 行业周报 P5 聚焦小米+华为：SU7 强势破圈，问界新M7 官降 一、周观点更新 (一)本周汽车行业动态速览 行业最新跟踪： 行业新闻： 3 月28 日，小米汽车首款车型正式上市，售价21.59-29.99 万元，开卖4 分钟大定破1 万， 7 分钟大定破2 万，27 分钟破5 万台，上市24 小时大定突破88898 台。小米SU7 创始版最早于4 月3 日开始交付，非创始版的小米SU7 与小米SU7 Max 启动交付时间4 月底开始，小米SU7 Pro 启动交付时间5 月底开始。 图表1：小米SU7 车辆外观 图表2：小米SU",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C078",
+            "cluster_size": 1,
+            "score": 45.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:9.0"
+            ]
+          }
+        },
+        {
+          "title": "小米汽车vs华为汽车：“智造”与“智选”供应链差异",
+          "url": "http://www.cn156.com/cms/gongyinglian/115596.html",
+          "source_name": "小米与华为汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "不过，与华为问界汽车供应链相比，两者有哪些差异？同为从造手机跨界造车，小米汽车与华为问界汽车的供应链有鲜明差异。\n\n（1）华为“智选”模式的供应链\n\n华为的造车理念，简言之就是“不造车”，而是拥抱汽车产业链，为车企“加buff”——简言之就是华为坚持做智能汽车供应链生态系统，不亲自下场做汽车，类似谷歌2005年收购Android公司后只推安卓系统但不造手机，从而成为全球最大的智能手机系统。\n\n当3月8日，华为“AITO问界”正式被更改为“HUAWEI问界”，人们疑问华为抛弃原路线，对此华为轮值董事长徐直军表示，“华为的战略没有变，我们不造车，帮助车企造好车，成为一个智能网联电动汽车的增量部件供",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C165",
+            "cluster_size": 1,
+            "score": 45.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:9.0"
+            ]
+          }
+        },
+        {
+          "title": "智驾最好燃油车是哪款？多维测评揭秘更优选择",
+          "url": "https://chejiahao.autohome.com.cn/info/24871397",
+          "source_name": "智能驾驶周报",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "在新能源汽车风起云涌的今天，智能驾驶技术不再是其专属标签，燃油车领域同样掀起了一场智驾革命。面对智驾最好燃油车是哪款、油车智驾目前哪个做的最好的疑问，我们聚焦奇瑞瑞虎9X领航版、吉利星越L东方曜·揽星版以及上汽大众途观L 2025款出众款两驱龙耀版三款车型，通过全面深入的对比，展现奇瑞瑞虎9X领航版如何在这场智驾对决中脱颖而出。\n\n一、智驾系统： 瑞虎9(参数|询价)X领航版实现全场景覆盖\n\n瑞虎9X领航版搭载猎鹰500智能驾驶辅助系统，支持高速NOA领航、VIP私人定制城市领航（记忆20条路线，单条最长150公里）及300+场景智慧泊车，覆盖城市通勤、高速巡航、复杂停车等全场景。其高通825",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C187",
+            "cluster_size": 1,
+            "score": 45.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:9.0"
+            ]
+          }
+        },
+        {
+          "title": "2025年年终10万智驾SUV推荐：不同技术路线下智能驾驶能力实测TO",
+          "url": "https://aikahao.xcar.com.cn/item/3725085.html",
+          "source_name": "智能驾驶周报",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "第二步：评估维度——构建您的个性化“多维滤镜”\n\n建立一套超越品牌宣传的评估框架，用于系统化考察每一款候选车型。建议重点关注以下三个维度，并根据您的需求排序赋予不同权重。维度一：续航补能真实性与生活场景的匹配度。如果您充电便利且少有超长途需求，大电池纯电车型可能是最经济的选择；如果您充电不便或频繁长途，则应重点考察增程/混动车型的亏电油耗、发电噪音以及综合续航。务必查阅第三方媒体的真实续航测试报告，而非仅看官方CLTC数据。维度二：智能驾驶功能的实用性与可靠性。明确您最常使用的智驾场景：是高速巡航缓解疲劳，还是解决停车难题？针对性地考察车型的ACC自适应巡航跟车平顺性、车道居中保持稳定性、以及",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C008",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:8.0"
+            ]
+          }
+        },
+        {
+          "title": "懂车帝智驾评测，带来了审慎还是武断？ - OFweek智能汽车网",
+          "url": "https://m.ofweek.com/auto/2025-07/ART-70109-8500-30667610.html",
+          "source_name": "智能驾驶周报",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "2025-07-25 16:42\n\nԶ\n\nע\n\nۿչһγ졢36ʻʵ⡣һ˲С𶯣Ѷֱ⣺Ԥ̫ˡ\n\nǰҶԺܶϤƷƣ˹ССȵǼˮƽͦĵġûһͨ\n\n˵ڸٺͳ¹ʳģУ2023Model 3XţʽM9M7ǽR7ԼСSU7ȹͣȴ⡣\n\nӣ˶Ըʻ˿ֻţоǼϵͳˮƽǣ˹ڼܵ顣\n\nⳡԵĽ֤ʻֵڷϴǼݵĳǲǶʣΪǷ񶨵ģιǼݵļ“”顣\n\nһ©Ĳ\n\nжǼǷףԽȻҪҲˣ֤ҲһҪ [...] ǶȿһǼݲԴ“ɽ”뷨ΪףʵߣһЩڶʵбǼϵͳ⣬ҲòֳٻȡʻͶ룬Ⲣڹҵĳڷչ\n\nǼԽԽmore testmore truth\n\nǲ԰ѹǼϲԵ·෴ڵһԵľԲɱ⣬Ǻ࿪չǼݲԣرȨԺȵĲԣѾڱС\n\nͬغȫҽѧΪһҩϵͳSystematic Rev",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C175",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:8.0"
+            ]
+          }
+        },
+        {
+          "title": "Rising Auto Is Extraordinary! #autohome 【汽车之家】 - YouTube",
+          "url": "https://www.youtube.com/watch?v=TPA_-P-MS40",
+          "source_name": "汽车之家",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "... 本视频版权归汽车之家所有， ... #新能源汽车#极氪#极氪007 #新车#试驾评测. 北环爱好者之家•210 views · 28:35 · Go to",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C085",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "为新能源汽车补贴措施“算细账”_汽车_凤凰网",
+          "url": "https://auto.ifeng.com/topic/payxny/",
+          "source_name": "新能源政策",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "| 上海等5城市试点新能源车补贴 最高补6万    近日，四部委联合出台《通知》，确定在上海等5个城市启动私人购买新能源汽车补贴试点工作。 |. ## 深圳购买新能源汽车最高补贴12万元. ## 上海等5城市试点新能源车补贴 最高补6万. ### 近日，四部委联合出台《通知》，确定在上海等5个城市启动私人购买新能源汽车补贴试点工作。. | * 新能源汽车：低碳经济大潮下的必然选择 * 政府补贴治标不治本 新能源车发展靠企业内功 * 新能源车“饼”大钱少 三大新政两个恐难产 * 腾飞中国：发展新能源汽车是全球趋势 |. # 腾飞中国：发展新能源汽车是全球趋势.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C132",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "充电桩系列之三——超充篇：每7次超快充就让电池衰减1%？ - 36氪",
+          "url": "https://www.36kr.com/p/3711127879447046",
+          "source_name": "充电与补能",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "王磊表示，大部分长期依赖超充的新能源车主电池健康度都不高，而只用家充桩的，电池健康普遍良好，有的甚至三年衰减还不到4%。 在如今这个“超快充爆发元年”，",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C143",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "国家地方双补新能源汽车补贴政策解读",
+          "url": "http://www.caam.org.cn/chn/9/cate_96/con_5114442.html",
+          "source_name": "新能源政策",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "首先，补助范围是纳入中央财政补贴范围的新能源汽车，车辆是符合要求（要求是什么？第三页详解）的纯电动汽车、插电式混合动力汽车和燃料电池汽车。其次，国家明确了给予的新能源",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C150",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源汽车补贴标准_百度百科",
+          "url": "https://baike.baidu.com/item/%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6%E8%A1%A5%E8%B4%B4%E6%A0%87%E5%87%86/3243085",
+          "source_name": "新能源政策",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 新能源汽车补贴标准. 新能源汽车补贴标准是中国中央财政为培育战略性新兴产业、推动节能减排制定的专项政策，由财政部等部委联合发布。该标准根据车辆类型、续航里程、电池容量等指标实行分档补贴，纯电动乘用车最高补贴可达6万元，新能源客车按车长划分补贴区间，专用车按电池电量分档核定。地方财政补贴不得超过中央标准的50%，补贴资金采用年度清算方式拨付。 [1] [3]. 政策实施初期采用逐年退坡机制，2014-2015年在2013年标准基础上分别下降5%和10%。2017年起强化技术门槛，提高续航里程与能耗要求，2018年废止旧版目录车型。2022年补贴标准在2021年基础上退坡30%，公交等领域车辆",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C184",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源车充换电掀起“搭伙风” - 汽车",
+          "url": "http://auto.cyol.com/gb/articles/2023-12/07/content_8EaNZaTbxy.html",
+          "source_name": "充电与补能",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "有不少业内人士注意到，功率更大、充电速度更快的超充桩，是宝马、奔驰此次合作的重头戏。随着新能源汽车加快普及，用户逐渐从“里程焦虑”转变为“追求快速补能",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C186",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "suv汽车评测 - 懂车帝",
+          "url": "https://www.dongchedi.com/tag/pgc/10420244",
+          "source_name": "懂车帝资讯",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# suv汽车评测. 中日德10万级SUV六车大横评 油耗、舒适、配置大PK 谁更值得买？. ### 中日德10万级SUV六车大横评 油耗、舒适、配置大PK 谁更值得买？. ### 10万级SUV车辆横评，合资国产，谁虫谁虎，对比评测见分晓. ### 中日德10万级SUV大横评 智能科技、操控性能大PK 谁更值得买？. 家用热门SUV横评，哈弗H6、比亚迪宋Pro、全新瑞虎7，谁更值得买. ### 家用热门SUV横评，哈弗H6、比亚迪宋Pro、全新瑞虎7，谁更值得买. ### 2022年实测榜解析：中型SUV安全测试，XC60夺冠，两款国产车上榜. ### 15万的国产SUV，比40万的豪华车",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C092",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "上汽大众刘懿艳：建议新出政策不再区别燃油车和新能源车 设定同样补贴标准 - 驱动之家",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5EaDdqaDVBQ1NUYnVnZDByc2p0WkdralBJazJTclkzQVB2cWhaTGZBeThPcXktWFFDZVVWcHRxbzFmNktMWjNPM0wzeGNGRHdQVmU2M3h5dWw?oc=5",
+          "source_name": "Google News 新能源汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE5EaDdqaDVBQ1NUYnVnZDByc2p0WkdralBJazJTclkzQVB2cWhaTGZBeThPcXktWFFDZVVWcHRxbzFmNktMWjNPM0wzeGNGRHdQVmU2M3h5dWw?oc=5\" target=\"_blank\">上汽大众刘懿艳：建议新出政策不再区别燃油车和新能源车 设定同样补贴标准</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">驱动之家</font>",
+          "published_at": "Sun, 08 Mar 2026 01:49:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C127",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "中东动乱，霍尔木兹海峡停航 中国新能源汽车的机会来了？ - 汽车之家",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA2SU9TLXo3UTJXSzY2dE00VnB4X2J2VHNUMlVsN01fVVNRdU5JQl9reGlTSVBIR21wU1hXVERuNm1lLXpkWFoxYmR4SHFWbjdZWkNvYXdCVTZuWUk?oc=5",
+          "source_name": "Google News 新能源汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTFA2SU9TLXo3UTJXSzY2dE00VnB4X2J2VHNUMlVsN01fVVNRdU5JQl9reGlTSVBIR21wU1hXVERuNm1lLXpkWFoxYmR4SHFWbjdZWkNvYXdCVTZuWUk?oc=5\" target=\"_blank\">中东动乱，霍尔木兹海峡停航 中国新能源汽车的机会来了？</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">汽车之家</font>",
+          "published_at": "Sun, 08 Mar 2026 04:03:46 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C129",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "华为小米汽车热度领先_新浪新闻",
+          "url": "https://www.sina.cn/news/detail/5264797902047213.html",
+          "source_name": "小米与华为汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "【#华为小米汽车热度远超传统车企#】今日，微博热搜发布2025年十大热搜汽车品牌榜单，以小米汽车、鸿蒙智行为代表的汽车品牌，在舆论场中展现出压倒性的声量优势。  \n  \n榜单数据显示，小米汽车全年累计登上热搜榜326次、科技榜340次，凭借其生态互联与智能交互优势，持续将汽车产品塑造为科技生活的重要载体。鸿蒙智行累计登榜热搜220次、科技榜196次，充分彰显华为全栈智能解决方案在汽车领域的深度落地，以及市场用户对其智能技术的高度认可。\n\n这特么居然是华为原相机。。我要死了 ​\n\n杨幂ins更新多张自拍～\nPrada & 华为或成最大赢家[哈哈][哈哈][哈哈]\n#杨幂谷爱凌秀场聊天# ​\n\n2",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C147",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "懂车帝- 说真的还得懂车帝",
+          "url": "https://www.dongchedi.com/",
+          "source_name": "懂车帝资讯",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "血亏3万！含泪整理二手车卖车指南！车商/平台/个人究竟该选谁？. ### 血亏3万！含泪整理二手车卖车指南！车商/平台/个人究竟该选谁？. ### 本尊不敌平替？七款纯电SUV两两对决 谁更有戏？. ### “探险”升级！普拉多引途，踏沙下水，天地任行. ### 25.35-32.99万元 小米YU7对比特斯拉Model Y.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C174",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "英文版汽车之家_车友交流 - 懂车帝",
+          "url": "https://www.dongchedi.com/tag/ugc/11789065",
+          "source_name": "懂车帝资讯",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "内饰材料质感上乘，触感确实不错。就是刚上车的时候有一股味道。中控台设计简洁而不失科技感，各项功能一目了然，操作便捷。动力方面，它配备的是2.0T的发动机，动力输出平顺且",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C210",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "2025年20万级智驾SUV终极选购指南：五大热门车型深度测评 - 车家号",
+          "url": "https://chejiahao.autohome.com.cn/info/24511250",
+          "source_name": "智能驾驶周报",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "1.3 评测方法与数据依据\n\n评测过程综合了专业媒体试驾报告、权威机构碰撞测试数据、车主长期口碑调研以及配置参数对比分析。我们深入研究了各车型的技术白皮书、官方配置表、获得的行业奖项，并参考了如中国汽车技术研究中心等机构的公开测试结果，力求从技术参数到真实体验，多角度呈现各车型的真实实力。\n\n二、 2025年度20万级智驾SUV车型榜单与深度解析\n\n风云T11 (Top Pick)\n\n车型介绍：作为奇瑞风云品牌焕新后的首款旗舰SUV，风云T11定位“智享大六座旗舰SUV”，于2025年10月全球上市。其以“超安全、大空间、更豪华、好智慧”为核心价值，并凭借11大全系标配和极具竞争力的定价，在本",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C007",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:5.0"
+            ]
+          }
+        },
+        {
+          "title": "【视频】比亚迪放大招，今年车市再无宁日！ - 汽车之家",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9uTTRkSWhmdFFBQ3BycHpsWVhEaVh2bnZScTQtTVRnWWNjdXNsUjdMQXZnTDBVRFNYR0xuUjhZWnphMFFXNWZPR3oxbWIxUjFzNUY4VjBqeDFVbWFSb3JjZU0ySzNianVUWlJN?oc=5",
+          "source_name": "Google News 比亚迪",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE9uTTRkSWhmdFFBQ3BycHpsWVhEaVh2bnZScTQtTVRnWWNjdXNsUjdMQXZnTDBVRFNYR0xuUjhZWnphMFFXNWZPR3oxbWIxUjFzNUY4VjBqeDFVbWFSb3JjZU0ySzNianVUWlJN?oc=5\" target=\"_blank\">【视频】比亚迪放大招，今年车市再无宁日！</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">汽车之家</font>",
+          "published_at": "Sun, 08 Mar 2026 06:11:32 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C212",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "比亚迪极寒充电10分10秒_新浪新闻 - 手机新浪网",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kQjUyMWJYZjY1dlhrNWhHZ29qMTFUa3NlTkJfTTFaMS1BdjFCVGVOaEloQWtGLWNUSFF3UjAySXpObFcxckJfNFJobnExaWYtVnNBUVVVcGIwQWxqLXJpcUhPNA?oc=5",
+          "source_name": "Google News 比亚迪",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kQjUyMWJYZjY1dlhrNWhHZ29qMTFUa3NlTkJfTTFaMS1BdjFCVGVOaEloQWtGLWNUSFF3UjAySXpObFcxckJfNFJobnExaWYtVnNBUVVVcGIwQWxqLXJpcUhPNA?oc=5\" target=\"_blank\">比亚迪极寒充电10分10秒_新浪新闻</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">手机新浪网</font>",
+          "published_at": "Sun, 08 Mar 2026 06:09:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C190",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "两会经济策｜自动驾驶，安全与责任边界在哪？ - 新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBTRDd3RlBmcnJsdGdwQjRCX3p3blhSNllQSGNYRVJFUkFpcjV3UWpET3RRZEdrNnp6SjVERjJVYkJZZkg4YVhHVF9FRS1mV2VHUFF1M2VlZmw5Q3hyYzlBYUl1MnZsOEQ1UDNQVjdGVHlYYVJITlA5Nw?oc=5",
+          "source_name": "Google News 智能驾驶",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFBTRDd3RlBmcnJsdGdwQjRCX3p3blhSNllQSGNYRVJFUkFpcjV3UWpET3RRZEdrNnp6SjVERjJVYkJZZkg4YVhHVF9FRS1mV2VHUFF1M2VlZmw5Q3hyYzlBYUl1MnZsOEQ1UDNQVjdGVHlYYVJITlA5Nw?oc=5\" target=\"_blank\">两会经济策｜自动驾驶，安全与责任边界在哪？</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">新浪财经</",
+          "published_at": "Sun, 08 Mar 2026 01:25:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C128",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:5.0"
+            ]
+          }
+        },
+        {
+          "title": "充换电需求快速提升新能源车企加码补能业务 - 证券时报",
+          "url": "https://www.stcn.com/article/detail/1200773.html",
+          "source_name": "充电与补能",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "进入2024年，越来越多的车企加码新能源车补能业务，通过合纵连横的方式加速铺开超充桩和换电站，为未来的新能源汽车补能竞赛筹备“粮草”。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C142",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "关于延续和优化新能源汽车车辆购置税减免政策的公告",
+          "url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5207352/content.html",
+          "source_name": "新能源政策",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "本站热词： 发票 小微企业 个人所得税 发票查询 社保. ### 财政部 税务总局 工业和信息化部关于延续和优化新能源汽车车辆购置税减免政策的公告. ##### 财政部 税务总局 工业和信息化部公告2023年第10号. ##### （）. 收藏 订阅 已推送，请在“个人中心-我的订阅”中查看 此稿件无标签，进入“订阅设置”中订阅更多. 一、对购置日期在2024年1月1日至2025年12月31日期间的新能源汽车免征车辆购置税，其中，每辆新能源乘用车免税额不超过3万元；对购置日期在2026年1月1日至2027年12月31日期间的新能源汽车减半征收车辆购置税，其中，每辆新能源乘用车减税额不超过1.5",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C145",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源车 - 电脑之家PChome.net",
+          "url": "https://article.pchome.net/news/list-8-1.html",
+          "source_name": "新能源销量",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "异境启示录 异境启示录 2024-06-04\n 超级马里奥2D世界 超级马里奥2D世界 2024-06-01\n 小魔法独角兽小马(Little Magic Unicorn Pony Game) 小魔法独角兽小马(Little Magic Unicorn Pony Game) 2024-06-01\n 真实飞行模拟(Real Flight Simulator) 真实飞行模拟(Real Flight Simulator) 2024-06-01\n 萌趣庄园无限金币版 萌趣庄园无限金币版 2024-06-01\n 大航海时代4 大航海时代4 2024-05-31\n 星影的幻影(星影のミラージュ) 星影的幻",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C185",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "雷军：过去10年智驾进步很快但都是L2 属于人机共驾的阶段 - 新浪网",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOWUIzaFVjN0c4VGFldFVJdTJjeVBldnhrTDNMNDl5dXV5cWdWVU12TEhGcTRER0tOaXBFTk1GOGJfWnEwcGZhZGt4TzhwemZnQzZVM2NaRGVGYzNlc1lIQk43OWtwUm1ZckVZN1dYcGJBQkFENTVLdXhFYlluUFhjT2V1cDZiWU5vU1ozSVhnSlQwdjVxN2dTTVZ5UzI5cHBuU2JfajFCVTlPNnk3MTVKaGFpOXNvSHJ2cF9QdEl4VEVpbW1iVS15VnVsaDlnTXhUaG1KV0x5b3FwTVhyTDlta2swTFdtcS1WQVl5MjdMc0I0TE84Z3FTSlVLNXJjQQ?oc=5",
+          "source_name": "Google News 智能驾驶",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMi_gFBVV95cUxOWUIzaFVjN0c4VGFldFVJdTJjeVBldnhrTDNMNDl5dXV5cWdWVU12TEhGcTRER0tOaXBFTk1GOGJfWnEwcGZhZGt4TzhwemZnQzZVM2NaRGVGYzNlc1lIQk43OWtwUm1ZckVZN1dYcGJBQkFENTVLdXhFYlluUFhjT2V1cDZiWU5vU1ozSVhnSlQwdjVxN2dTTVZ5UzI5cHBuU2JfajFCVTlPNnk3MTVKaGFpOXNvSHJ2cF",
+          "published_at": "Sat, 07 Mar 2026 17:06:43 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C219",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:5.0"
+            ]
+          }
+        },
+        {
+          "title": "2024年懂车帝冬季测评",
+          "url": "https://www.dongchedi.com/article/7460073879420289562",
+          "source_name": "懂车帝资讯",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "Image 21: 顶配胖头鱼，新车40多万，现在4万多，能不能玩？Image 22: 极氪001智能语音体验 05:13. Image 31: #3万左右二手车 #3万到5万二手车推荐Image 32: 极氪001智能语音体验 10:35. Image 36: 2 万就可以拥有新款帕拉梅拉Image 37: 极氪001智能语音体验 00:26. Image 41: 一年级小学生放学后山路狂飙190km 这条赛道一年没开了，随便一跑世界排名也能到100多，果然每一个小孩哥都不能轻视Image 42: 极氪001智能语音体验 03:40. Image 46: 十万块的真7座，是吹牛还是真香？五菱",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C005",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "2025微博热搜汽车行业趋势_新浪新闻",
+          "url": "https://www.sina.cn/news/detail/5264793642471425.html",
+          "source_name": "微博热搜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "#2025微博热搜趋势报告# 2025年，微博热搜清晰刻录下中国汽车行业的进化之路。从产品发布到技术角逐，从市场格局重塑到消费趋势变迁，公众的每一次搜索与热议，都在推动智能出行时代的进程。. #哪吒之魔童闹海#成为年度电影热度标杆，#歌手2025#持续领跑综艺话题，#藏海传##国色芳华#等多部作品接连掀起追剧热潮；艺人以作品为核、真诚为骨，形成“真人托作品、作品映真人”的正 ​. 【#周生生情况通报#】 近日周生生足金挂坠被检测出含铁银钯登上微博热搜，2月3日，周生生发布情况通报，表示高度重视顾客反映的相关事宜，正积极开展相关工作，相关进展将及时同步。此前，据央广网报道，近日广东清远消费者李女",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C009",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Autohome Global 汽车之家 - YouTube",
+          "url": "https://www.youtube.com/channel/UCJkj4A_k8RYCebeguJU_zkQ/playlists?view=1&sort=lad",
+          "source_name": "汽车之家",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "Autohome Global 汽车之家. @Autohome_Global. 69K subscribers•6.6K videos ... 新车首测Autohome. Autohome Global 汽车之家· Playlist · 32. 汽车人有话说. Autohome",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C027",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "「壹周新车盘点」下半年将上市轿车【汽车之家】 - YouTube",
+          "url": "https://www.youtube.com/watch?v=_nITOlSlyPI",
+          "source_name": "汽车之家",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "「壹周新车盘点」下半年将上市轿车【汽车之家】\nAutohome Global 汽车之家\n68900 subscribers\n1 likes\n136 views\n3 Jun 2021\n汽车之家为您提供最精彩的汽车新闻、行情、评测、导购视频内容。\n看车买车用车 都回汽车之家！\n----------------------------------------------------------\n★唯一官方频道，欢迎订阅：https://www.youtube.com/channel/UCJkj4A_k8RYCebeguJU_zkQ\n----------------------------------",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C152",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "上市新车_汽车之家",
+          "url": "https://www.autohome.com.cn/newbrand/",
+          "source_name": "汽车之家",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "... 周(1.12-1.18)新车预告. 车系频道 配置 询价 · 将于1月13日正式上市2026款启辰大V DD ... 汽车之家 | 意见反馈. © 2004-2025 www.autohome.com.cn All Rights",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C126",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "从86匹到千匹猛兽，26秒是中国性能 - 懂车帝",
+          "url": "https://www.dongchedi.com/video/7582222161554293310",
+          "source_name": "懂车帝资讯",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "第一视角试驾大众新速腾300TSI，2026年了，速腾还能打吗？ 汽车性能与安全测评301次播放. 第一视角试驾大众新速腾300TSI，2026年",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C136",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "壹周新车盘点——7月新车盘点【汽车之家】 - YouTube",
+          "url": "https://www.youtube.com/watch?v=XMP7LXT4eLE",
+          "source_name": "汽车之家",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "... 本视频版权归汽车之家所有， ... 壹周新车盘点——7月新车盘点【汽车之家】. 104 views · 4 years ago. #汽车#汽车之家",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C151",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "头部品牌宣布已布局全球50+国家和地区 中国新能源汽车出海破局丨新经济观察 - 新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9YQXVqdjhGX2Jza2FmM2lETzdnaWtiZ3dpNU05UmZqQ3czcWRxNUNodU5OM0xrX1pOWE1hSXh2cE5veWhBaTJqcUxqMEQydmVFSVZyTEFvcFN3OTQwcWEzbHdROUROdlZHRkFwX3pIbGNBWHpWc3NBWFZPTjlvMkE?oc=5",
+          "source_name": "Google News 新能源汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9YQXVqdjhGX2Jza2FmM2lETzdnaWtiZ3dpNU05UmZqQ3czcWRxNUNodU5OM0xrX1pOWE1hSXh2cE5veWhBaTJqcUxqMEQydmVFSVZyTEFvcFN3OTQwcWEzbHdROUROdlZHRkFwX3pIbGNBWHpWc3NBWFZPTjlvMkE?oc=5\" target=\"_blank\">头部品牌宣布已布局全球50+国家和地区 中国新能源汽车出海破局丨新经济观察</a>&nbsp;&nbsp;<fo",
+          "published_at": "Sun, 08 Mar 2026 05:49:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C154",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "宁德时代“小伙伴”，新能源汽车赛道又一隐形冠军登陆创业板 - 新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9zMG1raHlFSENVX3ZvcHFpc0FyYi1ubVZHNHJIdHlpVXo1RE5xUUJkZUdMZl9zY0x2WFNZWDN4bGs4VTZieTNUV3V3VXIxdEhkMUJ1RGVCN3VHa1VlOGJWTHZINTNzaVpOWXU5alpkcw?oc=5",
+          "source_name": "Google News 新能源汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE9zMG1raHlFSENVX3ZvcHFpc0FyYi1ubVZHNHJIdHlpVXo1RE5xUUJkZUdMZl9zY0x2WFNZWDN4bGs4VTZieTNUV3V3VXIxdEhkMUJ1RGVCN3VHa1VlOGJWTHZINTNzaVpOWXU5alpkcw?oc=5\" target=\"_blank\">宁德时代“小伙伴”，新能源汽车赛道又一隐形冠军登陆创业板</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">新浪财经</font>",
+          "published_at": "Fri, 06 Mar 2026 11:15:05 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C161",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源汽车、人工智能……你关心的“双圈”热词代表们这样说→ - 新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1nVUJ6bkVBSGZIM1RUOVZPYXNXMWdsVmlzUUxnY0VIeEFOUEpMX2hsZ3FtYktteVVNTW9rR0lQYXE4cWVWcDdOUUF5ekotbndBMlludlQ5eWVoZG5XMW9ZNW9lUHFaVWFZakxhSjZVMDd3WmR1QkJVUw?oc=5",
+          "source_name": "Google News 新能源汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE1nVUJ6bkVBSGZIM1RUOVZPYXNXMWdsVmlzUUxnY0VIeEFOUEpMX2hsZ3FtYktteVVNTW9rR0lQYXE4cWVWcDdOUUF5ekotbndBMlludlQ5eWVoZG5XMW9ZNW9lUHFaVWFZakxhSjZVMDd3WmR1QkJVUw?oc=5\" target=\"_blank\">新能源汽车、人工智能……你关心的“双圈”热词代表们这样说→</a>&nbsp;&nbsp;<font color=\"#6f6f6f",
+          "published_at": "Sun, 08 Mar 2026 05:06:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C181",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "百度搜索大数据：国潮进入3.0时代，科技创新、文化驱动最硬核",
+          "url": "https://cn.chinadaily.com.cn/a/202105/10/WS6098ea2ba3101e7ce974e656.html",
+          "source_name": "百度热搜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "# 百度搜索大数据：国潮进入3.0时代，科技创新、文化驱动最硬核. 来源：江西网络广播电视台    2021-05-10 14:26. 5月10日，百度与人民网研究院联合发布《百度2021国潮骄傲搜索大数据》报告（以下简称“报告”），报告显示，国潮在过去十年关注度上涨528%，如今的国潮已经迈入3.0时代。新时代的国潮不局限于新国货，还包括文化、科技等各个领域背后中国力量的全面崛起。过去几年，在核心科技的驱动和中国文化的加持下，中国手机、汽车、美妆等热门行业的中国自主品牌的关注度全面反超海外品牌，2021年国货品牌关注度达到洋货品牌的3倍。一个全新的“国潮”时代正在来临。. 《百度2021国潮",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C204",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "车企营销，抢占评论区高地 - 微博营销",
+          "url": "https://marketing.hd.weibo.com/article/view/9589",
+          "source_name": "微博热搜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "### 创意参考. ### 营销案例. ### 营销资讯. ### 精选内容. #### 信良记小龙虾跨界潮流合伙人FOURTRY，如何最大化联名红利、塑造品牌年轻化？. ### 商业合作. ### 近期活动项目. ### 精选内容. #### 昙花一现的都是流量，针不戳的才是品牌. # 车企营销，抢占评论区高地. 11月中旬，雷军在微博发布了一张躺在泡沫板上的照片，称自己在车间眯了一会儿，一觉醒来小米SU7的产量已经突破了10万台。这条微博迅速火起来，登上热搜。第二天，雷军又在直播中表示“躺泡沫板是摆拍”，很快，词条又上了热搜。. 显然，这位科技企业创始人已成功收获了另一重身份——微博“顶流",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C214",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "【视频】小米新一代电池包是如何设计的？(完整版 - 汽车之家",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0tY1RKLXIySlNsYllIcUxpd2NodDFaRU5vOXdWX3JsaG9hSnd6UUFWLW5taVk4NmRSWXN5TkUzNGQwaGFNMlZGNjZfR2xHU213aHNEUldLMnB0eEE?oc=5",
+          "source_name": "Google News 小米汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE0tY1RKLXIySlNsYllIcUxpd2NodDFaRU5vOXdWX3JsaG9hSnd6UUFWLW5taVk4NmRSWXN5TkUzNGQwaGFNMlZGNjZfR2xHU213aHNEUldLMnB0eEE?oc=5\" target=\"_blank\">【视频】小米新一代电池包是如何设计的？(完整版</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">汽车之家</font>",
+          "published_at": "Sun, 08 Mar 2026 05:41:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C211",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "一图读懂比亚迪D级SUV大唐：闪充9分钟满血、950km续航全球第一 - 驱动之家",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9JSWR3S0FuRDdiX25HWUU4aS0tc2wwX0NGVEZON2ZLbklBWlozbjd3NGk4aEZVSTBpTDFzdkoxdmNvaXRxNzAxTUJIdnpOd1BxUUI5bHFENWU?oc=5",
+          "source_name": "Google News 比亚迪",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE9JSWR3S0FuRDdiX25HWUU4aS0tc2wwX0NGVEZON2ZLbklBWlozbjd3NGk4aEZVSTBpTDFzdkoxdmNvaXRxNzAxTUJIdnpOd1BxUUI5bHFENWU?oc=5\" target=\"_blank\">一图读懂比亚迪D级SUV大唐：闪充9分钟满血、950km续航全球第一</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">驱动之家</font>",
+          "published_at": "Sat, 07 Mar 2026 02:53:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C124",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "全国人大代表雷军：小米汽车工厂今年预计接待20万名访客参观 - 京报网",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBWVGFaa056SEZRRWVJLWJfd2RoRjJsTGI1Q2Z0UmRJNldpS1ZscDBpUW9pV2h3WUdqcFVibTJPYUh5bnp4b3JrTzE2cWRLVE5TLXFaOVJVZjRSRURXSEE?oc=5",
+          "source_name": "Google News 小米汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTFBWVGFaa056SEZRRWVJLWJfd2RoRjJsTGI1Q2Z0UmRJNldpS1ZscDBpUW9pV2h3WUdqcFVibTJPYUh5bnp4b3JrTzE2cWRLVE5TLXFaOVJVZjRSRURXSEE?oc=5\" target=\"_blank\">全国人大代表雷军：小米汽车工厂今年预计接待20万名访客参观</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">京报网</font>",
+          "published_at": "Sat, 07 Mar 2026 13:55:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C144",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "小米汽车新一代 SU7 内饰色“砂陶米”公布：可呈现“简洁的豪华感” - 同花顺财经",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBUSGJST2pBQ0J4SlI5TzJOTlZiRks3VmlZZU5YX09rbWJZNXA4Y3JPM1BGVnc5TUhhWmhzM2p1N2tTcnpfM2N2N1RsQlJoTWwyenkxZkxsdllEbmplMkE?oc=5",
+          "source_name": "Google News 小米汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTFBUSGJST2pBQ0J4SlI5TzJOTlZiRks3VmlZZU5YX09rbWJZNXA4Y3JPM1BGVnc5TUhhWmhzM2p1N2tTcnpfM2N2N1RsQlJoTWwyenkxZkxsdllEbmplMkE?oc=5\" target=\"_blank\">小米汽车新一代 SU7 内饰色“砂陶米”公布：可呈现“简洁的豪华感”</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">同花顺财经</font>",
+          "published_at": "Fri, 06 Mar 2026 01:45:28 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C167",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "打消顾虑！比亚迪汽车再谈闪充是否会影响电池寿命：没影响 - 新浪网",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQNXFFV2VuOVRacXpvVldGR0t4X1NoWld5T1Z4eWdHZWxYTmhUTUY1d0lnemdNdUpjRm1hUV9zei1DYkkxc0JrY21WWFktdVp4LUV2XzdGYUd2eHlTenkydkoyTTV6Wm4xVzBiai1uZmNncW9xWjFKZlpJTnZfUll4TWVBSUNENkEzZVFod2pLV3RBMTV3bk1MbWJMYW44MEp1M1VhSzNxUlRSMUhtWV9vRFY5b3R1OFJiWmhuRWpLYmRFSE9QVldIS2h3dnlzVHA0N1FxN0F1Nzd5a2dDZXlEQnh3dDh4MXhHYnZjOTQtNHBSZ0lhUElGWXN2NVQ1NDFX?oc=5",
+          "source_name": "Google News 比亚迪",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<ol><li><a href=\"https://news.google.com/rss/articles/CBMigAJBVV95cUxQNXFFV2VuOVRacXpvVldGR0t4X1NoWld5T1Z4eWdHZWxYTmhUTUY1d0lnemdNdUpjRm1hUV9zei1DYkkxc0JrY21WWFktdVp4LUV2XzdGYUd2eHlTenkydkoyTTV6Wm4xVzBiai1uZmNncW9xWjFKZlpJTnZfUll4TWVBSUNENkEzZVFod2pLV3RBMTV3bk1MbWJMYW44MEp1M1VhSzNxUlRSMUhtWV9vRFY5b3",
+          "published_at": "Sun, 08 Mar 2026 07:15:47 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C177",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "比亚迪海豹08首发亮相 - 新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5CYVFBRjdTaWJQNkdaakZmMFdhbldaOTFLNGtDTGRHOGxoYk51b3JBR21kenFTcGNQLUFJaEtVdDBZdkNsdUZRbWRDa21WRU1GQjBUU0R6OFdKd1pEXy0zSDBwRnRsXy1FS1NSdmFXbktxejVUTTBnLQ?oc=5",
+          "source_name": "Google News 比亚迪",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE5CYVFBRjdTaWJQNkdaakZmMFdhbldaOTFLNGtDTGRHOGxoYk51b3JBR21kenFTcGNQLUFJaEtVdDBZdkNsdUZRbWRDa21WRU1GQjBUU0R6OFdKd1pEXy0zSDBwRnRsXy1FS1NSdmFXbktxejVUTTBnLQ?oc=5\" target=\"_blank\">比亚迪海豹08首发亮相</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">新浪财经</font>",
+          "published_at": "Sat, 07 Mar 2026 16:01:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C191",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "雷军：人形机器人已经在小米汽车工厂开始“实习”了 - chinanews.com.cn",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VLWtONy10QlRUbkJfeGNGU29nVHdiS2ZZT2VRQnlzcjFIX0p6ejhlQnUyeWJQSVkxT3RuRV80QmJhWEVMeGVuRzNVMElIUlZKT2pQdndsV0RVRE9uRXRVNG1zQ1oxR3JXUWJ3bEU2V2lGVm5scWk1U1AxaW5tdw?oc=5",
+          "source_name": "Google News 小米汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE9VLWtONy10QlRUbkJfeGNGU29nVHdiS2ZZT2VRQnlzcjFIX0p6ejhlQnUyeWJQSVkxT3RuRV80QmJhWEVMeGVuRzNVMElIUlZKT2pQdndsV0RVRE9uRXRVNG1zQ1oxR3JXUWJ3bEU2V2lGVm5scWk1U1AxaW5tdw?oc=5\" target=\"_blank\">雷军：人形机器人已经在小米汽车工厂开始“实习”了</a>&nbsp;&nbsp;<font color=\"#6f6",
+          "published_at": "Fri, 06 Mar 2026 09:39:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C218",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "人大代表雷军：强化智能驾驶安全普及，各方共建新时代交通体系 - Caixin.com",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBia3BvMHhFZ192Tll3WTBvaGJ6N2hPbUc5c3Bad2ZoMGZhUUhyd1EtaDVEcWdHX2ZrU2psS29POGlwUm1Qd3hvMVRJTF9JOTZ5OV9sdjMwd3dWQlZldHd3Zw?oc=5",
+          "source_name": "Google News 智能驾驶",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiYEFVX3lxTFBia3BvMHhFZ192Tll3WTBvaGJ6N2hPbUc5c3Bad2ZoMGZhUUhyd1EtaDVEcWdHX2ZrU2psS29POGlwUm1Qd3hvMVRJTF9JOTZ5OV9sdjMwd3dWQlZldHd3Zw?oc=5\" target=\"_blank\">人大代表雷军：强化智能驾驶安全普及，各方共建新时代交通体系</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Caixin.com</font>",
+          "published_at": "Wed, 04 Mar 2026 05:56:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C135",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "小米首款增程 SUV“YU9”真灯上车，路测视频曝光 - 新浪网",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOZ1VickdlbnA3U2ptTTZ1em5NcTI3dlNDdk13aVlYQ2ticWpJOGRaQXpiM2NISEJzaWZNV1FOalBCbFNhNTd6UWNqTDlsUUtIY3ZtMklPN2lCZXNkOFh0QzBJblBSNmZuX3M2bnhhQjhBdGpFRGpTR0g2dVFuRE5oT0tSVjlkSXRRa1RFemZ0MV9YV3RUM0Z1a3BYX19Ld1lQMU9RbUtUX1RvQ0dNS1F3Ujhvdm1UN1lGbC1LNUZaTDd3U3pRcE5RT0dKNVlGNmpUX1pPeGt6ZDUxTXpMRzVoQ2RQUi1tVnBhN1FZaWFEWDUyZnJH?oc=5",
+          "source_name": "Google News 小米汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9AFBVV95cUxOZ1VickdlbnA3U2ptTTZ1em5NcTI3dlNDdk13aVlYQ2ticWpJOGRaQXpiM2NISEJzaWZNV1FOalBCbFNhNTd6UWNqTDlsUUtIY3ZtMklPN2lCZXNkOFh0QzBJblBSNmZuX3M2bnhhQjhBdGpFRGpTR0g2dVFuRE5oT0tSVjlkSXRRa1RFemZ0MV9YV3RUM0Z1a3BYX19Ld1lQMU9RbUtUX1RvQ0dNS1F3Ujhvdm1UN1lGbC",
+          "published_at": "Sun, 08 Mar 2026 06:44:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C168",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "推动驾驶考核项目向智能化领域延伸覆盖 - ncsti.gov.cn",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMVUwZWVjdWV1WjRKY2UxVWZ0QVNIa0hhM3prbGlNYjJYTFoyN3M4MWZhdXp6MjFTNHAzcFR5bnBVLUYyTGVxbzhXOGVnU1V5M2luSUhmN3NzdEkxUDRrVW1hWHJ6V0ZHbE10a0x6b3phbWVVM0psbUNvT2xLcUNrY3hJZUdfdw?oc=5",
+          "source_name": "Google News 智能驾驶",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxNMVUwZWVjdWV1WjRKY2UxVWZ0QVNIa0hhM3prbGlNYjJYTFoyN3M4MWZhdXp6MjFTNHAzcFR5bnBVLUYyTGVxbzhXOGVnU1V5M2luSUhmN3NzdEkxUDRrVW1hWHJ6V0ZHbE10a0x6b3phbWVVM0psbUNvT2xLcUNrY3hJZUdfdw?oc=5\" target=\"_blank\">推动驾驶考核项目向智能化领域延伸覆盖</a>&nbsp;&nbsp;<font color",
+          "published_at": "Fri, 06 Mar 2026 08:11:32 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C178",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "欧盟想对付中国汽车，英国“躺枪”却因祸得福？-观察者网 - 观察者",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0wZXhPVlcteUhJSzhad29fVngwUmszdGtPb3BpX2xBQjRydEdUM0JiVDhMZ00tM0x1QXNZRjhua1FmSVVPWnk5UGdIYXc0bUZTNmNtd1d2T1hGS3lMR3haT1Bn?oc=5",
+          "source_name": "Google News 汽车行业",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE0wZXhPVlcteUhJSzhad29fVngwUmszdGtPb3BpX2xBQjRydEdUM0JiVDhMZ00tM0x1QXNZRjhua1FmSVVPWnk5UGdIYXc0bUZTNmNtd1d2T1hGS3lMR3haT1Bn?oc=5\" target=\"_blank\">欧盟想对付中国汽车，英国“躺枪”却因祸得福？-观察者网</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">观察者</font>",
+          "published_at": "Sat, 07 Mar 2026 12:47:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C189",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "汽车新闻 - 搜狐汽车",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOT2FfVUVtOEs1RkxCRGpCcDM4c3VXdDJwcjJqSUhmaHpSSFgxdDRLaWZFd3FVZW5fOTR3TWZNZmtJR3RLWjQ4WkprVURhcjJvX3ZUcmkzcmR2VDA0NXFqeTRrZGRXWm5ZbFkycllqNlhSZFZEYVlfY0UxVTc5RjhlZldZT19RN1VXR0duR1NOdzI2OVJ2YnE0?oc=5",
+          "source_name": "Google News 汽车行业",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxOT2FfVUVtOEs1RkxCRGpCcDM4c3VXdDJwcjJqSUhmaHpSSFgxdDRLaWZFd3FVZW5fOTR3TWZNZmtJR3RLWjQ4WkprVURhcjJvX3ZUcmkzcmR2VDA0NXFqeTRrZGRXWm5ZbFkycllqNlhSZFZEYVlfY0UxVTc5RjhlZldZT19RN1VXR0duR1NOdzI2OVJ2YnE0?oc=5\" target=\"_blank\">汽车新闻</a>&nbsp;&nbsp;<fo",
+          "published_at": "Sun, 08 Mar 2026 05:01:06 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C193",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "通用、福特等美国老牌车企会被时代淘汰吗？ - 纽约时报中文网",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQS3NPZUZEdXh0TjlySzZxRDIxRk9jbTRJcUJXd1kwT2ROQnFSeGtSM2hiV1lyaHlvNUhTWHg0WVNFVDMySS1SSnJXY1FRZzNBOHRQYl9kTnFReHZSRjVkM1pkdW9sZzNNV0Mxc2tiOVN6UHdFRUtaUHFkZ19PNW95TExR?oc=5",
+          "source_name": "Google News 汽车行业",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxQS3NPZUZEdXh0TjlySzZxRDIxRk9jbTRJcUJXd1kwT2ROQnFSeGtSM2hiV1lyaHlvNUhTWHg0WVNFVDMySS1SSnJXY1FRZzNBOHRQYl9kTnFReHZSRjVkM1pkdW9sZzNNV0Mxc2tiOVN6UHdFRUtaUHFkZ19PNW95TExR?oc=5\" target=\"_blank\">通用、福特等美国老牌车企会被时代淘汰吗？</a>&nbsp;&nbsp;<font color=\"#6",
+          "published_at": "Thu, 05 Mar 2026 17:45:55 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C215",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "雷军两会建言：推动智能驾驶内容进驾考-观察者网 - 观察者",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0zLXkxVV9sYVcyZkk0Ynk3S0lkUlhucW5GeTF5VjQzbXItLUVjckhJam45WG9aUzJuZ0FGcEkxUjlQVC03SGt1MG84REl3TXlmRXcxRGc1dTdZaTNIR00ycHZTUE8?oc=5",
+          "source_name": "Google News 智能驾驶",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE0zLXkxVV9sYVcyZkk0Ynk3S0lkUlhucW5GeTF5VjQzbXItLUVjckhJam45WG9aUzJuZ0FGcEkxUjlQVC03SGt1MG84REl3TXlmRXcxRGc1dTdZaTNIR00ycHZTUE8?oc=5\" target=\"_blank\">雷军两会建言：推动智能驾驶内容进驾考-观察者网</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">观察者</font>",
+          "published_at": "Wed, 04 Mar 2026 02:53:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C217",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "眼花缭乱的汽车科技，到底哪些是真正实用的？ - 知乎",
+          "url": "https://www.zhihu.com/question/596687325",
+          "source_name": "知乎热榜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "实用的汽车科技至少要满足两个条件：解放驾驶负担、不牺牲安全性。 两个条件缺一不可。我先举个反例：早期的自动泊车怎么就“理想很丰满、现实很骨感”了？",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C206",
+            "cluster_size": 1,
+            "score": 31.0,
+            "score_reasons": [
+              "source:12",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "知乎",
+          "url": "https://www.zhihu.com/knowledge-plan/hot-question/hot/1000005/week",
+          "source_name": "知乎热榜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "全球汽车销量前10 出炉，中国3 家上榜，中企继续冲击前三还需要哪些条件？ #热点话题#中国车企#汽车销量排行榜. 155. 共235. 37.1 万. 共67 万. 56. 共61. 43. 共43. ​ 写",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C207",
+            "cluster_size": 1,
+            "score": 31.0,
+            "score_reasons": [
+              "source:12",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "2026 知乎年度科技产品金榜发布——致敬提前抵达的未来",
+          "url": "https://aikahao.xcar.com.cn/item/3729161.html",
+          "source_name": "知乎热榜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "当前位置  爱咖号首页  *2026 知乎年度科技产品金榜发布——致敬提前抵达的未来*. # 2026 知乎年度科技产品金榜发布——致敬提前抵达的未来. 全球汽车评   2405浏览 2026-01-04 IP属地: 广东. 但真正留下来的，往往不是最具想象力的那一个，而是那些被反复使用、被认真讨论，最终融入生活的选择。. 在整理这一年的内容与数据时，知乎发现一个清晰的趋势：科技领域的技术推陈出新正在从「更具想象」走向「更好用」，很多单品都在从展示技术能力，转向改善体验。如何让生活变得舒适、便捷、效率，正在成为科技产品最重要的衡量维度。. 这份「知乎年度科技产品金榜」，是一次基于知乎年度真实讨",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C010",
+            "cluster_size": 1,
+            "score": 28.0,
+            "score_reasons": [
+              "source:12",
+              "category:10",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "CES 2025 上有哪些新车与新技术，能够引领未来的出行方式？ - 知乎",
+          "url": "https://www.zhihu.com/question/9038679025/answer/76413543895",
+          "source_name": "知乎热榜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "CES 2025 吸引了众多国内外车企携创新技术参展亮相，聚焦智能化，大家都有哪些创新技术值得关注？哪些技术的创新能够引领未来的出行方式？",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C034",
+            "cluster_size": 1,
+            "score": 28.0,
+            "score_reasons": [
+              "source:12",
+              "category:10",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "郭继舜带你读汽车科技 - 知乎",
+          "url": "https://www.zhihu.com/column/c_1246017592189095936",
+          "source_name": "知乎热榜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "编者按：《郭继舜带你读汽车科技》旨在从第一性原理出发，尝试拨开迷雾，解读热点背后的汽车科技真相。 ​本栏目由智能驾驶专家郭继舜博士与汽车之心联合出品，内容独家授权汽车",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C216",
+            "cluster_size": 1,
+            "score": 28.0,
+            "score_reasons": [
+              "source:12",
+              "category:10",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "selected_topic": "",
+  "selected_sources": [],
+  "draft_path": "",
+  "cards_path": "",
+  "publish_results": [],
+  "sources": "rss,hn,github,hot,tavily,youtube_api",
+  "direction": "",
+  "platforms": "",
+  "no_cards": false,
+  "error": "",
+  "history": [
+    {
+      "stage": "search",
+      "message": "素材池 220 条: D:\\0、学习\\6、test_公众号\\content\\pool\\2026-03-08-pool.json",
+      "time": "2026-03-10T22:35:31.925297"
+    },
+    {
+      "stage": "search",
+      "message": "完成",
+      "time": "2026-03-10T22:35:31.925297"
+    },
+    {
+      "stage": "plan",
+      "message": "完成",
+      "time": "2026-03-10T22:35:31.969385"
+    }
+  ]
+}

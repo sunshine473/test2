@@ -5,7 +5,7 @@ from typing import List
 import feedparser
 
 from collector.models import CollectedItem
-from collector.sources.base import BaseSource
+from collector.sources.base import BaseSource, clip_text
 
 
 class RSSSource(BaseSource):
@@ -31,9 +31,15 @@ class RSSSource(BaseSource):
                 for entry in feed.entries[:max_per_feed]:
                     title = entry.get("title", "")
                     link = entry.get("link", "")
-                    summary = getattr(entry, "summary", "")
-                    if summary:
-                        summary = summary[:300]
+                    summary_raw = getattr(entry, "summary", "")
+                    content_blocks = entry.get("content", []) or []
+                    content_raw = ""
+                    if content_blocks:
+                        content_raw = " ".join(block.get("value", "") for block in content_blocks)
+                    if not content_raw:
+                        content_raw = entry.get("description", "") or summary_raw
+                    summary = clip_text(summary_raw or content_raw, 300)
+                    content = clip_text(content_raw or summary_raw, 4000)
                     published = entry.get("published", "")
 
                     items.append(CollectedItem(
@@ -43,6 +49,7 @@ class RSSSource(BaseSource):
                         source_type="youtube" if is_youtube else "rss",
                         category=category,
                         summary=summary,
+                        content=content,
                         published_at=published,
                         language=language,
                     ))

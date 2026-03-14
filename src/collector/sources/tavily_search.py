@@ -6,7 +6,7 @@ from typing import List
 from tavily import TavilyClient
 
 from collector.models import CollectedItem
-from collector.sources.base import BaseSource
+from collector.sources.base import BaseSource, clip_text
 
 
 class TavilySearchSource(BaseSource):
@@ -41,16 +41,15 @@ class TavilySearchSource(BaseSource):
                         days=days,
                     )
                     for r in resp.get("results", []):
-                        content = r.get("content", "")
-                        if content:
-                            content = content[:300]
+                        raw_content = r.get("content", "")
                         items.append(CollectedItem(
                             title=r.get("title", ""),
                             url=r.get("url", ""),
                             source_name=name,
                             source_type="tavily",
                             category=category,
-                            summary=content,
+                            summary=clip_text(raw_content, 300),
+                            content=clip_text(raw_content, 4000),
                             language="zh" if any(
                                 c > '\u4e00' for c in query
                             ) else "en",

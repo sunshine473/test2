@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 from tavily import TavilyClient
 
 from collector.models import CollectedItem
-from collector.sources.base import BaseSource
+from collector.sources.base import BaseSource, clip_text
 
 # 高优先级分组：只采集这些分组以控制 API 用量
 HIGH_PRIORITY_GROUPS = ("aggregators", "official")
@@ -57,16 +57,15 @@ class TwitterSource(BaseSource):
                     url = r.get("url", "")
                     if not self._is_twitter_url(url, handle):
                         continue
-                    content = r.get("content", "")
-                    if content:
-                        content = content[:300]
+                    raw_content = r.get("content", "")
                     items.append(CollectedItem(
                         title=r.get("title", ""),
                         url=url,
                         source_name=f"X/@{handle}",
                         source_type="twitter",
                         category="tech_ai",
-                        summary=content,
+                        summary=clip_text(raw_content, 300),
+                        content=clip_text(raw_content, 4000),
                         language="en",
                     ))
             except Exception as e:

@@ -5,7 +5,7 @@ from typing import List
 import requests
 
 from collector.models import CollectedItem
-from collector.sources.base import BaseSource
+from collector.sources.base import BaseSource, clip_text
 
 
 class HackerNewsSource(BaseSource):
@@ -38,6 +38,15 @@ class HackerNewsSource(BaseSource):
             points = hit.get("points", 0)
             comments = hit.get("num_comments", 0)
             summary = f"HN points={points}, comments={comments}"
+            content_parts = [
+                f"Title: {title}",
+                f"Points: {points}",
+                f"Comments: {comments}",
+            ]
+            story_text = clip_text(hit.get("story_text") or hit.get("comment_text") or "", 4000)
+            if story_text:
+                content_parts.append(f"Body: {story_text}")
+            content = "\n".join(content_parts)
             published_at = hit.get("created_at", "")
 
             items.append(
@@ -48,6 +57,7 @@ class HackerNewsSource(BaseSource):
                     source_type="api",
                     category=config.get("category", "tech_ai"),
                     summary=summary,
+                    content=content,
                     published_at=published_at,
                     language="en",
                     raw_data={
@@ -58,4 +68,3 @@ class HackerNewsSource(BaseSource):
                 )
             )
         return items
-

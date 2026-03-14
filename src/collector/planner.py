@@ -9,6 +9,7 @@
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -104,18 +105,22 @@ def find_latest_pool() -> str | None:
     return str(pools[0]) if pools else None
 
 
-def recommend_topics(ranked_items: list[CollectedItem], direction: Direction, top_n: int = 10) -> str:
-    """用 AI 分析 Top 素材，推荐 3-5 个选题"""
+def recommend_topics(ranked_items: list[CollectedItem], direction: Direction, top_n: int = 10) -> tuple[str, list[dict]]:
+    """用 AI 分析 Top 素材，推荐 3-5 个选题
+
+    Returns:
+        (推荐文本, 结构化选题列表)
+    """
     try:
         from generator.gemini_client import generate_text
     except ImportError:
-        return "⚠ 无法导入 gemini_client，跳过 AI 推荐"
+        return "⚠ 无法导入 gemini_client，跳过 AI 推荐", []
 
     # 准备素材摘要
     items_summary = []
     for i, item in enumerate(ranked_items[:top_n], 1):
         score = (item.raw_data or {}).get("score", 0)
-        items_summary.append(f"{i}. [{score}分] {item.title}\n   来源: {item.source} | URL: {item.url}\n   摘要: {item.summary[:150]}")
+        items_summary.append(f"{i}. [{score}分] {item.title}\n   来源: {item.source_name} | URL: {item.url}\n   摘要: {item.summary[:150]}")
 
     prompt = f"""你是一位资深选题策划师。以下是 {direction.label} 方向的 Top {top_n} 素材：
 
@@ -140,9 +145,65 @@ def recommend_topics(ranked_items: list[CollectedItem], direction: Direction, to
     try:
         print(f"    🤖 AI 分析中...")
         result = generate_text(prompt, task="summary", temperature=0.7)
-        return result
+
+        # 解析结构化选题
+        topics = _parse_topics_from_text(result, ranked_items)
+
+        return result, topics
     except Exception as e:
-        return f"⚠ AI 推荐失败: {str(e)[:100]}"
+        return f"⚠ AI 推荐失败: {str(e)[:100]}", []
+
+
+def _parse_topics_from_text(text: str, ranked_items: list[CollectedItem]) -> list[dict]:
+    """从 AI 推荐文本中解析结构化选题列表"""
+    import re
+
+    topics = []
+    # 匹配 ### N. [标题] 格式
+    pattern = r'###\s*\d+\.\s*(.+?)(?=###|\Z)'
+    matches = re.findall(pattern, text, re.DOTALL)
+
+    for match in matches:
+        lines = match.strip().split('\n')
+        title = lines[0].strip()
+
+        # 提取推荐理由和关联素材
+        reason_parts = []
+        source_urls = []
+
+        for line in lines[1:]:
+            line = line.strip()
+            if line.startswith('- 推荐理由:') or line.startswith('- 建议角度:'):
+                reason_parts.append(line[2:].strip())
+            elif line.startswith('- 关联素材:'):
+                # 提取素材序号 #1, #3 等
+                nums = re.findall(r'#(\d+)', line)
+                for num in nums:
+                    idx = int(num) - 1
+                    if 0 <= idx < len(ranked_items):
+                        source_urls.append(ranked_items[idx].url)
+
+        reason = '\n'.join(reason_parts)
+
+        # 计算平均分作为选题评分
+        scores = []
+        for url in source_urls:
+            for item in ranked_items:
+                if item.url == url:
+                    score = (item.raw_data or {}).get("score", 0)
+                    if score:
+                        scores.append(score)
+                    break
+        avg_score = sum(scores) / len(scores) if scores else 70
+
+        topics.append({
+            "title": title,
+            "score": round(avg_score, 1),
+            "reason": reason,
+            "source_urls": source_urls,
+        })
+
+    return topics
 
 
 def main():
@@ -162,14 +223,35 @@ def main():
     results = plan(pool_path, args.direction)
 
     # AI 推荐选题
+    all_topics = {}
     if args.recommend:
         print("\n=== AI 选题推荐 ===")
         for direction_name, result in results.items():
             direction = get_direction(direction_name)
             items = [CollectedItem(**d) for d in result["items"]]
             print(f"\n## 🎯 {direction.label} 推荐选题\n")
-            recommendation = recommend_topics(items, direction)
-            print(recommendation)
+            recommendation_text, topics = recommend_topics(items, direction)
+            print(recommendation_text)
+
+            if topics:
+                all_topics[direction_name] = topics
+
+        # 同步到 Notion 选题库
+        if all_topics and os.getenv("NOTION_API_KEY") and os.getenv("NOTION_TOPICS_DB_ID"):
+            print("\n[Notion Topics] 正在写入选题...")
+            try:
+                from collector.notion_topics import NotionTopics
+                notion = NotionTopics()
+                total_saved = 0
+                for direction_name, topics in all_topics.items():
+                    saved = notion.save_topics(topics, direction_name)
+                    total_saved += saved
+                    print(f"[Notion Topics] {direction_name}: {saved}/{len(topics)} 条")
+                print(f"[Notion Topics] 总计写入 {total_saved} 条选题")
+            except Exception as e:
+                print(f"[Notion Topics] 写入失败: {e}")
+        elif all_topics:
+            print("\n[Notion Topics] 未配置凭据，跳过同步")
 
     print(json.dumps(results, indent=2, ensure_ascii=False))
 

@@ -23,8 +23,16 @@ class WeChatPublisher(BasePublisher):
         self._token_expires_at = 0
 
     def publish(self, article: Article, config: dict) -> PublishResult:
-        app_id = config.get("app_id") or os.getenv("WECHAT_APP_ID")
-        app_secret = config.get("app_secret") or os.getenv("WECHAT_APP_SECRET")
+        app_id = (
+            config.get("app_id")
+            or os.getenv("WECHAT_APP_ID")
+            or os.getenv("WECHAT_APPID")
+        )
+        app_secret = (
+            config.get("app_secret")
+            or os.getenv("WECHAT_APP_SECRET")
+            or os.getenv("WECHAT_SECRET")
+        )
 
         if not app_id or not app_secret:
             return PublishResult(

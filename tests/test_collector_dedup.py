@@ -18,16 +18,18 @@ class TestNormalizeAndCanonical:
 
 class TestDeduplicator:
     def test_dedup_by_url_keep_richer_item(self, make_item):
-        """同 URL 去重时保留摘要更完整的一条。"""
+        """同 URL 去重时保留主要内容更完整的一条。"""
         short = make_item(
             title="Same",
             url="https://example.com/a",
             summary="short",
+            content="tiny",
         )
         rich = make_item(
             title="Same richer title",
             url="https://example.com/a/",
-            summary="this summary is much longer",
+            summary="short",
+            content="this content is much longer than the existing item",
         )
         dedup = Deduplicator()
         unique = dedup._dedup_by_url([short, rich])

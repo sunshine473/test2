@@ -3,9 +3,10 @@
 from typing import Dict, List, Optional
 
 import requests
+from youtube_transcript_api import YouTubeTranscriptApi
 
 from collector.models import CollectedItem
-from collector.sources.base import BaseSource
+from collector.sources.base import BaseSource, clip_text
 
 
 class YouTubeAPISource(BaseSource):
@@ -61,7 +62,9 @@ class YouTubeAPISource(BaseSource):
                     continue
                 url = f"https://www.youtube.com/watch?v={video_id}"
                 desc = (snippet.get("description", "") or "").strip()
-                summary = desc[:300]
+                transcript = self._get_transcript(video_id, language)
+                content = clip_text(transcript or desc, 4000)
+                summary = clip_text(desc or transcript, 300)
                 published_at = snippet.get("publishedAt", "")
 
                 items.append(
@@ -72,6 +75,7 @@ class YouTubeAPISource(BaseSource):
                         source_type="youtube_api",
                         category=category,
                         summary=summary,
+                        content=content,
                         published_at=published_at,
                         language=language,
                         raw_data={
@@ -125,3 +129,24 @@ class YouTubeAPISource(BaseSource):
         resp.raise_for_status()
         return resp.json().get("items", [])
 
+    @staticmethod
+    def _get_transcript(video_id: str, language: str) -> str:
+        """尽量抓取字幕，失败时静默回退到 description。"""
+        preferred_languages = []
+        lang = (language or "").lower()
+        if lang.startswith("zh"):
+            preferred_languages.extend(["zh-Hans", "zh-CN", "zh", "en"])
+        else:
+            preferred_languages.extend(["en", "en-US", "en-GB", "zh-Hans", "zh"])
+
+        try:
+            transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=preferred_languages)
+        except Exception:
+            return ""
+
+        text = " ".join(
+            part.get("text", "").replace("\n", " ").strip()
+            for part in transcript
+            if part.get("text")
+        )
+        return clip_text(text, 4000)

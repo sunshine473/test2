@@ -22,6 +22,7 @@ def make_item():
             "source_type": "scraper",
             "category": "tech_ai",
             "summary": "测试摘要",
+            "content": "测试主要内容",
             "published_at": "2026-02-26T08:00:00Z",
             "language": "zh",
         }

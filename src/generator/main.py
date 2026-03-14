@@ -8,6 +8,7 @@
 """
 
 import argparse
+import os
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -112,6 +113,38 @@ def main():
             print(f"✓ {fm_result['message']}")
         else:
             print(f"⚠ {fm_result.get('error', '未知错误')}")
+
+        # 同步到 Notion 草稿库
+        if os.getenv("NOTION_API_KEY") and os.getenv("NOTION_DRAFTS_DB_ID"):
+            print(f"▶ 同步到 Notion 草稿库...")
+            try:
+                from generator.notion_drafts import NotionDrafts
+
+                # 提取质量评级
+                review_text = review_result.get('review', '')
+                quality_grade = 'B'  # 默认
+                if '评级: A' in review_text or '等级: A' in review_text:
+                    quality_grade = 'A'
+                elif '评级: C' in review_text or '等级: C' in review_text:
+                    quality_grade = 'C'
+
+                draft_data = {
+                    "title": topic,
+                    "file_path": str(article_path),
+                    "word_count": review_result.get('word_count', 0),
+                    "quality_grade": quality_grade,
+                    "quality_scores": review_text,
+                    "tags": fm_result.get('tags', []),
+                    "digest": fm_result.get('digest', ''),
+                    "topic_title": topic,
+                }
+
+                notion = NotionDrafts()
+                page_id = notion.save_draft(draft_data)
+                if page_id:
+                    print(f"✓ Notion 草稿库已更新")
+            except Exception as e:
+                print(f"⚠ Notion 同步失败: {e}")
 
     # 生成卡片
     if not args.no_cards:

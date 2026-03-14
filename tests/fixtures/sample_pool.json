@@ -10,6 +10,7 @@
       "source_type": "scraper",
       "category": "tech_ai",
       "summary": "OpenAI 发布 GPT-5，支持原生多模态输入输出",
+      "content": "OpenAI 发布 GPT-5，支持原生多模态输入输出，并展示了更强的推理、代码和图像理解能力。",
       "published_at": "2026-02-26T08:00:00Z",
       "language": "zh"
     },
@@ -20,6 +21,7 @@
       "source_type": "rss",
       "category": "auto",
       "summary": "特斯拉全自动驾驶 v13 版本获得欧盟批准上路",
+      "content": "特斯拉全自动驾驶 v13 版本获得欧盟批准上路，意味着 FSD 在欧洲市场的商业化推进有了关键进展。",
       "published_at": "2026-02-25T12:00:00Z",
       "language": "zh"
     },
@@ -30,6 +32,7 @@
       "source_type": "scraper",
       "category": "tech_ai",
       "summary": "Rust 2026 Edition 带来异步改进和编译速度提升",
+      "content": "Rust 2026 Edition 带来异步改进和编译速度提升，并更新了工具链与生态兼容策略。",
       "published_at": "2026-02-24T10:00:00Z",
       "language": "en"
     }

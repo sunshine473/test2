@@ -13,6 +13,7 @@ class CollectedItem:
     source_type: str        # 采集方式：rss / scraper / tavily / twitter
     category: str           # tech_ai / auto / trending
     summary: str = ""
+    content: str = ""
     published_at: str = ""
     language: str = "en"
     raw_data: Optional[dict] = field(default=None, repr=False)

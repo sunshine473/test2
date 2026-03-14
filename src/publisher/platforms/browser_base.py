@@ -1,8 +1,10 @@
 """Playwright 浏览器自动化基类 — 知乎/头条/小红书/懂车帝共用"""
 
+import os
 import random
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 
 from publisher.base import BasePublisher
 from publisher.models import Article, PublishResult, PublishStatus
@@ -31,7 +33,9 @@ class BrowserPublisher(BasePublisher):
                 message="需要安装: pip install playwright && playwright install chromium",
             )
 
-        headless = config.get("headless", False)
+        headless = config.get("headless")
+        if headless is None:
+            headless = os.getenv("CI", "").lower() == "true"
         state_file = BROWSER_STATE_DIR / f"{self.name}_state.json"
 
         with sync_playwright() as p:
@@ -41,6 +45,7 @@ class BrowserPublisher(BasePublisher):
                 viewport={"width": 1280, "height": 800},
                 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
             )
+            self._load_cookies_from_env(context)
             # 注入 stealth 脚本
             try:
                 from playwright_stealth import stealth_sync
@@ -121,3 +126,29 @@ class BrowserPublisher(BasePublisher):
         """模拟人类打字速度"""
         page.click(selector)
         page.type(selector, text, delay=delay)
+
+    def _load_cookies_from_env(self, context) -> None:
+        cookie_env = f"{self.name.upper()}_COOKIE"
+        raw_cookie = os.getenv(cookie_env, "").strip()
+        if not raw_cookie:
+            return
+
+        target = self.editor_url or self.login_url
+        if not target:
+            return
+
+        parsed = urlparse(target)
+        origin = f"{parsed.scheme}://{parsed.netloc}"
+        cookies = []
+        for part in raw_cookie.split(";"):
+            item = part.strip()
+            if not item or "=" not in item:
+                continue
+            name, value = item.split("=", 1)
+            name = name.strip()
+            if not name:
+                continue
+            cookies.append({"name": name, "value": value.strip(), "url": origin})
+
+        if cookies:
+            context.add_cookies(cookies)

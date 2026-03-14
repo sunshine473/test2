@@ -25,6 +25,8 @@ jobs:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       # 发布器相关
+      WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
+      WECHAT_APP_SECRET: ${{ secrets.WECHAT_APP_SECRET }}
       WECHAT_APPID: ${{ secrets.WECHAT_APPID }}
       WECHAT_SECRET: ${{ secrets.WECHAT_SECRET }}
       BILIBILI_COOKIE: ${{ secrets.BILIBILI_COOKIE }}
@@ -48,6 +50,7 @@ jobs:
           pip install -r src/collector/requirements.txt
           pip install -r src/generator/requirements.txt
           pip install -r src/publisher/requirements.txt
+          python -m playwright install --with-deps chromium
 
       - name: Run full pipeline
         working-directory: src
@@ -58,7 +61,7 @@ jobs:
             --auto \
             --sources hn,github,hot,youtube \
             --direction tech_ai \
-            --platforms wechat
+            --platforms wechat,zhihu,xiaohongshu
 
       - name: Upload artifacts
         if: always()

@@ -53,6 +53,9 @@ python src/collector/main.py --search-only
 # 或
 python src/collector/search.py
 
+# 素材池 JSON 字段说明：每条 item 同时包含短摘要 `summary` 和主要内容摘录 `content`
+# Pool JSON schema: each item includes both short summary `summary` and main-content excerpt `content`
+
 # 仅策划（从素材池推荐选题）
 python src/collector/main.py --plan-only --pool content/pool/<date>-pool.json
 # 或
@@ -115,6 +118,8 @@ cd MultiPost-Extension && pnpm dev
 | `daily-collect.yml` | 每天 10:00 | 双方向素材采集（含 RSS/Tavily 汽车源） |
 | `daily-pipeline.yml` | 每天 10:00 | 全自动流水线（采集→生成→发布） |
 | `telegram-bot.yml` | 每 2 分钟 | Telegram Bot 轮询 |
+
+`daily-pipeline.yml` 当前会尝试发布到 `wechat`、`zhihu`、`xiaohongshu`。微信公众号优先读取 `WECHAT_APP_ID` / `WECHAT_APP_SECRET`，同时兼容旧的 `WECHAT_APPID` / `WECHAT_SECRET`；知乎和小红书依赖对应的 `ZHIHU_COOKIE` / `XIAOHONGSHU_COOKIE` Secrets，并在 GitHub Actions 中默认以 headless 模式运行。
 
 **配置指南**: 详见 [docs/GitHub-Actions配置指南.md](docs/GitHub-Actions配置指南.md)
 

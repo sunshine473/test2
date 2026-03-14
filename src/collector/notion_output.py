@@ -55,10 +55,25 @@ class NotionOutput:
             keys["summary"]: {"rich_text": [{"text": {"content": summary}}]},
             keys["language"]: {"select": {"name": item.language}},
             keys["date"]: {"date": {"start": date}},
+            keys["status"]: {"select": {"name": "待筛选"}},
         }
         published_at = self._normalize_datetime(item.published_at)
         if published_at:
             properties[keys["published_at"]] = {"date": {"start": published_at}}
+
+        # 如果有评分数据，写入评分字段
+        score = getattr(item, "score", None)
+        if score is not None:
+            properties[keys["score"]] = {"number": score}
+
+        # 如果有方向数据，写入方向字段
+        directions = getattr(item, "directions", None)
+        if directions:
+            if isinstance(directions, str):
+                directions = [directions]
+            properties[keys["direction"]] = {
+                "multi_select": [{"name": d} for d in directions if d]
+            }
 
         self.client.pages.create(
             parent=self.parent,
@@ -222,6 +237,9 @@ class NotionOutput:
             "language": ("语言", {"select": {"options": []}}),
             "date": ("采集日期", {"date": {}}),
             "published_at": ("文章发布时间", {"date": {}}),
+            "score": ("评分", {"number": {"format": "number"}}),
+            "direction": ("方向", {"multi_select": {"options": []}}),
+            "status": ("状态", {"select": {"options": []}}),
         }
 
         missing = {}
@@ -242,4 +260,7 @@ class NotionOutput:
             "language": "语言",
             "date": "采集日期",
             "published_at": "文章发布时间",
+            "score": "评分",
+            "direction": "方向",
+            "status": "状态",
         }, parent

@@ -69,6 +69,7 @@ class HotSearchSource(BaseSource):
                         source_type="scraper",
                         category=category,
                         summary=f"{name}实时热搜词条",
+                        content=f"{name}热搜词条：{title}",
                         language="zh",
                     )
                 )
@@ -77,4 +78,3 @@ class HotSearchSource(BaseSource):
                     break
 
         return items
-

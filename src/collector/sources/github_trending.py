@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from collector.models import CollectedItem
-from collector.sources.base import BaseSource
+from collector.sources.base import BaseSource, clip_text
 
 
 class GitHubTrendingSource(BaseSource):
@@ -45,6 +45,17 @@ class GitHubTrendingSource(BaseSource):
 
                     desc_tag = article.select_one("p")
                     desc = desc_tag.text.strip() if desc_tag else ""
+                    stars_tag = article.select_one('a[href$="/stargazers"]')
+                    language_tag = article.select_one('[itemprop="programmingLanguage"]')
+                    stars = clip_text(stars_tag.text if stars_tag else "", 50)
+                    repo_language = clip_text(language_tag.text if language_tag else "", 50)
+                    content_parts = []
+                    if desc:
+                        content_parts.append(desc)
+                    if repo_language:
+                        content_parts.append(f"Language: {repo_language}")
+                    if stars:
+                        content_parts.append(f"Stars: {stars}")
 
                     items.append(CollectedItem(
                         title=title,
@@ -52,7 +63,8 @@ class GitHubTrendingSource(BaseSource):
                         source_name="GitHub Trending",
                         source_type="scraper",
                         category=category,
-                        summary=desc,
+                        summary=clip_text(desc, 300),
+                        content="\n".join(content_parts),
                         language="en",
                     ))
             except Exception as e:

@@ -3,6 +3,8 @@
 from abc import ABC, abstractmethod
 from typing import List
 
+from bs4 import BeautifulSoup
+
 from collector.models import CollectedItem
 
 
@@ -20,3 +22,20 @@ class BaseSource(ABC):
             采集到的素材列表
         """
         ...
+
+
+def clean_text(value: str) -> str:
+    """移除 HTML 并压缩空白，得到可读纯文本。"""
+    text = (value or "").strip()
+    if not text:
+        return ""
+    text = BeautifulSoup(text, "html.parser").get_text(" ", strip=True)
+    return " ".join(text.split())
+
+
+def clip_text(value: str, limit: int) -> str:
+    """截断文本，避免 pool 体积失控。"""
+    text = clean_text(value)
+    if not text:
+        return ""
+    return text[:limit]

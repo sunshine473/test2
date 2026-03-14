@@ -76,8 +76,10 @@ class Deduplicator:
             if not existing:
                 grouped[key] = item
                 continue
-            # 保留摘要更完整、标题更长的一条
-            if len(item.summary or "") + len(item.title or "") > len(existing.summary or "") + len(existing.title or ""):
+            # 保留主要内容更完整、标题更长的一条
+            current_score = len(item.title or "") + len(item.summary or "") + len(item.content or "")
+            existing_score = len(existing.title or "") + len(existing.summary or "") + len(existing.content or "")
+            if current_score > existing_score:
                 grouped[key] = item
         return list(grouped.values())
 

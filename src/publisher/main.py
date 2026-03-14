@@ -7,6 +7,7 @@
 
 import argparse
 import base64
+import os
 import re
 import sys
 import tempfile
@@ -199,16 +200,50 @@ def main():
     print(f"发布: {article.title}")
     print(f"平台: {', '.join(targets)}\n")
 
+    results = []
     for name in targets:
         print(f"[{name}] 发布中...")
         try:
             pub = get_publisher(name)
             result = pub.publish(article, config.get(name, {}))
             print(f"[{name}] {result.status.value}: {result.message}")
+            results.append({
+                "platform": name,
+                "status": result.status.value,
+                "message": result.message,
+                "url": result.url or "",
+            })
         except ValueError as e:
             print(f"[{name}] 错误: {e}")
+            results.append({
+                "platform": name,
+                "status": "failed",
+                "message": str(e),
+                "url": "",
+            })
         except Exception as e:
             print(f"[{name}] 错误: {e}")
+            results.append({
+                "platform": name,
+                "status": "failed",
+                "message": str(e),
+                "url": "",
+            })
+
+    # 同步到 Notion 发布记录
+    if results and os.getenv("NOTION_API_KEY") and os.getenv("NOTION_PUBLISH_DB_ID"):
+        print(f"\n▶ 同步到 Notion 发布记录...")
+        try:
+            from publisher.notion_records import NotionRecords
+            notion = NotionRecords()
+            saved = notion.save_batch_results(
+                title=article.title,
+                results=results,
+                draft_title=article.title
+            )
+            print(f"✓ Notion 发布记录已更新: {saved}/{len(results)} 条")
+        except Exception as e:
+            print(f"⚠ Notion 同步失败: {e}")
 
     print("\n发布完成。")
 
