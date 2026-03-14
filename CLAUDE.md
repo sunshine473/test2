@@ -74,14 +74,18 @@ Layer 6: 分发 (Distribute) → PublishResult
 
 **配置步骤**：
 1. 在 Notion 中创建 Integration，获取 API Key
-2. 运行 `python scripts/create_notion_databases.py` 自动创建 4 个数据库
+2. 运行 `python scripts/create_notion_databases.py` 自动创建 3 个数据库
 3. 运行 `python scripts/setup_notion_databases.py` 自动配置字段
-4. 在 Notion UI 中手动创建关联字段（Relation）：
-   - 选题库 → 草稿库：创建 "关联草稿" 字段
-   - 草稿库 → 选题库：创建 "关联选题" 字段
-   - 发布记录 → 草稿库：创建 "关联草稿" 字段
+4. 运行 `python scripts/create_relations_final.py` 创建选题库↔草稿库关联
+5. 运行 `python scripts/create_material_relations.py` 创建素材池↔选题库关联
+6. 运行 `python scripts/test_complete_flow.py` 验证完整数据流
 
-详见 `docs/notion-setup.md`
+**关联字段**（已通过 API 自动创建）：
+- 素材池 ↔ 选题库：`关联选题` / `关联素材`
+- 选题库 ↔ 草稿库：`关联草稿` / `关联选题`
+- 草稿库 ↔ 发布记录：`关联草稿`
+
+详见 `docs/notion-setup.md` 和 `docs/notion-status.md`
 
 ### Two-Phase Collection Design
 
