@@ -48,7 +48,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 发布 → 发布记录 + 更新草稿库 [状态: 已发布]
 ```
 
-配置详见 `docs/notion-setup.md`
+**配置步骤**：
+1. 在 Notion 中创建 Integration，获取 API Key
+2. 运行 `python scripts/create_notion_databases.py` 自动创建 4 个数据库
+3. 运行 `python scripts/setup_notion_databases.py` 自动配置字段
+4. 在 Notion UI 中手动创建关联字段（Relation）：
+   - 选题库 → 草稿库：创建 "关联草稿" 字段
+   - 草稿库 → 选题库：创建 "关联选题" 字段
+   - 发布记录 → 草稿库：创建 "关联草稿" 字段
+
+详见 `docs/notion-setup.md`
 
 ### Two-Phase Collection Design
 
