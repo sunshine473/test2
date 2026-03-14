@@ -1,0 +1,30 @@
+# Core dependencies
+requests
+python-dotenv
+pyyaml
+
+# Collector
+feedparser
+beautifulsoup4
+tavily-python
+notion-client
+youtube-transcript-api
+
+# Generator
+google-genai
+
+# Publisher
+markdown
+playwright
+playwright-stealth
+
+# Bot
+anthropic
+
+# Testing
+pytest
+pytest-asyncio
+pytest-mock
+pytest-cov
+responses
+freezegun
