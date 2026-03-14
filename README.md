@@ -101,10 +101,35 @@ cd MultiPost-Extension && pnpm dev
 
 ## 环境配置
 
+### 基础依赖
 - Python 3 + 各模块 `requirements.txt` 依赖
 - Node.js + pnpm（MultiPost 扩展开发）
 - LLM API 密钥（Claude / Gemini / OpenAI）
-- Notion 配置（素材采集为必选）：`NOTION_API_KEY`、`NOTION_DATABASE_ID`
+
+### Notion 配置（数据中枢）
+
+本项目使用 Notion 作为全流程数据管理中枢，需要配置 4 个数据库：
+
+```bash
+# 必需配置
+NOTION_API_KEY=ntn_xxx                    # Notion Integration Token
+NOTION_DATABASE_ID=xxx                    # 素材池数据库 ID
+
+# 可选配置（启用完整数据中枢）
+NOTION_TOPICS_DB_ID=xxx                   # 选题库数据库 ID
+NOTION_DRAFTS_DB_ID=xxx                   # 草稿库数据库 ID
+NOTION_PUBLISH_DB_ID=xxx                  # 发布记录数据库 ID
+```
+
+**配置指南**: 详见 [docs/notion-setup.md](docs/notion-setup.md)
+
+**数据流**:
+- 采集阶段 → 素材池数据库
+- 策划阶段 → 选题库数据库
+- 生成阶段 → 草稿库数据库
+- 发布阶段 → 发布记录数据库
+
+### 其他配置
 - YouTube API 配置（启用 `youtube_api` 时）：`YOUTUBE_API_KEY`
 - `.env` 文件配置敏感信息（不要提交到仓库）
 

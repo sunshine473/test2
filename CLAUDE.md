@@ -17,6 +17,39 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 (自动)    (按方向)    (★卡点)    (自动)      (★卡点)    (一键)
 ```
 
+### Notion 数据中枢
+
+使用 Notion 作为全流程数据管理中枢，4 个核心数据库：
+
+1. **素材池数据库** (`NOTION_DATABASE_ID`)
+   - 存储采集的原始素材
+   - 字段：标题、URL、来源、分类、摘要、评分、方向、状态等
+   - 状态流转：待筛选 → 已推荐 → 已选用
+
+2. **选题库数据库** (`NOTION_TOPICS_DB_ID`)
+   - 存储 AI 推荐的选题
+   - 字段：选题标题、方向、评分、推荐理由、关联素材、状态等
+   - 状态流转：待选择 → 已选中 → 已生成 → 已发布
+
+3. **草稿库数据库** (`NOTION_DRAFTS_DB_ID`)
+   - 存储生成的文章草稿
+   - 字段：文章标题、文件路径、字数、质量评级、标签、摘要、状态等
+   - 状态流转：待审核 → 审核通过 → 已发布
+
+4. **发布记录数据库** (`NOTION_PUBLISH_DB_ID`)
+   - 记录多平台发布结果
+   - 字段：标题、平台、状态、发布链接、发布消息、发布日期等
+
+**数据流**：
+```
+采集 → 素材池 [状态: 待筛选]
+策划 → 选题库 [状态: 待选择] + 更新素材池 [状态: 已推荐]
+生成 → 草稿库 [状态: 待审核] + 更新选题库 [状态: 已生成]
+发布 → 发布记录 + 更新草稿库 [状态: 已发布]
+```
+
+配置详见 `docs/notion-setup.md`
+
 ### Two-Phase Collection Design
 
 **Phase 1: Search** (`src/collector/search.py`)
@@ -182,9 +215,22 @@ Commit types: `feat`, `fix`, `refactor`, `docs`, `chore`
 
 ## Key Files
 
+### Configuration
 - `src/config/sources.yaml` — 信息源配置（RSS、Tavily query、Twitter 账号）
 - `src/config/publishers.yaml` — 平台开关和配置
 - `src/config/models.yaml` — Gemini 模型配置（文本/图像任务）
+
+### Data Storage
 - `content/pool/` — 素材池 JSON（搜索阶段输出）
 - `content/drafts/` — 草稿（生成阶段输出）
+- `content/pipeline/` — 流水线状态 JSON
+
+### Notion Integration
+- `src/collector/notion_output.py` — 素材池同步
+- `src/collector/notion_topics.py` — 选题库同步
+- `src/generator/notion_drafts.py` — 草稿库同步
+- `src/publisher/notion_records.py` — 发布记录同步
+- `docs/notion-setup.md` — Notion 配置指南
+
+### Skills
 - `.claude/skills/` — Claude Skills 定义
