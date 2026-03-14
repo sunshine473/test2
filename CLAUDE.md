@@ -10,6 +10,30 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture
 
+### Six-Layer Architecture (六层架构)
+
+本项目正在向六层架构演进，以降低模块耦合、提升协作效率：
+
+```
+Layer 1: 采集 (Collect)    → RawMaterial[]
+Layer 2: 整理 (Normalize)  → MaterialPool
+Layer 3: 策划 (Plan)       → TopicCandidate[]
+Layer 4: 创作 (Create)     → DraftPackage
+Layer 5: 包装 (Package)    → PublishPackage
+Layer 6: 分发 (Distribute) → PublishResult
+```
+
+**核心文档**：
+- `docs/6层改造草案.md` - 改造目标和原则
+- `docs/内容流水线数据契约.md` - 数据结构定义
+- `docs/六层架构映射说明.md` - 迁移路线图
+
+**当前状态**：
+- ✅ Layer 1 (采集)、Layer 3 (策划)、Layer 6 (分发) 已成型
+- 🔄 Layer 2 (整理) 存在但边界模糊，需从 collector 中独立
+- ❌ Layer 5 (包装) 缺失，格式转换逻辑散落在 publisher 中
+- 📅 Layer 4 (创作) 需重构输出为标准 DraftPackage
+
 ### Content Pipeline (SOP)
 
 ```
