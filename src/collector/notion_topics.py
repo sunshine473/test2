@@ -123,15 +123,30 @@ class NotionTopics:
     def _ensure_schema(self) -> tuple[dict, dict]:
         """确保数据库包含写入所需字段，返回(字段键名映射, pages.create parent)"""
         db = self.client.databases.retrieve(database_id=self.database_id)
-        properties = db.get("properties", {})
+        data_sources = db.get("data_sources", []) or []
 
-        def update_schema(missing_props: dict):
-            self.client.databases.update(
-                database_id=self.database_id,
-                properties=missing_props,
-            )
+        if data_sources:
+            data_source_id = data_sources[0]["id"]
+            schema_obj = self.client.data_sources.retrieve(data_source_id=data_source_id)
+            properties = schema_obj.get("properties", {})
 
-        parent = {"type": "database_id", "database_id": self.database_id}
+            def update_schema(missing_props: dict):
+                self.client.data_sources.update(
+                    data_source_id=data_source_id,
+                    properties=missing_props,
+                )
+
+            parent = {"type": "data_source_id", "data_source_id": data_source_id}
+        else:
+            properties = db.get("properties", {})
+
+            def update_schema(missing_props: dict):
+                self.client.databases.update(
+                    database_id=self.database_id,
+                    properties=missing_props,
+                )
+
+            parent = {"type": "database_id", "database_id": self.database_id}
 
         # 标题字段必须复用现有 title 类型字段
         title_key = next(
@@ -149,15 +164,13 @@ class NotionTopics:
             "status": ("状态", {"select": {"options": []}}),
             "recommend_date": ("推荐日期", {"date": {}}),
             "selected_date": ("选中日期", {"date": {}}),
-            "draft_relation": ("关联草稿", {"relation": {"database_id": os.getenv("NOTION_DRAFTS_DB_ID", "")}}),
+            # 关联字段需要在 Notion UI 中手动创建，这里不自动创建
+            # "draft_relation": ("关联草稿", {"relation": {...}}),
         }
 
         missing = {}
         for _, (name, spec) in required.items():
             if name not in properties:
-                # 跳过关联字段（如果目标数据库未配置）
-                if name == "关联草稿" and not os.getenv("NOTION_DRAFTS_DB_ID"):
-                    continue
                 missing[name] = spec
 
         if missing:
