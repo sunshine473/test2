@@ -38,6 +38,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 新增平台：创建 `platforms/<name>.py` → 继承 `PublisherBase` → 用 `@register` 装饰
 
+浏览器平台（知乎 / 小红书 / 懂车帝 / 头条）在 CI 中默认以 headless 运行，可通过 `<PLATFORM>_COOKIE` 环境变量注入登录态；微信公众号发布器同时兼容 `WECHAT_APP_ID/WECHAT_APP_SECRET` 与旧的 `WECHAT_APPID/WECHAT_SECRET`。
+
 ### Skills Design Principle
 
 **Skills = 薄层调度器**，不是执行引擎：
@@ -53,6 +55,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 必须包含 YAML frontmatter（description、user-invocable、allowed-tools、argument-hint）
 
 ## Key Commands
+
+### Quick Start (推荐使用 Skills)
+
+```bash
+# 全链路工厂（推荐）
+/factory                              # 半自动模式（默认在选题和审核暂停）
+/factory --auto                       # 全自动模式
+/factory --direction tech_ai          # 指定内容方向
+/factory --resume latest --topic "选题"  # 恢复并选题
+/factory --resume latest --approve    # 审核通过并继续
+
+# 单独模块
+/search                               # 素材采集
+/plan                                 # 选题策划
+/write "选题标题"                      # 内容生成
+/publish <markdown文件>                # 多平台发布
+```
 
 ### Collection
 ```bash
