@@ -11,7 +11,7 @@ bilibili:
   category: 17  # 科技分区
 
 zhihu:
-  enabled: false
+  enabled: true
   headless: false  # 首次需要手动登录
 
 toutiao:
@@ -19,7 +19,7 @@ toutiao:
   headless: false
 
 xiaohongshu:
-  enabled: false
+  enabled: true
   headless: false  # 首次需要手动扫码登录，登录后 Cookie 自动保存
 
 dongchedi:
