@@ -104,20 +104,29 @@ def _format_timestamp(seconds: float) -> str:
     return f"{hours:02d}:{minutes:02d}:{secs:06.3f}"
 
 
-def _generate_frames_html(frames: List[Path], scenes: List[Dict[str, Any]]) -> str:
+def _generate_frames_html(frames: List[Dict[str, Any]], scenes: List[Dict[str, Any]]) -> str:
     """Generate HTML for frame thumbnails timeline."""
     if not frames:
         return "<p>No frames available</p>"
 
     html_parts = ['<div class="timeline">']
 
-    for i, frame_path in enumerate(frames):
+    for i, frame_info in enumerate(frames):
+        # Handle both dict and Path formats
+        if isinstance(frame_info, dict):
+            frame_path = Path(frame_info['path'])
+            timestamp = frame_info.get('time', i * 5)
+            time_str = frame_info.get('time_str', f"{int(timestamp // 60)}:{int(timestamp % 60):02d}")
+        else:
+            frame_path = frame_info
+            timestamp = i * 5
+            time_str = f"{int(timestamp // 60)}:{int(timestamp % 60):02d}"
+
         if not frame_path.exists():
             continue
 
         # Find corresponding scene
         scene = scenes[i] if i < len(scenes) else {}
-        timestamp = scene.get("timestamp", i * 5)
         description = scene.get("description", f"Frame {i+1}")
 
         # Read frame as base64

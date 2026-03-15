@@ -33,8 +33,8 @@ DOUBAO_API_KEY = os.environ.get("DOUBAO_API_KEY")
 if GEMINI_API_KEY:
     API_PROVIDER = "gemini"
     API_KEY = GEMINI_API_KEY
-    API_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent"
-    API_MODEL = "gemini-2.0-flash-exp"
+    API_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+    API_MODEL = "gemini-2.5-flash"
 elif DOUBAO_API_KEY:
     API_PROVIDER = "doubao"
     API_KEY = DOUBAO_API_KEY
@@ -300,18 +300,25 @@ def parse_api_response(response):
     if not text:
         raise Exception(f"Cannot parse API response: {json.dumps(response)[:200]}")
 
+    # Log the raw text for debugging
+    log(f"Raw API response text (first 200 chars): {text[:200]}")
+
     # Extract JSON from markdown code blocks
     if '```json' in text:
-        match = re.search(r'```json\s*(\{.*?\})\s*```', text, re.DOTALL)
+        match = re.search(r'```json\s*([\s\S]*?)\s*```', text, re.DOTALL)
         if match:
-            text = match.group(1)
+            text = match.group(1).strip()
     elif '```' in text:
-        match = re.search(r'```\s*(\{.*?\})\s*```', text, re.DOTALL)
+        match = re.search(r'```\s*([\s\S]*?)\s*```', text, re.DOTALL)
         if match:
-            text = match.group(1)
+            text = match.group(1).strip()
 
     # Extract outermost JSON object or array using brace matching
     text = text.strip()
+
+    if not text:
+        raise Exception("Empty text after extraction")
+
     if text.startswith('{'):
         brace_count = 0
         for i, char in enumerate(text):
@@ -332,6 +339,13 @@ def parse_api_response(response):
                 if brace_count == 0:
                     text = text[:i+1]
                     break
+    else:
+        # Try to find JSON object or array anywhere in the text
+        json_match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', text)
+        if json_match:
+            text = json_match.group(1)
+        else:
+            raise Exception(f"No JSON found in text: {text[:200]}")
 
     return json.loads(text)
 
@@ -644,9 +658,9 @@ def run_full_pipeline(url_or_path, title=None, archive_dir=None):
         from report_generator import generate_report
         generate_report(
             analysis_data=analysis,
-            video_path=str(video_dest),
+            video_path=video_dest,
             frames=frames,
-            output_dir=str(report_dir),
+            output_dir=report_dir,
             title=title
         )
 
