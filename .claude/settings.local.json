@@ -6,7 +6,10 @@
       "Bash(git commit:*)",
       "WebSearch",
       "Bash(pip install:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(echo:*)",
+      "Bash(source:*)",
+      "Bash(exec zsh:*)"
     ]
   }
 }

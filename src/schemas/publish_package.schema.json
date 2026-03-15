@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PublishPackage",
+  "type": "object",
+  "required": ["title", "platform", "body", "format"],
+  "properties": {
+    "title": {"type": "string"},
+    "platform": {"type": "string"},
+    "body": {"type": "string"},
+    "format": {"type": "string"},
+    "cover_assets": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "extra": {"type": "object"}
+  },
+  "additionalProperties": true
+}

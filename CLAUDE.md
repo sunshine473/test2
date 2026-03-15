@@ -30,8 +30,8 @@ Layer 6: 分发 (Distribute) → PublishResult
 
 **当前状态**：
 - ✅ Layer 1 (采集)、Layer 3 (策划)、Layer 6 (分发) 已成型
-- 🔄 Layer 2 (整理) 存在但边界模糊，需从 collector 中独立
-- ❌ Layer 5 (包装) 缺失，格式转换逻辑散落在 publisher 中
+- ✅ Layer 2 (整理) 已落 `src/normalizer/` 薄骨架，并由 `collector.search` 调用
+- ✅ Layer 5 (包装) 已落 `src/packager/` 薄骨架，并由 `publisher.main` / `pipeline` 调用
 - 📅 Layer 4 (创作) 需重构输出为标准 DraftPackage
 
 ### Content Pipeline (SOP)
@@ -91,7 +91,7 @@ Layer 6: 分发 (Distribute) → PublishResult
 
 **Phase 1: Search** (`src/collector/search.py`)
 - 多源采集（RSS, HN, GitHub, Tavily, YouTube API）
-- 去重聚类（`dedup.py`）
+- 调用 `src/normalizer/` 做清洗、去重聚类与素材池建模
 - 输出素材池 JSON 到 `content/pool/`
 
 **Phase 2: Plan** (`src/collector/planner.py`)
@@ -105,6 +105,7 @@ Layer 6: 分发 (Distribute) → PublishResult
 - 各平台适配器继承 `base.PublisherBase`
 - 用 `@register` 装饰器注册到 `registry.py`
 - `main.py` 通过 `get_publisher(name)` 动态加载
+- `src/packager/` 负责把 Markdown 草稿转成平台发布包，publisher 只消费已包装内容
 
 新增平台：创建 `platforms/<name>.py` → 继承 `PublisherBase` → 用 `@register` 装饰
 

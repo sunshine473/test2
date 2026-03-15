@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DraftPackage",
+  "type": "object",
+  "required": ["title", "slug", "topic", "article_markdown"],
+  "properties": {
+    "title": {"type": "string"},
+    "slug": {"type": "string"},
+    "topic": {"type": "string"},
+    "article_markdown": {"type": "string"},
+    "summary": {"type": "string"},
+    "source_urls": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "assets": {"type": "object"},
+    "metadata": {"type": "object"}
+  },
+  "additionalProperties": true
+}

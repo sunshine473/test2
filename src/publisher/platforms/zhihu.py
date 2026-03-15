@@ -1,77 +1,9 @@
 """知乎专栏发布适配器 — Playwright 自动化"""
 
-import re
-
 from publisher.models import Article, PublishResult, PublishStatus
 from publisher.platforms.browser_base import BrowserPublisher
 from publisher.registry import register
-
-
-def _md_to_html(md: str) -> str:
-    """简易 Markdown → HTML 转换（覆盖知乎常用格式）"""
-    lines = md.strip().split("\n")
-    html_parts = []
-    in_code_block = False
-    in_list = False
-
-    for line in lines:
-        # 代码块
-        if line.strip().startswith("```"):
-            if in_code_block:
-                html_parts.append("</code></pre>")
-                in_code_block = False
-            else:
-                lang = line.strip()[3:].strip()
-                html_parts.append(f'<pre><code class="language-{lang}">' if lang else "<pre><code>")
-                in_code_block = True
-            continue
-        if in_code_block:
-            html_parts.append(line)
-            continue
-
-        # 关闭列表
-        if in_list and not line.strip().startswith(("* ", "- ", "1.", "2.", "3.", "4.", "5.", "6.", "7.", "8.", "9.")):
-            html_parts.append("</ul>")
-            in_list = False
-
-        stripped = line.strip()
-        if not stripped:
-            html_parts.append("<p><br></p>")
-            continue
-
-        # 标题
-        m = re.match(r"^(#{1,4})\s+(.+)$", stripped)
-        if m:
-            level = len(m.group(1))
-            html_parts.append(f"<h{level}>{_inline(m.group(2))}</h{level}>")
-            continue
-
-        # 无序列表
-        m = re.match(r"^[*\-]\s+(.+)$", stripped)
-        if m:
-            if not in_list:
-                html_parts.append("<ul>")
-                in_list = True
-            html_parts.append(f"<li>{_inline(m.group(1))}</li>")
-            continue
-
-        # 普通段落
-        html_parts.append(f"<p>{_inline(stripped)}</p>")
-
-    if in_list:
-        html_parts.append("</ul>")
-    if in_code_block:
-        html_parts.append("</code></pre>")
-
-    return "\n".join(html_parts)
-
-
-def _inline(text: str) -> str:
-    """处理行内格式：加粗、行内代码、链接"""
-    text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
-    text = re.sub(r"`(.+?)`", r"<code>\1</code>", text)
-    text = re.sub(r"\[(.+?)\]\((.+?)\)", r'<a href="\2">\1</a>', text)
-    return text
+from packager.common import markdown_to_zhihu_html
 
 
 @register("zhihu")
@@ -113,7 +45,10 @@ class ZhihuPublisher(BrowserPublisher):
         editor.click()
         self._random_delay(0.3, 0.5)
 
-        body_html = _md_to_html(article.content.strip()[:10000])
+        if article.metadata.get("content_format") == "html":
+            body_html = article.content.strip()[:10000]
+        else:
+            body_html = markdown_to_zhihu_html(article.content.strip()[:10000])
         # 构造 paste 事件，让 Draft.js 编辑器解析 HTML 富文本
         page.evaluate("""(html) => {
             const editor = document.querySelector('.public-DraftEditor-content, [contenteditable="true"]');

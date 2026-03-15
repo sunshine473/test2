@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MaterialPool",
+  "type": "object",
+  "required": ["date", "stage", "raw_total", "source_stats", "dedup_total", "cluster_summary", "items"],
+  "properties": {
+    "date": {"type": "string"},
+    "stage": {"type": "string"},
+    "raw_total": {"type": "integer"},
+    "source_stats": {"type": "object"},
+    "dedup_total": {"type": "integer"},
+    "cluster_summary": {"type": "object"},
+    "items": {
+      "type": "array",
+      "items": {"$ref": "./raw_material.schema.json"}
+    }
+  },
+  "additionalProperties": true
+}

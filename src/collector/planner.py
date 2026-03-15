@@ -20,6 +20,7 @@ from collector.models import CollectedItem
 from collector.scorer import ItemScorer
 from collector.directions import DIRECTIONS, TRENDING_KEYWORDS, get_direction, Direction
 from collector.main import ensure_utf8
+from models import MaterialPool
 
 POOL_DIR = PROJECT_ROOT / "content" / "pool"
 
@@ -28,13 +29,8 @@ def load_pool(pool_path: str) -> list[CollectedItem]:
     """从素材池 JSON 反序列化回 CollectedItem 列表。"""
     with open(pool_path, encoding="utf-8") as f:
         data = json.load(f)
-    items = []
-    for d in data.get("items", []):
-        raw = d.pop("raw_data", None)
-        item = CollectedItem(**d)
-        item.raw_data = raw
-        items.append(item)
-    return items
+    pool = MaterialPool.from_dict(data)
+    return [item.to_collected_item() for item in pool.items]
 
 
 def filter_by_direction(items: list[CollectedItem], direction: Direction) -> list[CollectedItem]:

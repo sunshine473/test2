@@ -51,9 +51,9 @@ class TelegramNotifier:
             lines.append("- 今日暂无可直接推荐的高潜选题")
 
         lines.append("")
-        lines.append("📌 分方向推荐（Top10 新鲜内容）")
+        lines.append("📌 分方向推荐（Top3）")
 
-        # 各方向 Top 10 选题（仅显示 24 小时内的新内容）
+        # 各方向 Top 3 选题（仅显示 24 小时内的新内容）
         direction_emojis = {"tech_ai": "🎯 AI 科技", "auto": "🚗 汽车"}
         for dir_name, dir_data in plan_result.items():
             label = direction_emojis.get(dir_name, dir_data.get("label", dir_name))
@@ -66,7 +66,7 @@ class TelegramNotifier:
                 if self._is_fresh(published_at, hours=24):
                     fresh_items.append(item)
 
-            top_items = fresh_items[:10]  # 取前 10 条
+            top_items = fresh_items[:3]
             filtered_count = dir_data.get("filtered_count", 0)
             avg_score = (dir_data.get("score_summary") or {}).get("avg", 0)
 
@@ -74,8 +74,11 @@ class TelegramNotifier:
             lines.append(f"{label}: 候选 {filtered_count} 条，24h 新鲜 {len(fresh_items)} 条，均分 {avg_score}")
 
             if not top_items:
-                lines.append("  暂无 24 小时内新内容")
-                continue
+                top_items = items[:3]
+                if not top_items:
+                    lines.append("  暂无可展示内容")
+                    continue
+                lines.append("  暂无 24 小时内新内容，回退显示综合 Top3")
 
             for i, item in enumerate(top_items, 1):
                 title = item.get("title", "无标题")[:60]

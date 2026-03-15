@@ -9,10 +9,14 @@
 ```
 ├── src/
 │   ├── collector/              # 素材采集 + 打分排序（✅ 已完成）
+│   ├── normalizer/             # 整理层：清洗、去重聚类、素材池建模（✅ 新增骨架）
 │   ├── generator/              # LLM 内容生成（✅ 已完成）
+│   ├── packager/               # 包装层：草稿解析、平台发布包生成（✅ 新增骨架）
 │   ├── publisher/              # 统一发布框架（✅ 已完成，4 平台可用）
 │   ├── pipeline/               # 流水线调度（✅ 已完成）
 │   ├── bot/                    # Telegram Bot 双向交互（✅ 已完成）
+│   ├── models/                 # 六层数据契约 dataclass（✅ 新增）
+│   ├── schemas/                # 契约对应 JSON Schema（✅ 新增）
 │   ├── config/                 # 信息源配置 + prompt 模板
 │   ├── inspiration_bot/        # 旧版灵感采集（待替换）
 │   └── wechat_publisher/       # 微信公众号发布（已迁移到 publisher/）
@@ -26,7 +30,7 @@
 ## 核心 SOP
 
 ```
-素材搜索（自动）→ 选题策划（按方向）→ 人工选题 → 内容生成（自动）→ 人工审核 → 发布分发（一键）
+采集/整理（自动）→ 选题策划（按方向）→ 人工选题 → 内容生成（自动）→ 人工审核 → 包装/发布（一键）
 ```
 
 | Skill | 作用 |
@@ -52,6 +56,9 @@ python src/collector/main.py --sources rss,hn,github,hot,tavily,youtube_api
 python src/collector/main.py --search-only
 # 或
 python src/collector/search.py
+
+# 整理层由 search 内部调用，也可单独复用 `src/normalizer/`
+# Packaging is now handled by `src/packager/` before publisher adapters run
 
 # 素材池 JSON 字段说明：每条 item 同时包含短摘要 `summary` 和主要内容摘录 `content`
 # Pool JSON schema: each item includes both short summary `summary` and main-content excerpt `content`

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RawMaterial",
+  "type": "object",
+  "required": ["title", "url", "source_name", "source_type", "category"],
+  "properties": {
+    "title": {"type": "string"},
+    "url": {"type": "string"},
+    "source_name": {"type": "string"},
+    "source_type": {"type": "string"},
+    "category": {"type": "string"},
+    "summary": {"type": "string"},
+    "content": {"type": "string"},
+    "published_at": {"type": "string"},
+    "language": {"type": "string"},
+    "raw_data": {"type": "object"}
+  },
+  "additionalProperties": true
+}

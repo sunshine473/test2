@@ -1,4 +1,4 @@
-"""搜索阶段入口 — 采集 + 去重聚类 + 输出素材池 JSON + Notion 同步（不含打分）。
+"""搜索阶段入口 — 采集 + 整理层输出素材池 JSON + Notion 同步（不含打分）。
 
 用法:
     python -m collector.search                          # 默认源
@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from collector.main import load_config, collect_all, ensure_utf8, parse_sources_arg
-from collector.dedup import Deduplicator
+from normalizer.main import normalize, save_material_pool
 
 POOL_DIR = PROJECT_ROOT / "content" / "pool"
 
@@ -37,34 +37,25 @@ def search(sources: list[str], output_path: str | None = None) -> dict:
     raw_items, stats = collect_all(config, sources)
     print(f"\n=== 原始采集 {len(raw_items)} 条 ===")
     print(f"分源统计: {' | '.join(f'{k}: {v} 条' for k, v in stats.items())}")
-    print(f"\n开始去重聚类...")
-
-    deduplicator = Deduplicator()
-    dedup_items, clusters = deduplicator.process(raw_items)
-    cluster_summary = deduplicator.summarize_clusters(clusters)
+    print(f"\n开始整理层处理...")
+    pool_model = normalize(raw_items, stats)
+    dedup_items = [item.to_collected_item() for item in pool_model.items]
+    cluster_summary = pool_model.cluster_summary
     print(
-        f"去重后 {len(dedup_items)} 条，聚类 {cluster_summary['cluster_count']} 组，"
+        f"整理后 {len(dedup_items)} 条，聚类 {cluster_summary['cluster_count']} 组，"
         f"最大簇 {cluster_summary['max_cluster_size']} 条"
     )
-    # 构建素材池数据
-    pool = {
-        "date": datetime.now().strftime("%Y-%m-%d"),
-        "stage": "search",
-        "raw_total": len(raw_items),
-        "source_stats": stats,
-        "dedup_total": len(dedup_items),
-        "cluster_summary": cluster_summary,
-        "items": [item.to_dict() for item in dedup_items],
-    }
+    pool = pool_model.to_dict()
+    pool["stage"] = "search"
 
-    # 输出素材池 JSON
     if not output_path:
         POOL_DIR.mkdir(parents=True, exist_ok=True)
         output_path = str(POOL_DIR / f"{pool['date']}-pool.json")
 
-    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(pool, f, indent=2, ensure_ascii=False)
+    save_material_pool(pool_model, output_path)
+    # 对外仍保持 search 阶段标识，避免旧调用方受影响。
+    Path(output_path).write_text(json.dumps(pool, indent=2, ensure_ascii=False), encoding="utf-8")
+    pool["_output_path"] = output_path
     print(f"\n素材池已保存: {output_path}")
 
     # Notion 同步（不含打分）

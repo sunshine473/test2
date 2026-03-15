@@ -1,4 +1,4 @@
-"""流水线调度入口 — 串联 search → plan → select → write → review → publish。
+"""流水线调度入口 — 串联 collect/normalize → plan → select → create → review → package/distribute。
 
 用法:
     python src/pipeline/main.py                          # 默认跑到 select 暂停
@@ -206,7 +206,8 @@ class Pipeline:
         if not self.state.draft_path:
             raise RuntimeError("未找到草稿，请先完成 write 阶段")
 
-        from publisher.main import load_config, parse_article
+        from packager.main import build_publish_packages, load_draft_package, package_to_article
+        from publisher.main import load_config
         from publisher.registry import get_publisher
 
         import publisher.platforms.bilibili  # noqa: F401
@@ -217,7 +218,7 @@ class Pipeline:
         import publisher.platforms.zhihu  # noqa: F401
 
         config = load_config()
-        article = parse_article(self.state.draft_path)
+        draft = load_draft_package(self.state.draft_path)
 
         if self.state.platforms:
             targets = [p.strip() for p in self.state.platforms.split(",") if p.strip()]
@@ -229,12 +230,14 @@ class Pipeline:
             return
 
         print(f"  发布平台: {', '.join(targets)}")
+        packages = build_publish_packages(draft, targets)
         results = []
-        for name in targets:
+        for package in packages:
+            name = package.platform
             print(f"  [{name}] 发布中...")
             try:
                 pub = get_publisher(name)
-                result = pub.publish(article, config.get(name, {}))
+                result = pub.publish(package_to_article(package), config.get(name, {}))
                 results.append(
                     {"platform": name, "status": result.status.value, "message": result.message}
                 )

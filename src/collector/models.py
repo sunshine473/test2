@@ -1,7 +1,9 @@
-"""统一数据模型"""
+"""采集层兼容数据模型。"""
 
 from dataclasses import dataclass, field, asdict
 from typing import Optional
+
+from models import RawMaterial
 
 
 @dataclass
@@ -23,3 +25,10 @@ class CollectedItem:
         if d.get("raw_data") is None:
             del d["raw_data"]
         return d
+
+    def to_raw_material(self) -> RawMaterial:
+        return RawMaterial.from_collected_item(self)
+
+    @classmethod
+    def from_raw_material(cls, material: RawMaterial) -> "CollectedItem":
+        return material.to_collected_item()

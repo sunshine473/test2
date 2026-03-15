@@ -6,11 +6,9 @@
 """
 
 import argparse
-import base64
 import os
 import re
 import sys
-import tempfile
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -21,7 +19,8 @@ load_dotenv(PROJECT_ROOT / ".env")
 load_dotenv(PROJECT_ROOT / "src" / "wechat_publisher" / ".env")  # 兼容旧版微信配置
 
 import yaml
-from publisher.models import Article
+from packager.common import extract_images_from_cards_html
+from packager.main import build_publish_packages, load_draft_package, package_to_article, parse_article
 from publisher.registry import get_publisher, list_publishers
 
 # 导入平台模块以触发 @register 装饰器
@@ -38,83 +37,7 @@ def load_config() -> dict:
     with open(config_path, encoding="utf-8") as f:
         return yaml.safe_load(f)
 
-
-def extract_images_from_cards_html(cards_html_path: Path) -> list[str]:
-    """从 -cards.html 中提取 base64 图片，保存为临时 PNG 文件，返回路径列表"""
-    if not cards_html_path.exists():
-        return []
-
-    html = cards_html_path.read_text(encoding="utf-8")
-    # 匹配 base64 图片: src="data:image/png;base64,..."
-    pattern = r'src="data:image/png;base64,([A-Za-z0-9+/=]+)"'
-    matches = re.findall(pattern, html)
-
-    if not matches:
-        return []
-
-    tmp_dir = Path(tempfile.mkdtemp(prefix="publisher_imgs_"))
-    paths = []
-    for i, b64 in enumerate(matches[:9]):  # 小红书最多 9 张
-        img_path = tmp_dir / f"card_{i}.png"
-        img_path.write_bytes(base64.b64decode(b64))
-        paths.append(str(img_path))
-
-    return paths
-
-
-def parse_article(filepath: str) -> Article:
-    """从 Markdown 文件解析 Article 对象，自动查找配套卡片图"""
-    path = Path(filepath)
-    if not path.exists():
-        raise FileNotFoundError(f"文件不存在: {filepath}")
-
-    raw = path.read_text(encoding="utf-8")
-
-    title = path.stem
-    author = ""
-    digest = ""
-    cover_image = ""
-    tags = []
-    content = raw
-
-    if raw.startswith("---"):
-        parts = raw.split("---", 2)
-        if len(parts) >= 3:
-            try:
-                frontmatter = yaml.safe_load(parts[1]) or {}
-            except Exception:
-                frontmatter = {}
-            if isinstance(frontmatter, dict):
-                title = str(frontmatter.get("title", title) or title)
-                author = str(frontmatter.get("author", author) or author)
-                digest = str(frontmatter.get("digest", digest) or digest)
-                cover_image = str(frontmatter.get("cover_image", cover_image) or cover_image)
-                raw_tags = frontmatter.get("tags", tags)
-                if isinstance(raw_tags, list):
-                    tags = [str(t).strip() for t in raw_tags if str(t).strip()]
-                elif isinstance(raw_tags, str):
-                    tags = [t.strip() for t in raw_tags.split(",") if t.strip()]
-            content = parts[2]
-
-    # 自动查找同名 -cards.html 提取卡片图
-    cards_html = path.with_name(path.stem + "-cards.html")
-    images = extract_images_from_cards_html(cards_html)
-    if images:
-        print(f"从卡片 HTML 提取了 {len(images)} 张配图")
-
-    return Article(
-        title=title,
-        content=content,
-        author=author,
-        digest=digest,
-        cover_image=cover_image,
-        source_path=str(path.resolve()),
-        images=images,
-        tags=tags,
-    )
-
-
-def suggest_platforms(article: Article) -> list[str]:
+def suggest_platforms(article) -> list[str]:
     """根据文章内容推荐平台组合"""
     try:
         from generator.gemini_client import generate_text
@@ -170,13 +93,14 @@ def main():
 
     config = load_config()
     try:
+        draft = load_draft_package(args.filepath)
         article = parse_article(args.filepath)
     except FileNotFoundError as e:
         print(str(e))
         sys.exit(1)
 
     # AI 推荐模式
-    if args.suggest:
+    if getattr(args, "suggest", False):
         print(f"文章: {article.title}")
         print(f"标签: {', '.join(article.tags) if article.tags else '无'}\n")
         print("🤖 AI 分析中...")
@@ -200,12 +124,14 @@ def main():
     print(f"发布: {article.title}")
     print(f"平台: {', '.join(targets)}\n")
 
+    packages = build_publish_packages(draft, targets)
     results = []
-    for name in targets:
+    for package in packages:
+        name = package.platform
         print(f"[{name}] 发布中...")
         try:
             pub = get_publisher(name)
-            result = pub.publish(article, config.get(name, {}))
+            result = pub.publish(package_to_article(package), config.get(name, {}))
             print(f"[{name}] {result.status.value}: {result.message}")
             results.append({
                 "platform": name,
