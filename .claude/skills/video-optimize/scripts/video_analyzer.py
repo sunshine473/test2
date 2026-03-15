@@ -16,10 +16,10 @@ from pathlib import Path
 from urllib.parse import urlparse, parse_qs
 from datetime import datetime
 
-# Doubao API Configuration (hardcoded)
+# Doubao API Configuration
 API_ENDPOINT = "https://ark.cn-beijing.volces.com/api/v3/responses"
 API_MODEL = "doubao-seed-2-0-pro-260215"
-API_KEY = "c44849a1-6b24-40ff-8749-2f75bdc1a50f"
+API_KEY = os.environ.get("DOUBAO_API_KEY", "c44849a1-6b24-40ff-8749-2f75bdc1a50f")
 
 # Size limits
 TARGET_SIZE_MB = 35
