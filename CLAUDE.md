@@ -168,6 +168,20 @@ python src/generator/main.py "选题标题"
 python src/generator/main.py "选题标题" --no-cards
 ```
 
+### Review
+```bash
+# AI 质量审核（6 维度评分）
+python src/reviewer/quality_checker.py <markdown文件>
+
+# 审核标准：总分 >= 70 分通过
+# - 标题吸引力 (20分)
+# - 开头钩子 (15分)
+# - 内容结构 (20分)
+# - 逻辑连贯性 (15分)
+# - 可读性 (15分)
+# - 信息密度 (15分)
+```
+
 ### Publishing
 ```bash
 # 发布到所有 enabled 平台
@@ -271,17 +285,31 @@ Commit types: `feat`, `fix`, `refactor`, `docs`, `chore`
 - 使用占位符: `<API_KEY>`、`<TOKEN>`
 - 本地环境变量放在 `.env`（已加入 .gitignore）
 
-## Key Files
+### Key Files
 
 ### Configuration
 - `src/config/sources.yaml` — 信息源配置（RSS、Tavily query、Twitter 账号）
 - `src/config/publishers.yaml` — 平台开关和配置
 - `src/config/models.yaml` — Gemini 模型配置（文本/图像任务）
 
+### Core Modules
+- `src/collector/` — 素材采集和选题策划
+- `src/generator/` — 内容生成（文章 + 卡片）
+- `src/reviewer/` — AI 质量审核（6 维度评分）
+- `src/packager/` — 内容包装（Layer 5）
+- `src/publisher/` — 多平台发布（Layer 6）
+- `src/pipeline/` — 流水线调度
+
 ### Data Storage
 - `content/pool/` — 素材池 JSON（搜索阶段输出）
 - `content/drafts/` — 草稿（生成阶段输出）
 - `content/pipeline/` — 流水线状态 JSON
+
+### Documentation
+- `docs/ai-review-standard.md` — AI 审核标准和使用指南
+- `docs/6层改造草案.md` — 六层架构改造目标
+- `docs/内容流水线数据契约.md` — 数据结构定义
+- `docs/notion-setup.md` — Notion 配置指南
 
 ### Notion Integration
 - `src/collector/notion_output.py` — 素材池同步
