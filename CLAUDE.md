@@ -142,6 +142,9 @@ Layer 6: 分发 (Distribute) → PublishResult
 /plan                                 # 选题策划
 /write "选题标题"                      # 内容生成
 /publish <markdown文件>                # 多平台发布
+
+# 视频分析
+/video-optimize <视频URL或路径>        # 爆款视频拆解（8维度评分+场景细拆+优化建议）
 ```
 
 ### Collection
@@ -196,6 +199,23 @@ PYTHONPATH=src pytest tests/ -v
 
 # 运行特定模块
 PYTHONPATH=src pytest tests/test_collector_*.py -v
+```
+
+### Video Analysis
+```bash
+# 分析视频（支持 B站/YouTube/本地文件）
+/video-optimize <URL或路径>
+
+# 示例
+/video-optimize https://www.bilibili.com/video/BV1xx411c7mD
+/video-optimize https://www.youtube.com/watch?v=xxxxx
+/video-optimize ./videos/demo.mp4
+
+# 输出：./outputs/reports/日期_标题/
+# - report.html（完整报告，视频内嵌）
+# - report-lite.html（轻量版）
+# - video.mp4（压缩后视频）
+# - frames/（关键帧截图）
 ```
 
 ## Development Workflow
