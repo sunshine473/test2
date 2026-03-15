@@ -4,36 +4,57 @@ on:
   schedule:
     - cron: '0 2 * * *'  # UTC 2:00 = 北京时间 10:00
   workflow_dispatch:       # 支持手动触发
+    inputs:
+      direction:
+        description: '内容方向'
+        required: false
+        default: 'tech_ai'
+        type: choice
+        options:
+          - tech_ai
+          - auto
+      sources:
+        description: '采集源（逗号分隔）'
+        required: false
+        default: 'rss,hn,github,hot,tavily,youtube_api'
+      platforms:
+        description: '发布平台（逗号分隔）'
+        required: false
+        default: 'wechat'
 
 jobs:
   pipeline:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     env:
-      # 采集器相关
+      # Notion 数据中枢
       NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
       NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+      NOTION_TOPICS_DB_ID: ${{ secrets.NOTION_TOPICS_DB_ID }}
+      NOTION_DRAFTS_DB_ID: ${{ secrets.NOTION_DRAFTS_DB_ID }}
+      NOTION_PUBLISH_DB_ID: ${{ secrets.NOTION_PUBLISH_DB_ID }}
+
+      # 采集器 API
       TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
       YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
-      # 生成器相关（Claude API）
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      CLAUDE_MODEL: ${{ secrets.CLAUDE_MODEL }}
+      # 生成器 API
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
-      # 发布器相关
+      # 发布器凭证
       WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
       WECHAT_APP_SECRET: ${{ secrets.WECHAT_APP_SECRET }}
-      WECHAT_APPID: ${{ secrets.WECHAT_APPID }}
-      WECHAT_SECRET: ${{ secrets.WECHAT_SECRET }}
-      BILIBILI_COOKIE: ${{ secrets.BILIBILI_COOKIE }}
       ZHIHU_COOKIE: ${{ secrets.ZHIHU_COOKIE }}
-      TOUTIAO_COOKIE: ${{ secrets.TOUTIAO_COOKIE }}
       XIAOHONGSHU_COOKIE: ${{ secrets.XIAOHONGSHU_COOKIE }}
+      TOUTIAO_COOKIE: ${{ secrets.TOUTIAO_COOKIE }}
       DONGCHEDI_COOKIE: ${{ secrets.DONGCHEDI_COOKIE }}
+      BILIBILI_COOKIE: ${{ secrets.BILIBILI_COOKIE }}
+
+      # Telegram 通知
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
     steps:
       - name: Checkout
@@ -42,26 +63,23 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.11'
           cache: 'pip'
 
       - name: Install dependencies
         run: |
-          pip install -r src/collector/requirements.txt
-          pip install -r src/generator/requirements.txt
-          pip install -r src/publisher/requirements.txt
+          pip install -r requirements.txt
           python -m playwright install --with-deps chromium
 
-      - name: Run full pipeline
-        working-directory: src
+      - name: Run full pipeline (六层架构)
         env:
-          PYTHONPATH: .
+          PYTHONPATH: src
         run: |
-          python -m pipeline.main \
+          python src/pipeline/main.py \
             --auto \
-            --sources hn,github,hot,youtube \
-            --direction tech_ai \
-            --platforms wechat,zhihu,xiaohongshu
+            --sources ${{ github.event.inputs.sources || 'rss,hn,github,hot,tavily,youtube_api' }} \
+            --direction ${{ github.event.inputs.direction || 'tech_ai' }} \
+            --platforms ${{ github.event.inputs.platforms || 'wechat' }}
 
       - name: Upload artifacts
         if: always()
@@ -70,10 +88,23 @@ jobs:
           name: pipeline-output-${{ github.run_number }}
           path: |
             content/pool/*.json
+            content/pipeline/*.json
             content/drafts/*.md
             content/drafts/*.html
-            .pipeline/*.json
           retention-days: 7
+
+      - name: Notify on success
+        if: success()
+        run: |
+          python -c "
+          import os
+          import requests
+          token = os.environ.get('TELEGRAM_BOT_TOKEN')
+          chat_id = os.environ.get('TELEGRAM_CHAT_ID')
+          if token and chat_id:
+              message = f'✅ 每日流水线执行成功\n\n方向: ${{ github.event.inputs.direction || \"tech_ai\" }}\n时间: $(date +\"%Y-%m-%d %H:%M\")\n查看: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+              requests.post(f'https://api.telegram.org/bot{token}/sendMessage', json={'chat_id': chat_id, 'text': message})
+          "
 
       - name: Notify on failure
         if: failure()
@@ -81,8 +112,9 @@ jobs:
           python -c "
           import os
           import requests
-          token = os.environ['TELEGRAM_BOT_TOKEN']
-          chat_id = os.environ['TELEGRAM_CHAT_ID']
-          message = f'❌ 每日流水线执行失败\n\n时间: {os.environ[\"GITHUB_RUN_ID\"]}\n查看: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
-          requests.post(f'https://api.telegram.org/bot{token}/sendMessage', json={'chat_id': chat_id, 'text': message})
+          token = os.environ.get('TELEGRAM_BOT_TOKEN')
+          chat_id = os.environ.get('TELEGRAM_CHAT_ID')
+          if token and chat_id:
+              message = f'❌ 每日流水线执行失败\n\n方向: ${{ github.event.inputs.direction || \"tech_ai\" }}\n时间: $(date +\"%Y-%m-%d %H:%M\")\n查看: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+              requests.post(f'https://api.telegram.org/bot{token}/sendMessage', json={'chat_id': chat_id, 'text': message})
           "
