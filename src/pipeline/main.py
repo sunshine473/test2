@@ -132,7 +132,9 @@ class Pipeline:
         self.state.log("search", f"素材池 {pool.get('dedup_total', 0)} 条: {self.state.pool_path}")
 
     def _run_plan(self, auto: bool = False):
-        from collector.planner import find_latest_pool, plan
+        from collector.planner import find_latest_pool, plan, recommend_topics, get_direction
+        from collector.models import CollectedItem
+        import os
 
         pool_path = self.state.pool_path or find_latest_pool()
         if not pool_path:
@@ -147,6 +149,36 @@ class Pipeline:
                 for i, item in enumerate(items[:5], 1):
                     score = (item.get("raw_data") or {}).get("score", 0)
                     print(f"    {i}. [{score}] {item.get('title', '')[:60]}")
+
+        # AI 选题推荐
+        print("\n=== AI 选题推荐 ===")
+        all_topics = {}
+        for direction_name, result_data in result.items():
+            direction = get_direction(direction_name)
+            items = [CollectedItem(**d) for d in result_data["items"]]
+            print(f"\n## 🎯 {direction.label} 推荐选题\n")
+            recommendation_text, topics = recommend_topics(items, direction)
+            print(recommendation_text)
+
+            if topics:
+                all_topics[direction_name] = topics
+
+        # 同步到 Notion 选题库
+        if all_topics and os.getenv("NOTION_API_KEY") and os.getenv("NOTION_TOPICS_DB_ID"):
+            print("\n[Notion Topics] 正在写入选题...")
+            try:
+                from collector.notion_topics import NotionTopics
+                notion = NotionTopics()
+                total_saved = 0
+                for direction_name, topics in all_topics.items():
+                    saved = notion.save_topics(topics, direction_name)
+                    total_saved += saved
+                    print(f"[Notion Topics] {direction_name}: {saved}/{len(topics)} 条")
+                print(f"[Notion Topics] 总计写入 {total_saved} 条选题")
+            except Exception as e:
+                print(f"[Notion Topics] 写入失败: {e}")
+        elif all_topics:
+            print("\n[Notion Topics] 未配置凭据，跳过同步")
 
     def _run_select(self, auto: bool = False):
         if auto:
