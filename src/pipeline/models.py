@@ -22,6 +22,9 @@ class PipelineState:
     selected_sources: list[str] = field(default_factory=list)
     draft_path: str = ""
     cards_path: str = ""
+    review_score: int = 0
+    review_passed: bool = False
+    review_feedback: str = ""
     publish_results: list[dict] = field(default_factory=list)
 
     # 配置

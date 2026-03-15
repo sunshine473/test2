@@ -191,16 +191,52 @@ class Pipeline:
                 print(f"  卡片生成失败（跳过）: {e}")
 
     def _run_review(self, auto: bool = False):
-        if auto:
-            print("  自动审核通过")
-            return
         if not self.state.draft_path:
             raise RuntimeError("未找到草稿，请先完成 write 阶段")
 
+        # AI 自动审核
+        from reviewer.quality_checker import review_article
+
         print(f"\n  草稿路径: {self.state.draft_path}")
-        print("  流水线已暂停，等待人工审核。")
-        print("  审核通过: python src/pipeline/main.py --resume latest --approve")
-        self.state.status = "paused"
+        print("  正在进行 AI 质量审核...")
+
+        try:
+            score = review_article(self.state.draft_path)
+            print(f"\n  质量评分: {score.total_score}/100")
+
+            if score.passed:
+                print("  ✅ 审核通过")
+                self.state.review_score = score.total_score
+                self.state.review_passed = True
+                return
+            else:
+                print("  ❌ 审核不通过，需要重写")
+                print("\n" + score.get_feedback())
+                self.state.review_score = score.total_score
+                self.state.review_passed = False
+                self.state.review_feedback = score.get_feedback()
+
+                if auto:
+                    print("\n  自动模式：将重新生成文章...")
+                    # 重新生成
+                    self._run_write(auto=True)
+                    # 递归审核
+                    self._run_review(auto=True)
+                else:
+                    print("\n  流水线已暂停。")
+                    print("  选项 1: 修改草稿后继续 - python src/pipeline/main.py --resume latest --approve")
+                    print("  选项 2: 重新生成 - python src/pipeline/main.py --resume latest --rewrite")
+                    self.state.status = "paused"
+
+        except Exception as e:
+            print(f"  审核失败: {e}")
+            if auto:
+                print("  自动模式：审核失败，跳过")
+                return
+            else:
+                print("  流水线已暂停，等待人工审核。")
+                print("  审核通过: python src/pipeline/main.py --resume latest --approve")
+                self.state.status = "paused"
 
     def _run_publish(self, auto: bool = False):
         if not self.state.draft_path:
@@ -247,7 +283,7 @@ class Pipeline:
                 print(f"  [{name}] 错误: {e}")
         self.state.publish_results = results
 
-    def apply_resume_inputs(self, topic: str = "", approve: bool = False):
+    def apply_resume_inputs(self, topic: str = "", approve: bool = False, rewrite: bool = False):
         stage = self.state.current_stage
         if stage == "select" and topic:
             self.state.selected_topic = topic
@@ -259,11 +295,17 @@ class Pipeline:
             self.state.status = "running"
             self.state.save()
             return
+        if stage == "review" and rewrite:
+            # 重新生成文章
+            self._run_write(auto=False)
+            # 重新审核
+            self._run_review(auto=False)
+            return
 
         if stage == "select":
             raise RuntimeError('当前停在 select，需传 --topic "选题标题"')
         if stage == "review":
-            raise RuntimeError("当前停在 review，需传 --approve")
+            raise RuntimeError("当前停在 review，需传 --approve 或 --rewrite")
 
     def print_summary(self):
         print(f"pipeline_id : {self.state.pipeline_id}")
@@ -291,6 +333,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--from", dest="from_stage", choices=Pipeline.STAGE_ORDER, default="", help="从某阶段启动")
     parser.add_argument("--topic", default="", help="恢复/启动时设置选题")
     parser.add_argument("--approve", action="store_true", help="恢复 review 阶段时表示审核通过")
+    parser.add_argument("--rewrite", action="store_true", help="恢复 review 阶段时重新生成文章")
     parser.add_argument("--status", action="store_true", help="查看最新流水线状态")
     parser.add_argument("--list", action="store_true", help="列出最近流水线")
     parser.add_argument("--json", action="store_true", help="状态输出为 JSON")
@@ -331,7 +374,7 @@ def main():
     try:
         if args.resume:
             pipeline = Pipeline.load(args.resume)
-            pipeline.apply_resume_inputs(topic=args.topic, approve=args.approve)
+            pipeline.apply_resume_inputs(topic=args.topic, approve=args.approve, rewrite=args.rewrite)
         else:
             pipeline = Pipeline.create(
                 sources=args.sources,
