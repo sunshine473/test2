@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Video Analyzer - Core engine for viral video analysis
-Downloads, compresses, and analyzes videos using Doubao API
+Downloads, compresses, and analyzes videos using Gemini or Doubao API
 """
 
 import sys
@@ -16,11 +16,6 @@ from pathlib import Path
 from urllib.parse import urlparse, parse_qs
 from datetime import datetime
 
-# Doubao API Configuration
-API_ENDPOINT = "https://ark.cn-beijing.volces.com/api/v3/responses"
-API_MODEL = "doubao-seed-2-0-pro-260215"
-API_KEY = os.environ.get("DOUBAO_API_KEY", "c44849a1-6b24-40ff-8749-2f75bdc1a50f")
-
 # Size limits
 TARGET_SIZE_MB = 35
 MAX_BASE64_SIZE_MB = 50
@@ -29,6 +24,26 @@ BYTES_PER_MB = 1024 * 1024
 def log(msg):
     """Print timestamped log message"""
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}", file=sys.stderr)
+
+# API Configuration - Auto-detect available API
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+DOUBAO_API_KEY = os.environ.get("DOUBAO_API_KEY")
+
+# Choose API based on availability
+if GEMINI_API_KEY:
+    API_PROVIDER = "gemini"
+    API_KEY = GEMINI_API_KEY
+    API_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent"
+    API_MODEL = "gemini-2.0-flash-exp"
+elif DOUBAO_API_KEY:
+    API_PROVIDER = "doubao"
+    API_KEY = DOUBAO_API_KEY
+    API_ENDPOINT = "https://ark.cn-beijing.volces.com/api/v3/responses"
+    API_MODEL = "doubao-seed-2-0-pro-260215"
+else:
+    API_PROVIDER = None
+    API_KEY = None
+    log("Warning: No API key found. Set GEMINI_API_KEY or DOUBAO_API_KEY environment variable.")
 
 def detect_platform(url):
     """Detect video platform from URL"""
@@ -179,38 +194,76 @@ def video_to_base64_data_url(video_path):
     base64_str = base64.b64encode(video_bytes).decode('utf-8')
     return f"data:video/mp4;base64,{base64_str}"
 
-def call_doubao_api(video_data_url, prompt, max_retries=3):
-    """Call Doubao API with video analysis prompt"""
+def call_api(video_data_url, prompt, max_retries=3):
+    """Call video analysis API (Gemini or Doubao)"""
     import urllib.request
 
-    payload = {
-        "model": API_MODEL,
-        "input": [{
-            "role": "user",
-            "content": [
-                {"type": "input_video", "video_url": video_data_url},
-                {"type": "input_text", "text": prompt}
-            ]
-        }]
-    }
+    if not API_KEY:
+        raise Exception("No API key configured. Set GEMINI_API_KEY or DOUBAO_API_KEY environment variable.")
 
     for attempt in range(max_retries):
         try:
-            log(f"Calling Doubao API (attempt {attempt + 1}/{max_retries})...")
+            log(f"Calling {API_PROVIDER.upper()} API (attempt {attempt + 1}/{max_retries})...")
 
-            req = urllib.request.Request(
-                API_ENDPOINT,
-                data=json.dumps(payload).encode('utf-8'),
-                headers={
-                    'Content-Type': 'application/json',
-                    'Authorization': f'Bearer {API_KEY}'
+            if API_PROVIDER == "gemini":
+                # Gemini API format
+                # Extract base64 from data URL
+                base64_video = video_data_url.split(',')[1]
+
+                payload = {
+                    "contents": [{
+                        "parts": [
+                            {
+                                "inline_data": {
+                                    "mime_type": "video/mp4",
+                                    "data": base64_video
+                                }
+                            },
+                            {"text": prompt}
+                        ]
+                    }]
                 }
-            )
+
+                url = f"{API_ENDPOINT}?key={API_KEY}"
+                req = urllib.request.Request(
+                    url,
+                    data=json.dumps(payload).encode('utf-8'),
+                    headers={'Content-Type': 'application/json'}
+                )
+
+            else:  # doubao
+                # Doubao API format
+                payload = {
+                    "model": API_MODEL,
+                    "input": [{
+                        "role": "user",
+                        "content": [
+                            {"type": "input_video", "video_url": video_data_url},
+                            {"type": "input_text", "text": prompt}
+                        ]
+                    }]
+                }
+
+                req = urllib.request.Request(
+                    API_ENDPOINT,
+                    data=json.dumps(payload).encode('utf-8'),
+                    headers={
+                        'Content-Type': 'application/json',
+                        'Authorization': f'Bearer {API_KEY}'
+                    }
+                )
 
             with urllib.request.urlopen(req, timeout=180) as response:
                 result = json.loads(response.read().decode('utf-8'))
                 return parse_api_response(result)
 
+        except urllib.error.HTTPError as e:
+            error_body = e.read().decode('utf-8') if hasattr(e, 'read') else str(e)
+            log(f"API call failed: HTTP {e.code} - {error_body[:500]}")
+            if attempt < max_retries - 1:
+                time.sleep(2 ** attempt)  # Exponential backoff
+            else:
+                raise Exception(f"API failed after {max_retries} attempts: {error_body[:500]}")
         except Exception as e:
             log(f"API call failed: {e}")
             if attempt < max_retries - 1:
@@ -219,11 +272,15 @@ def call_doubao_api(video_data_url, prompt, max_retries=3):
                 raise
 
 def parse_api_response(response):
-    """Parse Doubao API response (handle multiple formats)"""
+    """Parse API response (handle Gemini and Doubao formats)"""
     text = None
 
-    # Format 1: responses API format
-    if 'output' in response and isinstance(response['output'], list):
+    # Gemini format
+    if 'candidates' in response:
+        text = response['candidates'][0]['content']['parts'][0]['text']
+
+    # Doubao Format 1: responses API format
+    elif 'output' in response and isinstance(response['output'], list):
         for item in response['output']:
             if item.get('type') == 'message':
                 content = item.get('content', [])
@@ -232,11 +289,11 @@ def parse_api_response(response):
                         text = c.get('text')
                         break
 
-    # Format 2: output as dict
+    # Doubao Format 2: output as dict
     elif 'output' in response and isinstance(response['output'], dict):
         text = response['output'].get('text')
 
-    # Format 3: chat completions format
+    # Doubao Format 3: chat completions format
     elif 'choices' in response:
         text = response['choices'][0]['message']['content']
 
@@ -479,11 +536,11 @@ def analyze_video(video_path, video_data_url):
     """Perform 8-dimension + 5-module analysis"""
     log("Step 3: Performing 8-dimension analysis...")
     prompt1 = get_analysis_prompt()
-    analysis = call_doubao_api(video_data_url, prompt1)
+    analysis = call_api(video_data_url, prompt1)
 
     log("Step 4: Performing scene-level breakdown...")
     prompt2 = get_scene_breakdown_prompt(analysis)
-    scenes = call_doubao_api(video_data_url, prompt2)
+    scenes = call_api(video_data_url, prompt2)
 
     # Merge scenes into analysis
     analysis['scene_breakdown'] = scenes
