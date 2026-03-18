@@ -12,6 +12,7 @@ import json
 import os
 import sys
 from pathlib import Path
+from typing import Optional
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
@@ -75,7 +76,7 @@ def plan_direction(items: list[CollectedItem], direction: Direction) -> dict:
     }
 
 
-def plan(pool_path: str, direction_name: str | None = None) -> dict:
+def plan(pool_path: str, direction_name: Optional[str] = None) -> dict:
     """策划入口：加载素材池，按方向筛选打分。不传 direction 时两个方向都跑。"""
     ensure_utf8()
     items = load_pool(pool_path)
@@ -93,7 +94,7 @@ def plan(pool_path: str, direction_name: str | None = None) -> dict:
     return results
 
 
-def find_latest_pool() -> str | None:
+def find_latest_pool() -> Optional[str]:
     """查找 content/pool/ 下最新的素材池 JSON。"""
     if not POOL_DIR.exists():
         return None
