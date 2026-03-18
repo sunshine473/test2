@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from datetime import datetime
 from pathlib import Path
-from typing import Any
+from typing import Any, Dict, Optional, Union
 
 from models import MaterialPool, RawMaterial
 
@@ -14,7 +14,7 @@ from .dedup import Deduplicator
 from .translator import translate_materials
 
 
-def normalize(raw_items: list[Any], source_stats: dict[str, int] | None = None) -> MaterialPool:
+def normalize(raw_items: list[Any], source_stats: Optional[Dict[str, int]] = None) -> MaterialPool:
     materials = [
         item if isinstance(item, RawMaterial) else RawMaterial.from_collected_item(item)
         for item in raw_items
@@ -37,7 +37,7 @@ def normalize(raw_items: list[Any], source_stats: dict[str, int] | None = None) 
     )
 
 
-def save_material_pool(pool: MaterialPool, output_path: str | Path) -> Path:
+def save_material_pool(pool: MaterialPool, output_path: Union[str, Path]) -> Path:
     path = Path(output_path)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(pool.to_dict(), indent=2, ensure_ascii=False), encoding="utf-8")

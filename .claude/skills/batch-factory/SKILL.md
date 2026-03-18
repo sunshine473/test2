@@ -1,184 +1,106 @@
 ---
-description: >
-  批量内容生产：自动生成多篇文章并发布到指定平台。默认生成 8 篇文章（AI 科技 2 篇 + 汽车 2 篇）
-  并发布到小红书和知乎。支持自定义数量和平台。全自动执行：素材搜索 → 选题策划 → AI 选题 →
-  批量生成 → AI 审核 → 多平台发布。
+name: batch-factory
+description: This skill should be used when users want to generate and publish multiple articles in batch mode. It automates the complete content production pipeline from material collection to multi-platform distribution, producing 4 articles by default (2 AI-related + 2 automotive) and publishing them to Xiaohongshu and Zhihu (8 total publications). Supports customizable article count and platform selection.
 user-invocable: true
 allowed-tools: Bash(python:*)
 argument-hint: '[--count N] [--platforms xiaohongshu,zhihu]'
 ---
 
-# /batch-factory — 批量内容生产
+# Batch Factory
 
-自动生成多篇文章并发布到指定平台。
+This skill automates batch content production, generating multiple articles across different topics and publishing them to multiple platforms in a single execution.
 
-## 工作流
+## When to Use This Skill
 
-```
-素材搜索 → 选题策划 → 批量生成 → AI审核 → 多平台发布
-(一次)    (两方向)    (每方向N篇)  (自动)    (指定平台)
-```
+Use this skill when you need to:
 
-**默认配置**：
-- 每个方向生成 2 篇文章
-- 发布平台：小红书 + 知乎
-- 总计：4 篇文章（AI 科技 2 篇 + 汽车 2 篇）× 2 平台 = 8 次发布
+- Generate multiple articles in one batch (default: 4 articles)
+- Publish content to Xiaohongshu and Zhihu simultaneously
+- Produce content for both AI technology and automotive topics
+- Automate the entire pipeline from collection to publication
+- Generate content at scale without manual intervention
 
-## 基础用法
+**Don't use this skill for:**
+- Single article generation (use `/factory` instead)
+- Manual topic selection (use `/factory` with manual mode)
+- Quick material collection only (use `/search` or `/collect`)
 
-### 默认模式（推荐）
+## Quick Start
+
+### Default Mode (Recommended)
 ```bash
 python src/pipeline/batch_pipeline.py
 ```
 
-**输出**：
-- AI 科技方向：2 篇文章
-- 汽车方向：2 篇文章
-- 发布平台：小红书、知乎
-- 总计：4 篇文章，8 次发布
+**Output:**
+- Xiaohongshu: 4 articles (2 AI + 2 automotive)
+- Zhihu: 4 articles (2 AI + 2 automotive)
+- Total: 4 articles, 8 publications
 
-### 自定义数量
+### Custom Article Count
 ```bash
-# 每个方向生成 3 篇（总计 6 篇）
+# Generate 3 articles per topic (6 total)
 python src/pipeline/batch_pipeline.py --count 3
 ```
 
-### 自定义平台
+### Custom Platforms
 ```bash
-# 只发布到小红书
+# Publish to Xiaohongshu only
 python src/pipeline/batch_pipeline.py --platforms xiaohongshu
 
-# 发布到多个平台
+# Publish to multiple platforms
 python src/pipeline/batch_pipeline.py --platforms xiaohongshu,zhihu,bilibili
 ```
 
-### 组合使用
-```bash
-# 每个方向 4 篇，发布到小红书和知乎
-python src/pipeline/batch_pipeline.py --count 4 --platforms xiaohongshu,zhihu
-```
+## How It Works
 
-## 参数说明
+### Four-Stage Pipeline
 
-| 参数 | 说明 | 默认值 | 示例 |
-|------|------|--------|------|
-| `--count` | 每个方向生成的文章数量 | 2 | `--count 3` |
-| `--platforms` | 发布平台（逗号分隔） | xiaohongshu,zhihu | `--platforms xiaohongshu` |
-| `--sources` | 素材来源（逗号分隔） | 全部 | `--sources hn,github` |
-| `--no-cards` | 不生成视觉卡片 | False | `--no-cards` |
+**Stage 1: Material Search (1x)**
+- Collect materials from multiple sources
+- Deduplicate and cluster
+- Output material pool
 
-## 执行流程
+**Stage 2: Topic Planning (2 directions)**
+- AI Technology: Filter → Score → AI recommends 3-5 topics
+- Automotive: Filter → Score → AI recommends 3-5 topics
 
-### 阶段 1: 素材搜索（1 次）
-- 从多个信息源采集素材
-- 去重聚类
-- 输出素材池
+**Stage 3: Batch Generation (N articles per direction)**
+For each topic:
+1. Generate article content
+2. Generate visual cards (optional)
+3. AI quality review (6-dimension scoring)
+4. Auto-rewrite if review fails
 
-### 阶段 2: 选题策划（2 个方向）
-- AI 科技方向：筛选 + 打分 + AI 推荐 3-5 个选题
-- 汽车方向：筛选 + 打分 + AI 推荐 3-5 个选题
+**Stage 4: Multi-Platform Publishing**
+- Publish each article to specified platforms
+- Record publication results
+- Generate summary report
 
-### 阶段 3: 批量生成（每方向 N 篇）
-对每个选题：
-1. 生成文章内容
-2. 生成视觉卡片（可选）
-3. AI 质量审核（6 维度评分）
-4. 审核不通过自动重写
+### Efficiency Gains
 
-### 阶段 4: 多平台发布
-- 每篇文章发布到指定平台
-- 记录发布结果
-- 生成汇总报告
+**Single Article Mode:**
+- Material search: Every execution
+- Topic planning: Every execution
+- Generate 1 article: ~5 minutes
 
-## 输出示例
+**Batch Mode:**
+- Material search: Once only ✅
+- Topic planning: Once only ✅
+- Generate 4 articles: ~20 minutes (saves ~10 minutes)
 
-```
-============================================================
-  批量内容生产流水线
-  每个方向生成: 2 篇
-  发布平台: xiaohongshu,zhihu
-============================================================
+## Parameters
 
-[阶段 1/4] 素材搜索
-  素材池 150 条: content/pool/2026-03-18-pool.json
+| Parameter | Description | Default | Example |
+|-----------|-------------|---------|---------|
+| `--count` | Articles per direction | 2 | `--count 3` |
+| `--platforms` | Publishing platforms (comma-separated) | xiaohongshu,zhihu | `--platforms xiaohongshu` |
+| `--sources` | Material sources (comma-separated) | All | `--sources hn,github` |
+| `--no-cards` | Skip visual card generation | False | `--no-cards` |
 
-[阶段 2/4] 选题策划
-  === AI 科技 推荐选题 ===
-  1. GPT-5 来了：AI 大模型进入新纪元 (92.5)
-  2. Claude 3.5 发布：多模态能力全面升级 (89.0)
-  3. AI 编程助手对比：GitHub Copilot vs Cursor (85.5)
+## Output Files
 
-  === 汽车 推荐选题 ===
-  1. 特斯拉 FSD V12 体验：完全自动驾驶真的来了？ (91.0)
-  2. 比亚迪秦 PLUS DM-i 深度评测 (87.5)
-
-[阶段 3/4] 批量生成内容（每个方向 2 篇）
-
-  === AI 科技 方向 ===
-
-  [1/2] 生成: GPT-5 来了：AI 大模型进入新纪元
-    草稿已生成: content/drafts/gpt-5-来了-ai-大模型进入新纪元.md
-    正在进行 AI 质量审核...
-    质量评分: 85/100
-    ✅ 审核通过
-    ✅ 完成: content/drafts/gpt-5-来了-ai-大模型进入新纪元.md
-    📊 审核评分: 85/100
-
-  [2/2] 生成: Claude 3.5 发布：多模态能力全面升级
-    草稿已生成: content/drafts/claude-3-5-发布-多模态能力全面升级.md
-    正在进行 AI 质量审核...
-    质量评分: 82/100
-    ✅ 审核通过
-    ✅ 完成: content/drafts/claude-3-5-发布-多模态能力全面升级.md
-    📊 审核评分: 82/100
-
-  === 汽车 方向 ===
-
-  [1/2] 生成: 特斯拉 FSD V12 体验：完全自动驾驶真的来了？
-    草稿已生成: content/drafts/特斯拉-fsd-v12-体验.md
-    正在进行 AI 质量审核...
-    质量评分: 88/100
-    ✅ 审核通过
-    ✅ 完成: content/drafts/特斯拉-fsd-v12-体验.md
-    📊 审核评分: 88/100
-
-  [2/2] 生成: 比亚迪秦 PLUS DM-i 深度评测
-    草稿已生成: content/drafts/比亚迪秦-plus-dm-i-深度评测.md
-    正在进行 AI 质量审核...
-    质量评分: 80/100
-    ✅ 审核通过
-    ✅ 完成: content/drafts/比亚迪秦-plus-dm-i-深度评测.md
-    📊 审核评分: 80/100
-
-[阶段 4/4] 批量生产完成
-
-============================================================
-  批量生产汇总报告
-============================================================
-
-  AI 科技方向: 2 篇
-  汽车方向: 2 篇
-  失败: 0 篇
-  总计: 4 篇
-
-  发布结果:
-    xiaohongshu: 4 成功, 0 失败
-    zhihu: 4 成功, 0 失败
-
-  详细列表:
-    1. [AI 科技] GPT-5 来了：AI 大模型进入新纪元 - ✅ 85/100
-    2. [AI 科技] Claude 3.5 发布：多模态能力全面升级 - ✅ 82/100
-    3. [汽车] 特斯拉 FSD V12 体验：完全自动驾驶真的来了？ - ✅ 88/100
-    4. [汽车] 比亚迪秦 PLUS DM-i 深度评测 - ✅ 80/100
-
-============================================================
-
-  结果已保存: content/batch/2026-03-18-143022-batch.json
-```
-
-## 输出文件
-
-### 草稿文件
+### Draft Files
 ```
 content/drafts/
 ├── gpt-5-来了-ai-大模型进入新纪元.md
@@ -191,68 +113,70 @@ content/drafts/
 └── 比亚迪秦-plus-dm-i-深度评测-cards.html
 ```
 
-### 批量结果 JSON
-```json
-[
-  {
-    "direction": "tech_ai",
-    "direction_label": "AI 科技",
-    "topic": "GPT-5 来了：AI 大模型进入新纪元",
-    "score": 92.5,
-    "draft_path": "content/drafts/gpt-5-来了-ai-大模型进入新纪元.md",
-    "review_score": 85,
-    "review_passed": true,
-    "publish_results": [
-      {
-        "platform": "xiaohongshu",
-        "status": "success",
-        "message": "发布成功"
-      },
-      {
-        "platform": "zhihu",
-        "status": "success",
-        "message": "文章已发布: https://zhuanlan.zhihu.com/p/123456"
-      }
-    ],
-    "pipeline_id": "2026-03-18-143022"
-  }
-]
-```
+### Batch Results JSON
+**Path:** `content/batch/YYYY-MM-DD-HHMMSS-batch.json`
 
-## 常见问题
+Contains detailed results for each article including:
+- Direction and topic
+- Draft path
+- Review score
+- Publication results per platform
+- Pipeline ID
 
-**Q: 如何只生成不发布？**
-A: 暂不支持，可以在 `publishers.yaml` 中禁用所有平台
+See `references/output-format.md` for complete schema.
 
-**Q: 如何指定只生成某个方向？**
-A: 暂不支持，批量模式会生成两个方向
+## Performance Estimates
 
-**Q: 审核不通过会怎样？**
-A: 自动重写，最多重试 3 次
+| Configuration | Articles | Publications | Estimated Time |
+|--------------|----------|--------------|----------------|
+| Default (2/direction) | 4 | 8 | ~20 minutes |
+| 3/direction | 6 | 12 | ~30 minutes |
+| 4/direction | 8 | 16 | ~40 minutes |
+| 5/direction | 10 | 20 | ~50 minutes |
 
-**Q: 发布失败会怎样？**
-A: 记录失败原因，继续处理下一篇
+**Recommendation:** Start with `--count 1` to test the workflow.
 
-**Q: 如何查看详细日志？**
-A: 每篇文章的流水线状态保存在 `content/pipeline/<pipeline_id>.json`
+## Quality Assurance
 
-## 与单篇模式对比
+Every article undergoes AI quality review with 6 dimensions:
 
-| 特性 | 单篇模式 (/factory) | 批量模式 (/batch-factory) |
-|------|-------------------|------------------------|
-| 素材搜索 | 每次执行 | 只执行一次 |
-| 选题策划 | 每次执行 | 只执行一次 |
-| 生成数量 | 1 篇 | N 篇 × 2 方向 |
-| 发布平台 | 可指定 | 可指定 |
-| 执行时间 | 快 | 慢（N 倍） |
-| 适用场景 | 单篇文章 | 批量生产 |
+1. **Title Appeal** (20 points) - Suspense, numbers, specific scenarios
+2. **Opening Hook** (15 points) - First 3 sentences grab attention
+3. **Content Structure** (20 points) - Clear framework, short paragraphs
+4. **Logical Coherence** (15 points) - Clear arguments, sufficient evidence
+5. **Readability** (15 points) - Concise, fluent, rich examples
+6. **Information Density** (15 points) - New information, data support
 
-## 性能估算
+**Pass threshold:** ≥70 points
+**Auto-rewrite:** If review fails, automatically regenerate
 
-假设每篇文章生成 + 审核 + 发布需要 5 分钟：
+## Troubleshooting
 
-- 2 篇/方向（默认）：约 20 分钟（4 篇 × 5 分钟）
-- 3 篇/方向：约 30 分钟（6 篇 × 5 分钟）
-- 4 篇/方向：约 40 分钟（8 篇 × 5 分钟）
+**Q: How to generate without publishing?**
+A: Not currently supported. Disable all platforms in `publishers.yaml`
 
-**建议**：首次使用建议 `--count 1` 测试流程。
+**Q: How to generate only one direction?**
+A: Not currently supported. Batch mode generates both directions
+
+**Q: What happens if review fails?**
+A: Auto-rewrite, max 3 retries
+
+**Q: What happens if publishing fails?**
+A: Logs failure reason, continues with next article
+
+**Q: How to view detailed logs?**
+A: Each article's pipeline state saved in `content/pipeline/<pipeline_id>.json`
+
+## Advanced Usage
+
+For detailed workflow documentation, parameter combinations, and troubleshooting guides, see:
+- `references/workflow-details.md` - Complete workflow documentation
+- `references/output-format.md` - Output file schemas
+- `references/troubleshooting.md` - Common issues and solutions
+
+## Related Skills
+
+- `/factory` - Single article generation with full automation
+- `/search` - Material collection only
+- `/plan` - Topic planning only
+- `/publish` - Multi-platform publishing only
