@@ -1,8 +1,14 @@
-# 自动化内容工厂
+# 全自动化内容工厂
 
-半自动化内容生产系统 — 素材采集、选题推荐、LLM 写作、多平台一键分发。
+全自动化内容生产系统 — AI 自动选题、智能生成、质量审核、多平台一键分发。
 
-**当前状态**: M1/M2/M3 已完成 ✅ 全链路可用
+**当前状态**: ✅ 全自动模式已验证成功（2026-03-18）
+- AI 自动选题（Claude 5 维度评估）
+- AI 自动生成（Gemini 8,578 字长文）
+- AI 自动审核（6 维度评分 90/100）
+- 全链路可用，支持批量生产
+
+**验证报告**: [docs/全自动内容工厂验证报告.md](docs/全自动内容工厂验证报告.md)
 
 ## 项目结构
 
@@ -29,12 +35,20 @@
 
 ## 核心 SOP
 
+**全自动模式**（`--auto`）：
+```
+采集/整理（自动）→ 选题策划（按方向）→ AI选题（自动）→ 内容生成（自动）→ AI审核（自动）→ 包装/发布（一键）
+```
+
+**半自动模式**（默认）：
 ```
 采集/整理（自动）→ 选题策划（按方向）→ 人工选题 → 内容生成（自动）→ 人工审核 → 包装/发布（一键）
 ```
 
 | Skill | 作用 |
 |-------|------|
+| `/factory --auto` | 全自动流水线（AI 选题 + AI 审核） |
+| `/batch-factory` | 批量生产（默认 4 篇：2 篇 AI + 2 篇汽车） |
 | `/search` | 采集素材 + 去重聚类，输出素材池 JSON |
 | `/plan` | 从素材池按方向（AI科技/汽车）筛选打分，推荐选题 |
 | `/collect` | 一键串联搜索 + 策划 |
@@ -42,6 +56,21 @@
 | `/publish` | 统一发布到微信公众号 + B站/知乎/头条/小红书/懂车帝 |
 
 ## 快速开始
+
+### 全自动模式（推荐）
+
+```bash
+# 单篇文章全自动生产（AI 选题 + AI 审核）
+python src/pipeline/main.py --auto --direction tech_ai
+
+# 批量生产（默认 4 篇：2 篇 AI + 2 篇汽车）
+python src/pipeline/batch_pipeline.py
+
+# 指定数量和平台
+python src/pipeline/batch_pipeline.py --count 2 --platforms xiaohongshu,zhihu
+```
+
+### 半自动模式
 
 ```bash
 # 一键采集（搜索 + 两方向策划）
@@ -66,10 +95,13 @@ python src/collector/search.py
 # 仅策划（从素材池推荐选题）
 python src/collector/main.py --plan-only --pool content/pool/<date>-pool.json
 # 或
-python src/collector/planner.py --pool content/pool/<date>-pool.json --direction tech_ai
+python src/collector/planner.py --pool content/pool/<date>-pool.json --direction tech_ai --recommend
 
 # 内容生成（生成文章 + 卡片到 content/drafts/）
 python src/generator/main.py "选题标题"
+
+# AI 质量审核（6 维度评分，≥70 分通过）
+python src/reviewer/quality_checker.py content/drafts/<markdown文件>
 
 # 统一发布（发布到所有 enabled 平台）
 python src/publisher/main.py content/drafts/<markdown文件>
@@ -86,6 +118,7 @@ python src/pipeline/main.py --auto
 # 恢复流水线
 python src/pipeline/main.py --resume latest --topic "选题标题"
 python src/pipeline/main.py --resume latest --approve
+python src/pipeline/main.py --resume latest --rewrite
 
 # 查看流水线状态
 python src/pipeline/main.py --list

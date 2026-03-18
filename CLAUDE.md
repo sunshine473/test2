@@ -4,9 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-半自动化内容工厂 — 从素材采集、选题推荐、内容生成到多平台分发的全流程系统。
+全自动化内容工厂 — 从素材采集、AI 自动选题、内容生成、质量审核到多平台分发的全流程系统。
 
-**Current Status**: M1/M2/M3 完成 ✅ 全链路可用
+**Current Status**: ✅ 全自动模式已验证成功（2026-03-18）
+- AI 自动选题（Claude 5 维度评估）
+- AI 自动生成（Gemini 8,578 字长文）
+- AI 自动审核（6 维度评分 90/100）
+- 全链路可用，支持批量生产
 
 ## Architecture
 
@@ -36,10 +40,28 @@ Layer 6: 分发 (Distribute) → PublishResult
 
 ### Content Pipeline (SOP)
 
+**全自动模式**（`--auto`）：
+```
+素材搜索 → 选题策划 → AI选题 → 内容生成 → AI审核 → 发布分发
+(自动)    (按方向)    (AI自动)  (自动)      (自动)    (一键)
+```
+
+**半自动模式**（默认）：
 ```
 素材搜索 → 选题策划 → 人工选题 → 内容生成 → 人工审核 → 发布分发
 (自动)    (按方向)    (★卡点)    (自动)      (★卡点)    (一键)
 ```
+
+**AI 选题评估**（全自动模式）：
+- 评估引擎：Claude Opus 4.6
+- 评估维度：时效性、话题热度、内容深度、差异化、读者价值
+- 输出：选题 + 评分 + 详细理由
+
+**AI 质量审核**（全自动模式）：
+- 审核引擎：Gemini API
+- 审核标准：6 维度评分（标题吸引力、开头钩子、内容结构、逻辑连贯性、可读性、信息密度）
+- 通过标准：总分 ≥ 70 分
+- 不通过：自动重写（最多 3 次）
 
 ### Notion 数据中枢
 
@@ -132,10 +154,16 @@ Layer 6: 分发 (Distribute) → PublishResult
 ```bash
 # 全链路工厂（推荐）
 /factory                              # 半自动模式（默认在选题和审核暂停）
-/factory --auto                       # 全自动模式
+/factory --auto                       # 全自动模式（AI 自动选题 + 自动审核）
 /factory --direction tech_ai          # 指定内容方向
 /factory --resume latest --topic "选题"  # 恢复并选题
 /factory --resume latest --approve    # 审核通过并继续
+/factory --resume latest --rewrite    # 审核不通过，重新生成
+
+# 批量生产（推荐）
+/batch-factory                        # 批量生产 4 篇（2 篇 AI + 2 篇汽车）
+/batch-factory --count 2              # 指定每个方向生成数量
+/batch-factory --platforms xiaohongshu # 指定发布平台
 
 # 单独模块
 /search                               # 素材采集
@@ -199,11 +227,38 @@ python src/publisher/main.py <markdown文件> --platforms wechat,zhihu
 # 流水线（默认到 select 暂停）
 python src/pipeline/main.py
 
-# 全自动
+# 全自动模式（AI 自动选题 + 自动审核）
 python src/pipeline/main.py --auto
 
-# 恢复流水线
+# 恢复流水线（选题后继续）
 python src/pipeline/main.py --resume latest --topic "选题标题"
+
+# 恢复流水线（审核通过后继续）
+python src/pipeline/main.py --resume latest --approve
+
+# 恢复流水线（审核不通过，重新生成）
+python src/pipeline/main.py --resume latest --rewrite
+
+# 查看状态
+python src/pipeline/main.py --status
+
+# 查看历史
+python src/pipeline/main.py --list
+```
+
+### Batch Production
+```bash
+# 批量生产（默认 4 篇：2 篇 AI + 2 篇汽车）
+python src/pipeline/batch_pipeline.py
+
+# 指定每个方向生成数量
+python src/pipeline/batch_pipeline.py --count 2
+
+# 指定发布平台
+python src/pipeline/batch_pipeline.py --platforms xiaohongshu,zhihu
+
+# 不生成视觉卡片（加速）
+python src/pipeline/batch_pipeline.py --no-cards
 ```
 
 ### Testing
@@ -299,13 +354,18 @@ Commit types: `feat`, `fix`, `refactor`, `docs`, `chore`
 - `src/packager/` — 内容包装（Layer 5）
 - `src/publisher/` — 多平台发布（Layer 6）
 - `src/pipeline/` — 流水线调度
+  - `main.py` — 单篇文章流水线
+  - `batch_pipeline.py` — 批量生产流水线
+  - `ai_selector.py` — AI 自动选题（Claude 5 维度评估）
 
 ### Data Storage
 - `content/pool/` — 素材池 JSON（搜索阶段输出）
 - `content/drafts/` — 草稿（生成阶段输出）
 - `content/pipeline/` — 流水线状态 JSON
+- `content/batch/` — 批量生产结果 JSON
 
 ### Documentation
+- `docs/全自动内容工厂验证报告.md` — 全自动模式验证报告（2026-03-18）
 - `docs/ai-review-standard.md` — AI 审核标准和使用指南
 - `docs/6层改造草案.md` — 六层架构改造目标
 - `docs/内容流水线数据契约.md` — 数据结构定义
