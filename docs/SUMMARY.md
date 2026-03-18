@@ -30,10 +30,14 @@
 
 - [awesome-claude-skills-analysis.md](awesome-claude-skills-analysis.md) - Awesome Claude Skills 深度分析报告
 - [factory-skill-improvement-plan.md](factory-skill-improvement-plan.md) - Factory Skill 改进方案
+- [ai-auto-topic-selection.md](ai-auto-topic-selection.md) - AI 自动选题功能实现总结
+- [batch-production-implementation.md](batch-production-implementation.md) - 批量内容生产功能实现总结
 
 ## 📊 最近更新
 
 ### 2026-03-18
+- ✅ 添加批量内容生产功能（小红书 4 篇 + 知乎 4 篇）
+- ✅ 添加 AI 自动选题功能（Claude 评估推荐选题）
 - ✅ 添加 Awesome Claude Skills 深度分析报告
 - ✅ 添加 Factory Skill 改进方案
 
@@ -59,6 +63,12 @@
 
 ### 想改进 Factory Skill？
 → [factory-skill-improvement-plan.md](factory-skill-improvement-plan.md) + [awesome-claude-skills-analysis.md](awesome-claude-skills-analysis.md)
+
+### 想使用 AI 自动选题？
+→ [ai-auto-topic-selection.md](ai-auto-topic-selection.md)
+
+### 想批量生产内容？
+→ [batch-production-implementation.md](batch-production-implementation.md)
 
 ### 想查看开发进度？
 → [开发计划.md](开发计划.md) + [项目状态总览.md](项目状态总览.md)
