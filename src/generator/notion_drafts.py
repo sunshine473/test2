@@ -2,7 +2,7 @@
 
 import os
 from datetime import datetime
-from typing import Any
+from typing import Any, Optional
 
 from notion_client import Client
 
@@ -20,7 +20,7 @@ class NotionDrafts:
             raise ValueError("NOTION_DRAFTS_DB_ID 未设置，请在 .env 中配置")
         self.property_keys, self.parent = self._ensure_schema()
 
-    def save_draft(self, draft_data: dict[str, Any]) -> str | None:
+    def save_draft(self, draft_data: dict[str, Any]) -> Optional[str]:
         """将生成的草稿写入 Notion，返回创建的页面 ID
 
         Args:

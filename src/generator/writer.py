@@ -4,6 +4,7 @@ import re
 import yaml
 from datetime import datetime
 from pathlib import Path
+from typing import Optional
 
 from generator.gemini_client import generate_text
 
@@ -22,7 +23,7 @@ def _make_slug(title: str) -> str:
     return slug[:60]
 
 
-def generate_article(topic: str, sources: list[str] | None = None) -> tuple[str, Path]:
+def generate_article(topic: str, sources: Optional[list[str]] = None) -> tuple[str, Path]:
     """生成文章，返回 (markdown_content, output_path)"""
     DRAFTS_DIR.mkdir(parents=True, exist_ok=True)
 

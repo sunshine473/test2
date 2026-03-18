@@ -4,7 +4,7 @@
 """
 
 import os
-from typing import Any
+from typing import Any, Optional
 
 import requests
 
@@ -20,7 +20,7 @@ def _check_token():
         raise RuntimeError("TELEGRAM_BOT_TOKEN 未配置，无法调用 Telegram API")
 
 
-def get_updates(offset: int | None = None, timeout: int = 30) -> list[dict[str, Any]]:
+def get_updates(offset: Optional[int] = None, timeout: int = 30) -> list[dict[str, Any]]:
     """长轮询获取新消息。返回 Update 对象列表。"""
     _check_token()
     params: dict[str, Any] = {

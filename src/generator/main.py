@@ -41,9 +41,10 @@ load_dotenv()
 
 from generator.writer import generate_article, _make_slug, DRAFTS_DIR, review_article, complete_frontmatter
 from generator.card_generator import generate_cards
+from typing import Optional
 
 
-def find_existing_article(topic: str) -> Path | None:
+def find_existing_article(topic: str) -> Optional[Path]:
     """查找已有的文章草稿"""
     slug = _make_slug(topic)
     date_str = datetime.now().strftime("%Y-%m-%d")

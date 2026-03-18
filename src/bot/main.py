@@ -35,12 +35,13 @@ ensure_utf8()
 
 from bot.telegram import get_updates, send_message
 from bot.agent import handle_message
+from typing import Optional
 
 AUTHORIZED_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 OFFSET_FILE = Path(os.getenv("BOT_STATE_DIR", "/tmp/bot_state")) / "update_offset.txt"
 
 
-def load_offset() -> int | None:
+def load_offset() -> Optional[int]:
     if OFFSET_FILE.exists():
         text = OFFSET_FILE.read_text().strip()
         if text.isdigit():

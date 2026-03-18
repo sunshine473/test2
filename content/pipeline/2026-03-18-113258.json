@@ -1,0 +1,2438 @@
+{
+  "pipeline_id": "2026-03-18-113258",
+  "created_at": "2026-03-18T11:32:58.085835",
+  "current_stage": "select",
+  "status": "paused",
+  "pool_path": "/Users/dora/Documents/test_auto_write-factary/content/pool/2026-03-18-pool.json",
+  "plan_result": {
+    "tech_ai": {
+      "direction": "tech_ai",
+      "label": "AI 科技",
+      "input_count": 133,
+      "filtered_count": 74,
+      "score_summary": {
+        "max": 71.58,
+        "min": 33.0,
+        "avg": 46.58
+      },
+      "items": [
+        {
+          "title": "Microsoft's 'unhackable' Xbox One has been hacked by 'Bliss'",
+          "url": "https://www.tomshardware.com/video-games/console-gaming/microsofts-unhackable-xbox-one-has-been-hacked-by-bliss-the-2013-console-finally-fell-to-voltage-glitching-allowing-the-loading-of-unsigned-code-at-every-level",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=583, comments=214",
+          "content": "Title: Microsoft's 'unhackable' Xbox One has been hacked by 'Bliss' Points: 583 Comments: 214",
+          "published_at": "2026-03-17T15:16:29Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 583,
+            "hn_comments": 214,
+            "hn_object_id": "47413876",
+            "cluster_id": "C043",
+            "cluster_size": 1,
+            "score": 71.58,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:14.6"
+            ]
+          }
+        },
+        {
+          "title": "FFmpeg 8.1",
+          "url": "https://ffmpeg.org/index.html#pr8.1",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=368, comments=56",
+          "content": "Title: FFmpeg 8.1 Points: 368 Comments: 56",
+          "published_at": "2026-03-17T14:51:57Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 368,
+            "hn_comments": 56,
+            "hn_object_id": "47413525",
+            "cluster_id": "C021",
+            "cluster_size": 1,
+            "score": 66.2,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:9.2"
+            ]
+          }
+        },
+        {
+          "title": "GPT‑5.4 Mini and Nano",
+          "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=214, comments=133",
+          "content": "Title: GPT‑5.4 Mini and Nano Points: 214 Comments: 133",
+          "published_at": "2026-03-17T17:07:06Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 214,
+            "hn_comments": 133,
+            "hn_object_id": "47415441",
+            "cluster_id": "C028",
+            "cluster_size": 1,
+            "score": 65.35,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "keyword:3.0",
+              "hn_points:5.3"
+            ]
+          }
+        },
+        {
+          "title": "Ryugu asteroid samples contain all DNA and RNA building blocks",
+          "url": "https://phys.org/news/2026-03-ryugu-asteroid-samples-dna-rna.html",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=205, comments=103",
+          "content": "Title: Ryugu asteroid samples contain all DNA and RNA building blocks Points: 205 Comments: 103",
+          "published_at": "2026-03-17T12:01:05Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 205,
+            "hn_comments": 103,
+            "hn_object_id": "47411480",
+            "cluster_id": "C058",
+            "cluster_size": 1,
+            "score": 65.12,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "keyword:3.0",
+              "hn_points:5.1"
+            ]
+          }
+        },
+        {
+          "title": "Silicon Valley's \"Pronatalists\" Killed WFH. The Strait of Hormuz Brought It Back",
+          "url": "https://www.governance.fyi/p/silicon-valleys-pronatalists-killed",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=191, comments=274",
+          "content": "Title: Silicon Valley's \"Pronatalists\" Killed WFH. The Strait of Hormuz Brought It Back Points: 191 Comments: 274",
+          "published_at": "2026-03-17T12:56:59Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 191,
+            "hn_comments": 274,
+            "hn_object_id": "47412023",
+            "cluster_id": "C059",
+            "cluster_size": 1,
+            "score": 64.78,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "keyword:3.0",
+              "hn_points:4.8"
+            ]
+          }
+        },
+        {
+          "title": "If you thought code writing speed was your problem you have bigger problems",
+          "url": "https://andrewmurphy.io/blog/if-you-thought-the-speed-of-writing-code-was-your-problem-you-have-bigger-problems",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=301, comments=202",
+          "content": "Title: If you thought code writing speed was your problem you have bigger problems Points: 301 Comments: 202",
+          "published_at": "2026-03-17T17:48:50Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 301,
+            "hn_comments": 202,
+            "hn_object_id": "47415919",
+            "cluster_id": "C032",
+            "cluster_size": 1,
+            "score": 64.53,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:7.5"
+            ]
+          }
+        },
+        {
+          "title": "Python 3.15's JIT is now back on track",
+          "url": "https://fidget-spinner.github.io/posts/jit-on-track.html",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=300, comments=117",
+          "content": "Title: Python 3.15's JIT is now back on track Points: 300 Comments: 117",
+          "published_at": "2026-03-17T18:37:27Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 300,
+            "hn_comments": 117,
+            "hn_object_id": "47416486",
+            "cluster_id": "C056",
+            "cluster_size": 1,
+            "score": 64.5,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:7.5"
+            ]
+          }
+        },
+        {
+          "title": "'The Secret Agent': Exploring a Vibrant, yet Violent Brazil (2025)",
+          "url": "https://theasc.com/articles/the-secret-agent-cinematography",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=126, comments=65",
+          "content": "Title: 'The Secret Agent': Exploring a Vibrant, yet Violent Brazil (2025) Points: 126 Comments: 65",
+          "published_at": "2026-03-17T15:56:09Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 126,
+            "hn_comments": 65,
+            "hn_object_id": "47414440",
+            "cluster_id": "C066",
+            "cluster_size": 1,
+            "score": 64.15,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "keyword:4.0",
+              "hn_points:3.1"
+            ]
+          }
+        },
+        {
+          "title": "Illinois Introducing Operating System Account Age Bill",
+          "url": "https://www.ilga.gov/Legislation/BillStatus?DocTypeID=HB&DocNum=5511",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=250, comments=385",
+          "content": "Title: Illinois Introducing Operating System Account Age Bill Points: 250 Comments: 385",
+          "published_at": "2026-03-17T18:06:07Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 250,
+            "hn_comments": 385,
+            "hn_object_id": "47416131",
+            "cluster_id": "C033",
+            "cluster_size": 1,
+            "score": 63.25,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:6.2"
+            ]
+          }
+        },
+        {
+          "title": "Node.js needs a virtual file system",
+          "url": "https://blog.platformatic.dev/why-nodejs-needs-a-virtual-file-system",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=235, comments=199",
+          "content": "Title: Node.js needs a virtual file system Points: 235 Comments: 199",
+          "published_at": "2026-03-17T14:28:37Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 235,
+            "hn_comments": 199,
+            "hn_object_id": "47413195",
+            "cluster_id": "C047",
+            "cluster_size": 1,
+            "score": 62.88,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:5.9"
+            ]
+          }
+        },
+        {
+          "title": "Unsloth Studio",
+          "url": "https://unsloth.ai/docs/new/studio",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=202, comments=46",
+          "content": "Title: Unsloth Studio Points: 202 Comments: 46",
+          "published_at": "2026-03-17T15:26:32Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 202,
+            "hn_comments": 46,
+            "hn_object_id": "47414032",
+            "cluster_id": "C071",
+            "cluster_size": 1,
+            "score": 62.05,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:5.0"
+            ]
+          }
+        },
+        {
+          "title": "Java 26 is here",
+          "url": "https://hanno.codes/2026/03/17/java-26-is-here/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=197, comments=157",
+          "content": "Title: Java 26 is here Points: 197 Comments: 157",
+          "published_at": "2026-03-17T18:44:09Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 197,
+            "hn_comments": 157,
+            "hn_object_id": "47416548",
+            "cluster_id": "C036",
+            "cluster_size": 1,
+            "score": 61.92,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:4.9"
+            ]
+          }
+        },
+        {
+          "title": "OpenSUSE Kalpa",
+          "url": "https://kalpadesktop.org/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=185, comments=80",
+          "content": "Title: OpenSUSE Kalpa Points: 185 Comments: 80",
+          "published_at": "2026-03-17T13:54:17Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 185,
+            "hn_comments": 80,
+            "hn_object_id": "47412726",
+            "cluster_id": "C052",
+            "cluster_size": 1,
+            "score": 61.62,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:4.6"
+            ]
+          }
+        },
+        {
+          "title": "A proposal to classify happiness as a psychiatric disorder (1992)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1376114/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=174, comments=98",
+          "content": "Title: A proposal to classify happiness as a psychiatric disorder (1992) Points: 174 Comments: 98",
+          "published_at": "2026-03-17T13:03:38Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 174,
+            "hn_comments": 98,
+            "hn_object_id": "47412097",
+            "cluster_id": "C010",
+            "cluster_size": 1,
+            "score": 61.35,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:4.3"
+            ]
+          }
+        },
+        {
+          "title": "Edge.js: Run Node apps inside a WebAssembly sandbox",
+          "url": "https://wasmer.io/posts/edgejs-safe-nodejs-using-wasm-sandbox",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=106, comments=33",
+          "content": "Title: Edge.js: Run Node apps inside a WebAssembly sandbox Points: 106 Comments: 33",
+          "published_at": "2026-03-17T18:01:50Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 106,
+            "hn_comments": 33,
+            "hn_object_id": "47416081",
+            "cluster_id": "C020",
+            "cluster_size": 1,
+            "score": 59.65,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:2.6"
+            ]
+          }
+        },
+        {
+          "title": "abhigyanpatwari/GitNexus",
+          "url": "https://github.com/abhigyanpatwari/GitNexus",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration",
+          "content": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration Language: TypeScript Stars: 16,868",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C011",
+            "cluster_size": 1,
+            "score": 58.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "jarrodwatts/claude-hud",
+          "url": "https://github.com/jarrodwatts/claude-hud",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
+          "content": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress Language: JavaScript Stars: 5,795",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C035",
+            "cluster_size": 1,
+            "score": 58.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "langchain-ai/deepagents",
+          "url": "https://github.com/langchain-ai/deepagents",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "Agent harness built with LangChain and LangGraph. Equipped with a planning tool, a filesystem backend, and the ability to spawn subagents - well-equipped to handle complex agentic tasks.",
+          "content": "Agent harness built with LangChain and LangGraph. Equipped with a planning tool, a filesystem backend, and the ability to spawn subagents - well-equipped to handle complex agentic tasks. Language: Python Stars: 14,313",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C039",
+            "cluster_size": 1,
+            "score": 58.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "An agentic skills framework & software development methodology that works.",
+          "content": "An agentic skills framework & software development methodology that works. Language: Shell Stars: 92,979",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C049",
+            "cluster_size": 1,
+            "score": 55.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "cloudflare/workerd",
+          "url": "https://github.com/cloudflare/workerd",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "The JavaScript / Wasm runtime that powers Cloudflare Workers",
+          "content": "The JavaScript / Wasm runtime that powers Cloudflare Workers Language: C++ Stars: 7,871",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C017",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "codecrafters-io/build-your-own-x",
+          "url": "https://github.com/codecrafters-io/build-your-own-x",
+          "source_name": "GitHub Trending",
+          "source_type": "scraper",
+          "category": "tech_ai",
+          "summary": "Master programming by recreating your favorite technologies from scratch.",
+          "content": "Master programming by recreating your favorite technologies from scratch. Language: Markdown Stars: 480,066",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C018",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:24",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "A new way to express yourself: Gemini can now create music",
+          "url": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "The Gemini app now features our most advanced music generation model Lyria 3, empowering anyone to make 30-second tracks using text or images.",
+          "content": "The Gemini app now features our most advanced music generation model Lyria 3, empowering anyone to make 30-second tracks using text or images.",
+          "published_at": "Wed, 18 Feb 2026 16:01:38 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C009",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Gemini 3.1 Flash-Lite: Built for intelligence at scale",
+          "url": "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3 series model yet.",
+          "content": "Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3 series model yet.",
+          "published_at": "Tue, 03 Mar 2026 16:35:55 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C023",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+          "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
+          "content": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
+          "published_at": "Thu, 19 Feb 2026 16:06:14 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C024",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "How to Switch from ChatGPT to Gemini (Without Losing Anything!)",
+          "url": "https://www.youtube.com/watch?v=aK3lAZ5hhm0",
+          "source_name": "The AI Advantage",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Subscribe for more video tutorials teaching you how to use AI tools! In this video, Igor shows you how to transfer all of the relevant information from ChatGPT over to Gemini so that you can make the switch while keeping as much as possible. Enjoy! Links: 🔑 Free ChatGPT Prompt Templates: https://bit",
+          "content": "Subscribe for more video tutorials teaching you how to use AI tools! In this video, Igor shows you how to transfer all of the relevant information from ChatGPT over to Gemini so that you can make the switch while keeping as much as possible. Enjoy! Links: 🔑 Free ChatGPT Prompt Templates: https://bit.ly/newsletter-aia 🧑‍💻 Igor Pogany on LinkedIn: https://bit.ly/IgorLinkedIn 🐦Twitter/X: https://bit.ly/AIAonTwitter 📸 Instagram: https://bit.ly/AIAinsta https://chatgpt.com/ https://gemini.google.com/app Chapters: 0:00 Introduction 0:32 Custom Instructions & Memories 2:59 GPTs & Projects 3:57 Gems 4:14 Transferring GPTs 6:17 Transferring Projects 7:27 Chats 9:30 Closing Thoughts",
+          "published_at": "2026-03-17T16:15:37+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C031",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8",
+              "keyword:9.0"
+            ]
+          }
+        },
+        {
+          "title": "Deadline Day for Autonomous AI Weapons & Mass Surveillance",
+          "url": "https://www.youtube.com/watch?v=Cru804JMjPI",
+          "source_name": "AI Explained",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Will Anthropic be forced to make a version of Claude for war? And does a new paper expose the risks of Claude agents, in both OpenClaw and the field of war? Plus, 5 more twists in the story of the Pentagon versus Anthropic + some AI lab employees, and a petition that could change everything, or noth",
+          "content": "Will Anthropic be forced to make a version of Claude for war? And does a new paper expose the risks of Claude agents, in both OpenClaw and the field of war? Plus, 5 more twists in the story of the Pentagon versus Anthropic + some AI lab employees, and a petition that could change everything, or nothing... Check out my fast-growing (!) app, free to use, and code INSIDER15 for paid tiers: https://lmcouncil.ai AI Insiders ($9!): https://www.patreon.com/AIExplained Chapters: 00:00 - Introduction 00:44 - Deadline Day + Petition 02:42 - Twist 1: Existing Deal 03:26 - Twist 2: Existing Policy 04:21 - Twist 3: Twin Threats 05:54 - Twist 4: Interesting Objections 11:32 - Twist 5: Anthropic’s Dropped Policy Dario Statement: https://www.anthropic.com/news/statement-department-of-war Google/OpenAI Petition: https://notdivided.org/ Axios on Amodei Rejection: https://www.axios.com/2026/02/26/anthropic-rejects-pentagon-ai-terms FT on US Threat: https://www.ft.com/content/11d27612-d6c5-4cf7-94dd-f65603549b7f Politico on Latest: https://archive.ph/20260227013117/https://www.politico.com/news/2026/02/26/incoherent-hegseths-anthropic-ultimatum-confounds-ai-policymakers-00800135 The Verge on Current Deal: https://www.theverge.com/ai-artificial-intelligence/883456/anthropic-pentagon-department-of-defense-negotiations Anthropic RSP change: https://www.anthropic.com/news/responsible-scaling-policy-v3 Time Magazine on RSP: https://time.com/7380854/exclusive-anthropic-drops-flagship-safety-pledge/ Agent of Chaos Paper: https://x.com/NatalieShapira/status/2026062499599319526 AI Agent Reliability Paper: https://arxiv.org/pdf/2602.16666 My Patreon Video: https://www.patreon.com/posts/real-mystery-ai-151647211 Patreon Documentary: https://www.patreon.com/posts/our-new-age-of-133960279 Non-hype Newsletter: https://signaltonoise.beehiiv.com/ Podcast: https://aiexplainedopodcast.buzzsprout.com/",
+          "published_at": "2026-02-27T14:57:29+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C019",
+            "cluster_size": 1,
+            "score": 48.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:14.0"
+            ]
+          }
+        },
+        {
+          "title": "Perplexity’s New “Computer” Feature is Kind of Insane",
+          "url": "https://www.youtube.com/shorts/nc0oIVfpSqo",
+          "source_name": "Matt Wolfe",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Perplexity is apparently giving people a dedicated Mac Mini to run their AI agents on 24/7. It's available now on the paid plans, and this video shows just a teaser of all the cool things you can build with it. What would you build with Perplexity Computer? #AI #AItools #Ainews #Perplexity",
+          "content": "Perplexity is apparently giving people a dedicated Mac Mini to run their AI agents on 24/7. It's available now on the paid plans, and this video shows just a teaser of all the cool things you can build with it. What would you build with Perplexity Computer? #AI #AItools #Ainews #Perplexity",
+          "published_at": "2026-03-17T14:50:08+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C054",
+            "cluster_size": 1,
+            "score": 48.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "Claude Just Rolled Out 2 Big New Features",
+          "url": "https://www.youtube.com/shorts/3B1c6Kq_aY0",
+          "source_name": "Matt Wolfe",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Claude just rolled out 2 new features for developers. You can now run scheduled tasks and do AI-powered code reviews inside Claude Code. The new review system actually sends a team of AI agents to analyze your code and finding bugs, verify them, then rank them by severity. Apparently this is the sam",
+          "content": "Claude just rolled out 2 new features for developers. You can now run scheduled tasks and do AI-powered code reviews inside Claude Code. The new review system actually sends a team of AI agents to analyze your code and finding bugs, verify them, then rank them by severity. Apparently this is the same system Anthropic has been using internally for months to review their own code. Would you use either of these new features? #ai #claude #anthropic #ainews #developertools",
+          "published_at": "2026-03-13T20:04:18+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C015",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "From games to biology and beyond: 10 years of AlphaGo’s impact",
+          "url": "https://deepmind.google/blog/10-years-of-alphago/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Ten years since AlphaGo, we explore how it is catalyzing scientific discovery and paving a path to AGI.",
+          "content": "Ten years since AlphaGo, we explore how it is catalyzing scientific discovery and paving a path to AGI.",
+          "published_at": "Mon, 09 Mar 2026 13:52:36 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C022",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
+          "url": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Our latest image generation model offers advanced world knowledge, production ready specs, subject consistency and more, all at Flash speed.",
+          "content": "Our latest image generation model offers advanced world knowledge, production ready specs, subject consistency and more, all at Flash speed.",
+          "published_at": "Thu, 26 Feb 2026 16:01:50 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C045",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "OpenAI Strikes Back & More AI News You Can Use",
+          "url": "https://www.youtube.com/watch?v=9FruIqE0OEw",
+          "source_name": "The AI Advantage",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Subscribe for more weekly AI news you can use! This week, Igor covers the new model releases from OpenAI including GPT-5.3 and 5.4, plus he shows off the new Project Sources update for ChatGPT. He also breaks down the many releases from Google as they condense their AI tools down into the products t",
+          "content": "Subscribe for more weekly AI news you can use! This week, Igor covers the new model releases from OpenAI including GPT-5.3 and 5.4, plus he shows off the new Project Sources update for ChatGPT. He also breaks down the many releases from Google as they condense their AI tools down into the products that work, talks briefly about OpenClaw competitors and Anthropic's latest releases, and more. Enjoy! Links: 🔑 Free ChatGPT Prompt Templates: https://bit.ly/newsletter-aia 🧑‍💻 Igor Pogany on LinkedIn: https://bit.ly/IgorLinkedIn 🐦Twitter/X: https://bit.ly/AIAonTwitter 📸 Instagram: https://bit.ly/AIAinsta https://openai.com/index/gpt-5-3-instant/ https://help.openai.com/en/articles/6825453-chatgpt-release-notes https://x.com/claudeai/status/2026720870631354429?s=20 https://x.com/stitchbygoogle/status/2027082165490794824 https://x.com/GoogleLabs/status/2026374947996840169 https://x.com/FlowbyGoogle/status/2026704701069074603?s=20 https://openai.com/index/our-agreement-with-the-department-of-war/ https://blog.adobe.com/en/publish/2026/02/25/putting-ideas-in-motion-redefining-ai-video-with-adobe-firefly https://www.perplexity.ai/products/computer https://x.com/NotionHQ/status/2026338860557545901?s=20 Chapters: 0:00 What’s New? 0:41 GPT-5.3 4:26 GPT-5.4 6:23 Sources for ChatGPT Projects Update 10:05 Cowork Scheduled Tasks 12:30 Google Stitch Update 13:13 Google Opal Update 14:07 Google Flow Update 15:07 Gemini 3.1 Flash-Lite 15:40 Qwen 3.5 Small Model Series 16:20 Anthropic vs. USA 16:50 Adobe Quick Cut 17:22 Perplexity Computer 18:01 Notion Custom Agents 18:35 Teens Using AI",
+          "published_at": "2026-03-06T16:30:24+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C050",
+            "cluster_size": 1,
+            "score": 45.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:11.0"
+            ]
+          }
+        },
+        {
+          "title": "What the New ChatGPT 5.4 Means for the World",
+          "url": "https://www.youtube.com/watch?v=zizoDORjmlQ",
+          "source_name": "AI Explained",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Just 48 hours after releasing GPT 5.3 Instant, OpenAI have released GPT 5.4 Thinking, so either their is an imminent singularity or perhaps we are being distracted from other news. This video will give 9 crucial bits of context, not just on the GPT 5.4 drop but on the background to the meltdown betw",
+          "content": "Just 48 hours after releasing GPT 5.3 Instant, OpenAI have released GPT 5.4 Thinking, so either their is an imminent singularity or perhaps we are being distracted from other news. This video will give 9 crucial bits of context, not just on the GPT 5.4 drop but on the background to the meltdown between the Pentagon and Anthropic. What does this say about the state of AI progress, your job, and what is next. Check out my fast-growing (!) app, free to use, and code INSIDER15 for 15% off paid tiers: https://lmcouncil.ai AI Insiders ($9!): https://www.patreon.com/AIExplained Chapters: 00:00 - Introduction 01:06: GPT 5.4 Breakdown 05:06 - Closing the Loop 06:35 - Spiky Performance 10:31 - Advice 11:32 - Less Encouraging Developments - Fired Like Dogs 17:45 - But Used in Iran GPT 5.4: https://openai.com/index/introducing-gpt-5-4/ Hallucinations: https://artificialanalysis.ai/evaluations/omniscience Investment Banking Bench: https://x.com/bradlightcap/status/2029684672343728452 Move 37: https://x.com/nasqret/status/2029628846518010099 System Card: https://deploymentsafety.openai.com/gpt-5-4-thinking/gpt-5-4-thinking.pdf Prediction Market Scandal: https://www.wired.com/story/openai-fires-employee-insider-trading-polymarket-kalshi/ GPT 5.3 Instant: https://openai.com/index/gpt-5-3-instant/ GDPVal: https://openai.com/index/gdpval/ Claude in Iran: https://www.washingtonpost.com/technology/2026/03/04/anthropic-ai-iran-campaign ‘Like Dogs’: https://x.com/AndrewCurran_/status/2029605783311470679 Altman leak: https://www.cnbc.com/2026/03/03/sam-altman-tells-openai-staff-operational-decisions-up-to-government.html Original 2024 Switch: https://archive.fo/20240116172526/https://www.bloomberg.com/news/articles/2024-01-16/openai-working-with-us-military-on-cybersecurity-tools-for-veterans#selection-6173.83-6173.226 Amodei Original Memo: https://www.theinformation.com/articles/read-anthropic-ceos-memo-attacking-openais-mendacious-pentagon-announcement?rc=sy0ihq Anthropic Apology: https://www.anthropic.com/news/where-stand-department-war OpenAI Employee Reaction: https://x.com/tszzl/status/2029334980481212820 DoD Suppler Risk: https://www.cnbc.com/amp/2026/03/05/anthropic-pentagon-ai-claude-iran.html Atlantic Exclusive: https://archive.fo/20260301152646/https://www.theatlantic.com/technology/2026/03/inside-anthropics-killer-robot-dispute-with-the-pentagon/686200/#selection-941.61-941.212 No Negotiation: https://x.com/USWREMichael/status/2029754965778907493 $20B Doubling: https://archive.ph/20260304111124/https://www.bloomberg.com/news/articles/2026-03-03/anthropic-nears-20-billion-revenue-run-rate-amid-pentagon-feud March 2022 Interview: https://www.youtube.com/watch?v=uAA6PZkek4A https://lmcouncil.ai/ Non-hype Newsletter: https://signaltonoise.beehiiv.com/ Podcast: https://aiexplainedopodcast.buzzsprout.com/",
+          "published_at": "2026-03-06T16:25:26+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C073",
+            "cluster_size": 1,
+            "score": 45.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:11.0"
+            ]
+          }
+        },
+        {
+          "title": "7 new open source AI tools you need right now…",
+          "url": "https://www.youtube.com/watch?v=Xn-gtHDsaPY",
+          "source_name": "Fireship",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Build meeting bots and desktop recording apps in hours - https://www.recall.ai/fireship gets you $100 in free credits In today's we'll look at 7 open source AI projects you've never heard of that will help you whip your agents into shape and build highly effective slop pipelines. #coding #programmin",
+          "content": "Build meeting bots and desktop recording apps in hours - https://www.recall.ai/fireship gets you $100 in free credits In today's we'll look at 7 open source AI projects you've never heard of that will help you whip your agents into shape and build highly effective slop pipelines. #coding #programming #ai 🔖 Topics Covered - Agency Agents - PropmtFoo - MicroFish - NanoChat - Impeccable - Heretic - OpenViking Want more Fireship? 🗞️ Newsletter: https://bytes.dev 🧠 Courses: https://fireship.dev",
+          "published_at": "2026-03-12T17:49:19+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C006",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "Claude AI Co-founder Publishes 4 Big Claims about Near Future: Breakdown",
+          "url": "https://www.youtube.com/watch?v=Iar4yweKGoI",
+          "source_name": "AI Explained",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Anthropic's CEO, who has consistently predicted transformative AI will arrive before 2030, recently published a nearly 20,000-word essay outlining his vision of where AI is heading. The video gives you the highlights. The essay argues that scaling and recursion will advance AI from coding automation",
+          "content": "Anthropic's CEO, who has consistently predicted transformative AI will arrive before 2030, recently published a nearly 20,000-word essay outlining his vision of where AI is heading. The video gives you the highlights. The essay argues that scaling and recursion will advance AI from coding automation to full engineering automation, while warning of economic displacement within 1-2 years and China's trajectory toward AI-enabled totalitarianism. Additionally, Dario Amodei predicts that AI models will increasingly be understood as collections of distinct personas rather than monolithic systems. 80,000 Hours: https://80000hours.org/aiexplained https://www.youtube.com/watch?v=B54EQiuO1UU Check out my fast-growing (!) app, free to use, and code INSIDER15 for Pro: https://lmcouncil.ai AI Insiders ($9!): https://www.patreon.com/AIExplained Chapters: 00:00 - Introduction 01:10 - Scaling to software engineers 06:11 - Permanent Underclass 10:18 - Totalitarian Nightmares 16:38 - Collection of Personas Essay: https://www.darioamodei.com/essay/the-adolescence-of-technology Physics Prediction: https://www.quantamagazine.org/is-particle-physics-dead-dying-or-just-hard-20260126/ Axios: https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic World GDP: https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?end=2024&start=1961&view=chart Demis Hassabis Counter: https://www.youtube.com/watch?v=q6fq4_uP7aM Karpathy 80%: https://x.com/karpathy/status/2015883857489522876 Machines of Loving Grace: https://www.darioamodei.com/essay/machines-of-loving-grace Anthropic LessWrong: https://www.lesswrong.com/posts/5aKRshJzhojqfbRyo/unless-its-governance-changes-anthropic-is-untrustworthy#1__In_private__Dario_frequently_said_he_won_t_push_the_frontier_of_AI_capabilities__later__Anthropic_pushed_the_frontier Original Constitution: https://www.anthropic.com/news/claudes-constitution New Constitution: https://www.anthropic.com/constitution Kimi K2.5: https://x.com/Kimi_Moonshot/status/2016024049869324599 Societies of Thought, Google DeepMind Paper: https://arxiv.org/pdf/2601.10825 https://lmcouncil.ai/benchmarks https://www.patreon.com/posts/our-new-age-of-133960279 Non-hype Newsletter: https://signaltonoise.beehiiv.com/ Podcast: https://aiexplainedopodcast.buzzsprout.com/",
+          "published_at": "2026-01-28T15:18:48+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C013",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "How DeepMind’s New AI Predicts What It Cannot See",
+          "url": "https://www.youtube.com/watch?v=ssbHkYB0jYM",
+          "source_name": "Two Minute Papers",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 📝 The paper is available here: https://d4rt-paper.github.io/ Our Gaussian Material Synthesis paper: https://users.cg.tuwien.ac.at/zsolnai/gfx/gaussian-material-synthesis/ Tweet link: https://x.com/GoogleDeepMind/statu",
+          "content": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 📝 The paper is available here: https://d4rt-paper.github.io/ Our Gaussian Material Synthesis paper: https://users.cg.tuwien.ac.at/zsolnai/gfx/gaussian-material-synthesis/ Tweet link: https://x.com/GoogleDeepMind/status/2014352808426807527 Our Patreon if you wish to support us: https://www.patreon.com/TwoMinutePapers 🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible: Adam Bridges, Benji Rabhan, B Shang, Cameron Navor, Christian Ahlin, Eric T, Fred R, Gordon Child, Juan Benet, Michael Tedder, Owen Skarpness, Richard Sundvall, Ryan Stankye, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi My research: https://cg.tuwien.ac.at/~zsolnai/",
+          "published_at": "2026-03-07T14:42:18+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C030",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "Mistral AI Releases Forge",
+          "url": "https://mistral.ai/news/forge",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://mistral.ai/news/forge Comments URL: https://news.ycombinator.com/item?id=47418295 Points: 173 # Comments: 26",
+          "content": "Article URL: https://mistral.ai/news/forge Comments URL: https://news.ycombinator.com/item?id=47418295 Points: 173 # Comments: 26",
+          "published_at": "Tue, 17 Mar 2026 21:04:26 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C044",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "The REAL Story from NVIDIA GTC This Week!",
+          "url": "https://www.youtube.com/watch?v=JyWdgDcsmbk",
+          "source_name": "Matt Wolfe",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Sharing what I found interesting from Day 1 of NVIDIA GTC. Discover More: 🛠️ Explore AI Tools & News: https://futuretools.io/ 📰 Weekly Newsletter: https://futuretools.io/newsletter 🎙️ The Next Wave Podcast: https://youtube.com/@TheNextWavePod Socials: ❌ Twiter/X: https://x.com/mreflow 🖼️ Instagram:",
+          "content": "Sharing what I found interesting from Day 1 of NVIDIA GTC. Discover More: 🛠️ Explore AI Tools & News: https://futuretools.io/ 📰 Weekly Newsletter: https://futuretools.io/newsletter 🎙️ The Next Wave Podcast: https://youtube.com/@TheNextWavePod Socials: ❌ Twiter/X: https://x.com/mreflow 🖼️ Instagram: https://instagram.com/mr.eflow 🧵 Threads: https://www.threads.net/@mr.eflow 🟦 LinkedIn: https://www.linkedin.com/in/matt-wolfe-30841712/ 👍 Facebook: https://www.facebook.com/mattrwolfe Let’s work together! - Brand, sponsorship & business inquiries: mattwolfe@smoothmedia.co #AINews #AITools #ArtificialIntelligence",
+          "published_at": "2026-03-17T06:27:28+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C065",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "GPT-5.4 Full Breakdown & AI News You Can Use",
+          "url": "https://www.youtube.com/watch?v=ITWcvB1AZtk",
+          "source_name": "The AI Advantage",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Come join Igor on March 26th for a live webinar teaching you AI in collaboration with IBM! 👉 https://ibm.biz/graniteaicopilot In this video, we did something a little special, as Igor was out of commission for a week due to surgery. Instead of skipping the week in AI news, we put some of the best mo",
+          "content": "Come join Igor on March 26th for a live webinar teaching you AI in collaboration with IBM! 👉 https://ibm.biz/graniteaicopilot In this video, we did something a little special, as Igor was out of commission for a week due to surgery. Instead of skipping the week in AI news, we put some of the best modern AI tools to the test to see what we could create. So we're proud to present our guest host AI Igor, who will only be filling in this week while Igor rests his voice. AI Igor covers the results of the testing we've been doing on the top models for the past week, talks about the new Copilot Cowork coming to Microsoft 365 users, discusses the disappointing release from Luma with Uni-1, and more. Enjoy this special edition and Igor will be back next week! Links: 🔑 Free ChatGPT Prompt Templates: https://bit.ly/newsletter-aia 🧑‍💻 Igor Pogany on LinkedIn: https://bit.ly/IgorLinkedIn 🐦Twitter/X: https://bit.ly/AIAonTwitter 📸 Instagram: https://bit.ly/AIAinsta Rift Vox Experiment: https://developers.openai.com/showcase/rift-vox SVG Animations: https://x.com/petergostev/status/2029707484781253069?s=20 and https://x.com/developedbyed/status/2031019550490206488?s=20 Theme Park Sim: https://x.com/chatgpt21/status/2029631487067234395?s=20 MS Paint Drawing: https://x.com/Clad3815/status/2031386834064785489?s=20 Canva Magic Layers: https://www.canva.com/help/editable-magic-layers/ Microsoft's Copilot Cowork: https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/ NotebookLM Custom Infographics: https://x.com/NotebookLM/status/2028556861050630632?s=20 NotebookLM Cinematic Overviews: https://x.com/NotebookLM/status/2029240601334436080?s=20 Luma Uni-1: https://lumalabs.ai/uni-1 ChatGPT Uninstall News: https://techcrunch.com/2026/03/02/chatgpt-uninstalls-surged-by-295-after-dod-deal/ OpenAI's Learning Study: https://openai.com/index/understanding-ai-and-learning-outcomes/ Netflix Acquire InterPositive: https://about.netflix.com/en/news/why-interpositive-is-joining-netflix Anthropic's Early Warning Plan for AI: https://www.anthropic.com/research/labor-market-impacts Chapters: 0:00 Introducing Our Surprise Host 0:31GPT-5.4 Follow-Up & Testing Results 4:24 IBM Invitation 5:40 Canva Magic Layers 6:44 Microsoft Copilot Cowork 8:02 NotebookLM Updates 9:41 Luma Uni-1 10:30 ChatGPT Pentagon Fallout 11:19 OpenAI's Study on Learning with AI 12:06 Netflix Acquiring InterPositive 12:50 Anthropic's Early Warning for Jobs 13:17 Outro",
+          "published_at": "2026-03-13T20:36:10+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C027",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "The Two Best AI Models/Enemies Just Got Released Simultaneously",
+          "url": "https://www.youtube.com/watch?v=1PxEziv5XIU",
+          "source_name": "AI Explained",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "The two models that you will hear discussed for at least the next two months - Claude Opus 4.6 and GPT 5.3 Codex - just got released within 26 mins or each other. The full breakdown of around 250 pages of reports, with just the most interest moments, from the battle of which is best, Claude personho",
+          "content": "The two models that you will hear discussed for at least the next two months - Claude Opus 4.6 and GPT 5.3 Codex - just got released within 26 mins or each other. The full breakdown of around 250 pages of reports, with just the most interest moments, from the battle of which is best, Claude personhood, the surprising misbehaviour of Opus 4.6, and much more https://assemblyai.com/aiexplained Check out my fast-growing (!) app, free to use, and code INSIDER15 for Pro: https://lmcouncil.ai AI Insiders ($9): https://www.patreon.com/AIExplained Chapters: 00:00 - Introduction 00:54 - Self-improvement? 02:44 - Knowledge Work 05:30 - Overly agentic behaviour 09:12 - Who Shouldn’t Use Claude Opus 11:39 - Step-change? 15:09 - Claude’s ‘Personhood’ Hassabis Roadmap: https://www.patreon.com/posts/hassabis-roadmap-149750869 Release of Opus 4.6: https://www.anthropic.com/news/claude-opus-4-6 212 Page System Card: https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf Claude Code Tip: https://x.com/bcherny/status/2019475897691124107 GPT Codex 5.3: https://openai.com/index/introducing-gpt-5-3-codex/ System Card: https://openai.com/index/gpt-5-3-codex-system-card/ Browse Comp: https://arxiv.org/pdf/2504.12516v1 Finance Agent: https://www.vals.ai/benchmarks/finance_agent Terminal Bench 2: https://arxiv.org/pdf/2601.11868 Vending Bench: https://andonlabs.com/blog/opus-4-6-vending-bench My X post: https://x.com/AIExplainedYT/status/2016851303436095647 Anthropic Apology: https://x.com/ch402/status/2014066134194995256/photo/1 Altman rebuttal: https://x.com/sama/status/2019139174339928189 https://x.com/sama/status/2019140276246442089 4% of GitHub: https://x.com/dylan522p/status/2019490550911766763 Non-hype Newsletter: https://signaltonoise.beehiiv.com/ Podcast: https://aiexplainedopodcast.buzzsprout.com/",
+          "published_at": "2026-02-06T17:01:30+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C067",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:9.0"
+            ]
+          }
+        },
+        {
+          "title": "This Physics Breakthrough Looks Impossible",
+          "url": "https://www.youtube.com/watch?v=RDQ4vHAPNls",
+          "source_name": "Two Minute Papers",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 📝 The paper is available here: https://xuan-li.github.io/pdf/publications/li2024dynamicduo.pdf Sources: https://www.youtube.com/watch?v=CfEg7fucVYg Our Patreon if you wish to support us: https://www.patreon.com/TwoMin",
+          "content": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 📝 The paper is available here: https://xuan-li.github.io/pdf/publications/li2024dynamicduo.pdf Sources: https://www.youtube.com/watch?v=CfEg7fucVYg Our Patreon if you wish to support us: https://www.patreon.com/TwoMinutePapers 🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible: Adam Bridges, Benji Rabhan, B Shang, Cameron Navor, Charles Ian Norman Venn, Christian Ahlin, Eric T, Fred R, Gordon Child, Juan Benet, Michael Tedder, Owen Skarpness, Richard Sundvall, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi My research: https://cg.tuwien.ac.at/~zsolnai/",
+          "published_at": "2026-03-12T18:16:27+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C069",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "Claude Just Dropped A Huge New Feature",
+          "url": "https://www.youtube.com/shorts/W4iSvbg4f68",
+          "source_name": "Matt Wolfe",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Send this to someone who would find it useful! Claude can now generate interactive charts, timelines, and visualizations from a single prompt. You can adjust sliders, explore data, and interact with the results. And yes — you can even use it on the free plan. But just make sure to fact-check the num",
+          "content": "Send this to someone who would find it useful! Claude can now generate interactive charts, timelines, and visualizations from a single prompt. You can adjust sliders, explore data, and interact with the results. And yes — you can even use it on the free plan. But just make sure to fact-check the numbers... For all the latest AI updates, releases, and news, check out my latest AI news video on YouTube (link in bio). #ai #ainews #claude #datatools",
+          "published_at": "2026-03-16T13:05:30+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C014",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:6",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "This New Feature Is A Big Deal For Creatives",
+          "url": "https://www.youtube.com/shorts/Yd10X5VyMng",
+          "source_name": "Matt Wolfe",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "This new AI feature from Canva is actually amazing for creatives. They just launched Magic Layers — and it can take ANY image and automatically break it into editable layers. So if you have a real or AI generated image, Canva can separate things like the background, objects, people, or individual el",
+          "content": "This new AI feature from Canva is actually amazing for creatives. They just launched Magic Layers — and it can take ANY image and automatically break it into editable layers. So if you have a real or AI generated image, Canva can separate things like the background, objects, people, or individual elements. Then you can rearrange, resize, or completely recompose the image like it was originally built in layers. That means you can generate one AI image and then turn it into multiple thumbnails, ads, or designs without starting over. Honestly, if you make YouTube thumbnails, ads, or social content, this is a feature you’ll want to know about. #ai #canva #aitools #contentcreation #ainews",
+          "published_at": "2026-03-15T12:59:24+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C068",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:6",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "当黄仁勋和吴泳铭喊出同一个英文单词",
+          "url": "https://36kr.com/p/3727806050565251?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "文｜邱晓芬 编辑｜苏建勋 美国旧金山当地时间3月16日，英伟达GTC 2026大会正式开幕。在英伟达创始人兼CEO黄仁勋两个小时慷慨激昂的主题演讲中，贯穿的一个关键词是——Token。 △ 黄仁勋，图源：发布会截图 无独有偶，在GTC 2026的前一天，阿里巴巴宣布成立Token事业群——这是地位与淘天电商、阿里云一般的核心独立事业群。这个新事业群里，阿里也明确了“创造Token、输送Token、应用Token”链路。 Token，是大模型处理文本信息时的基本语义单位。当你输入一段文本时，模型会先通过分词器，将文本切割成一系列Token。这些Token随即被转换为数值向量，被输送到GPU里进行",
+          "content": "文｜邱晓芬 编辑｜苏建勋 美国旧金山当地时间3月16日，英伟达GTC 2026大会正式开幕。在英伟达创始人兼CEO黄仁勋两个小时慷慨激昂的主题演讲中，贯穿的一个关键词是——Token。 △ 黄仁勋，图源：发布会截图 无独有偶，在GTC 2026的前一天，阿里巴巴宣布成立Token事业群——这是地位与淘天电商、阿里云一般的核心独立事业群。这个新事业群里，阿里也明确了“创造Token、输送Token、应用Token”链路。 Token，是大模型处理文本信息时的基本语义单位。当你输入一段文本时，模型会先通过分词器，将文本切割成一系列Token。这些Token随即被转换为数值向量，被输送到GPU里进行大规模矩阵计算。 在过去，AI产业链上的不同角色，有各自关注的指标和评价标准——底层大模型团队关注模型参数规模、上层的应用团队则用户增长和日活跃度，云服务团队关注算力的利用率和实际收入。 阿里巴巴CEO吴泳铭在内部指出，AI Agent极度依赖Token，未来将进入一个“需求大爆炸”的时期。 而阿里和英伟达此次前后脚强调token，传递的讯号是，在Agent时代来临时，两家巨头希望从技术、产品和商业维度，先行统一度量衡。 或许到不远未来，AI领域的一切指标都要加上一个后缀：“/ 1M tokens”。 万亿叙事：从数据中心到token工厂 “推理拐点已然到来”，黄仁勋在GTC演讲中指出。过去两年，推理计算量增长了约一万倍，使用量增长了约100倍。百万倍的增长，背后实际可感的变化是，AI的作用逐渐 从原来的感知、到生成、到推理，再到能工作。 在这个变化下，黄仁勋在演讲中指出，token与AI企业收入的相关性也越来越清晰—— 一个企业能获得更多算力，就能生成更多token，收入就能提升，同时反哺AI变得更加智能。 这条传递链路下，英伟达是背后最大的受益者，目标也日渐激进。 2025年的GTC上，黄仁勋预测，Blackwell和Rubin平台在2026年之前采购订单规模预期是5000亿美元。而此次GTC上，他给出明年的新目标是， 这一数字将翻倍到1万亿美元以上。 这一雄心，很快得到二级市场的反应，一度推动英伟达的股价上涨4.3%。 为了支撑这一万亿增长目标， 黄仁勋提出了英伟达的全新叙事 ——从数据中心到token工厂。 △英伟达的收入构成，图源：发布会截图 黄仁勋认为，在未来，每一家AI公司、云服务商，都应该以token工厂的效率作为核心经营指标。 甚至，未来的token还将成为全新的“大宗商品”，并将以吞吐量、交互速度为分类标准重新定价。 黄仁勋在演讲中，将token分为四个价格区间—— 免费层：高吞吐、低交互速度区域，主要以广告模式变现； 中级层（每百万token=3美元）、高级层（每百万token=6美元）：吞吐量和交互速度平衡，主要是主流付费领域； 高速层（每百万token=45美元）、超高速层（每百万token=150美元）：高溢价且高交互领域，也是Rubin架构和未来架构主攻的新市场。 黄仁勋强调，英伟达的三大架构都将让客户在免费层，实现极高的吞吐量，而在最高价值的推理层级上，英伟达的新架构吞吐量效率将提升35倍。 △黄仁勋的token经济学，图源：发布会截图 英伟达不再只是GPU芯片公司 不过，要实现万亿美金token工厂的雄心壮志，英伟达就不能和以前一样只是一家GPU公司。 英伟达显然也在改变自己的产品路线，不再简单粗暴堆算力，而是更关注整个平台的综合能力，尤其是 推理表现 。 此次GTC上，黄仁勋交出了新答卷：专门为智能体推理设计了计算系统Vera Rubin——由7款新芯片、5个机架系统、1台超级计算机构成。 据介绍，Vera Rubin主要有以下几项亮点： ①GPU部分：72块GPU通过NVLink高速互联，不仅加速前填充（Prefill）的计算速度，同时保证生成Token时的响应速度（KV Cache）； ②Vera CPU：当智能体调用工具时，往往涉及大量重复逻辑的操作、条件判断的操作，这都是GPU不擅长的。因此，英伟达设计了全新的Vera CPU，充当“调度员”，处理控制任务， 解放GPU。Vera CPU 还是全球唯一用LPDDR5的数据中心CPU。（作者注：低功耗的LPDDR5内存一般用于旗舰手机上） △Vera CPU，图源：发布会截图 ③BlueField 4 + CX 9存储平台：AI工厂需要大量数据处理，为此，英伟达重新构建了一个 专为AI数据流优化的存储网络。 ④CPO Spectrum-X交换机：将光引擎与交换机芯片封装在一起，是全球首款 光封装光学 以太网交换机，改变了过去传统的可插拔模块。 ⑤完全使用液冷方案，安装时间从两天缩短到两个小时 据黄仁勋介绍， Vera Rubin将在2026年下半年开始出货 ，在具体使用时，Vera Rubin系统的优势表现在，推理速度将比上一代Blackwell Ultra快5倍，同时Token成本降低10倍，且在MoE模型里只需过去1/4的GPU。 值得注意的是，英伟达不久前收购了Groq LPU平台，并将其融入了英伟达的计算体系当中。 不过，大而全的Vera Rubin要与短小精悍的Groq LPU融合，必然会产生芯片调度问题。为此，英伟达专门为其打造了一个 操作系统Dynamo。 可以把Dynamo操作系统理解为一个指挥家，将不同的特性的计算任务，分配给更合适的硬件执行，实现效率最大化。 黄仁勋建议，若工作负载以高吞吐为主，建议100% Vera Rubin；若大量工作负载为代码生成等高价值token生成诉求，可引入部分Groq芯片运用，比如25%。 △Groq 3 LPU，图源：发布会截图 目前，Groq LP30已进入量产，由三星代工，预计Q3出货。 据介绍，这种异构协同设计，将使得数据中心在单位功耗下实现了 35倍的性能飞跃 ，并且同时兼顾 超低延迟、高价值推理服务。 除了Vera Rubin之外，英伟达方面还预告了下一代的GPU架构Vera Rubin Ultra（2028年推出）、Feynman架构。 概括而言， 3D堆叠、LPU集成、异构存储、CPO（共封装光学）、铜互联都是未来英伟达平台的核心技术点。 △英伟达的平台路线构成（Blackwell、Rubin、Feynamn），图源：发布会截图 英伟达版OpenClaw，来了 此次演讲中，黄仁勋除了阐述野心，还把篇幅留给了当前大热的OpenClaw——作为人类历史上最受欢迎的开源项目，OpenClaw用几周的时间就超过了Linux过去三十年的成绩。 他认为，OpenClaw有着三大功能��能够解决管理资源（工具、大语言模型）、分解问题且调用智能体、多模态输出并执行，为此，OpenClaw本质上是一个智能体操作系统，地位和HTML、Linux一样重要。 在黄仁勋看来，未来，OpenClaw将重塑企业IT。未来，每一家SaaS公司将成为AaaS公司，在提供工具之外，还将提供每一个特定领域的AI智能体，“一个原本2万亿美元规模的产业，即将成长为数万亿美元规模”。 不过，黄仁勋也提出警示，当智能体可以自由调用企业的敏感数据和代码，OpenClaw将衍生安全风险。因此，英伟达也与OpenClaw的开发者Peter Steinberger合作，推出了企业版本NeMo Claw。 据介绍，NeMo Claw不仅集成了英伟达完整的智能体工具包，还提供了一系列的措施（网络护栏、隐私路由等），保证企业方的数据安全。 △ 英伟达版本OpenClaw，图源：发布会截图 黄仁勋甚至表示，在未来的硅谷的求职场景中，token可能会成为工程师们年薪总包的一部分，”入职附带token配额”，成为硅谷的新晋招聘话题。 图形学的“GPT时刻” 发布会开场，黄仁勋首先发布了神经渲染（Neural Rendering）技术DLSS 5，他将其称之为下一代图形计算技术、“图形学的GPT时刻”。 具体而言， 在DLSS 5中，英伟达由两部分构成：在3D图形和结构化数据的基础上，融入生成式AI和概率计算。 两个部分各有贡献——3D图形和结构化数据，负责提供一个确定性的、符合物理规律的虚拟世界框架；生成式AI和概率计算，则用于填充这个“框架”，在原有的基础上，补充逼真的细节和动态变化。 黄仁勋称，这两种理念的融合，将使得制作的内容美观、经验、且可控。不过，要把这种新的范式推广到游戏之外的行业，比如金融、医疗、制造，首先要解决数据海量、异构的问题。 黄仁��在演讲中也发表了他对于目前数据的看法。 当前，世界上大部分的数据形态存在形式是数据库、PDF、音频、视频。其中，有九成都是非结构化数据，在多模态感知与理解技术出现前，数据很难被高效查询和检索。 为此，英伟达推出了两个全新的数据工具，黄仁勋称其为 全网最复杂的数据处理系统： cuDF——处理确定性的结构化数据，比如表格、日志等。 （对应前述DLSS 5中的“3D图形和结构化数据”部分） cuVS——处理概率性的非结构化数据，比如通过AI模型把文本、图像、音视频等数据转换成语义向量。 （对应前述DLSS 5中的“生成式AI和概率计算”部分） 目前，这两个数据平台已经被整合进IBM、戴尔、谷歌云等云服务和OEM体系中。 黄仁勋两个小时的演讲，提示了一个趋势，当AI的竞争从“模型竞赛”进入“生产力竞赛”，大家将不会像几年前一样抢GPU、抢算力，而是要抢夺token生产的主导权。 具体到行动上，英伟达提供的是从底层芯片（Rubin/Feynman）、异构架构（GPU+LPU+CPU）、系统设计（全液冷机柜）、再上层操作系统（",
+          "published_at": "2026-03-18 10:02:18  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C098",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "A Decade of Slug",
+          "url": "https://terathon.com/blog/decade-slug.html",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "https://web.archive.org/web/20260317185928/https://terathon.... Comments URL: https://news.ycombinator.com/item?id=47416736 Points: 466 # Comments: 43",
+          "content": "https://web.archive.org/web/20260317185928/https://terathon.... Comments URL: https://news.ycombinator.com/item?id=47416736 Points: 466 # Comments: 43",
+          "published_at": "Tue, 17 Mar 2026 18:59:50 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C008",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8"
+            ]
+          }
+        },
+        {
+          "title": "Get Shit Done: A Meta-Prompting, Context Engineering and Spec-Driven Dev System",
+          "url": "https://github.com/gsd-build/get-shit-done",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://github.com/gsd-build/get-shit-done Comments URL: https://news.ycombinator.com/item?id=47417804 Points: 222 # Comments: 127",
+          "content": "Article URL: https://github.com/gsd-build/get-shit-done Comments URL: https://news.ycombinator.com/item?id=47417804 Points: 222 # Comments: 127",
+          "published_at": "Tue, 17 Mar 2026 20:23:39 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C026",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8"
+            ]
+          }
+        },
+        {
+          "title": "Meta and TikTok let harmful content rise to drove engagement, say whistleblowers",
+          "url": "https://www.bbc.com/news/articles/cqj9kgxqjwjo",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://www.bbc.com/news/articles/cqj9kgxqjwjo Comments URL: https://news.ycombinator.com/item?id=47417814 Points: 233 # Comments: 148",
+          "content": "Article URL: https://www.bbc.com/news/articles/cqj9kgxqjwjo Comments URL: https://news.ycombinator.com/item?id=47417814 Points: 233 # Comments: 148",
+          "published_at": "Tue, 17 Mar 2026 20:24:33 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C041",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8"
+            ]
+          }
+        },
+        {
+          "title": "Meta Horizon Worlds on Meta Quest is being discontinued",
+          "url": "https://communityforums.atmeta.com/blog/AnnouncementsBlog/updates-to-your-meta-quest-experience-in-2026/1369435",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://communityforums.atmeta.com/blog/AnnouncementsBlog/updates-to-your-meta-quest-experience-in-2026/1369435 Comments URL: https://news.ycombinator.com/item?id=47416940 Points: 183 # Comments: 200",
+          "content": "Article URL: https://communityforums.atmeta.com/blog/AnnouncementsBlog/updates-to-your-meta-quest-experience-in-2026/1369435 Comments URL: https://news.ycombinator.com/item?id=47416940 Points: 183 # Comments: 200",
+          "published_at": "Tue, 17 Mar 2026 19:17:16 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C042",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8"
+            ]
+          }
+        },
+        {
+          "title": "OpenClaw: The Viral AI Agent that Broke the Internet - Peter Steinberger | Lex Fridman Podcast #491",
+          "url": "https://www.youtube.com/watch?v=YFjfBk8HI5o",
+          "source_name": "Lex Fridman",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Peter Steinberger is the creator of OpenClaw, an open-source AI agent framework that's the fastest-growing project in GitHub history. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep491-sb See below for timestamps, transcript, and to give feedback, submit question",
+          "content": "Peter Steinberger is the creator of OpenClaw, an open-source AI agent framework that's the fastest-growing project in GitHub history. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep491-sb See below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc. *Transcript:* https://lexfridman.com/peter-steinberger-transcript *CONTACT LEX:* *Feedback* - give feedback to Lex: https://lexfridman.com/survey *AMA* - submit questions, videos or call-in: https://lexfridman.com/ama *Hiring* - join our team: https://lexfridman.com/hiring *Other* - other ways to get in touch: https://lexfridman.com/contact *EPISODE LINKS:* Peter's X: https://x.com/steipete Peter's GitHub: https://github.com/steipete Peter's Website: https://steipete.com Peter's LinkedIn: https://www.linkedin.com/in/steipete OpenClaw Website: https://openclaw.ai OpenClaw GitHub: https://github.com/openclaw/openclaw OpenClaw Discord: https://discord.gg/openclaw *SPONSORS:* To support this podcast, check out our sponsors & get discounts: *Perplexity:* AI-powered answer engine. Go to https://lexfridman.com/s/perplexity-ep491-sb *Quo:* Phone system (calls, texts, contacts) for businesses. Go to https://lexfridman.com/s/quo-ep491-sb *CodeRabbit:* AI-powered code reviews. Go to https://lexfridman.com/s/coderabbit-ep491-sb *Fin:* AI agent for customer service. Go to https://lexfridman.com/s/fin-ep491-sb *Blitzy:* AI agent for large enterprise codebases. Go to https://lexfridman.com/s/blitzy-ep491-sb *Shopify:* Sell stuff online. Go to https://lexfridman.com/s/shopify-ep491-sb *LMNT:* Zero-sugar electrolyte drink mix. Go to https://lexfridman.com/s/lmnt-ep491-sb *OUTLINE:* 0:00 - Episode highlight 1:30 - Introduction 5:36 - OpenClaw origin story 8:55 - Mind-blowing moment 18:22 - Why OpenClaw went viral 22:19 - Self-modifying AI agent 27:04 - Name-change drama 44:15 - Moltbook saga 52:34 - OpenClaw security concerns 1:01:14 - How to code with AI agents 1:32:09 - Programming setup 1:38:52 - GPT Codex 5.3 vs Claude Opus 4.6 1:47:59 - Best AI agent for programming 2:09:59 - Life story and career advice 2:13:56 - Money and happiness 2:17:49 - Acquisition offers from OpenAI and Meta 2:34:58 - How OpenClaw works 2:46:17 - AI slop 2:52:20 - AI agents will replace 80% of apps 3:00:57 - Will AI replace programmers? 3:12:57 - Future of OpenClaw community *PODCAST LINKS:* - Podcast Website: https://lexfridman.com/podcast - Apple Podcasts: https://apple.co/2lwqZIr - Spotify: https://spoti.fi/2nEwCF8 - RSS: https://lexfridman.com/feed/podcast/ - Podcast Playlist: https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4 - Clips Channel: https://www.youtube.com/lexclips *SOCIAL LINKS:* - X: https://x.com/lexfridman - Instagram: https://instagram.com/lexfridman - TikTok: https://tiktok.com/@lexfridman - LinkedIn: https://linkedin.com/in/lexfridman - Facebook: https://facebook.com/lexfridman - Patreon: https://patreon.com/lexfridman - Telegram: https://t.me/lexfridman - Reddit: https://reddit.com/r/lexfridman",
+          "published_at": "2026-02-12T03:07:03+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C051",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "Post-Labor Economics is happening.",
+          "url": "https://www.youtube.com/watch?v=2wVlcG8mfi4",
+          "source_name": "David Shapiro",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "The Kickstarter for my Post-Labor Economics book is live! https://www.kickstarter.com/projects/daveshap/labor-zero",
+          "content": "The Kickstarter for my Post-Labor Economics book is live! https://www.kickstarter.com/projects/daveshap/labor-zero",
+          "published_at": "2026-03-17T12:42:02+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C055",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8"
+            ]
+          }
+        },
+        {
+          "title": "Adobe & NVIDIA’s New Tech Shouldn’t Be Real Time. But It Is.",
+          "url": "https://www.youtube.com/watch?v=j-B8ymGWlIE",
+          "source_name": "Two Minute Papers",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 📝 The paper is available here: https://perso.telecom-paristech.fr/boubek/papers/Glinty/ Web demo: https://www.shadertoy.com/view/tcdGDl Sources: https://www.youtube.com/shorts/n07vz6oz78g https://www.youtube.com/watch",
+          "content": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 📝 The paper is available here: https://perso.telecom-paristech.fr/boubek/papers/Glinty/ Web demo: https://www.shadertoy.com/view/tcdGDl Sources: https://www.youtube.com/shorts/n07vz6oz78g https://www.youtube.com/watch?v=vPJoP2yzbv0 https://www.youtube.com/watch?v=u6hYj74RhoQ https://www.youtube.com/watch?v=ok1ViHVcXYs https://www.youtube.com/watch?v=jnzhNdWoXMg https://3dstudio.co/uv-unwrapping-software/ https://www.youtube.com/watch?v=jnzhNdWoXMg Our Patreon if you wish to support us: https://www.patreon.com/TwoMinutePapers 🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible: Adam Bridges, Benji Rabhan, B Shang, Cameron Navor, Christian Ahlin, Eric T, Fred R, Gordon Child, Juan Benet, Michael Tedder, Owen Skarpness, Richard Sundvall, Ryan Stankye, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi My research: https://cg.tuwien.ac.at/~zsolnai/ #nvidia #adobe",
+          "published_at": "2026-02-22T09:50:35+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C012",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "Gemini 3.1 Pro and the Downfall of Benchmarks: Welcome to the Vibe Era of AI",
+          "url": "https://www.youtube.com/watch?v=2_DPnzoiHaY",
+          "source_name": "AI Explained",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Do we have a new best AI model, or do we have the downfall of benchmarks in general, as a way of capturing machine intelligence? Full breakdown of Gemini 3.1 Pro, guest-starring the new Sonnet 4.6, plus analysis from 7 papers/posts that will give you much needed context. Oh, and a new record on Simp",
+          "content": "Do we have a new best AI model, or do we have the downfall of benchmarks in general, as a way of capturing machine intelligence? Full breakdown of Gemini 3.1 Pro, guest-starring the new Sonnet 4.6, plus analysis from 7 papers/posts that will give you much needed context. Oh, and a new record on Simple Bench! https://epoch.ai/ai-explained-datacenters Check out my fast-growing (!) app, free to use, and code INSIDER15 for Pro: https://lmcouncil.ai AI Insiders ($9!): https://www.patreon.com/AIExplained Chapters: 00:00 - Introduction 00:30 - Post-training Dominance 04:00 - ARC-AGI 2 Caveat 05:54 - Simple Bench Record 08:22 - Hallucination Caveat 10:05 - Model Card 11:12 - Exponential Coming 12:20 - Amodei on Generalizing 15:10 - One True Benchmark? 17:02 - Other Metrics… Gemini 3.1 Model Card: https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Pro-Model-Card.pdf Release: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/ Where are Agents deployed?: https://www.anthropic.com/research/measuring-agent-autonomy Newsletter Post: https://signaltonoise.beehiiv.com/p/4-ai-numbers-that-surprised-me-this-week Hallucination AA: https://artificialanalysis.ai/evaluations/omniscience Melanie Mitchell: https://x.com/MelMitchell1/status/2022738363548340526 ARC-AGI-2: https://x.com/arcprize/status/2024522812728496470/photo/1 Chollet on Agentic Coding and ML: https://x.com/fchollet/status/2024519439140737442 METR Caveat: https://metr.org/notes/2026-01-22-time-horizon-limitations/ Talaas Fast: https://chatjimmy.ai/ Amodei Interview Continual learning: https://www.dwarkesh.com/p/dario-amodei-2?open=false#%C2%A7002942-is-continual-learning-necessary-how-will-it-be-solved Metaculus FutureEval: https://www.metaculus.com/futureeval/ Next Vid to Watch: https://www.patreon.com/posts/what-you-need-to-150647292 Non-hype Newsletter: https://signaltonoise.beehiiv.com/ Podcast: https://aiexplainedopodcast.buzzsprout.com/",
+          "published_at": "2026-02-20T17:01:21+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C025",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming | Lex Fridman Podcast #493",
+          "url": "https://www.youtube.com/watch?v=H9rF1CSSh-w",
+          "source_name": "Lex Fridman",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Jeff Kaplan is a legendary Blizzard lead game designer of World of Warcraft and Overwatch, now preparing to launch a new game, The Legend of California, from his new studio Kintsugiyama - available to wishlist on Steam today, with alpha later in March. Thank you for listening ❤ Check out our sponsor",
+          "content": "Jeff Kaplan is a legendary Blizzard lead game designer of World of Warcraft and Overwatch, now preparing to launch a new game, The Legend of California, from his new studio Kintsugiyama - available to wishlist on Steam today, with alpha later in March. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep493-sb See below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc. *Transcript:* https://lexfridman.com/jeff-kaplan-transcript *CONTACT LEX:* *Feedback* - give feedback to Lex: https://lexfridman.com/survey *AMA* - submit questions, videos or call-in: https://lexfridman.com/ama *Hiring* - join our team: https://lexfridman.com/hiring *Other* - other ways to get in touch: https://lexfridman.com/contact *EPISODE LINKS:* The Legend of California (Steam Page): https://store.steampowered.com/app/2550530/The_Legend_of_California Jeff's Game Studio: https://www.kintsugiyama.com/ *SPONSORS:* To support this podcast, check out our sponsors & get discounts: *Fin:* AI agent for customer service. Go to https://lexfridman.com/s/fin-ep493-sb *Blitzy:* AI agent for large enterprise codebases. Go to https://lexfridman.com/s/blitzy-ep493-sb *BetterHelp:* Online therapy and counseling. Go to https://lexfridman.com/s/betterhelp-ep493-sb *Shopify:* Sell stuff online. Go to https://lexfridman.com/s/shopify-ep493-sb *CodeRabbit:* AI-powered code reviews. Go to https://lexfridman.com/s/coderabbit-ep493-sb *Perplexity:* AI-powered answer engine. Go to https://lexfridman.com/s/perplexity-ep493-sb *OUTLINE:* 0:00 - Episode highlight 1:27 - Introduction 4:07 - Early games: Pac-Man, Zork, Doom, Quake 18:33 - Writing career - 170 rejection letters 34:06 - EverQuest obsession 47:04 - Getting hired at Blizzard 1:02:32 - Lowest point in Jeff's life 1:08:37 - One of Us 1:12:54 - Early Blizzard culture 1:32:36 - Building World of Warcraft 1:50:20 - How WoW changed video games 2:07:42 - Single-player vs Multi-player 2:28:35 - How Blizzard made great video games 2:54:25 - Online toxicity 3:01:59 - Why Titan failed 3:19:09 - Overwatch in six weeks 3:46:07 - Best Overwatch heroes 3:54:37 - The challenge of matchmaking 3:58:01 - Rust 4:08:22 - Why Jeff left Blizzard 4:30:35 - Diablo IV 4:32:03 - Getting back to making video games 4:40:59 - The Legend of California 4:54:44 - Greatest video game of all time 5:02:51 - AI and future of video games *PODCAST LINKS:* - Podcast Website: https://lexfridman.com/podcast - Apple Podcasts: https://apple.co/2lwqZIr - Spotify: https://spoti.fi/2nEwCF8 - RSS: https://lexfridman.com/feed/podcast/ - Podcast Playlist: https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4 - Clips Channel: https://www.youtube.com/lexclips *SOCIAL LINKS:* - X: https://x.com/lexfridman - Instagram: https://instagram.com/lexfridman - TikTok: https://tiktok.com/@lexfridman - LinkedIn: https://linkedin.com/in/lexfridman - Facebook: https://facebook.com/lexfridman - Patreon: https://patreon.com/lexfridman - Telegram: https://t.me/lexfridman - Reddit: https://reddit.com/r/lexfridman",
+          "published_at": "2026-03-11T20:21:39+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C037",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Nano Banana 2 is Here! Full Review & Testing Results",
+          "url": "https://www.youtube.com/watch?v=Q5GxIpzOxOI",
+          "source_name": "The AI Advantage",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Subscribe for more breakdowns of the latest AI tools! In this video, Igor breaks down the new Nano Banana 2 image model from Google. The benchmarks and examples from Google look incredible, but just how accurate are those examples exactly? That's the question this video answers, as we did a ton of i",
+          "content": "Subscribe for more breakdowns of the latest AI tools! In this video, Igor breaks down the new Nano Banana 2 image model from Google. The benchmarks and examples from Google look incredible, but just how accurate are those examples exactly? That's the question this video answers, as we did a ton of internal testing and we'll showcase all of our results for you. Enjoy! Links: 🔑 Free ChatGPT Prompt Templates: https://bit.ly/newsletter-aia 🧑‍💻 Igor Pogany on LinkedIn: https://bit.ly/IgorLinkedIn 🐦Twitter/X: https://bit.ly/AIAonTwitter 📸 Instagram: https://bit.ly/AIAinsta Gemini App: https://gemini.google.com/app Nano Banana 2 Launch: https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/ Kris Kashtanova Panorama Example: https://x.com/icreatelife/status/2027085364872024311 Pratham's Handwriting Example: https://x.com/Prathkum/status/2027069198091071664 Image Comparison Spreadsheet: https://docs.google.com/spreadsheets/d/1BlDyNMjbY5aiLpqTSNvJiEhfDPoNwjfqB2W7RK3rnq4/edit?gid=0#gid=0 Prompts: Create a playful beach scene with these five characters: a penguin, a turtle, a cat in a hat, a lion, and a bobblehead figure of me. All characters except the penguin are wearing sunglasses. The penguin is holding a tropical drink with a small umbrella in its right hand and sipping from it. The turtle is lying on a sunbed, tanning while reading a book. The cat and the lion are playing beach volleyball together in the sand. My bobblehead version of me is swimming in the ocean nearby. The setting is a sunny tropical beach with blue water, palm trees, and a bright summer atmosphere. The style should be colorful, fun, and slightly cartoonish. Chapters: 0:00 Intro 1:01 Comparison to Other Top Models 3:12 Testing Google's Examples 5:34 Advanced Nano Banana Capabilities 11:25 Impressive Examples from X 12:47 Closing Thoughts",
+          "published_at": "2026-03-11T16:00:09+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C046",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:4",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "NVIDIA’s New AI Just Cracked The Hardest Part Of Self Driving",
+          "url": "https://www.youtube.com/watch?v=s9SnEE7JXU4",
+          "source_name": "Two Minute Papers",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 📝 The paper is available here: https://github.com/NVlabs/alpamayo Research panel I will be at GTC: https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-s81810/ Sources: https://www.youtube.com/watch?v=0aq4Wi2rsOk",
+          "content": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 📝 The paper is available here: https://github.com/NVlabs/alpamayo Research panel I will be at GTC: https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-s81810/ Sources: https://www.youtube.com/watch?v=0aq4Wi2rsOk https://www.youtube.com/watch?v=I0yPzZp6dM0 Our Patreon if you wish to support us: https://www.patreon.com/TwoMinutePapers 🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible: Adam Bridges, Benji Rabhan, B Shang, Cameron Navor, Charles Ian Norman Venn, Christian Ahlin, Eric T, Fred R, Gordon Child, Juan Benet, Michael Tedder, Owen Skarpness, Richard Sundvall, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi My research: https://cg.tuwien.ac.at/~zsolnai/ #nvidia",
+          "published_at": "2026-03-10T09:28:05+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C048",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "The Physics Bug That Stumped Everyone Is Finally Gone!",
+          "url": "https://www.youtube.com/watch?v=qF_tfIieeE0",
+          "source_name": "Two Minute Papers",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 📝 The paper is available here: https://www.geometry.caltech.edu/pubs/LD23.pdf Source: https://www.youtube.com/watch?v=VIV7GYOBTfM Our Patreon if you wish to support us: https://www.patreon.com/TwoMinutePapers 🙏 We wou",
+          "content": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 📝 The paper is available here: https://www.geometry.caltech.edu/pubs/LD23.pdf Source: https://www.youtube.com/watch?v=VIV7GYOBTfM Our Patreon if you wish to support us: https://www.patreon.com/TwoMinutePapers 🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible: Adam Bridges, Benji Rabhan, B Shang, Cameron Navor, Charles Ian Norman Venn, Christian Ahlin, Eric T, Fred R, Gordon Child, Juan Benet, Michael Tedder, Owen Skarpness, Richard Sundvall, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi My research: https://cg.tuwien.ac.at/~zsolnai/",
+          "published_at": "2026-03-09T07:49:10+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C064",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "Try This Out While It's Still Free!",
+          "url": "https://www.youtube.com/shorts/VXA6TBO8tls",
+          "source_name": "The AI Advantage",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Subscribe for more like this! Links: 🔑 Free ChatGPT Prompt Templates: https://bit.ly/newsletter-aia 🧑‍💻 Igor Pogany on LinkedIn: https://bit.ly/IgorLinkedIn 🐦Twitter/X: https://bit.ly/AIAonTwitter 📸 Instagram: https://bit.ly/AIAinsta",
+          "content": "Subscribe for more like this! Links: 🔑 Free ChatGPT Prompt Templates: https://bit.ly/newsletter-aia 🧑‍💻 Igor Pogany on LinkedIn: https://bit.ly/IgorLinkedIn 🐦Twitter/X: https://bit.ly/AIAonTwitter 📸 Instagram: https://bit.ly/AIAinsta",
+          "published_at": "2026-03-05T16:02:11+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C070",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "Khabib vs Lex: Training with Khabib | FULL EXCLUSIVE FOOTAGE",
+          "url": "https://www.youtube.com/watch?v=KGVpKPNUdzA",
+          "source_name": "Lex Fridman",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "In this video I'm training with Khabib Nurmagomedov, one of the greatest fighters of all time and a great human being. This was truly an honor for me 🙏 Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/mv577-sb See below for timestamps, and to give feedback, submit qu",
+          "content": "In this video I'm training with Khabib Nurmagomedov, one of the greatest fighters of all time and a great human being. This was truly an honor for me 🙏 Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/mv577-sb See below for timestamps, and to give feedback, submit questions, contact Lex, etc. *CONTACT LEX:* *Feedback* - give feedback to Lex: https://lexfridman.com/survey *AMA* - submit questions, videos or call-in: https://lexfridman.com/ama *Hiring* - join our team: https://lexfridman.com/hiring *Other* - other ways to get in touch: https://lexfridman.com/contact *EPISODE LINKS:* Khabib's Instagram: https://www.instagram.com/khabib_nurmagomedov/ Khabib's YouTube: https://www.youtube.com/@KhabibTheEagle Khabib's X: https://x.com/TeamKhabib Khabib's Telegram: https://t.me/khabib_nurmagomedov Khabib's Facebook: https://facebook.com/KhabibTheEagle Dominance MMA: https://dominancemma.com/ UFC PI: https://www.ufcpi.com/ *SPONSORS:* To support this podcast, check out our sponsors & get discounts: *LMNT:* Zero-sugar electrolyte drink mix. Go to https://lexfridman.com/s/lmnt-mv577-sb *OUTLINE:* 0:00 - Training with Khabib Nurmagomedov 1:18 - Lex training with Khabib - Round 1 9:11 - Khabib vs Glover Teixeira 9:45 - Lex training with Khabib - Round 2 18:09 - Khabib training philosophy *PODCAST LINKS:* - Podcast Website: https://lexfridman.com/podcast - Apple Podcasts: https://apple.co/2lwqZIr - Spotify: https://spoti.fi/2nEwCF8 - RSS: https://lexfridman.com/feed/podcast/ - Podcast Playlist: https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4 - Clips Channel: https://www.youtube.com/lexclips *SOCIAL LINKS:* - X: https://x.com/lexfridman - Instagram: https://instagram.com/lexfridman - TikTok: https://tiktok.com/@lexfridman - LinkedIn: https://linkedin.com/in/lexfridman - Facebook: https://facebook.com/lexfridman - Patreon: https://patreon.com/lexfridman - Telegram: https://t.me/lexfridman - Reddit: https://reddit.com/r/lexfridman",
+          "published_at": "2026-02-25T22:36:32+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C038",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Lex trains w/ Khabib Nurmagomedov | Exclusive Footage at UFC PI",
+          "url": "https://www.youtube.com/shorts/SHlrUAkkWI0",
+          "source_name": "Lex Fridman",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Training with Khabib Nurmagomedov, one of the greatest fighters of all time and a great human being. This was truly an honor for me 🙏 Full video is on YouTube.",
+          "content": "Training with Khabib Nurmagomedov, one of the greatest fighters of all time and a great human being. This was truly an honor for me 🙏 Full video is on YouTube.",
+          "published_at": "2026-03-03T12:30:21+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C040",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Rick Beato: Greatest Guitarists of All Time, History & Future of Music | Lex Fridman Podcast #492",
+          "url": "https://www.youtube.com/watch?v=1SJiTwbSI58",
+          "source_name": "Lex Fridman",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Rick Beato is a music educator, interviewer, producer, songwriter, and a true multi-instrument musician, playing guitar, bass, cello & piano. His incredible YouTube channel celebrates great musicians & musical ideas, and helps millions of people fall in love with great music all over again. Thank yo",
+          "content": "Rick Beato is a music educator, interviewer, producer, songwriter, and a true multi-instrument musician, playing guitar, bass, cello & piano. His incredible YouTube channel celebrates great musicians & musical ideas, and helps millions of people fall in love with great music all over again. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep492-sb See below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc. *Transcript:* https://lexfridman.com/rick-beato-transcript *CONTACT LEX:* *Feedback* - give feedback to Lex: https://lexfridman.com/survey *AMA* - submit questions, videos or call-in: https://lexfridman.com/ama *Hiring* - join our team: https://lexfridman.com/hiring *Other* - other ways to get in touch: https://lexfridman.com/contact *EPISODE LINKS:* Rick's YouTube: https://youtube.com/RickBeato Rick's X: https://x.com/rickbeato Rick's Instagram: https://instagram.com/rickbeato1 Rick's Website: https://rickbeato.com Rick's Ear Training: https://beatoeartraining.com The Beato Book: https://beatobook.com *SPONSORS:* To support this podcast, check out our sponsors & get discounts: *UPLIFT Desk:* Standing desks and office ergonomics. Go to https://lexfridman.com/s/uplift_desk-ep492-sb *BetterHelp:* Online therapy and counseling. Go to https://lexfridman.com/s/betterhelp-ep492-sb *LMNT:* Zero-sugar electrolyte drink mix. Go to https://lexfridman.com/s/lmnt-ep492-sb *Fin:* AI agent for customer service. Go to https://lexfridman.com/s/fin-ep492-sb *Shopify:* Sell stuff online. Go to https://lexfridman.com/s/shopify-ep492-sb *Perplexity:* AI-powered answer engine. Go to https://lexfridman.com/s/perplexity-ep492-sb *OUTLINE:* 0:00 - Introduction 0:44 - Guitar solos 4:43 - Gypsy jazz and Django Reinhardt 6:14 - Bebop jazz 10:27 - Perfect pitch vs relative pitch 15:04 - Learning to play guitar 38:34 - Miles Davis 44:01 - Bass guitar 45:08 - Greatest guitar solos of all time 1:14:23 - 27 Club 1:19:04 - Elton John 1:22:18 - Metallica 1:26:48 - Tom Waits 1:32:39 - Greatest rock stars 1:36:02 - Beethoven 1:42:37 - Bach 1:45:27 - AI in music 1:59:18 - Sabrina Carpenter 2:02:49 - YouTube copyright strikes 2:08:26 - Spotify 2:19:18 - Guitars 2:23:40 - Advice *PODCAST LINKS:* - Podcast Website: https://lexfridman.com/podcast - Apple Podcasts: https://apple.co/2lwqZIr - Spotify: https://spoti.fi/2nEwCF8 - RSS: https://lexfridman.com/feed/podcast/ - Podcast Playlist: https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4 - Clips Channel: https://www.youtube.com/lexclips *SOCIAL LINKS:* - X: https://x.com/lexfridman - Instagram: https://instagram.com/lexfridman - TikTok: https://tiktok.com/@lexfridman - LinkedIn: https://linkedin.com/in/lexfridman - Facebook: https://facebook.com/lexfridman - Patreon: https://patreon.com/lexfridman - Telegram: https://t.me/lexfridman - Reddit: https://reddit.com/r/lexfridman",
+          "published_at": "2026-03-01T03:37:44+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C057",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "The greatest unsolved problem in computer science...",
+          "url": "https://www.youtube.com/watch?v=x36UmiSiEzc",
+          "source_name": "Fireship",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Try MongoDB Atlas for free - https://fandf.co/4rf61Za and simplify your AI data stack with one platform. P vs NP is arguably the most famous unsolved problem in computer science. It asks: if you can verify a solution quickly, can you also find the solution quickly? Let's attempt to find out... Clay",
+          "content": "Try MongoDB Atlas for free - https://fandf.co/4rf61Za and simplify your AI data stack with one platform. P vs NP is arguably the most famous unsolved problem in computer science. It asks: if you can verify a solution quickly, can you also find the solution quickly? Let's attempt to find out... Clay Mathematics Institute: https://www.claymath.org/millennium/p-vs-np/ #coding #programming 🔖 Topics Covered - What is P vs NP - History of P vs NP - Why is it so hard to prove? - Underlying mathematical concepts - Uses for P vs NP - What if P really does equal NP? Want more Fireship? 🗞️ Newsletter: https://bytes.dev 🧠 Courses: https://fireship.dev",
+          "published_at": "2026-03-09T18:31:50+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C062",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "When open-sourcing your code goes wrong...",
+          "url": "https://www.youtube.com/watch?v=wzzh7Not8XE",
+          "source_name": "Fireship",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Try out CodeRabbit’s AI code reviewer with custom PR summaries - https://coderabbit.link/fireship. It’s free forever for any open source project. Everything you use on the internet today is built on the shoulders of OSS - but not every open-source project makes it. Let's take a look at 5 open-source",
+          "content": "Try out CodeRabbit’s AI code reviewer with custom PR summaries - https://coderabbit.link/fireship. It’s free forever for any open source project. Everything you use on the internet today is built on the shoulders of OSS - but not every open-source project makes it. Let's take a look at 5 open-source projects that achieved a meteoric rise and then crashed out under the weight of their own success. #coding #programming #oss 🔖 Topics Covered - Mutable Instruments - Faker.js - Meteor - OpenSolaris - Netscape Want more Fireship? 🗞️ Newsletter: https://bytes.dev 🧠 Courses: https://fireship.dev",
+          "published_at": "2026-02-26T18:26:18+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C074",
+            "cluster_size": 1,
+            "score": 37.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "36氪首发 | 高能粒子应用核心部件公司完成超亿元融资，加速高端仪器、半导体领域国产替代",
+          "url": "https://36kr.com/p/3727812168367238?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "作者 | 张子怡 编辑 | 袁斯来 36氪获悉，聚焦高能粒子应用系统核心部件的苏州博思得电气有限公司（以下简称“博思得”）近日宣布完成超亿元C轮融资。本轮融资由上海瑞力领投，交银资本、元璟资本跟投。募集资金将主要用于高端产品研发升级及全球化市场布局。 高压发生器、X光射线源是医疗影像、工业无损检测、半导体及高端仪器的核心部件，属于多学科交叉的复杂工程，对产品的性能、一致性、可靠性要求较高，是多众重要核心装备的核心“心脏”部件。其尖端技术与高端市场长期被海外品牌占据。伴随下游医疗与工业高端装备国产化浪潮加速，上游核心部件的自主可控成为产业焦点。 博思得作为国内高能粒子核心应用系统领域的标杆企业，",
+          "content": "作者 | 张子怡 编辑 | 袁斯来 36氪获悉，聚焦高能粒子应用系统核心部件的苏州博思得电气有限公司（以下简称“博思得”）近日宣布完成超亿元C轮融资。本轮融资由上海瑞力领投，交银资本、元璟资本跟投。募集资金将主要用于高端产品研发升级及全球化市场布局。 高压发生器、X光射线源是医疗影像、工业无损检测、半导体及高端仪器的核心部件，属于多学科交叉的复杂工程，对产品的性能、一致性、可靠性要求较高，是多众重要核心装备的核心“心脏”部件。其尖端技术与高端市场长期被海外品牌占据。伴随下游医疗与工业高端装备国产化浪潮加速，上游核心部件的自主可控成为产业焦点。 博思得作为国内高能粒子核心应用系统领域的标杆企业，专注于特种高压电源、X光射线源、高压发生器等产品的自主研发、生产与销售，产品下游应用领域全面覆盖医疗影像、工业检测、半导体与高端仪器三大核心领域，成为下游产业升级发展的重要核心支撑。 目前，博思得已构建起电力电子、高压绝缘技术平台、软件与智能控制、热能管理和材料科学五大技术平台，具备行业领先的高能（100kW）、高压（20-450kV）、高频（500kHz）、高精度和小型化的研发能力，旨在破解高端医疗影像、工业检测、高端仪器等领域核心部件\"卡脖子\"难题。 硬氪了解到，从博思得产品的具体指标来看，公司在软硬件与材料方面，全系产品实现大功率软开关高频逆变；公司是国内少数掌握阴/阳极接地绝缘设计技术，并应用兼具高绝缘与低漏射线率“黄砖材料”的企业。 在控制与测试方面，其掌握kV快速切换技术（上升/下降沿<100us），通过流体计算及有限元仿真实现无限热容技术的X射线源，并实现了高压注油和全性能测试自动化。 基于上述技术积累，博思得不仅实现了在工业和医疗X光影像设备中领先的市场占有率和高端客户覆盖，并已将业务延伸至半导体设备核心部件领域，其研发的离子注入机高压电源打破了海外企业（如AE、XP）的长期垄断，并于2025年正式销售。 博思得从2023年开始加大海外市场拓展，海外收入占比已超30%并快速增长，覆盖包括北美、欧洲、一带一路国家和非洲等地区。为支持医疗领域下游客户的海外战略，博思得进行了多年持续投入，全面提升了研发和体系能力，成为截至目前高压发生器领域中国唯一、全球唯三通过欧盟CE-MDR标准的公司，未来海外市场销售覆盖和占比将进一步提升。 投资人观点： 瑞力医疗投资团队表示： “高压发生器、X光射线源是高端装备的核心基础部件与产业升级的关键环节，当前国产替代趋势明确，海外市场中国企业性价比优势突出。博思得作为该领域的头部企业，拥有深厚的技术积淀与完整的产品线，在高端市场的突破能力尤为突出。我们看好其长期发展潜力，期待通过资本与产业资源的协同，助力公司加速技术创新与产能扩张。” 元璟资本合伙人田敏总表示： “博思得是高压发生器领域少有的兼具正向研发实力与新技术商业化落地能力的企业，我们看好公司在高端场景领域的产品和技术突破能力，特别是海外市场的快速成长和拓展能力。元璟资本将依托在高端制造与医疗器械领域的投资布局与资源积累，全方位支持公司进一步拓展市场、加速全球化布局，成为全球高压发生器领域的重要参与者。”",
+          "published_at": "2026-03-18 10:07:04  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C004",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "36氪首发｜专注智能运动眼镜，「光粒科技」完成近亿元Pre-B轮融资",
+          "url": "https://36kr.com/p/3726585094863236?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "36氪获悉，智能运动眼镜品牌「光粒科技」已完成近亿元Pre-B轮融资，本轮由杭州高新金投投资。本轮资金将主要用于团队建设、技术研发以及全球市场的营销销售拓展。 「光粒科技」成立于2017年，专注于AR智能眼镜及运动科学算法的研发。自2023年起，公司聚焦智能运动眼镜赛道，通过全息树脂光波导技术将运动数据实时呈现在用户眼前，解决运动场景下“数据不可见”的痛点。 目前，光粒已从早期单一的智能泳镜产品，逐步拓展为覆盖游泳、跑步、骑行、户外等多场景的智能运动眼镜矩阵。在智能泳镜这一细分赛道，光粒在国内市场占据领先地位，并开始在全球范围内与国际品牌展开竞争。 一边把智能泳镜做深，一边开拓更广户外场景 过",
+          "content": "36氪获悉，智能运动眼镜品牌「光粒科技」已完成近亿元Pre-B轮融资，本轮由杭州高新金投投资。本轮资金将主要用于团队建设、技术研发以及全球市场的营销销售拓展。 「光粒科技」成立于2017年，专注于AR智能眼镜及运动科学算法的研发。自2023年起，公司聚焦智能运动眼镜赛道，通过全息树脂光波导技术将运动数据实时呈现在用户眼前，解决运动场景下“数据不可见”的痛点。 目前，光粒已从早期单一的智能泳镜产品，逐步拓展为覆盖游泳、跑步、骑行、户外等多场景的智能运动眼镜矩阵。在智能泳镜这一细分赛道，光粒在国内市场占据领先地位，并开始在全球范围内与国际品牌展开竞争。 一边把智能泳镜做深，一边开拓更广户外场景 过去一年，光粒的核心产品线Holoswim系列已完成多次迭代，从数据可视化向更全面的运动科学监测延伸。 光粒的智能泳镜新品Holoswim 2 Plus在原有产品基础上增加了心率监测功能。为了解决游泳时心率信号无法穿透水传输的难题，团队创新性地开发了一款可拆卸的多功能心率计HandPlus B2——它可以通过一个小配件别在泳帽上，与泳镜本体近距离传输数据，实现游泳过程中的实时心率监测和反馈。 “这个心率计的精度已经接近医疗级别的胸带。”张卓鹏介绍，这款心率计不仅可以在游泳时使用，还能用于跑步、骑行、越野等场景，相当于一个多功能配件。 在近期的AWE展会上，光粒发布了Holoswim 3系列。这款产品主打中高速游泳及户外开放水域场景，在超薄高透全息树脂光波导的基础上优化了流线型外观，能够有效降低水阻、抵御跳发冲击，并增加了GPS和指南针功能，帮助用户在公开水域“两点之间游直线”，解决户外游泳方向难辨、航线难控的痛点。 “我们开玩笑讲，Holoswim 3的‘3’是铁人三项的‘三’。”张卓鹏表示，它可以兼容铁人三项在内的户外游泳运动，从日常锻炼到竞技提升均可覆盖。 更早前，光粒还在2025年10月推出了SollaWave音乐泳镜，除了听歌功能外，该产品还能采用语音播报方式向用户反馈游泳数据，支持音乐、播客离线播放，满足“陪伴型”游泳需求。据悉，SollaWave在去年冬季成为天猫同品类中销量最高的产品。 海外占比快速上升至近半，渠道从迪卡侬走向专业眼镜店 渠道方面，光粒已入驻迪卡侬等户外装备门店，近期又进入吴良材、高择Gozem等专业眼镜店。“不管是户外的运动连锁店，还是眼镜店，还是大型商超，像海外的BestBuy、Target，我们都要去入驻。”张卓鹏表示，公司正在全球范围内逐步覆盖智能泳镜能够售卖的终端零售渠道。 目前，海外市场是光粒的拓展重点。据张卓鹏透露，海外销量在光粒整体销量中的占比已经快速上升到接近一半，预计未来有可能上升到七成左右。在智能泳镜这个细分赛道，国内暂时还没有其他玩家与光粒直接竞争。对于海外市场格局，张卓鹏表示，在产品丰富度、性能指标、成本价格、算法精确度等方面，光粒已经开始反超海外竞品。 针对出海的内容叙事，光粒正在搭建专门的出海内容团队，同时也会与海外渠道商合作，根据不同市场的用户偏好进行本地化的产品叙事包装。部分海外代理商甚至会根据当地用户偏好，与光粒共同重新设计产品包装。 2026年，光粒设定了全球销售扩张的目标。张卓鹏将今年的战略性事项归纳为三点：第一，在游泳赛道推出更有梯度的产品矩阵，从单一SKU向多型号、多价位段布局；第二，拓展品类，从游泳延伸到更多户外运动——今年下半年将推出适配跑步、登山、越野、徒步等场景的户外智能眼镜产品；第三，进一步完善运动科学的垂直模型，通过端侧AI实现更精准的运动数据分析和更个性化的训练指导。 “在运动场景下，通用大模型无法获取身体本身的数据。我们通过硬件这个入口获取了身体数据，希望在端侧把AI模型做得更高效、更精简，再去连接云端大模型，实现更丝滑的交互。”张卓鹏举例，端侧模型可以让游泳训练计划更加丰富、更加个性化，同时随着模型精度提升，对泳姿、休息的检测也会更准确，未来还将覆盖从游泳到陆上运动的更多场景。 “这三件事情，我们在同步进行。”张卓鹏表示。从智能泳镜到更广泛的户外运动场景，光粒正沿着既定路径，逐步构建其智能运动眼镜的更大版图。",
+          "published_at": "2026-03-18 09:00:00  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C005",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "8点1氪丨宝宝巴士推送低俗广告被罚30万；山姆客服回应给三文鱼加不可生食标签；360回应“安全龙虾”私钥泄露",
+          "url": "https://36kr.com/p/3727701336833157?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "今日热点导览 美股三大指数集体收涨，36氪涨超37% 韩国首尔市内地铁全线接入微信支付 雷军再回应停售第一代SU7：不想背刺老用户 三星将停售首款三折叠手机Galaxy Z TriFold 黄天鹅创始人回应角黄素争议：每天吃75个黄天鹅蛋才会超标 胖东来169元1克拉方糖戒指再上架，每人限购5枚 TOP3大新闻 儿歌APP跳转成人广告，宝宝巴士被罚30万 据界面新闻：公开资料显示，近日，宝宝巴士（福建）网络科技有限公司因发布低俗广告，被福州市仓山区市场监督管理局罚款30万，没收违法所得3.68元。此前，2025年10月，有网友反映称，宝宝巴士APP进入后会跳出成人广告，点击广告后会出现擦边视频",
+          "content": "今日热点导览 美股三大指数集体收涨，36氪涨超37% 韩国首尔市内地铁全线接入微信支付 雷军再回应停售第一代SU7：不想背刺老用户 三星将停售首款三折叠手机Galaxy Z TriFold 黄天鹅创始人回应角黄素争议：每天吃75个黄天鹅蛋才会超标 胖东来169元1克拉方糖戒指再上架，每人限购5枚 TOP3大新闻 儿歌APP跳转成人广告，宝宝巴士被罚30万 据界面新闻：公开资料显示，近日，宝宝巴士（福建）网络科技有限公司因发布低俗广告，被福州市仓山区市场监督管理局罚款30万，没收违法所得3.68元。此前，2025年10月，有网友反映称，宝宝巴士APP进入后会跳出成人广告，点击广告后会出现擦边视频。 记者以用户身份向宝宝巴士官方客服反映此问题。对于为什么会出现成人广告，该客服解释称，宝宝巴士的广告属于第三方平台投放的，官方已经尽力做审核监督，但难免会有遗漏，“如果看到广告内容有不恰当的地方，用户可以将广告内容和问题反馈给我们去核实处理，后续我们也会对这个问题进行整改的。”（界面新闻、九派新闻） 山姆客服回应给三文鱼加不可生食标签 近日，被消费者当成“刺身级”的一款山姆进口三文鱼片，包装背面小字标注的食用方法为“加热后烹饪食用”，引发关注。“提示字样在背面，并不显眼，买的时候也未注意到”，有消费者表示。九派新闻在山姆App找到这款三文鱼后发现，摆盘图片是生的三文鱼。评论区很多消费者买回去后生吃，且上传了不少生吃的照片，山姆在评论区的回复也未提示不可生食。记者浏览山姆app发现，这款产品售价219.8元一件，仅供线下门店购买。除包装背面标注食用方式以外，在商品介绍中也注明此产品“适合香煎、炙烤等烹饪方式”。3月16日下午，九派新闻以消费者身份联系一家山姆门店，对于是否考虑给包装贴上“不可生食”标签提醒会员，一客服人员表示：“会将相关建议反馈给包装部门。” 据了解，可生食的三文鱼片，需遵守可生食水产品的国家标准GB 10136-2015。而如今须“烹饪后食用”的山姆三文鱼，标注执行的是GB 2733-2015，这是鲜、冻动物性水产品的卫生标准，对菌落和寄生虫的管控要求远低于GB 10136-2015。（九派新闻、新闻晨报） 360回应“安全龙虾”私钥泄露 3月14日，360集团宣布推出“360安全龙虾”智能体应用客户端及“360安全龙虾Box”硬件终端，并发布专门应对OpenClaw（龙虾）安全问题的“360龙虾卫士”。但两天后，3月16日，安全社区研究人员在解压该产品安装包时，发现其特定路径下存在明文存储的泛域名SSL证书及对应RSA私钥。 3月16日晚，针对旗下产品“360安全龙虾”被曝私钥泄露一事，360公司作出正式回应，明确表示已第一时间吊销涉事SSL证书，目前该证书已完全失效，从技术层面阻断了攻击者利用该私钥伪造服务器、劫持流量的可能，普通用户不会受到此次事件影响。（界面新闻） 大公司/大事件 马斯克：若告赢OpenAI，上千亿美元收益全部捐给慈善机构 3月17日，马斯克在X平台上公开表示，如果在对OpenAI的诉讼中获胜，所有由此获得的法律收益将会全部捐赠给慈善机构，而他个人将不从中获取任何收益。此前，马斯克已经起诉OpenAI和微软，并发起高达1340亿美元的索赔。该案目前已经进入激烈的庭前博弈阶段。 这场法律纠纷源于OpenAI的公司结构转型。其2015年以非营利组织成立，2019年转为“限制利润”结构，并计划重组为公共利益公司。前联合创始人马斯克指责其背弃开源、非营利初衷，寻求禁令阻止转型，但相关请求在去年3月被一位联邦法官拒绝。法官允许该案件在2026年春季由陪审团进行审判。 (IT之家、澎湃新闻) 韩国首尔市内地铁全线接入微信支付 3月17日，腾讯宣布自当日起，韩国首尔市内地铁站全线接入微信支付。中国游客现可在首尔地铁1-8号线全站的自助售票机上直接使用微信支付购票。（财联社） 拉里贾尼已遇难 伊朗最高国家安全委员会秘书阿里.拉里贾尼的社交媒体账号18日凌晨发布消息，证实拉里贾尼在美国和以色列对伊朗的袭击中遇难。（新华社） 黄仁勋信心爆棚维持营收万亿美元预测 金十数据3月18日讯，英伟达首席执行官黄仁勋表示，他前一天对公司人工智能芯片销售额给出的1万亿美元预测并未涵盖其所有产品，并示意随着公司进军新市场，总营收将超过这一水平。黄仁勋在加利福尼亚州圣何塞举行的一场公司活动上表示，公司预计将完成、入账并交付超过1万亿美元的业务。他向在场的分析师和投资者表示，英伟达对“1万亿美元以上”有着“强大的信心”。就在不到一天前，黄仁勋曾预测英伟达的旗舰级人工智能处理器将助力其在2027年前实现1万亿美元的销售额，并称计算需求在“过去两年中增长了100万倍”。受此消息影响，公司股价一度上涨4.8%，随后趋于平稳，周二基本持平。（金十数据） 韩国三星电子工会将就三星史上最大规模罢工计划进行投票 韩国三星最大的工会组织“全国三星电子工会（NSEU）”威胁称，公司正就三星史上最大规模的罢工计划进行投票——一旦本周三投票通过，将在5月中断芯片生产，这可能给三星公司带来数百亿美元的损失。三星作为全球最大的存储芯片制造商，如果其发生罢工事件，可能会对三星半导体业务造成重大冲击，并加剧全球半导体供应的瓶颈问题，从而抑制从汽车、电脑到智能手机等行业的半导体供应。（财联社） “死了么”创始人：App将继续维护 近日，“死了么”App创始人吕功琛在杭州成立新公司，引发关注。3月16日，吕功琛告诉记者，新公司已经招聘了新的研发人员，当日起开始正式办公，新产品预计于两个月后正式对外发布。 3月16日，吕功琛向南都记者表示，新产品将继续聚焦于独居安全，覆盖更多生活中存在安全隐患的场景；让安全保障更智能，尽可能减少人为干预；通过外部合作的方式，打造全链路的安全服务体系。他介绍，新产品早期会与原“死了么”App类似，后续将继续迭代。“原下架的‘死了么’App也会继续维护，供付费的老用户继续使用。（南方都市报） 雷军再回应停售第一代SU7：不想背刺老用户 3月17日，小米创始人雷军在其官方微博账号发布《答网友问（第二集）》。在回应为何很早停售前一代SU7时，雷军表示，“（停售）确实对我们前三个月的销售产生了影响，但我们不想背刺老用户。” 对于过去两年小米汽车的发展，雷军用“跌宕起伏、冰火两重天”来形容，“所取得的成绩远超想象，但我们也收到很多批评和质疑，有些批评也是非常中肯的，但也有很多误解。”雷军坦言作为后来者，小米汽车还有很长的路要走，“造车是一场马拉松”。 谈及新一代SU7，雷军说，想要超越第一代SU7“确实不容易”。新一代的设计作为小米的第一次改版，花了两年多时间，继承和吸纳了第一代的SU7优点，在安全、驾控、智能体验、豪华质感等方面都有提升。（界面新闻） 上市仅三个月，三星将停售首款三折叠手机Galaxy Z TriFold 据报道， 三星电子公司正在逐步停止其首款三折叠手机Galaxy Z TriFold的销售，该机型上市仅约三个月。该公司发言人表示，将首先停止在韩国本土市场的销售，待美国市场清空剩余库存后，也将停止在美国的销售。（界面新闻） 8000万“半价”甩卖子公司股权遭监管问询，永辉超市回应 3月16日晚间，永辉超市发布公告，回复上交所关于公司出售云金科技剩余股权的监管工作函。公告披露，永辉超市拟以8000万元，将持有的云金科技28.095%股权转让给其控股股东派慧科技。上述交易价格因大幅低于云金科技的历史估值与账面价值，引发监管层对交易合理性及是否损害上市公司利益的关注。 针对问询，永辉超市表示，公司对云金科技的初始投资为5亿元。于2024年6月出售控股权前，公司作为控股股东进行了必要的资源投入。自派慧科技成为控股股东后，云金科技的日常经营、资本性支出等均由派慧科技主导，公司仅作为参股股东，未进行后续重大投入。（界面新闻） 黄天鹅创始人回应角黄素争议：每天吃75个黄天鹅蛋才会超标 据首页新闻报道，3月16日晚间，黄天鹅创始人、董事长冯斌现身黄天鹅官方旗舰店直播间，正面回应近期备受关注的角黄素（斑蝥黄）争议。直播中，冯斌多次明确表态：黄天鹅鸡蛋未添加任何人工合成色素。针对消费者最关心的食用安全问题，他援引欧盟安全标准解释，按检出含量测算，每人每天需吃下 75 颗黄天鹅鸡蛋，才可能触及安全危害值。 3月17日，黄天鹅在官方账号发布公告称目前公司产品已由属地市场监管部门完成现场抽检，样品已送至权威检测机构，目前正等待官方检测结果。（首页新闻、澎拜新闻） 超28亿港元，蚂蚁集团要约收购耀才证券金融获批 3月16日晚间，耀才证券金融公告表示，蚂蚁集团发起的要约收购已通过有关部门审批，预计将于3月30日完成交割。交易完成后，蚂蚁集团将正式控股耀才证券金融。耀才证券金融表示，作为被蚂蚁集团收购的一部分，所有成交条件均已达成。公告提到，公司股票于3月16日短暂停牌后，3月17日开市起将复牌。复牌前，其股价为9.27港元/股，市值为157.34亿港元。 近两年，蚂蚁持续加大在香港的战略投入，香港成为蚂蚁及旗下多家公司的全球化战略支点。此次交易完成后，蚂蚁集团正式获得香港券商牌照，有助于其加速国际化布局。（界面新闻） 胖东来169元1克拉方糖戒指再上架，每人限购5枚 近日，多名河南网友发帖称，在胖东来商场的珠宝区又看到了“小方糖”戒指在售，售价仍为169元，但每人限购5枚。3月16日下午，记者就以上信息向胖东来多个门店核实，客服人员均表示，消息属实，几天前胖东来已经重新上架了小方糖戒指，款式、价格、材质与之前一致，目前仅有少数门店在售。据此前报道，胖东来一款“小方糖戒指”在社交平台",
+          "published_at": "2026-03-18 08:16:21  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C007",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "想帮大家做「一人公司」，茉莉语境融资百万美元",
+          "url": "https://36kr.com/p/3727752358919305?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "凌晨三点，自媒体博主阿鱼的第32个小红书账号自动发布了一条笔记：“救命！这个方法我要是早知道至少少加200小时班”。此刻她正在熟睡，而在云端，36只龙虾正在执行一套作战计划：4只幕后龙虾负责抓取热点、拆解爆款、审核违禁词，另外32只前台龙虾各自扮演着“工作3年的互联网运营妹子”“靠副业还清8万房贷的上班族”“8年经验的产品老鸟”等不同人格，在32个垂直账号上同时发声。 三个月前，阿鱼还只是一个月入8000、手搓5个账号就精疲力竭的自媒体博主。现在，她一个人指挥的“内容军团”日产出160条稿件，月收入翻四倍。 这不是孤例。在深圳，外贸员小陈用12只龙虾分驻侦察、触达、跟进、报价四个班组，把硅胶制",
+          "content": "凌晨三点，自媒体博主阿鱼的第32个小红书账号自动发布了一条笔记：“救命！这个方法我要是早知道至少少加200小时班”。此刻她正在熟睡，而在云端，36只龙虾正在执行一套作战计划：4只幕后龙虾负责抓取热点、拆解爆款、审核违禁词，另外32只前台龙虾各自扮演着“工作3年的互联网运营妹子”“靠副业还清8万房贷的上班族”“8年经验的产品老鸟”等不同人格，在32个垂直账号上同时发声。 三个月前，阿鱼还只是一个月入8000、手搓5个账号就精疲力竭的自媒体博主。现在，她一个人指挥的“内容军团”日产出160条稿件，月收入翻四倍。 这不是孤例。在深圳，外贸员小陈用12只龙虾分驻侦察、触达、跟进、报价四个班组，把硅胶制品卖到北美和东南亚；在上海，老张雇佣4只龙虾分别盯理财、管待办、维护社交，每周偷回10小时“让脑子下班”。 他们用的工具是龙虾军团（ClawTroop）——成立于2025年的AI智能体基础设施公司茉莉语境最近推出的产品，已服务于自媒体、跨境电商、企业效能等多个场景。ClawTroop是批量小龙虾的部署和管理工具，目的是降低智能体集群的管理门槛，让个人和企业都能以极低成本拥有、训练和调度自己的智能体集群。 「暗涌Waves」独家获悉，茉莉语境已获得香港数据智能集团（Data Intelligence Group Limited，简称DIG）有限公司百万美金投资，其创始团队来自腾讯、字节跳动等企业以及毕业于帝国理工学院、格拉斯哥大学、香港大学等学府。 养过OpenClaw小龙虾的人都知道，光是部署一只起码折腾1-2个小时，更何况批量喂养、使用、调度和管理。在Agent大爆发的临界点，茉莉语境押注的是一场关于“管理前置”的实验——如果未来每个打工人都将指挥一支AI小队，那么制定军规的能力，或许比单兵作战的技巧更值钱。 图源：企业供图 Part01 文本即军规 在确定“龙虾军团”方向前，茉莉语境的团队曾在两个项目上栽过跟头。 第一个项目是基于MCP协议的Cowork工具，试图打造极致的个人生产力助手。“那时候MCP协议很不稳定，底层模型能力也不够智能，”产品负责人周曼回忆。第二个项目更具野心——基于当时更成熟的VibeCoding方向，探索图文视频之外，是否能催生新型的互动H5媒介，产品投放了北美和东南亚市场，但获客成本高昂，双边市场始终无法跑通。 真正的转折发生在痛点背后。作为早期AI工具的重度用户，OpenClaw出现之后，他们开始密集使用OpenClaw来提升效率。一个悖论很快浮现：单只Agent对个人提效明显，但想让整个团队都用起来，“门槛高得离谱”。之前腾讯门口排大队安装小龙虾也在侧面印证了一个事实——当前AI应用的瓶颈从“技术能力”转向了“工程化部署与管理”。 “大厂都在造更聪明的士兵，但没人提供作战手册和指挥系统，”周曼意识到， “如果AI应用真的爆发，‘如何管理AI劳动力’会成为比‘如何使用AI’更刚性的需求。” 龙虾军团就是为了系统性地解决企业和power user批量喂养、使用、调度和管理小龙虾的关键痛点。用户可以在这里批量创建、部署、统一管理你的小龙虾，给它们设定人格、行为准则、技能等，并一次性向成百上千个小龙虾下发任务，查看执行情况。 龙虾军团的产品界面看起来朴素得有些反时代。没有炫酷的3D交互，没有实时生成的图文流，更类似上世纪ERP系统的管理后台：左侧是整齐排列的“龙虾列表”，右侧是四个纯文本输入框——Soul.md（人格）、Agents.md（行为准则）、User.md（对主人的认知）、Tool.md（工具原则）。 “我们把龙虾最核心的配置项单独拉出来，让不懂代码的普通用户也可以随时用文字调整修改、以及批量应用给多个龙虾”周曼在演示时解释。 当市场都在追求拖拽式的无代码界面时，茉莉语境坚持让用户用Markdown格式编写配置文件。理由听起来有些技术原教旨主义：Markdown是最容易被AI理解的结构化语言，同时也是普通人最自然的思考载体。 但这种设计背后是对产品的洞察：AI Agent的“人格”不是参数调节，而是语境构建。四个Markdown文件构成了一个完整的认知框架——Soul.md解决“你是谁”，Agents.md解决“你能做什么”，User.md解决“你在为谁工作”，Tool.md解决“你怎么使用武器”。当用户需要修改某只龙虾的行为时，不需要在层层菜单中寻找开关，只需在文本中增删一行规则，点击“批量推送”，全集群即刻生效。 还可以通过标签给龙虾分组——比如销售组、客服组、小红书组。\"假设你有30只负责销售的Agent，\"周曼举例，\"以前需要逐个调整话术，现在只要在Agents.md里加一条'不允许私自承诺超过9折的折扣'，相关龙虾部队就会同步更新。如果某只龙虾的行为逾矩了，系统会做出提示，用户可以及时补充约束、统一修正。\" Part02 服务OPC：toC到toB 这个看似应该深耕B端SaaS的产品，第一阶段主打OPC（One Person Company，一人公司）和C端用户。 一个自媒体博主，一个人就是一家公司。她可以在龙虾军团里创建5只龙虾组成“小红书矩阵特攻队”——A龙虾早上7点抓取热点选题，B龙虾根据选题生成3个不同风格的标题及正文，C龙虾检查违禁词和敏感内容，D龙虾自动发布并监控初期数据，E龙虾在评论区扮演“前排网友”互动。整个流程无需代码，只需要在后台配置好人格文件，设定好“如果阅读量低于1000则自动调整标题关键词”的行为准则。 这种转向揭示了AI应用渗透路径的特殊性：它可能遵循“从C端发烧友到中小微企业，再向上渗透”的反向路径，而非传统SaaS的“从大企业向下普及”。当每个人都可以低成本拥有一支AI军团，组织的边界、管理的定义、甚至“工作”本身的概念，都将被重新书写。 尽管如此，茉莉语境免不了面临疑问：如果OpenAI明天推出原生的Swarm多Agent协作功能，并提供开箱即用的管理界面，龙虾军团会不会被瞬间击穿？ 更深刻的悖论在于“云端养虾”模式本身，试图解决隐私焦虑——不用本地部署，无需疯狂投喂个人数据，通过云端容器隔离和任务级上下文赋予来保证安全。但这也意味着用户必须将核心工作流托付给第三方云端。 “龙虾军团ClawTroop”给出的答案是“渐进式智能”—— Agent的智能化应该是“用出来的”，不是“喂出来的” 。与其让用户先本地部署、疯狂投喂文档（涉及隐私焦虑且效果不稳定），不如提供云端隔离的容器，用户按任务赋予上下文和文件权限。这样既没有隐私泄露风险，又能让Agent在执行任务中沉淀技能。 但这仍然无法回避终极追问：当Agent规模从10只扩展到1000只，管理的复杂度是线性增长还是指数爆炸？这些性能瓶颈的解决成本，会不会让“低成本拥有AI军团”的承诺变成伪命题？ 周曼认为， AI应用层的竞争，最终是\"管理能力产品化\"的竞争，而非单纯的\"模型能力\"的竞争 。大厂在持续提供更强的模型和基础设施，但用户拿到这些能力之后，还是会面临很具体的问题：我想要龙虾帮我做什么事情、要多少、该怎么分组、每只该遵守什么规矩、出了问题怎么快速修正。——这些不是技术问题，是管理问题。 茉莉语境会继续深入场景，走上战场一线，和OPC用户一道探索在每个具体生意中如何用龙虾军团，并把成熟经验快速普及到我们的社区。这种深入用户的能力，建社区的做法，是大厂天然做不到、不具备优势的。",
+          "published_at": "2026-03-18 09:06:09  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C102",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "Cloudflare just slop forked Next.js…",
+          "url": "https://www.youtube.com/watch?v=abbeIUOCzmw",
+          "source_name": "Fireship",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "Try Brilliant for free for 30 days - https://brilliant.org/fireship and get 20% off a premium annual subscription. Cloudflare just shipped Vinext - a reimplementation of the Next.js API built on Vite, essentially freeing up your Next.js app to be deployed anywhere. Let's run it. #coding #programming",
+          "content": "Try Brilliant for free for 30 days - https://brilliant.org/fireship and get 20% off a premium annual subscription. Cloudflare just shipped Vinext - a reimplementation of the Next.js API built on Vite, essentially freeing up your Next.js app to be deployed anywhere. Let's run it. #coding #programming #webdevelopment 🔖 Topics Covered - What is Vinext? - How Cloudflare built Vinext - Vercel vs Cloudflare - Vinext demo Want more Fireship? 🗞️ Newsletter: https://bytes.dev 🧠 Courses: https://fireship.dev",
+          "published_at": "2026-03-02T20:36:25+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C016",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "Grok 4.20 is still deeply flawed",
+          "url": "https://www.youtube.com/watch?v=sg33YrlRbRc",
+          "source_name": "David Shapiro",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "The Kickstarter for my Post-Labor Economics book is live! https://www.kickstarter.com/projects/daveshap/labor-zero",
+          "content": "The Kickstarter for my Post-Labor Economics book is live! https://www.kickstarter.com/projects/daveshap/labor-zero",
+          "published_at": "2026-02-19T13:37:07+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C029",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "TanStack Start in 100 Seconds",
+          "url": "https://www.youtube.com/watch?v=1fUBWAETmkk",
+          "source_name": "Fireship",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "TanStack Start is a dx optimized, full-stack framework, powered by TanStack Router for React and Solid. 🔗 Resources - https://tanstack.com/start/latest 🔖 Topics Covered - The problem with React - Tanner Linsley - How to run TanStack Start - TanStack Router - Type-safe server functions Want more Fire",
+          "content": "TanStack Start is a dx optimized, full-stack framework, powered by TanStack Router for React and Solid. 🔗 Resources - https://tanstack.com/start/latest 🔖 Topics Covered - The problem with React - Tanner Linsley - How to run TanStack Start - TanStack Router - Type-safe server functions Want more Fireship? 🗞️ Newsletter: https://bytes.dev 🧠 Courses: https://fireship.dev",
+          "published_at": "2026-02-20T18:20:25+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C060",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "The Doomers were always WRONG!",
+          "url": "https://www.youtube.com/watch?v=xjjSvkrVU6E",
+          "source_name": "David Shapiro",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "The Kickstarter for my Post-Labor Economics book is live! https://www.kickstarter.com/projects/daveshap/labor-zero",
+          "content": "The Kickstarter for my Post-Labor Economics book is live! https://www.kickstarter.com/projects/daveshap/labor-zero",
+          "published_at": "2026-02-23T14:58:44+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C061",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "The next 36 months will be WILD",
+          "url": "https://www.youtube.com/watch?v=zeHTTXAWDUA",
+          "source_name": "David Shapiro",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "The Kickstarter for my Post-Labor Economics book is live! https://www.kickstarter.com/projects/daveshap/labor-zero",
+          "content": "The Kickstarter for my Post-Labor Economics book is live! https://www.kickstarter.com/projects/daveshap/labor-zero",
+          "published_at": "2026-02-26T13:41:34+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C063",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "We just took the DARK timeline",
+          "url": "https://www.youtube.com/watch?v=BHqN7kFfNgE",
+          "source_name": "David Shapiro",
+          "source_type": "youtube",
+          "category": "tech_ai",
+          "summary": "The Kickstarter for my Post-Labor Economics book is live! https://www.kickstarter.com/projects/daveshap/labor-zero",
+          "content": "The Kickstarter for my Post-Labor Economics book is live! https://www.kickstarter.com/projects/daveshap/labor-zero",
+          "published_at": "2026-02-28T13:52:29+00:00",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C072",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "宇树创始人：今年机器人会快过博尔特",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%87%E6%A0%91%E5%88%9B%E5%A7%8B%E4%BA%BA%EF%BC%9A%E4%BB%8A%E5%B9%B4%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%9A%E5%BF%AB%E8%BF%87%E5%8D%9A%E5%B0%94%E7%89%B9",
+          "source_name": "百度热搜",
+          "source_type": "scraper",
+          "category": "trending",
+          "summary": "百度热搜实时热搜词条",
+          "content": "百度热搜热搜词条：宇树创始人：今年机器人会快过博尔特",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C094",
+            "cluster_size": 1,
+            "score": 34.0,
+            "score_reasons": [
+              "source:14",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "七部门发AI安全治理3年计划系谣言",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%83%E9%83%A8%E9%97%A8%E5%8F%91AI%E5%AE%89%E5%85%A8%E6%B2%BB%E7%90%863%E5%B9%B4%E8%AE%A1%E5%88%92%E7%B3%BB%E8%B0%A3%E8%A8%80",
+          "source_name": "百度热搜",
+          "source_type": "scraper",
+          "category": "trending",
+          "summary": "百度热搜实时热搜词条",
+          "content": "百度热搜热搜词条：七部门发AI安全治理3年计划系谣言",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C075",
+            "cluster_size": 1,
+            "score": 33.0,
+            "score_reasons": [
+              "source:14",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "男二以下 AI演员",
+          "url": "https://s.weibo.com/weibo?q=%E7%94%B7%E4%BA%8C%E4%BB%A5%E4%B8%8B+AI%E6%BC%94%E5%91%98",
+          "source_name": "微博热搜",
+          "source_type": "scraper",
+          "category": "trending",
+          "summary": "微博热搜实时热搜词条",
+          "content": "微博热搜热搜词条：男二以下 AI演员",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C115",
+            "cluster_size": 1,
+            "score": 33.0,
+            "score_reasons": [
+              "source:14",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        }
+      ]
+    },
+    "auto": {
+      "direction": "auto",
+      "label": "汽车",
+      "input_count": 133,
+      "filtered_count": 27,
+      "score_summary": {
+        "max": 43.0,
+        "min": 35.0,
+        "avg": 38.56
+      },
+      "items": [
+        {
+          "title": "智能驾驶加速跑，L4级自动驾驶时代即将到来 - 汽车之家",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9UMUgxTDFsTU53dV96WWpBNXJ6c1hIYnoxVXlnekY5TWh4LWpLZVJ6aGV6M0E5OTQ3ZERnLUdmVmQtQVZjNmhtTWNrYkJwVlB6aHdoR0pkVklybG8?oc=5",
+          "source_name": "Google News 智能驾驶",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "智能驾驶加速跑，L4级自动驾驶时代即将到来 汽车之家",
+          "content": "智能驾驶加速跑，L4级自动驾驶时代即将到来 汽车之家",
+          "published_at": "Tue, 17 Mar 2026 12:47:47 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C107",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:8.0"
+            ]
+          }
+        },
+        {
+          "title": "比亚迪、吉利 将接入英伟达自动驾驶平台 - 新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUm9WMF9DVFpPNE94VVpuUE9xSHBnTmFhVW1zSm54andSRk9ldjlTQ0NOTGVSai1FV0FpRDd0Q1IxRlpqOGswS3E3aHhtalZzMV9aeXB3eFZWN3Azb3lMWmRuTEJ4UEVjOUZCajRCLXpoc2h2cU9nRzRUTlI2cjdsLVFabDVmWmZEcFFIVFJUUzlPdTg?oc=5",
+          "source_name": "Google News 比亚迪",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "比亚迪、吉利 将接入英伟达自动驾驶平台 新浪财经",
+          "content": "比亚迪、吉利 将接入英伟达自动驾驶平台 新浪财经",
+          "published_at": "Tue, 17 Mar 2026 08:18:23 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C110",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:8.0"
+            ]
+          }
+        },
+        {
+          "title": "国产新能源成玄学了？某全球车企拆了比亚迪皮卡，看不懂为啥挣钱 - 凤凰网汽车",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1KVlgzdWZJcnU2WXUzWXdlRi16blFRY014bGhScW4wbm4tYzVKMnd6Y0tmLXRqUVhQREl6MUVPYTVLSU85dlhwSElxUGs?oc=5",
+          "source_name": "Google News 新能源汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "国产新能源成玄学了？某全球车企拆了比亚迪皮卡，看不懂为啥挣钱 凤凰网汽车",
+          "content": "国产新能源成玄学了？某全球车企拆了比亚迪皮卡，看不懂为啥挣钱 凤凰网汽车",
+          "published_at": "Wed, 18 Mar 2026 00:10:08 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C091",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源车要“克死”燃油车？很多人都忘了，这个新规才是当头一棒 - 汽车之家",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1bllDZkZ6RUlvSmpUYkZLMktWUXpucElLVnZFU1lPZFpnWldjOXhpZ1JuNG03R1o0bVBZaE5nenZvdENIVGZOZzRBRFZiSG5Eb3V0V2ctdHhUYUk?oc=5",
+          "source_name": "Google News 新能源汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "新能源车要“克死”燃油车？很多人都忘了，这个新规才是当头一棒 汽车之家",
+          "content": "新能源车要“克死”燃油车？很多人都忘了，这个新规才是当头一棒 汽车之家",
+          "published_at": "Tue, 17 Mar 2026 23:43:19 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C106",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "【视频】盘点比亚迪安全名场面，十万级价格百万级安全，陆地坦克全是实战 - 汽车之家",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14ZXNQVXNXVm1HeEpsaUlZV2hhMFlNS3g4T1Mxc3hIMUxNNmNGbWphSi1KUWZCM2hvN0tIQk94cEJKLWN2XzJxN2ZVdHFfa3RLUi0wd18xTENDLUlYMHNEMlFzOXgzOExhWEhF?oc=5",
+          "source_name": "Google News 比亚迪",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "【视频】盘点比亚迪安全名场面，十万级价格百万级安全，陆地坦克全是实战 汽车之家",
+          "content": "【视频】盘点比亚迪安全名场面，十万级价格百万级安全，陆地坦克全是实战 汽车之家",
+          "published_at": "Wed, 18 Mar 2026 03:27:47 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C123",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "从比亚迪到吉利：谁是中国汽车“新一哥”？ - 汽车之家",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MMG1RcEw5Nk51MUQ3ZXhTR0lmV1NuVWhscVRpZFg3VGpweGhmWUtlaTdDd1dWbFFkY1BNQkg5QlRkSkNodmpRSldRaXdFZERQRkxOVDRteXhHdEU?oc=5",
+          "source_name": "Google News 比亚迪",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "从比亚迪到吉利：谁是中国汽车“新一哥”？ 汽车之家",
+          "content": "从比亚迪到吉利：谁是中国汽车“新一哥”？ 汽车之家",
+          "published_at": "Wed, 18 Mar 2026 02:55:28 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C078",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "发展瓶颈凸显车企发力“第二增长曲线”|比亚迪|奇瑞|理想汽车|广汽|中汽协_手机新浪网 - 新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOZ1E0ZGtOSEcweW0xOE1SbkVySkF4LUstYW5HLWdEY29RLUFVTUdnZ0J4VzFDVFFydjJDMzFBWmZYenBDZmN0SUwzbWM0emoydjl4NVpHTTVDeDlKY29wWkl1TENoNVZkTWlhM1JQQ3JFMzVEZWw0VnNEcHBEMi1qZkN3RXZKQWktalN4TEVRQVFTTTR2WTJHYVpCMlNfYW1tLWdOOVNDS2ltbDJvQ3E4V2I1VndrenlFdG1EbkVySjR3OHFBcV9leWhQWGFkQWY1MlZ1bXZBV09hajJaeVBJNm5lazBqRDJINXROQjk0RWVnWVY1bG5DYWhzdGprLUpHcEc5Vkx4VEw?oc=5",
+          "source_name": "Google News 汽车行业",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "发展瓶颈凸显车企发力“第二增长曲线”|比亚迪|奇瑞|理想汽车|广汽|中汽协_手机新浪网 新浪财经",
+          "content": "发展瓶颈凸显车企发力“第二增长曲线”|比亚迪|奇瑞|理想汽车|广汽|中汽协_手机新浪网 新浪财经",
+          "published_at": "Wed, 18 Mar 2026 00:41:52 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C088",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "比亚迪在汽车行业又掀起一场技术革命 - 汽车之家",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE12RDJHOXlBdkExdjJKblN5Zm4tN2pnVTVrS2VqTXY0c0FKN2ZDbmpIbFF5b2hmOVpmMXlnMWFzY1d5S0tYM2VobnFzZjJqNVMzRk9UTm9pZTNMX1E?oc=5",
+          "source_name": "Google News 汽车行业",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "比亚迪在汽车行业又掀起一场技术革命 汽车之家",
+          "content": "比亚迪在汽车行业又掀起一场技术革命 汽车之家",
+          "published_at": "Tue, 17 Mar 2026 18:19:53 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C111",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "上汽大众年内将推6款新能源车，全尺寸SUV3月30日预售 - 新浪新闻_手机新浪网",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5lTDN1UFpVUkk2aGtmc3ZWNmh4akRnVU1XMC12OVIwNmdqWUJybjhDekJPck5reHNJUDRIOHZoWFVPa3NLOE9tYjVqX1ljcmUtVjRfdm14dGhaTWVsRXFoTmtKeU9tT1JUY25WbndFdEU?oc=5",
+          "source_name": "Google News 新能源汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "上汽大众年内将推6款新能源车，全尺寸SUV3月30日预售 新浪新闻_手机新浪网",
+          "content": "上汽大众年内将推6款新能源车，全尺寸SUV3月30日预售 新浪新闻_手机新浪网",
+          "published_at": "Wed, 18 Mar 2026 02:13:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C076",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "卫生巾该不该和热水一样成列车标配",
+          "url": "https://s.weibo.com/weibo?q=%E5%8D%AB%E7%94%9F%E5%B7%BE%E8%AF%A5%E4%B8%8D%E8%AF%A5%E5%92%8C%E7%83%AD%E6%B0%B4%E4%B8%80%E6%A0%B7%E6%88%90%E5%88%97%E8%BD%A6%E6%A0%87%E9%85%8D",
+          "source_name": "微博热搜",
+          "source_type": "scraper",
+          "category": "trending",
+          "summary": "微博热搜实时热搜词条",
+          "content": "微博热搜热搜词条：卫生巾该不该和热水一样成列车标配",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C087",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "启境汽车全球品牌代言人黄景瑜",
+          "url": "https://s.weibo.com/weibo?q=%E5%90%AF%E5%A2%83%E6%B1%BD%E8%BD%A6%E5%85%A8%E7%90%83%E5%93%81%E7%89%8C%E4%BB%A3%E8%A8%80%E4%BA%BA%E9%BB%84%E6%99%AF%E7%91%9C",
+          "source_name": "微博热搜",
+          "source_type": "scraper",
+          "category": "trending",
+          "summary": "微博热搜实时热搜词条",
+          "content": "微博热搜热搜词条：启境汽车全球品牌代言人黄景瑜",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C089",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "国产新能源车品牌完整版 📝 - 新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9xVkhyb2lKSG5qUEQ2VXZDaElCYlRxNGFzcVNfWDV0TXRCWkxfbjA5bkpiUjNFU3dpbVNEeC10OHJWR00zMUwwZXhVVzRNN1BLdWJ2OTBqS2o4Q05hMnZCWElzbGM0NS14UzV0TWg0dFBrSjlyZUZEMDVxaHB5Zw?oc=5",
+          "source_name": "Google News 新能源汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "国产新能源车品牌完整版 📝 新浪财经",
+          "content": "国产新能源车品牌完整版 📝 新浪财经",
+          "published_at": "Tue, 17 Mar 2026 11:51:15 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C092",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源补能大赛进入下半场 技术与网络双线爆发 - 中华网新闻",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9FV2ZWWmd2YnRlWVVRR0VEdHY4QzVuYkNyUXNHUkZtZnYtVnB3ZHRzX3FDVFhwQjJFRk15alRvTmZ2dG1EZkNwanZheGxYWlBHeWFQYVRvYVozbHdsUjBrRlpLeExfanFGbU8yOTgtMGk?oc=5",
+          "source_name": "Google News 新能源汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "新能源补能大赛进入下半场 技术与网络双线爆发 中华网新闻",
+          "content": "新能源补能大赛进入下半场 技术与网络双线爆发 中华网新闻",
+          "published_at": "Tue, 17 Mar 2026 04:58:53 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C105",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "车还好好的电池就不行了咋办",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%A6%E8%BF%98%E5%A5%BD%E5%A5%BD%E7%9A%84%E7%94%B5%E6%B1%A0%E5%B0%B1%E4%B8%8D%E8%A1%8C%E4%BA%86%E5%92%8B%E5%8A%9E",
+          "source_name": "百度热搜",
+          "source_type": "scraper",
+          "category": "trending",
+          "summary": "百度热搜实时热搜词条",
+          "content": "百度热搜热搜词条：车还好好的电池就不行了咋办",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C125",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "【视频】【4K】小米yu7沉浸式静态体验 - 汽车之家",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9EVEtkM0x6S0pxQmhNWlFDVEtUSFQyQXNHZDRMTkZ2UzJYTmJ3QTl5cGkyUzZGU0pjWkdEcU5ENmE1RGI2UFJURFdkV0h3dnFKYWVVbWZLeVpFUEROUE9ibVVTc013UzhFSXlR?oc=5",
+          "source_name": "Google News 小米汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "【视频】【4K】小米yu7沉浸式静态体验 汽车之家",
+          "content": "【视频】【4K】小米yu7沉浸式静态体验 汽车之家",
+          "published_at": "Wed, 18 Mar 2026 01:55:26 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C122",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "小米汽车：新一代SU7标配辅助驾驶，升级认知大模型 - video.sina.com.cn",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbzhtTktJaTRlbG1Ib2VIaFdPY0ZBWXNaSGk0SUdPQU9WZ05ZajdaTy03Ylh5UjNTUUdtamtKd1RMekZMYzUzYWJBakdIbVo0RWVyMk5wNUJ5b2ZZU0NGMUI5d3g3ODdzdTNBVmlaSXBxcFlIalRqbnZ5ZmJmTU9HRVN3?oc=5",
+          "source_name": "Google News 小米汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "小米汽车：新一代SU7标配辅助驾驶，升级认知大模型 video.sina.com.cn",
+          "content": "小米汽车：新一代SU7标配辅助驾驶，升级认知大模型 video.sina.com.cn",
+          "published_at": "Wed, 18 Mar 2026 01:06:46 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C096",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "感恩同行！小米汽车为老车主送上三枚纪念勋章 - 凤凰网科技",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9jUUhvMVBpcUtIVUlLaFFEeTRSS1FlMFkzcDRzWUU0NW5WUjEwZ2lTSmpsVVRfM1luRUNadXpsR1Y1eWlobzBiUE5uc2Y?oc=5",
+          "source_name": "Google News 小米汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "感恩同行！小米汽车为老车主送上三枚纪念勋章 凤凰网科技",
+          "content": "感恩同行！小米汽车为老车主送上三枚纪念勋章 凤凰网科技",
+          "published_at": "Tue, 17 Mar 2026 23:50:32 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C103",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "比亚迪第二代闪充实测 低温快充新突破 - 中华网新闻",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBReU1aV0d4NEpyTC1ST2RQVE1qcjJkTVJQQXpINUNXNHZqUm1DVFp4ZnVlSk1ubEtDbDRiWG5tZ0JmS1B4ZGFfa2gyMkxWLUZtOE00Y3BYMEZCU2dqM3N2ZDBOMmN5NGhTUTBseFRyczg?oc=5",
+          "source_name": "Google News 比亚迪",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "比亚迪第二代闪充实测 低温快充新突破 中华网新闻",
+          "content": "比亚迪第二代闪充实测 低温快充新突破 中华网新闻",
+          "published_at": "Tue, 17 Mar 2026 06:40:15 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C112",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "苏炳添代言小米汽车_新浪新闻 - 新浪网",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBlMU41d1RvLUh0azdwcWd5UjkydjBlbEEyN3FjUHAzbDJLU0hHVERQbHBVTXd6Ul9ONThxSmpUZmlReUdjdzJBYmlkNVpGQXJ6cU4tTmhHV1hjeXJMZVg0aVhqNA?oc=5",
+          "source_name": "Google News 小米汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "苏炳添代言小米汽车_新浪新闻 新浪网",
+          "content": "苏炳添代言小米汽车_新浪新闻 新浪网",
+          "published_at": "Wed, 18 Mar 2026 01:44:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C120",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "限量15万份小米汽车向首销期首任车主赠送定制冰箱贴-快科技-科技改变生活 - 驱动之家",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WVE1oaG9xX1pObUtnX0ZKN214X1lVNWpZMTdSUjE5RzZnazY0TTdWenpyY3BSYUItMUxnc05KbWMwU2lGUlR3Wk1NSDRDSnF5MlBIQzh1YU0?oc=5",
+          "source_name": "Google News 小米汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "限量15万份小米汽车向首销期首任车主赠送定制冰箱贴-快科技-科技改变生活 驱动之家",
+          "content": "限量15万份小米汽车向首销期首任车主赠送定制冰箱贴-快科技-科技改变生活 驱动之家",
+          "published_at": "Tue, 17 Mar 2026 16:25:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C129",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "2026 AI重塑智能汽车：智能驾驶行业深度分析 - eet-china.com",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1pNUVBay1wUjBKZU9rbUpRSzdDLXhCUm1OMk5Lc2RvOG5LSzdVWUNHQnhwSHZDTndIdElBRVpKNTE0TFdKNXpzYTM5blNmdnRrVWRF?oc=5",
+          "source_name": "Google News 智能驾驶",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "2026 AI重塑智能汽车：智能驾驶行业深度分析 eet-china.com",
+          "content": "2026 AI重塑智能汽车：智能驾驶行业深度分析 eet-china.com",
+          "published_at": "Mon, 16 Mar 2026 01:15:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C003",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "【网通社快报】黄仁勋：英伟达营收将远超万亿美元，看好中国智能驾驶重启 - 凤凰网汽车",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5VQThqVkJzeHJIU3JQaHpvQW5nRkt2YVZySlBtQU1CdnJxTmsyOFBXLXpOVTY3aE9NTFdpREZ5Z2VtN0FRd0FkZVR5Wkc?oc=5",
+          "source_name": "Google News 智能驾驶",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "【网通社快报】黄仁勋：英伟达营收将远超万亿美元，看好中国智能驾驶重启 凤凰网汽车",
+          "content": "【网通社快报】黄仁勋：英伟达营收将远超万亿美元，看好中国智能驾驶重启 凤凰网汽车",
+          "published_at": "Wed, 18 Mar 2026 00:10:09 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C118",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "从顶层设计到产业落地| 2026两会如何定义中国汽车未来五年？-观察者网 - guancha.cn",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1fcGluWHhxZXlNQTI4QnJsWndwY3N4aDZ6UDhUU0xHNGVyT0t5MFlVc0NMS2kxRDgwdkxyenE3M3dJcE5EakJHWDg2U0ZiMkZFSlJBb3N0MlFZTEVNSmZEMDVn?oc=5",
+          "source_name": "Google News 汽车行业",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "从顶层设计到产业落地| 2026两会如何定义中国汽车未来五年？-观察者网 guancha.cn",
+          "content": "从顶层设计到产业落地| 2026两会如何定义中国汽车未来五年？-观察者网 guancha.cn",
+          "published_at": "Tue, 17 Mar 2026 02:57:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C079",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "德语媒体：中国正在重塑全球汽车市场 - dw.com",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNcWhuajN5YzRNWmUtMHloZ1RkV1MwVzFyMTM5TVFHeDdfSTAxeEVES3hkR0tSZUQ4cEs5M1VCU1FfZXRNMmJrN3ZTUFBKRDV4YXlRMGJZWGxsZnRiNXN1TExXODh0bVBEcGQxTUExM0wxQ3JEYWdFclVXaElpRFdHZWFwdlRUOWZFdk9MalZZSmE1WmZvRjEtd3daeGRuRzZ6NUhLM0pWZHV5RjFQSFFweGh2NXEzcndqVU5YcjBONDdaZU9JV2RPS0RSdG9QSUsxaFV5TGdTXzRqeHctOW5ib2JXaWNxU1hROFZYdmZydkk0akhVaE9Yck9XZ3ptX0xMdWVoektsVGHSAYgCQVVfeXFMTjlhVHRWalBZODZ5SDVyMEVaSWRIcXpEZGlpdDVZQzB5dE5ncThqajZBd0c0T3NEbFlNNDl0TGVRbENzQlhtczdsd2tNSGwxVWdxVTJaSXlwUVg4ZXZvckZkRjRlQlJ0LUw2ZW53QlFGdlJZVmlEeVJCVlRYMDVKdDVILU5scVcxQXU4Z3FYTWVsbkI3RGcxUG5PSHZ1NFNIeUVCeVpVb2ZoR2ljQmRKWXpWcElVc0hPYXJZdkNfT0UyM3RQdWEzTHA2eVJqWEpIVXA4Z2MxYmdsRm9MUmNNc2d6VGhoUjN1NGNrRFEzaW5OUkpKd2Y2REdVdC1heF93NE96dDZHNk4w?oc=5",
+          "source_name": "Google News 汽车行业",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "德语媒体：中国正在重塑全球汽车市场 dw.com",
+          "content": "德语媒体：中国正在重塑全球汽车市场 dw.com",
+          "published_at": "Tue, 17 Mar 2026 15:06:43 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C100",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "智能驾驶：即将全面爆发 - 新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1pRFMybEVhQnAwQWVFcDdfbDFiRmxxdGF6WXZUZ3doeGtDMlRIR0NxX0hfakdzRTk4aFdGWUoyUkM3YlNpRXo3S1pTZU9zekRnV2pMVTRleVdNU0FXN3pnYjFRa0dvcFRLRzV0Mk9KSnZRSjRGeWc?oc=5",
+          "source_name": "Google News 智能驾驶",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "智能驾驶：即将全面爆发 新浪财经",
+          "content": "智能驾驶：即将全面爆发 新浪财经",
+          "published_at": "Tue, 17 Mar 2026 16:00:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C108",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "英伟达深化与现代汽车集团合作，联手打造L2及以上辅助驾驶 - 新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYkpVeUl4MGstNmdNSlJuSExyeXhVRHlkdUh1YlJ5RndrakxFdnZ2X3FjWURkbU0zbzBGVm1sSnh1ajJPZ25rNTdXbFI2UE5jN0NnUTdVdG4xMzhCenZYWDNVSjBOMmxleXdxcW44Snp1djBjbjFRbW51OHF2a2ZISktrM3BYV3RTTUpsaHZUOE1KeHhseW8xcWdGMjRCdjVZRjNGTndUd1NuUzMxeXJqOHl2UDk4UG95a09DTw?oc=5",
+          "source_name": "Google News 智能驾驶",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "英伟达深化与现代汽车集团合作，联手打造L2及以上辅助驾驶 新浪财经",
+          "content": "英伟达深化与现代汽车集团合作，联手打造L2及以上辅助驾驶 新浪财经",
+          "published_at": "Wed, 18 Mar 2026 03:23:03 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C121",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "魏建军谈汽车产业高质量发展_新浪新闻 - 新浪网",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBvUlJpWlM4Nk11YU9EdVdyRkhLRmZrazgzd0dHeTBEc19NTnF1b3NqQTRaWi1MaURQXzZPT184bkVWeTRzY18xNW9mUDJFa2FuMm1oZHpqVndOSGltZVFFdURqWQ?oc=5",
+          "source_name": "Google News 汽车行业",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "魏建军谈汽车产业高质量发展_新浪新闻 新浪网 热点｜人民日报问道魏建军 公信力成中国汽车强国关键 凤凰网汽车 深耕行业36年 魏建军的“立信”思考与中国汽车的强国跃迁之路 爱咖号",
+          "content": "魏建军谈汽车产业高质量发展_新浪新闻 新浪网 热点｜人民日报问道魏建军 公信力成中国汽车强国关键 凤凰网汽车 深耕行业36年 魏建军的“立信”思考与中国汽车的强国跃迁之路 爱咖号",
+          "published_at": "Tue, 17 Mar 2026 12:22:00 GMT",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C132",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "recommended_topics": {},
+  "selected_topic": "",
+  "selected_sources": [],
+  "draft_path": "",
+  "cards_path": "",
+  "review_score": 0,
+  "review_passed": false,
+  "review_feedback": "",
+  "publish_results": [],
+  "sources": "rss,hn,github,hot,tavily,youtube_api",
+  "direction": "",
+  "platforms": "",
+  "no_cards": false,
+  "error": "",
+  "history": [
+    {
+      "stage": "search",
+      "message": "素材池 133 条: /Users/dora/Documents/test_auto_write-factary/content/pool/2026-03-18-pool.json",
+      "time": "2026-03-18T12:02:51.783326"
+    },
+    {
+      "stage": "search",
+      "message": "完成",
+      "time": "2026-03-18T12:02:51.783345"
+    },
+    {
+      "stage": "plan",
+      "message": "完成",
+      "time": "2026-03-18T13:10:59.255899"
+    }
+  ]
+}

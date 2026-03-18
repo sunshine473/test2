@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
-from typing import Any
+from typing import Any, Optional
 
 
 @dataclass
@@ -17,7 +17,7 @@ class RawMaterial:
     content: str = ""
     published_at: str = ""
     language: str = "en"
-    raw_data: dict[str, Any] | None = None
+    raw_data: Optional[dict[str, Any]] = None
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)
@@ -70,8 +70,8 @@ class MaterialPool:
     dedup_total: int
     cluster_summary: dict[str, Any]
     items: list[RawMaterial] = field(default_factory=list)
-    notion_saved: int | None = None
-    notion_error: str | None = None
+    notion_saved: Optional[int] = None
+    notion_error: Optional[str] = None
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)

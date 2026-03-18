@@ -13,6 +13,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from dotenv import load_dotenv
+from typing import Optional
 load_dotenv(PROJECT_ROOT / ".env")
 
 POOL_DIR = PROJECT_ROOT / "content" / "pool"
@@ -26,7 +27,7 @@ def _truncate(text: str) -> str:
     return text[:MAX_RESULT_LEN] + f"\n...(已截断，原文 {len(text)} 字符)"
 
 
-def _find_latest_pool() -> Path | None:
+def _find_latest_pool() -> Optional[Path]:
     if not POOL_DIR.exists():
         return None
     pools = sorted(POOL_DIR.glob("*-pool.json"), reverse=True)
