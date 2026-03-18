@@ -4,7 +4,7 @@ import json
 from dataclasses import dataclass, field, asdict
 from datetime import datetime
 from pathlib import Path
-from typing import List, Dict
+from typing import List, Dict, Optional
 
 PIPELINE_DIR = Path(__file__).resolve().parent.parent.parent / "content" / "pipeline"
 
@@ -69,7 +69,7 @@ class PipelineState:
         return cls(**data)
 
     @classmethod
-    def find_latest(cls) -> "PipelineState | None":
+    def find_latest(cls) -> Optional["PipelineState"]:
         if not PIPELINE_DIR.exists():
             return None
         files = sorted(PIPELINE_DIR.glob("*.json"), reverse=True)
