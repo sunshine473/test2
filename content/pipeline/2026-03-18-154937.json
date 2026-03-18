@@ -1,0 +1,23 @@
+{
+  "pipeline_id": "2026-03-18-154937",
+  "created_at": "2026-03-18T15:49:37.063077",
+  "current_stage": "search",
+  "status": "running",
+  "pool_path": "",
+  "plan_result": {},
+  "recommended_topics": {},
+  "selected_topic": "",
+  "selected_sources": [],
+  "draft_path": "",
+  "cards_path": "",
+  "review_score": 0,
+  "review_passed": false,
+  "review_feedback": "",
+  "publish_results": [],
+  "sources": "rss,hn,github,hot,tavily,youtube_api",
+  "direction": "",
+  "platforms": "",
+  "no_cards": false,
+  "error": "",
+  "history": []
+}

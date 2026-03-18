@@ -14,6 +14,7 @@
 import os
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Union
 
 from generator.gemini_client import generate_text
 
@@ -105,7 +106,7 @@ class QualityScore:
         return "\n".join(lines)
 
 
-def review_article(draft_path: str | Path) -> QualityScore:
+def review_article(draft_path: Union[str, Path]) -> QualityScore:
     """使用 Gemini 评估文章质量"""
     draft_path = Path(draft_path)
     if not draft_path.exists():
