@@ -22,6 +22,12 @@ class ZhihuPublisher(BrowserPublisher):
         except Exception:
             return False
 
+    def _is_logged_in(self, page) -> bool:
+        try:
+            return page.locator('textarea[placeholder*="标题"]').first.is_visible(timeout=2000)
+        except Exception:
+            return False
+
     def _do_publish(self, page, article: Article, config: dict) -> PublishResult:
         # 1. 确保在编辑器页面
         if "write" not in page.url:

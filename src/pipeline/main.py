@@ -16,6 +16,7 @@ import json
 import sys
 import traceback
 from pathlib import Path
+from typing import Optional
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
@@ -66,13 +67,14 @@ class Pipeline:
         return PipelineState.list_recent(limit=limit)
 
     @staticmethod
-    def _next_stage(stage: str) -> str | None:
+    def _next_stage(stage: str):
+        """Return next stage or None"""
         idx = Pipeline.STAGE_ORDER.index(stage)
         if idx + 1 >= len(Pipeline.STAGE_ORDER):
             return None
         return Pipeline.STAGE_ORDER[idx + 1]
 
-    def run(self, until: str | None = None, auto: bool = False) -> PipelineState:
+    def run(self, until: Optional[str] = None, auto: bool = False) -> PipelineState:
         """从 current_stage 顺序执行，遇到人工节点或 until 停止。"""
         self.state.status = "running"
         start_idx = self.STAGE_ORDER.index(self.state.current_stage)
@@ -180,8 +182,35 @@ class Pipeline:
         elif all_topics:
             print("\n[Notion Topics] 未配置凭据，跳过同步")
 
+        # 保存推荐选题到 state
+        self.state.recommended_topics = all_topics
+
     def _run_select(self, auto: bool = False):
         if auto:
+            # 使用 AI 选题评估器
+            from pipeline.ai_selector import select_best_topic
+
+            print("\n  🤖 AI 正在评估推荐选题...")
+
+            # 优先使用 recommended_topics（AI 推荐的结构化选题）
+            if self.state.recommended_topics:
+                # 获取指定方向的选题，如果没有指定方向则取第一个方向
+                direction = self.state.direction or list(self.state.recommended_topics.keys())[0]
+                topics = self.state.recommended_topics.get(direction, [])
+
+                if topics:
+                    selected = select_best_topic(topics, direction)
+                    if selected:
+                        self.state.selected_topic = selected["title"]
+                        self.state.selected_sources = selected.get("source_urls", [])
+                        ai_reason = selected.get("ai_selection_reason", "评分最高")
+                        print(f"  ✅ AI 选题: {self.state.selected_topic}")
+                        print(f"  📊 评分: {selected.get('score', 0)}")
+                        print(f"  💡 选择理由: {ai_reason}")
+                        return
+
+            # 如果没有 recommended_topics，回退到从 plan_result 中选择
+            print("  ⚠ 未找到 AI 推荐选题，使用评分最高的素材")
             for ddata in self.state.plan_result.values():
                 items = ddata.get("items", [])
                 if items:

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 from typing import Iterable
 
@@ -32,13 +33,14 @@ def load_draft_package(filepath: str) -> DraftPackage:
                 metadata = {}
             content = parts[2]
 
+    extracted_title = _extract_markdown_title(content)
     if isinstance(metadata, dict):
-        title = str(metadata.get("title", title) or title)
+        title = str(metadata.get("title", extracted_title or title) or extracted_title or title)
     else:
         metadata = {}
 
     slug = path.stem
-    cards_html = path.with_name(path.stem + "-cards.html")
+    cards_html = _resolve_cards_html_path(path)
     assets = {
         "cover_image": str(metadata.get("cover_image", "") or ""),
         "images": extract_images_from_cards_html(cards_html),
@@ -143,3 +145,23 @@ def _markdown_to_plain_text(markdown_text: str) -> str:
             stripped = stripped.lstrip("#").strip()
         lines.append(stripped)
     return "\n".join(line for line in lines if line).strip()
+
+
+def _extract_markdown_title(markdown_text: str) -> str:
+    for line in markdown_text.splitlines():
+        stripped = line.strip()
+        match = re.match(r"^#\s+(.+)$", stripped)
+        if match:
+            return match.group(1).strip()
+    return ""
+
+
+def _resolve_cards_html_path(path: Path) -> Path:
+    direct = path.with_name(path.stem + "-cards.html")
+    if direct.exists():
+        return direct
+
+    # pipeline._run_write() 生成卡片时使用不带日期的 slug，这里做兼容回退。
+    fallback_stem = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", path.stem)
+    fallback = path.with_name(fallback_stem + "-cards.html")
+    return fallback

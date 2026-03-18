@@ -1,0 +1,28 @@
+{
+  "pipeline_id": "2026-03-15-204325",
+  "created_at": "2026-03-15T20:43:25.646854",
+  "current_stage": "search",
+  "status": "failed",
+  "pool_path": "",
+  "plan_result": {},
+  "selected_topic": "",
+  "selected_sources": [],
+  "draft_path": "",
+  "cards_path": "",
+  "review_score": 0,
+  "review_passed": false,
+  "review_feedback": "",
+  "publish_results": [],
+  "sources": "rss,hn,github,hot,tavily,youtube_api",
+  "direction": "",
+  "platforms": "",
+  "no_cards": false,
+  "error": "search: name 'Optional' is not defined\nTraceback (most recent call last):\n  File \"/Users/dora/Documents/test_auto_write-factary/src/pipeline/main.py\", line 91, in run\n    handler(auto=auto)\n  File \"/Users/dora/Documents/test_auto_write-factary/src/pipeline/main.py\", line 124, in _run_search\n    from collector.search import search\n  File \"/Users/dora/Documents/test_auto_write-factary/src/collector/search.py\", line 29, in <module>\n    def search(sources: list[str], output_path: Optional[str] = None) -> dict:\n                                                ^^^^^^^^\nNameError: name 'Optional' is not defined\n",
+  "history": [
+    {
+      "stage": "search",
+      "message": "失败: name 'Optional' is not defined",
+      "time": "2026-03-15T20:43:25.762023"
+    }
+  ]
+}

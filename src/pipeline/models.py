@@ -4,6 +4,7 @@ import json
 from dataclasses import dataclass, field, asdict
 from datetime import datetime
 from pathlib import Path
+from typing import List, Dict
 
 PIPELINE_DIR = Path(__file__).resolve().parent.parent.parent / "content" / "pipeline"
 
@@ -17,15 +18,16 @@ class PipelineState:
 
     # 各阶段产出
     pool_path: str = ""
-    plan_result: dict = field(default_factory=dict)
+    plan_result: Dict = field(default_factory=dict)
+    recommended_topics: Dict = field(default_factory=dict)  # AI 推荐的选题 {direction: [topics]}
     selected_topic: str = ""
-    selected_sources: list[str] = field(default_factory=list)
+    selected_sources: List[str] = field(default_factory=list)
     draft_path: str = ""
     cards_path: str = ""
     review_score: int = 0
     review_passed: bool = False
     review_feedback: str = ""
-    publish_results: list[dict] = field(default_factory=list)
+    publish_results: List[Dict] = field(default_factory=list)
 
     # 配置
     sources: str = "rss,hn,github,hot,tavily,youtube_api"
@@ -34,7 +36,7 @@ class PipelineState:
     no_cards: bool = False
 
     error: str = ""
-    history: list[dict] = field(default_factory=list)
+    history: List[Dict] = field(default_factory=list)
 
     def __post_init__(self):
         if not self.pipeline_id:

@@ -12,6 +12,7 @@ import os
 import sys
 from datetime import datetime
 from pathlib import Path
+from typing import Optional
 
 # 确保项目根目录在 sys.path 中
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -26,7 +27,7 @@ from normalizer.main import normalize, save_material_pool
 POOL_DIR = PROJECT_ROOT / "content" / "pool"
 
 
-def search(sources: list[str], output_path: str | None = None) -> dict:
+def search(sources: list[str], output_path: Optional[str] = None) -> dict:
     """执行搜索阶段：采集 → 去重聚类 → 输出素材池 JSON → Notion 同步。"""
     ensure_utf8()
     config = load_config()

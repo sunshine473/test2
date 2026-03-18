@@ -1,0 +1,59 @@
+{
+  "pipeline_id": "2026-03-15-205120",
+  "created_at": "2026-03-15T20:51:20.199459",
+  "current_stage": "publish",
+  "status": "completed",
+  "pool_path": "",
+  "plan_result": {},
+  "selected_topic": "Ageless Linux – Software for humans of indeterminate age",
+  "selected_sources": [],
+  "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-15-Ageless-Linux-Software-for-humans-of-indeterminate-age.md",
+  "cards_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/Ageless-Linux-Software-for-humans-of-indeterminate-age-cards.html",
+  "review_score": 93,
+  "review_passed": true,
+  "review_feedback": "",
+  "publish_results": [
+    {
+      "platform": "wechat",
+      "status": "failed",
+      "message": "获取 access_token 失败: {'errcode': 40164, 'errmsg': 'invalid ip 183.227.255.84 ipv6 ::ffff:183.227.255.84, not in whitelist rid: 69b6ac1d-25ee044a-61ec4154'}"
+    },
+    {
+      "platform": "zhihu",
+      "status": "failed",
+      "message": "未登录，请重新运行（浏览器会打开登录页面）"
+    },
+    {
+      "platform": "xiaohongshu",
+      "status": "failed",
+      "message": "小红书需要至少 1 张图片，请先生成卡片"
+    }
+  ],
+  "sources": "rss,hn,github,hot,tavily,youtube_api",
+  "direction": "",
+  "platforms": "",
+  "no_cards": false,
+  "error": "review: No module named 'google.generativeai'\nTraceback (most recent call last):\n  File \"/Users/dora/Documents/test_auto_write-factary/src/pipeline/main.py\", line 91, in run\n    handler(auto=auto)\n  File \"/Users/dora/Documents/test_auto_write-factary/src/pipeline/main.py\", line 231, in _run_review\n    from reviewer.quality_checker import review_article\n  File \"/Users/dora/Documents/test_auto_write-factary/src/reviewer/__init__.py\", line 3, in <module>\n    from .quality_checker import QualityScore, review_article\n  File \"/Users/dora/Documents/test_auto_write-factary/src/reviewer/quality_checker.py\", line 18, in <module>\n    import google.generativeai as genai\nModuleNotFoundError: No module named 'google.generativeai'\n",
+  "history": [
+    {
+      "stage": "write",
+      "message": "完成",
+      "time": "2026-03-15T20:53:52.656667"
+    },
+    {
+      "stage": "review",
+      "message": "失败: No module named 'google.generativeai'",
+      "time": "2026-03-15T20:53:52.665922"
+    },
+    {
+      "stage": "review",
+      "message": "完成",
+      "time": "2026-03-15T20:54:52.776887"
+    },
+    {
+      "stage": "publish",
+      "message": "完成",
+      "time": "2026-03-15T21:01:49.115540"
+    }
+  ]
+}

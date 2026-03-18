@@ -15,7 +15,7 @@ import os
 from dataclasses import dataclass
 from pathlib import Path
 
-import google.generativeai as genai
+from generator.gemini_client import generate_text
 
 
 @dataclass
@@ -113,13 +113,9 @@ def review_article(draft_path: str | Path) -> QualityScore:
 
     content = draft_path.read_text(encoding="utf-8")
 
-    # 配置 Gemini
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
-        raise ValueError("未配置 GEMINI_API_KEY")
-
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-2.0-flash-exp")
+    # 复用统一 Gemini 客户端配置，避免 reviewer 与 generator 依赖漂移。
+    if not (os.getenv("GOOGLE_API_KEY") or os.getenv("YOUTUBE_API_KEY") or os.getenv("GEMINI_API_KEY")):
+        raise ValueError("未配置 GOOGLE_API_KEY / YOUTUBE_API_KEY / GEMINI_API_KEY")
 
     prompt = f"""你是一位资深内容编辑，负责评估文章质量。请按以下 6 个维度对文章打分，并给出具体反馈。
 
@@ -186,8 +182,7 @@ def review_article(draft_path: str | Path) -> QualityScore:
 {content}
 """
 
-    response = model.generate_content(prompt)
-    result_text = response.text.strip()
+    result_text = generate_text(prompt, task="summary", temperature=0.2).strip()
 
     # 提取 JSON（去除可能的 markdown 代码块）
     if "```json" in result_text:

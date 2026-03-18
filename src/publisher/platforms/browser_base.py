@@ -89,12 +89,16 @@ class BrowserPublisher(BasePublisher):
         self._random_delay(3, 5)
 
         # 如果被重定向到登录页，等待用户手动登录
-        if self._is_login_page(page):
+        if self._is_login_page(page) and not self._is_logged_in(page):
             print(f"[{self.name}] 检测到登录页面，请在浏览器中手动登录...")
             print(f"[{self.name}] 登录完成后会自动继续（最多等待 300 秒）")
             for _ in range(150):
                 time.sleep(2)
-                if not self._is_login_page(page):
+                try:
+                    page.reload(wait_until="domcontentloaded", timeout=15000)
+                except Exception:
+                    pass
+                if self._is_logged_in(page) or not self._is_login_page(page):
                     print(f"[{self.name}] 登录成功！")
                     self._random_delay(3, 5)
                     # 登录后重新导航到编辑器
@@ -111,6 +115,10 @@ class BrowserPublisher(BasePublisher):
         """判断当前是否在登录页，子类可覆盖"""
         url = page.url.lower()
         return "login" in url or "signin" in url or "sign-in" in url
+
+    def _is_logged_in(self, page) -> bool:
+        """判断是否已经登录，子类可覆盖更精确的检测逻辑。"""
+        return False
 
     def _do_publish(self, page, article: Article, config: dict) -> PublishResult:
         """子类实现具体的页面操作"""
