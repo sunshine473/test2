@@ -1,0 +1,90 @@
+[
+  {
+    "direction": "tech_ai",
+    "direction_label": "AI 科技",
+    "topic": "AI模型小型化浪潮：从GPT-5.4 Mini到Mistral Forge，开发者如何抓住新机遇？",
+    "score": 68.6,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-18-AI模型小型化浪潮从GPT-54-Mini到Mistral-Forge开发者如何抓住新机遇.md",
+    "review_score": 90,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "success",
+        "message": "笔记已保存到草稿箱"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-18-212251"
+  },
+  {
+    "direction": "tech_ai",
+    "direction_label": "AI 科技",
+    "topic": "Python JIT回归：AI时代性能瓶颈的突破与语言生态的重塑",
+    "score": 65.2,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-18-Python-JIT回归AI时代性能瓶颈的突破与语言生态的重塑.md",
+    "review_score": 92,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "success",
+        "message": "笔记已保存到草稿箱"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-18-213134"
+  },
+  {
+    "direction": "auto",
+    "direction_label": "汽车",
+    "topic": "新能源“中场战事”：2024销量榜单背后，谁在乘风破浪，谁又逆风挣扎？",
+    "score": 70,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-18-新能源中场战事2024销量榜单背后谁在乘风破浪谁又逆风挣扎.md",
+    "review_score": 91,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "failed",
+        "message": "小红书需要至少 1 张图片，请先生成卡片"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-18-213621"
+  },
+  {
+    "direction": "auto",
+    "direction_label": "汽车",
+    "topic": "小米SU7与华为智界S7：两大科技巨头，谁能定义智能电动车的“下半场”？",
+    "score": 70,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-18-小米SU7与华为智界S7两大科技巨头谁能定义智能电动车的下半场.md",
+    "review_score": 89,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "success",
+        "message": "笔记已保存到草稿箱"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-18-213751"
+  }
+]

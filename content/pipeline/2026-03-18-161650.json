@@ -1,0 +1,410 @@
+{
+  "pipeline_id": "2026-03-18-161650",
+  "created_at": "2026-03-18T16:16:50.000833",
+  "current_stage": "publish",
+  "status": "completed",
+  "pool_path": "/Users/dora/Documents/test_auto_write-factary/content/pool/2026-03-18-pool.json",
+  "plan_result": {
+    "tech_ai": {
+      "direction": "tech_ai",
+      "label": "AI 科技",
+      "input_count": 20,
+      "filtered_count": 14,
+      "score_summary": {
+        "max": 50.0,
+        "min": 35.0,
+        "avg": 43.93
+      },
+      "items": [
+        {
+          "title": "A new way to express yourself: Gemini can now create music",
+          "url": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "The Gemini app now features our most advanced music generation model Lyria 3, empowering anyone to make 30-second tracks using text or images.",
+          "content": "The Gemini app now features our most advanced music generation model Lyria 3, empowering anyone to make 30-second tracks using text or images.",
+          "published_at": "Wed, 18 Feb 2026 16:01:38 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C005",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Gemini 3.1 Flash-Lite: Built for intelligence at scale",
+          "url": "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3 series model yet.",
+          "content": "Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3 series model yet.",
+          "published_at": "Tue, 03 Mar 2026 16:35:55 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C007",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+          "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
+          "content": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
+          "published_at": "Thu, 19 Feb 2026 16:06:14 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C008",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "2000万只“龙虾”进入企业，阿里的新企业Agent故事 | 最前线",
+          "url": "https://36kr.com/p/3727395193388161?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "对钉钉创始人无招而言，在 AI 时代顿悟的瞬间并不是 ChatGPT 横空出世，而是早在 2020 年。第一次离开钉钉时，他游历了大半个中国，调研了许许多多不同的城市，之后所想通的事。 “我想明白，AI 时代最颠覆性的变化不是其他，而是使用主体变了。”他看到，在二三线甚至更远的城市，因为互联网使用主体的变化，导致出现了各种各样不一样的应用供给——类似拼多多等应用崛起，就是这个逻辑。 而在大模型来了之后，这个判断更加清晰：在 AI 时代，互联网执行主体从人变成了 AI。 这个判断也贯穿了钉钉在 3 月 17 日举办的新品发布会。 几乎同一时间，阿里在 3 月 16 日宣布几乎是大模型时代以来最重",
+          "content": "对钉钉创始人无招而言，在 AI 时代顿悟的瞬间并不是 ChatGPT 横空出世，而是早在 2020 年。第一次离开钉钉时，他游历了大半个中国，调研了许许多多不同的城市，之后所想通的事。 “我想明白，AI 时代最颠覆性的变化不是其他，而是使用主体变了。”他看到，在二三线甚至更远的城市，因为互联网使用主体的变化，导致出现了各种各样不一样的应用供给——类似拼多多等应用崛起，就是这个逻辑。 而在大模型来了之后，这个判断更加清晰：在 AI 时代，互联网执行主体从人变成了 AI。 这个判断也贯穿了钉钉在 3 月 17 日举办的新品发布会。 几乎同一时间，阿里在 3 月 16 日宣布几乎是大模型时代以来最重要的战略调整——宣布正式成立 Alibaba Token Hub（ATH）事业群，千问事业部。钉钉事业部也被归在 ATH 事业群中，负责打造 B 端 AI 应用入口，将模型能力深度融入企业工作流。 3 月 16 日，阿里巴巴宣布正式成立 Alibaba Token Hub（ATH）事业群，千问事业部、悟空事业部等归入 ATH 事业群。其中悟空事业部定位为“打造 B 端 AI 应用入口，将模型能力深度融入企业工作流”。 来源：钉钉 这次发布会发生在阿里在完成关键战略重组之际，也是 ATH 事业群的第一次正式发布。 这次钉钉最重要的变化，就是推出了全新的 AI 原生工作平台“悟空”。颇具象征性的是，钉钉所在的事业群正式改名为“悟空事业部”。 悟空独立于钉钉，又以一种紧密的方式和钉钉共存——钉钉里的 Agent 能力，由悟空提供。这意味着所有 2000 万存量的企业用户，未来也可以在钉钉里用上悟空带来的能力。 从最初的来往、到钉钉，再到如今的“悟空事业群”。这是某种程度的“革自己的命吗”？ 悟空的诞生并非突然。去年 12 月底，钉钉发布“木兰版”时，无招就埋下了伏笔：钉钉的新定位是 Agent OS，全球首个为 AI 打造的工作智能操作系统。同时还推出了企业 AI 硬件 DingTalk Real。当时这个硬件里装的，就是现在悟空的雏形。 曾经的无招全身心推广钉钉，甚至自己都不用微信，和亲朋好友联系都只用钉钉；但现在的无招说自己“破除了我执”，“新时代，无论叫钉钉还是悟空都不重要了。”他说。 他解释说，这是因为，新时代的 AI work platform 不依赖于钉钉本体。“至于你是用钉钉还是不用钉钉，你用 Slack 还是 teams，还是用飞书还是企业微信？无所谓，悟空都可以接。” 在使用体验上，悟空是个比钉钉激进得多的产品。钉钉完成了全面 CLI（命令行界面）化改造，让悟空 Agent 能够原生操作钉钉上千项能力，而非模拟人类点击图形界面。 这意味着，过去需要人在钉钉上点击操作的功能，现在 AI 可以直接调用。用户在路上收到客户邮件，可以直接让悟空远程操作公司电脑下载文件，按照之前处理过的报关格式整理好发回来。整个过程不需要人工介入，AI 自己完成文件下载、格式整理、发送到手机的全部流程。 从“个人玩具”到企业生产力，悟空主打企业级安全 来源：钉钉 当前市面上的 AI Agent，大多还只能做些写文案、搜资料的工作。一旦要接入企业真实业务，问题就来了：谁有权限调用哪些数据？AI 做了什么操作能不能追溯？每天烧了多少 token 成本怎么算？这些问题都没解决。 悟空的设计逻辑完全不同。它直接继承企业的权限体系，员工能看什么数据，AI 就能看什么数据；所有操作都在沙箱里跑，留痕可查；token 消耗实时统计，像管预算一样管 AI 开支。 “这是悟空与其他 AI Agent 的根本区别：别人解决的是让 AI 能干活，悟空解决的是让 AI 在企业里安全、可控、算得清账地干活。”无招在发布会上表示。 这个差异背后，是钉钉团队近 10 个月的技术攻坚。无招在会后采访中坦言，要把企业级安全做到位，这并不容易。“光是文件读写，AI 可以一秒钟上千次，要做版本管理、做回退，这不是很多家公司可以做得到。” OpenClaw 爆火的同时，安全问题也在发酵。国家互联网应急中心在3月专门发了风险提示，核心问题是默认安全配置太弱，容易被攻击者拿到系统控制权；在国外，Meta、Google 都已经在公司设备上禁用或限制 OpenClaw。 钉钉的态度也很明确。OpenClaw爆火后，有不少国内企业咨询“能不能用 OpenClaw”，钉钉客服的回复是：没有专业人员做安全措施，不建议直接用在办公环境。 阿里系 B 端能力将陆续接入，目标“全球最大 toB Skill 市场” 按照规划，淘宝、天猫、1688、支付宝、阿里云这些阿里系的 B 端能力，都会以 Skill 的形式陆续接入悟空。 拿1688选品作为例子，以前商家要自己一个个看供应商资质、比价格、谈条件。现在悟空可以帮用户做背景调查，自动筛掉不靠谱的供应商，全网比价后给出推荐。整个采购效率能提升不少。 悟空还同步上线了 AI 能力市场，从开发、审核、上架到分发，提供全套体系。悟空兼容开源 Skill，目标是做成“全球最大的 toB Skill 市场”。 来源：钉钉 此外，悟空这次还发布了 OPT（One Person Team，一人团队）解决方案，首批上线 10 个行业版本：电商、跨境电商、知识类博主、开发、门店、设计、制造、法律、财税、猎头。 和大多数通用 Agent 框架不一样，悟空 OPT 给的不是空架子，而是打包好的“Skill 套件+工作流+行业数据”。用户只管做决策和验收，执行的工作 AI 来完成。 跨境电商就是个典型场景。以前，用户得自己刷亚马逊热榜、1688 比价、找供应商确认库存物流、优化商品标题、做多语言视频。现在悟空的“选品雷达—物料制作—卖点测试”一套流程下来，原本一周的活儿，一个下午就能搞定。 无招对36氪表示，未来，中国Agent真正的竞争力不在于拼原生大模型，“模型层，中国现在暂时拼不过，还需要时间追赶”。真正的强势在于模型和行业的结合，用行业数据产生的模型和经验。 “你让 AI 看懂一个制造业的翻修工图纸，如果能看懂，中国生产的指数级变革就开始了。”他说，“这才是我们应该关注的东西。” 来源：钉钉 悟空的野心不止于国内。按照规划，后续会支持接入微信、Slack 等全球主流 IM 平台，电脑端、手机端都能用。对钉钉的 2000 万企业用户来说，升级到 AI 2.0 版本就能直接用上悟空，原有的钉钉付费客户目前可以免费使用悟空。 悟空的发布，也标志着钉钉从协同办公工具正式进化为 AI 原生工作平台。“过去 11 年，钉钉改变了我们的工作方式，今天，悟空正在尝试定义 AI 时代全新的工作方式。”无招说。",
+          "published_at": "2026-03-18 14:06:36  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C001",
+            "cluster_size": 1,
+            "score": 49.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:14.0"
+            ]
+          }
+        },
+        {
+          "title": "From games to biology and beyond: 10 years of AlphaGo’s impact",
+          "url": "https://deepmind.google/blog/10-years-of-alphago/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Ten years since AlphaGo, we explore how it is catalyzing scientific discovery and paving a path to AGI.",
+          "content": "Ten years since AlphaGo, we explore how it is catalyzing scientific discovery and paving a path to AGI.",
+          "published_at": "Mon, 09 Mar 2026 13:52:36 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C006",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
+          "url": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Our latest image generation model offers advanced world knowledge, production ready specs, subject consistency and more, all at Flash speed.",
+          "content": "Our latest image generation model offers advanced world knowledge, production ready specs, subject consistency and more, all at Flash speed.",
+          "published_at": "Thu, 26 Feb 2026 16:01:50 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C014",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "Mistral AI Releases Forge",
+          "url": "https://mistral.ai/news/forge",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://mistral.ai/news/forge Comments URL: https://news.ycombinator.com/item?id=47418295 Points: 363 # Comments: 66",
+          "content": "Article URL: https://mistral.ai/news/forge Comments URL: https://news.ycombinator.com/item?id=47418295 Points: 363 # Comments: 66",
+          "published_at": "Tue, 17 Mar 2026 21:04:26 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C013",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Have a fucking website",
+          "url": "https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/ Comments URL: https://news.ycombinator.com/item?id=47421442 Points: 314 # Comments: 169",
+          "content": "Article URL: https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/ Comments URL: https://news.ycombinator.com/item?id=47421442 Points: 314 # Comments: 169",
+          "published_at": "Wed, 18 Mar 2026 03:53:42 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C010",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:10"
+            ]
+          }
+        },
+        {
+          "title": "当黄仁勋和吴泳铭喊出同一个英文单词",
+          "url": "https://36kr.com/p/3727806050565251?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "文｜邱晓芬 编辑｜苏建勋 美国旧金山当地时间3月16日，英伟达GTC 2026大会正式开幕。在英伟达创始人兼CEO黄仁勋两个小时慷慨激昂的主题演讲中，贯穿的一个关键词是——Token。 △ 黄仁勋，图源：发布会截图 无独有偶，在GTC 2026的前一天，阿里巴巴宣布成立Token事业群——这是地位与淘天电商、阿里云一般的核心独立事业群。这个新事业群里，阿里也明确了“创造Token、输送Token、应用Token”链路。 Token，是大模型处理文本信息时的基本语义单位。当你输入一段文本时，模型会先通过分词器，将文本切割成一系列Token。这些Token随即被转换为数值向量，被输送到GPU里进行",
+          "content": "文｜邱晓芬 编辑｜苏建勋 美国旧金山当地时间3月16日，英伟达GTC 2026大会正式开幕。在英伟达创始人兼CEO黄仁勋两个小时慷慨激昂的主题演讲中，贯穿的一个关键词是——Token。 △ 黄仁勋，图源：发布会截图 无独有偶，在GTC 2026的前一天，阿里巴巴宣布成立Token事业群——这是地位与淘天电商、阿里云一般的核心独立事业群。这个新事业群里，阿里也明确了“创造Token、输送Token、应用Token”链路。 Token，是大模型处理文本信息时的基本语义单位。当你输入一段文本时，模型会先通过分词器，将文本切割成一系列Token。这些Token随即被转换为数值向量，被输送到GPU里进行大规模矩阵计算。 在过去，AI产业链上的不同角色，有各自关注的指标和评价标准——底层大模型团队关注模型参数规模、上层的应用团队则用户增长和日活跃度，云服务团队关注算力的利用率和实际收入。 阿里巴巴CEO吴泳铭在内部指出，AI Agent极度依赖Token，未来将进入一个“需求大爆炸”的时期。 而阿里和英伟达此次前后脚强调token，传递的讯号是，在Agent时代来临时，两家巨头希望从技术、产品和商业维度，先行统一度量衡。 或许到不远未来，AI领域的一切指标都要加上一个后缀：“/ 1M tokens”。 万亿叙事：从数据中心到token工厂 “推理拐点已然到来”，黄仁勋在GTC演讲中指出。过去两年，推理计算量增长了约一万倍，使用量增长了约100倍。百万倍的增长，背后实际可感的变化是，AI的作用逐渐 从原来的感知、到生成、到推理，再到能工作。 在这个变化下，黄仁勋在演讲中指出，token与AI企业收入的相关性也越来越清晰—— 一个企业能获得更多算力，就能生成更多token，收入就能提升，同时反哺AI变得更加智能。 这条传递链路下，英伟达是背后最大的受益者，目标也日渐激进。 2025年的GTC上，黄仁勋预测，Blackwell和Rubin平台在2026年之前采购订单规模预期是5000亿美元。而此次GTC上，他给出明年的新目标是， 这一数字将翻倍到1万亿美元以上。 这一雄心，很快得到二级市场的反应，一度推动英伟达的股价上涨4.3%。 为了支撑这一万亿增长目标， 黄仁勋提出了英伟达的全新叙事 ——从数据中心到token工厂。 △英伟达的收入构成，图源：发布会截图 黄仁勋认为，在未来，每一家AI公司、云服务商，都应该以token工厂的效率作为核心经营指标。 甚至，未来的token还将成为全新的“大宗商品”，并将以吞吐量、交互速度为分类标准重新定价。 黄仁勋在演讲中，将token分为四个价格区间—— 免费层：高吞吐、低交互速度区域，主要以广告模式变现； 中级层（每百万token=3美元）、高级层（每百万token=6美元）：吞吐量和交互速度平衡，主要是主流付费领域； 高速层（每百万token=45美元）、超高速层（每百万token=150美元）：高溢价且高交互领域，也是Rubin架构和未来架构主攻的新市场。 黄仁勋强调，英伟达的三大架构都将让客户在免费层，实现极高的吞吐量，而在最高价值的推理层级上，英伟达的新架构吞吐量效率将提升35倍。 △黄仁勋的token经济学，图源：发布会截图 英伟达不再只是GPU芯片公司 不过，要实现万亿美金token工厂的雄心壮志，英伟达就不能和以前一样只是一家GPU公司。 英伟达显然也在改变自己的产品路线，不再简单粗暴堆算力，而是更关注整个平台的综合能力，尤其是 推理表现 。 此次GTC上，黄仁勋交出了新答卷：专门为智能体推理设计了计算系统Vera Rubin——由7款新芯片、5个机架系统、1台超级计算机构成。 据介绍，Vera Rubin主要有以下几项亮点： ①GPU部分：72块GPU通过NVLink高速互联，不仅加速前填充（Prefill）的计算速度，同时保证生成Token时的响应速度（KV Cache）； ②Vera CPU：当智能体调用工具时，往往涉及大量重复逻辑的操作、条件判断的操作，这都是GPU不擅长的。因此，英伟达设计了全新的Vera CPU，充当“调度员”，处理控制任务， 解放GPU。Vera CPU 还是全球唯一用LPDDR5的数据中心CPU。（作者注：低功耗的LPDDR5内存一般用于旗舰手机上） △Vera CPU，图源：发布会截图 ③BlueField 4 + CX 9存储平台：AI工厂需要大量数据处理，为此，英伟达重新构建了一个 专为AI数据流优化的存储网络。 ④CPO Spectrum-X交换机：将光引擎与交换机芯片封装在一起，是全球首款 光封装光学 以太网交换机，改变了过去传统的可插拔模块。 ⑤完全使用液冷方案，安装时间从两天缩短到两个小时 据黄仁勋介绍， Vera Rubin将在2026年下半年开始出货 ，在具体使用时，Vera Rubin系统的优势表现在，推理速度将比上一代Blackwell Ultra快5倍，同时Token成本降低10倍，且在MoE模型里只需过去1/4的GPU。 值得注意的是，英伟达不久前收购了Groq LPU平台，并将其融入了英伟达的计算体系当中。 不过，大而全的Vera Rubin要与短小精悍的Groq LPU融合，必然会产生芯片调度问题。为此，英伟达专门为其打造了一个 操作系统Dynamo。 可以把Dynamo操作系统理解为一个指挥家，将不同的特性的计算任务，分配给更合适的硬件执行，实现效率最大化。 黄仁勋建议，若工作负载以高吞吐为主，建议100% Vera Rubin；若大量工作负载为代码生成等高价值token生成诉求，可引入部分Groq芯片运用，比如25%。 △Groq 3 LPU，图源：发布会截图 目前，Groq LP30已进入量产，由三星代工，预计Q3出货。 据介绍，这种异构协同设计，将使得数据中心在单位功耗下实现了 35倍的性能飞跃 ，并且同时兼顾 超低延迟、高价值推理服务。 除了Vera Rubin之外，英伟达方面还预告了下一代的GPU架构Vera Rubin Ultra（2028年推出）、Feynman架构。 概括而言， 3D堆叠、LPU集成、异构存储、CPO（共封装光学）、铜互联都是未来英伟达平台的核心技术点。 △英伟达的平台路线构成（Blackwell、Rubin、Feynamn），图源：发布会截图 英伟达版OpenClaw，来了 此次演讲中，黄仁勋除了阐述野心，还把篇幅留给了当前大热的OpenClaw——作为人类历史上最受欢迎的开源项目，OpenClaw用几周的时间就超过了Linux过去三十年的成绩。 他认为，OpenClaw有着三大功能：能够解决管理资源（工具、大语言模型）、分解问题且调用智能体、多模态输出并执行，为此，OpenClaw本质上是一个智能体操作系统，地位和HTML、Linux一样重要。 在黄仁勋看来，未来，OpenClaw将重塑企业IT。未来，每一家SaaS公司将成为AaaS公司，在提供工具之外，还将提供每一个特定领域的AI智能体，“一个原本2万亿美元规模的产业，即将成长为数万亿美元规模”。 不过，黄仁勋也提出警示，当智能体可以自由调用企业的敏感数据和代码，OpenClaw将衍生安全风险。因此，英伟达也与OpenClaw的开发者Peter Steinberger合作，推出了企业版本NeMo Claw。 据介绍，NeMo Claw不仅集成了英伟达完整的智能体工具包，还提供了一系列的措施（网络护栏、隐私路由等），保证企业方的数据安全。 △ 英伟达版本OpenClaw，图源：发布会截图 黄仁勋甚至表示，在未来的硅谷的求职场景中，token可能会成为工程师们年薪总包的一部分，”入职附带token配额”，成为硅谷的新晋招聘话题。 图形学的“GPT时刻” 发布会开场，黄仁勋首先发布了神经渲染（Neural Rendering）技术DLSS 5，他将其称之为下一代图形计算技术、“图形学的GPT时刻”。 具体而言， 在DLSS 5中，英伟达由两部分构成：在3D图形和结构化数据的基础上，融入生成式AI和概率计算。 两个部分各有贡献——3D图形和结构化数据，负责提供一个确定性的、符合物理规律的虚拟世界框架；生成式AI和概率计算，则用于填充这个“框架”，在原有的基础上，补充逼真的细节和动态变化。 黄仁勋称，这两种理念的融合，将使得制作的内容美观、经验、且可控。不过，要把这种新的范式推广到游戏之外的行业，比如金融、医疗、制造，首先要解决数据海量、异构的问题。 黄仁勋在演讲中也发表了他对于目前数据的看法。 当前，世界上大部分的数据形态存在形式是数据库、PDF、音频、视频。其中，有九成都是非结构化数据，在多模态感知与理解技术出现前，数据很难被高效查询和检索。 为此，英伟达推出了两个全新的数据工具，黄仁勋称其为 全网最复杂的数据处理系统： cuDF——处理确定性的结构化数据，比如表格、日志等。 （对应前述DLSS 5中的“3D图形和结构化数据”部分） cuVS——处理概率性的非结构化数据，比如通过AI模型把文本、图像、音视频等数据转换成语义向量。 （对应前述DLSS 5中的“生成式AI和概率计算”部分） 目前，这两个数据平台已经被整合进IBM、戴尔、谷歌云等云服务和OEM体系中。 黄仁勋两个小时的演讲，提示了一个趋势，当AI的竞争从“模型竞赛”进入“生产力竞赛”，大家将不会像几年前一样抢GPU、抢算力，而是要抢夺token生产的主导权。 具体到行动上，英伟达提供的是从底层芯片（Rubin/Feynman）、异构架构（GPU+LPU+CPU）、系统设计（全液冷机柜）、再上层操作系统（Op",
+          "published_at": "2026-03-18 10:02:18  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C018",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "Get Shit Done: A meta-prompting, context engineering and spec-driven dev system",
+          "url": "https://github.com/gsd-build/get-shit-done",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://github.com/gsd-build/get-shit-done Comments URL: https://news.ycombinator.com/item?id=47417804 Points: 311 # Comments: 153",
+          "content": "Article URL: https://github.com/gsd-build/get-shit-done Comments URL: https://news.ycombinator.com/item?id=47417804 Points: 311 # Comments: 153",
+          "published_at": "Tue, 17 Mar 2026 20:23:39 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C009",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8"
+            ]
+          }
+        },
+        {
+          "title": "Meta and TikTok let harmful content rise to drove engagement, say whistleblowers",
+          "url": "https://www.bbc.com/news/articles/cqj9kgxqjwjo",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://www.bbc.com/news/articles/cqj9kgxqjwjo Comments URL: https://news.ycombinator.com/item?id=47417814 Points: 267 # Comments: 162",
+          "content": "Article URL: https://www.bbc.com/news/articles/cqj9kgxqjwjo Comments URL: https://news.ycombinator.com/item?id=47417814 Points: 267 # Comments: 162",
+          "published_at": "Tue, 17 Mar 2026 20:24:33 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C011",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8"
+            ]
+          }
+        },
+        {
+          "title": "Meta Horizon Worlds on Meta Quest is being discontinued",
+          "url": "https://communityforums.atmeta.com/blog/AnnouncementsBlog/updates-to-your-meta-quest-experience-in-2026/1369435",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://communityforums.atmeta.com/blog/AnnouncementsBlog/updates-to-your-meta-quest-experience-in-2026/1369435 Comments URL: https://news.ycombinator.com/item?id=47416940 Points: 199 # Comments: 214",
+          "content": "Article URL: https://communityforums.atmeta.com/blog/AnnouncementsBlog/updates-to-your-meta-quest-experience-in-2026/1369435 Comments URL: https://news.ycombinator.com/item?id=47416940 Points: 199 # Comments: 214",
+          "published_at": "Tue, 17 Mar 2026 19:17:16 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C012",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8"
+            ]
+          }
+        },
+        {
+          "title": "36氪首发 | 高能粒子应用核心部件公司完成超亿元融资，加速高端仪器、半导体领域国产替代",
+          "url": "https://36kr.com/p/3727812168367238?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "作者 | 张子怡 编辑 | 袁斯来 36氪获悉，聚焦高能粒子应用系统核心部件的苏州博思得电气有限公司（以下简称“博思得”）近日宣布完成超亿元C轮融资。本轮融资由上海瑞力领投，交银资本、元璟资本跟投。募集资金将主要用于高端产品研发升级及全球化市场布局。 高压发生器、X光射线源是医疗影像、工业无损检测、半导体及高端仪器的核心部件，属于多学科交叉的复杂工程，对产品的性能、一致性、可靠性要求较高，是多众重要核心装备的核心“心脏”部件。其尖端技术与高端市场长期被海外品牌占据。伴随下游医疗与工业高端装备国产化浪潮加速，上游核心部件的自主可控成为产业焦点。 博思得作为国内高能粒子核心应用系统领域的标杆企业，",
+          "content": "作者 | 张子怡 编辑 | 袁斯来 36氪获悉，聚焦高能粒子应用系统核心部件的苏州博思得电气有限公司（以下简称“博思得”）近日宣布完成超亿元C轮融资。本轮融资由上海瑞力领投，交银资本、元璟资本跟投。募集资金将主要用于高端产品研发升级及全球化市场布局。 高压发生器、X光射线源是医疗影像、工业无损检测、半导体及高端仪器的核心部件，属于多学科交叉的复杂工程，对产品的性能、一致性、可靠性要求较高，是多众重要核心装备的核心“心脏”部件。其尖端技术与高端市场长期被海外品牌占据。伴随下游医疗与工业高端装备国产化浪潮加速，上游核心部件的自主可控成为产业焦点。 博思得作为国内高能粒子核心应用系统领域的标杆企业，专注于特种高压电源、X光射线源、高压发生器等产品的自主研发、生产与销售，产品下游应用领域全面覆盖医疗影像、工业检测、半导体与高端仪器三大核心领域，成为下游产业升级发展的重要核心支撑。 目前，博思得已构建起电力电子、高压绝缘技术平台、软件与智能控制、热能管理和材料科学五大技术平台，具备行业领先的高能（100kW）、高压（20-450kV）、高频（500kHz）、高精度和小型化的研发能力，旨在破解高端医疗影像、工业检测、高端仪器等领域核心部件\"卡脖子\"难题。 硬氪了解到，从博思得产品的具体指标来看，公司在软硬件与材料方面，全系产品实现大功率软开关高频逆变；公司是国内少数掌握阴/阳极接地绝缘设计技术，并应用兼具高绝缘与低漏射线率“黄砖材料”的企业。 在控制与测试方面，其掌握kV快速切换技术（上升/下降沿<100us），通过流体计算及有限元仿真实现无限热容技术的X射线源，并实现了高压注油和全性能测试自动化。 基于上述技术积累，博思得不仅实现了在工业和医疗X光影像设备中领先的市场占有率和高端客户覆盖，并已将业务延伸至半导体设备核心部件领域，其研发的离子注入机高压电源打破了海外企业（如AE、XP）的长期垄断，并于2025年正式销售。 博思得从2023年开始加大海外市场拓展，海外收入占比已超30%并快速增长，覆盖包括北美、欧洲、一带一路国家和非洲等地区。为支持医疗领域下游客户的海外战略，博思得进行了多年持续投入，全面提升了研发和体系能力，成为截至目前高压发生器领域中国唯一、全球唯三通过欧盟CE-MDR标准的公司，未来海外市场销售覆盖和占比将进一步提升。 投资人观点： 瑞力医疗投资团队表示： “高压发生器、X光射线源是高端装备的核心基础部件与产业升级的关键环节，当前国产替代趋势明确，海外市场中国企业性价比优势突出。博思得作为该领域的头部企业，拥有深厚的技术积淀与完整的产品线，在高端市场的突破能力尤为突出。我们看好其长期发展潜力，期待通过资本与产业资源的协同，助力公司加速技术创新与产能扩张。” 元璟资本合伙人田敏总表示： “博思得是高压发生器领域少有的兼具正向研发实力与新技术商业化落地能力的企业，我们看好公司在高端场景领域的产品和技术突破能力，特别是海外市场的快速成长和拓展能力。元璟资本将依托在高端制造与医疗器械领域的投资布局与资源积累，全方位支持公司进一步拓展市场、加速全球化布局，成为全球高压发生器领域的重要参与者。”",
+          "published_at": "2026-03-18 10:07:04  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C002",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "想帮大家做「一人公司」，茉莉语境融资百万美元",
+          "url": "https://36kr.com/p/3727752358919305?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "凌晨三点，自媒体博主阿鱼的第32个小红书账号自动发布了一条笔记：“救命！这个方法我要是早知道至少少加200小时班”。此刻她正在熟睡，而在云端，36只龙虾正在执行一套作战计划：4只幕后龙虾负责抓取热点、拆解爆款、审核违禁词，另外32只前台龙虾各自扮演着“工作3年的互联网运营妹子”“靠副业还清8万房贷的上班族”“8年经验的产品老鸟”等不同人格，在32个垂直账号上同时发声。 三个月前，阿鱼还只是一个月入8000、手搓5个账号就精疲力竭的自媒体博主。现在，她一个人指挥的“内容军团”日产出160条稿件，月收入翻四倍。 这不是孤例。在深圳，外贸员小陈用12只龙虾分驻侦察、触达、跟进、报价四个班组，把硅胶制",
+          "content": "凌晨三点，自媒体博主阿鱼的第32个小红书账号自动发布了一条笔记：“救命！这个方法我要是早知道至少少加200小时班”。此刻她正在熟睡，而在云端，36只龙虾正在执行一套作战计划：4只幕后龙虾负责抓取热点、拆解爆款、审核违禁词，另外32只前台龙虾各自扮演着“工作3年的互联网运营妹子”“靠副业还清8万房贷的上班族”“8年经验的产品老鸟”等不同人格，在32个垂直账号上同时发声。 三个月前，阿鱼还只是一个月入8000、手搓5个账号就精疲力竭的自媒体博主。现在，她一个人指挥的“内容军团”日产出160条稿件，月收入翻四倍。 这不是孤例。在深圳，外贸员小陈用12只龙虾分驻侦察、触达、跟进、报价四个班组，把硅胶制品卖到北美和东南亚；在上海，老张雇佣4只龙虾分别盯理财、管待办、维护社交，每周偷回10小时“让脑子下班”。 他们用的工具是龙虾军团（ClawTroop）——成立于2025年的AI智能体基础设施公司茉莉语境最近推出的产品，已服务于自媒体、跨境电商、企业效能等多个场景。ClawTroop是批量小龙虾的部署和管理工具，目的是降低智能体集群的管理门槛，让个人和企业都能以极低成本拥有、训练和调度自己的智能体集群。 「暗涌Waves」独家获悉，茉莉语境已获得香港数据智能集团（Data Intelligence Group Limited，简称DIG）有限公司百万美金投资，其创始团队来自腾讯、字节跳动等企业以及毕业于帝国理工学院、格拉斯哥大学、香港大学等学府。 养过OpenClaw小龙虾的人都知道，光是部署一只起码折腾1-2个小时，更何况批量喂养、使用、调度和管理。在Agent大爆发的临界点，茉莉语境押注的是一场关于“管理前置”的实验——如果未来每个打工人都将指挥一支AI小队，那么制定军规的能力，或许比单兵作战的技巧更值钱。 图源：企业供图 Part01 文本即军规 在确定“龙虾军团”方向前，茉莉语境的团队曾在两个项目上栽过跟头。 第一个项目是基于MCP协议的Cowork工具，试图打造极致的个人生产力助手。“那时候MCP协议很不稳定，底层模型能力也不够智能，”产品负责人周曼回忆。第二个项目更具野心——基于当时更成熟的VibeCoding方向，探索图文视频之外，是否能催生新型的互动H5媒介，产品投放了北美和东南亚市场，但获客成本高昂，双边市场始终无法跑通。 真正的转折发生在痛点背后。作为早期AI工具的重度用户，OpenClaw出现之后，他们开始密集使用OpenClaw来提升效率。一个悖论很快浮现：单只Agent对个人提效明显，但想让整个团队都用起来，“门槛高得离谱”。之前腾讯门口排大队安装小龙虾也在侧面印证了一个事实——当前AI应用的瓶颈从“技术能力”转向了“工程化部署与管理”。 “大厂都在造更聪明的士兵，但没人提供作战手册和指挥系统，”周曼意识到， “如果AI应用真的爆发，‘如何管理AI劳动力’会成为比‘如何使用AI’更刚性的需求。” 龙虾军团就是为了系统性地解决企业和power user批量喂养、使用、调度和管理小龙虾的关键痛点。用户可以在这里批量创建、部署、统一管理你的小龙虾，给它们设定人格、行为准则、技能等，并一次性向成百上千个小龙虾下发任务，查看执行情况。 龙虾军团的产品界面看起来朴素得有些反时代。没有炫酷的3D交互，没有实时生成的图文流，更类似上世纪ERP系统的管理后台：左侧是整齐排列的“龙虾列表”，右侧是四个纯文本输入框——Soul.md（人格）、Agents.md（行为准则）、User.md（对主人的认知）、Tool.md（工具原则）。 “我们把龙虾最核心的配置项单独拉出来，让不懂代码的普通用户也可以随时用文字调整修改、以及批量应用给多个龙虾”周曼在演示时解释。 当市场都在追求拖拽式的无代码界面时，茉莉语境坚持让用户用Markdown格式编写配置文件。理由听起来有些技术原教旨主义：Markdown是最容易被AI理解的结构化语言，同时也是普通人最自然的思考载体。 但这种设计背后是对产品的洞察：AI Agent的“人格”不是参数调节，而是语境构建。四个Markdown文件构成了一个完整的认知框架——Soul.md解决“你是谁”，Agents.md解决“你能做什么”，User.md解决“你在为谁工作”，Tool.md解决“你怎么使用武器”。当用户需要修改某只龙虾的行为时，不需要在层层菜单中寻找开关，只需在文本中增删一行规则，点击“批量推送”，全集群即刻生效。 还可以通过标签给龙虾分组——比如销售组、客服组、小红书组。\"假设你有30只负责销售的Agent，\"周曼举例，\"以前需要逐个调整话术，现在只要在Agents.md里加一条'不允许私自承诺超过9折的折扣'，相关龙虾部队就会同步更新。如果某只龙虾的行为逾矩了，系统会做出提示，用户可以及时补充约束、统一修正。\" Part02 服务OPC：toC到toB 这个看似应该深耕B端SaaS的产品，第一阶段主打OPC（One Person Company，一人公司）和C端用户。 一个自媒体博主，一个人就是一家公司。她可以在龙虾军团里创建5只龙虾组成“小红书矩阵特攻队”——A龙虾早上7点抓取热点选题，B龙虾根据选题生成3个不同风格的标题及正文，C龙虾检查违禁词和敏感内容，D龙虾自动发布并监控初期数据，E龙虾在评论区扮演“前排网友”互动。整个流程无需代码，只需要在后台配置好人格文件，设定好“如果阅读量低于1000则自动调整标题关键词”的行为准则。 这种转向揭示了AI应用渗透路径的特殊性：它可能遵循“从C端发烧友到中小微企业，再向上渗透”的反向路径，而非传统SaaS的“从大企业向下普及”。当每个人都可以低成本拥有一支AI军团，组织的边界、管理的定义、甚至“工作”本身的概念，都将被重新书写。 尽管如此，茉莉语境免不了面临疑问：如果OpenAI明天推出原生的Swarm多Agent协作功能，并提供开箱即用的管理界面，龙虾军团会不会被瞬间击穿？ 更深刻的悖论在于“云端养虾”模式本身，试图解决隐私焦虑——不用本地部署，无需疯狂投喂个人数据，通过云端容器隔离和任务级上下文赋予来保证安全。但这也意味着用户必须将核心工作流托付给第三方云端。 “龙虾军团ClawTroop”给出的答案是“渐进式智能”—— Agent的智能化应该是“用出来的”，不是“喂出来的” 。与其让用户先本地部署、疯狂投喂文档（涉及隐私焦虑且效果不稳定），不如提供云端隔离的容器，用户按任务赋予上下文和文件权限。这样既没有隐私泄露风险，又能让Agent在执行任务中沉淀技能。 但这仍然无法回避终极追问：当Agent规模从10只扩展到1000只，管理的复杂度是线性增长还是指数爆炸？这些性能瓶颈的解决成本，会不会让“低成本拥有AI军团”的承诺变成伪命题？ 周曼认为， AI应用层的竞争，最终是\"管理能力产品化\"的竞争，而非单纯的\"模型能力\"的竞争 。大厂在持续提供更强的模型和基础设施，但用户拿到这些能力之后，还是会面临很具体的问题：我想要龙虾帮我做什么事情、要多少、该怎么分组、每只该遵守什么规矩、出了问题怎么快速修正。——这些不是技术问题，是管理问题。 茉莉语境会继续深入场景，走上战场一线，和OPC用户一道探索在每个具体生意中如何用龙虾军团，并把成熟经验快速普及到我们的社区。这种深入用户的能力，建社区的做法，是大厂天然做不到、不具备优势的。",
+          "published_at": "2026-03-18 09:06:09  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C019",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "recommended_topics": {},
+  "selected_topic": "A new way to express yourself: Gemini can now create music",
+  "selected_sources": [
+    "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/"
+  ],
+  "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-18-A-new-way-to-express-yourself-Gemini-can-now-create-music.md",
+  "cards_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/A-new-way-to-express-yourself-Gemini-can-now-create-music-cards.html",
+  "review_score": 92,
+  "review_passed": true,
+  "review_feedback": "",
+  "publish_results": [
+    {
+      "platform": "wechat",
+      "status": "failed",
+      "message": "获取 access_token 失败: {'errcode': 40164, 'errmsg': 'invalid ip 183.227.255.84 ipv6 ::ffff:183.227.255.84, not in whitelist rid: 69ba9d8f-2ca17a15-3c73051d'}"
+    },
+    {
+      "platform": "zhihu",
+      "status": "success",
+      "message": "文章已保存到知乎草稿箱"
+    },
+    {
+      "platform": "xiaohongshu",
+      "status": "success",
+      "message": "笔记已保存到草稿箱"
+    }
+  ],
+  "sources": "rss,hn,github,hot,tavily,youtube_api",
+  "direction": "tech_ai",
+  "platforms": "",
+  "no_cards": false,
+  "error": "",
+  "history": [
+    {
+      "stage": "search",
+      "message": "素材池 20 条: /Users/dora/Documents/test_auto_write-factary/content/pool/2026-03-18-pool.json",
+      "time": "2026-03-18T16:49:21.771010"
+    },
+    {
+      "stage": "search",
+      "message": "完成",
+      "time": "2026-03-18T16:49:21.771019"
+    },
+    {
+      "stage": "plan",
+      "message": "完成",
+      "time": "2026-03-18T17:38:16.348540"
+    },
+    {
+      "stage": "select",
+      "message": "完成",
+      "time": "2026-03-18T20:38:31.675972"
+    },
+    {
+      "stage": "write",
+      "message": "完成",
+      "time": "2026-03-18T20:41:32.758251"
+    },
+    {
+      "stage": "review",
+      "message": "完成",
+      "time": "2026-03-18T20:41:50.879728"
+    },
+    {
+      "stage": "publish",
+      "message": "完成",
+      "time": "2026-03-18T20:42:46.892377"
+    }
+  ]
+}

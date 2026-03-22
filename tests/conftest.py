@@ -1,10 +1,16 @@
 """共享 fixtures — 为所有测试模块提供工厂函数和临时资源。"""
 
 import json
+import sys
 import shutil
 from pathlib import Path
 
 import pytest
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+SRC_DIR = PROJECT_ROOT / "src"
+if str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
 
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
 

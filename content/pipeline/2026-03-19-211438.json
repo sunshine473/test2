@@ -1,0 +1,23 @@
+{
+  "pipeline_id": "2026-03-19-211438",
+  "created_at": "2026-03-19T21:14:38.453710",
+  "current_stage": "search",
+  "status": "running",
+  "pool_path": "",
+  "plan_result": {},
+  "recommended_topics": {},
+  "selected_topic": "",
+  "selected_sources": [],
+  "draft_path": "",
+  "cards_path": "",
+  "review_score": 0,
+  "review_passed": false,
+  "review_feedback": "",
+  "publish_results": [],
+  "sources": "rss,hn,github,hot,tavily",
+  "direction": "",
+  "platforms": "xiaohongshu,zhihu",
+  "no_cards": false,
+  "error": "",
+  "history": []
+}

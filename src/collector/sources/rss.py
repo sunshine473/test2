@@ -1,11 +1,14 @@
 """RSS + YouTube 频道采集适配器"""
 
+import socket
 from typing import List
 
 import feedparser
 
 from collector.models import CollectedItem
 from collector.sources.base import BaseSource, clip_text
+
+FEED_TIMEOUT = 15  # seconds per feed
 
 
 class RSSSource(BaseSource):
@@ -18,6 +21,14 @@ class RSSSource(BaseSource):
         for key in ("tech_ai", "auto", "youtube"):
             feeds.extend(config.get(key, []))
 
+        old_timeout = socket.getdefaulttimeout()
+        socket.setdefaulttimeout(FEED_TIMEOUT)
+        try:
+            return self._collect_feeds(feeds, items, max_per_feed)
+        finally:
+            socket.setdefaulttimeout(old_timeout)
+
+    def _collect_feeds(self, feeds, items, max_per_feed):
         for feed_cfg in feeds:
             name = feed_cfg["name"]
             url = feed_cfg["url"]

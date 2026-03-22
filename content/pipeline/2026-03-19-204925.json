@@ -1,0 +1,111 @@
+{
+  "pipeline_id": "2026-03-19-204925",
+  "created_at": "2026-03-19T20:49:25.858406",
+  "current_stage": "select",
+  "status": "paused",
+  "pool_path": "/Users/dora/Documents/test_auto_write-factary/content/pool/2026-03-19-pool.json",
+  "plan_result": {
+    "tech_ai": {
+      "direction": "tech_ai",
+      "label": "AI 科技",
+      "input_count": 0,
+      "filtered_count": 0,
+      "score_summary": {
+        "max": 0.0,
+        "min": 0.0,
+        "avg": 0.0
+      },
+      "items": []
+    },
+    "auto": {
+      "direction": "auto",
+      "label": "汽车",
+      "input_count": 0,
+      "filtered_count": 0,
+      "score_summary": {
+        "max": 0.0,
+        "min": 0.0,
+        "avg": 0.0
+      },
+      "items": []
+    }
+  },
+  "recommended_topics": {
+    "tech_ai": [
+      {
+        "title": "AI是“抢饭碗”还是“新机遇”？解密智能浪潮下人类的生存法则",
+        "score": 70,
+        "reason": "",
+        "source_urls": []
+      },
+      {
+        "title": "GPT-4o之后，AI的“身体”要来了？具身智能如何重塑物理世界",
+        "score": 70,
+        "reason": "",
+        "source_urls": []
+      },
+      {
+        "title": "AI“失控”前夜？全球AI治理的暗流涌动与伦理红线",
+        "score": 70,
+        "reason": "",
+        "source_urls": []
+      },
+      {
+        "title": "从英伟达“独舞”到国产突围：AI芯片，智能时代的“新石油”与大国博弈",
+        "score": 70,
+        "reason": "",
+        "source_urls": []
+      }
+    ],
+    "auto": [
+      {
+        "title": "新能源车市“卷”出新高度：价格战下，消费者是喜是忧？",
+        "score": 70,
+        "reason": "",
+        "source_urls": []
+      },
+      {
+        "title": "中国汽车出口问鼎全球：从“制造大国”到“品牌强国”的底气何在？",
+        "score": 70,
+        "reason": "",
+        "source_urls": []
+      },
+      {
+        "title": "L3/L4智驾时代加速：方向盘真的要“放手”了吗？",
+        "score": 70,
+        "reason": "",
+        "source_urls": []
+      }
+    ]
+  },
+  "selected_topic": "",
+  "selected_sources": [],
+  "draft_path": "",
+  "cards_path": "",
+  "review_score": 0,
+  "review_passed": false,
+  "review_feedback": "",
+  "publish_results": [],
+  "sources": "rss,hn,github,hot,tavily,youtube_api",
+  "direction": "",
+  "platforms": "",
+  "no_cards": false,
+  "error": "",
+  "history": [
+    {
+      "stage": "search",
+      "message": "素材池 198 条: /Users/dora/Documents/test_auto_write-factary/content/pool/2026-03-19-pool.json",
+      "time": "2026-03-19T21:03:26.115388"
+    },
+    {
+      "stage": "search",
+      "message": "完成",
+      "time": "2026-03-19T21:03:26.115399"
+    },
+    {
+      "stage": "plan",
+      "message": "完成",
+      "time": "2026-03-19T21:04:20.260759"
+    }
+  ]
+}

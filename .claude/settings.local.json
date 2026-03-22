@@ -9,7 +9,8 @@
       "Bash(python:*)",
       "Bash(echo:*)",
       "Bash(source:*)",
-      "Bash(exec zsh:*)"
+      "Bash(exec zsh:*)",
+      "Bash(python3:*)"
     ]
   }
 }

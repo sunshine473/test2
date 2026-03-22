@@ -1,106 +1,106 @@
 ---
 name: batch-factory
-description: This skill should be used when users want to generate and publish multiple articles in batch mode. It automates the complete content production pipeline from material collection to multi-platform distribution, producing 4 articles by default (2 AI-related + 2 automotive) and publishing them to Xiaohongshu and Zhihu (8 total publications). Supports customizable article count and platform selection.
+description: 当用户需要批量生成和发布多篇文章时使用此技能。它自动化了从素材采集到多平台分发的完整内容生产流水线，默认生成 4 篇文章（2 篇 AI 相关 + 2 篇汽车），并发布到小红书和知乎（共 8 次发布）。支持自定义文章数量和平台选择。
 user-invocable: true
 allowed-tools: Bash(python:*)
 argument-hint: '[--count N] [--platforms xiaohongshu,zhihu]'
 ---
 
-# Batch Factory
+# 批量工厂
 
-This skill automates batch content production, generating multiple articles across different topics and publishing them to multiple platforms in a single execution.
+此技能自动化批量内容生产，在单次执行中生成多个不同主题的文章并发布到多个平台。
 
-## When to Use This Skill
+## 何时使用此技能
 
-Use this skill when you need to:
+在以下场景使用此技能：
 
-- Generate multiple articles in one batch (default: 4 articles)
-- Publish content to Xiaohongshu and Zhihu simultaneously
-- Produce content for both AI technology and automotive topics
-- Automate the entire pipeline from collection to publication
-- Generate content at scale without manual intervention
+- 批量生成多篇文章（默认：4 篇）
+- 同时向小红书和知乎发布内容
+- 生产 AI 科技和汽车两个方向的内容
+- 自动化从采集到发布的完整流水线
+- 规模化生成内容，无需人工干预
 
-**Don't use this skill for:**
-- Single article generation (use `/factory` instead)
-- Manual topic selection (use `/factory` with manual mode)
-- Quick material collection only (use `/search` or `/collect`)
+**不适合使用此技能的场景：**
+- 单篇文章生成（改用 `/factory`）
+- 人工选题（改用 `/factory` 半自动模式）
+- 仅快速采集素材（改用 `/search` 或 `/collect`）
 
-## Quick Start
+## 快速开始
 
-### Default Mode (Recommended)
+### 默认模式（推荐）
 ```bash
 python src/pipeline/batch_pipeline.py
 ```
 
-**Output:**
-- Xiaohongshu: 4 articles (2 AI + 2 automotive)
-- Zhihu: 4 articles (2 AI + 2 automotive)
-- Total: 4 articles, 8 publications
+**输出：**
+- 小红书：4 篇文章（2 篇 AI + 2 篇汽车）
+- 知乎：4 篇文章（2 篇 AI + 2 篇汽车）
+- 合计：4 篇文章，8 次发布
 
-### Custom Article Count
+### 自定义文章数量
 ```bash
-# Generate 3 articles per topic (6 total)
+# 每个方向生成 3 篇（共计 6 篇）
 python src/pipeline/batch_pipeline.py --count 3
 ```
 
-### Custom Platforms
+### 自定义平台
 ```bash
-# Publish to Xiaohongshu only
+# 仅发布到小红书
 python src/pipeline/batch_pipeline.py --platforms xiaohongshu
 
-# Publish to multiple platforms
+# 发布到多个平台
 python src/pipeline/batch_pipeline.py --platforms xiaohongshu,zhihu,bilibili
 ```
 
-## How It Works
+## 工作原理
 
-### Four-Stage Pipeline
+### 四阶段流水线
 
-**Stage 1: Material Search (1x)**
-- Collect materials from multiple sources
-- Deduplicate and cluster
-- Output material pool
+**阶段 1：素材搜索（1 次）**
+- 从多个来源采集素材
+- 去重聚类
+- 输出素材池
 
-**Stage 2: Topic Planning (2 directions)**
-- AI Technology: Filter → Score → AI recommends 3-5 topics
-- Automotive: Filter → Score → AI recommends 3-5 topics
+**阶段 2：选题策划（2 个方向）**
+- AI 科技方向：筛选 → 打分 → AI 推荐 3-5 个选题
+- 汽车方向：筛选 → 打分 → AI 推荐 3-5 个选题
 
-**Stage 3: Batch Generation (N articles per direction)**
-For each topic:
-1. Generate article content
-2. Generate visual cards (optional)
-3. AI quality review (6-dimension scoring)
-4. Auto-rewrite if review fails
+**阶段 3：批量生成（每个方向 N 篇）**
+对每个选题：
+1. 生成文章内容
+2. 生成视觉卡片（可选）
+3. AI 质量审核（6 维度评分）
+4. 审核失败自动重写
 
-**Stage 4: Multi-Platform Publishing**
-- Publish each article to specified platforms
-- Record publication results
-- Generate summary report
+**阶段 4：多平台发布**
+- 将每篇文章发布到指定平台
+- 记录发布结果
+- 生成汇总报告
 
-### Efficiency Gains
+### 效率提升
 
-**Single Article Mode:**
-- Material search: Every execution
-- Topic planning: Every execution
-- Generate 1 article: ~5 minutes
+**单篇模式：**
+- 素材搜索：每次执行
+- 选题策划：每次执行
+- 生成 1 篇文章：约 5 分钟
 
-**Batch Mode:**
-- Material search: Once only ✅
-- Topic planning: Once only ✅
-- Generate 4 articles: ~20 minutes (saves ~10 minutes)
+**批量模式：**
+- 素材搜索：仅一次 ✅
+- 选题策划：仅一次 ✅
+- 生成 4 篇文章：约 20 分钟（节省约 10 分钟）
 
-## Parameters
+## 参数说明
 
-| Parameter | Description | Default | Example |
-|-----------|-------------|---------|---------|
-| `--count` | Articles per direction | 2 | `--count 3` |
-| `--platforms` | Publishing platforms (comma-separated) | xiaohongshu,zhihu | `--platforms xiaohongshu` |
-| `--sources` | Material sources (comma-separated) | All | `--sources hn,github` |
-| `--no-cards` | Skip visual card generation | False | `--no-cards` |
+| 参数 | 说明 | 默认值 | 示例 |
+|------|------|--------|------|
+| `--count` | 每个方向的 article 数量 | 2 | `--count 3` |
+| `--platforms` | 发布平台（逗号分隔） | xiaohongshu,zhihu | `--platforms xiaohongshu` |
+| `--sources` | 素材来源（逗号分隔） | 全部 | `--sources hn,github` |
+| `--no-cards` | 跳过视觉卡片生成 | False | `--no-cards` |
 
-## Output Files
+## 输出文件
 
-### Draft Files
+### 草稿文件
 ```
 content/drafts/
 ├── gpt-5-来了-ai-大模型进入新纪元.md
@@ -113,70 +113,70 @@ content/drafts/
 └── 比亚迪秦-plus-dm-i-深度评测-cards.html
 ```
 
-### Batch Results JSON
-**Path:** `content/batch/YYYY-MM-DD-HHMMSS-batch.json`
+### 批量结果 JSON
+**路径：** `content/batch/YYYY-MM-DD-HHMMSS-batch.json`
 
-Contains detailed results for each article including:
-- Direction and topic
-- Draft path
-- Review score
-- Publication results per platform
-- Pipeline ID
+包含每篇文章的详细结果：
+- 方向和选题
+- 草稿路径
+- 审核评分
+- 各平台发布结果
+- 流水线 ID
 
-See `references/output-format.md` for complete schema.
+完整 schema 参见 `references/output-format.md`。
 
-## Performance Estimates
+## 性能估算
 
-| Configuration | Articles | Publications | Estimated Time |
-|--------------|----------|--------------|----------------|
-| Default (2/direction) | 4 | 8 | ~20 minutes |
-| 3/direction | 6 | 12 | ~30 minutes |
-| 4/direction | 8 | 16 | ~40 minutes |
-| 5/direction | 10 | 20 | ~50 minutes |
+| 配置 | 文章数 | 发布数 | 预计时间 |
+|------|--------|--------|----------|
+| 默认（每方向 2 篇） | 4 | 8 | 约 20 分钟 |
+| 每方向 3 篇 | 6 | 12 | 约 30 分钟 |
+| 每方向 4 篇 | 8 | 16 | 约 40 分钟 |
+| 每方向 5 篇 | 10 | 20 | 约 50 分钟 |
 
-**Recommendation:** Start with `--count 1` to test the workflow.
+**建议：** 先用 `--count 1` 测试工作流程。
 
-## Quality Assurance
+## 质量保障
 
-Every article undergoes AI quality review with 6 dimensions:
+每篇文章都经过 AI 质量审核，6 个维度：
 
-1. **Title Appeal** (20 points) - Suspense, numbers, specific scenarios
-2. **Opening Hook** (15 points) - First 3 sentences grab attention
-3. **Content Structure** (20 points) - Clear framework, short paragraphs
-4. **Logical Coherence** (15 points) - Clear arguments, sufficient evidence
-5. **Readability** (15 points) - Concise, fluent, rich examples
-6. **Information Density** (15 points) - New information, data support
+1. **标题吸引力**（20 分）- 悬念、数字、具体场景
+2. **开头钩子**（15 分）- 前 3 句抓人眼球
+3. **内容结构**（20 分） - 框架清晰，段落简短
+4. **逻辑连贯性**（15 分） - 论点清晰，论据充分
+5. **可读性**（15 分） - 简洁流畅，案例丰富
+6. **信息密度**（15 分） - 新信息，数据支撑
 
-**Pass threshold:** ≥70 points
-**Auto-rewrite:** If review fails, automatically regenerate
+**通过阈值：** ≥70 分
+**自动重写：** 审核失败自动重新生成
 
-## Troubleshooting
+## 常见问题
 
-**Q: How to generate without publishing?**
-A: Not currently supported. Disable all platforms in `publishers.yaml`
+**Q：如何仅生成不发布？**
+A：目前不支持。在 `publishers.yaml` 中禁用所有平台。
 
-**Q: How to generate only one direction?**
-A: Not currently supported. Batch mode generates both directions
+**Q：如何仅生成一个方向？**
+A：目前不支持。批量模式同时生成两个方向。
 
-**Q: What happens if review fails?**
-A: Auto-rewrite, max 3 retries
+**Q：审核失败会怎样？**
+A：自动重写，最多重试 3 次。
 
-**Q: What happens if publishing fails?**
-A: Logs failure reason, continues with next article
+**Q：发布失败会怎样？**
+A：记录失败原因，继续处理下一篇文章。
 
-**Q: How to view detailed logs?**
-A: Each article's pipeline state saved in `content/pipeline/<pipeline_id>.json`
+**Q：如何查看详细日志？**
+A：每篇文章的流水线状态保存在 `content/pipeline/<pipeline_id>.json`。
 
-## Advanced Usage
+## 高级用法
 
-For detailed workflow documentation, parameter combinations, and troubleshooting guides, see:
-- `references/workflow-details.md` - Complete workflow documentation
-- `references/output-format.md` - Output file schemas
-- `references/troubleshooting.md` - Common issues and solutions
+详细工作流文档、参数组合和故障排查指南，参见：
+- `references/workflow-details.md` - 完整工作流文档
+- `references/output-format.md` - 输出文件格式
+- `references/troubleshooting.md` - 常见问题与解决方案
 
-## Related Skills
+## 相关技能
 
-- `/factory` - Single article generation with full automation
-- `/search` - Material collection only
-- `/plan` - Topic planning only
-- `/publish` - Multi-platform publishing only
+- `/factory` - 单篇文章全自动生成
+- `/search` - 仅素材采集
+- `/plan` - 仅选题策划
+- `/publish` - 仅多平台发布

@@ -6,7 +6,7 @@
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 from agents.base_agent import AgentResult, AgentStatus, BaseAgent
 
@@ -14,7 +14,7 @@ from agents.base_agent import AgentResult, AgentStatus, BaseAgent
 class SelectorAgent(BaseAgent):
     """选题专家 Agent。"""
 
-    def __init__(self, config: dict | None = None):
+    def __init__(self, config: Optional[dict] = None):
         super().__init__("selector")
         self.config = config or self._default_config()
 

@@ -6,7 +6,7 @@
 import json
 from datetime import datetime
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 from agents.base_agent import AgentResult, AgentStatus, BaseAgent
 
@@ -14,7 +14,7 @@ from agents.base_agent import AgentResult, AgentStatus, BaseAgent
 class CoordinatorAgent(BaseAgent):
     """协调者 Agent。"""
 
-    def __init__(self, config: dict | None = None):
+    def __init__(self, config: Optional[dict] = None):
         super().__init__("coordinator")
         self.config = config or self._default_config()
         self.state_file = Path("content/agent_state.json")
@@ -265,7 +265,7 @@ class CoordinatorAgent(BaseAgent):
         with open(self.state_file, "w", encoding="utf-8") as f:
             json.dump(state, f, ensure_ascii=False, indent=2)
 
-    def _load_state(self) -> dict | None:
+    def _load_state(self) -> Optional[dict]:
         """加载状态。"""
         if not self.state_file.exists():
             return None

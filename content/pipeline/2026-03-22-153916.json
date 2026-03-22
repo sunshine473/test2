@@ -1,0 +1,2282 @@
+{
+  "pipeline_id": "2026-03-22-153916",
+  "created_at": "2026-03-22T15:39:16.883702",
+  "current_stage": "publish",
+  "status": "completed",
+  "pool_path": "/Users/dora/Documents/test_auto_write-factary/content/pool/2026-03-22-pool.json",
+  "plan_result": {
+    "tech_ai": {
+      "direction": "tech_ai",
+      "label": "AI 科技",
+      "input_count": 133,
+      "filtered_count": 40,
+      "score_summary": {
+        "max": 72.0,
+        "min": 33.0,
+        "avg": 49.97
+      },
+      "items": [
+        {
+          "title": "Some things just take time",
+          "url": "https://lucumr.pocoo.org/2026/3/20/some-things-just-take-time/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=615, comments=194",
+          "content": "Title: Some things just take time Points: 615 Comments: 194",
+          "published_at": "2026-03-21T14:46:56Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 615,
+            "hn_comments": 194,
+            "hn_object_id": "47467537",
+            "cluster_id": "C045",
+            "cluster_size": 1,
+            "score": 72.0,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:15.0"
+            ]
+          }
+        },
+        {
+          "title": "Blocking Internet Archive Won't Stop AI, but Will Erase Web's Historical Record",
+          "url": "https://www.eff.org/deeplinks/2026/03/blocking-internet-archive-wont-stop-ai-it-will-erase-webs-historical-record",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=512, comments=140",
+          "content": "Title: Blocking Internet Archive Won't Stop AI, but Will Erase Web's Historical Record Points: 512 Comments: 140",
+          "published_at": "2026-03-21T07:30:16Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 512,
+            "hn_comments": 140,
+            "hn_object_id": "47464818",
+            "cluster_id": "C025",
+            "cluster_size": 1,
+            "score": 70.8,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:6",
+              "keyword:3.0",
+              "hn_points:12.8"
+            ]
+          }
+        },
+        {
+          "title": "404 Deno CEO not found",
+          "url": "https://dbushell.com/2026/03/20/denos-decline-and-layoffs/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=266, comments=184",
+          "content": "Title: 404 Deno CEO not found Points: 266 Comments: 184",
+          "published_at": "2026-03-21T15:10:54Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 266,
+            "hn_comments": 184,
+            "hn_object_id": "47467746",
+            "cluster_id": "C010",
+            "cluster_size": 1,
+            "score": 63.65,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:6.7"
+            ]
+          }
+        },
+        {
+          "title": "Thinking Fast, Slow, and Artificial: How AI Is Reshaping Human Reasoning",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=121, comments=68",
+          "content": "Title: Thinking Fast, Slow, and Artificial: How AI Is Reshaping Human Reasoning Points: 121 Comments: 68",
+          "published_at": "2026-03-21T15:30:29Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 121,
+            "hn_comments": 68,
+            "hn_object_id": "47467913",
+            "cluster_id": "C049",
+            "cluster_size": 1,
+            "score": 63.02,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "keyword:3.0",
+              "hn_points:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Mayor of Paris removed parking spaces, reduced the number of cars",
+          "url": "https://www.cnn.com/2026/03/21/travel/paris-transformation-anne-hidalgo-mayor",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=235, comments=347",
+          "content": "Title: Mayor of Paris removed parking spaces, reduced the number of cars Points: 235 Comments: 347",
+          "published_at": "2026-03-21T13:12:10Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 235,
+            "hn_comments": 347,
+            "hn_object_id": "47466697",
+            "cluster_id": "C037",
+            "cluster_size": 1,
+            "score": 62.88,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:5.9"
+            ]
+          }
+        },
+        {
+          "title": "A pig's brain has been frozen with its cellular activity locked in place",
+          "url": "https://www.newscientist.com/article/2520204-major-leap-towards-reanimation-after-death-as-mammals-brain-preserved/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=112, comments=161",
+          "content": "Title: A pig's brain has been frozen with its cellular activity locked in place Points: 112 Comments: 161",
+          "published_at": "2026-03-21T14:22:48Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 112,
+            "hn_comments": 161,
+            "hn_object_id": "47467300",
+            "cluster_id": "C015",
+            "cluster_size": 1,
+            "score": 62.8,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "keyword:3.0",
+              "hn_points:2.8"
+            ]
+          }
+        },
+        {
+          "title": "Grafeo – A fast, lean, embeddable graph database built in Rust",
+          "url": "https://grafeo.dev/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=210, comments=68",
+          "content": "Title: Grafeo – A fast, lean, embeddable graph database built in Rust Points: 210 Comments: 68",
+          "published_at": "2026-03-21T14:50:18Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 210,
+            "hn_comments": 68,
+            "hn_object_id": "47467567",
+            "cluster_id": "C031",
+            "cluster_size": 1,
+            "score": 62.25,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:5.2"
+            ]
+          }
+        },
+        {
+          "title": "Study finds no evidence cannabis helps anxiety, depression, or PTSD",
+          "url": "https://www.sciencedaily.com/releases/2026/03/260319044656.htm",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=194, comments=187",
+          "content": "Title: Study finds no evidence cannabis helps anxiety, depression, or PTSD Points: 194 Comments: 187",
+          "published_at": "2026-03-21T20:05:58Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 194,
+            "hn_comments": 187,
+            "hn_object_id": "47470750",
+            "cluster_id": "C046",
+            "cluster_size": 1,
+            "score": 61.85,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:4.8"
+            ]
+          }
+        },
+        {
+          "title": "Passengers who refuse to use headphones can now be kicked off United flights",
+          "url": "https://www.cnn.com/2026/03/21/travel/travel-news-happiest-countries",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=180, comments=223",
+          "content": "Title: Passengers who refuse to use headphones can now be kicked off United flights Points: 180 Comments: 223",
+          "published_at": "2026-03-21T17:52:51Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 180,
+            "hn_comments": 223,
+            "hn_object_id": "47469417",
+            "cluster_id": "C042",
+            "cluster_size": 1,
+            "score": 61.5,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:4.5"
+            ]
+          }
+        },
+        {
+          "title": "Western carmakers' retreat from electric risks dooming them to irrelevance",
+          "url": "https://www.theguardian.com/business/2026/mar/21/west-carmakers-retreat-electric-vehicle-risks-irrelevance-iran-war-evs-china",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=179, comments=294",
+          "content": "Title: Western carmakers' retreat from electric risks dooming them to irrelevance Points: 179 Comments: 294",
+          "published_at": "2026-03-21T13:52:22Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 179,
+            "hn_comments": 294,
+            "hn_object_id": "47467034",
+            "cluster_id": "C051",
+            "cluster_size": 1,
+            "score": 61.48,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:4.5"
+            ]
+          }
+        },
+        {
+          "title": "Hide macOS Tahoe's Menu Icons",
+          "url": "https://512pixels.net/2026/03/hide-macos-tahoes-menu-icons-with-this-one-simple-trick/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=172, comments=60",
+          "content": "Title: Hide macOS Tahoe's Menu Icons Points: 172 Comments: 60",
+          "published_at": "2026-03-21T17:46:00Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 172,
+            "hn_comments": 60,
+            "hn_object_id": "47469331",
+            "cluster_id": "C032",
+            "cluster_size": 1,
+            "score": 61.3,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:4.3"
+            ]
+          }
+        },
+        {
+          "title": "Iran launched unsuccessful attack on UK's Diego Garcia",
+          "url": "https://www.bbc.com/news/articles/c5yljdgwppzo",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=150, comments=484",
+          "content": "Title: Iran launched unsuccessful attack on UK's Diego Garcia Points: 150 Comments: 484",
+          "published_at": "2026-03-21T14:54:38Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 150,
+            "hn_comments": 484,
+            "hn_object_id": "47467609",
+            "cluster_id": "C035",
+            "cluster_size": 1,
+            "score": 60.75,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:3.8"
+            ]
+          }
+        },
+        {
+          "title": "How BYD got EV chargers to work almost as fast as gas pumps",
+          "url": "https://www.wired.com/story/how-byds-ev-charger-got-even-faster-and-it-might-not-matter-as-much-as-you-think/",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=131, comments=195",
+          "content": "Title: How BYD got EV chargers to work almost as fast as gas pumps Points: 131 Comments: 195 Body: https://archive.ph/mlJbq",
+          "published_at": "2026-03-21T12:06:03Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 131,
+            "hn_comments": 195,
+            "hn_object_id": "47466294",
+            "cluster_id": "C033",
+            "cluster_size": 1,
+            "score": 60.27,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:3.3"
+            ]
+          }
+        },
+        {
+          "title": "Show HN: Termcraft – terminal-first 2D sandbox survival in Rust",
+          "url": "https://github.com/pagel-s/termcraft",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=108, comments=19",
+          "content": "Title: Show HN: Termcraft – terminal-first 2D sandbox survival in Rust Points: 108 Comments: 19 Body: I’ve been building termcraft, a terminal-first 2D sandbox survival game in Rust. The idea is to take the classic early survival progression and adapt it to a side-on terminal format instead of a tile or pixel-art engine. Current build includes: - procedural Overworld, Nether, and End generation - mining, placement, crafting, furnaces, brewing, and boats - hostile and passive mobs - villages, dungeons, strongholds, Nether fortresses, and dragon progression This is still early alpha, but it’s already playable. Project: https://github.com/pagel-s/termcraft Docs: https://pagel-s.github.io/termcraft/ Demo: https://youtu.be/kR986Xqzj7E",
+          "published_at": "2026-03-21T18:42:38Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 108,
+            "hn_comments": 19,
+            "hn_object_id": "47469949",
+            "cluster_id": "C044",
+            "cluster_size": 1,
+            "score": 59.7,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:8",
+              "hn_points:2.7"
+            ]
+          }
+        },
+        {
+          "title": "Android developer verification: Balancing openness and choice with safety",
+          "url": "https://android-developers.googleblog.com/2026/03/android-developer-verification.html",
+          "source_name": "Hacker News",
+          "source_type": "api",
+          "category": "tech_ai",
+          "summary": "HN points=101, comments=64",
+          "content": "Title: Android developer verification: Balancing openness and choice with safety Points: 101 Comments: 64",
+          "published_at": "2026-03-21T06:03:46Z",
+          "language": "en",
+          "raw_data": {
+            "hn_points": 101,
+            "hn_comments": 64,
+            "hn_object_id": "47464394",
+            "cluster_id": "C022",
+            "cluster_size": 1,
+            "score": 57.52,
+            "score_reasons": [
+              "source:25",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:6",
+              "hn_points:2.5"
+            ]
+          }
+        },
+        {
+          "title": "AI agent 最新进展_人工智能 - 火山引擎ADG 社区",
+          "url": "https://adg.csdn.net/695338f25b9f5f31781be878.html",
+          "source_name": "AI 最新进展",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "火山引擎 ADG 社区 AI agent 最新 进展. # AI agent 最新 进展. luoganttcc · 2025-12-17 16:49:31 发布. ## AI Agent 最新进展（2025 年 12 月）. ### 一、巨头竞相发布新一代 Agent. 谷歌：Gemini Deep Research Agent（12 月 11 日）. OpenAI：GPT-5.2 与 ChatGPT Agent（12 月 12 日）. Anthropic：Claude 系列更新（11 月底 - 12 月初）. + 开放 Anthropic 内部构建 Agent 的基础设施，降低开发门槛An",
+          "content": "火山引擎 ADG 社区 AI agent 最新 进展. # AI agent 最新 进展. luoganttcc · 2025-12-17 16:49:31 发布. ## AI Agent 最新进展（2025 年 12 月）. ### 一、巨头竞相发布新一代 Agent. 谷歌：Gemini Deep Research Agent（12 月 11 日）. OpenAI：GPT-5.2 与 ChatGPT Agent（12 月 12 日）. Anthropic：Claude 系列更新（11 月底 - 12 月初）. + 开放 Anthropic 内部构建 Agent 的基础设施，降低开发门槛Anthropic. * **长期运行突破**：开发 \"Initializer+Worker\" 架构，将 Agent 工作能力从小时级扩展到数天. * **动态 Agent 集群**：根据任务需求自动组建 \"团队\"，金融分析任务效率提升 80.9%. * **Cognitive Sync Fabric**：增强分布式 Agent 间的推理共享和决策一致性，减少 \"决策漂移\". * **2025 年被业内称为 \"AI Agent + 医疗元年\"**，多家医院已部署智能分诊和辅助诊断系统. * 蔚来汽车：NOMI Agent 系统集成 6 大功能（停车助手、守卫、服务管家等），实现 \"主动智能\" 体验. * 阶跃星辰：与吉利合作开发 Agent OS，将汽车座舱打造为 \"第三生活空间\"，获年度技术突破奖. * **客服领域**：智能 Agent 处理率达 80%+，首次解决率从 60% 提升至 88%，人工转接率下降 70%. * **营销领域**：悠易科技为联想构建四阶营销 Agent 矩阵，实现 \"种草 - 拔草\" 实时反馈闭环，转化率提升 25%. * **可控性风险**：Gartner 预警，40% 的 AI Agent 项目可能因安全问题在 2027 年前被取消. * **自主决策边界**：如何在保证自主性的同时，防止 Agent 执行有害操作或产生错误决策. * 2025 年被多家机构视为 AI Agent 规模化落地的 \"拐点年\". * 亚马逊 CEO 预测：未来将有数十亿 Agent 在各行业运行，帮助企业实现 10 倍效率提升. * 云厂商提供从芯片、模型到 Agent 开发的全栈解决方案，大幅降低使用门槛. * 企业无需自建复杂基础设施，可直接 \"按需租用\"Agent 能力. * 2026 年目标：实现能完成初级工程师全天工作量的自主软件 Agent 系统. **总结**：2025 年底，AI Agent 已从概念验证进入规模化商用阶段，呈现三大特点：①巨头引领技术突破，性能大幅提升且成本降低；②应用场景从实验室走向企业核心业务流程；③架构创新使 Agent 具备更强大的自主决策和协作能力。随着基础设施完善和安全机制成熟，AI Agent 正成为企业数字化转型的核心引擎，开启 \"智能自动化\" 新纪元。.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C016",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "Gemini 3.1 Flash-Lite: Built for intelligence at scale",
+          "url": "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3 series model yet.",
+          "content": "Gemini 3.1 Flash-Lite is our fastest and most cost-efficient Gemini 3 series model yet.",
+          "published_at": "Tue, 03 Mar 2026 16:35:55 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C029",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+          "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
+          "content": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
+          "published_at": "Thu, 19 Feb 2026 16:06:14 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C030",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Measuring progress toward AGI: A cognitive framework",
+          "url": "https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "We’re introducing a framework to measure progress toward AGI, and launching a Kaggle hackathon to build the relevant evaluations.",
+          "content": "We’re introducing a framework to measure progress toward AGI, and launching a Kaggle hackathon to build the relevant evaluations.",
+          "published_at": "Tue, 17 Mar 2026 16:03:47 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C038",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:4"
+            ]
+          }
+        },
+        {
+          "title": "AI Agent最新综述多所顶尖机构联合发布",
+          "url": "https://jimo.studio/blog/ai-agent-latest-review-multiple-top-institutions-jointly-published/",
+          "source_name": "AI 最新进展",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "### AI Agent'三国杀'：字节抢跑、阿里突围、腾讯蓄势. ### 最新创新思路，Graph+AI Agents!! ### AI Agents - B2B Business. ### AI Agents Articles. Anthropic 在 2026 年发布了一篇关于 AI Agent 评估体系的详尽指南，强调在产品化与上线过程中构建科学、可复现的评估流程对保证智能体稳定性与安全性至关重要。. ### Attention AI agents that learn from your best sales conversations. 2025 年 AI 自动编程领域竞争加剧，工",
+          "content": "### AI Agent'三国杀'：字节抢跑、阿里突围、腾讯蓄势. ### 最新创新思路，Graph+AI Agents!! ### AI Agents - B2B Business. ### AI Agents Articles. Anthropic 在 2026 年发布了一篇关于 AI Agent 评估体系的详尽指南，强调在产品化与上线过程中构建科学、可复现的评估流程对保证智能体稳定性与安全性至关重要。. ### Attention AI agents that learn from your best sales conversations. 2025 年 AI 自动编程领域竞争加剧，工具和 Agent 趋向主导开发流程，带来效率与成本的新挑战，同时也推动程序员角色的转型与协作模式重塑。. 文章以最新麦肯锡数据与头部企业实践为基础，评估 AI Agent 在多个行业的落地进展与潜在市场空间，给予企业实操层面的建议。. 文章聚焦 AI Agent 在企业实际应用中遇到的落地难题，指出任务中断、流量冲击和安全隔离是阻碍规模化部署的核心瓶颈。. 随着 AI Agent 在各类场景中的广泛应用，文章从基础设施视角切入，讨论当下支撑智能体运行的底层系统是否已准备就绪，以及哪些能力亟需升级改造。. 在 2025 AI 云产业发展大会上，中国通信标准化协会发布了《云端智能体：AI Agent 技术与应用研究报告》，对云端智能体的定义、发展历程、核心技术与应用场景进行了系统梳理，并提出政策与标准化建. 本文以万字长文的形式，深度解析 2025 年 AI Agent 技术在科研领域的突破，重点关注 Deep Research Agent 系统的演变与应用场景，并评估其带来的方法论变革。. ### AI Agents for Mechanical Engineering. ### AI Agents - B2B Business. ### Eureka AI Agents - 加速研发创新与知识产权保护. ### Eureka AI Agents - 加速研发创新与知识产权保护. ### Zenlayer AI Gateway登陆Dify市场，轻装上阵搭建AI Agent. ### Attention AI agents that learn from your best sales conversations. ### Eureka AI Agents - 加速研发创新与知识产权保护. ### Eureka AI Agents - 加速研发创新与知识产权保护. Snowflake 联合多家行业与数据生态企业，推出 Open Semantic Interchange（OSI） 开放语义交换计划，旨在打破不同工具与平台间的语义壁垒，促进 AI Agent 与 B. ### Home Quickchat AI - AI Agents. 字节跳动与中兴联合推出的“豆包手机”通过将系统级 GUI Agent 与大模型能力整合，展示了将 AI 智能体深度嵌入手机操作系统以实现跨应用自动化任务与本地持久记忆的可行性。. ### 全球最大云厂商，将「最牛马」的工作交给了 AI Agent. ### 全球最大云厂商，将「最牛马」的工作交给了 AI Agent. ### 全球最大云厂商，将「最牛马」的工作交给了 AI Agent. ### 聊聊 AI Agent 到底有多大创新？.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C017",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:11.0"
+            ]
+          }
+        },
+        {
+          "title": "From games to biology and beyond: 10 years of AlphaGo’s impact",
+          "url": "https://deepmind.google/blog/10-years-of-alphago/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Ten years since AlphaGo, we explore how it is catalyzing scientific discovery and paving a path to AGI.",
+          "content": "Ten years since AlphaGo, we explore how it is catalyzing scientific discovery and paving a path to AGI.",
+          "published_at": "Mon, 09 Mar 2026 13:52:36 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C028",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
+          "url": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
+          "source_name": "Google DeepMind Blog",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Our latest image generation model offers advanced world knowledge, production ready specs, subject consistency and more, all at Flash speed.",
+          "content": "Our latest image generation model offers advanced world knowledge, production ready specs, subject consistency and more, all at Flash speed.",
+          "published_at": "Thu, 26 Feb 2026 16:01:50 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C039",
+            "cluster_size": 1,
+            "score": 47.0,
+            "score_reasons": [
+              "source:22",
+              "category:18",
+              "preferred:3",
+              "cluster:3",
+              "recency:1"
+            ]
+          }
+        },
+        {
+          "title": "Professional video editing, right in the browser with WebGPU and WASM",
+          "url": "https://tooscut.app/",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://tooscut.app/ Comments URL: https://news.ycombinator.com/item?id=47471601 Points: 211 # Comments: 59",
+          "content": "Article URL: https://tooscut.app/ Comments URL: https://news.ycombinator.com/item?id=47471601 Points: 211 # Comments: 59",
+          "published_at": "Sat, 21 Mar 2026 21:27:50 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C043",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Tinybox – Offline AI device 120B parameters",
+          "url": "https://tinygrad.org/#tinybox",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://tinygrad.org/#tinybox Comments URL: https://news.ycombinator.com/item?id=47470773 Points: 426 # Comments: 257",
+          "content": "Article URL: https://tinygrad.org/#tinybox Comments URL: https://news.ycombinator.com/item?id=47470773 Points: 426 # Comments: 257",
+          "published_at": "Sat, 21 Mar 2026 20:08:37 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C050",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "AI Agent赛道进化：三个月后的技术变革与产品迭代",
+          "url": "https://www.showapi.com/news/article/69aa426b4ddd79ab673092ba",
+          "source_name": "AI 最新进展",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "# AI Agent赛道进化：三个月后的技术变革与产品迭代. 本文由 AI 阅读网络公开技术资讯生成，力求客观但可能存在信息偏差，具体技术细节及数据请以权威来源为准. > ### 摘要 > AI Agent赛道正以惊人速度演进，技术进化与产品迭代节奏空前加快。业内普遍预判：不出三个月，将涌现更强大、更易用的新一代智能体产品。这一周期之短，凸显该领域从算法突破到工程落地的加速闭环，也对开发者、应用方及终端用户提出持续学习与快速适配的新要求。 > ### 关键词 > AI Agent, 技术进化, 产品迭代, 智能体, 三个月 ## 一、AI Agent的技术基础与发展轨迹 ### 1.1 从智能",
+          "content": "# AI Agent赛道进化：三个月后的技术变革与产品迭代. 本文由 AI 阅读网络公开技术资讯生成，力求客观但可能存在信息偏差，具体技术细节及数据请以权威来源为准. > ### 摘要 > AI Agent赛道正以惊人速度演进，技术进化与产品迭代节奏空前加快。业内普遍预判：不出三个月，将涌现更强大、更易用的新一代智能体产品。这一周期之短，凸显该领域从算法突破到工程落地的加速闭环，也对开发者、应用方及终端用户提出持续学习与快速适配的新要求。 > ### 关键词 > AI Agent, 技术进化, 产品迭代, 智能体, 三个月 ## 一、AI Agent的技术基础与发展轨迹 ### 1.1 从智能助手到自主AI Agent：技术演进的关键节点 曾几何时，“智能助手”还只是被动响应指令的工具——查天气、设提醒、转述日程。而今天，AI Agent已悄然跨越临界点：它能自主设定目标、拆解任务、调用工具、反思结果，甚至在多轮交互中持续优化策略。这一跃迁并非渐进改良，而是范式重构。技术进化在此刻显露出鲜明的加速度特征——不再是“年”为单位的迭代，而是以“月”为刻度丈量突破。资料中那句斩钉截铁的判断：“不出三个月，将涌现更强大、更易用的新一代智能体产品”，正折射出整个赛道的呼吸节奏：每一次模型微调、每一轮推理优化、每一处记忆机制升级，都在压缩从实验室到用户桌面的距离。这种紧迫感，既令人振奋，也令人屏息——因为真正的分水岭，往往就藏在下一个“三个月”里。 ### 1.2 当前主流AI Agent技术架构解析：大语言模型与多模态融合 当下主流AI Agent已远非单一模型驱动的线性系统。它是一套精密协同的“认知操作系统”：以大语言模型为决策中枢，调度视觉、语音、结构化数据等多模态感知模块；以工具调用（Tool Use）为手脚，连接API、数据库与现实世界；以记忆与规划模块为神经回路，在长周期任务中维持意图一致性。这种架构正快速收敛为行业共识，但落地形态却日新月异——昨日还需复杂提示工程才能完成的任务，今日可能仅需一句自然语言指令；上周尚需人工编排的流程，本周已由Agent自主发现并封装为可复用技能。技术进化与产品迭代在此深度咬合：架构越稳健，产品越轻盈；产品越普及，反馈越密集；反馈越即时，进化越迅猛。而所有这一切，都锚定在一个惊人的时间标尺上：三个月。 ### 1.3 AI Agent技术突破的核心驱动力：算法优化与算力提升 驱动AI Agent狂奔的双引擎，始终是算法优化与算力提升——二者如齿轮咬合，缺一不可。算法层面，从ReAct到Reflexion，从Tree-of-Thought到State-Space Modeling，每一次范式迁移都在降低推理幻觉、增强逻辑连贯性、拓展任务边界；算力层面，专用推理芯片的成熟、模型量化技术的普及、边缘部署方案的落地，正让高阶智能体从云端走向终端、从实验室走向日常。但真正令人心潮澎湃的，不是单点突破，而是这两股力量形成的正向飞轮：更优算法降低算力门槛，更高效算力反哺算法实验密度。于是，“三个月”不再是一个预测，而成为一种自我实现的节奏——开发者在月初发布v1.0，用户在月中提交真实场景反馈，团队在月末即上线v2.1。这不是追赶时间，而是重新定义时间本身。 ## 二、三个月迭代周期的行业现状 ### 2.1 当前AI Agent产品生态全景：国内外代表性产品分析 AI Agent赛道尚未形成稳固的“头部垄断”，却已呈现出百花竞放的生态图景。国内产品正以极强的场景适配性快速切入办公、教育与本地服务领域，强调中文语境下的意图理解与轻量化部署；国外同类产品则更侧重通用任务编排与开发者生态构建，在工具链开放性与多智能体协作机制上持续探边界。尽管具体产品名称未在资料中列示，但可明确的是：所有活跃于一线的AI Agent产品，均共享同一底层节奏共识——它们不是在等待“成熟”，而是在竞速“进化”。这种生态的流动性本身即是一种信号：没有哪款产品敢宣称“完成态”，因为“完成”二字，在这个赛道里，早已被重新定义为“下一个三个月的起点”。 ### 2.2 产品迭代加速的原因：市场需求与技术竞赛的双重驱动 用户不再满足于“能用”，而迫切期待“直觉般好用”；企业不再观望“是否可行”，而焦虑于“是否已慢一步”。这种自下而上的需求升维，正猛烈撞击着技术供给的天花板。与此同时，全球范围内的研发团队正以前所未有的密度发布技术报告、开源框架与可插拔模块——每一次微小的推理延迟降低、每一轮记忆检索准确率提升、每一处错误恢复机制加固，都迅速被同行复现、集成、再超越。这不是零和博弈，而是一场集体加速的认知共振。当市场渴望更自然的交互，技术便压缩提示工程的冗余；当用户需要更可靠的执行，架构就强化反思与验证回路。于是，“三个月”不再是外部预估，而是供需双方共同踩出的节拍：一边是真实世界问题的急迫回声，一边是实验室代码的热切应答。 ### 2.3 三个月迭代周期的可行性与技术实现路径 “不出三个月就会有更强大更好用的产品出来”——这句判断之所以成立，并非源于盲目乐观，而根植于当前AI Agent开发范式的结构性转变。模块化设计使功能升级可独立发布（如仅更新规划模块而不重训基座模型）；自动化评估流水线能在48小时内完成千级真实任务回测；用户反馈经NLP聚类后，高频痛点可在一周内进入需求池并分配至对应迭代周期。更重要的是，大语言模型作为“通用认知底座”的成熟，让多数创新无需从零训练，而聚焦于上层智能体行为建模——这意味着v1.0到v2.0的跃迁，常体现为几行策略代码的重构、一次工具调用逻辑的优化、或一段记忆索引机制的增强。正因如此，“三个月”不是倒计时，而是可拆解、可追踪、可交付的技术节奏；它不承诺颠覆，但笃定进化——每一次发布，都是对“更强大、更好用”这一朴素承诺的郑重兑现。 ## 三、总结 AI Agent赛道正以“三个月”为基本节奏单位，持续刷新技术进化与产品迭代的边界。这一周期并非经验估算，而是当前算法优化、算力普及、模块化开发与自动化评估体系共同支撑下的可验证现实。从被动响应到自主规划，从单模态交互到多模态协同，智能体的能力跃迁已脱离线性演进逻辑，进入高频闭环阶段。对开发者而言，这意味着需重构研发节奏与交付预期；对应用方而言，需建立动态适配与持续集成的能力；对终端用户而言，则需更新使用心智——今日的“最佳实践”，可能在下一个“三个月”伊始即成为历史注脚。资料中那句断言：“AI Agent这个赛道进化极快，我敢猜不出三个月就会有更强大更好用的产品出来”，不仅揭示了现状，更定义了一种新型技术时间观：不是等待成熟，而是在进化中定义成熟。. ### 最新资讯. © 2015-2023 WWW.SHOWAPI.COM ALL RIGHTS RESERVED.昆明秀派科技有限公司. 本网站所列接口及文档全部由SHOWAPI网站提供，并对其拥有最终解释权 POWERED BY SHOWAPI.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C018",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "AI 论文周报丨AI Agent最新进展，PaperBanana/Lumine/Insight ...",
+          "url": "https://zhuanlan.zhihu.com/p/2003110047664866747",
+          "source_name": "AI 最新进展",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "本周，我们为大家推荐的5 篇Agent 的热门AI 论文，涵盖北京大学、谷歌云AI 研究院、AgentAlpha、亚马逊等团队。集中展示了当前Agent 研究在框架设计",
+          "content": "本周，我们为大家推荐的5 篇Agent 的热门AI 论文，涵盖北京大学、谷歌云AI 研究院、AgentAlpha、亚马逊等团队。集中展示了当前Agent 研究在框架设计",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C019",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "AI 论文周报丨微软/清华大学/香港大学等最新成果，一键解锁通用智能 ...",
+          "url": "https://hyper.ai/cn/news/43009",
+          "source_name": "AI 最新进展",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "## Command Palette. Search for a command to run... **1** **Agent Lightning: Train ANY AI Agents with Reinforcement** **Learning**. **2** **AlphaEarth Foundations: An embedding field model for accurate and efficient global**. **3** **Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agen",
+          "content": "## Command Palette. Search for a command to run... **1** **Agent Lightning: Train ANY AI Agents with Reinforcement** **Learning**. **2** **AlphaEarth Foundations: An embedding field model for accurate and efficient global**. **3** **Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent Foundation Models Training**. 本文提出了 Cognitive Kernel-Pro，一个完全开源且在最大程度上免费的多模块智能代理框架，旨在推动先进人工智能代理的开发与评估的民主化。实验结果表明，Cognitive Kernel-Pro 在开源且免费的代理系统中达到当前最优水平，并超越此前领先的系统如 WebDancer 和 WebSailor，为可获取、高性能的人工智能代理树立了新的性能标杆。. **5** **villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models**. 本文提出了 villa-X，一种新型视觉-语言-潜在动作框架，旨在提升潜在动作建模能力，从而学习可泛化的机器人操作策略。实验结果表明，villa-X 在 SIMPLER 与 LIBERO 等模拟环境中，以及在两种真实机器人平台上均取得了优异性能。. ## Command Palette. Search for a command to run... **1** **Agent Lightning: Train ANY AI Agents with Reinforcement** **Learning**. **3** **Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent Foundation Models Training**. 本文提出了 Cognitive Kernel-Pro，一个完全开源且在最大程度上免费的多模块智能代理框架，旨在推动先进人工智能代理的开发与评估的民主化。实验结果表明，Cognitive Kernel-Pro 在开源且免费的代理系统中达到当前最优水平，并超越此前领先的系统如 WebDancer 和 WebSailor，为可获取、高性能的人工智能代理树立了新的性能标杆。. **5** **villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models**. 本文提出了 villa-X，一种新型视觉-语言-潜在动作框架，旨在提升潜在动作建模能力，从而学习可泛化的机器人操作策略。实验结果表明，villa-X 在 SIMPLER 与 LIBERO 等模拟环境中，以及在两种真实机器人平台上均取得了优异性能。. #### 三维视觉新突破：字节 Seed 推出 DA3，实现任意视角重建视觉空间；7w+真实工业环境数据！CHIP 填补 6D 姿态估计工业数据空白. #### TRELLIS.2：采用 O-Voxel 技术，高效生成复杂 3D 几何与材质；Patient Churn Prediction 数据集：帮助识别有流失风险的患者. #### 三维视觉新突破：字节 Seed 推出 DA3，实现任意视角重建视觉空间；7w+真实工业环境数据！CHIP 填补 6D 姿态估计工业数据空白. #### TRELLIS.2：采用 O-Voxel 技术，高效生成复杂 3D 几何与材质；Patient Churn Prediction 数据集：帮助识别有流失风险的患者.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C020",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "Best of Product Hunt: Week of August 18, 2025",
+          "url": "https://www.producthunt.com/leaderboard/weekly/2025/34",
+          "source_name": "Product Hunt 热门",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "# Best of Product Hunt|Week of August 18, 2025. ←Jul 28—Aug 3Aug 4—10Aug 11—17Aug 18—24Aug 25—31→. MockeMock email campaigns: know your reply rate without launching. WarestackAgentic guardrails for safe releases. Software Engineering•Developer Tools•GitHub. AprilReach Inbox Zero by speaking with you",
+          "content": "# Best of Product Hunt|Week of August 18, 2025. ←Jul 28—Aug 3Aug 4—10Aug 11—17Aug 18—24Aug 25—31→. MockeMock email campaigns: know your reply rate without launching. WarestackAgentic guardrails for safe releases. Software Engineering•Developer Tools•GitHub. AprilReach Inbox Zero by speaking with your email & calendar. Chance AI for AndroidCuriosity Lens: Your Visual Agent. StormyAI agent for influencer marketing. Productivity•Social Media•Artificial Intelligence. Website Builder•No-Code•Vibe coding. OmnaraClaude Code in your Pocket. Open Source•Developer Tools•Artificial Intelligence. DaymiYour AI clone for iMessage conversations that feel real. FramerLaunch websites with enterprise needs at startup speeds. Design Tools•Website Builder•Artificial Intelligence. MirrorDeeply understand yourself and every relationship. GoodsFoxTrack competitor ads, traffic sources, and winning creatives. Design Tools•Productivity•Artificial Intelligence. Dualite x SupabaseBuild full-stack applications with Dualite - securely. Developer Tools•Artificial Intelligence•No-Code. Obsidian BasesTurn any set of notes into a powerful database. Krisp Accent Conversion Understand accented speech in real time. Macaly 2.0AI website builder with built-in database, hosting & more. TensorZeroOpen-source stack for industrial-grade LLM applications. Developer Tools•Artificial Intelligence•GitHub. SaaS•Artificial Intelligence•No-Code.",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C024",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "Newsletters - Product Hunt",
+          "url": "https://www.producthunt.com/newsletters/archive/weekly",
+          "source_name": "Product Hunt 热门",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "This week: our picks for the best AI workflow automation tools, all the new hardware from Apple, how to get a free tour guide through Europe, and why you should always add a shoutout to your Product Hunt launch. This week: three new products inspired by Moltbook, why Anthropic’s Super Bowl ad is tic",
+          "content": "This week: our picks for the best AI workflow automation tools, all the new hardware from Apple, how to get a free tour guide through Europe, and why you should always add a shoutout to your Product Hunt launch. This week: three new products inspired by Moltbook, why Anthropic’s Super Bowl ad is ticking off OpenAI, what Y Combinator wants to fund this spring, and how to stop “feedback witch hunts.\" Plus, five of our favorite launches from the past week. This week: the best AI workflow automation tools, how to pitch a product quickly, why hunger is the father of invention, and Evernote’s first launch in 5 years. This week, one last look back at 2025’s best tools, some products you should resolve to put in your personal stack, how to be more productive in 2026, and why your code reviews might be stifling your junior engineers.",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C040",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "The Three Pillars of JavaScript Bloat",
+          "url": "https://43081j.com/2026/03/three-pillars-of-javascript-bloat",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://43081j.com/2026/03/three-pillars-of-javascript-bloat Comments URL: https://news.ycombinator.com/item?id=47473718 Points: 136 # Comments: 63",
+          "content": "Article URL: https://43081j.com/2026/03/three-pillars-of-javascript-bloat Comments URL: https://news.ycombinator.com/item?id=47473718 Points: 136 # Comments: 63",
+          "published_at": "Sun, 22 Mar 2026 02:04:31 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C048",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:10"
+            ]
+          }
+        },
+        {
+          "title": "Do Not Turn Child Protection into Internet Access Control",
+          "url": "https://news.dyne.org/child-protection-is-not-access-control/",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://news.dyne.org/child-protection-is-not-access-control/ Comments URL: https://news.ycombinator.com/item?id=47470991 Points: 614 # Comments: 324",
+          "content": "Article URL: https://news.dyne.org/child-protection-is-not-access-control/ Comments URL: https://news.ycombinator.com/item?id=47470991 Points: 614 # Comments: 324",
+          "published_at": "Sat, 21 Mar 2026 20:32:20 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C026",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8"
+            ]
+          }
+        },
+        {
+          "title": "Floci – A free, open-source local AWS emulator",
+          "url": "https://github.com/hectorvent/floci",
+          "source_name": "Hacker News (100+ points)",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "Article URL: https://github.com/hectorvent/floci Comments URL: https://news.ycombinator.com/item?id=47471801 Points: 140 # Comments: 31",
+          "content": "Article URL: https://github.com/hectorvent/floci Comments URL: https://news.ycombinator.com/item?id=47471801 Points: 140 # Comments: 31",
+          "published_at": "Sat, 21 Mar 2026 21:49:15 +0000",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C027",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:8"
+            ]
+          }
+        },
+        {
+          "title": "Best of Product Hunt: 2025",
+          "url": "https://www.producthunt.com/leaderboard/yearly/2025",
+          "source_name": "Product Hunt 热门",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "[Subscribe](/newsletters?ref=header_nav&campaign=weekly_newsletter&source=header_nav). [Daily](/leaderboard/daily/2025/1/1)[Weekly](/leaderboard/weekly/2025/1)[Monthly](/leaderboard/monthly/2025/1)[Yearly](/leaderboard/yearly/2025). [Featured](/leaderboard/yearly/2025)[All](/leaderboard/yearly/2025/",
+          "content": "[Subscribe](/newsletters?ref=header_nav&campaign=weekly_newsletter&source=header_nav). [Daily](/leaderboard/daily/2025/1/1)[Weekly](/leaderboard/weekly/2025/1)[Monthly](/leaderboard/monthly/2025/1)[Yearly](/leaderboard/yearly/2025). [Featured](/leaderboard/yearly/2025)[All](/leaderboard/yearly/2025/all). [Design Tools](/topics/design-tools)•[Art](/topics/art)•[Artificial Intelligence](/topics/artificial-intelligence). [Developer Tools](/topics/developer-tools)•[Artificial Intelligence](/topics/artificial-intelligence)•[Vibe coding](/topics/vibe-coding). [Web App](/topics/web-app)•[Productivity](/topics/productivity)•[Artificial Intelligence](/topics/artificial-intelligence). [Productivity](/topics/productivity)•[Notes](/topics/notes)•[Artificial Intelligence](/topics/artificial-intelligence). [Productivity](/topics/productivity)•[Messaging](/topics/messaging)•[Artificial Intelligence](/topics/artificial-intelligence). [Productivity](/topics/productivity)•[Marketing](/topics/marketing)•[Video](/topics/video). [Software Engineering](/topics/software-engineering)•[Developer Tools](/topics/developer-tools)•[Artificial Intelligence](/topics/artificial-intelligence). [Aha](/products/aha-3) The world's first AI influencer marketing team. [Marketing](/topics/marketing)•[Artificial Intelligence](/topics/artificial-intelligence)•[Influencer marketing](/topics/influencer-marketing). [Design Tools](/topics/design-tools)•[Productivity](/topics/productivity)•[Artificial Intelligence](/topics/artificial-intelligence). Figr AI: UX Agent for Product TeamsLearns your product. [User Experience](/topics/user-experience)•[Artificial Intelligence](/topics/artificial-intelligence)•[UX Design](/topics/ux-design). [Bubble for native mobile apps (beta)](/products/bubble) Build native mobile apps for iOS and Android without code. [Android](/topics/android)•[iOS](/topics/ios)•[Developer Tools](/topics/developer-tools). [21st.dev](/products/21st-dev-the-npm-for-design-engineers) Github + Pinterest to make your AI websites look beautiful. [Design Tools](/topics/design-tools)•[Open Source](/topics/open-source)•[Developer Tools](/topics/developer-tools). [Sagehood](/products/sagehood-ai-investing-insights) AI agents for a 360° analysis of the U.S stock market. [Fintech](/topics/fintech)•[Investing](/topics/investing)•[Artificial Intelligence](/topics/artificial-intelligence). [Wegic](/products/wegic) Your first AI website team. [Design Tools](/topics/design-tools)•[Website Builder](/topics/website-builder)•[Web Design](/topics/web-design). [Design Tools](/topics/design-tools)•[Productivity](/topics/productivity)•[Artificial Intelligence](/topics/artificial-intelligence). [Website Builder](/topics/website-builder)•[Artificial Intelligence](/topics/artificial-intelligence)•[No-Code](/topics/no-code). [Productivity](/topics/productivity)•[Software Engineering](/topics/software-engineering)•[Artificial Intelligence](/topics/artificial-intelligence). [Social Media](/topics/social-media)•[Marketing](/topics/marketing)•[Advertising](/topics/advertising). [Pippit AI](/products/pippit-ai) Your smart video & image creator for marketing success. [Design Tools](/topics/design-tools)•[Artificial Intelligence](/topics/artificial-intelligence)•[Video Art](/topics/video-art). [Subscribe](/newsletters?ref=header_nav&campaign=weekly_newsletter&source=header_nav). [Love the ‘think before design’ approach 👏 Most AI tools skip the product thinking part — this feels genuinely useful for real teams.](/products/figr-design-research-simplified?comment=5157769).",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C023",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Leaderboard - Product Hunt",
+          "url": "https://www.producthunt.com/leaderboard",
+          "source_name": "Product Hunt 热门",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "* [Launches](/leaderboard/daily/2026/3/19?ref=header_nav). [May](/leaderboard/monthly/2025/5). [May](/leaderboard/monthly/2024/5). [May](/leaderboard/monthly/2023/5). [May](/leaderboard/monthly/2022/5). [May](/leaderboard/monthly/2021/5). [May](/leaderboard/monthly/2018/5). [May](/leaderboard/monthl",
+          "content": "* [Launches](/leaderboard/daily/2026/3/19?ref=header_nav). [May](/leaderboard/monthly/2025/5). [May](/leaderboard/monthly/2024/5). [May](/leaderboard/monthly/2023/5). [May](/leaderboard/monthly/2022/5). [May](/leaderboard/monthly/2021/5). [May](/leaderboard/monthly/2018/5). [May](/leaderboard/monthly/2017/5). [May](/leaderboard/monthly/2016/5). [May](/leaderboard/monthly/2015/5). [May](/leaderboard/monthly/2014/5). ### [Engineering & Development](/categories/engineering-development?ref=footer). * [Vibe Coding Tools](/categories/vibe-coding?ref=footer). * [AI Coding Agents](/categories/ai-coding-agents?ref=footer). * [AI Code Editors](/categories/ai-code-editors?ref=footer). ### [LLMs](/categories/llms?ref=footer). * [AI Chatbots](/categories/ai-chatbots?ref=footer). * [AI Infrastructure Tools](/categories/ai-infrastructure?ref=footer). ### [Productivity](/categories/productivity?ref=footer). * [AI notetakers](/categories/ai-meeting-notetakers?ref=footer). * [Note and writing apps](/categories/notes-documents?ref=footer). * [Search](/categories/search?ref=footer). * [AI Workflow Automation](/categories/ai-workflow-automation?ref=footer). ### [Marketing & Sales](/categories/marketing-sales?ref=footer). * [Lead generation software](/categories/lead-generation?ref=footer). * [Marketing automation platforms](/categories/marketing-automation?ref=footer). ### [Design & Creative](/categories/design-creative?ref=footer). * [Video editing](/categories/video-editing?ref=footer). * [Design resources](/categories/design-resources?ref=footer). * [AI Generative Media](/categories/ai-generative-media?ref=footer). ### [Social & Community](/categories/social-community?ref=footer). * [Social Networking](/categories/social-networking?ref=footer). * [Professional networking platforms](/categories/professional-networking?ref=footer). * [Community management](/categories/community-management?ref=footer). ### [Finance](/categories/finance?ref=footer). * [Accounting software](/categories/accounting?ref=footer). * [Fundraising resources](/categories/fundraising-resources?ref=footer). * [Investing](/categories/investing?ref=footer). ### [AI Agents](/categories/ai-agents?ref=footer). * [AI Voice Agents](/categories/ai-voice-agents?ref=footer). [See All Categories >>](/categories?ref=footer). * [Vibe Coding Tools](/categories/vibe-coding?ref=footer). * [AI Dictation Apps](/categories/ai-dictation-apps?ref=footer). * [AI notetakers](/categories/ai-meeting-notetakers?ref=footer). * [Code Review Tools](/categories/code-review-tools?ref=footer). * [No-code Platforms](/categories/no-code-platforms?ref=footer). * [Figma Plugins](/categories/figma-plugins?ref=footer). * [Lovable](/products/lovable/reviews?ref=footer). * [n8n](/products/n8n-io/reviews?ref=footer). * [Attio](/products/attio/reviews?ref=footer). * [PostHog](/products/posthog/reviews?ref=footer). * [Vapi](/products/vapi/reviews?ref=footer). * [Granola](/products/granola/reviews?ref=footer). * [Raycast](/products/raycast/reviews?ref=footer). * [Supabase](/products/supabase/reviews?ref=footer). * [Lovable](/products/lovable?ref=footer). * [Framer](/products/framer?ref=footer). * [Replit](/products/replit?ref=footer). * [Vapi](/products/vapi?ref=footer). * [Granola](/products/granola?ref=footer).",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C036",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "Suddenly hit the Top-5 on Product Hunt +200 new users in one day ...",
+          "url": "https://www.reddit.com/r/chrome_extensions/comments/1ki2bmb/suddenly_hit_the_top5_on_product_hunt_and_200_new/",
+          "source_name": "Product Hunt 热门",
+          "source_type": "tavily",
+          "category": "tech_ai",
+          "summary": "I have Successfully marketed 10+ SaaS launches on Product Hunt ( #1 Product of the Day, Week, month, try this out!) ... We're Top 10 on Product",
+          "content": "I have Successfully marketed 10+ SaaS launches on Product Hunt ( #1 Product of the Day, Week, month, try this out!) ... We're Top 10 on Product",
+          "published_at": "",
+          "language": "en",
+          "raw_data": {
+            "cluster_id": "C047",
+            "cluster_size": 1,
+            "score": 36.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "9点1氪：傅盛凌晨开撕周鸿祎称“被欠1个亿”，360回应；字节跳动413亿元卖掉沐瞳科技；伊朗战事持续或致油价升至180美元",
+          "url": "https://36kr.com/p/3732001538490631?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "今日热点导览 商务部部长王文涛会见苹果公司首席执行官库克 贾国龙起家的西贝首店将缩减一半经营面积 特斯拉计划采购中国光伏设备？企业回应：确有此事 针对“漂白鸡爪”等“3·15”晚会曝光问题，多地立案溯源打击 中国学生平均留学预算超60万 TOP3大新闻 傅盛微信群里开撕周鸿祎称“欠钱不还”，360回应 3月20日，社交媒体流传的截图显示，当天凌晨，猎豹移动董事长兼CEO傅盛在微信聊天群里“开撕”360创始人周鸿祎，指责周鸿祎“欠钱不还，并遭拉黑”。 3月20日，360集团回应称，“我们更关注把产品做好，让每个人都能用上安全便捷的360安全龙虾。企业家打造个人影响力，归根结底还是要靠产品和用户价",
+          "content": "今日热点导览 商务部部长王文涛会见苹果公司首席执行官库克 贾国龙起家的西贝首店将缩减一半经营面积 特斯拉计划采购中国光伏设备？企业回应：确有此事 针对“漂白鸡爪”等“3·15”晚会曝光问题，多地立案溯源打击 中国学生平均留学预算超60万 TOP3大新闻 傅盛微信群里开撕周鸿祎称“欠钱不还”，360回应 3月20日，社交媒体流传的截图显示，当天凌晨，猎豹移动董事长兼CEO傅盛在微信聊天群里“开撕”360创始人周鸿祎，指责周鸿祎“欠钱不还，并遭拉黑”。 3月20日，360集团回应称，“我们更关注把产品做好，让每个人都能用上安全便捷的360安全龙虾。企业家打造个人影响力，归根结底还是要靠产品和用户价值，而不是依赖情绪表达或话题炒作。对于谣言和失实信息，360集团已启动证据保全，并将通过法律途径依法处理。”（澎湃新闻） 字节超60亿美元出售沐瞳科技 3月20日消息，沙特Savvy Games Group近期已与字节跳动达成最终协议，以超60亿美元（约合413亿元人民币）价格收购上海沐瞳科技全部股权。据多家媒体披露，双方在2025年下半年便启动谈判，核心条款于26年初达成共识。有相关行业的分析师认为，Savvy此次出手，核心是补齐其在亚洲游戏市场的布局短板，而沐瞳在东南亚的深厚根基，将帮助沙特快速切入亚洲新兴游戏市场，完善全球游戏产业版图。此外，根据沐瞳内部全员信，在交易完成后，沐瞳的管理结构保持不变，张云帆将担任沐瞳科技的CEO。 字节在今年出售沐瞳，也被行业普遍解读为将战略进一步聚焦的重要举措。据接近字节的人士指出，由于在AI方面投入巨大，叠加芯片价格上涨等因素，2025年第四季度起，字节整体的利润已经开始下降。出售沐瞳，既是一个不错的交易，也体现了字节聚焦AI这个核心战略方向的决心。（界面新闻） 伊朗战事持续或致油价升至180美元 自美国和以色列2月28日对伊朗发动军事打击以来，国际油价已大涨约50%，而近日对石油设施的攻击进一步推高油价。19日，5月交货的伦敦布伦特原油期货价格盘中一度升至每桶119美元。反映沙特等中东生产商大部分原油基准价格的阿曼原油期货价格已突破每桶166美元。目前，经由红海港口向亚洲买家出售的沙特轻质原油价格约为每桶125美元。一些沙特官员称，随着库存清光，下周该油价可能接近每桶138美元至140美元。 一些沙特官员说，如果到4月第二周战事依然延宕，即供应无法恢复、霍尔木兹海峡难以通航，国际油价可能不断攀升，数周内从150美元升至165美元乃至180美元。（新华社） 大公司/大事件 商务部部长王文涛会见苹果公司首席执行官库克 3月20日，商务部部长王文涛会见美国苹果公司首席执行官库克。双方就中美经贸关系、苹果公司在华业务发展等进行了交流。王文涛指出，中国政府将坚定不移推进高水平对外开放，持续优化营商环境，让外资企业共享中国发展机遇。欢迎苹果公司继续深化对华合作，加大在华投入。库克表示，苹果公司将继续坚定扎根中国、深耕中国，积极参与中国高质量发展。良好的美中经贸关系不仅对两国意义重大，也有利于全球经济稳定和发展，苹果公司愿为美中合作共赢贡献积极力量。（央视新闻） 贾国龙起家的西贝首店将缩减一半经营面积 贾国龙西贝的创业起始之地、位于北京六里桥的品牌首店即将“关闭一半”。3月19日，记者获悉，西贝北京六里桥旗舰店将会减少一半面积，但不会完全关闭。“没接到通知要关。”该店员工表示，“但后面可能会调整，现在是5层，可能会去掉几层。”他承认是因为目前受到客流减少的压力较大，并且确认自4月1日起，该店将不再接受包厢预订。（界面新闻） 日产中国迎首位中国籍总经理 近日，日产（中国）投资有限公司宣布了中国区高级管理层调整，并将于2026年4月1日起正式生效。原日产（中国）投资有限公司总经理高级顾问刘新宇，将担任日产（中国）投资有限公司总经理，直接汇报给日产全球执委会委员兼中国区主席、东风汽车有限公司总裁马智欣（Stephen Ma）。（界面新闻） 美国宣布批准临时交付和销售伊朗石油，伊朗此前表示：没有多余的原油 美国财政部消息，美国于当地时间3月20日批准了为期30天的授权，允许交付及出售装载有源自伊朗的原油及石油产品的船只。新许可允许出售截至3月20日已装载上船的伊朗原油及石油产品。美国财长贝森特表示，财政部正在发布一项“范围狭窄、期限较短的授权”，允许出售目前滞留在海上的伊朗石油。通过暂时释放现有的石油供应，美国将迅速向全球市场提供约1.4亿桶石油。临时、短期授权严格限于已在运输途中的石油。 当地时间20日晚间，伊朗石油部发言人萨曼·戈杜西通过其个人社交账号表示，目前，伊朗基本上已没有剩余原油滞留在海上，也没有多余的原油可供应到其他国际市场。(央视新闻) 特斯拉计划采购中国光伏设备？企业回应：确有此事 特斯拉“扫货”中国光伏的传闻又有后续。3月20日，一则市场传闻称，特斯拉团队计划采购较大规模的中国光伏设备，涉及数家上市公司。3月20日上午，一家光伏企业证实了上述消息，并��露合同规模在吉瓦级。（贝壳财经） 针对“漂白鸡爪”等“3·15”晚会曝光问题多地立案溯源打击 3月20日，记者在市场监管总局一季度例行发布会上了解到，针对“3·15”晚会曝光的市场监管领域违法问题，如“AI投毒”“漂白鸡爪”“‘外泌体”等问题产品，市场监管总局迅速部署，依法从严从快查处，并对相关地方政府和市场监管部门开展约谈和挂牌督办，坚决维护消费者合法权益。下一步，市场监管总局将继续会同相关部门，深挖彻查、一查到底，对违法行为露头就打。问题不查清不放过，整改不到位不放过。市场监管部门将以实际行动，回应社会关切，筑牢消费安全防线。（央视新闻） 泡泡玛特回应盲盒迟到7年才发货 近日，厦门许女士2019年花59元购泡泡玛特Hello Kitty盲盒，因未留收货地址且本人遗忘，订单搁置近7年，2026年3月其补填地址触发系统发货，签收后才发现是该盲盒。 对此，泡泡玛特方面回应记者称：该订单为抽盒机2019年9月所下订单，因当时顾客未留下默认地址，导致订单未能及时发出，公司为顾客保留了订单商品。2026年3月9日，该顾客重新登录抽盒机小程序，购买了其他商品并留下了默认地址，因此系统于3月16日自动发货。值得注意的是，该盲盒如今二手价仅20余元，被网友调侃为“最亏的跨时空消费”。（界面新闻、红星新闻） 美股大型科技股盘前多数下跌，Arm涨超3% 36氪获悉，美股大型科技股盘前多数下跌，截至发稿，苹果跌0.76%，谷歌跌0.6%，亚马逊跌0.57%，微软跌0.53%，奈飞跌0.37%，英伟达跌0.23%，特斯拉跌0.21%；Arm涨超3%。 英国监管机构就退订费用问题对Adobe展开调查 3月19日，英国竞争与市场管理局表示，已对Photoshop制造商Adobe展开调查，以审查其提前解约费是否构成不公平和误导性行为。该机构称，将调查消费者在购买产品前，是否能获得关于提前解约费“清晰及时的消息”，因这些费用很可能会影响他们的购买决定。（界面新闻） A股历史上第8只千元股诞生，CPO概念人气股源杰科技股价触及1000元 CPO概念人气股源杰科技股价触及1000元，续创历史新高，成为A股历史上第8只千元股。 若以2025年3月20日收盘价计算，该股最近1年累计涨幅近690%。在A股历史中，累计共有7股曾经或目前股价在1000元以上，分别为中安科、贵州茅台、云赛智联、寒武纪、石头科技、禾迈股份、爱美客。（财联社） 存储巨头铠侠部分产品停产 据第一财经，存储厂商铠侠近日向客户发出TSOP（超薄小外形封装，Thin Small Outline Package）停产通知，涉及的TSOP产品包括容量为1Gb、2Gb、4Gb、8Gb、16Gb、32Gb、64Gb的产品。记者了解到，停产涉及一些SLC（单层存储单元）、MLC（多层或双层存储单元）存储产品。根据通知，TSOP（超薄小外形封装）最后下订单的截止日期为2026年9月15日，最后发货的截止日期为2027年3月15日。 据了解，铠侠是全球领先的存储器解决方案提供商，专注于开发、生产和销售闪存及固态硬盘（SSD）。前身为东芝存储器集团，2018年，铠侠从东芝集团剥离，成为独立公司，并于2019年正式更名为铠侠株式会社。（第一财经） 西门子投资1.65亿美元扩大美国人工智能制造业务 西门子近日宣布，将投资1.65亿美元，用于扩大美国人工智能基础设施的制造业务。此次投资是在西门子过去几年承诺投入近7亿美元以扩大美国本土制造产能的基础上进行的，其中包括在加利福尼亚州波莫纳和得克萨斯州沃斯堡新建及扩建电气产品工厂。（界面新闻） 英特尔计划从本月底开始将CPU价格上调10% 据报道，日前英特尔已向主要客户发出通知，计划从本月底开始将CPU价格上调10%，调价范围覆盖其CPU产品线绝大多数主流产品。（界面新闻） 英伟达计划到2027年向亚马逊AWS交付100万枚GPU 英伟达一位高管3月19日透露，到2027年，英伟达将向亚马逊的云计算部门AWS出售100万枚图形处理器芯片（GPU），以及一系列其他产品。英伟达和AWS本周宣布达成协议，AWS将购买英伟达的100万枚GPU，但并未透露交易的具体时间。英伟达超大规模和高性能计算副总裁伊恩·巴克（Ian Buck）3月19日透露，销售将于今年开始，并持续到2027年。（新浪财经） WTO：2025年关税对贸易的总体负面影响小于预期 3月19日，世贸组织（WTO）在最新一期《全球贸易展望与统计》报告中表示，2025年关税对贸易造成的总体负面影响小于此前预期。展望2026年，WTO认为，近期关税方面的动态主要体现为",
+          "published_at": "2026-03-21 09:13:44  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C014",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "Nothing在中国发布Headphone (a)与Phone (4a)系列，在性能过剩时代继续押注“设计优先”丨最前线",
+          "url": "https://36kr.com/p/3733553048256518?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "作者丨欧雪 编辑丨袁斯来 3月20日，总部位于伦敦的消费科技公司Nothing在中国上海召开新品发布会，正式推出头戴式耳机Headphone(a)和智能手机Phone(4a)系列。这是Nothing第二次在中国以线下发布会形式发布新品，显示出其对中国市场的投入正在逐步加深。 从定价来看，Headphone(a)国内首销价为1299元，Phone(4a)起售价为3299元（12GB+256GB），Pro版本售价4199元。两款产品均定位中端市场，处于各自品类中竞争最为密集的价格区间。头戴式耳机市场已是成熟赛道，索尼、Bose、苹果等品牌在降噪算法、音质调校和生态协同上建立了深厚壁垒。Nothin",
+          "content": "作者丨欧雪 编辑丨袁斯来 3月20日，总部位于伦敦的消费科技公司Nothing在中国上海召开新品发布会，正式推出头戴式耳机Headphone(a)和智能手机Phone(4a)系列。这是Nothing第二次在中国以线下发布会形式发布新品，显示出其对中国市场的投入正在逐步加深。 从定价来看，Headphone(a)国内首销价为1299元，Phone(4a)起售价为3299元（12GB+256GB），Pro版本售价4199元。两款产品均定位中端市场，处于各自品类中竞争最为密集的价格区间。头戴式耳机市场已是成熟赛道，索尼、Bose、苹果等品牌在降噪算法、音质调校和生态协同上建立了深厚壁垒。Nothing的首款头戴产品Headphone(1)于2025年7月发布，此次推出的Headphone(a)定位面向更广泛人群，在延续旗舰设计架构的同时，采用更圆润的造型和更多元的配色（黑、白、粉、黄）。 Nothing Headphone(a)四种颜色展示（图源/企业） 在技术配置上，Headphone(a)的核心卖点集中在佩戴结构、续航和交互三个方向。 佩戴方面，产品采用名为“Moment Comp”的头带结构，结合记忆海绵耳罩，强调自适应头部贴合与重量分散，通过优化力学分布减少长时间佩戴的压迫感。 续航是发布会上重点强调的参数。官方数据显示，ANC关闭状态下续航达135小时，按日均使用4.5小时计算可维持近30天无需充电，在头戴式耳机品类中属于第一梯队。 降噪方面，产品支持40dB自适应主动降噪，并提供三档手动调节，与目前主流中高端头戴耳机持平。通话降噪采用三麦克风ENC架构，可在强风噪等复杂环境下保证收音清晰度。 音质方面，硬件上将喇叭振幅提升58%以增强低频表现力，软件层面引入高级EQ功能，用户可自定义调音并分享设置。 交互上，Headphone(a)保留了滚轮、拨片、开关等物理按键，新增自定义按键功能，并加入通过耳机远程遥控手机拍照的功能。实际上，这类功能在行业内并不少见，但较少出现在中端定价的头戴耳机中。 从行业横向对比来看，40dB降噪深度、百小时续航、多麦克风通话降噪等配置已属于主流技术区间。Headphone(a)以1299元的价格进入市场，避开了与苹果AirPods Max（3999元）、索尼1000X系列（约2500-3000元）等高端产品的直接竞争。 Phone(4a)系列包括标准版和Pro版两款机型，起售价分别为3299元和4199元，处于中国国产手机品牌竞争最激烈的价格区间。 Nothing Phone(4a)产品示意图（图源/企业） 在设计上，Phone(4a)系列延续了Nothing标志性的后盖设计与Glyph灯带。Pro版本采用全金属一体机身，厚度7.95mm，官方称其为市面上金属一体机身手机中最薄的之一，支持IP65防尘防水等级。 Glyph灯带是Nothing最具辨识度的设计元素。Phone(4a)Pro搭载由63个mini-LED组成的Glyph Bar，分为7个方形灯带区域。相比上一代Phone(3a)系列，亮度提升40%，峰值亮度达3500nit。普通版Phone(4a)亮度提升达100%。灯带可显示通知、充电状态等信息，在行业中属于少有的将背部灯带作为交互界面的尝试。 Nothing Phone(4a)Pro产品示意图（图源/企业） 影像方面，Phone(4a)系列覆盖了1倍到140倍变焦范围，并加入相机预设与调校模式等软件功能。 值得注意的是，系统方面，Phone(4a)系列搭载了Nothing OS 4.1。在发布会上，Nothing现场演示了一项名为“Create an App”的功能，用户可通过自然语言描述生成简易的个性化应用界面。 这属于低代码或自然语言驱动的界面生成工具，在操作系统层面降低了用户个性化定制的门槛。目前行业内类似功能多集中在独立应用或开发工具中，直接在手机OS层面集成并面向普通用户开放的做法尚不多见。 从产品定位来看，Headphone(a)和Phone(4a)系列均属于Nothing产品线中的“a系列”，即面向更广泛用户群体的中端产品。 这一策略的逻辑在于：通过旗舰产品建立品牌认知与技术形象，再通过a系列以更低定价和更丰富配色扩大用户覆盖。 在行业层面，手机与音频市场均已进入高度成熟阶段，硬件参数的边际效用递减。Nothing的差异化路径主要集中在设计语言、交互方式以及细分人群的精准定位上。 目前，Nothing累计营收已突破十亿美元，2024年业绩更是同比增长150%。 2025年9月，公司完成2亿美元C轮融资，估值达13亿美元，高通、谷歌风投等参与其中。此后不久，Nothing又启动500万美元社区融资，并引入前Loewe首席营销官Charlie Smith担任首席品牌官，被业内视为其三年内冲刺IPO的关键布局。 在中国市场，Nothing仍处于早期探索阶段。据官方现场披露，过去一年其在中国的线上业务实现倍数增长。线下渠道方面，Nothing已进入了顺电、京东Mall等专业数码门店，以及Drivepro、Element、明堂士多等生活方式类触点。 实际上，这一行业早已是大公司的战场，巨头们在供应链、渠道、品牌认知上构筑了难以逾越的壁垒。 但在边缘地带，仍存在像Nothing这样的小公司的生存空间。换句话说，Nothing能否守卫好细分用户，是它最关键的一步。 可以说，Headphone(a)与Phone(4a)系列的发布，是其产品矩阵的进一步扩充，也是其在中国市场逐步建立认知的一步。",
+          "published_at": "2026-03-22 11:26:52  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C041",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "“我的前额叶罢工了”，年轻人争相确诊“网红病”？",
+          "url": "https://36kr.com/p/3732100232298503?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "当代年轻人对待病的态度，像薛定谔的猫一般充满矛盾。 有时讳疾忌医，不敢看自己的体检报告，对报告里已确诊的小结节、轻度脂肪肝、胃炎装聋作哑，安慰自己没啥大事。 有时又上赶着帮自己“确诊”新疾病：“我说我怎么天天活人微死还犯懒呢，原来我是前额叶受损啊。” 网友疯传的前额叶梗图。（图/社交平台截图） 最近，又轮到了前额叶。 这个原本常见于神经科学教科书中的专业术语，近期一跃成为了热搜常客。 与ADHD、PUA、躁郁症等专业名词刚刚走红时的状况高度相似，无数网友甚至还不知道前额叶到底是什么，但已经下意识地开始将自己的情况，与网帖里前额叶受损的症状一一比对，且大概率发现自己几乎全中： “注意力难以集中我",
+          "content": "当代年轻人对待病的态度，像薛定谔的猫一般充满矛盾。 有时讳疾忌医，不敢看自己的体检报告，对报告里已确诊的小结节、轻度脂肪肝、胃炎装聋作哑，安慰自己没啥大事。 有时又上赶着帮自己“确诊”新疾病：“我说我怎么天天活人微死还犯懒呢，原来我是前额叶受损啊。” 网友疯传的前额叶梗图。（图/社交平台截图） 最近，又轮到了前额叶。 这个原本常见于神经科学教科书中的专业术语，近期一跃成为了热搜常客。 与ADHD、PUA、躁郁症等专业名词刚刚走红时的状况高度相似，无数网友甚至还不知道前额叶到底是什么，但已经下意识地开始将自己的情况，与网帖里前额叶受损的症状一一比对，且大概率发现自己几乎全中： “注意力难以集中我有，纠结、决策困难我也有。记忆力下降有的，（比如）刚用完剪刀就不记得自己放哪了。” “自控力弱、一刷短视频就停不下来，这谁能没有啊？！” 前额叶近期常登上热搜。（图/微博截图） 于是乎，自行完成确诊的网友们把前额叶一词传播开来，《怎么判断自己是不是前额叶损伤》的帖子收获成千上万点赞，《如何保养前额叶》的教程在社交媒体铺天盖地。 在一些评论区，“前额叶没发育好”甚至成为了骂人损人的新词。 年轻人开始用前额叶来解释生活中的种种失控。但到底，前额叶是什么？人们所说的前额叶受损真的需要治疗吗？ 你懂的， 当一种“病”几乎人人都有的时候，也许它就不是病，而是一种时代症候群。 前额叶受损， 又一个网红病? 在成为网络热词之前，前额叶在神经科学领域早已是研究顶流。 它位于额头后方，占大脑皮层总面积的29%左右，是灵长类动物进化过程中变化最大的部分。 简单来说，前额叶就像大脑的CEO，负责规划目标、纠错、控制冲动、调节情绪—— 帮你把考研目标拆成每天的任务，帮你从失败中总结经验，帮你在深夜冲动消费前急刹车，也帮你在情绪袭来时维持成年人的体面。 当然，前额叶的功能远不止这些，相关研究浩如烟海。 网上从不缺前额叶相关的科普内容，但都因内容太专业、晦涩，难以在普通网友中形成讨论，直到博主@杨雨坤-Yukun 拍摄的一系列相关视频爆火，最高点赞量达40万的内容，才让前额叶直接原地出圈。 博主杨雨坤因前额叶视频大范围出圈。（图/@杨雨坤-Yukun） 杨雨坤是一位正在奥地利攻读计算神经科学的博士生，同时也是曾独自带娃的年轻爸爸，边读博边带娃的高强度生活，让他开始尝试用学科知识去思考、解释生活现象—— 一个前额叶功能还没发育全的人（比如孩子），会有什么举动？ 以及一个睡眠不足、压力巨大的成年人，应该如何保护好自己的前额叶功能，让自己依旧能在生活中控制情绪、做出理性决策，而不是当场崩溃？ 和普通科普相比，杨雨坤的视频胜在会结合各种生活场景来讲解，这让网友们易于联想自身经历，推动了前额叶概念的快速出圈。 杨雨坤堪称前额叶科普第一人。（图/@杨雨坤-Yukun） 比如在一期谈育儿经验的视频里，他提到应该尊重小孩的前额叶发育，一些事需要让小孩自己做决定，不要事事都管。有的家长就连出门旅游时，都要管小孩“你快看这个、这个值得看”，这可能会抑制小孩前额叶决策功能的使用。 该举例让许多人联想到自己童年特别抵触爸妈的指挥，有时正要去写作业，如果恰巧碰上爸妈提醒“赶快去写”，内心反而瞬间失去了行动力。 此前，年轻人认为这一心理背后是被误解的委屈，过度提醒有时约等于提前指责，默认了孩子会偷懒。 而现在，网友又给它自行找到了新解释—— 童年时的前额叶使用过程被爸妈打断了，没有得到尊重。 《家有儿女》中，刘星好心打算收拾脏乱茶几，却被妈妈默认是他弄乱的。（图/《家有儿女》） 另一期“尊重伴侣前额叶”的视频里，他又形容一些人习惯于把伴侣当外置大脑，比如找不到剪刀了问伴侣在哪、需要对方每天提醒自己各种生活安排，可一旦伴侣的前额叶被此类生活琐事过度占用，人就容易情绪不好。 这一细节同样引发了许多人的集体共鸣，认为它解释了为什么夫妻之间的吵架导火索，有时只是“东西不知道放哪了”“马桶盖关没关”之类的小事。 也让一些网友找到了自己��绪差的原因： “怪不得当班主任后每天心里都像高压锅、都是情绪，原来是我的前额叶被几十人的琐事消耗成一片废墟了。” 网友们主动对杨雨坤的视频进行截图传播。（图/小红书网友@飘飘piu） 一来二去，杨雨坤被网友们戏称为 全网最尊重前额叶的男人。 他在视频里使用的一些调侃玩笑颇为出圈，像是“人到25岁大脑的前额叶才能成熟，所以25岁之前人在生物学意义上都是脑残”“建议把前额叶纳入择偶标准”。 害怕变笨的年轻人， 争相“尊重前额叶老师” 在一轮又一轮的全网讨论中，前额叶逐渐成为了理性决策的代名词。 大家将其想象为电脑的CPU或AI的算力，似乎生活中的大事小事都要占用前额叶份额。 年轻人尊称其为“前额叶老师”，认为前额叶发达的人情绪更稳定、更能做出理性判断。 于是，带着三分自嘲、三分科普、四分调侃的前额叶文学，自此在互联网上逐渐蔓延开来，它们可以大致分为两类。 一类是保护前额叶流派。许多人开始把自己注意力不集中、缺乏行动力等问题与大脑皮层受损联系起来——“总是忘记有没有关家门？前额叶受损了。”“明明没干成什么大事却依旧很累？前额叶受损了。” 网上与前额叶相关的讨论。（图/小红书网友@金桔柠檬@咪MIMO） 前额叶文学走红后，无数年轻人回顾自己长期熬夜、每天纠结穿衣与外卖、边工作边刷手机等生活习惯，只觉得自己每天都在暴殄天物，用无意义的琐事消耗前额叶的珍贵算力。 许多帖子以乔布斯等名人服装风格、生活食谱千篇一律为例，将其解释为天才总会把前额叶用在值得思考的事上。 在此基础上，各种前额叶保护攻略应运而生，包括但不限于保持充足睡眠、不纠结琐事、同一时间只做一件事。 核心都是不要放任前额叶超载，就像使用电脑时不要打开一堆软件窗口不关。 （图/@杨雨坤-Yukun） 另一类是自嘲解构派。网友们并不执着于研究如何保护前额叶，只把它当做一个有趣的互联网新梗。 有人调侃熬夜太多导致“脑袋里长叶子”，有人自嘲“前额叶老师今天又请假了”，还有人开玩笑说自己的前额叶“如果煮成脑花的话一定滑嫩可口”。 许多人用前额叶编写抽象文案，自嘲熬夜太多的坏习惯。（图/@加菲猫咪团） 甚至有博主在影视解读中，将角色区分为前额叶型男主与杏仁核（产生情绪的脑部组织）型男主，对应理智冷静与温柔感性的性格。 网络上常见的自律攻略帖也悄然变身为“前额叶大师修炼帖”，尽管内容还是老生常谈的那些如何进入心流、如何执行已有的规划。 可以说，目前在互联网上，前额叶正在以极快的速度从一个专业医学概念，泛化为一种模糊的决策能力代称，成为一种文化现象。 但并不是所有人，都认可这种医学词汇的泛化使用。 真正的前额叶损伤是什么样? 社交平台上，同时也在陆续出现一些反感前额叶热潮的讨论。 这些网友认为，在这股风潮中，许多人并不真正了解前额叶是什么，赛博确诊前额叶损伤、前额叶功能受损更是无稽之谈，它在医学上有着更为严谨的功能评估、影像检查等确诊流程。 一些人觉得，把它变成一个梗， 或许会伤害真正的前额叶损伤患者。 举例而言，车祸事故，以及部分疾病如脑卒中、颅内感染、神经退行性疾病都可能导致人的前额叶损伤，进而可能导致患者出现行为刻板、情绪失控等症状。 此前，美国知名饶舌歌手坎耶·韦斯特（坎爷）就曾在《华尔街日报》上付费刊登文章，为过往的过激行为道歉，并解释称自己做出这些行为，皆源于多年前车祸造成的前额叶损伤，让他患上双相情感障碍。 网上不乏对前额叶热潮的质疑声。（图@小红书网友@阿夏桑） 历史上，第一个真正让科学家意识到前额叶与人格认知等高级功能相关的患者案例，则是1848年的一位美国铁路工人盖奇。 他在进行岩石爆破作业时遭遇事故，一根长1.1米、直径6厘米的铁棒因爆炸冲击，从他的脸颊直接斜向上贯穿了前额叶，落在远处。 他奇迹般地活了下来，但却因此左眼失明、左侧面部肌无力，且人格发生了重大改变，像是换了一个人，变得极端暴躁易怒。 这之后，前额叶相关研究开始大量出现，也走过相当长的弯路。1949年诺贝尔生物学或医学奖曾颁给“额叶切除术”的发明者莫尼兹，这种手术通过损毁前额叶来“治疗”精神疾病，却导致无数患者术后瘫痪、失语、智力倒退。 二三十年后，大多数国家才立法叫停这种治疗方式。这段历史如今仍出现在《禁闭岛》等影视作品中，提醒着人们：真正的前额叶损伤，从来不是玩笑。 “额叶切除术”让惊悚电影的恐怖程度升级。（图/《禁闭岛》） 看到这里，很多朋友肯定会感受到，以上内容与前文的前额叶讨论相比较简直不是一个画风，非常割裂。 而这也指向二者之间的差别—— 绝大多数人自嘲的“前额叶受损”，其实完全不是医学上常说的器质性缺陷。 博主杨雨坤也曾在质疑前额叶热潮的帖子下留言，解释自己的初衷只是分享前额叶知识，诸如ADHD等一些病症，需要专业医学诊断。 它更像是普通人而是为生活中的疲倦感、失控感找到的一个生理解释。 能为人们卸下自我指责的心理辅导， 毕竟相比骂自己笨、懒，找到一个大众都可能存在的生理原因要好受得多。 “脑控力， 正在成为性感的新定义” 严格来说，网上的前额叶热潮不算完全的误用，而是一种泛化。 前额叶的确影响着理性决策、情绪控制等功能，只是当人们在生活中感到失控、大脑无法再理性运转时，未必是生病了，只是当时身体状态欠佳、疲倦导致的短期现象，好好休息就能恢复。 理论上，这股热潮有可能会影响“前额叶受损”一词在大众眼中的专业性。 这让人想起ADHD的舆论轨迹。有研究发现，TikTok上关于ADHD的热门视频中，过半内容描述的症状并不符合医学诊断标准，只是正常人类体验。 事实上，或许正是社交媒体拆散了人们的注意力，才让更多人关注到“注意力失控”这件事。 注意力在当下是稀缺品。（图",
+          "published_at": "2026-03-21 10:51:33  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C088",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "万物云：与万科关联应收账款余额仅剩20.6亿，业务独立性持续增强",
+          "url": "https://36kr.com/p/3731378273828868?f=rss",
+          "source_name": "36kr AI",
+          "source_type": "rss",
+          "category": "tech_ai",
+          "summary": "3月19日晚间，万物云空间科技服务股份有限公司发布2025年度业绩报告。报告期内，万物云实现营业收入372.7亿元，同比增长2.7%，剔除开发商相关业务后，营收同比增长8.4%；核心净利润约21.3亿元，同比微增0.8%；归母净利润7.7亿元，同比出现较大幅度下滑。 业绩发布会现场 万物云董事长朱保全在业绩发布会上表示，关联开发商（万科）产生的坏账及资产摊销所带来的负向影响是利润下滑的主要原因，2025年全年因此产生了7.4亿元的净利润负影响，这是一个“被动”的发生过程，但报告期内公司持续关联交易收入同比降低11.97亿元，占比已进一步下降至6%，占比持续下降，独立性越来越强。 在派息方面，万",
+          "content": "3月19日晚间，万物云空间科技服务股份有限公司发布2025年度业绩报告。报告期内，万物云实现营业收入372.7亿元，同比增长2.7%，剔除开发商相关业务后，营收同比增长8.4%；核心净利润约21.3亿元，同比微增0.8%；归母净利润7.7亿元，同比出现较大幅度下滑。 业绩发布会现场 万物云董事长朱保全在业绩发布会上表示，关联开发商（万科）产生的坏账及资产摊销所带来的负向影响是利润下滑的主要原因，2025年全年因此产生了7.4亿元的净利润负影响，这是一个“被动”的发生过程，但报告期内公司持续关联交易收入同比降低11.97亿元，占比已进一步下降至6%，占比持续下降，独立性越来越强。 在派息方面，万物云继续保持高股息率，2025年全年分红总额约17.3亿元，中期股息为每股0.951元（含税），年度末期股息为每股0.546元（含税），年度股息率约9.0%。 万物云2025年业绩核心指标 01 万物云的收入主要来自四部分：住宅业务、非住宅业务、BPAAS解决方案和居住相关资产服务。其中，面向居住市场的住宅物业和面向企业、公共机构的非住宅物业是万物云的基本盘。 2025年，万物云住宅业务实现收入209.3亿元，同比增长8.9%；非住宅业务实现收入106.7亿元，同比增长7%。两块基础业务的毛利率较2024年均有所下降，分别下降0.7、0.4个百分点。 拉高万物云利润率的板块来自BPAAS解决方案业务和存量资产增值服务，两块业务的毛利率分别为32%、20.1%。 其中居住相关的存量资产增值服务是增长最快的部分，全年实现收入19.1亿元，同比增长42%。其中，房屋修缮业务收入同比激增67.1%，完成收入5.56亿元；研选家自营装修业务新签约金额同比增长26.6%，达5.3亿元，截至去年底已部署完成166个门店。 收入结构 万物云的核心战略是“蝶城+、企服+、生态+”。截至2025年底，万物云已累计完成690个蝶城的底盘构建，覆盖约一半的在管项目；负责企服板块的万物梁行2025年续约率为90.85%。 2025年，万物云仍在追求归母的增长。全年新增362个住宅物业服务项目，其中247个来自存量市场，新签约年化饱和收入同比增长21.1%。作为公司在住宅市场的主要拓展策略之一——“弹性定价”模式为其带来了51个新项目，占存量市场拓展项目的约2成。 在增长的同时，2025年万物云的另一个关键词是“降本”。万物云管理层表示，源于AI对中后台运营体系的深度重构，业绩期内行政开支同比下降近2亿元，降幅约 10.1%。 报告期内，万物云通过深度应用自研的GC平台，上线超1400个AI智能体，消耗token数725亿。 朱保全曾表示：“传统物业行业过去依赖人海战术，但在面对海量建筑和复杂设备时，这种模式难以为继。我们必须依靠科技手段去解决实际问题。” 目前，万物云实现了基于灵石SLAM地图共享的机器人集群调度，报告期内灵石落地的项目数量达到932个，约可节省30%左右的能源成本。 02 万物云管理层的一个判断是：房地产行业下行的风险正在向物业服务领域传导。 在这个趋势和背景下，万物云面临着四个方面的挑战。 首先是物业费收缴越来越难。据克而瑞物管研究中心数据显示，2025年全国物业服务企业（500强）平均收缴率降至71%，连续四年下滑；2025年二十城物业费均价跌至2.72元/平方米/月。收缴率和价格出现双下降，对物业公司的单项目收入和运营成本形成直接考验。 其次，近几年全国住宅交付量维持在高峰，但销售去化总量在缩减，因此产生了大量已建成未售出房源，空置率问题日益突出。接下来行业、社会要面临的挑战则是“保交楼”转到“超预期的空置房”。 朱保全表示，“今天有可能每承接一个新的住宅物业，都有可能会带来30%甚至以上的一个空置率。空置来自开发商没有卖掉的房子，也有业主买过之后没有居住的房子，空置的房子的物业费收缴率比居住房屋的空置费收缴率差不多要少17.7个百分点。随着我们服务的住宅物业项目的增多，空置的比例也在增加，它会对收缴率，甚至毛利率都会带来一些影响。”通常这些项目的收缴率和毛利率在物业稳定服务5年之后才会达到一个相对合理的位置。 与此同时，近几年对万物云净利润影响比较大的关联交易部分，在2026年还会继续为其财务指标带来负面影响。截至去年底，万科关联应收账款还有20.6亿元。不过与此相关的关联交易收入占比，已经在近五年中从超过20%下降至6%。 万物云财务负责人王绪斌透露，“我们整体的风险敞口都在进一步的持续的一个收窄。去年的话我们全年都是在围绕持续的一个回收关联方的回收工作，我们综合运用了现金回款，我们还有一些债权债务的互抵。” 2026年，万物云会基于“谨慎原则”从三个方面去衡量相关的项目服务是否要承接。一是没有明确的回款路径或者是预收款的项目不接，比如案场业务目前已基本关停；二是与开发公司相关的被动承接的，又无法拆分具体服务的新项目，但是整个项目的控制率超过20%的，会相对比较谨慎的对接；三是历史原因延续的业务，如果回款的周期超过合同约定两个月的，也会谨慎的对待。 此外，万物云管理层表示，物业公司之间的直接竞争也进入了白热化阶段。其中，非开发商类的物业项目，包括业委会发标的物业、校园医院等公建物业、企业设施管理等，已经进入了红海竞争，万物云参与的投标中，每个标都有超过10家企业参与投标，负责住宅部分的万科物业中标率70%，从败标项目看，中标竞品超过一半是属地的小型企业或者是地方国企；负责企服领域的万物梁行中标率为51.8%，从败标项目看，中标竞品多为大公司，但高度分散。 万物云管理层判断，目前内地物业服务相关企业的工商注册数量约30万家，随着行业压力不断增加，未来这一数字会出现快速下降。",
+          "published_at": "2026-03-20 22:35:18  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C053",
+            "cluster_size": 1,
+            "score": 35.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0"
+            ]
+          }
+        },
+        {
+          "title": "AI演员签约官宣",
+          "url": "https://s.weibo.com/weibo?q=AI%E6%BC%94%E5%91%98%E7%AD%BE%E7%BA%A6%E5%AE%98%E5%AE%A3",
+          "source_name": "微博热搜",
+          "source_type": "scraper",
+          "category": "trending",
+          "summary": "微博热搜实时热搜词条",
+          "content": "微博热搜热搜词条：AI演员签约官宣",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C021",
+            "cluster_size": 1,
+            "score": 33.0,
+            "score_reasons": [
+              "source:14",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        }
+      ]
+    },
+    "auto": {
+      "direction": "auto",
+      "label": "汽车",
+      "input_count": 133,
+      "filtered_count": 51,
+      "score_summary": {
+        "max": 51.0,
+        "min": 28.0,
+        "avg": 43.08
+      },
+      "items": [
+        {
+          "title": "2025第19周新能源车销量：问界强势回归，特斯拉周销仅3000辆出头",
+          "url": "https://chejiahao.m.autohome.com.cn/info/20254573",
+          "source_name": "新能源销量",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 2025第19周新能源车销量：问界强势回归，特斯拉周销仅3000辆出头 新一周新能源车销量排名出炉，比亚迪以6.8万辆的单周成绩继续稳居第一，第三名则是五菱品牌，周销量为1.43万辆。而第二名应该算作吉利银河——在 星愿(图片 | 参数 | 询价)等车型划归银河品牌后，吉利新能源车型周销量已经达到了1.78万辆，只是在统计中依然把星愿计入吉利品牌，而银河品牌计为0.72万辆。 新能源车企方面受到更多关注的还是几家新势力，之前的“蔚小理”变成了零跑、理想、小鹏，而在第19周则是迎来了问界的强势回归。新势力前三名分别为：理想、零跑和问界。 具体数据方面，理想发布25款L系列和MEGA之后，老款",
+          "content": "# 2025第19周新能源车销量：问界强势回归，特斯拉周销仅3000辆出头 新一周新能源车销量排名出炉，比亚迪以6.8万辆的单周成绩继续稳居第一，第三名则是五菱品牌，周销量为1.43万辆。而第二名应该算作吉利银河——在 星愿(图片 | 参数 | 询价)等车型划归银河品牌后，吉利新能源车型周销量已经达到了1.78万辆，只是在统计中依然把星愿计入吉利品牌，而银河品牌计为0.72万辆。 新能源车企方面受到更多关注的还是几家新势力，之前的“蔚小理”变成了零跑、理想、小鹏，而在第19周则是迎来了问界的强势回归。新势力前三名分别为：理想、零跑和问界。 具体数据方面，理想发布25款L系列和MEGA之后，老款车型的销量还是比较稳定，单周销量依然保持在8160辆。而零跑则是得益于零跑B10的上市，周销量稳定在7800辆左右，而接下来B01轿车、改款C系列推出之后，零跑周销量过万应该是常态。 问界在上周表现出色，单周销量为7540辆，其中问界M9销量4160辆，新M5 Ultra推出后也达到1270辆，而王牌车型问界M8销量为1210辆，问界新M7则为900辆左右。可以看到，经过率先的产能爬坡，25款问界M9已经回到了接近月销2万辆的水平，也证明了问界M8并没有挤压M9的销量，而问界M8或许因为产能爬坡问题还没有起量，可以等到5月底再观察一下。 小鹏汽车销量位居吉利银河之下，销量为6870辆，目前是稳守3万辆月销的水平。从这个数据来看，小鹏汽车年初对自己的销量预期比较克制也确实是有道理的，目前不太清楚为什么小鹏汽车没有持续放量——一个原因可能是小鹏MONA M03被抑制了。 小米汽车在智驾辅助风波之后又面临了SU7 Ultra的机盖风波，销量降回了5000辆级别。而埃安、极氪都是4000辆级别，尤其是极氪的销量下滑是比较明显。 [...] 蔚来汽周销量回升明显，其中蔚来品牌销量3930辆、乐道品牌贡献了1660辆、萤火虫还有470辆，基本上现在形成了蔚来2万、乐道5000辆、萤火虫1500辆的梯队。算起来，蔚来汽车周销量已经超过了6000辆，也仅比小鹏汽车少一些。 特斯拉周销量下跌至3070辆，紧随其后是腾势2990辆，现在就看腾势N9能否持续发力。而方程豹销量已经超过了阿维塔，前者销量达到2660辆，看来钛3在性价比上的显著优势带来了销量上扬，阿维塔则有2630辆，已经超过了岚图、智己等品牌。 文｜JackieLXX 图｜网络 暂无报价",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C007",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "4月首周造车新势力销量榜出炉：小鹏汽车夺销冠，理想排第二",
+          "url": "https://stcn.com/article/detail/1651712.html",
+          "source_name": "新能源销量",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "另外，在新能源品牌单周终端销量榜前十名中，除了问界与小鹏，其余八家车企销量均有下滑。 其中，比亚迪周销量环比大降25%至4.5万辆，但仍稳居榜单首位。吉利银河与五菱紧随其后。小鹏销量超越理想排名第四，理想排名第五。 值得注意的是，特斯拉周销量环比大降超82%，从榜单前三直接跌落前十。 4月迎来新车上市潮 4月，中国车市将迎来一波新车上市潮，多款车型覆盖从10万元级到百万元级的细分市场。在新能源品牌方面，比亚迪汉L、问界M8、蔚来萤火虫、零跑B10等备受关注；而在合资品牌中，起亚狮铂拓界、沃尔沃XC90等车型也将登场。 进入4月后，不少车企就已经开启了新一轮促销活动。例如，特斯拉中国针对焕新Mo",
+          "content": "另外，在新能源品牌单周终端销量榜前十名中，除了问界与小鹏，其余八家车企销量均有下滑。 其中，比亚迪周销量环比大降25%至4.5万辆，但仍稳居榜单首位。吉利银河与五菱紧随其后。小鹏销量超越理想排名第四，理想排名第五。 值得注意的是，特斯拉周销量环比大降超82%，从榜单前三直接跌落前十。 4月迎来新车上市潮 4月，中国车市将迎来一波新车上市潮，多款车型覆盖从10万元级到百万元级的细分市场。在新能源品牌方面，比亚迪汉L、问界M8、蔚来萤火虫、零跑B10等备受关注；而在合资品牌中，起亚狮铂拓界、沃尔沃XC90等车型也将登场。 进入4月后，不少车企就已经开启了新一轮促销活动。例如，特斯拉中国针对焕新Model Y，推出全系限时3年0息和5年超低息金融购车方案。其中，3年0息购车首付7.99万元起，5年超低息购车首付4.59万元起，超低息月供约3809元。 北京朝阳区的一位蔚来汽车销售人员向《每日经济新闻》记者表示，蔚来目前也推出了4种促销方式，其中就包括直接降价4.6万元，消费者可选择全款支付或享受2年免息贷款。 该销售人员以蔚来ET5T标准款车型为例，在原价29.8万元的基础上直接降价4.6万元，到手价大约为25万元。此外，蔚来还提供赠送积分以及NOP辅助驾驶等优惠。 展望4月，中国汽车流通协会方面表示：“汽车市场走势整体稳定。多地开展春季车展，加之多个城市出台限期促消费政策，叠加本省补贴，汽车市场热点升温，预计市场需求及销量将有所回升，保持稳健增长。” 责任编辑： 胡青 小鹏汽车 理想汽车 零跑汽车 声明：证券时报力求信息真实、准确，文章提及内容仅供参考，不构成实质性投资建议，据此操作风险自担 下载“证券时报”官方APP，或关注官方微信公众号，即可随时了解股市动态，洞察政策信息，把握财富机会。 网友评论 登录后可以发言 发送 [...] 首页 快讯 要闻 股市 新股 信披+ 人民鉴真 港美股 数据 公司 基金 金融 视听 评论 专题 产经 创投 科创板 新三板 投教 ESG 滚动 公众号 电子报 客户端 您当前的位置：证券时报 > 产经 > 正文 来源：每日经济新闻作者：刘曦2025-04-10 07:44 点赞 分享 4月8日，第一电动网发布的新能源汽车终端最新销量数据显示，4月首周，我国新能源汽车销量为16.9万辆，环比大降43.5%，渗透率达50.1%，与3月最后一周基本持平。 记者了解到，在新势力品牌单周终端销量榜中，小鹏汽车拿下单周销冠，理想、零跑、小米汽车等品牌紧随其后。 小鹏居销量排行榜首 造车新势力方面，小鹏汽车以0.75万辆摘得4月首周新势力销冠，周销量环比大涨超21%。据小鹏汽车方面透露，小鹏MONA M03连续4个月的月交付超1.5万辆；小鹏P7+上市4个月，累计交付超4万辆。此外，小鹏汽车销量的增长还得益于新款小鹏G6、G9交付工作的逐步推进。 紧随其后的是理想汽车。数据显示，4月首周理想汽车销量为0.62万辆，但相较于第十三周（3月24日~3月30日）的周销量0.88万辆，下降29.55%。零跑汽车以单周销量0.54万辆排第三。小米汽车以0.51万辆的周销量升至第四位。问界和深蓝汽车分别以0.48万辆和0.41万辆的成绩，居榜单第五和第六位。排在深蓝汽车之后的分别是极氪、腾势、极狐和蔚来。 值得注意的是，在新势力品牌单周终端销量榜前十名中，仅小鹏和问界销量环比实现逆势大涨，其余包括小米、零跑、蔚来、理想、深蓝、极氪、腾势等新能源品牌的周销量环比都在下降。其中，蔚来、极狐、零跑、小米的销量环比降幅尤为明显，均超过30%。蔚来的周销量环比大降40%，在排名上被极狐反超，目前位居第十。 [...] 网友评论 登录后可以发言 发送 网友评论仅供其表达个人看法，并不表明证券时报立场 暂无评论 为你推荐 擎天租完成天使轮及天使+轮两轮亿元级融资 黄晓明、乐华娱乐杜华入局 证券时报网 聂英好 2026-03-18 15:32 从试点到实操！中证协正式启动，6家头部券商率先执行 券商中国 刘艺文 2026-03-18 14:03 突变！原油大跌！黄金、白银震荡！特朗普，最新表态！降息，大消息！ e公司 2026-03-18 14:05 股价直线拉升！阿里云官宣产品涨价！ 证券时报 2026-03-18 16:30 告别纯债依赖！券商资管集体转向“固收+多策略” 券商中国 许盈 王蕊 2026-03-18 15:23 吉大通信：拓展新兴业务领域并加大资源投入，构建新型数智化服务产品及能力体系 证券时报网 司迪 2026-03-18 15:32 时报热榜 换一换 热点视频 换一换 关于我们|服务条例|联系我们|版权声明|网站地图|线索提交 备案号：粤ICP备09109218号-7|增值电信业务经营许可证：粤B2-20080118|互联网新闻信息服务许可证10120170066|粤公网安备44030002008846号 违法和不良信息举报电话：0755-83514034 邮箱：bwb@stcn.com 中央网信办违法和不良信息举报中心|证券时报网举报中心 Copyright © 2008-2026 Shenzhen Securities Times Co., Ltd. All Rights Reserved",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C011",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "五年十年后，新能源车能够进化到什么程度？",
+          "url": "https://m.36kr.com/p/3437856217176193",
+          "source_name": "36kr 汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 五年十年后，新能源车能够进化到什么程度？. 十年前，当人们提起新能源车，想到的往往是笨重的电池包、不到200公里的实际续航里程、漫长的充电等待，以及“自燃”新闻下的隐隐忧虑。. 五年前，新能源车依然是“半成品”，续航数字的提升并未消除车主的焦虑，但超充网络、固态电池、智能驾驶等技术浪潮的扑面而来，让新能源车走上我国汽车工业的舞台中间。. 今天，北京亦庄某自动驾驶测试区内，一辆无方向盘的原型车正以60公里时速巡航。车顶激光雷达无声旋转，车内投影仪在座椅间投出会议文档，电池管理系统将剩余电量折算成碳积分显示在窗玻璃上……. 当全球新能源汽车销量突破2500万辆大关，中国品牌以60%全球份额主导",
+          "content": "# 五年十年后，新能源车能够进化到什么程度？. 十年前，当人们提起新能源车，想到的往往是笨重的电池包、不到200公里的实际续航里程、漫长的充电等待，以及“自燃”新闻下的隐隐忧虑。. 五年前，新能源车依然是“半成品”，续航数字的提升并未消除车主的焦虑，但超充网络、固态电池、智能驾驶等技术浪潮的扑面而来，让新能源车走上我国汽车工业的舞台中间。. 今天，北京亦庄某自动驾驶测试区内，一辆无方向盘的原型车正以60公里时速巡航。车顶激光雷达无声旋转，车内投影仪在座椅间投出会议文档，电池管理系统将剩余电量折算成碳积分显示在窗玻璃上……. 当全球新能源汽车销量突破2500万辆大关，中国品牌以60%全球份额主导市场，当新能源车的续航超过800公里，充电10分钟续航400公里，当新能源车从电动化的上半场转入智能化的下半场，自动驾驶系统、车联网技术、能源管理与优化等不断颠覆着我们的认知，新能源的技术裂变进入临界点。. 未来五到十年，这场由电力驱动、AI赋能的新能源革命，将带领新能源车走向哪里？人类又将如何重构与智能化移动空间的关系？. 能源系统的范式转移：从“充电焦虑”到“移动电站”**. 固态电池技术的商业化进程正以超预期速度推进，宁德时代、丰田等企业量产的固态电池能量密度将突破500Wh/kg，实现充电10分钟续航800公里。但真正的质变发生在2030年：钠离子电池与锂硫电池的成熟使成本下降50%，车辆自身成为分布式能源网络节点。. 图/江苏常州光伏高速试点路段 来源/互联网 新能源观截图. 更具革命性的是V2G（车辆到电网）技术的普及，北京亦庄的试验数据显示，1000辆具备80kWh电池的新能源车可提供相当于一座小型抽水蓄能电站的调峰能力。未来车主在电价谷段充电，峰段向电网售电，年度收益甚至可覆盖车辆保险费用。. 图/V2G充放电流程 来源/互联网 新能源观截图. 交通部规划明确指向2035年“纯电动汽车成为新销售车辆主流，新能源营运重卡规模化应用”，这意味着重卡将搭载兆瓦时级电池包，其运输途中反向供电的能力足以支撑偏远地区的临时医疗站或救灾指挥中心。. 机械载体的解构：从“钢铁躯壳”到“可进化生命体”**. **有着百年汽车制造逻辑的“机械定义”，已经跨越了“硬件定义”的鸿沟，进入到“软硬件共同定义”的智能化时代。 “钢铁躯体”也将跨越“软件定义”，进入“AI定义”时代。**. 图/模块化动力单元 来源/互联网 新能源观截图. 材料革命同样令人惊叹。特斯拉一体压铸技术引发的争议将在五年后被碳纤维-液态金属复合材料化解，这种新材料在-30℃至80℃环境自动调节刚性，使车身轻量化程度突破60%。. 图/液态金属复合材料制备工艺 来源/互联网 新能源观截图. 当轻量化与空气动力学结合，风阻系数低于0.15的车型将普及，每度电行驶里程从现在的7公里提升至12公里。而曾经困扰行业的维修成本问题，因自诊断芯片与3D打印维修站的普及得到根治——山西某矿区试点显示，搭载纳米传感器的矿用卡车可提前两周预测部件损耗，自动订购替换件并导航至最近移动打印车间，重大故障维修时间缩短90%。. 智能交互的升维：从“驾驶工具”到“空间机器人”**. **新能源车普及速度的加快，一场围绕智能交互体验的竞赛也正悄然升级，其深远影响正逐渐消融着机器与生活空间之间的界限。汽车，这个曾经的代步工具，正演变为融合尖端科技与人文关怀的移动生活平台。**. 图/英伟达Thor芯片 来源/互联网 新能源观截图. 2030年的典型出行场景将是：车辆在驶向机场途中自主规划路线，同时通过脑电波传感检测乘客疲劳度，当发现心率异常时自动调节座椅角度并释放助眠香氛。华为与北汽联合实验室的测试显示，此类空间机器人系统对突发心脏病的预警准确率达89%。. “车能路云”融合架构的落地将重塑道路伦理。目前全国已完成7000多公里智能化道路改造，到2030年主要城市将建成数字孪生交通系统。浙江某测试路段数据显示，接入云控平台的车辆在暴雨天气事故率下降76%，因路侧毫米波雷达可穿透水雾感知百米外障碍物，数据精度远超单车传感器。. 图/毫米波雷达工作原理 来源/互联网 新能源观截图. 更值得关注的是监管框架的重构：深圳拟推出的《自动驾驶责任认定条例》草案规定，L4级以上事故由车企、云平台、基础设施运营商按动态比例担责，这倒逼行业建立覆盖“芯片-系统-道路”的全链路安全认证。. 产业格局的重塑：从“制造竞赛”到“生态战争”**. **五年后的市场淘汰赛将异常残酷。中国汽车工业协会预测到2030年国内市场将形成“6+N”格局，即6家年销百万级的巨头与若干小众品牌共存。决定生死的不再是产能规模，而是对能源生态的掌控力。**. 五菱宏光MINI EV的继任者将转型为“移动便利店”，车顶无人机可在社区实现5分钟生鲜送达；长江沿岸的纯电货船配备自动系缆系统，船体光伏日发电量满足80%动力需求。. 图/无人机商圈直送社区 来源/互联网 新能源观截图. 跨国竞争则呈现新态势。欧盟碳关税政策倒逼中国车企在塞尔维亚建设零碳工厂，利用巴尔干半岛风能生产电池，每辆出口车辆可降低34%税费。. 图/零碳工厂类别 来源/互联网 新能源观截图. 社会伦理的重构：从“私有财产”到“公共智能体”**. 2030年某新势力品牌推出的“社群车型”，允许用户将车辆空闲时段授权给社区作为移动自习室或远程医疗点，产生的共享收益抵扣月供。这种模式在雄安新区的测试中使家庭拥车成本下降57%。. 图/车主将车辆授权社区作为移动自习室 来源/互联网 新能源观截图. 更深刻的影响在于城乡关系变革。针对三四线市场的“微电桩”计划通过电梯供电系统改造，使老旧小区充电设施覆盖率从不足30%提升至95%。. 而农村市场的爆发性增长正在发生：山东潍坊试点显示，售价3万元左右的微型电动车结合光伏车棚，使农户运输成本下降至燃油车的1/8，这些车辆在樱桃收获季组成自动驾驶运输队，通过云端调度优化物流路径。. 站在2025年回望，从2015年《节能与新能源汽车产业发展规划》奠定基础，到6月底新能源汽车保有量达3689万辆，我们用了十年实现电动化普及；而展望2035年，新能源车将进化为超越移动工具的存在——它们是电网的毛细血管、是城市的神经末梢、是乡村的经济引擎。. 图/截至2025年6月底新能源车保有量3689万辆 来源/互联网 新能源观截图. **当2040年的儿童问起“为什么过去人们要自己开车”，答案或许像今天解释马车一样充满历史疏离感。从能源载体到智能伙伴，从移动工具到空间容器，新能源汽车的进化本质是人类对自由定义的持续刷新。这场静默革命的终局，将是机械文明向数字文明的彻底跃迁——车轮滚动的不仅是里程，更是文明迭代的刻度。**. 本文来自微信公众号“新能源前瞻”（ID:xinnengyuanqianzhan），作者：新能源观察家，36氪经授权发布。. ### 最近内容. ### 下一篇.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C057",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "小米VS华为智能轿车:性价比与智价比的终极对决 - 新浪",
+          "url": "https://k.sina.com.cn/article_7879848900_1d5acf3c401902tboe.html",
+          "source_name": "小米与华为汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "华为方面，截至2025年3月19日，华为鸿蒙智行累计交付68万辆，与车BU合作的厂商朋友圈不断扩大。 鸿蒙智行在2025年6月全系交付52,747辆，仅用39个月实现全系累计交付80万辆，创下新势力汽车最快交付纪录。 在保值率方面，小米SU7表现突出，一年保值率高达88.91%，位居纯电动车型榜首。问界M9在纯电SUV领域保值率80.1%，超过特斯拉Model X的75.2%。 03 技术对决：性能与智能的差异化优势 小米汽车主打性价比与性能体验。从SU7到YU7，小米选择把速度驾控做到极致。 小米SU7 Max版本零百加速为2.78秒，售价29.99万元，确实做到了“用以往B级车的价格，实现",
+          "content": "华为方面，截至2025年3月19日，华为鸿蒙智行累计交付68万辆，与车BU合作的厂商朋友圈不断扩大。 鸿蒙智行在2025年6月全系交付52,747辆，仅用39个月实现全系累计交付80万辆，创下新势力汽车最快交付纪录。 在保值率方面，小米SU7表现突出，一年保值率高达88.91%，位居纯电动车型榜首。问界M9在纯电SUV领域保值率80.1%，超过特斯拉Model X的75.2%。 03 技术对决：性能与智能的差异化优势 小米汽车主打性价比与性能体验。从SU7到YU7，小米选择把速度驾控做到极致。 小米SU7 Max版本零百加速为2.78秒，售价29.99万元，确实做到了“用以往B级车的价格，实现顶级的性能表现”。 华为则聚焦智价比，通过全栈自研技术构建竞争壁垒。华为在车端有自研的昇腾芯片作为算力支撑，在云端算法迭代上有着自有的超算中心与云服务。 其全量推送的ADS 3.0智驾系统，具备端到端能力，实现了行业领先的智能驾驶体验。 04 生态建设：闭环体验与开放赋能 在生态构建上，两家公司也展现出不同的战略布局。 小米依靠其庞大的米家IoT生态系统，实现车与家的无缝互联。小米汽车支持手机无感解锁、家居设备远程控制，打造全场景智能生活体验。 华为则构建了鸿蒙生态系统，实现手机、平板、车机之间的无缝切换。华为的“1+8+N”全场景智慧生活战略在汽车领域得到延伸，为用户提供连续一致的体验。 有行业专家形象地比喻：“华为模式像安卓，小米模式像iOS”。华为通过开放生态快速占领市场，小米用闭环体验构建壁垒。 05 未来展望：技术决定终局 随着智能汽车竞争进入下半场，核心技术的重要性日益凸显。 小米虽然在市场上取得了显著成功，但在三电等核心技术上，仍然在一定程度上需要与供应商的合作研发。 [...] 新浪新闻客户端 新浪新闻客户端 # 新浪看点 新浪新闻客户端 新浪新闻公众号 新浪新闻视频号 新浪新闻抖音 新浪新闻快手 新浪新闻小红书 新浪新闻B站 热搜时代小宇宙 # 小米VS华为智能轿车:性价比与智价比的终极对决 avatar 在智能汽车浪潮席卷而来的今天，两个熟悉的科技巨头——小米与华为，正以截然不同的方式重塑着中国汽车市场格局。 当下，中国汽车市场正迎来前所未有的变革时代。随着新能源与智能化技术的飞速发展，传统燃油车的主导地位正被动摇。在这股浪潮中，小米与华为这两个消费电子领域的巨头，已成为智能汽车赛道上不可忽视的力量。 01 两条道路：自研与赋能的商业哲学 小米与华为虽同出自消费电子领域，却在汽车行业选择了截然不同的道路。 小米采取“All in造车”的策略，以自研模式直接下场造车。从SU7到SU7 Ultra，小米坚持将性能驾控做到极致，用B级车的价格提供顶级性能表现。 其SU7 Ultra版本零百加速甚至能达到1.98秒，售价为52.99万元，创造了车圈“一炮而红”的奇迹。 华为则坚守“不造车”的宣言，通过技术赋能传统车企。华为凭借在通信与科技领域的技术积累，定位做“智能车时代的博世”，成为智能车背后的底层支撑。 从芯片到算法再到应用级的多层次技术自研，华为系的车型在智能驾驶、智能座舱等领域的表现均处于行业领先。 02 市场表现：销量背后的用户选择 市场数据是最直观的证明。小米SU7上市9个月，销量就达到了13.5万辆，这对于首次造车的选手而言，意味着巨大的成功。 而小米YU7更是创下行业纪录：3分钟大定破20万辆，18小时锁单24万辆。 华为方面，截至2025年3月19日，华为鸿蒙智行累计交付68万辆，与车BU合作的厂商朋友圈不断扩大。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C075",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "小米汽车，如果配上华为智驾，就真的无敌了 - 维科号",
+          "url": "https://mp.ofweek.com/nev/a356714341607",
+          "source_name": "小米与华为汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "APP下载 | 关于维科号 | 用户反馈 | OFweek首页 发表 文章 微头条 视频 提问 首页 / 新能源汽车 / 正文 发文 评论 微博 空间 微信 # 小米汽车，如果配上华为智驾，就真的无敌了 互联网乱侃秀 2026-02-24 16:19 发布于湖南 发文 目前在新能源汽车领域，小米汽车，绝对是一个神奇的存在。 为什么说他神奇，那就是网上骂的凶，现实中卖的火。另外网上被戏称为“绿化带战神”，但实际上在真车主的评价与投诉榜单中，质量得分一直名列前茅的。 可见，网上的假车主们，各种抹黑，但依然销售火爆，舆论没赢过，销量没输过。且全网都在拿着放大镜找小米汽车的毛病，一旦有任何问题，都会无",
+          "content": "APP下载 | 关于维科号 | 用户反馈 | OFweek首页 发表 文章 微头条 视频 提问 首页 / 新能源汽车 / 正文 发文 评论 微博 空间 微信 # 小米汽车，如果配上华为智驾，就真的无敌了 互联网乱侃秀 2026-02-24 16:19 发布于湖南 发文 目前在新能源汽车领域，小米汽车，绝对是一个神奇的存在。 为什么说他神奇，那就是网上骂的凶，现实中卖的火。另外网上被戏称为“绿化带战神”，但实际上在真车主的评价与投诉榜单中，质量得分一直名列前茅的。 可见，网上的假车主们，各种抹黑，但依然销售火爆，舆论没赢过，销量没输过。且全网都在拿着放大镜找小米汽车的毛病，一旦有任何问题，都会无限放大…… 不过，虽然小米汽车销量非常好，SU7是2025年新势力销量第一名，YU7才卖了半年，就排在进了前10名，但与其它顶级车型相比，比如与问界、理想、特斯拉等车相比，有一个短板，那还是很明显的。 这个短板，就是智驾，不黑不吹，虽然小米的智驾也还不错，比很多新能源汽车品牌强，但如果拿它来和标杆华为ADS、理想、特斯拉FSD等比，确实弱一些。 在众多专业机构，或不专业的机构评测中，从来没有人将小米的智驾排在前面，排在前面的大多是华为ADS、特斯拉、理想、小鹏等车企，小米排名会靠后一些。 所以说，虽然小米汽车卖的好，但智驾这个功能，确实表现不太突出。 所以，很多网友就就有一个想法，那就是如果小米汽车，配上华为的智驾，会不会就无敌了? 坦白讲，如果小米汽车真的配上华为智驾，还是保持着当前的价格，当前的外观等全部不变，就是智驾水平达到了华为ADS的水平，那确实是无敌了。 不过，小米汽车很明显可能配华为的智驾，小米走的是自研的道路，与其期待小米配华为智驾，不如期待小米将这一块的能力提升上来。 [...] 那么问题就来了，小米的智驾，能不能达到华为ADS的水平？我觉得短时间之内应该是比较难的，因为这涉及到一个研发时间，进度、投入等水平。 华为ADS明显起步比小米智驾早好几年，同时华为在这一块的投入肯定也会更大，所以短时间之内肯定追不上。 但是，任何技术，在过了最开始的高速发展期后，后期都会进入一个相对平稳发展期，这个时间要追上来就相对容易很多了。 就拿手机拍照来讲，最开始华为是遥遥领先，小米落后不少，但后来整个行业大发展，大家的技术都上来了，都达到了顶峰，相互之间相差不会太多了，区别不过是与99分、98分的区别了。 智驾功能也会如此，前期起步时，大家都进步快，差距也大，有人99分，有人80分，有人60分，但后来慢慢的，大家都是95分以上了，这个区别就不明显了。 声明：本文为OFweek维科号作者发布，不代表OFweek维科号立场。如有侵权或其他问题，请及时联系我们举报。 小米 /华为 / ADS /特斯拉 / FSD 侵权举报 收藏 评论0 0 2条 评论 评论 查看更多评论 没有更多评论了 ## 相关阅读 暂无数据 []( ## 已认证 互联网乱侃秀 互联网领域优质创作者 []( ## 互联网乱侃秀 推荐商品 热门文章排行榜 1 油价年内最大涨幅“落地”，燃油车还会有人买吗？ 2 5分钟充500公里！今年买固态电池车是真香还是早鸟税？ 3 今晚 315 晚会直击：汽车行业三大乱象藏雷，这几家车企风险拉满 4 2026年汽车维权全景报告：从“锁电门”到“智驾慌”，谁在透支行业信任？ 5 德系降了，日系退了，全球销量前十终于轮到中国人坐了 6 2026，中国汽车出口继续“狂飙”？ ## 举报文章问题 × 营销广告 重复、旧闻 格式问题 低俗 标题夸张 与事实不符 疑似抄袭 我有话要说 确定 取消 [...] × 营销广告 重复、旧闻 格式问题 低俗 标题夸张 与事实不符 疑似抄袭 我有话要说 确定 取消 关注作者 返回顶部 ## 举报评论问题 × 淫秽色情 营销广告 恶意攻击谩骂 我要吐槽 确定 取消 ## 用户登录× 登 录 忘记密码 注册账号 关于我们 - About OFweek - 征 稿 - 广告咨询 - 帮助信息 - 联系我们 - 会员服务 - 网站导航 - 手机OFweek网 我们的网站：人工智能网 | 物联网 | 医疗科技网 | 机器人网 | 激光网 | 电子工程网 | 锂电网 | 太阳能光伏网 | 光通讯网 | 半导体照明网 | 智能制造网 | 工控网 | 氢能网 | 安防网 | 智能家居网 | 智慧城市网 | 新能源汽车网 | 智能汽车网 | 显示网 | 可穿戴设备网 | 智慧海洋网 | 云计算网 | 智能硬件网 | 新材料网 | 通信网 | 储能网 | 3D打印网 | 传感器网 | 环保网 | 仪器仪表网 | VR 网 | 风电网 | 智能电网 | 电力网 | 照明网 | 电源网 | 光学网 | PCB网 | 人才网 | 商城 | 外贸网 | 培训网| 工采网 客服热线：0755-83279360/19925280375 客服传真：+86-755-83279008 粤ICP备06087881号 Copyright © 2026, All Rights Reserved. 中文版权所有－OFweek维科网（高科技行业门户）网站所有图片、文字未经许可不得拷贝、复制。 粤公网安备 44030502002758号 全国互联网安全管理服务平台全国互联网安全 管理服务平台 不良信息举报中心 不良信息 举报中心 不良信息举报中心 工商网监 电子标识",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C078",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "最新周销量榜！小鹏进入前五",
+          "url": "http://chejiahao.m.autohome.com.cn/info/16942161?isfrom=m&from=pc",
+          "source_name": "新能源销量",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 最新周销量榜！小鹏进入前五 9月19日，理想汽车发布2024年第37周（9月9日至9月15日）销量榜单。 先来看看中国新能源汽车品牌销量榜单，榜单前三名分别为比亚迪、五菱、特斯拉，周销量分别为8.60万辆、1.58万辆和1.56万辆。其中，比亚迪是榜单中唯一一家销量超8万辆的品牌，远超其它车企。排名第四名的是理想汽车，周销量为1.26万辆，是榜单中第四家周销量超万辆级别的车企。作为理想汽车强劲对手，AITO问界位于理想汽车之后，挤进榜单第五名，周销量为0.96万辆。 除上述品牌外，包括零跑、埃安、银河、长安、极氪也均进入榜单前十名中，周销量分别为0.79万辆、0.78万辆、0.58万辆、0",
+          "content": "# 最新周销量榜！小鹏进入前五 9月19日，理想汽车发布2024年第37周（9月9日至9月15日）销量榜单。 先来看看中国新能源汽车品牌销量榜单，榜单前三名分别为比亚迪、五菱、特斯拉，周销量分别为8.60万辆、1.58万辆和1.56万辆。其中，比亚迪是榜单中唯一一家销量超8万辆的品牌，远超其它车企。排名第四名的是理想汽车，周销量为1.26万辆，是榜单中第四家周销量超万辆级别的车企。作为理想汽车强劲对手，AITO问界位于理想汽车之后，挤进榜单第五名，周销量为0.96万辆。 除上述品牌外，包括零跑、埃安、银河、长安、极氪也均进入榜单前十名中，周销量分别为0.79万辆、0.78万辆、0.58万辆、0.49万辆、0.47万辆。 再来看看中国新势力品牌销量榜单，理想汽车继续保持销量第一名，以1.26万辆的销量蝉联榜首，这也是理想汽车连续21周获中国市场新势力品牌销量第一。而AITO问界为0.96万辆，相比于上一周（9月2日至9月8日）的0.77万辆有所增长，但依然落后于理想汽车，两者销量相差0.30万辆。理想汽车销量不断攀升的背后离不开理想L6，零售数据显示，自理想L6上市以来销量累计达8.90万辆，其中6-8月销量均超2万辆，分别为2.39万辆、2.49万辆、2.49万辆。 进入前三的品牌还包括零跑汽车，周销量为0.79万辆。作为二线新势力品牌，最近几个月零跑汽车表现相对强劲，已连续三月交付量超两万辆。其中8月销量达3.03万辆，细分车型中，SUV家族交付占比超72%，C16车型交付超8000辆，后者于6月28日上市，定位6座中大型SUV，售价区间为15.58万-18.58万元，从单月销量表现来看，新车上市不到三月，月交付达8000辆的销量还是不错的。 [...] 挤进榜单前五名的还包括极氪汽车和小鹏汽车，周销量分别为0.47万辆和0.43万辆，其中，极氪汽车排名与上一周（9月2日至9月8日）持平，依然排名第四名，但销量有所增长。作为参考，上一周极氪汽车销量为0.46万辆。 新一周小鹏汽车的销量表现不俗，以0.43万辆的销量成功挤进第五名，领先于蔚来汽车的0.42万辆。作为参考，上一周（9月2日至9月8日）小鹏汽车和蔚来汽车周销量分别为0.36万辆和0.45万辆。 不出意外的话，小鹏汽车销量的增长或得益于小鹏新车MONA M03的上市，该车于8月27日上市，售价为11.98-15.58万元，该车上市48小时后，大定数量已超3万辆。9月17日，汽车博主“孙少军”发文称：“上周小鹏新增订单破16K，应该就是新势力订单新增第一。 ”随后有网友认为：“网约车公司估计占一大半”。对此，小鹏MONA M03产品经理杨光回应表示：“网约车公司基本一台也没有”。随着该车全国大规模交付，预计对小鹏汽车的销量或会有明显的提振效果，同时也能帮助小鹏汽车尽快实现盈利。 其它品牌方面，包括深蓝汽车、小米汽车、极狐汽车和腾势汽车四家品牌也进入榜单前十名中，周销量分别为0.40万辆、0.31万辆、0.28万辆和0.20万辆。而诸如哪吒汽车、岚图汽车、智己汽车等常见的新能源品牌等均未能入围榜单。 几日前，深圳腾势新能源汽车有限公司发生股权与工商变更引发大家关注。天眼查信息显示，比亚迪汽车工业有限公司的持股比例由90%上升至100%，原本持股10%的梅赛德斯—奔驰（中国）投资有限公司退出。另外，原董事Hans Georg Engel退出，深圳腾势新能源汽车有限公司正式从外资公司变更为公司。简而言之，腾势品牌正式从中外合资变为比亚迪独资控股企业。不过针对这一变化，比亚迪方面表示，目前没有相关信息。 [...] 截至目前腾势汽车旗下已布局D9、N7、N8三款车型，其中，腾势D9是腾势汽车最主要的销量来源。零售数据显示，今年前8月，腾势汽车累计销量为79753辆，D9为71201辆，占总销量的89.28%；其它两款车型表现则相对一般，N7为8083辆；N8为469辆。按计划，腾势汽车第四款车型——腾势Z9 GT将在明日上市，此前该车已开启预售，腾势Z9 GT与腾势Z9双旗舰车型预售区间为33.98-41.98万元，该车上市后将对标保时捷Panamera和迈巴赫S级。 最后再来看看中国豪华品牌榜单，入围前五名车企的周销量均超万辆，其中，特斯拉、奔驰、理想位居榜单前三名，销量分别为1.56万辆、1.42万辆和1.35万辆；宝马排名第五名，为1.11万辆，落后于理想汽车的1.26万辆。除此之外，包括问界、极氪、蔚来、雷克萨斯、沃尔沃分别位居榜单第六至第十位，周销量分别为0.96万辆、0.47万辆、0.42万辆、0.39万辆和0.25万辆。 如今汽车市场的竞争尤为激烈，尤其是新能源汽车市场，而今年将是国内车企重新洗牌的一年，从年初开始就有多家汽车品牌进入激烈的价格战竞争当中，与此同时也有不少自身实力不强的车企面临淘汰。今日，在2024云栖大会上，小鹏汽车CEO何小鹏还表示：“下一阶段新能源车市场的赛点就是谁能够每年生产、销售100万台新能源汽车，这只是一个淘汰赛的入门权，也就是说我没有就被淘汰了。” 暂无报价",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C097",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "汽车测评网站 - 懂车帝",
+          "url": "https://www.dongchedi.com/tag/pgc/9815321",
+          "source_name": "懂车帝资讯",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 汽车测评网站. ### 中国品牌质量排行榜，这个合资品牌第一. 撞弯A柱还能得“G”，起底中保研“双标”的秘密. ### 撞弯A柱还能得“G”，起底中保研“双标”的秘密. ### 全面评测凯美瑞 2.0G豪华版，吹嘘两年多的安全配置如今还过关吗？. ### 理想L7全优/狮铂拓界表现不佳 中保研最新碰撞测试成绩点评. ### 为什么李斌没造一个李想式的媒体帝国. ### 大众途锐是一台什么样的车？值得购买吗？看专业汽车测评人的分析. ### 林肯大陆用车成本分析，月开销2368元？. ### 2023紧凑型新能源车质量榜出炉：上汽大众ID.3夺第1，比亚迪秦第3. ### 海外电动车真实评",
+          "content": "# 汽车测评网站. ### 中国品牌质量排行榜，这个合资品牌第一. 撞弯A柱还能得“G”，起底中保研“双标”的秘密. ### 撞弯A柱还能得“G”，起底中保研“双标”的秘密. ### 全面评测凯美瑞 2.0G豪华版，吹嘘两年多的安全配置如今还过关吗？. ### 理想L7全优/狮铂拓界表现不佳 中保研最新碰撞测试成绩点评. ### 为什么李斌没造一个李想式的媒体帝国. ### 大众途锐是一台什么样的车？值得购买吗？看专业汽车测评人的分析. ### 林肯大陆用车成本分析，月开销2368元？. ### 2023紧凑型新能源车质量榜出炉：上汽大众ID.3夺第1，比亚迪秦第3. ### 海外电动车真实评测，高合拿了NO.1？. 售15980起，豪爵品质150踏板，实际油耗2.5L，一箱油跑320公里. ### 售15980起，豪爵品质150踏板，实际油耗2.5L，一箱油跑320公里. ### 详细测评 智己L6. ### 华为余承东：问界新M7 Ultra将成为现象级爆款. 路虎揽胜 2021 款 3.0 L6 传世加长经典版二手车测评. ### 路虎揽胜 2021 款 3.0 L6 传世加长经典版二手车测评. ### 红标crv我还是第一次见，这个越野能力，还是大家一起来测评吧. ### 第一季度豪华中大型及大型SUV质量榜单 奥迪Q6第二 路虎卫士第四. ### 豪华品牌中大型及大型车质量榜单 沃尔沃S90第三 奥迪A6L第六. ### sha疯了！澳洲预售黑马 春风450MT试驾测评. ### 镀膜测评#镀膜. ### 复古全盔测评推荐 #复古头盔 #头盔测评 #motoway. ### 对标UHR，非常舒适平顺—三阳巡弋150GT动态测评. ### 摩托车机油测评131期：壳牌国行爱德王子10W50 #摩托车 #壳牌. ### 问界新m5 vs 理想L6 你会怎么选？ #问界新m5 #2024款问界m5测评. ### 与国内汽车行业相似的一幕，摩托车行业即将再现. ### 擎商测评：上汽大通大家9超混. ### 朗逸新锐出众版：综合表现突出的高性价比家轿，购车权益有亮点？.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C110",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "理想汽车最新周销量公布！",
+          "url": "https://chejiahao.autohome.com.cn/info/17600108",
+          "source_name": "新能源销量",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "10月22日，理想汽车发布2024年第42周（10月14日至10月20日）销量榜单。 先来看看中国新能源汽车品牌销量榜单，第42周共有4家车企销量超万辆，其中，比亚迪以8.96万辆继续蝉联榜首，但相比于上一周（10月7日至10月13日）的10.62万辆减少1.66万辆。 五菱和特斯拉紧随其后，周销量分别为1.94万辆和1.32万辆，其中特斯拉相比于上一周（10月7日至10月13日）的0.85万辆增长0.47万辆，排名也从第五名提升至第三名。理想汽车是第四家销量超万辆的车企，为1.21万辆；吉利汽车排名第五名，为0.92万辆，相比于上一周的0.73万辆增长0.19万辆。 除上述车企外，包括问界、",
+          "content": "10月22日，理想汽车发布2024年第42周（10月14日至10月20日）销量榜单。 先来看看中国新能源汽车品牌销量榜单，第42周共有4家车企销量超万辆，其中，比亚迪以8.96万辆继续蝉联榜首，但相比于上一周（10月7日至10月13日）的10.62万辆减少1.66万辆。 五菱和特斯拉紧随其后，周销量分别为1.94万辆和1.32万辆，其中特斯拉相比于上一周（10月7日至10月13日）的0.85万辆增长0.47万辆，排名也从第五名提升至第三名。理想汽车是第四家销量超万辆的车企，为1.21万辆；吉利汽车排名第五名，为0.92万辆，相比于上一周的0.73万辆增长0.19万辆。 除上述车企外，包括问界、零跑汽车、银河汽车、埃安、小米汽车均进入榜单前十名，周销量分别为0.87万辆、0.80万辆、0.64万辆、0.63万辆、0.56万辆。而长安汽车跌出该榜单，被小米汽车取代。 再来看看新势力销量榜单，理想汽车周销量为1.21万辆，连续26周获中国市场新势力品牌销量第一，问界紧跟其后，为0.87万辆，与理想汽车相差0.34万辆。 实际上，理想汽车成为新势力销冠已成为常态，自从 理想L6(参数|询价)上市以来，理想汽车销量开始有了明显的回暖。截至9月底，理想L6销量为11.44万辆，是目前理想汽车销量最高的车型，理想L7和L9分别为9.79万辆和6.55万辆，而L8和MEGA分别为5.62万辆和0.79万辆。 零跑汽车排名新势力销量榜单第三名，为0.80万辆，与问界仅相差0.07万辆。作为对比，上一周（10月7日至10月13日）零跑汽车以0.87万辆的销量反超问界的0.71万辆，位居榜单第二名。年内零跑汽车已多次创月交付新高，其中9月销量为33767辆，同比增长113.72%，为其连续两个月销量超3万辆。 [...] 小米汽车和极氪汽车均进入榜单前五名，周销量分别为0.56万辆和0.52万辆，两者表现均不错。排名榜单中第六名和第八名的是小鹏汽车和蔚来汽车，周销量分别为0.45万辆和0.39万辆，其中蔚来汽车相比于上一周的0.47万辆有所下滑。深蓝汽车、极狐汽车、岚图汽车排名榜单中的第七、第九和第十名，周销量分别为0.41万辆、0.25万辆、0.21万辆。而腾势汽车、哪吒汽车等车企均无缘榜单。 最后再来看看中国豪华品牌榜单，特斯拉以1.32万辆的销量蝉联榜首，理想汽车以1.21万辆排名第二名。奥迪、奔驰、宝马三家豪华车企周销量也均超万辆，分别为1.20万辆、1.20万辆、1.13万辆。早在去年，理想汽车CEO李想表示，有信心在2024年提前挑战奔驰、宝马、奥迪在中国区的销量，2024年将努力成为销量第一的豪华品牌。 从最近几周的销量来看，理想汽与BBA之间的差距正逐渐缩小。 此外，包括问界、极氪、蔚来、雷克萨斯、沃尔沃均进入前十名，分别位居榜单第六至第十位，周销量分别为0.87万辆、0.52万辆、0.39万辆、0.36万辆、0.26万辆，凯迪拉克跌出榜单前十。 从整体的周销量榜单表现来看，相比于上一周，新一周上榜的车企销量部分出现了下滑，但也有车企实现增长。自2024年以来，中国新能源汽车市场的需求虽然仍保持高速增长，但同时各大车企也面临残酷的竞争。行业人士认为，随着市场价格战持续激烈，车市新老汽车厂商竞争愈发激烈，预计后续几年也将持续这种局面，直至新格局形成。 老虎车网 全新插混轿车！吉利银河星耀7官图发布 ### 全新插混轿车！吉利银河星耀7官图发布 48.99万元！别克至境世家纯电版上市 ### 48.99万元！别克至境世家纯电版上市 帕萨特稳拿第一！2月中型车销量 ### 帕萨特稳拿第一！2月中型车销量 盈利5.4亿元！零跑汽车25年财报出炉 [...] 帕萨特稳拿第一！2月中型车销量 ### 帕萨特稳拿第一！2月中型车销量 盈利5.4亿元！零跑汽车25年财报出炉 ### 盈利5.4亿元！零跑汽车25年财报出炉 影响力榜单 两广24小时一箱电，极狐全新阿尔法S5纯电版光电续航测试 ### 两广24小时一箱电，极狐全新阿尔法S5纯电版光电续航测试 老车主带你看2026款揽胜 ### 老车主带你看2026款揽胜 2.0T大众帕萨特油耗实测，这结果你感觉怎么样？ ### 2.0T大众帕萨特油耗实测，这结果你感觉怎么样？ 4缸的 但真的很AMG 试驾全新奔驰GLC43 AMG ### 4缸的 但真的很AMG 试驾全新奔驰GLC43 AMG 家庭出行用车怎么选？看看全新问界M7对比理想L8就知道了 ### 家庭出行用车怎么选？看看全新问界M7对比理想L8就知道了 家庭出行用车怎么选？看看全新问界M7对比理想L8就知道了 三强争霸！热门六座SUV实测大揭秘，谁是无短板家庭座驾？ ### 三强争霸！热门六座SUV实测大揭秘，谁是无短板家庭座驾？ 三强争霸！热门六座SUV实测大揭秘，谁是无短板家庭座驾？ 2025销量萎靡，理想到底经历了什么？ ### 2025销量萎靡，理想到底经历了什么？ 2025销量萎靡，理想到底经历了什么？ 地狱级路况终极考验！魏牌蓝山/L8/M7城市+高速智驾实测封神战 ### 地狱级路况终极考验！魏牌蓝山/L8/M7城市+高速智驾实测封神战 地狱级路况终极考验！魏牌蓝山/L8/M7城市+高速智驾实测封神战",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C114",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "网友认为，小米汽车如配上华为智驾，那就天下无敌了 - 搜狐",
+          "url": "https://www.sohu.com/a/989272369_122543023",
+          "source_name": "小米与华为汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "小米现在的智驾水平，如果跟华为比，可能确实差着一截。但问题是，这一截会一直这么大吗？未必。 所以啊，与其天天念叨“小米配华为”，不如等着看小米自己怎么打这张牌。毕竟，从手机拍照的历史看，后来居上的事，不是没发生过。 ## 网站地图 [...] ## 原创 网友认为，小米汽车如配上华为智驾，那就天下无敌了 小米汽车现在是个什么存在？网上被骂成“绿化带战神”，现实中销量蹭蹭往上涨。SU7拿下2025年新势力销量第一，YU7才卖半年就挤进前十。舆论没赢过，销量没输过，这剧本搁谁都得懵。 但有一说一，小米汽车确实有个短板——智驾。 不是说他家的智驾不行，比很多新能源品牌强是肯定的。可你要是拿它跟华为A",
+          "content": "小米现在的智驾水平，如果跟华为比，可能确实差着一截。但问题是，这一截会一直这么大吗？未必。 所以啊，与其天天念叨“小米配华为”，不如等着看小米自己怎么打这张牌。毕竟，从手机拍照的历史看，后来居上的事，不是没发生过。 ## 网站地图 [...] ## 原创 网友认为，小米汽车如配上华为智驾，那就天下无敌了 小米汽车现在是个什么存在？网上被骂成“绿化带战神”，现实中销量蹭蹭往上涨。SU7拿下2025年新势力销量第一，YU7才卖半年就挤进前十。舆论没赢过，销量没输过，这剧本搁谁都得懵。 但有一说一，小米汽车确实有个短板——智驾。 不是说他家的智驾不行，比很多新能源品牌强是肯定的。可你要是拿它跟华为ADS、理想、特斯拉FSD这些标杆比，差距就出来了。翻翻各种评测，不管专业的还是业余的，前排永远那几家，小米还是要靠后的。 这就引出一个网友们常谈的话题：要是小米汽车配上华为智驾，会不会直接无敌？ 设想一下：小米现在的价格、外观、销量基础，再加上华为级别的智驾，那画面太美不敢看。 但现实是，小米走的是自研路线，不可能用别家的方案。与其做梦配华为，不如问另一个问题：小米自己，能把智驾追上来吗？ 短时间看，难。华为ADS起步比小米早好几年，投入也大，这账没法算。但拉长时间呢？未必没戏。 举个大家都经历过的例子：手机拍照。 当年华为P系列刚出来的时候，夜拍能力吊打全场，小米被甩几条街。那时候你要说小米拍照能追上华为，估计没人信。 可现在呢？随便拿个旗舰机，白天拍谁都差不多，晚上拍也就细微差别。大家从60分、80分、99分的差距，慢慢变成了95分和98分的区别。进步空间小了，差距自然就小了。 智驾也是这个道理。 前期是技术爆发期，先跑的占尽优势，后追的望尘莫及。但等发展到一定阶段，该解决的难题都解决了，该积累的数据都积累得差不多了，后来者踩在前人肩膀上，追赶速度会快得多。到时候所谓的差距，可能也就是“这个弯道处理得顺不顺”“那个路口识别得快不快”的细微差别。 小米现在的智驾水平，如果跟华为比，可能确实差着一截。但问题是，这一截会一直这么大吗？未必。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C120",
+            "cluster_size": 1,
+            "score": 51.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:15"
+            ]
+          }
+        },
+        {
+          "title": "新能源政策解读_新能源汽车最高补贴_现状与趋势-盖世汽车",
+          "url": "https://auto.gasgoo.com/new-energy/policy",
+          "source_name": "新能源政策",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "## 作为采购商，我可以：. ## 作为供应商，我可以：. ## 终结5年涨势！欧盟电动车，被政策逼进平价时代. ## 越南车企VinFast将印度、印尼、菲律宾免费充电政策延长至2029年3月. 盖世汽车讯 越南汽车制造商VinFast于周一宣布，将印度、印度尼西亚、菲律宾三国车主的电动车免费充电服务延长至20... ## 英国汽车行业呼吁全面审查能源转型政策. 盖世汽车讯 英国汽车行业发出警告：在2027年相关目标大幅收紧之前，必须紧急审查国家向零排放汽车转型的路线图，否则净零目标与经济增长愿景都可能受挫。英国汽车制造商和贸易商协会（SMMT）在一份措辞强硬的声明中... ## 辅助驾驶功",
+          "content": "## 作为采购商，我可以：. ## 作为供应商，我可以：. ## 终结5年涨势！欧盟电动车，被政策逼进平价时代. ## 越南车企VinFast将印度、印尼、菲律宾免费充电政策延长至2029年3月. 盖世汽车讯 越南汽车制造商VinFast于周一宣布，将印度、印度尼西亚、菲律宾三国车主的电动车免费充电服务延长至20... ## 英国汽车行业呼吁全面审查能源转型政策. 盖世汽车讯 英国汽车行业发出警告：在2027年相关目标大幅收紧之前，必须紧急审查国家向零排放汽车转型的路线图，否则净零目标与经济增长愿景都可能受挫。英国汽车制造商和贸易商协会（SMMT）在一份措辞强硬的声明中... ## 辅助驾驶功能受限 政策与技术的错位之痛. 近期，工信部针对组合驾驶辅助系统出台一系列强化监管政策。部分已搭载高阶辅助驾驶硬件的车型，出现功能受限、推... ## 预售补贴价11.28万起，极狐全新阿尔法S5引领新能源轿跑价值升级. 3月1日，极狐全新阿尔法S5预售发布，共推出6款版型，包含纯电、增程两种动力形式，预售补贴后售价11.28万元-17.38... ## 特斯拉收紧FSD功能转移政策引车主争议. 盖世汽车讯 特斯拉于2026年2月下旬悄然调整全自动驾驶（FSD）功能转移政策，将资格条件由“订单截至2026年3月31日”变更为“车辆交付截至2026年3月31日”，该变动已引发车主群体激烈讨论。公司表示，将为初始交付窗... ## 特斯拉再度调整FSD转移政策：3月31日前须完成交付，已下单未交付用户或失 transfer资格. 盖世汽车讯 特斯拉近期再度调整其全自动驾驶（FSD）功能转移政策，要求用户须在2026年3月31日前完成新车交付，方可将此前一次性付费购买的FSD功能转移至新购车辆。该政策于2026年1月20日曾被临时放宽为“3月31日前下... ## 印尼电动汽车补贴若中断，车价预计上涨30-40%. 盖世汽车讯 2026年印尼电动汽车补贴政策前景不明。目前已近3月，政府仍未就本年度零排放车辆激励措施做出决定。若无补贴支持，电动汽车价格预计将大幅上扬。根据印尼大学经济与商业学院经济与社会研究所汇编的数据，... ## 江西2026汽车以旧换新补贴升级，最高可省2万元. 3月3日，江西省2026年消费品以旧换新实施细则正式公布，汽车板块补贴迎来重磅升级，由定额补贴改为按新车价格比例补贴，报废旧车购置新能源乘用车最高可享2万元补贴，进一步激发汽车消费市场活力。此次汽车以旧换新... ## 深圳发布以旧换新实施方案，汽车最高补贴2万元. 2月28日，深圳市发展和改革委员会联合其他部门印发《深圳市超长期特别国债资金支持消费品以旧换新提质增效实施方案（2026年）》，围绕汽车、家电、数码等领域推出重磅补贴政策，其中汽车板块为重点支持领域，明确报... ## 福建2026年汽车以旧换新补贴细则落地，最高补贴2万元. ## 印尼电动车政策退坡！中国车企涨价，日系反扑能成？. 印尼电动车进口关税豁免政策到期，中国车企调价承压，日系车企伺机反扑，中国车企凭借纯电领域优势主动破局，坚守印尼市场。... ## 极狐汽车推出至高25000元购车补贴，以应对购置税减半. ## 欧盟拟出台新规：电动车本土零部件含量达70%才可获补贴. 据英国《金融时报》报道，欧盟委员会将提议，电动汽车必须满足至少70%的欧盟本土产零部件含量，才有资格获得欧盟各国政府补贴。... ## 智己推新春购车权益：7年0首付、3年0息 叠加置换补贴. 2月24日，智己汽车推出新春购车权益方案。即日起至3月15日，购买智己LS6、LS9、L6三款车型的用户，可享受“7年0首... ## 【国际快讯】中国车企1月在欧销量同比大增80%；特朗普将全球输美商品关税提至15%；欧盟电动车补贴拟设70%本地化门槛. 聚焦·产经特朗普将全球输美商品关税税率从10%提高至15%日前，美国总统特朗普在其社交平台“Truth Social”上发文... ## 多地2026年汽车以旧换新补贴一览：最高补贴2万元. 2025年12月30日，商务部等8部门办公厅正式印发《2026年汽车以旧换新补贴实施细则》的通知，新政于2026年1月1日起... ## 政策定调与业绩拐点：自动驾驶赛道驶入“强预期”通道. 2月13日早盘，A股市场整体承压调整，但自动驾驶板块却逆势走出独立行情。据悉，A股中布局自动驾驶产业链的个股超... ## 碳酸锂1月价格跳涨近三成 抢出口与政策预期共振. 中国有色金属工业协会锂业分会日前发布2026年1月锂行业运行情况。受政策预期与供需结构调整影响，碳酸锂价格当月出现显著上涨，市场交易活跃度提升，期现基差同步拉大。供应端整体表现平稳，但部分正极材料企业趁春... ## 长安汽车呼吁政府尽快明确电动汽车激励政策. 盖世汽车讯 中国车企长安汽车印尼公司呼吁印尼政府尽快公布2026年电动车税收激励政策细则。该公司表示，产业界亟需政策确定性，以合理制定电动车终端售价。长安汽车印尼首席执行官Setiawan Surya于2月11日在雅加达举... ## 美国环保署拟取消启停系统相关激励政策. 在现代汽车的各类配置里，自动启停技术在多数消费者心中的口碑几乎垫底。美国环境保护署（EPA）署长李? 泽尔丁早已公开表达对这项号称能节油的技术的反感，早在 2025 年 5 月就曾表示，将代表特朗普政府废除该配置。... ## 特斯拉Semi获加州1.65亿美元清洁卡车激励补贴. 盖世汽车讯 据悉，特斯拉旗下纯电动半挂卡车Semi有望获得来自加州清洁卡车激励项目的约1.65亿美元资金支持，为其即将开始的大规模生产铺平道路。这笔补贴资金将来自加州混合动力和零排放卡车巴士激励项目（HVIP）。... ## 政策点燃汽车股，港股板块集体飘红. 2月10日，港股汽车板块表现活跃，多家主要车企股价上涨。其中，比亚迪股份领涨，涨幅约4%；奇瑞汽车涨超2%；零跑汽车、蔚来汽车、吉利汽车均涨超1%；小鹏汽车、长城汽车、赛力斯股价亦有不同幅度上涨。图片来源：摄... ## 因新能源车补贴调整，比亚迪正在日本扩大插混产品线. ## 加拿大放宽电动车强制令，重启购车补贴. 盖世汽车讯 加拿大表示将开辟自己的零排放之路，明确与美国贸易政策分道扬镳。加拿大政府宣布，将废除此前设定的硬性电动车销售强制令 —— 即要求2030年60%的新车为纯电动车、2035 年100%为纯电动车的目标，转而实... ## 2025年越南二手车市场：政策变数下的库存周转\"V型复苏\". 盖世汽车讯 2025年越南二手车市场在面临新车价格下探的压力下谨慎开局。第一季度的交易活跃度未达商家预期，月均车辆搜索量维持在约630万次的相对低位。市场冷淡反映了消费者等待宏观政策的观望心态，单车平均成交周... ## 欧盟拟调整2035年禁售燃油车政策，梅赛德斯担忧规则不确定性加剧. 梅赛德斯 - 奔驰曾与多家车企一同游说欧盟，希望其放宽 2035 年禁售全新燃油乘用车的规定。如今欧盟正放缓对全面电动化未来的激进推进节奏，梅赛德斯首席执行官康林松（Ola K? ## 湖北2026年汽车以旧换新补贴细则落地，最高补贴2万元. 日前，湖北省商务厅联合省发改委、经信厅等8部门正式印发《2026年湖北省汽车以旧换新补贴实施细则》，明确将通过... ## 西安2026年汽车以旧换新补贴细则落地，报废换新能源最高补2万元. 日前，西安发布《2026年西安市汽车以旧换新补贴实施细则》，明确将通过报废更新与置换更新两大模式，为个人消费者... ## 5,000加元加拿大电动车补贴将于2月16日重启. ## 联系我们. ## 合作电话. ## 站内导航. ## 关于盖世.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C092",
+            "cluster_size": 1,
+            "score": 50.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:14.0"
+            ]
+          }
+        },
+        {
+          "title": "36氪携手小鹏汽车解读新能源汽车最新技术发展",
+          "url": "https://xueqiu.com/4466359876/277970634",
+          "source_name": "36kr 汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 36氪携手小鹏汽车解读新能源汽车最新技术发展，探索国产新能源品牌技术突破. 来源：雪球App，作者： 36氪官方，（https://xueqiu.com/4466359876/277970634）. 36氪$36氪(KRKR)$ 近日携手小鹏汽车解读新能源汽车最新技术发展，探索国产新能源品牌技术突破。. 本期视频讲述小鹏G6应用全域800V高压平台、“扶摇“架构、BEV+Transformer技术等一系列硬核技术，提升充电效率，有效降低成本，优化地图使用体验，使小鹏G6成为高性价比的标杆产品，帮助其夺得2023年20万以上全新纯电汽车销量冠军，引领国产品牌进入追求技术突破的新阶段。. 依托",
+          "content": "# 36氪携手小鹏汽车解读新能源汽车最新技术发展，探索国产新能源品牌技术突破. 来源：雪球App，作者： 36氪官方，（https://xueqiu.com/4466359876/277970634）. 36氪$36氪(KRKR)$ 近日携手小鹏汽车解读新能源汽车最新技术发展，探索国产新能源品牌技术突破。. 本期视频讲述小鹏G6应用全域800V高压平台、“扶摇“架构、BEV+Transformer技术等一系列硬核技术，提升充电效率，有效降低成本，优化地图使用体验，使小鹏G6成为高性价比的标杆产品，帮助其夺得2023年20万以上全新纯电汽车销量冠军，引领国产品牌进入追求技术突破的新阶段。. 依托智能化和新能源等技术的迅猛发展，汽车行业正在发生摧枯拉朽的剧烈演变，技术的交锋和关于价值流向的争论层出不穷。36氪作为以媒体为旗舰的新经济服务集团，始终坚持 以“长短视频共存、图文音视频并茂”的丰富内容生态为工具，挖掘和报道新经济热点话题，高度关注以新能源汽车为代表的新经济热点领域，在赋能产业经济的同时提高自身关注度，为多元化创收提供机会。. ### 热门话题. | 8 | 看多中国，指投富国！“富国ETF”资产配置法 |. ### 热股榜更多. ### 涨跌幅榜更多. ### 热门基金. | 1 | 华夏行业景气混合A | 年化(近5年) | +21.71% |. | 2 | 中加转型动力混合A | 年化(近5年) | +18.84% |. | 3 | 前海开源金银珠宝 | 年化(近5年) | +18.41% |. | 4 | 万家品质生活混合 | 年化(近5年) | +18.32% |. | 5 | 易方达标普信息科技指数（QDII-LOF）A | 年化(近5年) | +17.98% |. | 6 | 华安标普全球石油指数 | 年化(近5年) | +17.80% |. | 7 | 财通价值动量混合A | 年化(近5年) | +17.76% |. | 8 | 前海开源公用事业 | 年化(近5年) | +17.48% |. | 9 | 财通新视野混合A | 年化(近5年) | +16.96% |. | 10 | 华宝资源优选 | 年化(近5年) | +16.57% |.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C009",
+            "cluster_size": 1,
+            "score": 49.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:13.0"
+            ]
+          }
+        },
+        {
+          "title": "多项政策措施促进新能源汽车消费",
+          "url": "https://sxb.nea.gov.cn/dtyw/ywdd/202310/t20231021_171143.html",
+          "source_name": "新能源政策",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "2020-06-11 15:38 来源：. 5月初，经过7个工作日的等待，在北京一家大型高科技公司工作的唐梦梦，终于拿到了给家里的第二辆车——小鹏G3纯电动SUV安装充电桩的全部审批手续。尽管越来越多的消费者开始接受新能源汽车，市场上可选择的车型越来越多，充电“一桩难求”的现象也在逐步改观，但是，去年下半年补贴大幅退坡后，新能源汽车市场开始陷入负增长。4月，新能源汽车当月产销分别完成8万辆和7.2万辆，同比分别下降22.1%和26.5%。今年前4个月，累计产销均完成20.5万辆，同比分别下降44.8%和43.4%。政府出台的促消费政策措施，能让新能源汽车市场重拾升势吗？消费者购买新能源汽车，又",
+          "content": "2020-06-11 15:38 来源：. 5月初，经过7个工作日的等待，在北京一家大型高科技公司工作的唐梦梦，终于拿到了给家里的第二辆车——小鹏G3纯电动SUV安装充电桩的全部审批手续。尽管越来越多的消费者开始接受新能源汽车，市场上可选择的车型越来越多，充电“一桩难求”的现象也在逐步改观，但是，去年下半年补贴大幅退坡后，新能源汽车市场开始陷入负增长。4月，新能源汽车当月产销分别完成8万辆和7.2万辆，同比分别下降22.1%和26.5%。今年前4个月，累计产销均完成20.5万辆，同比分别下降44.8%和43.4%。政府出台的促消费政策措施，能让新能源汽车市场重拾升势吗？消费者购买新能源汽车，又将面临哪些新的选择呢？. **补贴延长、购置税免征，政策“红包”助推新能源车市回暖**. “市里补贴1万元，厂家追加补贴1万元，现在买电动车划算。”赵顺在广州经营一家装饰公司，前些年一直开着一辆广西牌照的燃油车四处跑客户。去年开始，广州对外地车辆驶入管控区域实施了“开四停四”的限行政策，规定外地车在市中心管控区域连续行驶时间最长不得超过4天，再次驶入须间隔4天以上。“经常记不住，一次违章就要记3分罚200元，早就琢磨买辆新能源车了。”赵顺说，3月份，广州市出台了购买纯电动车补贴1万元的好政策，他就出手了。广汽新能源广州长蔚店总经理朱展应告诉记者，广州市政府3月3日推出“稳经济”一揽子措施，明确提出购买纯电动汽车政府补贴1万元。广汽新能源当天宣布“政府补贴1万元，广新再补1万元”。消息发出，网上关注度和到店量、成交量都出现了大幅攀升。“3月份成交200多台，创下了我们店成立以来纯电动汽车单月销售纪录！”朱展应说。. 3月31日，国务院常务会议明确将原本2020年底全部退出的新能源汽车购置补贴延长两年，与此同时，新能源汽车免征购置税政策也延长两年，这意味着新能源汽车补贴2.0时代正式到来。. 4月23日，财政部等四部委联合发布《关于调整完善新能源汽车补贴政策的通知》，明确新能源乘用车（不含出租、网约车）2020年至2022年补贴标准在上年基础上分别退坡10%、20%、30%，续航低于300公里的不能获得补贴，销售价格超过30万元/辆的将不能获得补贴，但换电模式车辆不受影响。“新能源汽车补贴政策与购置税优惠延长两年，相当于给消费者发放了一个总额千亿元左右的大红包。”全国乘用车联合会秘书长崔东树说，这对新能源汽车构成重大利好。广汽新能源总经理古惠南则认为，补贴及免购置税政策延期，并明确了今后三年中补贴退坡的幅度，相当于给市场吃了颗定心丸，不仅缓解了企业成本压力，而且有利于下阶段整车企业的研发和生产组织。对于消费者而言，也意味着不必为了即将退出的补贴赶在今年买车，将有更多的选择余地。. “家里的车位是年租，没有产权，按以往惯例，小区物业不会批准我们安装充电桩。”唐梦梦说，让她感到惊喜的是，当她试着将提车时4S店提供的一式三份的安全承诺书填好交给物业，竟然拿到了小区的充电桩安装协议。接下来，拿着承诺书和物业的安装协议，去供电局申请安装电表，7个工作日后，申请就批下来了。家住上海宝山区的90后全职妈妈徐青怡，去年底购买了一辆吉利旗下的纯电动汽车几何A。尽管是老小区，没有固定停车位，经过申请，还是得到了物业的充电桩安装许可。其实，早在2015年，国务院办公厅就发布了《关于加快电动汽车充电基础设施建设的指导意见》。2016年，国家发改委等五部门又共同发布了相关细则，明确划分了用户、电动汽车企业、供电公司、物业等各方职责，同时规范了小区内充电桩建设的相关流程。近年来，各地也出台了一系列鼓励充电桩进小区、实施奖补等措施，唐梦梦和徐青怡能顺利安装充电桩，均受益于此。. 国家能源局监管总监李冶介绍，截至2019年底，我国充电基础设施达到120万个，较上年底增加了50万个。不仅如此，充电桩的结构也得到进一步优化，其中，公共桩50万个，增速放缓；私人专用桩70万个，保持高速增长的态势。“这也从一个侧面反映出新能源汽车正加速从政策驱动向市场驱动转化。”李冶说。. 伴随着充电桩建设跻身新基建， 加快充电桩建设进程，改变“车多桩少”局面，为新能源汽车消费按下了“加速键”。. “预计今年全年能够完成投资100亿元左右，新增公共桩大概20万个，新增私人桩有望超过40万个，公共充电站达到4.8万座。”国家发改委产业发展司副司长蔡荣华说。财政部经济建设司司长孙光奇日前也表示，财政部将研究优化充电设施建设的奖补政策，进一步调动地方积极性。. 受疫情和多方因素影响，今年前4个月，我国新能源汽车累计销量几乎同比腰斩，但对国产特斯拉Model 3而言，却是不折不扣的“高光时刻”。尤其是3月份，该车型单月销量过万辆。尽管4月份受补贴调整影响，销量仅为3635辆，但当月产量依旧过万。“家人一开始想买辆Model 3。”唐梦梦告诉记者，如果单看品牌效应、造型设计、加速性能等，特斯拉有优势；但综合考虑性价比，中国品牌的新能源车还是更亲民一些。“虽然特斯拉入门车型降了3万多元，我们还是需要贷款。后来想还是实际点，付全款买辆小鹏G3。”唐梦梦说。“虽然新能源汽车的使用成本较低，充电难的问题也在逐步得到解决，但对于消费者而言，首次投入成本过高、二手车残值偏低，还是使大部分私人消费者望而却步。”长安汽车董事长张宝林坦言。. 一项调查显示，与同年份的燃油车相比，纯电动车型的二手车保值率大概要低10个百分点。即便是特斯拉，4年、行驶里程10万公里的二手车，保值率也低于50%，一些口碑不佳的国产品牌纯电动车，车龄一年的保值率只有63%。为此，一些品牌推出了残值回购、电池租赁等新商业模式，但仍非市场主流。. “要加强产品、服务、商业模式的融合创新。”上汽集团总裁王晓秋认为，解决这一难题，应充分利用金融工具链和数据业务链，打通新能源购车、保险、租赁、保养、维修、二手车、残值回收等全业务链，建立覆盖全生命周期的服务方案，增强用户的服务价值体验。. 5月8日，一张某品牌纯电动厢式车在东莞一家充电站自燃，并将旁边一同充电的多车引燃的照片，刷爆了朋友圈。5月18日，一个某品牌纯电动轿车在公共停车场突然起火爆炸燃烧的视频，再次让纯电动车自燃这个话题引起消费者的关注。. 据不完全统计，去年5月以来的短短3个月内，我国发生了79起新能源汽车着火事件，涉及品牌从进口产品特斯拉，到几万元的中国品牌产品，分布范围很宽。比亚迪董事局主席王传福说：“任何一个品牌的安全事故都会影响到整个行业的健康发展。”. 为进一步提升新能源汽车的安全性，5月12日，工业和信息化部组织制定的电动汽车及动力电池三项强制性国家标准，由国家市场监督管理总局、国家标准化管理委员会批准发布，将于2021年1月1日起开始实施。“标准增加了电池系统热扩散试验，要求电池单体发生热失控后，电池系统在5分钟内不起火不爆炸，这将为乘员预留必要的安全逃生时间。”工业和信息化部有关专家表示。. “今年，我国动力电池领域两家领军企业宁德时代和比亚迪，不约而同地在电池包技术领域实现了创新。”中国科学院院士、中国电动汽车百人会副理事长欧阳明高说，宁德时代的CTP和比亚迪的刀片电池技术，让安全性能具有明显优势的磷酸铁锂电池，能量密度大幅提升，成本显著降低，这将是纯电动乘用车消费者的一大福音。（记者王政）. 办公地址: 山西省太原市杏花岭区南肖墙12号 邮编:030006邮箱：sxb@nea.gov.cn. 主办单位: 国家能源局山西监管办公室 京公网安备 11010202007691 网站标识码: bm62000001 京ICP备11044902号.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C071",
+            "cluster_size": 1,
+            "score": 49.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:13.0"
+            ]
+          }
+        },
+        {
+          "title": "换电VS超充:一场让2000万新能源车主失眠的补能大战 - 新浪财经",
+          "url": "https://cj.sina.cn/articles/view/7880068201/1d5b04c6901901x3wo?froms=ggmp&vt=4",
+          "source_name": "充电与补能",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "外汇 管理 消费 科技 互联网 手机. 保险 数码 科普 创业 银行 新三板 其他. # 换电VS超充:一场让2000万新能源车主失眠的补能大战. 语音播报 缩小字体 放大字体 微博 微信 分享 0. #优质好文激励计划#春节假期的高速服务区里，新能源车主们正上演着现实版\"抢车位\"。家住上海的陶明哲一家三口自驾前往黄山，沿途充电站不是排长队就是遇到\"僵尸桩\"，最终不得不下高速寻找充电桩。这样的场景正在2041万中国新能源车主中 daily上演。. 当比亚迪在3月17日抛出超充计划后，宁德时代与蔚来连夜签署战略合作协议，宣布要打造全球最大换电网络。这场补能技术路线的较量，远比表面看到的更为残酷。",
+          "content": "外汇 管理 消费 科技 互联网 手机. 保险 数码 科普 创业 银行 新三板 其他. # 换电VS超充:一场让2000万新能源车主失眠的补能大战. 语音播报 缩小字体 放大字体 微博 微信 分享 0. #优质好文激励计划#春节假期的高速服务区里，新能源车主们正上演着现实版\"抢车位\"。家住上海的陶明哲一家三口自驾前往黄山，沿途充电站不是排长队就是遇到\"僵尸桩\"，最终不得不下高速寻找充电桩。这样的场景正在2041万中国新能源车主中 daily上演。. 当比亚迪在3月17日抛出超充计划后，宁德时代与蔚来连夜签署战略合作协议，宣布要打造全球最大换电网络。这场补能技术路线的较量，远比表面看到的更为残酷。华为终端BGCTO李小龙直言换电模式面临电池迭代的兼容性噩梦，而蔚来副总裁沈斐则回怼\"在不熟悉的领域不要轻易发言\"。. 蔚来第四代换电站将补能时间压缩到2分30秒，号称\"比加油还快\"；华为则推出1.5兆瓦超充方案，15分钟即可充满电池。这些数字听起来令人振奋，但现实往往比理想骨感。. 单个换电站建设成本高达491万元，日均需服务60单才能盈亏平衡。而实际调研显示，一线城市换电站日均仅10-20单。超充站同样面临挑战，比亚迪的兆瓦级充电功率相当于166户家庭同时用电，若400万辆电车同时快充，瞬时负荷将达夏季全国最大用电负荷的2.6倍。. 更残酷的是地域分布不均。全国67.9%的公共充电桩集中在广东、浙江等10个省份，9辆新能源车要争夺1个公共充电桩。换电站方面，蔚来虽已建成3107座，但964座位于高速公路，城市覆盖率仍显不足。. 特斯拉全球副总裁陶琳坚持认为充电才是民用电动车最佳方案，而宁德时代董事长曾毓群则预言2030年换电、家充、公共充电将三分天下。这场争论背后，是价值千亿的补能市场争夺战。. 蔚来联合长安、吉利等组建换电联盟，试图统一行业标准；小鹏、极氪则押注800V超快充技术。政策层面，工信部明确支持换电模式发展，北京计划年内建成1000座超充站。两种路线都在争夺行业话语权。. 星星充电推出的\"私桩共享\"模式已盘活数万私人充电桩，这种轻资产运营与重投入的换电站形成鲜明对比。蔚来计划2025年实现全国充电县县通，但下沉市场的盈利难题仍是悬在头顶的达摩克利斯之剑。. 数据显示72%用户倾向选择120kW及以上大功率充电桩，其中180kW超充桩选择率达18%。这种偏好正在重塑补能市场格局：极氪与特来电共建800V超快充网络，比亚迪规划4000座光储充一体化闪充站。. 换电阵营也在进化。蔚来充电网络已服务超200个汽车品牌，80%电量供给非蔚来用户。这种开放策略能否突破\"四不同\"困境（不同车企、品牌、车型、代际的电池不兼容），将决定换电模式的生死。. 当补能体验成为继续航后的第二大购车决策因素，车企们不得不重新审视战略。是孤军奋战自建网络，还是开放合作共享资源？这场补能大战没有旁观者，2000万新能源车主正在用充电枪和换电订单投票。. ## 头条号入驻. * ## 2026款海狮06/07EV 15.99万起上市,续航710km、闪充5分钟|ev|比亚迪|刀片电池\\_订阅. ## 财经自媒体联盟更多自媒体作者. ## 热文排行榜. * 04 在美国，我感受到“越南制造”在取代“中国制造”. * 06 三星“宫心计”：儿子检举父亲，父母逼死女儿. * 10 56岁创业，年利是华为1.5倍，他是让对手发抖的人！. 关于头条 | 如何入驻 | 发稿平台 | 奖励机制 版权声明 | 用户协议 | 帮助中心. Copyright © 1996-2019 SINA Corporation. All Rights Reserved 新浪公司 版权所有.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C090",
+            "cluster_size": 1,
+            "score": 49.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:13.0"
+            ]
+          }
+        },
+        {
+          "title": "理想汽车最新周榜单！ - 搜狐",
+          "url": "https://www.sohu.com/a/821619892_290112",
+          "source_name": "新能源销量",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "### 搜狐汽车小程序 微信扫一扫 ### 汽车营销分析 汽车营销分析(im4s.cn)是为中国汽车品牌，经销商集团，广告公关量身打造的全新汽车行业众筹传播平台。以基于网站，微博，微信，移动应用的多渠道结合的方式，为汽车行业提供全新的品牌推广、信息传播以及全新的汽车营销学习分享，助力汽车品牌传播不断创新。 将文章分享到微信 ### 理想汽车最新周榜单！ 10月29日，理想汽车发布2024年第43周（10月21日至10月27日）销量榜单。 从中国新能源汽车品牌销量榜单来看，第43周共有4家车企销量超万辆，其中，比亚迪以9.56万辆的销量继续蝉联榜首，几乎是其余九家车企的销量之和。如今比亚迪已形成",
+          "content": "### 搜狐汽车小程序 微信扫一扫 ### 汽车营销分析 汽车营销分析(im4s.cn)是为中国汽车品牌，经销商集团，广告公关量身打造的全新汽车行业众筹传播平台。以基于网站，微博，微信，移动应用的多渠道结合的方式，为汽车行业提供全新的品牌推广、信息传播以及全新的汽车营销学习分享，助力汽车品牌传播不断创新。 将文章分享到微信 ### 理想汽车最新周榜单！ 10月29日，理想汽车发布2024年第43周（10月21日至10月27日）销量榜单。 从中国新能源汽车品牌销量榜单来看，第43周共有4家车企销量超万辆，其中，比亚迪以9.56万辆的销量继续蝉联榜首，几乎是其余九家车企的销量之和。如今比亚迪已形成比亚迪品牌、腾势品牌、方程豹品牌、仰望品牌矩阵，且产品不断在完善，截至9月底，年内比亚迪累计汽车销量为274.79万辆，同比增长32.13%。按360万辆的销量目标计算，年内比亚迪销量目标已完成76.33%，预计能如期实现销量目标。 五菱汽车排名第二名，周销量为2.13万辆；理想汽车和特斯拉紧跟其后，周销量也均达万辆级别，分别为1.13万辆、1.05万辆。其它品牌销量均低于万辆，第五至第十品牌排名分别吉利汽车、问界、零跑汽车、银河汽车、埃安汽车、长安汽车，周销量分别为0.90万辆、0.87万辆、0.85万辆、0.74万辆、0.66万辆、0.57万辆。 新势力销量榜单方面，理想汽车周销量为1.13万辆，连续27周获中国市场新势力品牌销量第一，问界为0.87万辆，与理想汽车相差0.26万辆。进入前三的还包括零跑汽车，周销量为0.85万辆。目前，零跑汽车在售车型包括零跑C11、零跑T03、零跑C16、零跑C10、零跑C01，进入下半年以来，零跑汽车销量已多次创月交付新高，其中8月和9月销量均超3万辆，预计本月或能再创新高。 [...] 小米汽车周销量为0.57万辆，作为年内最受关注的新晋品牌，小米汽车首款车型小米SU7已连续4个月交付超万辆，累计销量为6.98万辆，小米集团董事长雷军此前在直播时称，预计10月目标生产和交付量超20000辆。除小米汽车外，包括小鹏汽车、极氪汽车和深蓝汽车三家车企周销量均在5万辆级别，分别为0.56万辆、0.51万辆、0.50万辆。其中，小鹏汽车和深蓝汽车相比于第42周（10月14日至10月20日）销量均有所增长。此外，蔚来汽车、极狐汽车、腾势汽车也均进入榜单前十名，周销量分别为0.42万辆、0.30万辆、0.21万辆。 最后再来看看中国豪华品牌TOP10销量榜单，榜单前三名分别为宝马、奔驰和理想汽车，周销量分别为1.29万辆、1.27万辆、1.13万辆，而奥迪排名第四名，销量为1.11万辆。从最近几周销量来看，理想汽车与BBA之间的差距正逐渐缩小。此外，特斯拉销量也超万辆，为1.05万辆。 问界、极氪、雷克萨斯、蔚来、沃尔沃均进入前十名，周销量分别为0.87万辆、0.51万辆、0.44万辆、0.42万辆、0.29万辆，而凯迪拉克再次跌出榜单前十名。 如今，中国汽车行业的格局已悄然发生改变，曾经一度独占鳌头的合资品牌如今正被自主品牌加速赶超，而“蔚小理”的阵营也逐渐被打破，理想汽车和问界争相抢夺新势力销冠头衔，其它新势力品牌也在市场中不断寻找属于自己的位置。今年将是国内新能源车企重新洗牌的一年，竞争注定激烈，当然，当前新能源市场尚未定型，这也意味着未来市场竞争将更加激烈。 声明： 本文由入驻搜狐公众平台的作者撰写，除搜狐官方账号外，观点仅代表作者本人，不代表搜狐立场。 ### 评论（174） 文明上网理性发言，请遵守《搜狐我来说两句用户公约》 大白兔 大白兔 小子 大白兔TGXprpqJZGM 大白兔TGXprpqJZGM",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C113",
+            "cluster_size": 1,
+            "score": 49.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:13.0"
+            ]
+          }
+        },
+        {
+          "title": "后补贴时代，如何继续推动新能源汽车发展？ - ICCT",
+          "url": "https://www.theicct.org.cn/2023/12/26/%E5%90%8E%E8%A1%A5%E8%B4%B4%E6%97%B6%E4%BB%A3%EF%BC%8C%E5%A6%82%E4%BD%95%E7%BB%A7%E7%BB%AD%E6%8E%A8%E5%8A%A8%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6%E5%8F%91%E5%B1%95%EF%BC%9F/",
+          "source_name": "新能源政策",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "图解 短视频 ICCT Webinar 数据可视化. 关于我们 愿景2050 董事会成员 员工团队 合作伙伴 加入我们. # 后补贴时代，如何继续推动新能源汽车发展？. ## 一、**新能源****乘用车推广政策的发展新趋势（政策更新截至2023年9月）**. ## 主要研究结论. 在过去的两年中，国家层面出台了若干政策文件，旨在加强充电网络发展。例如，《关于进一步提升电动汽车充电基础设施服务保障能力的实施意见》中要求“新建居住社区要确保固定车位100%建设充电设施或预留安装条件”，并提出“力争到2025年，国家生态文明试验区、大气污染防治重点区域的高速公路服务区快充站覆盖率不低于80%，其他",
+          "content": "图解 短视频 ICCT Webinar 数据可视化. 关于我们 愿景2050 董事会成员 员工团队 合作伙伴 加入我们. # 后补贴时代，如何继续推动新能源汽车发展？. ## 一、**新能源****乘用车推广政策的发展新趋势（政策更新截至2023年9月）**. ## 主要研究结论. 在过去的两年中，国家层面出台了若干政策文件，旨在加强充电网络发展。例如，《关于进一步提升电动汽车充电基础设施服务保障能力的实施意见》中要求“新建居住社区要确保固定车位100%建设充电设施或预留安装条件”，并提出“力争到2025年，国家生态文明试验区、大气污染防治重点区域的高速公路服务区快充站覆盖率不低于80%，其他地区不低于60%”的发展目标；在《加快推进公路沿线充电基础设施建设行动方案》中设定了“加强高速公路服务区充电基础设施建设，利用高速公路服务区存量土地及停车位，加快建设或改造充电基础设施，每个服务区建设的充电基础设施或预留建设安装条件的车位原则上不低于小型客车停车位的10%”的主要任务；《加快推进充电基础设施建设 更好支持新能源汽车下乡和乡村振兴的实施意见》则为提升改善农村地区充电基础设施提供了政策指导。上述各项政策反映了政府部门全面发展充电基础设施的努力和决心，以期满足新能源汽车日益增长的充电需求。. 如表2所示，在国家层面政策的指导下，各省市也出台了多项充电基础设施建设规划和发展政策。特别是从省级层面出台了许多针对高速公路、城市郊区和农村地区的发展政策，因为这些地区通常不直接隶属于城市管辖范围。在住宅小区充电设施方面，成都和许多其他城市已经发布了建设和管理指南。这些政策指导文件有助于明确各方责任，消除居民社区充电桩安装环节所面临的障碍。与几年前相比，更多的城市正在树立“统建统服”的概念，这意味着社区内的充电设施应由统一的机构负责安装建设和运营维护，这样的做法能够简化运维流程，确保充电基础设施的高效发展和运营。. 自2020年以来，国家通过持续开展“新能源汽车下乡”活动支持新能源汽车在偏远地区和农村地区的发展。此外，在商务部组织开展的汽车促消费活动中，也通过“千县万镇”新能源汽车消费季等区域性活动，助力新能源汽车走进农村。. 在国家的大力推动下，各城市也积极出台措施，提高新能源汽车在农村地区的认知度和普及率。例如，无锡作为2023年全国新能源汽车下乡活动的首站启动城市，共计发放了3000万元消费券促进新能源汽车消费。天津也制定了一揽子政策措施来推动新能源汽车下乡，包括丰富新能源汽车车型供应，不断打造适合农村地区新能源汽车市场的明星产品；推进新能源二手车评估和交易；以及开展“新能源汽车下乡”系列活动等。此外，为支持专业化、规划化、国际化冷藏运输建设，天津还对购置包括新能源冷链运输车在内规模5辆以上（含5辆）项目给予不超过车辆购置费20%补助（不超过500万元人民币）。安徽省鼓励地方政府、制造商和销售企业共同策划“新能源汽车下乡”活动，并提供活动成本30%的补助，最高可达50万元人民币，以支持具有一定规模的展销活动。山西省运城市实施的下乡推广措施是委托一家指定企业在该市郊区和农村地区建设充电桩，旨在促进企业在潜在利润率可能相对较小的偏远地区建立和维护充电基础设施。. 国家层面在过去几年中发布了一系列自愿性和强制性政策，以规范和改善新能源汽车电池的回收利用。这些政策扩大了新能源汽车制造商/进口商、电池制造商/进口商以及回收企业在新能源汽车电池回收利用方面的责任。政策法规中还包括了对新能源汽车电池的编码规定（类似于汽车的车辆识别码，由汽车制造商按年度报告电池的回收利用情况）。但仍需要进一步出台管理政策和激励措施来建立强效的管理机制和可追溯管理系统，同时还要辅以合规管理方案。. 目前，地方层面也存在激励措施不足的问题，如何有效推动电池回收利用仍然是一个问题。深圳在2018年率先成为中国第一个为新能源汽车电池回收提供补贴的城市，根据补贴方案，对于在深圳销售新能源汽车的企业，应当按20元/千瓦时的标准专项计提动力蓄电池回收处理资金，对已按要求计提动力蓄电池回收处理资金的企业，按经审计确定的金额的50%对企业给予补贴，补贴资金应专项用于动力蓄电池回收，不过，这项补贴已于2021年取消。广西是2023年少数提供电池回收补贴的地区之一，《广西壮族自治区新能源汽车推广应用三年行动财政补贴实施细则》为在广西生产销售新能源汽车的企业提供20元/千瓦时的电池回收补贴，并在2021至2023年期间对动力蓄电池回收网点建设按不超过建设成本的30%进行补贴。. 部分省市会鼓励在一些特定区域内加速大力推进新能源汽车的应用，这些特定区域主要包括低排放/零排放区、旅游区、工业园区、港口、矿区和岛屿。例如，海南省鼓励城市率先建立低排放和零排放区，该省的目标是到2030年，每个市县至少建成一个机动车零排放区。福建省支持在景区、厂区、港区、物流园区、矿区等重点区域及省内岛屿打造新能源汽车推广应用示范区，支持平潭、湄洲、东山等岛屿实施电动化。广西省北海市对在涠洲岛生态环境保护范围内全面推广使用新能源汽车，除岛上单位和个人现有依法登记使用的燃油机动车以外，禁止运输新增燃油机动车上岛，鼓励淘汰现有燃油机动车。北京在《北京市国土空间近期规划(2021年—2025年)》中提出要在重点区域率先推动“低排放区、零排放区”试点。上述这些有针对性的行动措施，体现了各地在特定局部地区加速推进新能源汽车应用的众志雄心。. ## **小结**. 中国在汽车电动化转型方面已取得了非常显著的成绩，并在新能源汽车领域保持全球领先，**2022年新能源汽车销量达到620万辆**（比2021年增长82%），**占全球总销量的59%**。随着购置补贴的结束，国家和地方政府都在积极探索政策替代方案，以助力新能源汽车市场继续增长并应对地区发展不均衡、充电基础设施建设、电池回收利用等多方面的挑战。. ## 二、**新能源****商用车推广政策的发展新趋势**. 作为运输结构调整、减少交通运输污染物排放的关键力量，新能源商用车的发展动向备受关注。其推广政策主要由国家层面的宏观政策、地方政府的实施措施以及示范项目三大板块构成。国家层面发布的政策为新能源商用车的发展指明了方向，而各地因地制宜的推广措施则进一步扩大了国家政策的实施效果。此外，各地还开展了多种新能源商用车示范项目，这些项目不仅检验了创新推广方案和政策的落地效果，更为新能源商用车的发展积累了实践经验。. ## 主要研究结论. 2022年新发布的《柴油货车污染治理攻坚行动方案》（以下简称“行动方案”）强调了要推进重点行业企业发展清洁运输，新版“行动方案”扩展了2018版方案下设定的发展目标，进一步提出了火电、钢铁、煤炭、焦化、有色等行业大宗货物清洁方式运输比例达到70%左右，重点区域达到80%左右，重点区域推进建材清洁方式运输，鼓励大型工矿企业开展零排放货物运输车队试点。“行动方案”同时还要求企业按照重污染天气重点行业绩效分级技术指南要求，加强运输车辆管控，完善车辆使用记录，鼓励未列入重点行业绩效分级管控的企业参照开展车辆管理，加大企业自我保障能力。. 在“行动方案”的基础上，不少地方政府都出台了地方行动方案，提出了更为细节的要求。例如，河南省要求全省大气污染防治重点区域禁止新增钢铁、煤化工、焦化等特定行业产能；国家、省绩效分级重点行业新建、扩建项目需达到A级绩效水平（项目可根据其污染物排放限值、污染治理措施、排放控制水平、运输方式等要素被评定为A-D级绩效水平）；在重污染天气预警期间，将结合绩效分级，对生产运输活动实施应急管控方案。浙江省提出了到2025年重点企业大气污染防治绩效评级B级及以上占比达到10%的目标。广东省要求发生过重污染天气的地市应率先开展重点行业绩效分级。四川省则通过扩大行业覆盖范围来进一步加强重污染天气重点行业绩效评级工作。. 中国在推动公共车辆向全面电动化转型方面已经取得了长足的进展，公共车辆主要包括公交车、公共服务车辆（如邮政、环卫、城市物流配送和机场运营等）以及政府机构使用的公务车辆。2023年，工信部发布了《关于组织开展公共领域车辆全面电动化先行区试点工作的通知》，要求试点领域新增及更新车辆中新能源汽车比例显著提高，其中城市公交、出租、环卫、邮政快递、城市物流配送领域力争达到80%。同时，要求新增公共充电桩（标准桩）与公共领域新能源汽车推广数量（标准车）比例力争达到1：1（标准桩数量=充电桩x折算系数，折算系数=充电桩总功率/60kW，向下取整，180kW以上充电桩折算为标准桩后乘以1.1倍调整系数计算；标准车=纯电动乘用车车型，其他车型按照长度和总质量比例进行折算）。. 虽然当时尚未公布首批试点区域，但已提出采用分类模式来为试点区域设定车辆推广目标，到2025年各试点区域根据分类不同，将发展部署新能源汽车2-10万辆。在对试点区域进行分类时，会考虑经济发展水平、新能源汽车产业基础、推广应用情况等多方面因素，申请试点的区域应制定电动化发展目标并编制工作方案。. 其他一些公共服务车辆，包括工程、建筑和机场车辆等，也是进一步推动电动化发展的目标群体。目前，城市层面有一些针对中型和重型货车提供的激励，例如在成都注册登记的燃油燃气建筑垃圾运输车、混凝土运输车报废（或转出成都），并新购新能源建筑垃圾运输车、混凝土运输车，可分别按相关政策获得20万元/车、30万元/车的激励奖补。. 早在2015年，中国民航局（CAAC）就启动了一项非常具有前瞻性的可持续出行方案，选定了六个机场开展地面交通车辆从化石燃料向电动化过渡试点，主要意在解决柴油车在怠速和低速运行条件下污染物排放过高的",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C067",
+            "cluster_size": 1,
+            "score": 46.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源公信力时代：谁为「真实体验」保驾护航？",
+          "url": "https://eu.36kr.com/zh/p/3642034039885696",
+          "source_name": "36kr 汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 新能源的公信力时代，谁来为「真实体验」兜底？. 1月5日，一场打破行业体面的直播预告冲上微博热门。汽车之家原创账号发布的一条“自嘲”视频，直接把汽车媒体评论区里最常见、也最刺耳的质疑——“充值”二字，搬上了台面。. 不再回避质疑，而是把质疑本身作为行业讨论的起点。当晚，汽车之家《冬测100问》直播，逐条回应前不久冬测引发的用户追问：“是否充值？”、“为什么不去北极做冬测！”、“今年续航测试的规则是什么？”。. 在这场持续3小时的答疑中，汽车之家选择站在一个平台型专业媒体的位置，从续航、充电、空调、安全、性能以及越野等多个维度正面回应汽车行业测试长期被回避、却始终存在的信任问题。. 相比单纯",
+          "content": "# 新能源的公信力时代，谁来为「真实体验」兜底？. 1月5日，一场打破行业体面的直播预告冲上微博热门。汽车之家原创账号发布的一条“自嘲”视频，直接把汽车媒体评论区里最常见、也最刺耳的质疑——“充值”二字，搬上了台面。. 不再回避质疑，而是把质疑本身作为行业讨论的起点。当晚，汽车之家《冬测100问》直播，逐条回应前不久冬测引发的用户追问：“是否充值？”、“为什么不去北极做冬测！”、“今年续航测试的规则是什么？”。. 在这场持续3小时的答疑中，汽车之家选择站在一个平台型专业媒体的位置，从续航、充电、空调、安全、性能以及越野等多个维度正面回应汽车行业测试长期被回避、却始终存在的信任问题。. 相比单纯亮出榜单和测试数据，汽车之家《冬测100问》更像一次内部罕见的公开复盘，全方位拆解了冬测背后的设计逻辑。这场敢于亮底牌的直播，也引发了新能源行业的讨论，抖音实时在线人数最高接近2万人。. 也正是从这场直播开始，汽车之家让新能源冬测转向了一个更大的问题——**为什么在当下这个时代，我们依旧需要媒体做大规模、可被反复验证的车辆测试？**. 无论是穿越塔克拉玛干沙漠，还是挑战青藏高原极限海拔，抑或是首登南极大陆——当新能源行业开始推崇一种技术上限，这些车企自行发起的测试，也在不知不觉中演变为一系列博取流量的营销事件。. 这并非否认极端环境下的测试价值。但在2025年中国新能源渗透率已接近60%的当下，这类测试与普通用户的真实用车需求之间，出现了天然的错位。. 车企测试的核心目标，是产品能力验证。无论是极限工况测试，还是耐久性验证，其价值在于确认车辆是否达标。这类测试对工程团队至关重要，但是放在传播层面，车企立场决定了测试结果的呈现，往往更强调能力的上限。. 问题在于，当新能源进入大众化阶段，用户需要的已经不只是这辆车能在百公里跑多快，而是面临着更本质的问题：在日常使用条件下，它是否稳定、好用甚至值得信赖。在这个核心拷问上，如今的消费者已经不能全然依赖主机厂给出可信的答案。尤其是在智驾安全争议不断，冬季新能源续航普遍缩水的阶段，作为一个拥有公信力的第三方评判体系，正是媒体测试存在的意义。. 它并非围绕单一指标或极限性能展开，而是从用户真实的冬季用车场景出发，构建起一套覆盖性能、安全、续航、越野、空调与可靠性在内的六大核心维度，并通过 12 项标准化测试，将新能源车在严寒环境下的真实表现拆解为可对比、可验证的结果体系。. 这套体系化测试与系统标准的背后，依托的是汽车之家深耕汽车内容二十年的专业经验，以及一套经得起时间检验的测试方法论。正是在这个基础上，汽车之家得以承担起第三方“尺度制定者”的角色，在厂商技术叙事与用户真实感受之间，提供一个可被信任的参照系。. 就拿去年10月发生的“准冬测”事件举例。随着汽车之家发布小米YU7、理想I6以及特斯拉Model Y三款电动车的冬季续航测试成绩，网络上掀起了一阵关于“10度是否能叫冬天”的激烈讨论。. 支持方认为，10℃覆盖了中国大量地区的真实用车场景，对南方用户具备参考价值，反对方则认为，将10℃测试直接冠以“冬测”之名，存在概念模糊的问题。这一分歧，使“冬测”这一原本应当具备专业解释的概念，直接被拉入了舆论与营销的灰色地带。. **这类围绕“准冬测”的争议，也并非针对某一次测试本身，而是折射出新能源行业在快速发展过程中，对测试标准、公信力边界和传播边界的重新拷问**：测试环境是否真实？测试条件是否公平？结论是否经得起复盘？冬测的准确概念到底是什么？. 当这些问题被不断放大，流量或许还能制造声量，但真正稀缺的，是能够被长期信任的判断基础。尤其是在算法主导的内容环境中，这种公信力变得更加脆弱。. 一句“冻真格，讲真话”更像是这个专业汽车媒体的自我施压。它通过官号发布海报亮明态度，通过视频全程记录主动将测试过程置于全网监督之下，把判断权交还给公众。. 这种选择意味着高成本，也意味着高风险。为了避免任何关于测试公正性的质疑，汽车之家统一租赁所有参测车辆，确保均为消费者在4S店能够正常购买的量产车型，从源头上排除“特调车”的可能性。毕竟，一旦车辆来源不独立，测试的公平性便会在起点被削弱。. 同样的逻辑，也体现在测试条件的设置上。汽车之家自建约80万平方米的冰雪测试场地，在同一场地内完成标准化测试流程；所有车辆统一使用米其林、倍耐力、马牌等一线品牌雪地胎，尺寸与原厂保持一致，胎压为厂家推荐值，并按组划分车型，尽可能拉平测试中的外部变量。. 这些近似“苛刻”的统一标准，本质上只有一个目的：**让最终呈现的差异尽可能指向产品本身，而非条件差异带来的干扰。**. 在样本层面，此次冬测覆盖67台主流热门车型。规模化测试的意义，就在于用足够大的样本量稀释单车表现的偶然性，避免个体结果被过度解读，从而为用户提供更稳定、可复用的判断基础。. “冻真格，讲真话”并非一句轻松的口号。这场冬测背后，是两百余人团队、耗时一个月的真实投入。其最终获得吉尼斯“最大规模的实地汽车冬测”认证，也从侧面印证了这场测试在规模、复杂度与执行成本上的客观难度。. 电池、电控、智驾、OTA升级——这些技术并没有转换为用户可以理解的语言，而是被压缩成“XX领先”的营销话术；而大多数第一次购买新能源电车的用户，甚至并不知道冬天续航掉多少才算正常。. 这也导致了任何一次看起来不够严谨、标准不统一的测试，都会被迅速放大，演变为对整个新能源行业公信力的质疑。正如2023年，某平台发起的极限环境冬测，就因测试边界与方法论争议，引发了多家车企及车企高管的公开质疑。. 从整个产业来看，冬测之所以屡屡引发争议，并非简单的技术分歧，而是一场围绕用户信任如何被建立、被验证的长期较量。. 在新能源快速渗透的大众化阶段，用户对车辆性能的判断，越来越依赖第三方测试所提供的“外部尺度”。一旦测试标准模糊、方法不透明，争议便不可避免，而信任也会随之瓦解。. 早在2005年汽车之家成立之时，彼时的购车信息渠道相对狭窄，购车体验高度依赖4S店导购、纸媒广告与口碑传播。价格不透明、信息不对称、决策周期漫长，让大众消费者购买一台车充满着各种不畅。. 在那个门户网站主导信息分发的年代，汽车之家作为中国较早一批垂直类汽车媒体平台成立，开始以内容来改造汽车消费链路。二十年后，汽车之家不仅见证了中国汽车消费的普及，也陪伴了几代人的选车、购车、用车。. 尤其是在2025年下半年，汽车之家的平台动作明显加速。9 月，汽车之家主办全球 AI 科技大会，联合产业专家与生态伙伴，系统探讨人工智能与汽车产业的深度融合路径；11 月，通过创作者大会，汽车之家进一步激活内容生产端，吸引头部创作者参与，推动平台内容生态向更开放、更多元的方向演进。. 而在流量高度集中的双 11 周期，汽车之家选择与主要竞争对手正面交锋，在真实测试与用户决策场景中直接比拼平台能力与信任基础。12 月底，汽车之家以一场“讲真话”的冬测，将新能源竞争拉回长期信任的构建当中。. 汽车之家变了吗？某种程度上，的确变了。它选择正面回应那些长期存在的质疑，主动走向更公开透明的表达方式，推动自身从内容到服务的平台转型。. 某种程度上，它也并没有变。从“看车”到“买车”，再到“用车”、“换车”，汽车之家始终以用户为中心，用内容引导用户决策，用交易打通消费闭环，用服务兑现体验承诺。对用户而言，它不再只是一个信息入口，而是一个可以信任和依靠的汽车消费中心。. 在一个流量和情绪主导信息传播的时代，真实本身就具备稀缺性，而消费者也需要一次真实、公平、公正的冬测。这条路未必最快，但却足够重要。至于这条路能走多远，答案不在话术中，而藏在汽车之家的未来实践里。. 本文由「36氪品牌」原创出品， 转载或内容合作请点击 转载说明 ；违规转载必究。. 36氪欧洲总站（eu.36kr.com）是关注海外的行业媒体，为企业跨境提供海外资讯及商业服务。.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C091",
+            "cluster_size": 1,
+            "score": 46.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "闪充、换电双线作战，新能源补能大赛进入下半场 - 新浪",
+          "url": "https://k.sina.com.cn/article_5952915705_162d248f906702mgia.html",
+          "source_name": "充电与补能",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "... 汽车等推出的5C及以上超快充体系，均以提升充电倍率为核心目标。其中小鹏汽车的液冷S5超快充桩，具备高达800kW的峰值充电功率，一秒钟即可充电超过一公里。",
+          "content": "... 汽车等推出的5C及以上超快充体系，均以提升充电倍率为核心目标。其中小鹏汽车的液冷S5超快充桩，具备高达800kW的峰值充电功率，一秒钟即可充电超过一公里。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C129",
+            "cluster_size": 1,
+            "score": 46.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "多家车企冲上微博科技热搜，蔚来、小米等销量均创新高 - 凤凰网财经",
+          "url": "https://finance.ifeng.com/c/8pa3ZyAJt7e",
+          "source_name": "微博热搜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "2026年1月1日，微博科技热搜一度被车企霸榜，主要与车企交付量（销量）有关。 车企月度竞争仍是“你追我赶”的态势。2025年12月，蔚来、小米等车企的交付量（销量）均创新高，而",
+          "content": "2026年1月1日，微博科技热搜一度被车企霸榜，主要与车企交付量（销量）有关。 车企月度竞争仍是“你追我赶”的态势。2025年12月，蔚来、小米等车企的交付量（销量）均创新高，而",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C070",
+            "cluster_size": 1,
+            "score": 45.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "小米汽车vs华为汽车：“智造”与“智选”供应链差异",
+          "url": "http://www.cn156.com/cms/gongyinglian/115596.html",
+          "source_name": "小米与华为汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "不过，与华为问界汽车供应链相比，两者有哪些差异？同为从造手机跨界造车，小米汽车与华为问界汽车的供应链有鲜明差异。 （1）华为“智选”模式的供应链 华为的造车理念，简言之就是“不造车”，而是拥抱汽车产业链，为车企“加buff”——简言之就是华为坚持做智能汽车供应链生态系统，不亲自下场做汽车，类似谷歌2005年收购Android公司后只推安卓系统但不造手机，从而成为全球最大的智能手机系统。 当3月8日，华为“AITO问界”正式被更改为“HUAWEI问界”，人们疑问华为抛弃原路线，对此华为轮值董事长徐直军表示，“华为的战略没有变，我们不造车，帮助车企造好车，成为一个智能网联电动汽车的增量部件供应商。",
+          "content": "不过，与华为问界汽车供应链相比，两者有哪些差异？同为从造手机跨界造车，小米汽车与华为问界汽车的供应链有鲜明差异。 （1）华为“智选”模式的供应链 华为的造车理念，简言之就是“不造车”，而是拥抱汽车产业链，为车企“加buff”——简言之就是华为坚持做智能汽车供应链生态系统，不亲自下场做汽车，类似谷歌2005年收购Android公司后只推安卓系统但不造手机，从而成为全球最大的智能手机系统。 当3月8日，华为“AITO问界”正式被更改为“HUAWEI问界”，人们疑问华为抛弃原路线，对此华为轮值董事长徐直军表示，“华为的战略没有变，我们不造车，帮助车企造好车，成为一个智能网联电动汽车的增量部件供应商。” 而对于华为汽车品牌说法，徐直军称，“我们有些部门或者有些个人或者有些合作伙伴在滥用华为的品牌，华为一直在查处过程中。”不过，商业是不断演变的，2016年谷歌推出智能手机Pixel。 2024年2月22日消息，谷歌计划在印度开始生产自主品牌智能手机PIXEL手机。华为是否发展鸿蒙系统就不下场生产自主品牌汽车了？ 截至 2022 年末，华为已累计发展超过 300 家上下游合作伙伴，智能座舱平台的软硬件合作伙伴超150家，还有70 多家合作伙伴加入了智能驾驶 MDC 生态圈。 华为的第一重buff就是提供智能化解决方案。从“芯+端+云”三方面参与智能汽车供应链开发。 “芯”指的是华为提供的海思 IoT 芯片；“端”指华为参与连接技术开发，以自身在AI、大数据、云计算领域的优势提升产品的交互体验；“云”指华为参与打造智能家庭云和第三方云，为合作伙伴提供运营和平台。 2023年，华为问界 M5 、M7 、M9都已上市，经过迭代改款，华为智选和Inside车型均配备了ADS 2.0智驾解决方案+鸿蒙智能座舱，智能化竞争力行业领先。 华为系问界官方公众号 [...] 华为系问界官方公众号 华为的第二重buff是提供渠道支持。 问界汽车品牌一出场，就以华为线下门店为base，采用华为手机多年积累而来的渠道网络。 华为门店可以提供人、车、家互联的沉浸式体验，完整地呈现智慧出行、智慧办公和智能家居等智慧生活场景。截至 2023 年 7 月末，问界门店已布局全国 31 个省市自治区，累计建成千余家门店。 （2）小米“智造”模式的供应链 与华为的“加buff智选”模式不同，雷军从一开始就把制造牢牢抓在手中，小米的目标是“造车”，而不是为人做嫁衣的“选车”、“卖车”。 小米的造车之路，也是雷军的学习之路。2021年3月官宣造车，4月雷军就踏上了“汽车产业学习之旅”，先后去了长安、上汽、东风、广汽、上汽通用五菱、长城等多家车企，还造访了博世和宁德时代的总部。 这些“传统车企”的实质都是供应链企业，通过长期的技术积累形成了完整的产业链和强大的制造能力。 小米的第一步，是解决“造”的难题。 2022年二季度，小米汽车位于亦庄新城的造车基地开工建设。据第一财经报道，小米汽车工厂分两期建设，一期占地面积接近 72 万平方米，2022 年4 月开工，2023 年 6 月竣工，年产能预计能达到 20 万辆的水平。二期计划2024 年动工，2025 年完建。 小米的第二步，是以“智”为“造”注入活力。 在小米汽车的发布会上，雷军表示，汽车工业的第一个阶段，汽车只是出行载具；汽车工业的第二个阶段，汽车转变为可移动的计算终端；在汽车工业的第三个阶段，汽车将进一步进化为“先进的移动智能空间”，而这就是小米造车的出发点。 智能电动汽车之所以叫“革命”，并非仅仅是因为汽车从烧油变成了用电，更关键的变化在于电子电气架构的建立，机械、硬件、软件、互联网、充电等一系列软硬产业链须相互联通，而这正是小米造车旨在打通的关键环节。 [...] # 一、十倍投入：雷军建小米汽车供应链闭环 （1）借船与自研 雷军称“十倍投入，造一辆好车”，小米也确实如此践行。截至 2023 年二季度，小米汽车相关研发人员已接近 3000 人。 一般情况下，企业投入三四百人，10-20亿元经费就能造一辆车了，而此前雷军接受采访时透露，小米的第一辆车研发工程师达3400人，投入超100亿。 电机方面，小米汽车自研自产的2.72万转超级电机将于2025年上车，小米汽车在该领域已经申请155项专利，获批60多项专利。 电池方面，小米汽车与宁德时代共同研发800V高压电池包，自研CTB一体化技术，电池包嵌入车身，给乘用舱留出更多空间。 小米官方公众号 小米自研的超级大压铸技术，“始于模仿，终于超越”，把最大锁模能力做到了9100吨，远超特斯拉上海工厂的6000吨，也超过了特斯拉美国工厂的9000吨。 在智能驾驶技术方面，小米发布了自适应变焦BEV技术、道路大模型、超分辨率占用网络技术等三项关键技术，这意味着小米汽车可以丝滑实现一键召唤、自动驶入匝道、主动变道超车、无保护转向/掉头、自动代客泊车等操作。 智能座舱是小米汽车的一大特色，配合小米澎湃OS生态技术，16.1英寸中控生态屏、翻转式仪表屏等，目标就是让“米家”用户尽享便捷。 （2）全链路投资布局 小米不仅着力于技术，而且有意“放长线”，广泛投资汽车产业链，为汽车的大规模生产和销售提供完整的供应链支持系统。 在汽车产业，小米的投资覆盖动力电池、车规级芯片、激光雷达等。 在电动化及智能化零部件上，小米投资了多家半导体、三电系统、智能座舱和智能驾驶领域公司，在半导体领域投资更是超过30起。 在智能驾驶领域，小米收购了深动科技，投资了禾赛科技、速腾聚创、黑芝麻智能等技术研发公司。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C076",
+            "cluster_size": 1,
+            "score": 45.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:9.0"
+            ]
+          }
+        },
+        {
+          "title": "小米汽车交付超13 万，雷军：创造奇迹；华为问界M8 实车曝光",
+          "url": "https://www.geekpark.net/news/344772",
+          "source_name": "小米与华为汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 小米汽车交付超 13 万，雷军：创造奇迹；华为问界 M8 实车曝光；传 iPhone17 标准版终于支持高刷｜极客早知道 蓝色起源新格伦火箭首次发射前启动关键测试；小米卢伟冰回应「REDMI 汽车」：完全没计划；华为之后全球第二家，三星三折叠屏曝光；特朗普隔空喊话救 TikTok，法律人士表示不容乐观 ## 小米汽车亮相一周年官宣：交付量达 13 万辆 12 月 28 日，小米汽车宣布，截至目前，小米 SU7 全年交付量已超过 13 万辆，已提前完成全年所有目标。 据小米汽车透露，今年来，小米汽车持续布局销售网络，目前已开业 200 家门店，覆盖全国 58 个城市。研发方面，小米汽车坚持投",
+          "content": "# 小米汽车交付超 13 万，雷军：创造奇迹；华为问界 M8 实车曝光；传 iPhone17 标准版终于支持高刷｜极客早知道 蓝色起源新格伦火箭首次发射前启动关键测试；小米卢伟冰回应「REDMI 汽车」：完全没计划；华为之后全球第二家，三星三折叠屏曝光；特朗普隔空喊话救 TikTok，法律人士表示不容乐观 ## 小米汽车亮相一周年官宣：交付量达 13 万辆 12 月 28 日，小米汽车宣布，截至目前，小米 SU7 全年交付量已超过 13 万辆，已提前完成全年所有目标。 据小米汽车透露，今年来，小米汽车持续布局销售网络，目前已开业 200 家门店，覆盖全国 58 个城市。研发方面，小米汽车坚持投入底层核心技术，在智驾、三电系统、智能底盘、智能座舱等领域持续深耕，目前研发投入超 130 亿元，专利授权超 1000 项。智驾方面，目前小米汽车累计智驾里程已突破 1 亿公里，端到端全场景智能驾驶即将开启先锋测试。昨晚，小米创始人、董事长兼 CEO 雷军在微博上称，小米智能驾驶正式接入 VLM 视觉语言大模型。 雷军在微博中表示：「我们任务从最早的 7 万，提高到 10 万，到 12 万，最后 13 万。作为汽车行业新人，SU7 上市 9 个月，交付超过 13 万辆，绝对是奇迹！感谢大家支持！」（来源：证券日报） ## 谷歌 CEO：明年风险高、赌注大，推广 Gemini 是首要任务 12 月 28 日，据美媒 CNBC 报道，谷歌 CEO 皮查伊上周告诉员工 2025 年「风险高、赌注大」，因为公司面临着日益激烈的竞争、监管障碍以及 AI 的快速发展。 皮查伊表示，「我认为 2025 年将是关键的一年。我们需要深刻认识到当前的紧迫性，并加快公司步伐。这是一个具有颠覆性影响的时刻，我们必须专注于推动技术带来的变革，解决用户的实际问题。」 [...] #### 关于 关于极客公园 寻求报道 加入我们 友情链接 #### 云服务支持 #### 关注公众号 [...] ## 问界 M8 实车尾部曝光，有望用上问界 M9「同款」星河大灯 12 月 28 日，昨日起，又有博主陆续曝光了问界全新车型 M8 的更多谍照，这次主要披露了新车的尾部造型。 图片显示，新车尾部采用贯穿式尾灯，灯带点亮后形成一字形，不过仔细看能够看到尾灯模组整体的轮廓。其与问界 M9 的尾灯造型类似，预计问界 M8 将用上 M9「同款」的星河大灯。 而就在本月下旬，问界 M8 的前脸谍照也得到曝光。该车型使用暗红色车身配色，前脸造型较为圆润，采用分体式大灯，延续了问界家族式设计风格。该车侧边和背面暂未更清晰的图片，但可见门把手处较为平整，有望使用半隐藏式设计。（来源：IT之家） ## 北大数学家独作论文登上顶刊：袁新意统一算术与几何 Bogomolov 猜想 12 月 28 日，四大顶刊之一的《数学年刊》，正式接收北大袁新意独作论文。在困扰数学界多年的 Uniform Bogomolov 猜想问题上取得重要进展。值得一提的是，这篇论文还在预印版状态时就已获得一定引用，据称还在不同的学术会议中被讨论。 这一成果延续了袁新意在算术几何和丢番图几何领域的成果，其中「将 Uniform Bogomolov 问题转化为证明某个直线丛的算术大性」等创新方法，更是被评价为给相关领域的研究提供了全新的视角和工具。 这篇论文旨在证明 Uniform Bogomolov-type 定理，这是一个关于代数曲线上有理点分布的问题。数学界对这个问题的研究还要追溯到 40 多年前。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C077",
+            "cluster_size": 1,
+            "score": 45.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:9.0"
+            ]
+          }
+        },
+        {
+          "title": "微博不是救命稻草，B站也不是未来风向｜年度营销思考 - 腾讯新闻",
+          "url": "https://news.qq.com/rain/a/20251111A03PGQ00",
+          "source_name": "微博热搜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "# 微博不是救命稻草，B站也不是未来风向｜年度营销思考. 2025-11-11 13:37发布于四川汽车领域创作者. 而另一些新兴品牌则将目光投向了视频号、抖音以及懂车帝等平台，因为线索转化对于销量的提升是有确实意义的。还有一部分企业开始强调，只有建立更广泛的流量矩阵，才能真正实现营销目标。. 那么这个时候我们再去讨论整个汽车传播的时候，就会发现： KPI 是一个非常关键的点，但是如何达成这个 KPI，已经是各家车企心照不宣的事情了。. 比如以单纯流量为KPI的车企非常在意微博的流量，通过冲击热搜来解决KPI的问题。而以线索为KPI的一些车企则表示抖音以及懂车帝会是他们最为看重的流量池。另外那",
+          "content": "# 微博不是救命稻草，B站也不是未来风向｜年度营销思考. 2025-11-11 13:37发布于四川汽车领域创作者. 而另一些新兴品牌则将目光投向了视频号、抖音以及懂车帝等平台，因为线索转化对于销量的提升是有确实意义的。还有一部分企业开始强调，只有建立更广泛的流量矩阵，才能真正实现营销目标。. 那么这个时候我们再去讨论整个汽车传播的时候，就会发现： KPI 是一个非常关键的点，但是如何达成这个 KPI，已经是各家车企心照不宣的事情了。. 比如以单纯流量为KPI的车企非常在意微博的流量，通过冲击热搜来解决KPI的问题。而以线索为KPI的一些车企则表示抖音以及懂车帝会是他们最为看重的流量池。另外那些构建车企矩阵号的企业，则更多是选择短视频平台做高频次曝光。. 现在车企在传播中遇到的问题，其实不是KPI如何完成，反而是如何有足够好、具备传播生命力的内容，因为：. 另一个是一些追求差异化传播的车企在B站下了更大的“赌注”，就如同当年五菱选择抖音和小红书一样，在B站上投入大量传播资源，希望抢占年轻用户心智。. 微博不是救命稻草，B站也不是未来的风向。在传播过程中，如果只以个别平台为核心传播，可能一次两次有效，但是对于车企而言无法建立长期价值，更不用说在品牌端有所建树了。. 所以，这些车企总是热衷于把微博KOL作为第一邀请对象，所有的内容产出机会都是优先让微博KOL去完成，而直接放弃了汽车领域的专业创作者。从这样的车企操作来说，用大V和高粉丝量KOL去完成第一波的热搜冲刺肯定是再正常不过的，因为有流量、有关注、能够直接完成KPI数据和热搜。. 可是真正研究微博的传播生态位便会发现，微博的流量以及它的整个热度其实只会集中在非常短的时间。有很多车企喜欢通过微博热搜、微博全员讨论来营造一个当下热销、爆款的声量，但从长远来看，微博的流量无法真正拉动车企的销量。. 这背后原因是微博的热点期可能就只有几个小时，最多也就是一两天，是以小时甚至分钟来计算的，并且在微博，要做成全员皆知的事件难度非常大，也就是说很难破圈。因此，微博所提供的短期热点、短期流量，本质上是很难支持像汽车这样的大宗消费。. 这时候肯定有人会说，华为、小米每次发新品都可以在微博上做到破圈，蔚小理也能每次发布都引起社交媒体上的大肆讨论，怎么你就说做微博热搜对车企并不友好呢？. 原因在于，华为、小米首先是拥有大量的数码用户群体，所以可以始终用事件营销、或者创始人IP来实现饱和式攻击，低成本完成数码圈层的内容爆破、从而实现营销破圈。而且，即便是像华为或者小米这样的企业，要维持足够的声量，也需要在长周期里进行投放热词热点。. 而至于蔚小理，他们能够通过微博引发讨论，很大程度上是基于这三个品牌已经在微博上运营了十年，同样有不小的粉丝基础，尤其是都有各自的KOL阵营，最后再加上早期对数码KOL的扶持，蔚小理三家也能偶尔获得破圈流量。. 这里要注意的是，蔚小理的微博破圈也就只是偶尔，并且也不是长期性、每次可复现的。比如理想的热搜破圈大家可以想想都是什么内容，蔚来的破圈事件中正面负面比例大家也可以回忆一下，小鹏的新产品热度维持有多长，这些都是有据可查的。. 对于传统车企来说，天然没有科技企业的流量基础，也没有数码圈这么大的受众，自然也没有办法真正实现长时间的热搜引爆，必须要自己花钱投放在微博上面。比如很典型的就是极氪品牌，曾在某段时间特别喜欢投放热搜，但是我们可以看到，不管是在美誉度还是在讨论的持续性方面，其实都没有对它的销量起到非常好的支撑。. 与此同时，在实操过程中就会发现，长周期投放热搜的成本压力很大，但最致命的是长期收益却很小。更关键的是，汽车作为高价格、低频次的大宗消费品，用户的决策过程往往需要数月甚至更长时间。. 举一个例子：用户很难在买车的时候，会去微博搜索某款车的驾驶质感怎么样、车辆使用体验怎么样；也很难在微博上获取到购买一辆车最重要可信的信息。更不用说，一辆车可能会卖好几年，而在上市之后的信息，几乎都很难在微博上找到踪迹。. 因此，微博热搜最有效的时间，可能就是新车上市的那段时间，类似于一波强势的广告宣传。看上去很热闹，可是能够留下多少信息，已经没有人在意，车企市场部和公关部的员工早已经庆祝完当时热搜冲榜。. 这就是微博的一个非常典型的特征，传播得非常快，但是迭代也非常快。一家车企如果希望通过微博的声量来挽救自己的销量，基本上是不可能的。我们认为微博只是一个新闻广场，可以帮助车企完成特定时间的流量KPI，但是没有办法支撑车企真正完成销量 KPI。. 然而从长远来看，微博并不具备帮助消费者决策购买的信息环境，它就是一个阅后即焚的新闻客户端，热搜过去之后，几乎什么都不会剩下。. 那另一方面，B站是不是车企非常好的一个选择？这个答案站在传播的角度来看，似乎也并不是。我们最近也去分析了B站非常多的流量态势，你会发现B站的流量同样是有天花板的。. 一个非常典型的例子就是，我们看到影视飓风在B站获得了巨大的流量，每条都是一两百万次的播放量。可是假如复盘影视飓风的成长路径——在成为B站百大之后，在很长一段时间中，影视飓风并没有能破圈。即使它在B站流量足够好，也没有能够特别多的引起数码圈外广告商的关注。. 直到今年，影视飓风有意识地做了非常多的破圈活动，包括跟罗永浩的对谈、做破圈的100小时直播，以及影视飓风的创始人Tim自己出来接受了更多的媒体专访。. 特别是我们可以看到，不管是抖音也好，视频号也好，现在有了非常多影视飓风内容的切片内容，从而能够让自己的内容突破B站、全网破圈，获得更大的声量和收益。. 我们知道，B站的整个定位是一个中视频平台，要做出圈其实还是非常难的，因为外面都是短视频的天下。而且从之前的一些采访也可以了解到，B站整个用户群体对于UP主广告变现的负面情绪是非常大的。. 简单来说，那就是B站的用户应该是最不喜欢UP主去做变现营收的一群人，所以不少UP主都要刻意控制广告变现，为了维护粉丝量，只能用爱发电。这一点其实就导致了真正有大制作、有实力的UP主必须要破圈到其他的平台，才能够在整个商业链条上存活下去，这也导致B站UP主在商业层面有一定的短板。. B站如果不能实现非常好的商业闭环，你会发现它可能在未来的趋势上没有那么容易成功。这个时候我们再去讨论B站的内容或者流量的持续吸引，你会发现它可能天然也不是一个对车企合作内容非常友好的平台，那么如果车企把自己的整个用户群体锁定在B站上面，也会遇到明显的问题。. 最直接的一个例子就是小米汽车在B站的粉丝和流量都很大，但是当小米汽车遇到舆论危机的时候，B站积攒下来的流量，也并不能帮助小米度过难关。因为B站不能破圈、没有全网的声量，更像是一个独特的亚文化圈层。. 因此我认为，尽管B站的UP主在内容创新上有非常多独到之处，但B站这个平台更像是一个“内容孵化器”，类似于给初创企业的一个新手村。当UP主做大之后，必然是需要破圈的，走出B站也是各个UP主最大的共识。这时车企如果只把营销重注投在B站上，那么对外部更大片的森林而言，就是一种放弃。. 所以对于车企而言，这种商业闭环的不完善，也就意味着即使在B站获得了不错的内容表现，也很难转化为有效的销售线索。更何况，汽车消费群体的决策特征与B站的核心用户画像之间存在一定偏差，这进一步限制了平台的营销价值。. 作个比喻，在广阔的湖海中有着大量的鱼，车企的目的是把鱼儿钓起来，但是车企投入了这么多的营销费用、只看KPI不看效果，这就像直接把石头砸在水里一样，只能看到扩散的涟漪，那是毫无意义的。可能偶尔运气好能砸到鱼捞起来，但是这种毫无目的的“砸石头”，不可能次次都灵——除非你往水里砸铺天盖地的石头——类似于投放微博热搜这样的“饱和式营销”，就像是往水里密集砸石头。. 至于B站，那就是在水库里钓鱼，可能水库里的鱼会更好钓、因为始终都在这片水域里。车企去B站运营，那就是需要对水层里面有哪些鱼都需要精通，怎么打围、怎么下饵都需要精细化运营，所以花费了足够的多的力气，肯定也会有效果，只是效果是否能达到预期就另说了。. 虽然我们一直说投放广告不知道有哪50%是被浪费的，但是如果你所有的营销资源都投到某个具体平台，在思维上认为只要单一平台爆款就可以转化为线索的途径，这其实并不可持续。你会发现不管是微博也好，B站也好，如果全部投入进去，那么可能就会全部被浪费掉，因为水库就那么大，鱼儿也始终是那一群鱼儿。. 我们认为，汽车传播的内容价值依然需要提供具备较长持续性，因为卖一款车不是三个月、六个月就能完成的事情，而是一场长达三年、五年的长期较量。即便现在新势力的产品生命周期只有两三年，但是6个月的热销期过了以后，也依然需要能够给用户提供价值，这恰恰是现在很多车企做不到的。. 只有在尽可能多的平台上，留下真正有价值的内容，帮助消费者完成最后的购车决策，对车企的市场部和公关部门才是有效的KPI，不能只盯着短期的数据、而忽视了内容长尾效应对购买群体的决策支持。. 因为还有很多人可能会在车辆上市6个月到一年以后才去买这款车，这个时候如果找不到产品的使用体验或者产品的口碑，是无法帮助用户做出决策——这也解释了为什么很多新势力的产品只能持续热销3个月，劲头十足发了几个月销量海报之后，随后的销量数字，就消失在了茫茫车海之中。. 营销的目的不是制造声量，而是创造价值；不是获得关注，而是建立信任；不是追求曝光，而是促成转化。. 微博不是救命稻草，B站也不是未来的风向。因为真正的未来在于，车企必须找到那些能够与汽车消费特性相匹配、能够在用户完整决策周期中持续发挥作用的平台和策略。也只有这样，汽车的传播营销才能真正摆脱流量焦虑，回归内容价值本源。.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C083",
+            "cluster_size": 1,
+            "score": 45.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "懂车帝智驾评测，带来了审慎还是武断？ - OFweek智能汽车网",
+          "url": "https://m.ofweek.com/auto/2025-07/ART-70109-8500-30667610.html",
+          "source_name": "智能驾驶周报",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "1 ݺῴ | 7λרҽ13ؼ 2 ˹ɵ̣ԶʻռԾȦ 3 Ҫţ¹ԶʻŲ· 4 Ƽм巢Զʻҵƾ֣׾߸ǿָ 5 ˹Cybercabߣȫ׿޷˹˹Waymoġ˼ʻ֮˭һ 6 3000̨ļţӼݴ¡ڻƼǡˣعԶʻġ׿̬? 7 ȫ׸ߣйԶʻϡȫ䡱̳У5000ƽ׸磿 8 Ǽһ꣺9θ۹֮η 9 ɱ̽Զּ֪Robotaxi 10 17ڣʱMomentaѺעһҪؿ˻ ҵ ͷ н걨 ͷְλ Ӳʦǰװӣ ڰӹɷ޹˾ Ʒʦ ˼άݣƼɷ޹˾ [...] ǶȿһǼݲԴ“ɽ”뷨ΪףʵߣһЩڶʵбǼϵͳ⣬ҲòֳٻȡʻͶ룬Ⲣڹҵĳڷչ ǼԽԽmore testmore truth ǲ԰ѹǼϲԵ·෴ڵһԵľԲɱ⣬Ǻ࿪չǼݲԣرȨԺȵĲ",
+          "content": "1 ݺῴ | 7λרҽ13ؼ 2 ˹ɵ̣ԶʻռԾȦ 3 Ҫţ¹ԶʻŲ· 4 Ƽм巢Զʻҵƾ֣׾߸ǿָ 5 ˹Cybercabߣȫ׿޷˹˹Waymoġ˼ʻ֮˭һ 6 3000̨ļţӼݴ¡ڻƼǡˣعԶʻġ׿̬? 7 ȫ׸ߣйԶʻϡȫ䡱̳У5000ƽ׸磿 8 Ǽһ꣺9θ۹֮η 9 ɱ̽Զּ֪Robotaxi 10 17ڣʱMomentaѺעһҪؿ˻ ҵ ͷ н걨 ͷְλ Ӳʦǰװӣ ڰӹɷ޹˾ Ʒʦ ˼άݣƼɷ޹˾ [...] ǶȿһǼݲԴ“ɽ”뷨ΪףʵߣһЩڶʵбǼϵͳ⣬ҲòֳٻȡʻͶ룬Ⲣڹҵĳڷչ ǼԽԽmore testmore truth ǲ԰ѹǼϲԵ·෴ڵһԵľԲɱ⣬Ǻ࿪չǼݲԣرȨԺȵĲԣѾڱС ͬغȫҽѧΪһҩϵͳSystematic ReviewͨҪ5-10ãۼߵݣγȨۡǼݲ䲻ȫ˳ڣڲԵϽԡѧԡϣҲӦ˿롣 ˴Ǽݲԣʱ䣬ǳޣļͬ򡢲ͬ·ԣ籱ıѩ·桢Ϸ÷꼾Ũɽļ䶸µȣȱڹ̵µ“©”Ҳܸϼ࣬ͨ㹻ʱĶೡԣ߿Ǽݵʵ [...] Ǽ۷ͣ ΪԾ㲻ϽҲһĲοֵ漰ȫ飬ɶһݾ裬Ҳ⡣ ˵β߽Դʻģóȥġ ȷʵֻаܸʻϵͳ“ս”ϣǵܲܿס߲ס÷ġǶȿβԵȷбҪ ӵǰѾʼһʼ۵ķˡ 磬ΪԽ͵ͨʣʼǼݸ⾯衣βԵĽۣڸҹʩӿĳУֻ47%ĳܰȫãͯ·ĿͨҲֻ58%͵ͨʣ´ûͨĳһŷ񶨣ҲǼģʽ 񿴵ĵݹ¼еݶ裬Ըʮ¥ݣҲϳԭϣͨһԣôȫ˽Ǽݣȫʶıʻͼʻϰߣ ߿ֻţ᲻ᵼһЩʻܱûĵú޼ֵǻö֪",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C087",
+            "cluster_size": 1,
+            "score": 44.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:8.0"
+            ]
+          }
+        },
+        {
+          "title": "2025款车型辅助驾驶系统评测：谁是智能驾驶的王者？ - 汽车标志",
+          "url": "https://db.m.auto.sohu.com/model_6879/a/918671315_122066676",
+          "source_name": "智能驾驶周报",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "2026-03-19 千问大模型全球首搭！智己LS8预售在即，锁定30万内爆款 理想L系列曾出现下摆臂衬套异响批量事故 4人被问责！ 总裁马东辉重视吗？ 2026-03-18 理想L系列曾出现下摆臂衬套异响批量事故 4人被问责！ 总裁马东辉重视吗？ 2026-03-18 [...] # 两款将上市的国产新能源新车 龙说车 2024-04-09 14:13 在未来，新能源汽车在国内汽车市场中会逐渐代替掉传统燃油车已经成为了一个不争的事实，因此，现在有越来越多的车企都开始主攻新能源汽车市场，甚至国内汽车市场中还出现了越来越多的新能源汽车品牌。可供我们消费者选择的新能源车型越来越多后，自然车企之间的",
+          "content": "2026-03-19 千问大模型全球首搭！智己LS8预售在即，锁定30万内爆款 理想L系列曾出现下摆臂衬套异响批量事故 4人被问责！ 总裁马东辉重视吗？ 2026-03-18 理想L系列曾出现下摆臂衬套异响批量事故 4人被问责！ 总裁马东辉重视吗？ 2026-03-18 [...] # 两款将上市的国产新能源新车 龙说车 2024-04-09 14:13 在未来，新能源汽车在国内汽车市场中会逐渐代替掉传统燃油车已经成为了一个不争的事实，因此，现在有越来越多的车企都开始主攻新能源汽车市场，甚至国内汽车市场中还出现了越来越多的新能源汽车品牌。可供我们消费者选择的新能源车型越来越多后，自然车企之间的竞争也就愈发激烈，为了能够吸引到为数不多的消费者，车企能够做的往往就是不断地推出更多更具竞争力的新车，所以现在基本上每个月都会有不少全新的新能源车型上市。马上又有两款国产新能源新车将上市了，我们一起来看看分别是哪两款新车吧。 第一款：理想L6 在众多的国产“造车新势力”中，理想汽车的销量表现其实是能算比较突出的，该品牌不论是先期推出的理想ONE，还是后期推出的理想L7、理想L8和理想L9都有着较高的受欢迎程度，对于一个新兴的汽车品牌来说已经打败了众多竞争对手。不过，当前大环境下国内汽车市场中的新能源车企之间也越来越卷，只注重推出一些走高端化的车型很难卷过其他品牌，因此，理想汽车也准备推出一款门槛更低的新车-理想L6。理想L6整体的外观设计采用了家族式的设计语言，外观看起来简约大气的同时还有着较高的品牌辨识度。 理想L6也是一款中大型SUV，新车的长宽高为4925\\1960\\1735mm，轴距为2920mm，虽然车身尺寸很大，但新车将采用5座的座椅布局。动力方面，理想L6是一款增程式新能源车型，该车将搭载1.5T增程器+电机。据悉，理想L6将会在2024年4月18日开启预售，预计新车将会是一款定价在25-30万之间的车型，彼时，理想品牌的竞争力将会得到进一步提升。 第二款：仰望U7 [...] 第二款：仰望U7 与其他国产新能源汽车品牌一来就走高端化路线不同，比亚迪汽车虽然很早就涉足新能源汽车领域，但该品牌却坚持稳扎稳打从中低端路线开始做起，在中低端市场中站稳脚步后才开始冲击高端市场，事实证明比亚迪的这个决策还是比较稳妥的。比亚迪旗下的王朝网、海洋网都取得了出众成绩后，该品牌才开始进攻高端市场，目前，比亚迪旗下的仰望和腾势两大高端品牌旗下的车型都有着比较高的受欢迎程度，即便是百万级的仰望U8和仰望U9与同级别的竞品车型相比销量都算是比较突出的。马上仰望品牌的第三款车型-仰望U7也将上市了。 仰望U7是一款大型车，新车的长宽高达到了5265\\1998\\1517mm，轴距为3160mm。在外观设计方面，新车采用了家族式的设计语言，前脸与仰望U9很相似，有着较高的品牌辨识度。仰望U7车身侧面和车尾部分的设计都比较简约，但在简约之余还不乏一定的大气典雅感，我个人觉得该车整体的设计与它大型车的定位比较相符。 内饰方面，新车在内饰中用到了大面积真皮材质的包裹，让整个内饰看起来具有较高的豪华感；此外，新车还配备了大尺寸的屏幕、一体式的座椅，因此，内饰的科技感和运动感也都呈现得不错。动力系统方面，仰望U7将搭载最大马力1307Ps的四电机，新车的极速将达到270km/h。 以上便是理想L6和仰望U7这两款国产新能源新车的一些介绍了，那么上述两款新车你更看好谁呢？ 分享到微信 复制链接 ### 相关车型 理想汽车理想L8 指导价：32.18-37.98万 查看车型 ### 相关资讯 智己LS8于3月26日开启预售，首搭“智己超级智能体” 2026-03-19 智己发布超级智能体IM Ultra Agent，LS8定档3月26日预售 2026-03-19 千问大模型全球首搭！智己LS8预售在即，锁定30万内爆款",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C006",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "https://mp.weixin.qq.com/s/oVzpoNJ60tRAg-VFd5GrzQ",
+          "url": "https://mp.weixin.qq.com/s/oVzpoNJ60tRAg-VFd5GrzQ",
+          "source_name": "充电与补能",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 3分钟换电、免建充电桩 车电分离能否解决新能源车\"里程焦虑\"? 工信部将加快发布《新能源汽车产业发展规划（2021-2035年）》，目前，规划的研究工作已经完成，已经上报国务院。. 在7月23日的国新办新闻发布会上，工信部副部长辛国斌介绍，工信部将加快发布《新能源汽车产业发展规划（2021-2035年）》。目前，规划的研究工作已经完成，已经上报国务院了。. 他指出，工信部将鼓励企业研发新型充电和换电技术，探索车电分离的模式应用，他强调，车电分离的“换电”模式将大大降低消费者的购车成本，缓解消费者对续驶里程的焦虑感，实现新能源汽车在城际之间行驶。. 他介绍，现在车开进换电站后开出来只有不到3",
+          "content": "# 3分钟换电、免建充电桩 车电分离能否解决新能源车\"里程焦虑\"? 工信部将加快发布《新能源汽车产业发展规划（2021-2035年）》，目前，规划的研究工作已经完成，已经上报国务院。. 在7月23日的国新办新闻发布会上，工信部副部长辛国斌介绍，工信部将加快发布《新能源汽车产业发展规划（2021-2035年）》。目前，规划的研究工作已经完成，已经上报国务院了。. 他指出，工信部将鼓励企业研发新型充电和换电技术，探索车电分离的模式应用，他强调，车电分离的“换电”模式将大大降低消费者的购车成本，缓解消费者对续驶里程的焦虑感，实现新能源汽车在城际之间行驶。. 他介绍，现在车开进换电站后开出来只有不到3分钟，已经低于加油的5-8分钟；电池运营公司对电池集中进行监测、养护与管理，有利于延长动力电池的寿命，提升电池的安全性；利用峰谷电价的差别可大幅降低充电成本；消费者可以根据每天的行驶里程考虑当天租多少电，而不必带着沉重的400公里电池行驶；换电模式也解决了一些老旧小区无法安装充电桩的问题。. 发布会上，辛国斌指出，1-6月份，我国汽车产销都超过了1000万辆，下降幅度还在两位数以上，至少比传统汽车高1倍。工信部和有关部门对此高度重视，工信部牵头组建了跨部门的制造业产业链协同复工复产的工作专班，把汽车产业作为一个重点领域予以扶持。. 他表示，未来要加快推动新能源汽车产业发展，工信部将加快发布《新能源汽车产业发展规划（2021-2035年）》。“目前，规划的研究工作已经完成，我们现在已经上报国务院了。进一步坚定推动新能源产业发展的信心，进一步明确发展目标。”. 同时，工信部将进一步发布实施公共领域车辆电动化的行动计划，准备在公交车、出租车，城市物流车，包括环卫的清扫车等方面，进一步推动电气化。. “我们很多城市已经完成了这方面的电动化改造，像深圳公交车全部改成电车了。像北京也是有一部分公交车是采用了电车，出租车里面也有一大部分是新能源车，我们还要进一步推动。现在，城市物流车要改成新能源汽车，这种需求还是比较高的。”. 辛国斌介绍，目前，汽车产业规模全球领先，产销量连续五年位居世界首位，累计推广的新能源汽车超过了450万辆，占全球的50%以上；主流车型的续驶里程基本上都在400公里以上，动力电池单体能量密度也达到了250瓦时/公斤。. 另外，整个产业发展的体系也渐趋完善，新能源汽车的基础材料、电池、电机、整车、电控、生产装备等产业链上下游基本实现了贯通。产业配套环境也不断优化，全国已累计建设充电站3.8万座，换电站449座，建设了各类充电桩130万个，其中公共充电桩55.1万个，私人桩74.9万个。同时，我国还建成了“十纵十横两环”4.9万公里高速公路快充网络。. “过去大家都担心，新能源汽车能不能出城，能不能在城际之间跑？现在我告诉大家，不用担心，可以跑了，我们很多高速公路有加油站的地方就有充电站，所以出行是有保障的。”. 值得注意的是，辛国斌也指出，我国新能源汽车发展与群众的出行期盼、产业升级要求还有不小的差距，还存在创新能力不强、核心技术差距、整车成本偏高、充电不够便利等突出问题，尤其是很多消费者还是对续驶里程有焦虑感。. 他强调，充电和换电都是电动汽车的能源补充方式，各有各的优势，各有各的使用领域和消费群体。从当前来看，新能源汽车虽然取得了长足发展，但是还仍然处于产业的发展初期。技术路线、商业模式还都在探索和变化当中，工信部将鼓励企业研发新型充电和换电技术，探索车电分离的模式应用，来满足不同市场的需要。. 辛国斌特别强调了探索车电分离的“换电模式”和“混电模式”的必要性。. 第一，**混电模式实现车电分离后，可以大大降低消费者购车的成本**。他指出，新能源汽车虽然国家有补贴政策，但是相对来说还是偏贵。而且这种国家的补贴政策已经明确了退坡时间表：原来是到今年底退坡完毕，由于疫情的影响，决定推迟退坡进度。他强调，车电分离可以大大降低消费者的购车成本。. 二是**可以增加消费者出行的便捷度**。辛国斌指出，换电池时间甚至比加一箱油的时间还要短。工信部做了一个比较，比如现在换电站，车开进去开出来不到3分钟，而加一箱油没5-8分钟是加不完的。所以，换电实际上只要习惯了，是很便捷的。. 三是由电池运营公司对电池集中进行监测、养护与管理，**有利于延长动力电池的寿命，提升电池的安全性**。辛国斌表示，消费者买新能源车很多人只管开，对车的关心和关注、养护就并不及时到位。电池其实也是一个非常脆弱的组件，除了电池单体之外还有电池包的管理问题，技术上要求很高，在使用过程中也需要及时养护、检测，否则在充电过程中和充电后的一个小时有较大风险，一旦热控制管理不好，就可能出现爆燃。. “即使有这种问题，我也可以告诉大家，新能源汽车自燃率比传统车还是要低的。由电池运营公司集中管理，可以提高电池的安全性。实际上很重要的是观念的转变，传统车去加油站加油，这是理所应该的、正常的，那么新能源车、电动汽车换电池、租电为什么不可以呢？”. 四是**利用峰谷电价的差别来降低充电成本**。辛国斌介绍，现在新能源汽车往往是晚上开回家充电，在用电高峰期充电，此时用电的价格就比较高，如果是电池运营公司来管理电池的话，完全可以利用峰谷优惠电价这个时间段来充电，降低租电池的成本。. 五是**可以根据每天的行驶里程考虑当天租多少电**。辛国斌表示，现在新能源电动汽车基本续驶里程是400公里，一辆车里一组电池六七百公斤，占车重占比很高。其实多数人每天行驶不会超过50公里。如果每天跑50公里，就租用50公里的电池，不用背着400公里的电池去跑，车重会大幅度减轻，耗电也会大幅度减少。. 六、这**可以解决老旧小区充电桩建设难的问题**。辛国斌表示，现在大家买新能源车还有一个顾虑就是，住在老的小区里要建一个充电桩非常困难，这个小区的电压负荷不够，而扩容又面临着成本无法摊销的社会难题，如果采用换电模式的话，这个问题就可以迎刃而解。. 此外，辛国斌指出，换电模式还**可以催生出一些新的服务业态**。“业界如果采用换电模式，搞一个换电车，在大街上游弋，谁提出换电，可保证10分钟内送到，其实在技术上没有任何问题，这可能会催生一些新的服务模式。”. 他表示，推进这种换电模式仍然还有很多问题需要解决，比如车辆的总体设计，电池箱要规范统一，要有国家标准，对电池同样也要提出标准化的要求，不管是软包还是硬包，是方形的还是柱状的电池，都应该规格规范化。另外，电池的插接这些装置也都要实现规范化，这是需要进一步探索的地方。但从技术角度上讲，应该都没有太大问题。. 来源：充电桩视界。声明：转载此文是出于传递更多信息之目的。若有来源标注错误或侵犯了您的合法权益，请与我们联系，我们将及时更正、删除，谢谢。. 01.【充电桩视界】深度剖析充电桩行业趋势、立体解析当前动态、综合普及相关知识。. Video Mini Program Like ，轻点两下取消赞 Wow ，轻点两下取消在看 Share Comment Favorite 听过.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C034",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "关于《财政部工业和信息化部科技部发展改革委关于2022年新能源 ...",
+          "url": "https://jjs.mof.gov.cn/gongzuodongtai/202112/t20211231_3780334.htm",
+          "source_name": "新能源政策",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "### 财政部微信. ### 财政部视频号. ### 财政部 官方抖音号. ### 移动客户端. ### 移动客户端. ## 关于《财政部 工业和信息化部 科技部 发展改革委 关于2022年新能源汽车推广应用财政补贴政策的通知》的解读. 近日，财政部、工业和信息化部、科技部、发展改革委（以下简称四部委）联合发布了《财政部 工业和信息化部 科技部 发展改革委关于2022年新能源汽车推广应用财政补贴政策的通知》（财建〔2021〕466号，以下简称《通知》），现解读如下：. 按照党中央、国务院决策部署，2009年以来，财政部联合有关部门大力支持新能源汽车产业发展。在各方共同努力下，我国新能源汽车技术",
+          "content": "### 财政部微信. ### 财政部视频号. ### 财政部 官方抖音号. ### 移动客户端. ### 移动客户端. ## 关于《财政部 工业和信息化部 科技部 发展改革委 关于2022年新能源汽车推广应用财政补贴政策的通知》的解读. 近日，财政部、工业和信息化部、科技部、发展改革委（以下简称四部委）联合发布了《财政部 工业和信息化部 科技部 发展改革委关于2022年新能源汽车推广应用财政补贴政策的通知》（财建〔2021〕466号，以下简称《通知》），现解读如下：. 按照党中央、国务院决策部署，2009年以来，财政部联合有关部门大力支持新能源汽车产业发展。在各方共同努力下，我国新能源汽车技术水平不断进步、产品性能明显提升，产销规模连续六年位居世界首位。. 2020年4月，四部委联合发布了《关于完善新能源汽车推广应用财政补贴政策的通知》（财建〔2020〕86号），明确“原则上2020 -2022年补贴标准分别在上一年基础上退坡10%、20%、30%，公共交通领域符合要求的车辆，2020年补贴标准不退坡，2021-2022年补贴标准分别在上一年基础上退坡10%、20%，原则上每年补贴规模上限约200万辆”。2021年，新能源汽车产业面对全球疫情蔓延、芯片短缺等不利影响，仍实现了大幅增长，产业发展态势良好。2022年，补贴政策将按既定安排继续有序退坡，创造稳定政策环境，四部委于近期联合印发了《通知》，明确了财政补贴政策有关要求。. 按照财建〔2020〕86号文件规定，2022年新能源汽车购置补贴标准在2021年基础上退坡30%；城市公交、道路客运、出租（含网约车）、环卫、城市物流配送、邮政快递、民航机场以及党政机关公务领域符合要求的新能源汽车，2022年补贴标准在2021年基础上退坡20%。按此，《通知》明确了不同类型、不同领域车辆产品的补贴标准，且自2022年1月1日起执行。. 近年来，在补贴政策扶优扶强导向推动下，我国新能源汽车产品供给质量持续提升，技术水平明显进步、产品实用性大幅提升。根据财建〔2020〕86号文件“2021-2022年，原则上保持技术指标总体稳定”的规定，2022年购置补贴政策维持动力电池系统能量密度、续驶里程、能耗等技术指标门槛不变，稳定企业预期。. 按照财建〔2020〕86号文件要求，综合技术进步、规模效应等因素，将新能源汽车推广应用财政补贴政策实施期限延长至2022年底。综合考虑新能源汽车产业发展规划、市场销售趋势以及企业平稳过渡等因素，为保持新能源汽车产业良好发展势头，稳定行业和消费者预期，《通知》明确2022年12月31日新能源汽车购置补贴政策终止，12月31日后上牌的车辆不再给予补贴。. 新能源汽车产品安全关乎消费者切身利益，是新能源汽车产业健康有序发展的重要保障。近年来，具有智能网联特征的新能源汽车产品逐渐应用于市场，带来的数据安全、网络安全等问题成为重要关注点，我国新能源汽车车辆起火、安全事故仍时有发生。为进一步强化产品安全监管，确保车辆质量和信息安全，切实保障消费者利益，《通知》明确提出要健全新能源汽车安全监管体系，进一步压实新能源汽车生产企业主体责任等措施。同时，围绕车辆起火、重大事故等情况，建立跨部门信息共享机制和车辆事故报告制度，对于隐瞒事故、不配合调查的企业，视情节轻重暂停或取消涉事车型补贴资格。.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C063",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源汽车测评_车友交流 - 懂车帝",
+          "url": "https://www.dongchedi.com/tag/ugc/9792256",
+          "source_name": "懂车帝资讯",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 新能源汽车测评. ### 60款新能源车续航测试，看看你家的车排第几？. 市面在售的60款绿牌新能源车型。其中包含自主品牌、合资品牌及进口品牌车型，在横跨国内四大温区，近70度温差的真实环境中，完成了一次史无前例的新能源续航测试。. ### 预算10-15万，看这五大新能源车！品质高口碑好，入手几乎不后悔. 预算10-15万，看这五大新能源车！品质高口碑好，入手几乎不后悔7294942596529390099视频. 预算10-15万，看这五大新能源车！品质高口碑好，入手几乎不后悔7294942596529390099视频. ### 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”",
+          "content": "# 新能源汽车测评. ### 60款新能源车续航测试，看看你家的车排第几？. 市面在售的60款绿牌新能源车型。其中包含自主品牌、合资品牌及进口品牌车型，在横跨国内四大温区，近70度温差的真实环境中，完成了一次史无前例的新能源续航测试。. ### 预算10-15万，看这五大新能源车！品质高口碑好，入手几乎不后悔. 预算10-15万，看这五大新能源车！品质高口碑好，入手几乎不后悔7294942596529390099视频. 预算10-15万，看这五大新能源车！品质高口碑好，入手几乎不后悔7294942596529390099视频. ### 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”. 对于一款新能源车而言，续航以及安全性能似乎是永远绕不开的话题。包括如今不少车企在宣传自家新车时，不仅也会刻意强调续航里程，将其作为产品的一大卖点，同时也会大肆宣扬产品所用到的电池技术，试图以电池安全的角度来证明整车安全性。. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图1. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图1. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图2. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图2. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图3. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图3. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图4. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图4. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图5. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图5. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图6. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图6. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图7. 高温测评，41款新能源车“现原形”：续航虚高、故障“百出”图7. ### 懂车帝发布新能源车评测体系，6大维度+2大场景为消费者提供参考. 日前，懂车帝公布2022年新能源汽车冬季测试结果。-15℃条件下，新能源车平均续航达成率48.5%，平均续航里程268公里，相比2021年分别提升4%和14%。在续航达成率和平均充电功率前十榜单中，国产新能源车型占据绝大多数，明显优于合资品牌。. ### 几何A安全性能评测 吉利汽车新能源轿车碰撞表现如何. ### 实测星途追风ET-i百公里油耗，这真是一台新能源汽车？. 今天，“100体验营”将推出评测的车型——星途追风ET-i。视频中，我们会对该款车型进行油耗百公里实测，同时也会分享这款车型在其他方面的表现，一起来看吧！. ### 新能源车评测，懂车帝算是玩明白了. “2022懂车帝新能源冬测，3，2，1。”除了低温续航、充电等基础测试，这次冬测还设计了冬季辅助驾驶、24小时冰冻挑战、37.5度爬坡等可靠性和极限性项目，多样化展示新能源车性能。. #保时捷中国回应经销商抗议1-4月中国汽车进口量降8%，超豪华总体走弱。今年1-4月汽车进口21万辆，同比下降8%，下滑趋势延续。2023年以来出现12%的下滑，2024年1-4月加速下滑34%。. 超豪华为何会走弱呢？我觉得豪华感不在高高在上才是根本原因！昨天开了一辆加价30万的卡宴，总共125万！居然是手动调节方向盘！！！中大型SUV后排空间小的出奇，内饰到处是硬塑料。而国产更低的价位、堪称豪华的驾乘感受，国产新能源它不香吗？就像我之前测评过的上汽飞凡F7，配置空间性能上全面有优势，甚至乘坐高级感豪华感更好……. ### 大六座领跑c16. #辣评新车领跑说实话属于异军突起了，在新能源上百个品牌厮杀中存活到现在确实不容易。关于这个车只想表达几点，关于上面的以及正在说的，好的表达完了。. 开玩笑的，首先这个车因为工作原因，北京车展跟青岛车展都没能去，所以水几张官图，领跑这个车子常见的感觉还是c10跟c11偏多，海南众测的时候分配到了领跑c10上面，怎么说呢，一进去领跑给人的感觉就是简洁，没有什么太花里胡哨的内饰，但是也没有什么塑料感，整体的做工还是很板正的。因为赛事路程比较长，还没有到达换手点，车子电量低于百分之十在高速上一个服务区退赛了。所以我只是在副驾驶上面体验了一下，怎么说呢，整体感受还不错，坐着也比较舒服，滤震虽然不是很好但是也没有很差。而且趴在那个服务区退赛的车子也不在少数，但是要知道那会测评的车子领跑属于最便宜的之一，但是跟很多二十多万的车子一起退赛，足以可见还是不错的，而且紧紧退赛而已，因为电量计算不足以撑到换手点，到达服务区还需要把电跑干净，他们蹭蹭转圈，转了半个小时还没跑趴下，最后我们把车给教练做大巴走了。. 所以领跑这个做工质量跟续航接触过，感觉还是不错的，而且领跑一直在做的都是低价产品，价格比较亲民，所以这次c16还挺想去看看的。之所以选择c16这个车想看看，是因为第一个领跑不会定价太高，第二个有自己鲜明的特点。现在很多车子卷的没有特色，例如说配置以前十五万用个后多连杆避震都要拿出来好好吹吹，现在十万出头谁不是谁都不好意思宣传产品，之前无边框车门二十万一下看不到，现在二十万一下好多都无边框车门……所以卷配置卷的感觉已经不新鲜了，座椅加热通风按摩你有我也有的，很多车就是没有什么特色。前几天还看昊铂gt跟结婚绑定在一起，也不知道那个大聪明选择的话题，我要是结婚的时候选择昊铂gt，我估计这次我就可以去车展给大家看看这台领跑c16了，毕竟单身时间多的是。开个玩笑，车子还是要回归生活，就好像很多一米九大个子很喜欢UNIV，但是坐进去就是不舒服，只能看看别的。当时去我丈母娘家，他们邻居几个大妈在门口聊天，一看我车子那么帅，一个大妈立马跑过来问我是啥车子多少钱，还要给他儿子买一个，还拍了几张照片，特别喜欢，结果一问她儿子一米九……，没办法我给她推荐了cs75，毕竟造型配置也不差，后来再去丈母娘家真的就提了cs75p。. 还有一个新闻不知道大家看过没，高速超载，因为是双胞胎孩子，交警判定超载结果父母直接把一个孩子塞给了交警说不要了……所以这种大六座的车子还是很有卖点的。很多想选择UNIV的来问，这个车结婚能开么？现在二胎放开了，确实一些常用的家用车不是很够用，mpv成了一个新的选择，但是很多人不习惯去开mpv，而且很多城市停车不方便也不适合mpv，这种大六座就是一种很好的选择。四个版本两个增程两个纯电版本，目前没有具体上市不好评价那个版本性价比高。但是目前车展有实车，娃多比较顾家的可以选择看看这个车子。当然缺点肯定也有，在海南众测坐在领跑c10上我也说过，这种新势力车企低配调教对比传统车企做出来的还是差了一丢丢，但是不至于不舒服，尤其是c16这么大，操控就不要想了，毕竟人家卖点是空间。. 很多人对“姚十八事件”应该还有印象。有个叫“大秦军陕团”的汽车博主，对比亚迪旗下的方程豹汽车“豹5”进行评测，宣称该车的百公里油耗高达惊人的18升。更让人匪夷所思的是，他还宣称这个油耗数据是自己以“正常驾驶方式”进行测试得来的。. 根据警方的调查需要，比亚迪方程豹提供了这辆车的运行数据。数据显示，那辆车当天存在大量的异常驾驶行为，比如多次狂飙，严重超速，并且极其频繁地急加速、急减速。. 作为汽车博主，按理说应该尽可能模拟正常用户日常的驾驶方式，得出有代表性、有参考价值的油耗测试数据。可是他不这样，偏偏要用非常规甚至是违法的驾驶方式，怎么费油怎么开，终于搞来了18升的百公里油耗。. 就算要用极限方式测测车辆的极限油耗，那也应该如实、详尽地向观众说明，而不是谎称自己是用“正常驾驶方式”测试——哪个正常人平时会那么开车！. 这种动机明显不纯的“测评”，严重误导消费者，损害企业合法权益，对博主自己恐怕也是最终弊大于利——虽然博了眼球，得到了一时的流量，但事情不会这么轻易地结束。5月24日，比亚迪法务部发微博宣布，比亚迪公开反击恶意抹黑，决定起诉该博主（真名姚\\*强），要求其公开道歉并赔偿损失500万。这下酸爽了。. 结局大快人心，但再一想，类似这样的事件，近年来似乎越来越多了。事情不简单。. 真相终究会水落石出，然而关心真相、有能力得知真相的人又有多少呢？造谣一张嘴，辟谣跑断腿。近年来各种造谣、泼脏水的言论，内容一个比一个耸动，夺人眼球，而严谨的辟谣总显得不那么“有趣”，看的人就少。而且辟谣、反击抹黑所要动用的资源比造谣多得多。因此，用谣言来破坏企业商誉、消耗企业资源，或许就被某些人当成了“竞争手段”。近年来的某些个人博主明知最后很可能会被追究造谣责任，可他们为什么还要造谣呢？是不是很奇怪？只是为了眼前的一点流量，还是有更大的利益驱使他们这么做？. 看看新能源汽车的市场状况，心中大概就有了答案。比亚迪汽车的销量断崖式领先，而且还在继续高速成长。或许，有些人真的急了。. 007小白是我的第一辆新能源电车，给各位朋友们分享下定过程，本人是大概两年前就关注新能源汽车了，考虑过比亚迪，吉利，长安等品牌，最后综合考虑下来还是定了奕派007。. 这边重点说下智雅包，里面的HUD很实用，不用经常低头看仪表盘。电动尾翼也很帅，开出去回头率很高。. 我的007小白下定是在盐城捷祥店，当天他家正好开业，虽然没有现金优惠，但是下定了也送了一些礼品和贴膜，感觉还是很不错的。. 我最开始是在手机上观看了奕派007的正式发布会，感觉蛮震撼的，后来就认真关注了这款车型，后来就在抖音里面看测评，包括店里直播，最后现场试驾和下定。. 我觉得对这款车型感兴趣的",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C093",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源车充换电掀起“搭伙风” - 汽车",
+          "url": "http://auto.cyol.com/gb/articles/2023-12/07/content_8EaNZaTbxy.html",
+          "source_name": "充电与补能",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "有不少业内人士注意到，功率更大、充电速度更快的超充桩，是宝马、奔驰此次合作的重头戏。随着新能源汽车加快普及，用户逐渐从“里程焦虑”转变为“追求快速补能",
+          "content": "有不少业内人士注意到，功率更大、充电速度更快的超充桩，是宝马、奔驰此次合作的重头戏。随着新能源汽车加快普及，用户逐渐从“里程焦虑”转变为“追求快速补能",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C095",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "盘点国外新能源汽车补贴政策",
+          "url": "http://www.caam.org.cn/chn/9/cate_107/con_5152232.html",
+          "source_name": "新能源政策",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "中国汽车工业协会（CAAM）（简称“中汽协会”）成立于1987年5月，是经中华人民共和国民政部批准的社团组织，具有社会团体法人资格，地址设在北京，是在中国境内从事汽车（摩托车）整车、零部件…… 【详细】. + 协会荣誉 + 协会章程 + 组织机构 + 主要职责 + 联系方式. 能源、环境问题日益严峻，新能源汽车逐渐成为全球汽车工业争相追逐的新焦点。如今，新能源汽车产业即将进人快速扩张阶段。. 在诸多业内人士眼中，2015年被看作是新能源汽车“进入寻常百姓家”的关键年份。为了鼓励新能源汽车产业的发展，各国政府纷纷出台优惠政策刺激民众购买新能源汽车。. 虽然不同政府部门和不同州针对新能源汽车的补贴",
+          "content": "中国汽车工业协会（CAAM）（简称“中汽协会”）成立于1987年5月，是经中华人民共和国民政部批准的社团组织，具有社会团体法人资格，地址设在北京，是在中国境内从事汽车（摩托车）整车、零部件…… 【详细】. + 协会荣誉 + 协会章程 + 组织机构 + 主要职责 + 联系方式. 能源、环境问题日益严峻，新能源汽车逐渐成为全球汽车工业争相追逐的新焦点。如今，新能源汽车产业即将进人快速扩张阶段。. 在诸多业内人士眼中，2015年被看作是新能源汽车“进入寻常百姓家”的关键年份。为了鼓励新能源汽车产业的发展，各国政府纷纷出台优惠政策刺激民众购买新能源汽车。. 虽然不同政府部门和不同州针对新能源汽车的补贴政策不尽相同，但是总体来说，美国并没有在新能源汽车类型上厚此薄彼，而是给予多种新能源汽车不同的补贴政策，积极推动新能源汽车多元化发展。在各州不同的补贴政策中，加州的交叉补贴政策模式受到人们的关注和推崇。. 其原理是以碳排放交易为基础实行交叉补贴，规定各汽车厂商在本地汽车销售总量中，“零排放”车在未来各个年度必须达到某一占比，否则就要缴纳罚款，或者到其他公司购买指标。. 生产成本大幅削减的同时，消费者在购买使用新能源汽车时，还可再获得5000欧元的电力补助。有了大规模补贴作为后盾，法国境内的新能源汽车普及成效显著。. 按照德国政府规定，2015年以前购买电动车可享受10年免交行驶税的优惠，而在2016年至2020年购买电动车，则可与家中另一辆车共享车牌，以节省保险费用。. 去年12月初，德国政府在柏林召开媒体发布会时，总理默克尔表示：“我们认识到有必要进行更多的补贴，仍然有很多工作亟待完成。”. 一辆混合动力车可以免除新车的重量税和所得税，以及享受政府的专项补助金优惠。而纯电动、天然气等新能源汽车则可享受税费减半政策，并给予与同级别传统车差价50%的优惠补贴。. 对于普通消费者而言，购买燃料电池汽车将至少获得200万日元(约合1.97万美元)的优惠补贴。. 为了扩大环保节能的新能源汽车市场，2015年年初，韩国环境部表示：“要对环保节能汽车加大补助力度，计划今年将有34417辆新能源汽车得到补贴。”. 关于我们 | 联系方式 | 服务内容 | 广告刊例 | 网站地图. Copyright© 中国汽车工业协会 | 京ICP备05030302-7 | 京公网安备 11010602104120号. 地址：北京市丰台区汽车博物馆东路诺德中心11号楼33层 | 邮编：100160 | E-mail:caam@caam.org.cn. 电话：010-63979900 电话：010-63979900.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C116",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "说真的还得懂车帝",
+          "url": "https://m.dcdapp.com/motor/m/feed/list",
+          "source_name": "懂车帝资讯",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "懂车帝. 全部频道. 首页车友圈选车服务. 推荐新车SUV导购提车作业用车试驾评测自驾游新能源摩托车. 更多汽车资讯正在路上. 公司名称：重庆懂车帝科技有限公司.",
+          "content": "懂车帝. 全部频道. 首页车友圈选车服务. 推荐新车SUV导购提车作业用车试驾评测自驾游新能源摩托车. 更多汽车资讯正在路上. 公司名称：重庆懂车帝科技有限公司.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C124",
+            "cluster_size": 1,
+            "score": 43.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:7.0"
+            ]
+          }
+        },
+        {
+          "title": "【一周新车】小米新一代SU7领衔本周新车有看点 - 车家号",
+          "url": "https://chejiahao.autohome.com.cn/info/25032811",
+          "source_name": "汽车之家",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "本周新车市场迎来了小米汽车新一代 SU7这个大热IP，吸引了无数汽车消费者的目光。除此之外，还有小鹏P7 Max版、极狐全新阿尔法S5等热门车型同样于本周上市，让我们一起来看看。. 新车共推出3款车型，均比老款贵4000元。外观变动不大，下包围更加简洁运动，内置4D毫米波雷达。前后摄像头新增高压清洗功能。车身侧面，全系标配三重冗余车外车门把手。车色方面，新增卡布里蓝、赤霞红和靛石绿3款颜色。. 内饰方面，新增暗夜黑配色，以及应急机械拉手。全系标配激光雷达、4D毫米波雷达、700TOPS算力芯片，小米HAD端到端辅助驾驶系统，融入了XLA认知大模型。此外还新增了9处磁吸点位。. 动力方面，升级碳",
+          "content": "本周新车市场迎来了小米汽车新一代 SU7这个大热IP，吸引了无数汽车消费者的目光。除此之外，还有小鹏P7 Max版、极狐全新阿尔法S5等热门车型同样于本周上市，让我们一起来看看。. 新车共推出3款车型，均比老款贵4000元。外观变动不大，下包围更加简洁运动，内置4D毫米波雷达。前后摄像头新增高压清洗功能。车身侧面，全系标配三重冗余车外车门把手。车色方面，新增卡布里蓝、赤霞红和靛石绿3款颜色。. 内饰方面，新增暗夜黑配色，以及应急机械拉手。全系标配激光雷达、4D毫米波雷达、700TOPS算力芯片，小米HAD端到端辅助驾驶系统，融入了XLA认知大模型。此外还新增了9处磁吸点位。. 动力方面，升级碳化硅高压平台，全系标配V6s Plus电机，CLTC工况下续航里程分别为720公里、902公里、835公里。全系搭载小米蛟龙底盘。. 编者注：整车对外观、内饰、智驾、性能、安全等方面进行了全方位升级，尤其是在安全性方面提升很大，同时将更多的配置下放，整体产品力得以升级。. 新车外观亮点包括光翼贯穿灯、LED矩阵大灯、发光LOGO、超薄一体电动后扰流板、掀背尾门、辅驾小蓝灯等。新增20英寸六辅运动轮圈。车色方面，新增星曜红、暗夜黑、星云白3款颜色。此外还推出星曜骑士套装。. 内饰方面，新增引力红、熔岩灰配色。强化运动方向盘，拥有辅助驾驶快捷键和Boost模式快捷键，同时提供沉浸式运动仪表和87英寸追光全景抬头显示。. 动力方面，基于全域800V平台架构打造，CLTC工况下续航里程分别为702公里、820公里、750公里，充电10分钟补能525公里。还推出了运动+模式。. 编者注：新车进一步拉低了 小鹏P7(参数|询价)的起售价，同时也让产品选择更加丰富和全面。. 新车为改款，共推出7款车型。外观针对细节进行调整，主动进气格栅搭配狭长的LED日行灯，极具辨识度。车色方面，新增幻影绿、瓦纳蓝、熔岩灰专属配色。车身侧面，全新密辐式双色轮圈以及双色车身设计，十分时尚。车尾则基本与老款保持一致。. 动力方面，提供增程版和纯电版供选，增程版由1.5L发动机+电机组成，CLTC纯电续航230公里。纯电版提供单电机和双电机两种，CLTC纯电续航分别为630公里、650公里以及720公里。. ### 全面进阶 实力再升 新阿维塔12开启正式预售. 小米汽车新一代SU7正式上市，售价21.99万-30.39万，产品全面升级. ### 小米汽车新一代SU7正式上市，售价21.99万-30.39万，产品全面升级. ### 5200大尺寸+622标准 岚图泰山X8开启8系大五座SUV时代. ### 智驾出海！吉利千里浩瀚G-ASD获欧盟认证. ### 全新一代雷克萨斯ES，真的是破后而立吗？. ### 年轻小生速腾S，德系油车的新剧本. ### 极氪车主怎么评价8X？配置+优缺点分析，到底值不值得等？. ### 第五代五菱宏光 MINIEV试驾. ### 两广24小时一箱电，极狐全新阿尔法S5纯电版光电续航测试. ### 极狐全新阿尔法S5轿跑升级了哪些地方？带智驾小蓝灯，推增程版！. ### 极狐全新阿尔法S5抢先看！推增程版，配置大升级，竟然可以养生！. ### 老司机都迷路！极狐全新阿尔法S5的智驾，能扛住重庆的魔鬼路况？.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C052",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "本周新车上市预告，5款重磅新车排队上市 - 车家号- 汽车之家",
+          "url": "https://chejiahao.autohome.com.cn/info/24931421",
+          "source_name": "汽车之家",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "随着车市热度持续升温，本周（3月9日-3月15日）又将迎来一波新车上市高潮。多款备受关注的重磅车型集中登场，涵盖燃油、混动、纯电等多种动力类型，准备近期购车的用户，看看哪款能戳中你的心。. ****1、方程豹 钛3(参数|询价) 闪充版****. 钛3闪充版计划在3月13日上市，新车外观造型基本保持不变，新增全新外观配色，有多重闪充主题限定车衣可选。动力方面，新车搭载双电机，前电机功率从110kW提升至135kW、后电机功率从200kW提升至240kW，最高车速从201km/h优化至210km/h。. 电池方面，新车换装比亚迪第二代刀片电池，纯电续航里程提升至620km，还配备了闪充技术，电池",
+          "content": "随着车市热度持续升温，本周（3月9日-3月15日）又将迎来一波新车上市高潮。多款备受关注的重磅车型集中登场，涵盖燃油、混动、纯电等多种动力类型，准备近期购车的用户，看看哪款能戳中你的心。. ****1、方程豹 钛3(参数|询价) 闪充版****. 钛3闪充版计划在3月13日上市，新车外观造型基本保持不变，新增全新外观配色，有多重闪充主题限定车衣可选。动力方面，新车搭载双电机，前电机功率从110kW提升至135kW、后电机功率从200kW提升至240kW，最高车速从201km/h优化至210km/h。. 电池方面，新车换装比亚迪第二代刀片电池，纯电续航里程提升至620km，还配备了闪充技术，电池电量从10%充至97%仅需9分钟，进一步解决用户的续航焦虑问题，长途出行时在服务区上个厕所的时间，车辆的电量基本就能充满了。. iCAR V27计划在3月13日上市，能否与方程豹钛7抗衡，就要看最终的定价了。新车外观采用了炫酷的“方盒子”设计，虽然没有配备大梁，但却有着浓浓的硬派越野气息。内饰配备有大尺寸中控屏，内置高通骁龙8295P芯片，智能化表现出色，还将搭载猎鹰700智驾系统。. 动力方面搭载1.5T增程系统，有两驱版、四驱版可选，零百加速最快仅需5.5秒。续航方面，新车匹配34.3kWh的电池组，在CLTC工况下，纯电续航里程分别是200km、210km，满油满电状态下，综合续航里程可超1200km。. 梦想家冠军版会在3月10日上市，目前预售价31.99万元，比现款在售车型的指导价都要便宜。新车前中网改成了熏黑样式，车头看起来更内敛和谐，配置上，与现款入门版（鲲鹏Pro版）相比，增加了华为鸿蒙座舱5、华为乾崑智驾ADS4系统，拥有192线激光雷达加持，还新增了负离子发生器、车载香氛系统等。. 但取消了前排电吸门、后备厢投影感应开启、感应后备厢、主动闭合进气格栅、后排侧窗遮阳帘、副驾娱乐屏、220V电源接口等，动力系统略有下调，最大功率从480kW调整为420kW，电池从宁德时代的磷酸铁锂电池组换成三元锂电池组，容量是41.7kWh，CLTC纯电续航同样是235km。. 五菱缤果S的新增长续航版本有望在本周上市，新车外内饰设计大概率将保持不变，重点针对配置和续航作出升级，或拥有更丰富的配置功能，继续配备75kW的单电机，电池容量升级至52.9kWh，在CLTC工况下可拥有525km的纯电续航里程。. 作为参考，目前在售的五菱缤果S电池容量分别是31.9kWh、41.9kWh，CLTC纯电续航分别是325km、430km，新款车型续航提升幅度还是比较大的，当然新车售价预计也会进一步提升，目前现款车型指导价是6.68-7.98万元。. 星越L 长风系列会在3月9日晚上上市，预售价13.97-14.77万，新车外观、内饰、尺寸均没有明显的变化，或针对配置作出调整。动力方面，新车换装低功率的2.0T发动机，最大功率160kW、最大马力218匹，匹配7挡湿式双离合变速箱。. 作为对比，现款星越L全系搭载2.0T发动机，最大功率分别是200kW、175kW，匹配8挡手自一体变速箱，现款车型全系需要加注95号汽油，而新款长风系列发动机虽功率下调了，但却支持加注92号汽油。. 以上5款车型很快会和大家见面，其中除了吉利星越L长风系列属于燃油车外，其他车型均为新能源产品，既有能满足年轻人短途通勤代步的入门级车型，也有能满足家用需求的大空间SUV，那么你最期待哪款新车的到来？. ### 一天4款新车集中上市，小米、奥迪等重磅新品来袭. ### 综合续航1525km + 3C快充，吉利博越REV来袭，3月22日开启预售. ### 20毫秒响应+L4级智驾，智己LS8定档3月26日开启预售，你心动了吗. ### 四激光雷达 + 华为座舱，岚图泰山X8实车亮相，家庭插混SUV新选择. ### 两广24小时一箱电，极狐全新阿尔法S5纯电版光电续航测试. ### 老车主带你看2026款揽胜. ### 2.0T大众帕萨特油耗实测，这结果你感觉怎么样？. ### 4缸的 但真的很AMG 试驾全新奔驰GLC43 AMG. ### 别乱买电车！五菱缤果才是性价比王. ### 冬日潮车引爆哈尔滨！五菱缤果“毛绒外挂”征服中央大街。. 五菱缤果家族×良品铺子：一场“开箱即好运”的新春邂逅. ### 五菱缤果家族×良品铺子：一场“开箱即好运”的新春邂逅. 五菱缤果家族×良品铺子：一场“开箱即好运”的新春邂逅. ### 车企憋大招！26年一季度还有这些新车要上市，哪款会是年度爆款？.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C098",
+            "cluster_size": 1,
+            "score": 42.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "中国智驾战力天梯榜（2025年9月，下）",
+          "url": "https://d1ev.com/news/shuju/276542",
+          "source_name": "智能驾驶周报",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "来源：第一电动网 作者： 第一电动编辑部 本文地址： 返回第一电动网首页 > 文中图片源自互联网，如有侵权请联系admin#d1ev.com（#替换成@）删除。 收藏 赞205 分享到： 相关话题 相关圈子 发表评论 新闻推荐 推荐 新车 评测 供应链 智能科技 政策 人物 资本 问答 ) 您的询价信息 已经成功提交我们稍后会联系您进行报价! Hello world！ 关闭 --> [...] 最后说测试记录的方法和审核流程。所有测试（比赛、评测和众测）都有统一要求：1、有经验的测试员（智驾里程5000公里以上，且经过比赛检验），在标定路线上做智驾测试；2、随车记录员，手持打印版测试记录表，记",
+          "content": "来源：第一电动网 作者： 第一电动编辑部 本文地址： 返回第一电动网首页 > 文中图片源自互联网，如有侵权请联系admin#d1ev.com（#替换成@）删除。 收藏 赞205 分享到： 相关话题 相关圈子 发表评论 新闻推荐 推荐 新车 评测 供应链 智能科技 政策 人物 资本 问答 ) 您的询价信息 已经成功提交我们稍后会联系您进行报价! Hello world！ 关闭 --> [...] 最后说测试记录的方法和审核流程。所有测试（比赛、评测和众测）都有统一要求：1、有经验的测试员（智驾里程5000公里以上，且经过比赛检验），在标定路线上做智驾测试；2、随车记录员，手持打印版测试记录表，记录测试过程；3、全程车内前向机位录像，一镜到底；4、提交测试记录表和一镜到底录像素材后，审核员审核通过，录入天梯榜数据池。 从本期天梯榜开始，数据池取值时间范围调整为过去6个月（此前是12个月），以更准确反应智驾行业的最新进展。9月数据池昨天已公布，感兴趣的读者可以去查阅。（参见《中国智驾战力天梯榜（2025年9月，上）》） #01 9月场景榜：特斯拉满分继续霸榜，华为跌至榜尾 9月场景榜（满分30分）较8月出现五大显著变化，具体排名及表现如下： 1、新人强势上榜：博世（+文远知行）满足测试次数要求，正式纳入榜单统计，以28.33分位列第三，展现较强的全场景适配能力。 2、小鹏被反超：小鹏“激光雷达融合方案”与“视觉方案”均以28分的成绩并列第五，被博世（+ 文远知行）及元戎启行反超，但三者均分差值较小，竞争仍处于胶着状态。 3、蔚来大幅跃升：蔚来场景均分较8月大幅提升6.31分，以24.17分的成绩从榜尾跻身第七。 4、极氪稳步前进：极氪场景均分较8月大幅增长3.2分，最终以24分排名第八。 5、华为降至榜尾：场景分降幅最大的一家，相比8月下降4.86分，以18.81分位列榜尾。华系四强（阿维塔、智界、问界、享界）在南通站、嘉兴站比赛中，园区内部道路无法激活NOA而集体丢大分，是华为智驾场景分大幅下滑的主因。这一现象与华为智驾 “安全优先” 的开发策略相关，在未经充分标注的园区内部道路，暂不开放NOA；而特斯拉、理想和小鹏等则倾向于优先跑通全场景。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C056",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:5.0"
+            ]
+          }
+        },
+        {
+          "title": "回顾2023｜新出行做了哪些热门智能驾驶测评_话题文章",
+          "url": "https://www.xchuxing.com/article/113376",
+          "source_name": "智能驾驶周报",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "2023 年的智能驾驶领域，无疑是值得津津乐道的话题。而在上一年，新出行也针对众多拥有高阶智能驾驶的车型进行了诸多评测，下面就由我为大家回顾一二，在 2023 年，新出行做了哪些智能驾驶测评。 ## 一、挑战广州城区 体验集度城市智驾 在 2023 伊始，各家车企纷纷放出了各自 Beta 版本的城区智驾系统，而在其中有着百度做背书的集度（现极越）无疑是第一梯队的强有力竞争者。 在之前的广州车展上，集度共首发两款车型，包括量产版的 ROBO-01 以及 ROBO-02 的概念版，但这次还有一个隐形的“彩蛋”，也就是集度的城市智驾首次在广州开城。而这一次新出行将与集度智能驾驶负责人伟宝独家首发体验",
+          "content": "2023 年的智能驾驶领域，无疑是值得津津乐道的话题。而在上一年，新出行也针对众多拥有高阶智能驾驶的车型进行了诸多评测，下面就由我为大家回顾一二，在 2023 年，新出行做了哪些智能驾驶测评。 ## 一、挑战广州城区 体验集度城市智驾 在 2023 伊始，各家车企纷纷放出了各自 Beta 版本的城区智驾系统，而在其中有着百度做背书的集度（现极越）无疑是第一梯队的强有力竞争者。 在之前的广州车展上，集度共首发两款车型，包括量产版的 ROBO-01 以及 ROBO-02 的概念版，但这次还有一个隐形的“彩蛋”，也就是集度的城市智驾首次在广州开城。而这一次新出行将与集度智能驾驶负责人伟宝独家首发体验 ROBO-01 的城区智驾实际表现。 这次的挑战有几个核心考点： 集成百度 Robotaxi 能力的集度是第一次在广州路试，那是否具备一定的泛化能力？还是会水土不服？ 目前这台车不再是过去的骡车，而是刚刚从生产线下来的 ROBO-01工程车，底盘、软件等诸多适配性怎么样？ 这次体验的版本是不加入激光雷达的，也是基于视觉为主的方案，当然伟宝也提到，目前因为只在工程阶段，所有视觉也只能发挥 70% 左右的能力。 点开下面的视频链接，我们一起回顾下，无激光雷达的 ROBO-01 在广州市区的表现究竟如何吧：智驾报告｜挑战广州城区 一镜到底体验集度“城市智驾”（新出行独家） [...] （1）为了保障您能正常使用新出行中由我们的关联方提供的相关功能或服务，或为保障使用安全或进行必要的产品使用分析，我们可能会与关联方共享所必需的信息； （2）在您使用新车询价服务时，例如在车型库使用咨询车价、积分试驾时，我们会向相关汽车经销商（包括您主动选择的经销商、在您仅选择品牌未明确选择具体经销商的情形下我们根据您所在区域为您匹配推荐的经销商以及我们为了更好地匹配您的需求，结合您选择的品牌/车型向您推荐的您所在区域同品牌的其他优质经销商，具体经销商信息及联系方式您可在留资表单中查看或由我们通过短信方式向您告知）、厂商及集团（具体厂商、集团信息见附件列表）提供您在表单中主动提交的信息，用于其与您联系为您提供车型咨询服务，或在其他合法正当的范围内使用。此外，为保证您获得更好的服务体验，我们可能会与相关汽车经销商、厂商及集团共享难以识别您个人身份的必要的标签信息并由其在合法正当的范围内使用（例如促使相关联络内容、联络时间更符合您的需求）； （3）在您与汽车经销商销售顾问通过聊天消息提交“预约咨询”、“预约试驾”表单时，我们会将您提交的信息提供给销售顾问所属经销商（具体经销商名称及联系方式信息可在聊天页面中点击销售顾问头像查看）、厂商及集团（具体厂商、集团信息见附件列表），用于与您联系为您提供车型咨询服务，或在其他合法正当的范围内使用。此外，为保证您获得更好的服务体验，我们可能会与相关汽车经销商、厂商及集团共享难以识别您个人身份的必要的标签信息并由其在合法正当的范围内使用（例如促使相关联络内容、联络时间更符合您的需求）； [...] （1）为了保障您能正常使用新出行中由我们的关联方提供的相关功能或服务，或为保障使用安全或进行必要的产品使用分析，我们可能会与关联方共享所必需的信息； （2）在您使用新车询价服务时，例如在车型库使用咨询车价、积分试驾时，我们会向相关汽车经销商（包括您主动选择的经销商、在您仅选择品牌未明确选择具体经销商的情形下我们根据您所在区域为您匹配推荐的经销商以及我们为了更好地匹配您的需求，结合您选择的品牌/车型向您推荐的您所在区域同品牌的其他优质经销商，具体经销商信息及联系方式您可在留资表单中查看或由我们通过短信方式向您告知）、厂商及集团（具体厂商、集团信息见附件列表）提供您在表单中主动提交的信息，用于其与您联系为您提供车型咨询服务，或在其他合法正当的范围内使用。此外，为保证您获得更好的服务体验，我们可能会与相关汽车经销商、厂商及集团共享难以识别您个人身份的必要的标签信息并由其在合法正当的范围内使用（例如促使相关联络内容、联络时间更符合您的需求）； （3）在您与汽车经销商销售顾问通过聊天消息提交“预约咨询”、“预约试驾”表单时，我们会将您提交的信息提供给销售顾问所属经销商（具体经销商名称及联系方式信息可在聊天页面中点击销售顾问头像查看）、厂商及集团（具体厂商、集团信息见附件列表），用于与您联系为您提供车型咨询服务，或在其他合法正当的范围内使用。此外，为保证您获得更好的服务体验，我们可能会与相关汽车经销商、厂商及集团共享难以识别您个人身份的必要的标签信息并由其在合法正当的范围内使用（例如促使相关联络内容、联络时间更符合您的需求）；",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C068",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:5.0"
+            ]
+          }
+        },
+        {
+          "title": "氪星晚报｜迪卡侬正式入驻拼多多；特斯拉计划2026年批量交付Semi电动卡车，价格或低于30万美元；消息人士：马斯克团队采购光伏设备预计将在5月第一周发货",
+          "url": "https://36kr.com/p/3731169592918273?f=rss",
+          "source_name": "36kr 汽车",
+          "source_type": "rss",
+          "category": "auto",
+          "summary": "大公司： 小鹏汽车：预计第一季度交付量61000辆-66000辆，同比减少29.8%-35.1% 36氪获悉，小鹏汽车发布2025年第四季度及全年财报。财报显示，对于2026年第一季度，本公司预期汽车交付量将介乎61000-66000辆，按年减少约29.79%-35.11%。总收入将介乎122.0亿元-132.8亿元，按年减少约16.01%-22.84%。 北京汽车：王昊由于工作变动将不再担任董事长，提名张国富任董事长 36氪获悉，北京汽车公告，公司当天举行会议并谨此宣布，由于工作变动，王昊将不再担任董事长、执行董事、董事会战略与可持续发展委员会主任及董事会提名委员会主任；朱雁将不再担任执行董",
+          "content": "大公司： 小鹏汽车：预计第一季度交付量61000辆-66000辆，同比减少29.8%-35.1% 36氪获悉，小鹏汽车发布2025年第四季度及全年财报。财报显示，对于2026年第一季度，本公司预期汽车交付量将介乎61000-66000辆，按年减少约29.79%-35.11%。总收入将介乎122.0亿元-132.8亿元，按年减少约16.01%-22.84%。 北京汽车：王昊由于工作变动将不再担任董事长，提名张国富任董事长 36氪获悉，北京汽车公告，公司当天举行会议并谨此宣布，由于工作变动，王昊将不再担任董事长、执行董事、董事会战略与可持续发展委员会主任及董事会提名委员会主任；朱雁将不再担任执行董事及战略与可持续发展委员会成员；及孙力将不再担任非执行董事及战略与可持续发展委员会成员。上述变动均自新董事委任获批准之日起生效。董事会建议委任：张国富为非执行董事。如股东会批准张国富任非执行董事，则进一步提议提名张国富任董事长；郑明英为执行董事；及周建裕为非执行董事。 亚马逊创始人贝索斯旗下蓝色起源计划在太空部署5万多颗卫星 当地时间3月19日，美国亚马逊公司创始人贝索斯旗下的蓝色起源公司，向美国联邦通信委员会提交了一份关于打造太空数据中心的项目书，项目书显示，蓝色起源打算在太空部署5万多颗卫星。分析人士指出，如果该项目获批，这将成为蓝色起源从运载火箭服务商向轨道基础设施服务商转型的关键一步，全球太空经济领域的竞争也将愈发激烈。 特斯拉计划2026年批量交付Semi电动卡车，价格或低于30万美元 今年夏天，经过多年延期后，特斯拉计划从其内华达超级工厂开始批量交付Semi。根据Tigress Financial Partners最近的一份报告，该公司预计2026年交付5000至15000辆Semi，随后年产量将提升至5万辆。公司尚未公开Semi的价格，也未回应置评请求。订购车辆的公司受保密协议约束。但知情人士表示，价格低于30万美元，大约是柴油车成本的两倍。 迪卡侬正式入驻拼多多 36氪获悉，3月20日，迪卡侬拼多多官方旗舰店正式上线。同时，迪卡侬也将一直积极践行的“产品+服务+社群”三位一体价值模式延伸至线上，能提供覆盖80多种运动的全品类专业装备，并且通过自有客服、专业售后与高效物流，为消费者提供闭环服务体验。 消息人士：马斯克团队采购光伏设备预计将在5月第一周发货 从消息人士获悉，此前马斯克旗下Space X团队向国内某头部异质结设备厂采购设备，该订单预计将于5月第一周发货。类半导体产品出口都需要经过相关部门备案审批，目前还在推进中。据了解，马斯克团队旗下光伏订单主要分为Space X（S链）和Tesla（T链），规划应用场景分别是太空和地面。另据消息人士称，目前T链合作订单还处于洽谈中，涉及多家TOPCon设备厂。 新产品： 腾讯QClaw正式开启全量公测 36氪获悉，3月20日，腾讯QClaw正式开启全量公测。新版本持续优化微信生态体验，同时打通企业微信、QQ、飞书、钉钉等多平台远控通道，进一步拓展AI协作入口。“龙虾像素工作室”、定时任务等特色功能也在本次公测中正式开放。 OpenAI拟推出桌面“超级应用”，以重新聚焦并简化用户体验 据报道，OpenAI计划将其ChatGPT应用、编码平台Codex和浏览器整合到一个桌面“超级应用”中，此举旨��简化用户体验，并继续专注于工程和商业客户。 投融资： 亚马逊收购配送机器人公司Rivr 总部位于苏黎世的自主机器人初创公司Rivr以其可爬楼梯的配送机器人闻名，现已被亚马逊收购。这笔交易凸显出亚马逊对上门末端配送领域的布局兴趣，交易条款未予披露。 字节超60亿美元出售沐瞳科技，进一步聚焦AI战略 字节跳动宣布已和沙特公共投资基金（PIF）旗下的Savvy Games Group达成出售沐瞳科技的最终协议，其出售价格超过60亿美元。沐瞳科技是东南亚著名MOBA手游Mobile Legends: Bang Bang（MLBB）的研发商与发行商，于2021年被字节收购。据悉，字节跳动在AI方向上投入巨大，25年四季度整体利润下降，出售沐瞳被视为字节在战略上进一步向AI聚焦的信号。 今日观点： 欧洲央行据悉准备最早4月会议上加息 知情人士透露，如果伊朗战争的波及效应导致通胀远超目标，欧洲央行政策制定者准备最快在下次会议上加息。知情人士表示，虽然目前尚未做出任何决定，且更晚的日期可能更为合适，但鉴于“二轮效应”（指能源价格上涨引发工资和物价全面上涨）等其他因素，可能有必要在4月29日至30日会议上加息。由于讨论内容属于机密，这些人要求匿名。 其他值得关注的新闻： 市场监管总局：正推进外卖平台服务行业市场竞争状况调查评估工作 3月20日，市场监管总局召开2026年一季度例行新闻发布会。会上，市场监管总局新闻发言人、新闻宣传司司长王秋苹表示，正按照既定方案，抓紧推进外卖平台服务行业市场竞争状况调查评估工作。“我们正按照既定方案，抓紧推进调查评估工作。目前，已会同国务院反垄断反不正当竞争委员会成员单位，前往相关外卖平台开展现场调查，全面收集情况；组织召开商家座谈会，与行业协会、平台内经营者进行交流；并通过面对面访谈，广泛了解平台内商家、外卖骑手和消费者等多方主体的关切与诉求。”",
+          "published_at": "2026-03-20 19:08:25  +0800",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C106",
+            "cluster_size": 1,
+            "score": 41.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:2.0",
+              "keyword:6.0"
+            ]
+          }
+        },
+        {
+          "title": "36氪出海·行业｜中国新能源汽车的全球叙事",
+          "url": "https://letschuhai.com/2c8ae165",
+          "source_name": "36kr 汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "# 36氪出海 - 助力中国公司全球化. # 36氪出海·行业｜中国新能源汽车的全球叙事. 更为关键的是，中国汽车不仅实现了产品力、价值力的巨大提升，更从单纯的 “产品出海” 迈向、“产业链出海” 和 “生态出海” 的全新阶段。. 当带有 “Made in China” 的汽车行驶在欧洲，当中国新能源汽车在俄罗斯、中东、美洲大陆占据绝对优势，一场以中国为主角的新能源出海大戏正拉开历史性的宏大序幕。. ### **01 全球攻势，中国汽车站上世界舞台**. 2005年，当江铃陆风代表中国车企，第一次来到德国，结果却是在安全碰撞测试中，获得了 “车体全部散架，车内假人全部死亡” 的惨不忍睹的结果。",
+          "content": "# 36氪出海 - 助力中国公司全球化. # 36氪出海·行业｜中国新能源汽车的全球叙事. 更为关键的是，中国汽车不仅实现了产品力、价值力的巨大提升，更从单纯的 “产品出海” 迈向、“产业链出海” 和 “生态出海” 的全新阶段。. 当带有 “Made in China” 的汽车行驶在欧洲，当中国新能源汽车在俄罗斯、中东、美洲大陆占据绝对优势，一场以中国为主角的新能源出海大戏正拉开历史性的宏大序幕。. ### **01 全球攻势，中国汽车站上世界舞台**. 2005年，当江铃陆风代表中国车企，第一次来到德国，结果却是在安全碰撞测试中，获得了 “车体全部散架，车内假人全部死亡” 的惨不忍睹的结果。德国评测机构甚至给出0分，这是其二十年来第一个零分评级。. 今年1-7月，新能源动力在我国出口汽车中的占比已经超过一半，到7月份，纯电动达到35%左右，混动和插混占比近20%。. 在出口地方面，中国汽车不仅销往俄罗斯、南美、澳洲、东南亚等新兴市场，更进军欧美等 汽车工业强国，和曾经的 “老师” 同台竞技。. 凭借领先的智能化水平、先进的电池技术、优秀的产品质量，成为当地居民眼中的 “香饽饽”。而且，出海车型售价比国内贵出好几个档次，但即便如此，海外消费者也愿意一掷千金。. 2024年，我国新能源汽车年产量历史性突破1000万辆大关，达到1288.8万辆，在全球电动汽车销量占比达70%。. 据《华尔街日报》近期报道，中国电动汽车在泰国销量占比高达93%，在印度尼西亚为78%。在一个高度市场化竞争的行业，这样的数字已经十分夸张。. 2024年，中国汽车产销累计完成3128.2万辆和3143.6万辆，同比增长3.7%和4.5%，再创新高，汽车产销连续16年居全球第一。在汽车向电动化和智能化转型的历史时刻，中国汽车工业实现了前所未有的超越。. 根据亿欧智库在《2024中国新能源智能汽车产业链出海战略研究报告》中指出，中国新能源智能汽车出口规模预计在2025年时可以达到325亿美元，2028年时达到1396亿美元，2030年时达到2363亿美元。. 走过燃油车时代 “以市场换技术” 的尴尬和窘迫，中国新能源汽车终于扬眉吐气，迎来真正意义上的 “大航海” 时代。. ### **02 从产品到生态，迈向全球化新高度**. 汽车是人类历史上最为复杂的工业制品，但同时，它又是家庭大件消费品，这注定了汽车行业绝不能遵循 “一锤子买卖” 的思路。. 在大航海时代，汽车出口规模急速扩大，出海思路、策略和逻辑层面，都要进行根本性的转变，才能适应当前风云诡谲的国际经贸环境。. 在出海路径上，中国车企根据自身情况，告别了单一售卖的模式，形成 “造船出海+KD（散件组装）” 等出海渠道。. 比亚迪和上汽是 “造船出海” 的典范。今年5月，上汽安吉物流打造的滚装船 “安吉安盛” 轮装载3850辆汽车发往欧洲。. 该船总长228米、型宽37.8米，可配置9500个车位，单航次运输的车辆可停满20个标准足球场。“安吉安盛” 轮与其姊妹号 “安吉宏盛” 并肩为目前全球最大、装载能力最强、能效水平最佳的超大型汽车滚装船。. 这一规模超过了前一月才下水的比亚迪 “深圳号”，随着 “安吉安盛” 轮 “列装”，上汽自营船队规模扩容到35艘，安吉物流也已是我国最大的车企自营船队。. 而就在4月底，“比亚迪深圳号” 在仪征金陵船厂出港，总长219.9米，宽37.7米，最多可装载9200个车位。. 除了体型大，这艘巨无霸融合了北斗导航、自动驾驶、LNG 双燃料动力、比亚迪电池组等黑科技，不仅是中国造船工业的集大成者，也是助力新能源汽车出海的 “超级战舰”。. 比亚迪当前还在大幅扩充自有船队，预计到2026年1月，规模将扩展至8艘，形成覆盖全球的航运网络。如果按每艘船每月运输一次测算，比亚迪每年就可以运输超过80万辆汽车，相当于每天2200辆通达全球。. 随着海外销量快速飙升，相比租用第三方船只，自营船队可节约15%成本，每年可省下数亿元的物流费用。不仅如此，自有船队可缩短20%-30%的运输市场，还能提升订单响应速度。加上临近的比亚迪常州基地，“产运一体”+“车船港联动”，将进一步降低成本，同时增强比亚迪的全球竞争力。. 近年来，国际地缘冲突，世界航运风险陡增，自建船队将有效抵御黑天鹅事件带来的不良影响，保证供应链稳定。. 与此同时，中国车企还在探索新方式，比如告别传统的单一整车出口，转向 “本地化组装” 形式。. 目前国际汽车巨头普遍流行 KD(Knocked Down)模式，KD 分为三种 CKD、SKD和 DKD。CKD 即全散件组装，SKD 则是半散件组装，而 DKD 相当于白车身大总成，装上4个轮子就是整车。. 广汽便是典型代表，其快速推进海外本地化组装，成立 KD 推进部，在尼日利亚、突尼斯、马来西亚、泰国等地完成了 DKD、CKD 工厂落地，并推进埃及 CKD、缅甸 SKD 等项目。通过KD模式，先以零部件形式出口至目标市场，再进行本地化组装，既能缩短供应链物流时间，降低物流成本，还能快速响应当地市场需求。. 此外，长安汽车在今年建立了首个海外新能源整车基地——泰国罗勇工厂，预计年底海外总产能达46万辆，可辐射海外优先级最高的东南亚市场；按照规划，长安将在海外建设整车及 KD 工厂共20个，目前已投产9个 KD 工厂。这些布局，都将助力这家汽车新央企驰骋海外市场。. 与此同时，随着国内锂电、汽车零部件等产业的整体崛起，中国车企也告别了过往 “单兵作战” 的局面，协同电池、电机等核心零部件到智能网联技术企业一同出海。. 比如，上汽通用五菱在印尼的工厂以 “整车+零部件” 模式吸引供应链伙伴入驻，并带动当地汽车产业链升级。. 印尼手握新能源汽车产业链重要资源，全球60%的镍矿产量由印尼把持。为保证这一关键资源的供应通畅，宁德时代、格林美、中伟股份等产业龙头企业纷纷南下印尼。. 今年6月29日，由宁德时代参与的印尼动力电池生态系统项目正式启动。印尼总统普拉博沃在仪式上说，这一项目将使印尼成为东南亚唯一实现贯通动力电池上下游全链条的国家，印尼将和中国伙伴携手推进。. 美国一家咨询公司荣鼎集团指出，中国电动汽车供应链企业去年在海外投资160亿美元，而国内投资仅150亿美元。这是2014年有记录以来，海外投资额首次超过国内的报告。意味着，中国汽车全球化布局进入拐点时刻。. ### **03 中国军团，组建出海舰队**. 乘联分会统计数据显示，奇瑞、比亚迪、上汽位居9月份乘用车出口前三名。其中，奇瑞依然稳居第一名，比亚迪则异军突起，9月份出口量飙升109.5%，上汽则呈现稳步增长态势。. 2024年，奇瑞集团出口汽车114万辆，创造中国车企出口新纪录，相当于平均每27秒就有一辆 “奇瑞造” 交付海外用户，而且连续22年问鼎中国乘用车出口第一名。今年上半年，奇瑞出口量攀升至55万辆，占其总销量的比例高达44%，海外市场已经是其重要的增长引擎。. 为支撑庞大的国际业务，奇瑞汽车已构建起覆盖亚洲、欧洲、南美等重要市场的生产网络，支撑其全球化扩张。. 尤其在长期深耕的俄罗斯，奇瑞底盘稳固，2024年，俄罗斯已成为奇瑞海外单一最大市场，在当地跻身新车销售前三名，市占率突破20%。瑞虎7 PRO MAX、欧萌达等杀进俄市场前十，瑞虎7系列凭借四驱版本适应复杂路况的特性，成为西伯利亚地区最受追捧的 SUV 之一。. 奇瑞的成功是 “战略定力+深度本地化” 的结晶。早在2005年，奇瑞就在圣彼得堡建立首个海外 KD 厂，此后投建焊装、涂装等生产线，本地化生产比例提升至60%。“出口+本地化” 的双轨模式，使其在2022年国际供应链危机爆发时，仍能保持较高的产能利用率。. 奇瑞也积极融入当地，开发能够解决消费者痛点的产品。俄罗斯冬季平均气温低于-25℃，路况多冰雪，奇瑞为此建立专项的耐寒、续航、抗颠簸测试，开发出经典的 TIGGO 7 系列。. 如今，这一模式成功复制到巴西、埃及、土耳其等市场，继续在海外攻城略地。9月25日，奇瑞汽车在H股上市，将近一半的国际化营收占比，成为其独特的差异化标签。. 2025上半年，比亚迪全球卖出214.6万辆新车，海外47万辆，同比激增132%，这一数字已经超过去年全年的海外销量。其9月份海外销量达到6.9万辆，同比狂奔109.8%。. 同时，比亚迪在巴西、英国、西班牙、意大利、泰国、新加坡等多个国家斩获当地新能源销量第一名。. 尤其在英国，比亚迪在刚刚过去的9月狂卖11271辆，超越MINI、特斯拉，也将英国变为自己海外最大市场。凭借单月惊人的880%的同比增速，比亚迪在英国火出圈。. 而且，比亚迪在海外的售价远高于国内同等车型，大爆款 Seal U（宋 PLUS 系列）在英国定价3.3万英镑（约31万元），而国内只需13.58万起，相当于是国内的2倍多。. 相比奇瑞、上汽，比亚迪的全球化起步并不算早。2021年，比亚迪庞大的欧洲，一年销量只有一千余辆，此后在一些国家月销量甚至跌到个位数，在对本土品牌有高度信任基础的欧洲市场，要想杀出一片天地并不容易。. 而比亚迪能够逆袭，得益于产品、经销体系和市场策略的改变。基于欧洲陈旧的电网和并不完善的充电基础设施，比亚迪推出Seal U插混车型，集合了燃油车和电动车的优势，既有燃油车的续航，又能够满足欧洲碳排放规定，可油可电，抓住了这个 “过渡期” 的红利。. 在巴西，比亚迪正在践行 “本地化研发+智能制造+生态共建” 的全产业链输出模式。2023年7月，比亚迪宣布在巴西卡马萨里市建设大型生产基地，总投资55亿雷亚尔（约71亿元）。此后仅用15个月就完成从",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C008",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "5分钟超充VS 99秒换电，这场补能暗战谁将胜出？ - 新能源汽车",
+          "url": "https://nev.ofweek.com/2026-03/ART-77013-8420-30683142.html",
+          "source_name": "充电与补能",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "ܵ *|* Ƽ *|* *|* *|* *|* 3Dӡ *|* ܼҾ *|* ˹ *|* Դ *|* . ǻ۳ *|* Ǳ *|* VR *|* Ӳ *|* *|* *|* ﮵ *|* ² *|* *|* . *|* ǻۺ*|* ɴ豸*|* ҽеƼ*|* *|* ͨ*|* *|* *|* Դ*|* ѧ*|* *|* PCB. 5ӳVS 99뻻磬ⳡܰս˭ʤ. ԭı : 5ӳVS 99뻻磬ⳡܰս˭ʤ. #### . >> ᡿Flexiverse 2026 ϦƼƷ. SAP ʱԴֻƤ 2019Դҵչս. * 10 Ԭ2035սԡóĿµ3.8. - About OFweek - - ѯ - Ϣ - ϵ",
+          "content": "ܵ *|* Ƽ *|* *|* *|* *|* 3Dӡ *|* ܼҾ *|* ˹ *|* Դ *|* . ǻ۳ *|* Ǳ *|* VR *|* Ӳ *|* *|* *|* ﮵ *|* ² *|* *|* . *|* ǻۺ*|* ɴ豸*|* ҽеƼ*|* *|* ͨ*|* *|* *|* Դ*|* ѧ*|* *|* PCB. 5ӳVS 99뻻磬ⳡܰս˭ʤ. ԭı : 5ӳVS 99뻻磬ⳡܰս˭ʤ. #### . >> ᡿Flexiverse 2026 ϦƼƷ. SAP ʱԴֻƤ 2019Դҵչս. * 10 Ԭ2035սԡóĿµ3.8. - About OFweek - - ѯ - Ϣ - ϵ - Ա - վ - ֻOFweek. ǵվ ̫ܹ | ӹ | | | | | ǻۺ| | ʾ | ͨѶ | Ƽ | 3Dӡ. ˹ | Ӳ| ҽеƼ | ﮵ | ² | ɴ豸 | VR | Դ | | ǻ۳ | ܼҾ | | | Ǳ. | | ܵ| | | ͨ| | | Դ | ѧ | | PCB| ˲ | ó | ѵ| .",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C012",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "新能源车主题详情页_36氪",
+          "url": "https://www.36kr.com/motif/887340957231622",
+          "source_name": "36kr 汽车",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "36氪为您提供创业资讯、科技新闻、投融资对接、股权投资、极速融资等创业服务，致力成为创业者可以依赖的创业服务平台，为创业者提供最好的产品和服务。",
+          "content": "36氪为您提供创业资讯、科技新闻、投融资对接、股权投资、极速融资等创业服务，致力成为创业者可以依赖的创业服务平台，为创业者提供最好的产品和服务。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C094",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "智能驾驶 - 汽车在线",
+          "url": "https://www.knfws.com/%E6%99%BA%E8%83%BD%E9%A9%BE%E9%A9%B6",
+          "source_name": "智能驾驶周报",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "预售26.8万元起 智界R7将于9月24日上市 [车讯 资讯] 我们从智界官方了解到，旗下第一款SUV车型――智界R7(参数|询价)将于9月24日正式上市。新车已于此前开启预售，预售26.8万起。新车基于途灵底盘平台开发，采用前虚拟主销双叉臂+后五连杆的悬架组合，将全系标配CDC可变阻尼减振器以及空气悬架，同时配备智能路况识别系统。 更多精彩视频，尽在车讯视频平台 智界R7整体采用了与智界S7相似的设计造型，封闭式前格栅配合两侧泪眼大灯组，营造出不错的辨识度。车身配色方面，除了经典的陶... 汽车知识 0 ### 百亿研发，千人参与，智能驾驶咋还不行 2024.09.19 | 新能源电动汽车厂",
+          "content": "预售26.8万元起 智界R7将于9月24日上市 [车讯 资讯] 我们从智界官方了解到，旗下第一款SUV车型――智界R7(参数|询价)将于9月24日正式上市。新车已于此前开启预售，预售26.8万起。新车基于途灵底盘平台开发，采用前虚拟主销双叉臂+后五连杆的悬架组合，将全系标配CDC可变阻尼减振器以及空气悬架，同时配备智能路况识别系统。 更多精彩视频，尽在车讯视频平台 智界R7整体采用了与智界S7相似的设计造型，封闭式前格栅配合两侧泪眼大灯组，营造出不错的辨识度。车身配色方面，除了经典的陶... 汽车知识 0 ### 百亿研发，千人参与，智能驾驶咋还不行 2024.09.19 | 新能源电动汽车厂家 | 62913次围观 百亿研发，千人参与，智能驾驶咋还不行 [车讯 技术] 时代的进步会诞生新的工具，也会为传统事物赋能，衍生出新功能。 汽车亦如同移动电话到智能终端，在当下的时间节点正在从通勤代步工具到移动生活家的转型。 在这个过程中，智能座舱以及智能驾驶是这几年的宣传亮点。也是中国车企以此换道超车的开始，因此我们希望用几期内容，和大家简要看看这“最要命”的智能驾驶。 笼统的说，技术的进步让车看得更准，想得更清，“动作”更多。再加上不断进化，让它们逐渐拥有了人类驾驶员的水准。 技术层面是感知... 测评试驾 0 ### 2024.9.16理想端到端-VLM Beta 3.2初体验 2024.09.18 | 新能源电动汽车厂家 | 61719次围观 2024.9.16理想端到端-VLM Beta 3.2初体验 [...] 0 ### 揭秘全新BMW X3智能驾趣诞生源头 探寻设计最优解 2025.01.31 | 新能源电动汽车厂家 | 76291次围观 揭秘全新BMW X3智能驾趣诞生源头 探寻设计最优解 本周，宝马沈阳研发中心首次开放全新BMW X3研发测试的部分核心实验室，体现宝马责任为先、智能为纲的造车理念。 据《一品汽车》了解，此实验室和测试区域包括与“纯粹驾驶乐趣”直接相关的“悬架参数测量实验室”、保障其他交通参与者出行安全的“行人保护实验室”、以及新车下线后动态测试区域——“长路试跑道”。 在《一品汽车》看来，创新研发实力和智能生产工艺不仅赋予BMW X3智能驾趣和360度贴心守护，更充分体现宝马独到的品牌责任感：既注重驾驶，更在意安全。 看测试：如何达到... 测评试驾 0 ### 吉利新博越8万级SUV首选，搭载1.5T+7DCT动力 2024.09.30 | 新能源电动汽车厂家 | 61673次围观 吉利新博越8万级SUV首选，搭载1.5T+7DCT动力 对于年轻家庭来说，一台好用的家用SUV还是比较重要的，当然以前如果你的要求高，意味着车子的价格也不会低，但现在在如今如此内卷的汽车市场，“花小钱就能办大事”。在前不久上市的吉利新博越，它的官方指导价为9.28万元-12.58万元，算上各种优惠后，入门价格是降到了8万元左右，并且它的颜值也是比较高的，整体产品力是很符合年轻家庭的需求的。 外观方面，吉利新博越采用了“Vision Starburst”设计美学，前脸是配备了大尺寸的进气格栅，狭长犀利的灯组是带有“泪痕”的设计... 汽车知识 0 ### 比亚迪夏开启盲订 年内完成上市 路天剧透新车六大特点,比亚迪夏开启盲订 年内完成上市 路天剧透新车六大特点 [...] 1 2 3 4 5 6 7 8 9 10 下一页 尾页 ##### 随机文章 尚界H5正式亮相，华为智驾下放20万级，年轻人的首台智驾车？ 2026款小鹏P7+/小鹏G7超级增程发运全国 将于近期上市 添越 全部在售 2026款 2025款 2024款 2023款 2022款 2021款添越新款报价203万起 欢迎到店试驾 固态电池赛道，再无“局外人” 试驾元UP，月销近2万的比亚迪入门SUV，到底值不值？ 奔驰S级加版 全部在售 2025款 2024款 2023款 2022款 2021款 2020款奔驰S级加版新款价格最低129万起售 欢迎到店试驾 除了情怀还有什么？212 T01柴油版硬核试驾 雷克萨斯LX中东版 全部在售 2024款 2023款 2022款 2021款 2020款 2019款2024款中东版雷克萨斯LX600 最热销越野 雷军：春节期间小米汽车销售、服务门店不打烊，将正常营业 ##### 最近发表 比亚迪推出全新品牌“领汇”，搭载天神之眼辅助驾驶系统 都是豪华B级车，沃尔沃S60和奥迪A4L，谁更懂年轻人？ 通用汽车韩国公司今年产量目标定为50万辆，较上年增长8.5% 2026CoolCarShow同期活动完整版已经整理好！ 银河M7纯电225km续航，或12万起，这次要卖爆？ 成本上升/进度缓慢/需求低于预期 保时捷718纯电动版或将搁置 宝马降价后，奔驰下调指导价？实探北京4S店：仅部分车型，终端价格目前没变 兰德酷路泽中东版 全部在售 2025款 2024款 2023款 2022款 2021款 2020款24款丰田酷路泽4000极致越野车型降价 Waymo千亿估值融资背后：自动驾驶“军备竞赛”进入决战阶段 上海2026汽车以旧换新政策落地，最高补贴2万元",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C096",
+            "cluster_size": 1,
+            "score": 40.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:4.0"
+            ]
+          }
+        },
+        {
+          "title": "《2025微博平台汽车生态报告》发布：揭秘用户喜好与营销变局",
+          "url": "https://marketing.hd.weibo.com/article/view/9757",
+          "source_name": "微博热搜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "根据《2025微博平台汽车生态报告》显示：在新浪汽车的主导运营下2024年微博平台汽车热搜话题占总话题比例提升232%。用户的热议在传播中产生了强大的长尾",
+          "content": "根据《2025微博平台汽车生态报告》显示：在新浪汽车的主导运营下2024年微博平台汽车热搜话题占总话题比例提升232%。用户的热议在传播中产生了强大的长尾",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C005",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "「壹周新车盘点」下半年将上市轿车【汽车之家】",
+          "url": "https://www.youtube.com/watch?v=_nITOlSlyPI",
+          "source_name": "汽车之家",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "「壹周新车盘点」下半年将上市轿车【汽车之家】 Autohome Global 汽车之家 68900 subscribers 1 likes 136 views 3 Jun 2021 汽车之家为您提供最精彩的汽车新闻、行情、评测、导购视频内容。 看车买车用车 都回汽车之家！ ---------------------------------------------------------- ★唯一官方频道，欢迎订阅：https://www.youtube.com/channel/UCJkj4A_k8RYCebeguJU_zkQ ----------------------------------",
+          "content": "「壹周新车盘点」下半年将上市轿车【汽车之家】 Autohome Global 汽车之家 68900 subscribers 1 likes 136 views 3 Jun 2021 汽车之家为您提供最精彩的汽车新闻、行情、评测、导购视频内容。 看车买车用车 都回汽车之家！ ---------------------------------------------------------- ★唯一官方频道，欢迎订阅：https://www.youtube.com/channel/UCJkj4A_k8RYCebeguJU_zkQ ---------------------------------------------------------- ★受音乐版权影响可能会导致部分片段无声。 ---------------------------------------------------------- ★本视频版权归汽车之家所有，未经许可擅自转载将遭版权投诉。 ---------------------------------------------------------- ★The copyright of this video belongs to autohome. If you reprint it without permission, you will suffer copyright complaints. #汽车之家 #autohome #汽车",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C069",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "【专题】本月新车盘点-第21期_车家号_发现车生活 - 汽车之家",
+          "url": "https://chejiahao.m.autohome.com.cn/specialtopic/1042?categoryId=0",
+          "source_name": "汽车之家",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "51.68万！又一国产“大五座SUV”开启预售，38分钟订单破10000. 启境GT7实车亮相，外观很年轻运动，字母车标+无框车门，配6C超充. 37万起售，2.96秒破百！极氪8X这性能，让50万级BBA很被动. “西装暴徒”极氪8X预售37.68万至51.68万，就问你：贵不贵？！. 16.98万！又一“方盒子”SUV上市，综合续航1230km+地平线HSD.",
+          "content": "51.68万！又一国产“大五座SUV”开启预售，38分钟订单破10000. 启境GT7实车亮相，外观很年轻运动，字母车标+无框车门，配6C超充. 37万起售，2.96秒破百！极氪8X这性能，让50万级BBA很被动. “西装暴徒”极氪8X预售37.68万至51.68万，就问你：贵不贵？！. 16.98万！又一“方盒子”SUV上市，综合续航1230km+地平线HSD.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C054",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "微博汽车榜不是只看热度？ - 搜狐",
+          "url": "https://www.sohu.com/a/969587127_122568728",
+          "source_name": "微博热搜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "### 搜狐汽车小程序. ### 热搜话题策划小羊. ### 微博汽车榜不是只看热度？. 在信息高度碎片化的当下，汽车品牌的传播策略正从“广撒网”转向“精准狙击”。越来越多车企开始重视社交平台的数据价值，尤其关注如微博汽车榜这类具备多维分析能力的榜单工具，将其作为内容策划与用户触达的重要参考。. 与传统热搜单纯依赖流量峰值不同，微博汽车榜更注重反映真实用户兴趣路径——包括技术关键词趋势、话题增长斜率、人群画像分布、竞品声量对比等维度。这些数据能帮助品牌识别用户真实关切，从而优化内容方向与投放节奏。. 以某合资品牌混动车型上市传播为例，其团队并未直接启动大规模广告投放，而是先通过平台数据分析近3",
+          "content": "### 搜狐汽车小程序. ### 热搜话题策划小羊. ### 微博汽车榜不是只看热度？. 在信息高度碎片化的当下，汽车品牌的传播策略正从“广撒网”转向“精准狙击”。越来越多车企开始重视社交平台的数据价值，尤其关注如微博汽车榜这类具备多维分析能力的榜单工具，将其作为内容策划与用户触达的重要参考。. 与传统热搜单纯依赖流量峰值不同，微博汽车榜更注重反映真实用户兴趣路径——包括技术关键词趋势、话题增长斜率、人群画像分布、竞品声量对比等维度。这些数据能帮助品牌识别用户真实关切，从而优化内容方向与投放节奏。. 以某合资品牌混动车型上市传播为例，其团队并未直接启动大规模广告投放，而是先通过平台数据分析近30天用户高频搜索词，锁定“馈电油耗”“电池寿命”“保养成本”三大核心关注点。随后围绕这些痛点，策划《车主真实使用反馈》《工程师视角解读电池结构》等内容，提前建立用户认知。. 发布会当晚选择黄金时段直播，并设置互动问答机制，引导评论区形成高密度讨论。运营团队实时监测关联词热度变化，发现“馈电油耗实测”迅速升温后，立即追加现场实测片段，实现内容供给与兴趣热点同步匹配。. 次日，结合地域×人群画像，定向向25-35岁男性职场人群密集区域推送“通勤成本模拟工具”，激发用户主动参与和分享，带动话题二次发酵。最终阶段则通过可视化长测内容，强化产品差异化优势，在竞品声量中突围。. 整套策略执行后，相关话题多次登顶汽车垂类榜单，总曝光量超4亿，用户互动深度与销售线索质量均有显著提升。这背后，是数据洞察力与内容执行力的双重支撑。. 对汽车品牌而言，社交平台的价值已不止于“曝光量”，更是用户需求探测器、内容优化指南针和传播节奏控制器。谁能读懂数据背后的消费信号，谁就能在信息洪流中构建有效沟通。. 声明： 本文由入驻搜狐公众平台的作者撰写，除搜狐官方账号外，观点仅代表作者本人，不代表搜狐立场。. ### 评论（174） 文明上网理性发言，请遵守《搜狐我来说两句用户公约》. ### 评论(374) 请遵守《搜狐我来说两句用户公约》. {{ item.parents[0].userObj.user\\_name }}. {{ item.parents[0].userObj.user\\_name }}. ### 登录.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C084",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "微博热搜记录汽车行业进化_新浪新闻",
+          "url": "https://www.sina.cn/news/detail/5264794979406379.html",
+          "source_name": "微博热搜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "#2025微博热搜趋势报告# 2025年，微博热搜清晰刻录下中国汽车行业的进化之路。从产品发布到技术角逐，从市场格局重塑到消费趋势变迁，公众的每一次搜索与",
+          "content": "#2025微博热搜趋势报告# 2025年，微博热搜清晰刻录下中国汽车行业的进化之路。从产品发布到技术角逐，从市场格局重塑到消费趋势变迁，公众的每一次搜索与",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C085",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "懂车帝原创 - YouTube",
+          "url": "https://www.youtube.com/@DCARSTUDIO",
+          "source_name": "懂车帝资讯",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "【新车24小时】DCar News · 13:11. ZEEKR 9X, Intelligent “Rolls-Royce Cullinan ... 2024懂车帝夏测 · 16:13. 夏测幕后故事：变局下的全力以赴. DCARSTUDIO. 8.5K. 1y ago.",
+          "content": "【新车24小时】DCar News · 13:11. ZEEKR 9X, Intelligent “Rolls-Royce Cullinan ... 2024懂车帝夏测 · 16:13. 夏测幕后故事：变局下的全力以赴. DCARSTUDIO. 8.5K. 1y ago.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C086",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "汽车拆解评测 - 懂车帝",
+          "url": "https://www.dongchedi.com/tag/pgc/10732357",
+          "source_name": "懂车帝资讯",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "2024款宝马X2新车商品性评价. 车质网1324次阅读2024-06-08. 2024款宝马X2新车商品性评价. 预算10万元左右，想买合资A级轿车，建议看看上汽大众朗逸. 朗逸logo 朗逸.",
+          "content": "2024款宝马X2新车商品性评价. 车质网1324次阅读2024-06-08. 2024款宝马X2新车商品性评价. 预算10万元左右，想买合资A级轿车，建议看看上汽大众朗逸. 朗逸logo 朗逸.",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C108",
+            "cluster_size": 1,
+            "score": 39.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "知乎",
+          "url": "https://www.zhihu.com/knowledge-plan/hot-question/hot/1000005/hour",
+          "source_name": "知乎热榜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "新题. 小米新一代SU7 发布，王传福、李想、何小鹏纷纷到场助阵，怎样解读？小米汽车在行业内有怎样的影响力？ #汽车#新能源汽车#小米汽车 · 共505 ; 小米SU7 应网友呼声官宣舒淇",
+          "content": "新题. 小米新一代SU7 发布，王传福、李想、何小鹏纷纷到场助阵，怎样解读？小米汽车在行业内有怎样的影响力？ #汽车#新能源汽车#小米汽车 · 共505 ; 小米SU7 应网友呼声官宣舒淇",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C117",
+            "cluster_size": 1,
+            "score": 38.0,
+            "score_reasons": [
+              "source:12",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:10.0"
+            ]
+          }
+        },
+        {
+          "title": "本周新车上市预告，7款重磅新车来袭，小米领衔",
+          "url": "https://chejiahao.autohome.com.cn/info/25001445",
+          "source_name": "汽车之家",
+          "source_type": "tavily",
+          "category": "auto",
+          "summary": "全新小米SU7将在3月19日上市，新车当前预售价是22.99-30.99万元，外观造型基本维持了老款车型的设计，之所以说是“换代”车型，是因为产品力迎来大幅升级，车辆",
+          "content": "全新小米SU7将在3月19日上市，新车当前预售价是22.99-30.99万元，外观造型基本维持了老款车型的设计，之所以说是“换代”车型，是因为产品力迎来大幅升级，车辆",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C099",
+            "cluster_size": 1,
+            "score": 36.0,
+            "score_reasons": [
+              "source:12",
+              "category:18",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "汽车榜排名猛涨27位！这个车企上周有哪些品牌动作",
+          "url": "https://zhuanlan.zhihu.com/p/1956362212366058815",
+          "source_name": "知乎热榜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "新榜品牌声量・汽车周榜（09 月21 - 09 月27 日）发布，理想汽车以936.4 的声量新榜指数位居第六，环比上升27 位。作品数增加6161，互动量飙升577.9w ，凭借",
+          "content": "新榜品牌声量・汽车周榜（09 月21 - 09 月27 日）发布，理想汽车以936.4 的声量新榜指数位居第六，环比上升27 位。作品数增加6161，互动量飙升577.9w ，凭借",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C109",
+            "cluster_size": 1,
+            "score": 31.0,
+            "score_reasons": [
+              "source:12",
+              "category:10",
+              "cluster:3",
+              "recency:3.0",
+              "keyword:3.0"
+            ]
+          }
+        },
+        {
+          "title": "“汽车之星”年度榜单出炉，细数智能汽车摘星者",
+          "url": "https://zhuanlan.zhihu.com/p/19147301021",
+          "source_name": "知乎热榜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "选择相信什么的同时，也就塑造了我们自己。 2024 年，是智能汽车领军者企业们收获的时代，也是中国汽车产业大开大合的黄金时代。",
+          "content": "选择相信什么的同时，也就塑造了我们自己。 2024 年，是智能汽车领军者企业们收获的时代，也是中国汽车产业大开大合的黄金时代。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C107",
+            "cluster_size": 1,
+            "score": 28.0,
+            "score_reasons": [
+              "source:12",
+              "category:10",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "【知乎独家】2026年最新汽车智能化研究报告整理，一共126份",
+          "url": "https://zhuanlan.zhihu.com/p/1890357409232450555",
+          "source_name": "知乎热榜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "【知乎独家】2026年最新汽车智能化研究报告整理，一共126份，欢迎收藏！（附下载资源包） ; 国信证券-汽车行业智能化月报系列（三十二）：11月城区NOA渗透率超20%，Waymo完成新一轮千",
+          "content": "【知乎独家】2026年最新汽车智能化研究报告整理，一共126份，欢迎收藏！（附下载资源包） ; 国信证券-汽车行业智能化月报系列（三十二）：11月城区NOA渗透率超20%，Waymo完成新一轮千",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C118",
+            "cluster_size": 1,
+            "score": 28.0,
+            "score_reasons": [
+              "source:12",
+              "category:10",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        },
+        {
+          "title": "破浪2024——汽车行业10个十大年度盘点（六）",
+          "url": "https://zhuanlan.zhihu.com/p/20608079985",
+          "source_name": "知乎热榜",
+          "source_type": "tavily",
+          "category": "trending",
+          "summary": "汽车纵横全媒体. 过去一年，以电动化、智能化为牵引，汽车产业高质量发展扎实推进。一揽子增量政策，有效提振了消费市场和培育了潜在增长点。",
+          "content": "汽车纵横全媒体. 过去一年，以电动化、智能化为牵引，汽车产业高质量发展扎实推进。一揽子增量政策，有效提振了消费市场和培育了潜在增长点。",
+          "published_at": "",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C119",
+            "cluster_size": 1,
+            "score": 28.0,
+            "score_reasons": [
+              "source:12",
+              "category:10",
+              "cluster:3",
+              "recency:3.0"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "recommended_topics": {
+    "tech_ai": [
+      {
+        "title": "围堵互联网档案，真能阻止AI的脚步？数据版权与数字遗产的未来之战",
+        "score": 70.8,
+        "reason": "推荐理由: 该选题直接触及AI发展的核心——数据来源的合法性与可持续性。Hacker News上高达70.8分的讨论热度，以及512个赞和140条评论，充分说明了其极高的时效性、争议性和社会关注度。它不仅关乎AI伦理和版权，更涉及人类数字遗产的保护，具有深远的社会影响力。\n建议角度:",
+        "source_urls": [
+          "https://www.eff.org/deeplinks/2026/03/blocking-internet-archive-wont-stop-ai-it-will-erase-webs-historical-record"
+        ],
+        "ai_selection_reason": "该选题时效性最强，直接触及AI发展核心的当下热点和法律争议，话题热度最高，且涉及数字遗产的未来，具有深远的社会影响和读者价值。"
+      },
+      {
+        "title": "AI时代，我们还能“慢思考”吗？机器智能对人类推理模式的深远影响",
+        "score": 63.0,
+        "reason": "推荐理由: 该选题深入探讨AI对人类最根本能力——思维和认知的影响，具有深刻的哲学、心理学和社会学意义。63.02分的Hacker News评分，以及121个赞和68条评论，表明其在学术界和技术圈都引发了广泛的思考。这是一个长效且引人深思的议题，能引发读者的共鸣。\n建议角度:",
+        "source_urls": [
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646"
+        ]
+      },
+      {
+        "title": "冰冻大脑的突破：AI与生物智能的未来边界？",
+        "score": 62.8,
+        "reason": "推荐理由: 猪脑成功“锁住”细胞活性的科技突破，虽然不直接是AI技术，但它打开了对生物智能、意识本质和未来生命形式的巨大想象空间。62.8分的Hacker News评分，以及112个赞和161条评论，体现了其强大的话题吸引力和科幻色彩。这可以作为引子，探讨AI与脑科学、生物技术交叉融合的未来图景。\n建议角度:",
+        "source_urls": [
+          "https://www.newscientist.com/article/2520204-major-leap-towards-reanimation-after-death-as-mammals-brain-preserved/"
+        ]
+      },
+      {
+        "title": "AI时代的“长期主义”：耐心与积累如何穿越科技周期？",
+        "score": 67.8,
+        "reason": "推荐理由: 排名第一的素材“Some things just take time”与Deno CEO离职（#3）看似不相关，但可以巧妙地结合起来，探讨AI技术发展中的“长期主义”与科技行业快速迭代、商业化压力的矛盾。AI的研发往往需要巨大的投入和漫长的时间，而科技公司的兴衰（如Deno）则反映了市场竞争的残酷。这个选题能引发对AI行业发展规律和企业战略的深度思考。\n建议角度:",
+        "source_urls": [
+          "https://lucumr.pocoo.org/2026/3/20/some-things-just-take-time/",
+          "https://dbushell.com/2026/03/20/denos-decline-and-layoffs/"
+        ]
+      }
+    ],
+    "auto": [
+      {
+        "title": "新能源车市风云再起：问界、小鹏强势逆袭，特斯拉销量“急刹”背后",
+        "score": 70,
+        "reason": "",
+        "source_urls": []
+      },
+      {
+        "title": "小米VS华为：智能座舱与智驾之争，谁才是新势力“天花板”？",
+        "score": 70,
+        "reason": "",
+        "source_urls": []
+      },
+      {
+        "title": "十年磨一剑：新能源车如何从“半成品”进化为“未来座驾”？",
+        "score": 70,
+        "reason": "",
+        "source_urls": []
+      }
+    ]
+  },
+  "selected_topic": "新能源车市风云再起：问界、小鹏强势逆袭，特斯拉销量“急刹”背后",
+  "selected_sources": [],
+  "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-22-新能源车市风云再起问界小鹏强势逆袭特斯拉销量急刹背后.md",
+  "cards_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/新能源车市风云再起问界小鹏强势逆袭特斯拉销量急刹背后-cards.html",
+  "review_score": 89,
+  "review_passed": true,
+  "review_feedback": "",
+  "publish_results": [
+    {
+      "platform": "xiaohongshu",
+      "status": "success",
+      "message": "笔记已保存到草稿箱"
+    },
+    {
+      "platform": "zhihu",
+      "status": "success",
+      "message": "文章已保存到知乎草稿箱"
+    }
+  ],
+  "sources": "rss,hn,github,hot,tavily,youtube_api",
+  "direction": "auto",
+  "platforms": "xiaohongshu,zhihu",
+  "no_cards": false,
+  "error": "",
+  "history": [
+    {
+      "stage": "write",
+      "message": "完成",
+      "time": "2026-03-22T15:42:45.663285"
+    },
+    {
+      "stage": "review",
+      "message": "完成",
+      "time": "2026-03-22T15:42:59.819540"
+    },
+    {
+      "stage": "publish",
+      "message": "完成",
+      "time": "2026-03-22T15:43:55.125707"
+    }
+  ]
+}

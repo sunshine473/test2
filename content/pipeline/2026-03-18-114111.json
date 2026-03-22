@@ -1,8 +1,8 @@
 {
   "pipeline_id": "2026-03-18-114111",
   "created_at": "2026-03-18T11:41:11.191870",
-  "current_stage": "write",
-  "status": "running",
+  "current_stage": "publish",
+  "status": "completed",
   "pool_path": "/Users/dora/Documents/test_auto_write-factary/content/pool/2026-03-18-pool.json",
   "plan_result": {
     "tech_ai": {
@@ -390,12 +390,28 @@
   },
   "selected_topic": "AI开发告别“玄学”：Meta-Prompting与上下文工程，AI工程师新范式？",
   "selected_sources": [],
-  "draft_path": "",
-  "cards_path": "",
+  "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-18-AI开发告别玄学Meta-Prompting与上下文工程AI工程师新范式.md",
+  "cards_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/AI开发告别玄学Meta-Prompting与上下文工程AI工程师新范式-cards.html",
   "review_score": 0,
   "review_passed": false,
   "review_feedback": "",
-  "publish_results": [],
+  "publish_results": [
+    {
+      "platform": "wechat",
+      "status": "failed",
+      "message": "HTTPSConnectionPool(host='api.weixin.qq.com', port=443): Max retries exceeded with url: /cgi-bin/token?grant_type=client_credential&appid=wxf1278b46de2e6dee&secret=f69775a627bc7012bc6c0ff90667f5da (Caused by NameResolutionError(\"HTTPSConnection(host='api.weixin.qq.com', port=443): Failed to resolve 'api.weixin.qq.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    {
+      "platform": "zhihu",
+      "status": "failed",
+      "message": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"textarea[placeholder*=\\\"标题\\\"]\").first\n"
+    },
+    {
+      "platform": "xiaohongshu",
+      "status": "success",
+      "message": "笔记已保存到草稿箱"
+    }
+  ],
   "sources": "rss,hn,github,hot,tavily,youtube_api",
   "direction": "tech_ai",
   "platforms": "",
@@ -431,6 +447,21 @@
       "stage": "write",
       "message": "失败: unsupported operand type(s) for |: 'types.GenericAlias' and 'NoneType'",
       "time": "2026-03-18T15:43:02.777921"
+    },
+    {
+      "stage": "write",
+      "message": "完成",
+      "time": "2026-03-18T19:54:21.459839"
+    },
+    {
+      "stage": "review",
+      "message": "完成",
+      "time": "2026-03-18T19:54:51.502322"
+    },
+    {
+      "stage": "publish",
+      "message": "完成",
+      "time": "2026-03-18T20:36:21.990449"
     }
   ]
 }

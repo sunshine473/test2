@@ -32,7 +32,7 @@ class BatchPipeline:
     ):
         self.count_per_direction = count_per_direction
         self.platforms = platforms
-        self.sources = sources
+        self.sources = sources or "rss,hn,github,hot,tavily"
         self.no_cards = no_cards
         self.results = []
 

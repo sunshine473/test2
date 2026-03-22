@@ -1,0 +1,90 @@
+[
+  {
+    "direction": "tech_ai",
+    "direction_label": "AI 科技",
+    "topic": "AI编程是“赌博”还是“变革”？开发者如何驾驭智能代码浪潮",
+    "score": 70,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-19-AI编程是赌博还是变革开发者如何驾驭智能代码浪潮.md",
+    "review_score": 91,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "success",
+        "message": "笔记已保存到草稿箱"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-19-213211"
+  },
+  {
+    "direction": "tech_ai",
+    "direction_label": "AI 科技",
+    "topic": "LLM的“无训练”魔法：复制几层就能实现逻辑飞跃，AI研究进入新范式？",
+    "score": 70,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-19-LLM的无训练魔法复制几层就能实现逻辑飞跃AI研究进入新范式.md",
+    "review_score": 89,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "success",
+        "message": "笔记已保存到草稿箱"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-19-213640"
+  },
+  {
+    "direction": "auto",
+    "direction_label": "汽车",
+    "topic": "2025开年首周新能源销量榜揭秘：比亚迪为何“失速”？小鹏、小米谁是最大黑马？",
+    "score": 51.0,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-19-2025开年首周新能源销量榜揭秘比亚迪为何失速小鹏小米谁是最大黑马.md",
+    "review_score": 85,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "success",
+        "message": "笔记已保存到草稿箱"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-19-214100"
+  },
+  {
+    "direction": "auto",
+    "direction_label": "汽车",
+    "topic": "小米汽车：舆论没赢过，销量没输过？若搭载华为智驾，真能“天下无敌”？",
+    "score": 51.0,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-19-小米汽车舆论没赢过销量没输过若搭载华为智驾真能天下无敌.md",
+    "review_score": 89,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "failed",
+        "message": "小红书需要至少 1 张图片，请先生成卡片"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-19-214530"
+  }
+]

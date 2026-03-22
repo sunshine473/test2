@@ -6,6 +6,7 @@
 
 import os
 from datetime import datetime, timezone
+from typing import Optional
 
 import requests
 
@@ -153,7 +154,7 @@ class TelegramNotifier:
         return f"{days // 30}个月前"
 
     @staticmethod
-    def _pick_global_best(plan_result: dict) -> dict | None:
+    def _pick_global_best(plan_result: dict) -> Optional[dict]:
         """从所有方向候选中选出评分最高的选题。"""
         best = None
         for dir_name, dir_data in plan_result.items():
