@@ -1,0 +1,147 @@
+name: Batch Factory
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # UTC 02:00 = Asia/Shanghai 10:00
+  workflow_dispatch:
+    inputs:
+      count:
+        description: '每个方向生成篇数'
+        required: false
+        default: '2'
+      platforms:
+        description: '发布平台（逗号分隔）'
+        required: false
+        default: 'xiaohongshu,zhihu'
+      sources:
+        description: '采集源（逗号分隔）'
+        required: false
+        default: 'rss,hn,github,hot,tavily,youtube_api'
+      no_cards:
+        description: '是否跳过视觉卡片生成'
+        required: false
+        default: 'false'
+
+jobs:
+  batch-factory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    env:
+      NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+      NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+      NOTION_TOPICS_DB_ID: ${{ secrets.NOTION_TOPICS_DB_ID }}
+      NOTION_DRAFTS_DB_ID: ${{ secrets.NOTION_DRAFTS_DB_ID }}
+      NOTION_PUBLISH_DB_ID: ${{ secrets.NOTION_PUBLISH_DB_ID }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
+      WECHAT_APP_SECRET: ${{ secrets.WECHAT_APP_SECRET }}
+      ZHIHU_COOKIE: ${{ secrets.ZHIHU_COOKIE }}
+      XIAOHONGSHU_COOKIE: ${{ secrets.XIAOHONGSHU_COOKIE }}
+      TOUTIAO_COOKIE: ${{ secrets.TOUTIAO_COOKIE }}
+      DONGCHEDI_COOKIE: ${{ secrets.DONGCHEDI_COOKIE }}
+      BILIBILI_COOKIE: ${{ secrets.BILIBILI_COOKIE }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Run batch factory
+        env:
+          PYTHONPATH: src
+          BATCH_COUNT: ${{ github.event.inputs.count || '2' }}
+          BATCH_PLATFORMS: ${{ github.event.inputs.platforms || 'xiaohongshu,zhihu' }}
+          BATCH_SOURCES: ${{ github.event.inputs.sources || 'rss,hn,github,hot,tavily,youtube_api' }}
+          BATCH_NO_CARDS: ${{ github.event.inputs.no_cards || 'false' }}
+        run: |
+          args=(
+            --count "$BATCH_COUNT"
+            --platforms "$BATCH_PLATFORMS"
+            --sources "$BATCH_SOURCES"
+          )
+          if [ "$BATCH_NO_CARDS" = "true" ]; then
+            args+=(--no-cards)
+          fi
+          python src/pipeline/batch_pipeline.py "${args[@]}"
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch-factory-${{ github.run_number }}
+          path: |
+            content/batch/*.json
+            content/pool/*.json
+            content/pipeline/*.json
+            content/drafts/*.md
+            content/drafts/*.html
+          retention-days: 7
+
+      - name: Notify on success
+        if: success()
+        env:
+          BATCH_COUNT: ${{ github.event.inputs.count || '2' }}
+          BATCH_PLATFORMS: ${{ github.event.inputs.platforms || 'xiaohongshu,zhihu' }}
+        run: |
+          python - <<'PY'
+          import os
+          import requests
+
+          token = os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat_id = os.environ.get("TELEGRAM_CHAT_ID")
+          if token and chat_id:
+              count = os.environ.get("BATCH_COUNT", "2")
+              platforms = os.environ.get("BATCH_PLATFORMS", "xiaohongshu,zhihu")
+              run_url = f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
+              message = (
+                  "✅ Batch Factory 执行成功\n\n"
+                  f"每方向篇数: {count}\n"
+                  f"平台: {platforms}\n"
+                  f"查看: {run_url}"
+              )
+              requests.post(
+                  f"https://api.telegram.org/bot{token}/sendMessage",
+                  json={"chat_id": chat_id, "text": message},
+                  timeout=30,
+              )
+          PY
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          python - <<'PY'
+          import os
+          import requests
+
+          token = os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat_id = os.environ.get("TELEGRAM_CHAT_ID")
+          if token and chat_id:
+              run_url = f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
+              message = (
+                  "❌ Batch Factory 执行失败\n\n"
+                  f"查看: {run_url}"
+              )
+              requests.post(
+                  f"https://api.telegram.org/bot{token}/sendMessage",
+                  json={"chat_id": chat_id, "text": message},
+                  timeout=30,
+              )
+          PY

@@ -1,0 +1,90 @@
+[
+  {
+    "direction": "tech_ai",
+    "direction_label": "AI 科技",
+    "topic": "手机AI性能新里程碑：iPhone 17 Pro运行400B大模型，边缘AI的未来已来？",
+    "score": 70,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-24-手机AI性能新里程碑iPhone-17-Pro运行400B大模型边缘AI的未来已来.md",
+    "review_score": 87,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "success",
+        "message": "笔记已保存到草稿箱"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-24-213432"
+  },
+  {
+    "direction": "tech_ai",
+    "direction_label": "AI 科技",
+    "topic": "AI智能体开发者的“痛点”与“解药”：从Cq到Agent编排平台",
+    "score": 70,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-24-AI智能体开发者的痛点与解药从Cq到Agent编排平台.md",
+    "review_score": 92,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "success",
+        "message": "笔记已保存到草稿箱"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-24-213903"
+  },
+  {
+    "direction": "auto",
+    "direction_label": "汽车",
+    "topic": "冰火两重天：新能源车市2月遇冷4月回暖，谁是黑马谁在掉队？",
+    "score": 70,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-24-冰火两重天新能源车市2月遇冷4月回暖谁是黑马谁在掉队.md",
+    "review_score": 90,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "success",
+        "message": "笔记已保存到草稿箱"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-24-214424"
+  },
+  {
+    "direction": "auto",
+    "direction_label": "汽车",
+    "topic": "新能源车均价创6年新低：价格战「寒气」侵蚀，车企利润与供应链何去何从？",
+    "score": 70,
+    "draft_path": "/Users/dora/Documents/test_auto_write-factary/content/drafts/2026-03-24-新能源车均价创6年新低价格战寒气侵蚀车企利润与供应链何去何从.md",
+    "review_score": 86,
+    "review_passed": true,
+    "publish_results": [
+      {
+        "platform": "xiaohongshu",
+        "status": "success",
+        "message": "笔记已保存到草稿箱"
+      },
+      {
+        "platform": "zhihu",
+        "status": "success",
+        "message": "文章已保存到知乎草稿箱"
+      }
+    ],
+    "pipeline_id": "2026-03-24-215007"
+  }
+]

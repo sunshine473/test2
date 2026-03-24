@@ -175,18 +175,15 @@ NOTION_PUBLISH_DB_ID=xxx                  # 发布记录数据库 ID
 
 ## GitHub Actions 自动化
 
-本项目支持 GitHub Actions 定时任务，实现全自动内容生产：
+本项目当前仅保留一条 GitHub Actions 工作流，对应批量工厂完整流程：
 
 | 工作流 | 执行时间 | 功能 |
 |--------|----------|------|
-| `collect.yml` | 每天 8:00 | 素材采集 + Telegram 通知（Top 10） |
-| `daily-collect.yml` | 每天 10:00 | 双方向素材采集（含 RSS/Tavily 汽车源） |
-| `daily-pipeline.yml` | 每天 10:00 | 全自动流水线（采集→生成→发布） |
-| `telegram-bot.yml` | 每 2 分钟 | Telegram Bot 轮询 |
+| `batch-factory.yml` | 每天 10:00 | 批量工厂（一次采集 → 双方向选题 → 批量生成 → 多平台发布） |
 
-`daily-pipeline.yml` 当前会尝试发布到 `wechat`、`zhihu`、`xiaohongshu`。微信公众号优先读取 `WECHAT_APP_ID` / `WECHAT_APP_SECRET`，同时兼容旧的 `WECHAT_APPID` / `WECHAT_SECRET`；知乎和小红书依赖对应的 `ZHIHU_COOKIE` / `XIAOHONGSHU_COOKIE` Secrets，并在 GitHub Actions 中默认以 headless 模式运行。
+`batch-factory.yml` 直接执行 `python src/pipeline/batch_pipeline.py`，默认每个方向生成 2 篇，发布到 `xiaohongshu,zhihu`。手动触发时可覆盖 `count`、`platforms`、`sources`、`no_cards` 四个输入参数。
 
-**配置指南**: 详见 [docs/GitHub-Actions配置指南.md](docs/GitHub-Actions配置指南.md)
+如果手动把平台切到 `wechat`、`bilibili`、`toutiao`、`dongchedi`，需要提前配置对应 Secrets；知乎和小红书依赖 `ZHIHU_COOKIE` / `XIAOHONGSHU_COOKIE`，浏览器平台在 GitHub Actions 中默认以 headless 模式运行。
 
 **快速测试**:
 ```bash
