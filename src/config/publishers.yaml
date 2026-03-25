@@ -12,16 +12,14 @@ bilibili:
 
 zhihu:
   enabled: true
-  headless: false  # 首次需要手动登录
+  # headless 本地默认 false（手动登录），CI 自动切换 true（依赖 ZHIHU_COOKIE secret）
 
 toutiao:
   enabled: false
-  headless: false
 
 xiaohongshu:
   enabled: true
-  headless: false  # 首次需要手动扫码登录，登录后 Cookie 自动保存
+  # headless 本地默认 false（手动扫码），CI 自动切换 true（依赖 XIAOHONGSHU_COOKIE secret）
 
 dongchedi:
   enabled: false
-  headless: false  # 走头条号后台，首次需要手动登录
