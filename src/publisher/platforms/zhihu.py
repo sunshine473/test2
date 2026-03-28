@@ -12,6 +12,8 @@ class ZhihuPublisher(BrowserPublisher):
 
     login_url = "https://www.zhihu.com/signin"
     editor_url = "https://zhuanlan.zhihu.com/write"
+    # 知乎 cookie 需要同时注入主域和专栏子域
+    cookie_origins = ["https://www.zhihu.com", "https://zhuanlan.zhihu.com"]
 
     def _is_login_page(self, page) -> bool:
         url = page.url.lower()

@@ -22,6 +22,7 @@ class BrowserPublisher(BasePublisher):
 
     login_url: str = ""
     editor_url: str = ""
+    cookie_origins: list = []  # 额外需要注入 cookie 的域名
 
     def publish(self, article: Article, config: dict) -> PublishResult:
         try:
@@ -146,8 +147,11 @@ class BrowserPublisher(BasePublisher):
             return
 
         parsed = urlparse(target)
-        origin = f"{parsed.scheme}://{parsed.netloc}"
-        cookies = []
+        primary_origin = f"{parsed.scheme}://{parsed.netloc}"
+        # 注入到主域 + 所有额外域名
+        origins = [primary_origin] + [o for o in (self.cookie_origins or []) if o != primary_origin]
+
+        raw_pairs = []
         for part in raw_cookie.split(";"):
             item = part.strip()
             if not item or "=" not in item:
@@ -156,7 +160,14 @@ class BrowserPublisher(BasePublisher):
             name = name.strip()
             if not name:
                 continue
-            cookies.append({"name": name, "value": value.strip(), "url": origin})
+            raw_pairs.append((name, value.strip()))
 
-        if cookies:
-            context.add_cookies(cookies)
+        if not raw_pairs:
+            return
+
+        cookies = []
+        for origin in origins:
+            for name, value in raw_pairs:
+                cookies.append({"name": name, "value": value, "url": origin})
+
+        context.add_cookies(cookies)

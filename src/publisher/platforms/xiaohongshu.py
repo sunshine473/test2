@@ -48,10 +48,30 @@ class XiaohongshuPublisher(BrowserPublisher):
         }''')
         self._random_delay(3, 5)
 
-        # 3. 上传图片 — 图文模式下 file input accept=".jpg,.jpeg,.png,.webp"
+        # 3. 上传图片 — headless 下直接找所有 file input，取第一个可用的
         print(f"[xiaohongshu] 上传 {len(article.images)} 张图片...")
-        img_input = page.locator('input[type="file"][accept*=".jpg"], input.upload-input[accept*=".png"]').first
-        img_input.wait_for(state="attached", timeout=10000)
+        # 先等待页面稳定
+        page.wait_for_timeout(2000)
+        # 尝试多个 selector，兼容不同环境下的 DOM 结构
+        img_input = None
+        for selector in [
+            'input[type="file"][accept*=".jpg"]',
+            'input[type="file"][accept*="image"]',
+            'input[type="file"]',
+        ]:
+            loc = page.locator(selector).first
+            try:
+                loc.wait_for(state="attached", timeout=8000)
+                img_input = loc
+                break
+            except Exception:
+                continue
+        if img_input is None:
+            return PublishResult(
+                platform="xiaohongshu",
+                status=PublishStatus.FAILED,
+                message="找不到图片上传输入框",
+            )
         img_input.set_input_files(article.images)
         self._random_delay(3, 5)
 
