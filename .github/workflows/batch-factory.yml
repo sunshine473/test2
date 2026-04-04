@@ -1,8 +1,6 @@
 name: Batch Factory
 
 on:
-  schedule:
-    - cron: '0 2 * * *' # UTC 02:00 = Asia/Shanghai 10:00
   workflow_dispatch:
     inputs:
       count:
