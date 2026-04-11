@@ -82,7 +82,7 @@ def main():
     parser = argparse.ArgumentParser(description="素材搜索（采集+去重，不含打分）")
     parser.add_argument(
         "--sources",
-        default="rss,hn,github,hot,tavily,youtube_api",
+        default="follow_builders,github,hot,tavily",
         help="要采集的信息源，逗号分隔",
     )
     parser.add_argument("--output", default=None, help="素材池 JSON 输出路径")

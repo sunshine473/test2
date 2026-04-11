@@ -13,6 +13,9 @@ if TYPE_CHECKING:
 
 # 全局默认权重（无 direction 时使用，向后兼容）
 SOURCE_BASE_WEIGHT = {
+    "Follow Builders Podcast": 26,
+    "Follow Builders X": 24,
+    "Follow Builders Blog": 23,
     "Hacker News": 25,
     "GitHub Trending": 24,
     "OpenAI Blog": 22,
@@ -158,4 +161,3 @@ class ItemScorer:
             "min": round(min(scores), 2),
             "avg": round(sum(scores) / len(scores), 2),
         }
-

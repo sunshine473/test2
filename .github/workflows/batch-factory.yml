@@ -1,6 +1,9 @@
 name: Batch Factory
 
 on:
+  schedule:
+    # 10:00 Asia/Shanghai = 02:00 UTC
+    - cron: '0 2 * * *'
   workflow_dispatch:
     inputs:
       count:
@@ -14,7 +17,7 @@ on:
       sources:
         description: '采集源（逗号分隔）'
         required: false
-        default: 'rss,hn,github,hot,tavily,youtube_api'
+        default: 'follow_builders,github,hot,tavily'
       no_cards:
         description: '是否跳过视觉卡片生成'
         required: false
@@ -67,7 +70,7 @@ jobs:
           PYTHONPATH: src
           BATCH_COUNT: ${{ github.event.inputs.count || '2' }}
           BATCH_PLATFORMS: ${{ github.event.inputs.platforms || 'xiaohongshu,zhihu' }}
-          BATCH_SOURCES: ${{ github.event.inputs.sources || 'rss,hn,github,hot,tavily,youtube_api' }}
+          BATCH_SOURCES: ${{ github.event.inputs.sources || 'follow_builders,github,hot,tavily' }}
           BATCH_NO_CARDS: ${{ github.event.inputs.no_cards || 'false' }}
         run: |
           args=(

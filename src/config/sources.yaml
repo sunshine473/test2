@@ -5,6 +5,25 @@
 # ============================================================
 
 # ----------------------------------------------------------
+# Follow Builders（精选 AI builders / podcast / blog feed）
+# ----------------------------------------------------------
+follow_builders:
+  local_dir: follow-builders
+  remote_feeds:
+    x: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json"
+    podcasts: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json"
+    blogs: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-blogs.json"
+  category: tech_ai
+  language: en
+  max_tweets_per_builder: 3
+  max_podcasts: 3
+  max_blogs: 5
+  include:
+    - x
+    - podcasts
+    - blogs
+
+# ----------------------------------------------------------
 # RSS 订阅源
 # ----------------------------------------------------------
 rss:

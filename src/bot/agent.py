@@ -50,7 +50,7 @@ TOOL_DEFINITIONS = [
             "properties": {
                 "sources": {
                     "type": "string",
-                    "description": "采集源，逗号分隔。可选: rss,hn,github,hot,tavily,youtube_api,twitter。默认全部。",
+                    "description": "采集源，逗号分隔。可选: follow_builders,rss,hn,github,hot,tavily,youtube_api,twitter。默认每日来源。",
                 },
                 "direction": {
                     "type": "string",

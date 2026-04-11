@@ -33,8 +33,9 @@ from collector.sources.github_trending import GitHubTrendingSource
 from collector.sources.hot_search import HotSearchSource
 from collector.sources.rss import RSSSource
 from collector.sources.youtube_api import YouTubeAPISource
+from collector.sources.follow_builders import FollowBuildersSource
 
-ALLOWED_SOURCES = {"rss", "hn", "github", "hot", "youtube_api", "tavily", "twitter"}
+ALLOWED_SOURCES = {"rss", "hn", "github", "hot", "youtube_api", "tavily", "twitter", "follow_builders"}
 
 
 def load_config() -> dict:
@@ -69,32 +70,41 @@ def collect_all(config: dict, sources: List[str]) -> tuple[List[CollectedItem], 
 
     # RSS + YouTube
     if "rss" in sources:
-        print("[1/7] 采集 RSS + YouTube...")
+        print("[1/8] 采集 RSS + YouTube...")
         safe_collect("rss", "RSS", lambda: RSSSource().collect(config.get("rss", {})))
+
+    # Follow Builders
+    if "follow_builders" in sources:
+        print("[2/8] 采集 Follow Builders...")
+        safe_collect(
+            "follow_builders",
+            "Follow Builders",
+            lambda: FollowBuildersSource().collect(config.get("follow_builders", {})),
+        )
 
     # Hacker News
     if "hn" in sources:
-        print("[2/7] 采集 Hacker News...")
+        print("[3/8] 采集 Hacker News...")
         safe_collect("hn", "Hacker News", lambda: HackerNewsSource().collect(config.get("hacker_news", {})))
 
     # GitHub Trending
     if "github" in sources:
-        print("[3/7] 采集 GitHub Trending...")
+        print("[4/8] 采集 GitHub Trending...")
         safe_collect("github", "GitHub Trending", lambda: GitHubTrendingSource().collect(config.get("scraper", [])))
 
     # 微博/百度热搜
     if "hot" in sources:
-        print("[4/7] 采集 微博/百度热搜...")
+        print("[5/8] 采集 微博/百度热搜...")
         safe_collect("hot", "微博/百度热搜", lambda: HotSearchSource().collect(config.get("hot_search", {})))
 
     # YouTube Data API
     if "youtube_api" in sources:
-        print("[5/7] 采集 YouTube API...")
+        print("[6/8] 采集 YouTube API...")
         safe_collect("youtube_api", "YouTube API", lambda: YouTubeAPISource().collect(config.get("youtube_api", {})))
 
     # Tavily 搜索
     if "tavily" in sources:
-        print("[6/7] 采集 Tavily 搜索...")
+        print("[7/8] 采集 Tavily 搜索...")
         def collect_tavily():
             from collector.sources.tavily_search import TavilySearchSource
             return TavilySearchSource().collect(config.get("tavily", {}))
@@ -102,7 +112,7 @@ def collect_all(config: dict, sources: List[str]) -> tuple[List[CollectedItem], 
 
     # X/Twitter
     if "twitter" in sources:
-        print("[7/7] 采集 X/Twitter...")
+        print("[8/8] 采集 X/Twitter...")
         def collect_twitter():
             from collector.sources.twitter import TwitterSource
             return TwitterSource().collect(config.get("twitter", {}))
@@ -134,8 +144,8 @@ def main():
     parser = argparse.ArgumentParser(description="素材采集器（搜索 + 策划）")
     parser.add_argument(
         "--sources",
-        default="rss,hn,github,hot,tavily,youtube_api",
-        help="要采集的信息源，逗号分隔 (rss,hn,github,hot,youtube_api,tavily,twitter)",
+        default="follow_builders,github,hot,tavily",
+        help="要采集的信息源，逗号分隔 (follow_builders,rss,hn,github,hot,youtube_api,tavily,twitter)",
     )
     parser.add_argument("--search-only", action="store_true", help="仅执行搜索阶段")
     parser.add_argument("--plan-only", action="store_true", help="仅执行策划阶段")

@@ -30,7 +30,7 @@ class PipelineState:
     publish_results: List[Dict] = field(default_factory=list)
 
     # 配置
-    sources: str = "rss,hn,github,hot,tavily,youtube_api"
+    sources: str = "follow_builders,github,hot,tavily"
     direction: str = ""
     platforms: str = ""
     no_cards: bool = False

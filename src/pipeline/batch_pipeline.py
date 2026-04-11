@@ -32,7 +32,7 @@ class BatchPipeline:
     ):
         self.count_per_direction = count_per_direction
         self.platforms = platforms
-        self.sources = sources or "rss,hn,github,hot,tavily"
+        self.sources = sources or "follow_builders,github,hot,tavily"
         self.no_cards = no_cards
         self.results = []
 
@@ -195,7 +195,7 @@ def main():
     parser.add_argument(
         "--sources",
         default="",
-        help="素材来源（逗号分隔，默认全部）"
+        help="素材来源（逗号分隔，默认 follow_builders,github,hot,tavily）"
     )
     parser.add_argument(
         "--no-cards",

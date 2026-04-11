@@ -181,7 +181,7 @@ Layer 6: 分发 (Distribute) → PublishResult
 python src/collector/main.py
 
 # 仅搜索（输出素材池）
-python src/collector/search.py [--sources hn,github]
+python src/collector/search.py [--sources follow_builders,github]
 
 # 仅策划（从素材池推荐选题）
 python src/collector/planner.py --pool <path> --recommend [--direction tech_ai|auto]
@@ -343,7 +343,7 @@ Commit types: `feat`, `fix`, `refactor`, `docs`, `chore`
 ### Key Files
 
 ### Configuration
-- `src/config/sources.yaml` — 信息源配置（RSS、Tavily query、Twitter 账号）
+- `src/config/sources.yaml` — 信息源配置（Follow Builders、RSS、Tavily query、Twitter 账号）
 - `src/config/publishers.yaml` — 平台开关和配置
 - `src/config/models.yaml` — Gemini 模型配置（文本/图像任务）
 

@@ -7,8 +7,8 @@ from collector.main import parse_sources_arg
 
 class TestParseSourcesArg:
     def test_parse_sources_success_and_dedup(self):
-        sources = parse_sources_arg("rss, github, rss,hot")
-        assert sources == ["rss", "github", "hot"]
+        sources = parse_sources_arg("follow_builders, rss, github, rss,hot")
+        assert sources == ["follow_builders", "rss", "github", "hot"]
 
     def test_parse_sources_invalid_source(self):
         with pytest.raises(ValueError, match="未知 source"):

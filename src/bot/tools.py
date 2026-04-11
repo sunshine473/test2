@@ -41,7 +41,7 @@ def tool_collect(params: dict) -> str:
     from collector.search import search
     from collector.planner import plan
 
-    sources_str = params.get("sources", "rss,hn,github,hot,tavily,youtube_api")
+    sources_str = params.get("sources", "follow_builders,github,hot,tavily")
     source_list = [s.strip() for s in sources_str.split(",")]
     direction = params.get("direction")
     search_only = params.get("search_only", False)

@@ -24,6 +24,9 @@ TECH_AI = Direction(
     label="AI 科技",
     categories={"tech_ai", "trending"},
     source_weight={
+        "Follow Builders Podcast": 26,
+        "Follow Builders X": 24,
+        "Follow Builders Blog": 23,
         "Hacker News": 25,
         "GitHub Trending": 24,
         "OpenAI Blog": 22,
@@ -42,7 +45,8 @@ TECH_AI = Direction(
         "deepmind": 4, "机器人": 4, "开源": 3, "gpu": 3, "transformer": 4,
         "rag": 3, "ai": 3, "gpt": 3, "claude": 3, "gemini": 3,
     },
-    preferred_sources={"Hacker News", "GitHub Trending", "OpenAI Blog",
+    preferred_sources={"Follow Builders Podcast", "Follow Builders X", "Follow Builders Blog",
+                       "Hacker News", "GitHub Trending", "OpenAI Blog",
                        "Anthropic Blog", "Google DeepMind Blog"},
 )
 

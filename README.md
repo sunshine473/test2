@@ -77,9 +77,10 @@ python src/pipeline/batch_pipeline.py --count 2 --platforms xiaohongshu,zhihu
 python src/collector/main.py
 
 # 指定采集源
+python src/collector/main.py --sources follow_builders,github,hot,tavily
 python src/collector/main.py --sources hn,github,hot
 python src/collector/main.py --sources rss,tavily,hot
-python src/collector/main.py --sources rss,hn,github,hot,tavily,youtube_api
+python src/collector/main.py --sources follow_builders,rss,github,hot,tavily,youtube_api
 
 # 仅搜索（输出素材池 JSON）
 python src/collector/main.py --search-only
@@ -170,6 +171,7 @@ NOTION_PUBLISH_DB_ID=xxx                  # 发布记录数据库 ID
 - 发布阶段 → 发布记录数据库
 
 ### 其他配置
+- 每日 AI 素材默认使用 `follow_builders`，优先读取 `follow-builders/feed-*.json`，本地缺失时回退到远端 feed
 - YouTube API 配置（启用 `youtube_api` 时）：`YOUTUBE_API_KEY`
 - `.env` 文件配置敏感信息（不要提交到仓库）
 
@@ -181,7 +183,7 @@ NOTION_PUBLISH_DB_ID=xxx                  # 发布记录数据库 ID
 |--------|----------|------|
 | `batch-factory.yml` | 每天 10:00 | 批量工厂（一次采集 → 双方向选题 → 批量生成 → 多平台发布） |
 
-`batch-factory.yml` 直接执行 `python src/pipeline/batch_pipeline.py`，默认每个方向生成 2 篇，发布到 `xiaohongshu,zhihu`。手动触发时可覆盖 `count`、`platforms`、`sources`、`no_cards` 四个输入参数。
+`batch-factory.yml` 直接执行 `python src/pipeline/batch_pipeline.py`，默认每个方向生成 2 篇，发布到 `xiaohongshu,zhihu`，默认采集源为 `follow_builders,github,hot,tavily`。手动触发时可覆盖 `count`、`platforms`、`sources`、`no_cards` 四个输入参数。
 
 如果手动把平台切到 `wechat`、`bilibili`、`toutiao`、`dongchedi`，需要提前配置对应 Secrets；知乎和小红书依赖 `ZHIHU_COOKIE` / `XIAOHONGSHU_COOKIE`，浏览器平台在 GitHub Actions 中默认以 headless 模式运行。
 
