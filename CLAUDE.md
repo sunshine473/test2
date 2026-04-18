@@ -118,6 +118,7 @@ Layer 6: 分发 (Distribute) → PublishResult
 
 **Phase 2: Plan** (`src/collector/planner.py`)
 - 按方向筛选（AI科技 / 汽车）
+- 汽车方向硬过滤无发布时间或 7 天外素材，旧销量/旧政策只能作为背景，不能进入文章主线
 - LLM 打分排序（`scorer.py`）
 - AI 推荐 3-5 个选题（`--recommend` 参数）
 
@@ -191,6 +192,7 @@ python src/collector/planner.py --pool <path> --recommend [--direction tech_ai|a
 ```bash
 # 生成文章 + 卡片（自动审核 + 补全 frontmatter）
 python src/generator/main.py "选题标题"
+python src/generator/main.py "汽车选题标题" --direction auto
 
 # 仅生成文章
 python src/generator/main.py "选题标题" --no-cards

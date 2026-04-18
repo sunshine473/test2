@@ -61,6 +61,7 @@ def main():
     parser = argparse.ArgumentParser(description="内容生成器")
     parser.add_argument("topic", help="选题标题")
     parser.add_argument("--sources", help="素材来源：逗号分隔的 URL 或文本文件路径（.txt）", default=None)
+    parser.add_argument("--direction", choices=["tech_ai", "auto"], default=None, help="内容方向")
     mode_group = parser.add_mutually_exclusive_group()
     mode_group.add_argument("--no-cards", action="store_true", help="仅生成文章")
     mode_group.add_argument("--cards-only", action="store_true", help="仅生成卡片")
@@ -95,7 +96,7 @@ def main():
         print(f"✓ 读取已有文章: {existing}")
     else:
         print(f"▶ 生成文章: {topic}")
-        article, article_path = generate_article(topic, sources)
+        article, article_path = generate_article(topic, sources, direction=args.direction)
         print(f"✓ 文章已保存: {article_path}")
 
         # 自动质量审核

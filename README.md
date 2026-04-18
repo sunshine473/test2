@@ -92,6 +92,7 @@ python src/collector/search.py
 
 # 素材池 JSON 字段说明：每条 item 同时包含短摘要 `summary` 和主要内容摘录 `content`
 # Pool JSON schema: each item includes both short summary `summary` and main-content excerpt `content`
+# 汽车方向会硬过滤无发布时间或 7 天外素材，避免旧销量/旧政策进入文章主线
 
 # 仅策划（从素材池推荐选题）
 python src/collector/main.py --plan-only --pool content/pool/<date>-pool.json
@@ -100,6 +101,7 @@ python src/collector/planner.py --pool content/pool/<date>-pool.json --direction
 
 # 内容生成（生成文章 + 卡片到 content/drafts/）
 python src/generator/main.py "选题标题"
+python src/generator/main.py "汽车选题标题" --direction auto
 
 # AI 质量审核（6 维度评分，≥70 分通过）
 python src/reviewer/quality_checker.py content/drafts/<markdown文件>

@@ -1,5 +1,6 @@
 """微博/百度热搜采集适配器（通过 TopHub）"""
 
+from datetime import datetime, timezone
 from typing import List
 
 import requests
@@ -70,6 +71,7 @@ class HotSearchSource(BaseSource):
                         category=category,
                         summary=f"{name}实时热搜词条",
                         content=f"{name}热搜词条：{title}",
+                        published_at=datetime.now(timezone.utc).isoformat(),
                         language="zh",
                     )
                 )

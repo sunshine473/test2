@@ -296,50 +296,74 @@ tavily:
 
   auto:
     - name: 懂车帝资讯
-      query: "懂车帝 新车 评测"
+      query: "懂车帝 新车 评测 最近7天"
       category: auto
+      topic: news
+      time_range: week
+      days: 7
       search_depth: basic
       max_results: 5
 
     - name: 汽车之家
-      query: "汽车之家 新车 本周"
+      query: "汽车之家 新车 本周 最近7天"
       category: auto
+      topic: news
+      time_range: week
+      days: 7
       search_depth: basic
       max_results: 5
 
     - name: 36kr 汽车
-      query: "36kr 汽车 新能源"
+      query: "36kr 汽车 新能源 最近7天"
       category: auto
+      topic: news
+      time_range: week
+      days: 7
       search_depth: basic
       max_results: 5
 
     - name: 新能源政策
-      query: "新能源汽车 政策 补贴"
+      query: "新能源汽车 政策 补贴 最近7天"
       category: auto
+      topic: news
+      time_range: week
+      days: 7
       search_depth: basic
       max_results: 5
 
     - name: 智能驾驶周报
-      query: "智能驾驶 智驾 本周 新车 评测"
+      query: "智能驾驶 智驾 本周 新车 评测 最近7天"
       category: auto
+      topic: news
+      time_range: week
+      days: 7
       search_depth: advanced
       max_results: 5
 
     - name: 新能源销量
-      query: "新能源汽车 销量 本周 比亚迪 理想 小鹏 问界"
+      query: "新能源汽车 销量 本周 比亚迪 理想 小鹏 问界 最近7天"
       category: auto
+      topic: news
+      time_range: week
+      days: 7
       search_depth: advanced
       max_results: 5
 
     - name: 充电与补能
-      query: "充电桩 换电 超充 新能源汽车 本周"
+      query: "充电桩 换电 超充 新能源汽车 本周 最近7天"
       category: auto
+      topic: news
+      time_range: week
+      days: 7
       search_depth: basic
       max_results: 5
 
     - name: 小米与华为汽车
-      query: "小米汽车 华为 问界 智驾 本周"
+      query: "小米汽车 华为 问界 智驾 本周 最近7天"
       category: auto
+      topic: news
+      time_range: week
+      days: 7
       search_depth: advanced
       max_results: 5
 

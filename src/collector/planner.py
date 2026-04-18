@@ -11,6 +11,8 @@ import argparse
 import json
 import os
 import sys
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Optional
 
@@ -24,6 +26,7 @@ from collector.main import ensure_utf8
 from models import MaterialPool
 
 POOL_DIR = PROJECT_ROOT / "content" / "pool"
+AUTO_MAX_AGE_DAYS = 7
 
 
 def load_pool(pool_path: str) -> list[CollectedItem]:
@@ -32,6 +35,40 @@ def load_pool(pool_path: str) -> list[CollectedItem]:
         data = json.load(f)
     pool = MaterialPool.from_dict(data)
     return [item.to_collected_item() for item in pool.items]
+
+
+def parse_published_at(value: str) -> Optional[datetime]:
+    """解析素材发布时间，兼容 ISO 与 RSS 常见时间格式。"""
+    if not value:
+        return None
+    text = value.strip()
+    if not text:
+        return None
+    try:
+        dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
+    except ValueError:
+        try:
+            dt = parsedate_to_datetime(text)
+        except (TypeError, ValueError):
+            return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc)
+
+
+def is_within_days(value: str, days: int = AUTO_MAX_AGE_DAYS) -> bool:
+    """判断素材是否在指定天数内；缺失或未来异常日期均视为不合格。"""
+    dt = parse_published_at(value)
+    if not dt:
+        return False
+    now = datetime.now(timezone.utc)
+    age_seconds = (now - dt).total_seconds()
+    return 0 <= age_seconds <= days * 24 * 3600
+
+
+def is_auto_recent_enough(item: CollectedItem) -> bool:
+    """汽车方向硬性时效门槛：必须有发布时间且不超过 7 天。"""
+    return is_within_days(item.published_at, AUTO_MAX_AGE_DAYS)
 
 
 def filter_by_direction(items: list[CollectedItem], direction: Direction) -> list[CollectedItem]:
@@ -46,6 +83,8 @@ def filter_by_direction(items: list[CollectedItem], direction: Direction) -> lis
             text = f"{item.title} {item.summary}".lower()
             if any(kw in text for kw in keywords):
                 result.append(item)
+    if direction.name == "auto":
+        result = [item for item in result if is_auto_recent_enough(item)]
     return result
 
 
@@ -108,6 +147,9 @@ def recommend_topics(ranked_items: list[CollectedItem], direction: Direction, to
     Returns:
         (推荐文本, 结构化选题列表)
     """
+    if not ranked_items:
+        return f"⚠ {direction.label} 方向没有符合时效要求的素材，跳过 AI 推荐", []
+
     try:
         from generator.gemini_client import generate_text
     except ImportError:
@@ -128,6 +170,16 @@ def recommend_topics(ranked_items: list[CollectedItem], direction: Direction, to
 2. **推荐理由**（为什么值得写、时效性如何、话题热度）
 3. **建议角度**（切入点、差异化方向）
 4. **关联素材**（哪几条素材可作为参考，用序号标注）
+"""
+    if direction.name == "auto":
+        prompt += f"""
+
+汽车方向硬性要求：
+- 只能基于发布时间在最近 {AUTO_MAX_AGE_DAYS} 天内的素材推荐选题。
+- 不要推荐“2025 年销量/榜单/政策”这类旧数据复盘，除非素材明确是最近 {AUTO_MAX_AGE_DAYS} 天内发布且用于当下新闻背景。
+- 推荐理由必须说明这条选题的最新进展是什么。
+"""
+    prompt += """
 
 输出格式：
 ### 1. [选题标题]

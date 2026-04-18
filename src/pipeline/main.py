@@ -236,7 +236,11 @@ class Pipeline:
         from generator.writer import DRAFTS_DIR, _make_slug, generate_article
 
         sources = self.state.selected_sources or None
-        article, draft_path = generate_article(self.state.selected_topic, sources)
+        article, draft_path = generate_article(
+            self.state.selected_topic,
+            sources,
+            direction=self.state.direction or None,
+        )
         self.state.draft_path = str(draft_path)
         print(f"  草稿已生成: {draft_path}")
 

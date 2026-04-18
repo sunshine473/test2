@@ -1,6 +1,7 @@
 """Tavily 搜索采集适配器"""
 
 import os
+from datetime import datetime, timedelta, timezone
 from typing import List
 
 from tavily import TavilyClient
@@ -30,13 +31,21 @@ class TavilySearchSource(BaseSource):
                 depth = q.get("search_depth", "basic")
                 max_results = q.get("max_results", 5)
 
-                days = q.get("days", 3)
+                days = q.get("days", 7 if category == "auto" else 3)
+                topic = q.get("topic", "news" if category == "auto" else None)
+                time_range = q.get("time_range", "week" if category == "auto" else None)
+                start_date = q.get("start_date")
+                if category == "auto" and not start_date:
+                    start_date = (datetime.now(timezone.utc) - timedelta(days=7)).date().isoformat()
 
                 print(f"  [Tavily] {name}...")
                 try:
                     resp = self.client.search(
                         query=query,
                         search_depth=depth,
+                        topic=topic,
+                        time_range=time_range,
+                        start_date=start_date,
                         max_results=max_results,
                         days=days,
                     )
@@ -50,9 +59,14 @@ class TavilySearchSource(BaseSource):
                             category=category,
                             summary=clip_text(raw_content, 300),
                             content=clip_text(raw_content, 4000),
+                            published_at=r.get("published_date", "") or r.get("published_at", ""),
                             language="zh" if any(
                                 c > '\u4e00' for c in query
                             ) else "en",
+                            raw_data={
+                                "tavily_score": r.get("score"),
+                                "tavily_published_date": r.get("published_date", ""),
+                            },
                         ))
                 except Exception as e:
                     print(f"  [Tavily] {name} 采集失败: {e}")

@@ -10,6 +10,10 @@ from generator.gemini_client import generate_text
 
 TEMPLATES_DIR = Path(__file__).parent / "templates"
 DRAFTS_DIR = Path(__file__).resolve().parent.parent.parent / "content" / "drafts"
+AUTO_KEYWORDS = (
+    "汽车", "新能源", "电动车", "智驾", "自动驾驶", "比亚迪", "特斯拉",
+    "蔚来", "理想", "小鹏", "问界", "小米汽车", "充电", "销量",
+)
 
 
 def _load_template(name: str) -> str:
@@ -23,7 +27,16 @@ def _make_slug(title: str) -> str:
     return slug[:60]
 
 
-def generate_article(topic: str, sources: Optional[list[str]] = None) -> tuple[str, Path]:
+def _looks_like_auto_topic(topic: str, sources: Optional[list[str]] = None) -> bool:
+    text = f"{topic} {' '.join(sources or [])}".lower()
+    return any(keyword.lower() in text for keyword in AUTO_KEYWORDS)
+
+
+def generate_article(
+    topic: str,
+    sources: Optional[list[str]] = None,
+    direction: Optional[str] = None,
+) -> tuple[str, Path]:
     """生成文章，返回 (markdown_content, output_path)"""
     DRAFTS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -33,6 +46,16 @@ def generate_article(topic: str, sources: Optional[list[str]] = None) -> tuple[s
         sources_text = "\n".join(f"- {s}" for s in sources)
 
     prompt = template.replace("{topic}", topic).replace("{sources}", sources_text)
+    if direction == "auto" or (direction is None and _looks_like_auto_topic(topic, sources)):
+        prompt += """
+
+## 汽车方向硬性时效要求
+
+- 只允许使用最近 7 天内发布或发生的信息作为核心事实。
+- 如果素材中出现 2025 年或更早的销量、榜单、政策、车型信息，只能作为一句背景，不得作为文章主线、标题或核心论据。
+- 不要编造最新数据；素材不足时必须在文中写清“目前公开信息有限”，并围绕已给素材分析。
+- 文章需要明确写出关键事实发生或发布的大致时间，例如“本周”“过去几天”“4 月中旬”。
+"""
     article = generate_text(prompt, task="article")
 
     date_str = datetime.now().strftime("%Y-%m-%d")

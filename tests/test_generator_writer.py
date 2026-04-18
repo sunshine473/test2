@@ -55,3 +55,27 @@ class TestWriter:
         assert captured["task"] == "article"
 
         shutil.rmtree(test_tmp, ignore_errors=True)
+
+    @freeze_time("2026-02-26 12:00:00")
+    def test_generate_auto_article_adds_recency_guard(self, monkeypatch):
+        """汽车方向 prompt 应追加近 7 天硬约束。"""
+        writer = _import_writer_with_stub(monkeypatch)
+        test_tmp = Path(__file__).parent / ".tmp_writer"
+        shutil.rmtree(test_tmp, ignore_errors=True)
+        (test_tmp / "drafts").mkdir(parents=True, exist_ok=True)
+        monkeypatch.setattr(writer, "DRAFTS_DIR", test_tmp / "drafts")
+        monkeypatch.setattr(writer, "_load_template", lambda _: "题目:{topic}\n素材:\n{sources}")
+
+        captured = {}
+
+        def fake_generate_text(prompt, task="article"):
+            captured["prompt"] = prompt
+            return "# 标题\n\n正文"
+
+        monkeypatch.setattr(writer, "generate_text", fake_generate_text)
+        writer.generate_article("小米汽车本周智驾更新", direction="auto")
+
+        assert "汽车方向硬性时效要求" in captured["prompt"]
+        assert "最近 7 天内" in captured["prompt"]
+
+        shutil.rmtree(test_tmp, ignore_errors=True)
