@@ -37,6 +37,7 @@ class BrowserPublisher(BasePublisher):
         headless = config.get("headless")
         if headless is None:
             headless = os.getenv("CI", "").lower() == "true"
+        config = {**config, "_headless": headless}
         state_file = BROWSER_STATE_DIR / f"{self.name}_state.json"
 
         with sync_playwright() as p:
@@ -58,10 +59,14 @@ class BrowserPublisher(BasePublisher):
             try:
                 # 检查登录状态
                 if not self._check_login(page, config):
+                    if config.get("_headless"):
+                        message = f"{self.name.upper()}_COOKIE 无效或已过期，headless 模式无法手动登录"
+                    else:
+                        message = "未登录，请重新运行（浏览器会打开登录页面）"
                     return PublishResult(
                         platform=self.name,
                         status=PublishStatus.FAILED,
-                        message="未登录，请重新运行（浏览器会打开登录页面）",
+                        message=message,
                     )
 
                 # 登录成功后立即保存 Cookie（防止后续步骤出错丢失登录态）
@@ -91,6 +96,10 @@ class BrowserPublisher(BasePublisher):
 
         # 如果被重定向到登录页，等待用户手动登录
         if self._is_login_page(page) and not self._is_logged_in(page):
+            if config.get("_headless"):
+                print(f"[{self.name}] headless 模式检测到登录页面，Cookie 可能已失效")
+                return False
+
             print(f"[{self.name}] 检测到登录页面，请在浏览器中手动登录...")
             print(f"[{self.name}] 登录完成后会自动继续（最多等待 300 秒）")
             for _ in range(150):

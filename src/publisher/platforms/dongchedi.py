@@ -14,6 +14,7 @@ class DongchediPublisher(BrowserPublisher):
 
     login_url = "https://mp.toutiao.com/auth/page/login"
     editor_url = "https://mp.toutiao.com/profile_v4/graphic/publish"
+    cookie_origins = ["https://mp.toutiao.com"]
 
     def _is_login_page(self, page) -> bool:
         """头条号：检查登录表单是否存在"""
@@ -25,6 +26,15 @@ class DongchediPublisher(BrowserPublisher):
         except Exception:
             return False
 
+    def _is_logged_in(self, page) -> bool:
+        """头条号编辑器可用时才认为已登录。"""
+        try:
+            title_visible = page.locator('textarea[placeholder*="标题"]').first.is_visible(timeout=2000)
+            editor_visible = page.locator('.ProseMirror').first.is_visible(timeout=2000)
+            return title_visible and editor_visible
+        except Exception:
+            return False
+
     def _do_publish(self, page, article: Article, config: dict) -> PublishResult:
         # 1. 确保在编辑器页面
         if "graphic/publish" not in page.url:
@@ -33,6 +43,13 @@ class DongchediPublisher(BrowserPublisher):
             except Exception:
                 pass
             self._random_delay(3, 5)
+
+        if self._is_login_page(page) and not self._is_logged_in(page):
+            return PublishResult(
+                platform="dongchedi",
+                status=PublishStatus.FAILED,
+                message="未登录头条号后台，无法保存懂车帝草稿",
+            )
 
         # 关闭 AI 创作助手抽屉（会遮挡编辑器）
         page.evaluate('''() => {
@@ -65,8 +82,26 @@ class DongchediPublisher(BrowserPublisher):
         print(f"[dongchedi] 等待草稿自动保存...")
         page.wait_for_timeout(5000)
 
+        if not self._draft_content_visible(page, title, body):
+            return PublishResult(
+                platform="dongchedi",
+                status=PublishStatus.FAILED,
+                message="草稿保存校验失败：标题或正文未保留在编辑器中",
+            )
+
         return PublishResult(
             platform="dongchedi",
             status=PublishStatus.SUCCESS,
             message="文章已自动保存到头条号草稿箱（汽车内容将自动分发到懂车帝）",
         )
+
+    def _draft_content_visible(self, page, title: str, body: str) -> bool:
+        """轻量确认编辑器仍保留刚填入的标题和正文。"""
+        try:
+            current_title = page.locator('textarea[placeholder*="标题"]').first.input_value(timeout=2000)
+            editor_text = page.locator('.ProseMirror').first.inner_text(timeout=2000)
+        except Exception:
+            return False
+
+        body_probe = body.strip()[:30]
+        return current_title.strip() == title.strip() and (not body_probe or body_probe in editor_text)
