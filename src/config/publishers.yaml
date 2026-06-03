@@ -2,7 +2,7 @@
 # 敏感信息从 .env 环境变量读取
 
 wechat:
-  enabled: true
+  enabled: false
   # WECHAT_APP_ID / WECHAT_APP_SECRET 从 .env 读取
 
 bilibili:
@@ -11,15 +11,16 @@ bilibili:
   category: 17  # 科技分区
 
 zhihu:
-  enabled: true
+  enabled: false
   # headless 本地默认 false（手动登录），CI 自动切换 true（依赖 ZHIHU_COOKIE secret）
 
 toutiao:
   enabled: false
 
 xiaohongshu:
-  enabled: true
+  enabled: false
   # headless 本地默认 false（手动扫码），CI 自动切换 true（依赖 XIAOHONGSHU_COOKIE secret）
 
 dongchedi:
-  enabled: false
+  enabled: true
+  # headless 本地默认 false（手动扫码），CI 自动切换 true（依赖 DONGCHEDI_COOKIE secret）

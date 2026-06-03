@@ -257,7 +257,7 @@ python src/pipeline/batch_pipeline.py
 python src/pipeline/batch_pipeline.py --count 2
 
 # 指定发布平台
-python src/pipeline/batch_pipeline.py --platforms xiaohongshu,zhihu
+python src/pipeline/batch_pipeline.py --platforms dongchedi
 
 # 不生成视觉卡片（加速）
 python src/pipeline/batch_pipeline.py --no-cards

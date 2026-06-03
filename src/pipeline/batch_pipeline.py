@@ -1,7 +1,7 @@
 """批量内容生产流水线 — 自动生成多篇文章并发布到指定平台。
 
 用法:
-    python src/pipeline/batch_pipeline.py --count 4 --platforms xiaohongshu,zhihu
+    python src/pipeline/batch_pipeline.py --count 4 --platforms dongchedi
     python src/pipeline/batch_pipeline.py --count 2 --direction tech_ai --platforms xiaohongshu
 """
 
@@ -26,7 +26,7 @@ class BatchPipeline:
     def __init__(
         self,
         count_per_direction: int = 2,
-        platforms: str = "xiaohongshu,zhihu",
+        platforms: str = "dongchedi",
         sources: str = "",
         no_cards: bool = False,
     ):
@@ -189,8 +189,8 @@ def main():
     )
     parser.add_argument(
         "--platforms",
-        default="xiaohongshu,zhihu",
-        help="发布平台（逗号分隔，默认 xiaohongshu,zhihu）"
+        default="dongchedi",
+        help="发布平台（逗号分隔，默认 dongchedi）"
     )
     parser.add_argument(
         "--sources",

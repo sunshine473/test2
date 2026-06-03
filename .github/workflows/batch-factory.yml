@@ -13,7 +13,7 @@ on:
       platforms:
         description: '发布平台（逗号分隔）'
         required: false
-        default: 'xiaohongshu,zhihu'
+        default: 'dongchedi'
       sources:
         description: '采集源（逗号分隔）'
         required: false
@@ -69,7 +69,7 @@ jobs:
         env:
           PYTHONPATH: src
           BATCH_COUNT: ${{ github.event.inputs.count || '2' }}
-          BATCH_PLATFORMS: ${{ github.event.inputs.platforms || 'xiaohongshu,zhihu' }}
+          BATCH_PLATFORMS: ${{ github.event.inputs.platforms || 'dongchedi' }}
           BATCH_SOURCES: ${{ github.event.inputs.sources || 'follow_builders,github,hot,tavily' }}
           BATCH_NO_CARDS: ${{ github.event.inputs.no_cards || 'false' }}
         run: |
@@ -100,7 +100,7 @@ jobs:
         if: success()
         env:
           BATCH_COUNT: ${{ github.event.inputs.count || '2' }}
-          BATCH_PLATFORMS: ${{ github.event.inputs.platforms || 'xiaohongshu,zhihu' }}
+          BATCH_PLATFORMS: ${{ github.event.inputs.platforms || 'dongchedi' }}
         run: |
           python - <<'PY'
           import os
@@ -110,7 +110,7 @@ jobs:
           chat_id = os.environ.get("TELEGRAM_CHAT_ID")
           if token and chat_id:
               count = os.environ.get("BATCH_COUNT", "2")
-              platforms = os.environ.get("BATCH_PLATFORMS", "xiaohongshu,zhihu")
+              platforms = os.environ.get("BATCH_PLATFORMS", "dongchedi")
               run_url = f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
               message = (
                   "✅ Batch Factory 执行成功\n\n"
