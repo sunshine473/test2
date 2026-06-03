@@ -1,0 +1,93 @@
+{
+  "pipeline_id": "2026-06-03-161215",
+  "created_at": "2026-06-03T16:12:15.357146",
+  "current_stage": "write",
+  "status": "failed",
+  "pool_path": "/Users/dora/Documents/test_auto_write-factary/content/pool/2026-06-03-pool.json",
+  "plan_result": {
+    "auto": {
+      "direction": "auto",
+      "label": "汽车",
+      "input_count": 63,
+      "filtered_count": 1,
+      "score_summary": {
+        "max": 46.0,
+        "min": 46.0,
+        "avg": 46.0
+      },
+      "items": [
+        {
+          "title": "莲花CEO：跑车超过1.8吨就是“菜车”",
+          "url": "https://www.baidu.com/s?wd=%E8%8E%B2%E8%8A%B1CEO%EF%BC%9A%E8%B7%91%E8%BD%A6%E8%B6%85%E8%BF%871.8%E5%90%A8%E5%B0%B1%E6%98%AF%E2%80%9C%E8%8F%9C%E8%BD%A6%E2%80%9D",
+          "source_name": "百度热搜",
+          "source_type": "scraper",
+          "category": "trending",
+          "summary": "百度热搜实时热搜词条",
+          "content": "百度热搜热搜词条：莲花CEO：跑车超过1.8吨就是“菜车”",
+          "published_at": "2026-06-03T08:12:20.880486+00:00",
+          "language": "zh",
+          "raw_data": {
+            "cluster_id": "C054",
+            "cluster_size": 1,
+            "score": 46.0,
+            "score_reasons": [
+              "source:20",
+              "category:10",
+              "preferred:3",
+              "cluster:3",
+              "recency:10"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "recommended_topics": {},
+  "selected_topic": "莲花CEO：跑车超过1.8吨就是“菜车”",
+  "selected_sources": [
+    "https://www.baidu.com/s?wd=%E8%8E%B2%E8%8A%B1CEO%EF%BC%9A%E8%B7%91%E8%BD%A6%E8%B6%85%E8%BF%871.8%E5%90%A8%E5%B0%B1%E6%98%AF%E2%80%9C%E8%8F%9C%E8%BD%A6%E2%80%9D"
+  ],
+  "draft_path": "",
+  "cards_path": "",
+  "review_score": 0,
+  "review_passed": false,
+  "review_feedback": "",
+  "publish_results": [],
+  "sources": "hot,tavily",
+  "direction": "auto",
+  "platforms": "dongchedi",
+  "no_cards": true,
+  "error": "write: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your API key was reported as leaked. Please use another API key.', 'status': 'PERMISSION_DENIED'}}\nTraceback (most recent call last):\n  File \"/Users/dora/Documents/test_auto_write-factary/src/pipeline/main.py\", line 92, in run\n    handler(auto=auto)\n  File \"/Users/dora/Documents/test_auto_write-factary/src/pipeline/main.py\", line 239, in _run_write\n    article, draft_path = generate_article(\n                          ^^^^^^^^^^^^^^^^^\n  File \"/Users/dora/Documents/test_auto_write-factary/src/generator/writer.py\", line 59, in generate_article\n    article = generate_text(prompt, task=\"article\")\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dora/Documents/test_auto_write-factary/src/generator/gemini_client.py\", line 49, in generate_text\n    response = _client.models.generate_content(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/google/genai/models.py\", line 5709, in generate_content\n    response = self._generate_content(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/google/genai/models.py\", line 4371, in _generate_content\n    response = self._api_client.request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/google/genai/_api_client.py\", line 1401, in request\n    response = self._request(http_request, http_options, stream=False)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/google/genai/_api_client.py\", line 1237, in _request\n    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/tenacity/__init__.py\", line 470, in __call__\n    do = self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/tenacity/__init__.py\", line 371, in iter\n    result = action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/tenacity/__init__.py\", line 413, in exc_check\n    raise retry_exc.reraise()\n          ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/tenacity/__init__.py\", line 184, in reraise\n    raise self.last_attempt.result()\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/tenacity/__init__.py\", line 473, in __call__\n    result = fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/google/genai/_api_client.py\", line 1214, in _request_once\n    errors.APIError.raise_for_response(response)\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/google/genai/errors.py\", line 134, in raise_for_response\n    cls.raise_error(response.status_code, response_json, response)\n  File \"/Users/dora/Documents/test_auto_write-factary/.venv/lib/python3.11/site-packages/google/genai/errors.py\", line 159, in raise_error\n    raise ClientError(status_code, response_json, response)\ngoogle.genai.errors.ClientError: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your API key was reported as leaked. Please use another API key.', 'status': 'PERMISSION_DENIED'}}\n",
+  "history": [
+    {
+      "stage": "search",
+      "message": "素材池 63 条: /Users/dora/Documents/test_auto_write-factary/content/pool/2026-06-03-pool.json",
+      "time": "2026-06-03T16:31:20.710586"
+    },
+    {
+      "stage": "search",
+      "message": "完成",
+      "time": "2026-06-03T16:31:20.710592"
+    },
+    {
+      "stage": "plan",
+      "message": "完成",
+      "time": "2026-06-03T16:31:51.394736"
+    },
+    {
+      "stage": "select",
+      "message": "完成",
+      "time": "2026-06-03T16:31:51.398508"
+    },
+    {
+      "stage": "write",
+      "message": "失败: [Errno 8] nodename nor servname provided, or not known",
+      "time": "2026-06-03T17:37:14.549745"
+    },
+    {
+      "stage": "write",
+      "message": "失败: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your API key was reported as leaked. Please use another API key.', 'status': 'PERMISSION_DENIED'}}",
+      "time": "2026-06-03T20:28:34.952400"
+    }
+  ]
+}

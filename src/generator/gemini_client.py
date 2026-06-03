@@ -12,10 +12,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# 优先使用 GOOGLE_API_KEY，回退到 YOUTUBE_API_KEY
-_API_KEY = os.getenv("GOOGLE_API_KEY") or os.getenv("YOUTUBE_API_KEY")
+# 优先使用 CI/文档中的 GEMINI_API_KEY，兼容 Google Cloud 通用变量名和旧回退。
+_API_KEY = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY") or os.getenv("YOUTUBE_API_KEY")
 if not _API_KEY:
-    raise RuntimeError("未找到 API Key，请在 .env 中设置 GOOGLE_API_KEY 或 YOUTUBE_API_KEY")
+    raise RuntimeError("未找到 API Key，请在 .env 中设置 GEMINI_API_KEY / GOOGLE_API_KEY / YOUTUBE_API_KEY")
 
 _client = genai.Client(api_key=_API_KEY)
 

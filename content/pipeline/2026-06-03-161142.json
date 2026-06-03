@@ -1,0 +1,57 @@
+{
+  "pipeline_id": "2026-06-03-161142",
+  "created_at": "2026-06-03T16:11:42.120482",
+  "current_stage": "select",
+  "status": "failed",
+  "pool_path": "/Users/dora/Documents/test_auto_write-factary/content/pool/2026-06-03-pool.json",
+  "plan_result": {
+    "auto": {
+      "direction": "auto",
+      "label": "汽车",
+      "input_count": 0,
+      "filtered_count": 0,
+      "score_summary": {
+        "max": 0.0,
+        "min": 0.0,
+        "avg": 0.0
+      },
+      "items": []
+    }
+  },
+  "recommended_topics": {},
+  "selected_topic": "",
+  "selected_sources": [],
+  "draft_path": "",
+  "cards_path": "",
+  "review_score": 0,
+  "review_passed": false,
+  "review_feedback": "",
+  "publish_results": [],
+  "sources": "hot,tavily",
+  "direction": "auto",
+  "platforms": "dongchedi",
+  "no_cards": true,
+  "error": "select: plan_result 中没有可选素材\nTraceback (most recent call last):\n  File \"/Users/dora/Documents/test_auto_write-factary/src/pipeline/main.py\", line 92, in run\n    handler(auto=auto)\n  File \"/Users/dora/Documents/test_auto_write-factary/src/pipeline/main.py\", line 222, in _run_select\n    raise RuntimeError(\"plan_result 中没有可选素材\")\nRuntimeError: plan_result 中没有可选素材\n",
+  "history": [
+    {
+      "stage": "search",
+      "message": "素材池 0 条: /Users/dora/Documents/test_auto_write-factary/content/pool/2026-06-03-pool.json",
+      "time": "2026-06-03T16:11:42.330575"
+    },
+    {
+      "stage": "search",
+      "message": "完成",
+      "time": "2026-06-03T16:11:42.330690"
+    },
+    {
+      "stage": "plan",
+      "message": "完成",
+      "time": "2026-06-03T16:11:42.331869"
+    },
+    {
+      "stage": "select",
+      "message": "失败: plan_result 中没有可选素材",
+      "time": "2026-06-03T16:11:42.332590"
+    }
+  ]
+}
