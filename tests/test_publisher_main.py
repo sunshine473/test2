@@ -22,11 +22,11 @@ class TestParseArticle:
         assert "# 测试文章标题" in article.content
 
     def test_no_frontmatter(self, tmp_path):
-        """无 frontmatter 用文件名做标题。"""
+        """无 frontmatter 时优先用 Markdown H1 做标题。"""
         md = tmp_path / "my-cool-article.md"
         md.write_text("# Just content\n\nSome text here.", encoding="utf-8")
         article = parse_article(str(md))
-        assert article.title == "my-cool-article"
+        assert article.title == "Just content"
         assert article.author == ""
         assert article.tags == []
         assert "Just content" in article.content
