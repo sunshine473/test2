@@ -75,7 +75,7 @@ class FakeLocator:
 
 
 class DongchediPage:
-    url = "https://mp.toutiao.com/profile_v4/graphic/publish"
+    url = "https://mp.dcdapp.com/profile_v2/publish/article"
 
     def __init__(self, title_visible=True, editor_visible=True, title="", body=""):
         self.title_locator = FakeLocator(visible=title_visible, value=title)
@@ -85,9 +85,16 @@ class DongchediPage:
     def locator(self, selector):
         if "标题" in selector:
             return self.title_locator
-        if "ProseMirror" in selector:
+        if "contenteditable" in selector or "syl-editor" in selector:
             return self.editor_locator
         return self.login_locator
+
+
+def test_dongchedi_uses_dcdapp_creator_backend():
+    publisher = DongchediPublisher()
+
+    assert publisher.editor_url == "https://mp.dcdapp.com/profile_v2/publish/article"
+    assert "https://mp.dcdapp.com" in publisher.cookie_origins
 
 
 def test_dongchedi_logged_in_requires_editor_controls():

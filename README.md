@@ -138,7 +138,7 @@ cd MultiPost-Extension && pnpm dev
 | 微信公众号 | ✅ 生产可用 | API（access_token + 草稿箱接口） |
 | 小红书 | ✅ 生产可用 | Playwright 自动化 |
 | 知乎专栏 | ✅ 生产可用 | Playwright 自动化 |
-| 懂车帝 | ✅ 生产可用 | Playwright 自动化（走头条号后台） |
+| 懂车帝 | ✅ 生产可用 | Playwright 自动化（走懂车号后台） |
 | B站专栏 | ⚠️ 骨架实现 | bilibili-api-python 库 |
 | 今日头条 | ⚠️ 骨架实现 | Playwright 自动化 |
 
