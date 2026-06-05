@@ -145,3 +145,18 @@ def test_dongchedi_build_dynamic_text_strips_markdown_and_limits_length():
     assert dynamic_text.startswith("测试标题")
     assert "![图]" not in dynamic_text
     assert len(dynamic_text) <= 2000
+
+
+class BodyTextPage:
+    def __init__(self, text):
+        self.body = FakeLocator(text=text)
+
+    def locator(self, selector):
+        return self.body
+
+
+def test_dongchedi_uploaded_image_count_parses_picture_status():
+    publisher = DongchediPublisher()
+
+    assert publisher._uploaded_image_count(BodyTextPage("照片已5张,最多9张")) == 5
+    assert publisher._uploaded_image_count(BodyTextPage("未上传")) == 0

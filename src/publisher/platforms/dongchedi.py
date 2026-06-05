@@ -1,6 +1,7 @@
 """懂车帝发布适配器 — 懂车号图文动态（mp.dcdapp.com/ugc/publish）。"""
 
 import re
+from pathlib import Path
 
 from publisher.models import Article, PublishResult, PublishStatus
 from publisher.platforms.browser_base import BrowserPublisher
@@ -86,6 +87,14 @@ class DongchediPublisher(BrowserPublisher):
                 message="动态发布校验失败：正文未保留在输入框中",
             )
 
+        image_count = self._upload_images(page, article.images)
+        if article.images and image_count <= 0:
+            return PublishResult(
+                platform="dongchedi",
+                status=PublishStatus.FAILED,
+                message="动态图片上传失败：未检测到已上传图片",
+            )
+
         self._disable_toutiao_sync(page)
         publish_button = self._publish_button(page)
         try:
@@ -152,6 +161,41 @@ class DongchediPublisher(BrowserPublisher):
             }''')
         except Exception:
             pass
+
+    def _upload_images(self, page, images: list[str]) -> int:
+        """上传图文动态图片，列表第一张会作为动态封面图。"""
+        image_paths = [str(Path(path).expanduser().resolve()) for path in images if path and Path(path).exists()]
+        if not image_paths:
+            return 0
+
+        image_paths = image_paths[:9]
+        print(f"[dongchedi] 上传图片: {len(image_paths)} 张，封面图: {Path(image_paths[0]).name}")
+        page.locator(".fun-button", has_text="选择图片").first.click(force=True)
+        upload_input = page.locator("input.add-pic-input[type='file']").first
+        upload_input.set_input_files(image_paths)
+
+        expected = len(image_paths)
+        try:
+            page.wait_for_function(
+                """(expected) => {
+                    const text = document.body.innerText || "";
+                    const match = text.match(/照片已(\\d+)张/);
+                    return match && Number(match[1]) >= expected;
+                }""",
+                arg=expected,
+                timeout=60000,
+            )
+        except Exception:
+            pass
+        return self._uploaded_image_count(page)
+
+    def _uploaded_image_count(self, page) -> int:
+        try:
+            body_text = page.locator("body").inner_text(timeout=3000)
+        except Exception:
+            return 0
+        match = re.search(r"照片已(\d+)张", body_text)
+        return int(match.group(1)) if match else 0
 
     def _publish_button_enabled(self, page) -> bool:
         try:
