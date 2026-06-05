@@ -1,4 +1,4 @@
-"""懂车帝发布适配器 — 懂车号图文动态（mp.dcdapp.com/ugc/publish）。"""
+"""懂车帝发布适配器 — 懂车号图文动态草稿（mp.dcdapp.com/ugc/publish）。"""
 
 import re
 from pathlib import Path
@@ -10,7 +10,7 @@ from publisher.registry import register
 
 @register("dongchedi")
 class DongchediPublisher(BrowserPublisher):
-    """懂车帝懂车号 — 自动发布图文动态"""
+    """懂车帝懂车号 — 自动保存图文动态草稿，禁止直接发布"""
 
     login_url = "https://mp.dcdapp.com"
     editor_url = "https://mp.dcdapp.com/ugc/publish#/picture"
@@ -50,7 +50,7 @@ class DongchediPublisher(BrowserPublisher):
             return PublishResult(
                 platform="dongchedi",
                 status=PublishStatus.FAILED,
-                message="未登录懂车号后台，无法发布懂车帝动态",
+                message="未登录懂车号后台，无法保存懂车帝动态草稿",
             )
 
         if not self._is_logged_in(page):
@@ -71,6 +71,13 @@ class DongchediPublisher(BrowserPublisher):
             if (close) close.click();
         }''')
         self._random_delay(1, 2)
+
+        if not self._draft_supported(page):
+            return PublishResult(
+                platform="dongchedi",
+                status=PublishStatus.FAILED,
+                message="懂车号图文动态页未提供保存草稿入口，已停止且未点击立即发布",
+            )
 
         # 2. 填写动态正文（懂车号图文动态限制 2000 字）
         dynamic_text = self._build_dynamic_text(article)
@@ -95,35 +102,21 @@ class DongchediPublisher(BrowserPublisher):
                 message="动态图片上传失败：未检测到已上传图片",
             )
 
-        self._disable_toutiao_sync(page)
-        publish_button = self._publish_button(page)
-        try:
-            publish_button.wait_for(state="visible", timeout=5000)
-        except Exception:
-            pass
-        if not self._publish_button_enabled(page):
-            return PublishResult(
-                platform="dongchedi",
-                status=PublishStatus.FAILED,
-                message="动态发布按钮不可用，请确认正文长度或账号权限",
-            )
-
-        print("[dongchedi] 立即发布动态...")
-        publish_button.click()
-        self._confirm_publish_if_needed(page)
+        print("[dongchedi] 保存动态草稿...")
+        self._save_draft_button(page).click()
         page.wait_for_timeout(5000)
 
-        if not self._publish_succeeded(page, dynamic_text):
+        if not self._draft_saved(page):
             return PublishResult(
                 platform="dongchedi",
                 status=PublishStatus.FAILED,
-                message="动态已提交，但未检测到明确发布成功提示",
+                message="动态草稿已提交，但未检测到明确保存成功提示",
             )
 
         return PublishResult(
             platform="dongchedi",
             status=PublishStatus.SUCCESS,
-            message="图文动态已发布到懂车帝",
+            message="图文动态已保存到懂车帝草稿箱",
         )
 
     def _dynamic_content_visible(self, page, dynamic_text: str) -> bool:
@@ -150,17 +143,12 @@ class DongchediPublisher(BrowserPublisher):
             content = f"{title}\n\n{content}" if content else title
         return content[:2000].strip()
 
-    def _disable_toutiao_sync(self, page) -> None:
-        """仅发布懂车帝动态，不同步到微头条。"""
+    def _draft_supported(self, page) -> bool:
+        """只有页面提供保存草稿入口时才继续，避免误点立即发布。"""
         try:
-            page.evaluate('''() => {
-                const input = document.querySelector(".radio-wrap input[type='checkbox']");
-                if (input && input.checked) {
-                    input.click();
-                }
-            }''')
+            return self._save_draft_button(page).is_visible(timeout=2000)
         except Exception:
-            pass
+            return False
 
     def _upload_images(self, page, images: list[str]) -> int:
         """上传图文动态图片，列表第一张会作为动态封面图。"""
@@ -197,40 +185,21 @@ class DongchediPublisher(BrowserPublisher):
         match = re.search(r"照片已(\d+)张", body_text)
         return int(match.group(1)) if match else 0
 
-    def _publish_button_enabled(self, page) -> bool:
-        try:
-            return page.evaluate('''() => {
-                const button = Array.from(document.querySelectorAll("button"))
-                    .find((el) => (el.innerText || "").includes("立即发布"));
-                return Boolean(button && !button.disabled && !button.className.includes("btn-disable"));
-            }''')
-        except Exception:
-            return False
-
-    def _confirm_publish_if_needed(self, page) -> None:
-        try:
-            confirm = page.locator(
-                'button:has-text("确定"), button:has-text("确认"), button:has-text("继续发布")'
-            ).last
-            if confirm.is_visible(timeout=2000):
-                confirm.click()
-        except Exception:
-            pass
-
-    def _publish_succeeded(self, page, dynamic_text: str) -> bool:
+    def _draft_saved(self, page) -> bool:
         try:
             body_text = page.locator("body").inner_text(timeout=3000)
         except Exception:
             body_text = ""
-        success_markers = ("发布成功", "发布队列", "内容管理")
-        if any(marker in body_text for marker in success_markers) and dynamic_text[:30] not in body_text:
-            return True
-        return "#/content" in page.url or "#/task" in page.url
+        success_markers = ("保存成功", "已保存", "草稿")
+        return any(marker in body_text for marker in success_markers)
 
     @staticmethod
     def _dynamic_textarea(page):
         return page.locator('textarea[placeholder*="分享汽车生活"], textarea').first
 
     @staticmethod
-    def _publish_button(page):
-        return page.locator('button:has-text("立即发布")').first
+    def _save_draft_button(page):
+        return page.locator(
+            'button:has-text("保存草稿"), a:has-text("保存草稿"), '
+            'button:has-text("存草稿"), a:has-text("存草稿")'
+        ).first
