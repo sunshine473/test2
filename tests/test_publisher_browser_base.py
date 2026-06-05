@@ -1,5 +1,6 @@
 from publisher.platforms.browser_base import BrowserPublisher
 from publisher.platforms.dongchedi import DongchediPublisher
+from publisher.models import Article
 
 
 class DummyPublisher(BrowserPublisher):
@@ -80,74 +81,67 @@ class FakeLocator:
 
     def fill(self, value, timeout=None):
         self.filled = value
+        self.value = value
         self.text = value
+
+    def wait_for(self, state=None, timeout=None):
+        return None
 
 
 class DongchediPage:
-    url = "https://mp.dcdapp.com/profile_v2/publish/article"
+    url = "https://mp.dcdapp.com/ugc/publish#/picture"
 
-    def __init__(self, title_visible=True, editor_visible=True, title="", body=""):
-        self.title_locator = FakeLocator(visible=title_visible, value=title)
-        self.editor_locator = FakeLocator(visible=editor_visible, text=body)
+    def __init__(self, textarea_visible=True, dynamic_text=""):
+        self.textarea_locator = FakeLocator(visible=textarea_visible, value=dynamic_text, text=dynamic_text)
+        self.button_locator = FakeLocator(visible=True, text="立即发布")
         self.login_locator = FakeLocator(visible=False)
 
     def locator(self, selector):
-        if "标题" in selector:
-            return self.title_locator
-        if "contenteditable" in selector or "syl-editor" in selector:
-            return self.editor_locator
+        if "textarea" in selector:
+            return self.textarea_locator
+        if "立即发布" in selector:
+            return self.button_locator
         return self.login_locator
 
 
-def test_dongchedi_uses_dcdapp_creator_backend():
+def test_dongchedi_uses_dcdapp_dynamic_backend():
     publisher = DongchediPublisher()
 
-    assert publisher.editor_url == "https://mp.dcdapp.com/profile_v2/publish/article"
+    assert publisher.editor_url == "https://mp.dcdapp.com/ugc/publish#/picture"
     assert "https://mp.dcdapp.com" in publisher.cookie_origins
 
 
 def test_check_login_requires_editor_when_configured(monkeypatch):
     monkeypatch.setattr(DongchediPublisher, "_random_delay", lambda *args, **kwargs: None)
-    page = DongchediPage(title_visible=False, editor_visible=False)
+    page = DongchediPage(textarea_visible=False)
 
     assert DongchediPublisher()._check_login(page, {"_headless": True}) is False
 
 
-def test_dongchedi_logged_in_requires_editor_controls():
+def test_dongchedi_logged_in_requires_dynamic_textarea():
     publisher = DongchediPublisher()
 
-    assert publisher._is_logged_in(DongchediPage(title_visible=True, editor_visible=True)) is True
-    assert publisher._is_logged_in(DongchediPage(title_visible=True, editor_visible=False)) is False
+    assert publisher._is_logged_in(DongchediPage(textarea_visible=True)) is True
+    assert publisher._is_logged_in(DongchediPage(textarea_visible=False)) is False
 
 
-def test_dongchedi_draft_content_visible():
+def test_dongchedi_dynamic_content_visible():
     publisher = DongchediPublisher()
-    page = DongchediPage(title="测试标题", body="正文内容很长，足够用于校验")
+    page = DongchediPage(dynamic_text="测试动态正文很长，足够用于校验")
 
-    assert publisher._draft_content_visible(page, "测试标题", "正文内容很长，足够用于校验") is True
-    assert publisher._draft_content_visible(page, "另一个标题", "正文内容很长，足够用于校验") is False
-
-
-class KeyboardPage:
-    class Keyboard:
-        def __init__(self):
-            self.inserted = None
-
-        def insert_text(self, value):
-            self.inserted = value
-
-    def __init__(self):
-        self.keyboard = self.Keyboard()
+    assert publisher._dynamic_content_visible(page, "测试动态正文很长，足够用于校验") is True
+    assert publisher._dynamic_content_visible(page, "另一个正文") is False
 
 
-def test_dongchedi_fill_editor_body_uses_contenteditable_fill(monkeypatch):
-    monkeypatch.setattr(DongchediPublisher, "_random_delay", lambda *args, **kwargs: None)
+def test_dongchedi_build_dynamic_text_strips_markdown_and_limits_length():
     publisher = DongchediPublisher()
-    page = KeyboardPage()
-    editor = FakeLocator()
+    article = Article(
+        title="测试标题",
+        content="---\ntitle: old\n---\n# 测试标题\n\n正文内容\n\n![图](x.png)\n\n" + "很长" * 1200,
+    )
 
-    publisher._fill_editor_body(page, editor, "测试正文")
+    dynamic_text = publisher._build_dynamic_text(article)
 
-    assert editor.clicked is True
-    assert editor.filled == "测试正文"
-    assert page.keyboard.inserted is None
+    assert dynamic_text.startswith("测试标题")
+    assert "![图]" not in dynamic_text
+    assert len(dynamic_text) <= 2000

@@ -1,4 +1,6 @@
-"""懂车帝发布适配器 — 懂车号（mp.dcdapp.com）后台。"""
+"""懂车帝发布适配器 — 懂车号图文动态（mp.dcdapp.com/ugc/publish）。"""
+
+import re
 
 from publisher.models import Article, PublishResult, PublishStatus
 from publisher.platforms.browser_base import BrowserPublisher
@@ -7,10 +9,10 @@ from publisher.registry import register
 
 @register("dongchedi")
 class DongchediPublisher(BrowserPublisher):
-    """懂车帝懂车号 — 自动填写标题正文 → 存草稿"""
+    """懂车帝懂车号 — 自动发布图文动态"""
 
     login_url = "https://mp.dcdapp.com"
-    editor_url = "https://mp.dcdapp.com/profile_v2/publish/article"
+    editor_url = "https://mp.dcdapp.com/ugc/publish#/picture"
     cookie_origins = ["https://mp.dcdapp.com", "https://www.dongchedi.com", "https://www.dcdapp.com"]
     require_logged_in_editor = True
 
@@ -28,17 +30,15 @@ class DongchediPublisher(BrowserPublisher):
             return False
 
     def _is_logged_in(self, page) -> bool:
-        """懂车号文章编辑器可用时才认为已登录。"""
+        """懂车号图文动态输入框可用时才认为已登录。"""
         try:
-            title_visible = self._title_locator(page).is_visible(timeout=3000)
-            editor_visible = self._editor_locator(page).is_visible(timeout=3000)
-            return title_visible and editor_visible
+            return self._dynamic_textarea(page).is_visible(timeout=3000)
         except Exception:
             return False
 
     def _do_publish(self, page, article: Article, config: dict) -> PublishResult:
-        # 1. 确保在编辑器页面
-        if "/publish/article" not in page.url:
+        # 1. 确保在图文动态页面
+        if "#/picture" not in page.url:
             try:
                 page.goto(self.editor_url, wait_until="domcontentloaded", timeout=30000)
             except Exception:
@@ -49,13 +49,13 @@ class DongchediPublisher(BrowserPublisher):
             return PublishResult(
                 platform="dongchedi",
                 status=PublishStatus.FAILED,
-                message="未登录懂车号后台，无法保存懂车帝草稿",
+                message="未登录懂车号后台，无法发布懂车帝动态",
             )
 
         if not self._is_logged_in(page):
-            message = "未检测到懂车号文章编辑器，请确认账号已登录并有发文权限"
+            message = "未检测到懂车号图文动态输入框，请确认账号已登录并有发动态权限"
             if config.get("_headless"):
-                message = "未检测到懂车号文章编辑器，DONGCHEDI_COOKIE 需来自 mp.dcdapp.com 且账号需有发文权限"
+                message = "未检测到懂车号图文动态输入框，DONGCHEDI_COOKIE 需来自 mp.dcdapp.com 且账号需有发动态权限"
             return PublishResult(
                 platform="dongchedi",
                 status=PublishStatus.FAILED,
@@ -71,70 +71,122 @@ class DongchediPublisher(BrowserPublisher):
         }''')
         self._random_delay(1, 2)
 
-        # 2. 填写标题（懂车号限制 2~30 个汉字）
-        title = article.title[:30]
-        print(f"[dongchedi] 填写标题: {title}")
-        title_input = self._title_locator(page)
-        title_input.click()
-        title_input.fill(title)
-        self._random_delay(0.5, 1)
-
-        # 3. 填写正文（懂车号 SylEditor）
-        print(f"[dongchedi] 填写正文...")
-        editor = self._editor_locator(page)
-        body = article.content.strip()[:5000]
-        self._fill_editor_body(page, editor, body)
+        # 2. 填写动态正文（懂车号图文动态限制 2000 字）
+        dynamic_text = self._build_dynamic_text(article)
+        print(f"[dongchedi] 填写图文动态: {dynamic_text[:40]}...")
+        textarea = self._dynamic_textarea(page)
+        textarea.click()
+        textarea.fill(dynamic_text)
         self._random_delay(2, 3)
 
-        # 4. 等待草稿自动保存（懂车号编辑器有自动保存）
-        print(f"[dongchedi] 等待草稿自动保存...")
-        page.wait_for_timeout(5000)
-
-        if not self._draft_content_visible(page, title, body):
+        if not self._dynamic_content_visible(page, dynamic_text):
             return PublishResult(
                 platform="dongchedi",
                 status=PublishStatus.FAILED,
-                message="草稿保存校验失败：标题或正文未保留在编辑器中",
+                message="动态发布校验失败：正文未保留在输入框中",
+            )
+
+        self._disable_toutiao_sync(page)
+        publish_button = self._publish_button(page)
+        try:
+            publish_button.wait_for(state="visible", timeout=5000)
+        except Exception:
+            pass
+        if not self._publish_button_enabled(page):
+            return PublishResult(
+                platform="dongchedi",
+                status=PublishStatus.FAILED,
+                message="动态发布按钮不可用，请确认正文长度或账号权限",
+            )
+
+        print("[dongchedi] 立即发布动态...")
+        publish_button.click()
+        self._confirm_publish_if_needed(page)
+        page.wait_for_timeout(5000)
+
+        if not self._publish_succeeded(page, dynamic_text):
+            return PublishResult(
+                platform="dongchedi",
+                status=PublishStatus.FAILED,
+                message="动态已提交，但未检测到明确发布成功提示",
             )
 
         return PublishResult(
             platform="dongchedi",
             status=PublishStatus.SUCCESS,
-            message="文章已自动保存到懂车号草稿箱",
+            message="图文动态已发布到懂车帝",
         )
 
-    def _draft_content_visible(self, page, title: str, body: str) -> bool:
-        """轻量确认编辑器仍保留刚填入的标题和正文。"""
+    def _dynamic_content_visible(self, page, dynamic_text: str) -> bool:
+        """轻量确认动态输入框仍保留刚填入的内容。"""
         try:
-            current_title = self._title_locator(page).input_value(timeout=2000)
-            editor_text = self._editor_locator(page).inner_text(timeout=2000)
+            current_text = self._dynamic_textarea(page).input_value(timeout=2000)
         except Exception:
             return False
 
-        body_probe = body.strip()[:30]
-        return current_title.strip() == title.strip() and (not body_probe or body_probe in editor_text)
+        probe = dynamic_text.strip()[:30]
+        return bool(probe) and probe in current_text
 
-    def _fill_editor_body(self, page, editor, body: str) -> None:
-        """填写 SylEditor 正文，优先使用 contenteditable 原生填充。"""
-        editor.click()
-        self._random_delay(0.3, 0.5)
+    def _build_dynamic_text(self, article: Article) -> str:
+        """将 Markdown 文章压缩为懂车帝图文动态文本。"""
+        content = article.content.strip()
+        content = re.sub(r"^---\s*.*?\s*---\s*", "", content, flags=re.DOTALL)
+        content = re.sub(r"!\[[^\]]*\]\([^)]+\)", "", content)
+        content = re.sub(r"`{1,3}", "", content)
+        content = re.sub(r"^#{1,6}\s+", "", content, flags=re.MULTILINE)
+        content = re.sub(r"\n{3,}", "\n\n", content).strip()
+
+        title = article.title.strip()
+        if title and not content.startswith(title):
+            content = f"{title}\n\n{content}" if content else title
+        return content[:2000].strip()
+
+    def _disable_toutiao_sync(self, page) -> None:
+        """仅发布懂车帝动态，不同步到微头条。"""
         try:
-            editor.fill(body, timeout=5000)
-            return
+            page.evaluate('''() => {
+                const input = document.querySelector(".radio-wrap input[type='checkbox']");
+                if (input && input.checked) {
+                    input.click();
+                }
+            }''')
         except Exception:
             pass
-        page.keyboard.insert_text(body)
+
+    def _publish_button_enabled(self, page) -> bool:
+        try:
+            return page.evaluate('''() => {
+                const button = Array.from(document.querySelectorAll("button"))
+                    .find((el) => (el.innerText || "").includes("立即发布"));
+                return Boolean(button && !button.disabled && !button.className.includes("btn-disable"));
+            }''')
+        except Exception:
+            return False
+
+    def _confirm_publish_if_needed(self, page) -> None:
+        try:
+            confirm = page.locator(
+                'button:has-text("确定"), button:has-text("确认"), button:has-text("继续发布")'
+            ).last
+            if confirm.is_visible(timeout=2000):
+                confirm.click()
+        except Exception:
+            pass
+
+    def _publish_succeeded(self, page, dynamic_text: str) -> bool:
+        try:
+            body_text = page.locator("body").inner_text(timeout=3000)
+        except Exception:
+            body_text = ""
+        success_markers = ("发布成功", "发布队列", "内容管理")
+        if any(marker in body_text for marker in success_markers) and dynamic_text[:30] not in body_text:
+            return True
+        return "#/content" in page.url or "#/task" in page.url
 
     @staticmethod
-    def _title_locator(page):
-        return page.locator(
-            'textarea[placeholder*="文章标题"], textarea[placeholder*="标题"], '
-            'input[placeholder*="文章标题"], input[placeholder*="标题"]'
-        ).first
+    def _dynamic_textarea(page):
+        return page.locator('textarea[placeholder*="分享汽车生活"], textarea').first
 
     @staticmethod
-    def _editor_locator(page):
-        return page.locator(
-            '.syl-editor [contenteditable="true"], .syl-editor .ProseMirror, '
-            '.publish-editor [contenteditable="true"], [contenteditable="true"]'
-        ).first
+    def _publish_button(page):
+        return page.locator('button:has-text("立即发布")').first
