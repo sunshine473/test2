@@ -10,7 +10,7 @@ from publisher.registry import register
 
 @register("dongchedi")
 class DongchediPublisher(BrowserPublisher):
-    """懂车帝懂车号 — 自动保存图文动态草稿，禁止直接发布"""
+    """懂车帝懂车号 — 填写图文动态后关闭页面，依赖自动保存草稿"""
 
     login_url = "https://mp.dcdapp.com"
     editor_url = "https://mp.dcdapp.com/ugc/publish#/picture"
@@ -72,13 +72,6 @@ class DongchediPublisher(BrowserPublisher):
         }''')
         self._random_delay(1, 2)
 
-        if not self._draft_supported(page):
-            return PublishResult(
-                platform="dongchedi",
-                status=PublishStatus.FAILED,
-                message="懂车号图文动态页未提供保存草稿入口，已停止且未点击立即发布",
-            )
-
         # 2. 填写动态正文（懂车号图文动态限制 2000 字）
         dynamic_text = self._build_dynamic_text(article)
         print(f"[dongchedi] 填写图文动态: {dynamic_text[:40]}...")
@@ -102,21 +95,17 @@ class DongchediPublisher(BrowserPublisher):
                 message="动态图片上传失败：未检测到已上传图片",
             )
 
-        print("[dongchedi] 保存动态草稿...")
-        self._save_draft_button(page).click()
-        page.wait_for_timeout(5000)
-
-        if not self._draft_saved(page):
-            return PublishResult(
-                platform="dongchedi",
-                status=PublishStatus.FAILED,
-                message="动态草稿已提交，但未检测到明确保存成功提示",
-            )
+        print("[dongchedi] 等待自动保存草稿后关闭页面...")
+        page.wait_for_timeout(8000)
+        try:
+            page.close()
+        except Exception:
+            pass
 
         return PublishResult(
             platform="dongchedi",
-            status=PublishStatus.SUCCESS,
-            message="图文动态已保存到懂车帝草稿箱",
+            status=PublishStatus.FAILED,
+            message="图文动态已填写并关闭页面，但未能验证懂车号已自动保存草稿",
         )
 
     def _dynamic_content_visible(self, page, dynamic_text: str) -> bool:
@@ -142,13 +131,6 @@ class DongchediPublisher(BrowserPublisher):
         if title and not content.startswith(title):
             content = f"{title}\n\n{content}" if content else title
         return content[:2000].strip()
-
-    def _draft_supported(self, page) -> bool:
-        """只有页面提供保存草稿入口时才继续，避免误点立即发布。"""
-        try:
-            return self._save_draft_button(page).is_visible(timeout=2000)
-        except Exception:
-            return False
 
     def _upload_images(self, page, images: list[str]) -> int:
         """上传图文动态图片，列表第一张会作为动态封面图。"""
@@ -185,21 +167,6 @@ class DongchediPublisher(BrowserPublisher):
         match = re.search(r"照片已(\d+)张", body_text)
         return int(match.group(1)) if match else 0
 
-    def _draft_saved(self, page) -> bool:
-        try:
-            body_text = page.locator("body").inner_text(timeout=3000)
-        except Exception:
-            body_text = ""
-        success_markers = ("保存成功", "已保存", "草稿")
-        return any(marker in body_text for marker in success_markers)
-
     @staticmethod
     def _dynamic_textarea(page):
         return page.locator('textarea[placeholder*="分享汽车生活"], textarea').first
-
-    @staticmethod
-    def _save_draft_button(page):
-        return page.locator(
-            'button:has-text("保存草稿"), a:has-text("保存草稿"), '
-            'button:has-text("存草稿"), a:has-text("存草稿")'
-        ).first

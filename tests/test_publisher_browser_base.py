@@ -91,16 +91,13 @@ class FakeLocator:
 class DongchediPage:
     url = "https://mp.dcdapp.com/ugc/publish#/picture"
 
-    def __init__(self, textarea_visible=True, dynamic_text="", draft_visible=False):
+    def __init__(self, textarea_visible=True, dynamic_text=""):
         self.textarea_locator = FakeLocator(visible=textarea_visible, value=dynamic_text, text=dynamic_text)
-        self.draft_locator = FakeLocator(visible=draft_visible, text="保存草稿")
         self.login_locator = FakeLocator(visible=False)
 
     def locator(self, selector):
         if "textarea" in selector:
             return self.textarea_locator
-        if "保存草稿" in selector or "存草稿" in selector:
-            return self.draft_locator
         return self.login_locator
 
 
@@ -161,9 +158,3 @@ def test_dongchedi_uploaded_image_count_parses_picture_status():
     assert publisher._uploaded_image_count(BodyTextPage("照片已5张,最多9张")) == 5
     assert publisher._uploaded_image_count(BodyTextPage("未上传")) == 0
 
-
-def test_dongchedi_requires_draft_button_before_saving():
-    publisher = DongchediPublisher()
-
-    assert publisher._draft_supported(DongchediPage(draft_visible=True)) is True
-    assert publisher._draft_supported(DongchediPage(draft_visible=False)) is False
