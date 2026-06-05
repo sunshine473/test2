@@ -23,6 +23,7 @@ class BrowserPublisher(BasePublisher):
     login_url: str = ""
     editor_url: str = ""
     cookie_origins: list = []  # 额外需要注入 cookie 的域名
+    require_logged_in_editor: bool = False
 
     def publish(self, article: Article, config: dict) -> PublishResult:
         try:
@@ -94,6 +95,9 @@ class BrowserPublisher(BasePublisher):
             pass  # 超时也继续，页面可能已部分加载
         self._random_delay(3, 5)
 
+        if self._is_logged_in(page):
+            return True
+
         # 如果被重定向到登录页，等待用户手动登录
         if self._is_login_page(page) and not self._is_logged_in(page):
             if config.get("_headless"):
@@ -104,11 +108,7 @@ class BrowserPublisher(BasePublisher):
             print(f"[{self.name}] 登录完成后会自动继续（最多等待 300 秒）")
             for _ in range(150):
                 time.sleep(2)
-                try:
-                    page.reload(wait_until="domcontentloaded", timeout=15000)
-                except Exception:
-                    pass
-                if self._is_logged_in(page) or not self._is_login_page(page):
+                if self._is_logged_in(page):
                     print(f"[{self.name}] 登录成功！")
                     self._random_delay(3, 5)
                     # 登录后重新导航到编辑器
@@ -116,6 +116,41 @@ class BrowserPublisher(BasePublisher):
                         page.goto(self.editor_url, wait_until="domcontentloaded", timeout=30000)
                     except Exception:
                         pass
+                    self._random_delay(3, 5)
+                    return self._is_logged_in(page) if self.require_logged_in_editor else True
+                if not self.require_logged_in_editor and not self._is_login_page(page):
+                    print(f"[{self.name}] 登录成功！")
+                    self._random_delay(3, 5)
+                    # 登录后重新导航到编辑器
+                    try:
+                        page.goto(self.editor_url, wait_until="domcontentloaded", timeout=30000)
+                    except Exception:
+                        pass
+                    self._random_delay(3, 5)
+                    return True
+                if self.require_logged_in_editor and not self._is_login_page(page):
+                    try:
+                        page.goto(self.editor_url, wait_until="domcontentloaded", timeout=30000)
+                    except Exception:
+                        pass
+                    self._random_delay(3, 5)
+                    if self._is_logged_in(page):
+                        print(f"[{self.name}] 登录成功！")
+                        return True
+            return False
+        if self.require_logged_in_editor:
+            if config.get("_headless"):
+                print(f"[{self.name}] headless 模式未检测到编辑器，Cookie 可能已失效或账号无权限")
+                return False
+            print(f"[{self.name}] 未检测到编辑器，请在浏览器中完成登录或确认账号权限...")
+            for _ in range(150):
+                time.sleep(2)
+                try:
+                    page.goto(self.editor_url, wait_until="domcontentloaded", timeout=15000)
+                except Exception:
+                    pass
+                if self._is_logged_in(page):
+                    print(f"[{self.name}] 登录成功！")
                     self._random_delay(3, 5)
                     return True
             return False

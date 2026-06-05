@@ -12,6 +12,7 @@ class DongchediPublisher(BrowserPublisher):
     login_url = "https://mp.dcdapp.com"
     editor_url = "https://mp.dcdapp.com/profile_v2/publish/article"
     cookie_origins = ["https://mp.dcdapp.com", "https://www.dongchedi.com", "https://www.dcdapp.com"]
+    require_logged_in_editor = True
 
     def _is_login_page(self, page) -> bool:
         """懂车号：检查登录页或登录控件是否存在。"""
@@ -81,10 +82,8 @@ class DongchediPublisher(BrowserPublisher):
         # 3. 填写正文（懂车号 SylEditor）
         print(f"[dongchedi] 填写正文...")
         editor = self._editor_locator(page)
-        editor.click()
-        self._random_delay(0.3, 0.5)
         body = article.content.strip()[:5000]
-        page.keyboard.type(body, delay=5)
+        self._fill_editor_body(page, editor, body)
         self._random_delay(2, 3)
 
         # 4. 等待草稿自动保存（懂车号编辑器有自动保存）
@@ -114,6 +113,17 @@ class DongchediPublisher(BrowserPublisher):
 
         body_probe = body.strip()[:30]
         return current_title.strip() == title.strip() and (not body_probe or body_probe in editor_text)
+
+    def _fill_editor_body(self, page, editor, body: str) -> None:
+        """填写 SylEditor 正文，优先使用 contenteditable 原生填充。"""
+        editor.click()
+        self._random_delay(0.3, 0.5)
+        try:
+            editor.fill(body, timeout=5000)
+            return
+        except Exception:
+            pass
+        page.keyboard.insert_text(body)
 
     @staticmethod
     def _title_locator(page):
