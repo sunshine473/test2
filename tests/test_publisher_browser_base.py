@@ -147,13 +147,11 @@ def test_dongchedi_build_dynamic_text_strips_markdown_and_limits_length():
     assert len(dynamic_text) <= 2000
 
 
-def test_dongchedi_stops_before_mutating_editor_without_draft_support():
+def test_dongchedi_build_dynamic_text_keeps_campaign_tag_last():
     publisher = DongchediPublisher()
-    page = DongchediPage()
-    article = Article(title="测试标题", content="测试正文", images=["cover.jpg"])
+    article = Article(title="测试标题", content="正文 #星河创造营 后续内容")
 
-    result = publisher._do_publish(page, article, {})
+    dynamic_text = publisher._build_dynamic_text(article)
 
-    assert result.status.value == "failed"
-    assert "动态页没有草稿入口" in result.message
-    assert page.editor_locator.filled is None
+    assert dynamic_text.endswith("#星河创造营")
+    assert dynamic_text.count("#星河创造营") == 1

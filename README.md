@@ -138,7 +138,7 @@ cd MultiPost-Extension && pnpm dev
 | 微信公众号 | ✅ 生产可用 | API（access_token + 草稿箱接口） |
 | 小红书 | ✅ 生产可用 | Playwright 自动化 |
 | 知乎专栏 | ✅ 生产可用 | Playwright 自动化 |
-| 懂车帝 | ⛔ 动态草稿不可用 | 新版动态入口仅支持直接发布；发布器会在填写前停止，禁止误发 |
+| 懂车帝 | ✅ 生产可用 | 新版动态编辑器直接发布，支持最多 9 张图片，末尾固定 `#星河创造营` |
 | B站专栏 | ⚠️ 骨架实现 | bilibili-api-python 库 |
 | 今日头条 | ⚠️ 骨架实现 | Playwright 自动化 |
 
