@@ -141,6 +141,8 @@ def test_dongchedi_build_dynamic_text_strips_markdown_and_limits_length():
 
     assert dynamic_text.startswith("测试标题")
     assert "![图]" not in dynamic_text
+    assert dynamic_text.endswith("#星河创造营")
+    assert dynamic_text.count("#星河创造营") == 1
     assert len(dynamic_text) <= 2000
 
 
@@ -157,4 +159,3 @@ def test_dongchedi_uploaded_image_count_parses_picture_status():
 
     assert publisher._uploaded_image_count(BodyTextPage("照片已5张,最多9张")) == 5
     assert publisher._uploaded_image_count(BodyTextPage("未上传")) == 0
-

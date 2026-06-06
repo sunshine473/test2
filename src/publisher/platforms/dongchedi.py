@@ -12,6 +12,7 @@ from publisher.registry import register
 class DongchediPublisher(BrowserPublisher):
     """懂车帝懂车号 — 填写图文动态后关闭页面，依赖自动保存草稿"""
 
+    campaign_tag = "#星河创造营"
     login_url = "https://mp.dcdapp.com"
     editor_url = "https://mp.dcdapp.com/ugc/publish#/picture"
     cookie_origins = ["https://mp.dcdapp.com", "https://www.dongchedi.com", "https://www.dcdapp.com"]
@@ -130,7 +131,10 @@ class DongchediPublisher(BrowserPublisher):
         title = article.title.strip()
         if title and not content.startswith(title):
             content = f"{title}\n\n{content}" if content else title
-        return content[:2000].strip()
+
+        content = content.replace(self.campaign_tag, "").strip()
+        suffix = f"\n\n{self.campaign_tag}"
+        return f"{content[:2000 - len(suffix)].rstrip()}{suffix}"
 
     def _upload_images(self, page, images: list[str]) -> int:
         """上传图文动态图片，列表第一张会作为动态封面图。"""
