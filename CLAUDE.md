@@ -136,6 +136,8 @@ Layer 6: 分发 (Distribute) → PublishResult
 
 懂车帝新版动态入口为 `https://mp.dcdapp.com/profile_v2/publish/post`。动态作品管理页不提供草稿状态；按当前业务约定，适配器会填写正文、按顺序上传最多 9 张图片并直接发布，末尾固定追加 `#星河创造营`。
 
+懂车帝模块已另行剥离到私有仓库 `https://github.com/sunshine473/dongchedi-publisher`，用于跨电脑独立安装。独立仓库的浏览器登录态只保存在各电脑本地，不与主项目或 GitHub 同步。
+
 ### Skills Design Principle
 
 **Skills = 薄层调度器**，不是执行引擎：

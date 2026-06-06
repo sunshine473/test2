@@ -35,6 +35,7 @@ coverage/
 
 # browser state (login cookies)
 .browser_state/
+/dongchedi-publisher/
 
 # debug screenshots
 debug_*.png

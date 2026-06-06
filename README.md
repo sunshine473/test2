@@ -142,6 +142,9 @@ cd MultiPost-Extension && pnpm dev
 | B站专栏 | ⚠️ 骨架实现 | bilibili-api-python 库 |
 | 今日头条 | ⚠️ 骨架实现 | Playwright 自动化 |
 
+懂车帝发布器另有可独立部署的私有仓库：
+[sunshine473/dongchedi-publisher](https://github.com/sunshine473/dongchedi-publisher)。该仓库只包含懂车号登录、Markdown 文案、多图动态发布和跨电脑安装文档。
+
 ## 环境配置
 
 ### 基础依赖
