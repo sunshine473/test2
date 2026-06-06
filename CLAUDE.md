@@ -134,6 +134,8 @@ Layer 6: 分发 (Distribute) → PublishResult
 
 浏览器平台（知乎 / 小红书 / 懂车帝 / 头条）在 CI 中默认以 headless 运行，可通过 `<PLATFORM>_COOKIE` 环境变量注入登录态；微信公众号发布器同时兼容 `WECHAT_APP_ID/WECHAT_APP_SECRET` 与旧的 `WECHAT_APPID/WECHAT_SECRET`。
 
+懂车帝新版动态入口为 `https://mp.dcdapp.com/profile_v2/publish/post`。截至 2026-06-06，动态作品管理页不提供草稿状态且编辑器仅支持直接发布，因此适配器会在填写和上传前失败停止，禁止自动点击发布。
+
 ### Skills Design Principle
 
 **Skills = 薄层调度器**，不是执行引擎：

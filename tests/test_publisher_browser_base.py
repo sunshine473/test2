@@ -89,37 +89,38 @@ class FakeLocator:
 
 
 class DongchediPage:
-    url = "https://mp.dcdapp.com/ugc/publish#/picture"
+    url = "https://mp.dcdapp.com/profile_v2/publish/post"
 
-    def __init__(self, textarea_visible=True, dynamic_text=""):
-        self.textarea_locator = FakeLocator(visible=textarea_visible, value=dynamic_text, text=dynamic_text)
+    def __init__(self, editor_visible=True, dynamic_text=""):
+        self.editor_locator = FakeLocator(visible=editor_visible, value=dynamic_text, text=dynamic_text)
         self.login_locator = FakeLocator(visible=False)
 
     def locator(self, selector):
-        if "textarea" in selector:
-            return self.textarea_locator
+        if "ProseMirror" in selector:
+            return self.editor_locator
         return self.login_locator
 
 
 def test_dongchedi_uses_dcdapp_dynamic_backend():
     publisher = DongchediPublisher()
 
-    assert publisher.editor_url == "https://mp.dcdapp.com/ugc/publish#/picture"
+    assert publisher.editor_url == "https://mp.dcdapp.com/profile_v2/publish/post"
+    assert publisher.manage_url == "https://mp.dcdapp.com/profile_v2/manage/content/posts"
     assert "https://mp.dcdapp.com" in publisher.cookie_origins
 
 
 def test_check_login_requires_editor_when_configured(monkeypatch):
     monkeypatch.setattr(DongchediPublisher, "_random_delay", lambda *args, **kwargs: None)
-    page = DongchediPage(textarea_visible=False)
+    page = DongchediPage(editor_visible=False)
 
     assert DongchediPublisher()._check_login(page, {"_headless": True}) is False
 
 
-def test_dongchedi_logged_in_requires_dynamic_textarea():
+def test_dongchedi_logged_in_requires_dynamic_editor():
     publisher = DongchediPublisher()
 
-    assert publisher._is_logged_in(DongchediPage(textarea_visible=True)) is True
-    assert publisher._is_logged_in(DongchediPage(textarea_visible=False)) is False
+    assert publisher._is_logged_in(DongchediPage(editor_visible=True)) is True
+    assert publisher._is_logged_in(DongchediPage(editor_visible=False)) is False
 
 
 def test_dongchedi_dynamic_content_visible():
@@ -146,16 +147,13 @@ def test_dongchedi_build_dynamic_text_strips_markdown_and_limits_length():
     assert len(dynamic_text) <= 2000
 
 
-class BodyTextPage:
-    def __init__(self, text):
-        self.body = FakeLocator(text=text)
-
-    def locator(self, selector):
-        return self.body
-
-
-def test_dongchedi_uploaded_image_count_parses_picture_status():
+def test_dongchedi_stops_before_mutating_editor_without_draft_support():
     publisher = DongchediPublisher()
+    page = DongchediPage()
+    article = Article(title="测试标题", content="测试正文", images=["cover.jpg"])
 
-    assert publisher._uploaded_image_count(BodyTextPage("照片已5张,最多9张")) == 5
-    assert publisher._uploaded_image_count(BodyTextPage("未上传")) == 0
+    result = publisher._do_publish(page, article, {})
+
+    assert result.status.value == "failed"
+    assert "动态页没有草稿入口" in result.message
+    assert page.editor_locator.filled is None
